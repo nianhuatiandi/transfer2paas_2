@@ -1,0 +1,64 @@
+<overview>
+Overall Visual Style:
+The video presents a clean, documentary-style capture of an indoor sports training session. The camera work is static and functional, utilizing wide shots to establish the full court geometry and player positioning, followed by a medium close-up for direct address. Lighting is bright and even, typical of an indoor gymnasium, ensuring clear visibility of the blue court surface, yellow net posts, and the players' movements. The visual tone is instructional and focused, emphasizing the mechanics of the sport and the coach's guidance.
+
+Overall Audio Style:
+The audio environment is dominated by the sharp, percussive sounds of badminton rackets striking shuttlecocks and the squeaking of athletic shoes on the hard court floor. These action sounds create a rhythmic backdrop that is punctuated by clear, instructional male speech from a coach. The voice cuts through the ambient gym noise with a directive tone, counting repetitions and giving specific movement cues. There is no background music, keeping the focus entirely on the live training activity and verbal feedback.
+
+Character Profiles:
+man in black t-shirt with pink graphic on back - A male player seen primarily from behind in the first shot, wearing a black t-shirt with a pink graphic on the back, light grey shorts, white socks, and dark athletic shoes. He actively engages in the rally, using short sliding steps to hit the shuttle upward twice.
+man in maroon shirt - A male player positioned on the far side of the net in the first shot, dressed in a maroon short-sleeved shirt and light grey shorts. He participates in the rally by returning shots.
+man in black t-shirt with 'ACTIVE' text on front - The same individual as the first player, now shown in a medium shot facing the camera. He wears a black t-shirt with the word "ACTIVE" printed in white across the chest, paired with pink shorts. He holds a badminton racket and speaks directly to the viewer with a smile, delivering instructional commentary.
+
+Narrative Theme:
+The video captures a segment of a badminton coaching session. It begins with a practical demonstration of a rally between two players, accompanied by real-time technical instructions from the coach regarding footwork and shot counting. The sequence concludes with the coach addressing the audience directly, likely elaborating on the technique just demonstrated or introducing a new point, bridging the gap between physical practice and theoretical explanation.
+</overview>
+
+<shots>
+00:00.000 - 00:03.760
+A static, eye-level wide shot captures a badminton rally in progress on a blue indoor court marked with white lines, bisected by a net with yellow posts. In the foreground, the man in black t-shirt with pink graphic on back stands with his back to the camera, wearing light grey shorts, white socks, and dark athletic shoes. Holding the racket in his right hand, he moves diagonally forward to his right in short sliding steps, hits the shuttle upward toward the left side of the far court, and slides back to his starting position. He repeats the approach to his right, hits the shuttle upward toward the right side of the far court, and slides back again. Opposite him on the far side of the net, the man in maroon shirt, dressed in a maroon short-sleeved shirt and light grey shorts, returns the shots, moving laterally across his baseline. The background features large blue banners with "YONEX" and "XURI STAR" logos hanging from the ceiling, illuminated by bright overhead lights that cast soft shadows on the floor. As the rally continues with rhythmic racket impacts and shoe squeaks, the man in black t-shirt with pink graphic on back instructs, "往这边跳", followed shortly by the command "停", coordinating his movements with the play.
+
+00:03.800 - 00:07.480
+Following a hard cut, the perspective shifts to a fixed eye-level medium long shot from the side of the court. The man in black t-shirt with pink graphic on back, now seen from the front, stands in the foreground on the right side of the frame. He wears a black t-shirt with the word "ACTIVE" printed in white across the chest and pink shorts, holding a racket in his right hand while observing the play. On the far side of the net, the man in maroon shirt continues to engage in the rally, lunging and swinging his racket to hit the shuttlecock back and forth. The blue court surface, white boundary lines, and yellow net posts remain clearly visible, along with the same branded banners in the background. The camera remains completely static, maintaining a stable view of the ongoing match. As the shuttlecock is struck repeatedly, the man in black t-shirt with pink graphic on back counts the shots aloud, saying "一个" and then "两个", tracking the sequence of the drill while maintaining his position as an observer.
+
+00:07.520 - 00:08.000
+A hard cut transitions to a fixed eye-level medium shot where the man in black t-shirt with pink graphic on back stands centered in the frame, facing the camera directly. He wears the same black t-shirt with "ACTIVE" text and pink shorts. He holds a badminton racket upright in his right hand, with the head of the racket pointing toward the ceiling. His left hand is raised slightly, gesturing near his chest. He looks straight into the lens with a visible smile, his mouth slightly open. The background shows the blue court surface and the lower portion of the gymnasium wall, with bright, even lighting illuminating the scene. The camera remains static throughout this brief segment, keeping the subject in sharp focus as he maintains his pose and gaze. He concludes the previous count with a final "好" as he addresses the viewer, marking the end of the drill segment.
+</shots>
+
+<speech_transcript>
+00:00.930 - 00:01.560
+Speaker: man in black t-shirt with pink graphic on back
+State: Instructional, clear, moderate volume, directive tone
+Content: "往这边跳"
+
+00:03.160 - 00:03.690
+Speaker: man in black t-shirt with pink graphic on back
+State: Commanding, sharp, brief
+Content: "停"
+
+00:04.660 - 00:05.190
+Speaker: man in black t-shirt with pink graphic on back
+State: Counting, steady pace, focused
+Content: "一个"
+
+00:06.960 - 00:07.490
+Speaker: man in black t-shirt with pink graphic on back
+State: Counting, steady pace, focused
+Content: "两个"
+
+00:07.520 - 00:07.840
+Speaker: man in black t-shirt with pink graphic on back
+State: Concluding, affirmative, friendly tone
+Content: "好"
+</speech_transcript>
+
+<visible_text>
+00:00.000 - 00:07.375
+"李宇轩教练": top-right, small, white
+
+00:00.000 - 00:07.375
+"bilibili": top-right, small, white
+
+00:07.500 - 00:07.960
+"你们是不是经常遇到这个问题": bottom-center, medium, white
+</visible_text>
