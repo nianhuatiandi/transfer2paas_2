@@ -1,0 +1,52 @@
+<overview>
+Overall Visual Style:
+The video employs a clean, instructional documentary style set in an outdoor urban park and sports facility. Natural daylight provides bright, even illumination, highlighting the subject against backgrounds of green foliage and multi-story residential buildings. The camera work is static and stable, utilizing a medium close-up for direct address followed by a wide long shot to capture athletic movement, emphasizing clarity and demonstration over cinematic flourish.
+
+Overall Audio Style:
+The audio environment is quiet and controlled, dominated entirely by a single male voice delivering a clear, instructional monologue in Mandarin Chinese. There is no background music, ambient noise, or sound effects, creating a focused auditory experience that prioritizes the spoken content. The voice maintains consistent volume and clarity, transitioning seamlessly from on-camera speech to voice-over narration as the visual perspective shifts.
+
+Character Profiles:
+man in blue sleeveless athletic shirt and black headband - A fit male instructor with short dark hair, wearing a black headband, a blue sleeveless athletic shirt, black pants, and white sneakers. A small black microphone is clipped to the collar of his shirt.
+
+Narrative Theme:
+The video serves as a concise introduction to improving long jump performance, framing the upcoming instruction as a highly effective method that yields immediate results. The narrative moves from a direct rhetorical question about rapid improvement to a practical demonstration of the technique, establishing the instructor's authority and the video's educational purpose.
+</overview>
+
+<shots>
+00:00.000 - 00:01.960
+A fixed, eye-level medium close-up centers on a fit male with short dark hair, wearing a black headband and a blue sleeveless athletic shirt with a small black microphone clipped to the collar. He stands outdoors against a backdrop of dense green trees and foliage, with a wooden exercise bar visible to the left. Bright natural daylight casts soft shadows on his face as he looks directly into the camera lens, his head remaining relatively still while his facial muscles shift and his mouth opens and closes rhythmically. In the background to the right, a blurred figure walks along a path holding a red object. He speaks clearly, saying "如何在一分钟之内就立".
+
+00:02.000 - 00:07.000
+Following a hard cut, a static, eye-level long shot reveals the same man standing on a red running track marked with white lines. Behind him, a tall green chain-link fence separates the track from a residential area featuring multi-story white apartment buildings with numerous windows and air conditioning units. The man, now seen in full body wearing black pants and white sneakers, begins a dynamic warm-up. He raises both arms overhead, then bends forward at the waist, extending his arms toward the ground. He transitions into a deep squat, swinging his arms backward for momentum. Rising from the squat, he propels himself forward and to the right, executing a forward roll across the red surface. He lands on his feet in a low crouching position, extending his arms forward for balance. He remains in this crouched stance, facing the right side of the frame, as the camera holds the wide composition. His voice continues as a voice-over, completing the previous thought with "竿见影", then asking "如同作弊一般提升立定跳远的成绩呢", and concluding with "今天给大家介绍三个方法".
+</shots>
+
+<speech_transcript>
+00:00.110 - 00:02.780
+Speaker: man in blue sleeveless athletic shirt and black headband
+State: Clear, direct, instructional tone with steady pace
+Content: "如何在一分钟之内就立竿见影"
+
+00:02.810 - 00:05.440
+Speaker: man in blue sleeveless athletic shirt and black headband
+State: Engaging, rhetorical questioning tone, smooth delivery
+Content: "如同作弊一般提升立定跳远的成绩呢"
+
+00:05.460 - 00:06.990
+Speaker: man in blue sleeveless athletic shirt and black headband
+State: Informative, concluding tone, confident delivery
+Content: "今天给大家介绍三个方法"
+</speech_transcript>
+
+<visible_text>
+00:00.000 - 00:03.875
+"跑步的子章老师 bilibili": top-right, small, white
+
+00:00.125 - 00:02.625
+"如何在一分钟之内就立竿见影": bottom-center, medium, white
+
+00:02.750 - 00:05.375
+"如同作弊一般提升立定跳远的成绩呢": bottom-center, medium, white
+
+00:05.500 - 00:06.960
+"今天给大家介绍三个方法": bottom-center, medium, white
+</visible_text>
