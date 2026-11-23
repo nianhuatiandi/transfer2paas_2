@@ -6,6 +6,7 @@
 
 | 内容 | 入口 |
 | --- | --- |
+| 教师汇报：专业原子动作音视频描述评测 | [PPT、PDF、逐页讲稿与素材包](av_caption_benchmark/idea_talk/README.md) |
 | 当前确认的研究想法、评测边界与候选贡献 | [CURRENT_PROPOSAL.md](av_caption_benchmark/CURRENT_PROPOSAL.md) |
 | 已有实验、Qwen 原始输出、FPS 对照及视频结果 | [RESULTS.md](av_caption_benchmark/RESULTS.md) |
 | 方案演变与历史材料的适用范围 | [DECISIONS.md](av_caption_benchmark/DECISIONS.md) |

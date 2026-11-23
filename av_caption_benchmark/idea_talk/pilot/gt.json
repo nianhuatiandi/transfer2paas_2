@@ -1,0 +1,670 @@
+{
+  "status": "pilot_reference_single_review_no_expert_adjudication",
+  "media": {
+    "path": "badminton_lift_31679122798_first8s.mp4",
+    "sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "duration_s": 8,
+    "fps": 30,
+    "frames": 240
+  },
+  "caption_zh": "室内蓝色羽毛球场上，两人隔网练习。第一镜头中，近端背对镜头的黑衣灰短裤球员连续两次向画面右侧并步接球，先从身体右侧低手把球挑向画面左上，回位，再向右并步，把下一球挑向画面右上，再次回位。远端人物举手供球，开头第一球已经在飞。换到第二个全景，近端人物连续两次手喂球，远端练习者两次向画面左侧迎球、低手向上回球并回位，出球依次朝画面右上和左上。第一轮附近传来“往这边跳”，第二镜头两次挥拍附近先后传来“一个”“两个”。结尾“好，你……”跨过剪辑点，画面转为黑色 ACTIVE 上衣、粉色短裤的人面向镜头举拍比划。",
+  "provenance": {
+    "visual": "原始30 fps文件，按0.1秒浏览，逐帧复核球拍、球路、脚步和切镜。起止为本次近似读数。历史Qwen v0.8用于提出候选。",
+    "candidate_path": "av_caption_benchmark/qwen3.8_omni_results/20261123_011332_pipeline_v08_alignment/alignment.json",
+    "audio": "原始MP4的音轨。SenseVoiceSmall离线中文识别，整段和短窗两次解码；结合频谱估计语音边界、独立从波形取四个脉冲。文字和边界未经双人听审。",
+    "asr_model": "csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17, model.int8.onnx",
+    "asr_raw": [
+      {
+        "interval": [
+          0,
+          8
+        ],
+        "text": "往这边跳停股一个两个好",
+        "tokens": [
+          "往",
+          "这",
+          "边",
+          "跳",
+          "停",
+          "股",
+          "一",
+          "个",
+          "两",
+          "个",
+          "好"
+        ],
+        "absolute_token_times": [
+          0.84,
+          1.02,
+          1.14,
+          1.32,
+          3.24,
+          3.42,
+          4.68,
+          4.86,
+          7.02,
+          7.2,
+          7.5
+        ]
+      },
+      {
+        "interval": [
+          0,
+          1.9
+        ],
+        "text": "往这边跳",
+        "tokens": [
+          "往",
+          "这",
+          "边",
+          "跳"
+        ],
+        "absolute_token_times": [
+          0.84,
+          1.02,
+          1.14,
+          1.32
+        ]
+      },
+      {
+        "interval": [
+          2.2,
+          3.65
+        ],
+        "text": "屁",
+        "tokens": [
+          "屁"
+        ],
+        "absolute_token_times": [
+          3.16
+        ]
+      },
+      {
+        "interval": [
+          4.22,
+          5.3
+        ],
+        "text": "一个",
+        "tokens": [
+          "一",
+          "个"
+        ],
+        "absolute_token_times": [
+          4.64,
+          4.82
+        ]
+      },
+      {
+        "interval": [
+          6.37,
+          7.42
+        ],
+        "text": "两个",
+        "tokens": [
+          "两",
+          "个"
+        ],
+        "absolute_token_times": [
+          6.97,
+          7.15
+        ]
+      },
+      {
+        "interval": [
+          7.42,
+          8
+        ],
+        "text": "好你",
+        "tokens": [
+          "好",
+          "你"
+        ],
+        "absolute_token_times": [
+          7.54,
+          7.78
+        ]
+      }
+    ],
+    "dictionary": "av_caption_benchmark/idea_talk/pilot/badminton_vocabulary_prompt.txt"
+  },
+  "notes": [
+    "所有时间以视频起点为零，区间左闭右开，四次按画面出现顺序编号。跨镜头不推定是同一个人，也不判断是否重放。",
+    "第一镜头的脚步可见收脚再打开，第二镜头脚下较小，以侧向迎球为主标签。挑向左、向上回球、underarm upward return 等按可见动作接受，未确定落点或直线／斜线战术。",
+    "切镜按帧边界，语音和动作边界是估计。小于0.10秒的交集另行标记供敏感性分析，其中短促声本身也可能不足0.10秒。",
+    "音频层覆盖可分辨口令和四个最显著宽带短音。零碎鞋噪、环境底噪及其他背景声未穷尽。"
+  ],
+  "shots": [
+    {
+      "id": "S1",
+      "first_frame": 0,
+      "end_frame_exclusive": 116,
+      "actors": {
+        "S1-near": "黑衣灰短裤，背对镜头，持拍练习者",
+        "S1-far": "远端举手供球者"
+      }
+    },
+    {
+      "id": "S2",
+      "first_frame": 116,
+      "end_frame_exclusive": 229,
+      "actors": {
+        "S2-near": "近端举手喂球者",
+        "S2-far": "远端低重心的持拍练习者"
+      }
+    },
+    {
+      "id": "S3",
+      "first_frame": 229,
+      "end_frame_exclusive": 240,
+      "actors": {
+        "S3-center": "黑色 ACTIVE 上衣、粉色短裤，面向镜头举拍示意"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "id": "A01",
+      "occurrence": 1,
+      "actor": "S1-far",
+      "technique": "手喂球的收势",
+      "interval_s": [
+        0,
+        0.2
+      ],
+      "detail": "开头球已在空中，远端举手。释放在画外或片段起点附近。",
+      "scored": false
+    },
+    {
+      "id": "A02",
+      "occurrence": 1,
+      "actor": "S1-near",
+      "technique": "向来球侧移动",
+      "interval_s": [
+        0.3,
+        1.0
+      ],
+      "detail": "向画面右侧，双脚先收近再分开，右脚领移，屈膝承重。可接受向右并步／向右垫步近球。",
+      "scored": true
+    },
+    {
+      "id": "A03",
+      "occurrence": 1,
+      "actor": "S1-near",
+      "technique": "低手向上回球",
+      "interval_s": [
+        0.8,
+        1.23
+      ],
+      "detail": "右手在身体右侧低点击球，球转向画面左上。",
+      "scored": true,
+      "visual_contact_bracket_s": [
+        0.967,
+        1.033
+      ],
+      "outgoing_screen_direction": "左上"
+    },
+    {
+      "id": "A04",
+      "occurrence": 1,
+      "actor": "S1-near",
+      "technique": "回位",
+      "interval_s": [
+        1.2,
+        1.9
+      ],
+      "detail": "离开右侧击球位，向画面左侧调整，重新两脚分立面网。",
+      "scored": true
+    },
+    {
+      "id": "A05",
+      "occurrence": 2,
+      "actor": "S1-far",
+      "technique": "手喂球",
+      "interval_s": [
+        1.9,
+        2.3
+      ],
+      "detail": "远端抬手，再送出一球，球落向近端练习者持拍侧。",
+      "scored": true
+    },
+    {
+      "id": "A06",
+      "occurrence": 2,
+      "actor": "S1-near",
+      "technique": "向来球侧移动",
+      "interval_s": [
+        2.2,
+        3.0
+      ],
+      "detail": "再次向画面右侧，后脚靠拢、前脚打开，重心落低。可接受向右并步。",
+      "scored": true
+    },
+    {
+      "id": "A07",
+      "occurrence": 2,
+      "actor": "S1-near",
+      "technique": "低手向上回球",
+      "interval_s": [
+        2.8,
+        3.27
+      ],
+      "detail": "同一侧低点击球，这次球飞向画面右上。",
+      "scored": true,
+      "visual_contact_bracket_s": [
+        2.967,
+        3.033
+      ],
+      "outgoing_screen_direction": "右上"
+    },
+    {
+      "id": "A08",
+      "occurrence": 2,
+      "actor": "S1-near",
+      "technique": "回位",
+      "interval_s": [
+        3.2,
+        3.83
+      ],
+      "detail": "蹬离右侧支撑位，两脚重新打开，回到准备位置。",
+      "scored": true
+    },
+    {
+      "id": "A09",
+      "occurrence": 3,
+      "actor": "S2-near",
+      "technique": "手喂球",
+      "interval_s": [
+        3.8667,
+        4.2
+      ],
+      "detail": "切镜时近端人物手已举高，球离手后落向远端。起手受剪切，释放可见。",
+      "scored": true
+    },
+    {
+      "id": "A10",
+      "occurrence": 3,
+      "actor": "S2-far",
+      "technique": "向来球侧移动",
+      "interval_s": [
+        4.03,
+        4.57
+      ],
+      "detail": "远端练习者朝画面左侧移动，右脚领向来球，膝部降低。可接受侧步近球。",
+      "scored": true
+    },
+    {
+      "id": "A11",
+      "occurrence": 3,
+      "actor": "S2-far",
+      "technique": "低手向上回球",
+      "interval_s": [
+        4.33,
+        4.98
+      ],
+      "detail": "在画面左侧的低点击球，球向画面右上升起，球拍向身体对侧随挥。",
+      "scored": true,
+      "visual_contact_bracket_s": [
+        4.533,
+        4.6
+      ],
+      "outgoing_screen_direction": "右上"
+    },
+    {
+      "id": "A12",
+      "occurrence": 3,
+      "actor": "S2-far",
+      "technique": "回位",
+      "interval_s": [
+        4.98,
+        5.47
+      ],
+      "detail": "远端练习者收拍、调整双脚，回到正对球网的准备位置。",
+      "scored": true
+    },
+    {
+      "id": "A13",
+      "occurrence": 4,
+      "actor": "S2-near",
+      "technique": "手喂球",
+      "interval_s": [
+        5.57,
+        6.13
+      ],
+      "detail": "近端再次举手送球，球落向远端练习者的持拍侧。",
+      "scored": true
+    },
+    {
+      "id": "A14",
+      "occurrence": 4,
+      "actor": "S2-far",
+      "technique": "向来球侧移动",
+      "interval_s": [
+        6.15,
+        6.73
+      ],
+      "detail": "再次向画面左侧迎球，屈膝、将持拍手伸向来球。",
+      "scored": true
+    },
+    {
+      "id": "A15",
+      "occurrence": 4,
+      "actor": "S2-far",
+      "technique": "低手向上回球",
+      "interval_s": [
+        6.48,
+        7.16
+      ],
+      "detail": "第二镜头的第二次低点击球，球向画面左上飞出。",
+      "scored": true,
+      "visual_contact_bracket_s": [
+        6.7,
+        6.767
+      ],
+      "outgoing_screen_direction": "左上"
+    },
+    {
+      "id": "A16",
+      "occurrence": 4,
+      "actor": "S2-far",
+      "technique": "回位",
+      "interval_s": [
+        7.13,
+        7.57
+      ],
+      "detail": "随挥后调整脚步向中间收回，再次面对球网。",
+      "scored": true
+    }
+  ],
+  "audio": [
+    {
+      "id": "U1",
+      "kind": "speech",
+      "speaker": "V1",
+      "interval_s": [
+        0.84,
+        1.42
+      ],
+      "text": "往这边跳",
+      "note": "方向口令，语义相当的英译可接受。",
+      "scored": true
+    },
+    {
+      "id": "U2",
+      "kind": "speech",
+      "speaker": "V1",
+      "interval_s": [
+        3.16,
+        3.47
+      ],
+      "text": null,
+      "note": "整段与短窗独立识别不同，历史转写也有分歧。暂存疑似短音，文字与此区间产生的边均退出主评。",
+      "scored": false
+    },
+    {
+      "id": "U3",
+      "kind": "speech",
+      "speaker": "V1",
+      "interval_s": [
+        4.68,
+        4.94
+      ],
+      "text": "一个",
+      "note": "第一次明确的双音节计数。",
+      "scored": true
+    },
+    {
+      "id": "U4",
+      "kind": "speech",
+      "speaker": "V1",
+      "interval_s": [
+        7.0,
+        7.33
+      ],
+      "text": "两个",
+      "note": "第二次明确的双音节计数。",
+      "scored": true
+    },
+    {
+      "id": "U5",
+      "kind": "speech",
+      "speaker": "V1",
+      "interval_s": [
+        7.54,
+        8.0
+      ],
+      "text": "好，你…",
+      "note": "跨越切镜。结尾截断。内容指标只查核心“好”，原话完整度和额外补写另记。",
+      "scored": true
+    },
+    {
+      "id": "I1",
+      "kind": "sharp_transient",
+      "interval_s": [
+        0.886,
+        0.925
+      ],
+      "scored": true,
+      "detail": "原音轨中的显著短促宽带声。标出起音及早期衰减，未判定声源。"
+    },
+    {
+      "id": "I2",
+      "kind": "sharp_transient",
+      "interval_s": [
+        2.906,
+        2.945
+      ],
+      "scored": true,
+      "detail": "原音轨中的显著短促宽带声。标出起音及早期衰减，未判定声源。"
+    },
+    {
+      "id": "I3",
+      "kind": "sharp_transient",
+      "interval_s": [
+        4.482,
+        4.525
+      ],
+      "scored": true,
+      "detail": "原音轨中的显著短促宽带声。标出起音及早期衰减，未判定声源。"
+    },
+    {
+      "id": "I4",
+      "kind": "sharp_transient",
+      "interval_s": [
+        6.627,
+        6.67
+      ],
+      "scored": true,
+      "detail": "原音轨中的显著短促宽带声。标出起音及早期衰减，未判定声源。"
+    }
+  ],
+  "cooccurrences": [
+    {
+      "action": "A02",
+      "audio": "U1",
+      "intersection_s": [
+        0.84,
+        1.0
+      ],
+      "duration_s": 0.16,
+      "scored": true,
+      "short_overlap": false
+    },
+    {
+      "action": "A02",
+      "audio": "I1",
+      "intersection_s": [
+        0.886,
+        0.925
+      ],
+      "duration_s": 0.039,
+      "scored": true,
+      "short_overlap": true
+    },
+    {
+      "action": "A03",
+      "audio": "U1",
+      "intersection_s": [
+        0.84,
+        1.23
+      ],
+      "duration_s": 0.39,
+      "scored": true,
+      "short_overlap": false
+    },
+    {
+      "action": "A03",
+      "audio": "I1",
+      "intersection_s": [
+        0.886,
+        0.925
+      ],
+      "duration_s": 0.039,
+      "scored": true,
+      "short_overlap": true
+    },
+    {
+      "action": "A04",
+      "audio": "U1",
+      "intersection_s": [
+        1.2,
+        1.42
+      ],
+      "duration_s": 0.22,
+      "scored": true,
+      "short_overlap": false
+    },
+    {
+      "action": "A06",
+      "audio": "I2",
+      "intersection_s": [
+        2.906,
+        2.945
+      ],
+      "duration_s": 0.039,
+      "scored": true,
+      "short_overlap": true
+    },
+    {
+      "action": "A07",
+      "audio": "U2",
+      "intersection_s": [
+        3.16,
+        3.27
+      ],
+      "duration_s": 0.11,
+      "scored": false,
+      "short_overlap": false
+    },
+    {
+      "action": "A07",
+      "audio": "I2",
+      "intersection_s": [
+        2.906,
+        2.945
+      ],
+      "duration_s": 0.039,
+      "scored": true,
+      "short_overlap": true
+    },
+    {
+      "action": "A08",
+      "audio": "U2",
+      "intersection_s": [
+        3.2,
+        3.47
+      ],
+      "duration_s": 0.27,
+      "scored": false,
+      "short_overlap": false
+    },
+    {
+      "action": "A10",
+      "audio": "I3",
+      "intersection_s": [
+        4.482,
+        4.525
+      ],
+      "duration_s": 0.043,
+      "scored": true,
+      "short_overlap": true
+    },
+    {
+      "action": "A11",
+      "audio": "U3",
+      "intersection_s": [
+        4.68,
+        4.94
+      ],
+      "duration_s": 0.26,
+      "scored": true,
+      "short_overlap": false
+    },
+    {
+      "action": "A11",
+      "audio": "I3",
+      "intersection_s": [
+        4.482,
+        4.525
+      ],
+      "duration_s": 0.043,
+      "scored": true,
+      "short_overlap": true
+    },
+    {
+      "action": "A14",
+      "audio": "I4",
+      "intersection_s": [
+        6.627,
+        6.67
+      ],
+      "duration_s": 0.043,
+      "scored": true,
+      "short_overlap": true
+    },
+    {
+      "action": "A15",
+      "audio": "U4",
+      "intersection_s": [
+        7.0,
+        7.16
+      ],
+      "duration_s": 0.16,
+      "scored": true,
+      "short_overlap": false
+    },
+    {
+      "action": "A15",
+      "audio": "I4",
+      "intersection_s": [
+        6.627,
+        6.67
+      ],
+      "duration_s": 0.043,
+      "scored": true,
+      "short_overlap": true
+    },
+    {
+      "action": "A16",
+      "audio": "U4",
+      "intersection_s": [
+        7.13,
+        7.33
+      ],
+      "duration_s": 0.2,
+      "scored": true,
+      "short_overlap": false
+    },
+    {
+      "action": "A16",
+      "audio": "U5",
+      "intersection_s": [
+        7.54,
+        7.57
+      ],
+      "duration_s": 0.03,
+      "scored": true,
+      "short_overlap": true
+    }
+  ],
+  "relation_definition": "所有在同一时间轴上有正时长交集的动作与音频，语音跨切镜沿用同一个ID。"
+}

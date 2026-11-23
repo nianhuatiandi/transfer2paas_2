@@ -1,0 +1,389 @@
+{
+  "scope": "对原始caption的单样本人工规则式判读，由本次助手完成，无独立盲评。",
+  "rules": {
+    "context": [
+      "室内羽毛球场和隔网练习",
+      "第一镜头近端黑衣人有击球动作，技术类别另评",
+      "视角转换后的练习镜头中远端的人击球",
+      "结尾切到持拍者面对镜头示意"
+    ],
+    "action": "需明确谁做了哪项技术，并能以时刻、先后、独特细节或同一语句的锚点唯一对应一次。允许含义等价的自然语言。相同泛称不能复制给所有重复动作。",
+    "dir": "同一击须区分出球方向，身体移动方向另记。",
+    "audio_content": "四个可核对语音单元的核心意思，接受中英文和可辨认的截断片段。额外杜撰单记。",
+    "speech_time": "只接纳独立单句区间。另提供已报区间的条件均值（未报为空）和按四段计算的均值（未报计0）。",
+    "edges": "此处报告实例关系召回，正确的动作端、声音端与各自重复次序均须可辨。有时间按交集，无时间可用原句明确表述的同时关系。没有实例端点就不从镜头区间推断关系。",
+    "omissions": "各项为召回诊断，额外或相互矛盾的陈述以原文摘录列出。单样本不加权汇总。",
+    "count_window": "对“一个”“两个”各查一次。仅使用各模型明示的承载该词的练习段落起止。看参考语音中点是否落入；允许段落部分越界，越界另记。该指标只衡量粗定位。无段落时间则无时间证据。"
+  },
+  "denominators": {
+    "actions": 15,
+    "directions": 4,
+    "speech": 4,
+    "edges": 15,
+    "speech_edges": 7,
+    "transient_edges": 8
+  },
+  "native": {
+    "AVoCaDO": {
+      "path": "badminton_captions/avocado.txt",
+      "sha256": "f380063c721a2b006b45fd8c48bedd6902b4eb598c44b2cdd5be59b75cee0802",
+      "scene_facts": {
+        "室内羽毛球场和隔网练习": {
+          "hit": true,
+          "quote": "A wide, stationary shot"
+        },
+        "第一镜头近端黑衣人有击球动作，技术类别另评": {
+          "hit": true,
+          "quote": "The first player then hits another shot"
+        },
+        "视角转换后的练习镜头中远端的人击球": {
+          "hit": true,
+          "quote": "having just returned the shot"
+        },
+        "结尾切到持拍者面对镜头示意": {
+          "hit": true,
+          "quote": "cuts to a medium close-up"
+        }
+      },
+      "context_hits": 4,
+      "speech_gist_evidence": {
+        "U1": "Jump this way",
+        "U3": "One, two",
+        "U4": "One, two",
+        "U5": "Okay"
+      },
+      "speech_gist_hits": 4,
+      "speech_timing": {
+        "predicted_interval_s": {},
+        "tIoU": {},
+        "mean_tIoU_matched": null,
+        "mean_tIoU_all4": 0.0
+      },
+      "matched_action_ids": [],
+      "matched_direction_ids": [],
+      "matched_edge_ids": [],
+      "action_recall": "0/15",
+      "direction_recall": "0/4",
+      "edge_recall": "0/15",
+      "action_boundary_error_s": null,
+      "short_quotes_for_review": [
+        "moves to his left",
+        "powerful overhead smash"
+      ],
+      "judgment_zh": "认出前后两处的接球者，也写了近端人再次击球。首轮移动方向写反，另加头顶重杀，未区分两次向上回球的球路。",
+      "count_window": {
+        "explicit_paragraph_s": null,
+        "ids_covered": [],
+        "covered": 0,
+        "applicable": false
+      }
+    },
+    "AVowed": {
+      "path": "badminton_captions/avowed.txt",
+      "sha256": "0c52abb5a96e14ece8a124073eba75be6b41c3ed6662447c1c8e5ee0fb035d0d",
+      "scene_facts": {
+        "室内羽毛球场和隔网练习": {
+          "hit": true,
+          "quote": "blue indoor court"
+        },
+        "第一镜头近端黑衣人有击球动作，技术类别另评": {
+          "hit": true,
+          "quote": "swinging the racket to strike"
+        },
+        "视角转换后的练习镜头中远端的人击球": {
+          "hit": true,
+          "quote": "lunging and swinging his racket"
+        },
+        "结尾切到持拍者面对镜头示意": {
+          "hit": true,
+          "quote": "facing the camera directly"
+        }
+      },
+      "context_hits": 4,
+      "speech_gist_evidence": {
+        "U1": "往这边跳",
+        "U3": "一个",
+        "U4": "两个",
+        "U5": "好"
+      },
+      "speech_gist_hits": 4,
+      "speech_timing": {
+        "predicted_interval_s": {
+          "U1": [
+            0.93,
+            1.56
+          ],
+          "U3": [
+            4.66,
+            5.19
+          ],
+          "U4": [
+            6.96,
+            7.49
+          ],
+          "U5": [
+            7.52,
+            7.84
+          ]
+        },
+        "tIoU": {
+          "U1": 0.6806,
+          "U3": 0.4906,
+          "U4": 0.6226,
+          "U5": 0.625
+        },
+        "mean_tIoU_matched": 0.6047,
+        "mean_tIoU_all4": 0.6047
+      },
+      "matched_action_ids": [],
+      "matched_direction_ids": [],
+      "matched_edge_ids": [],
+      "action_recall": "0/15",
+      "direction_recall": "0/4",
+      "edge_recall": "0/15",
+      "action_boundary_error_s": null,
+      "short_quotes_for_review": [
+        "a series of athletic movements",
+        "pink shorts",
+        "as an observer"
+      ],
+      "judgment_zh": "给出镜头和单句时间，人物位置和动态概述部分正确。第二镜头近端人在喂球，文中写成穿粉短裤的观察者。lunging 是镜头级概述，无法定位到两次具体迎球。",
+      "count_window": {
+        "explicit_paragraph_s": [
+          3.8,
+          7.48
+        ],
+        "ids_covered": [
+          "U3",
+          "U4"
+        ],
+        "covered": 2,
+        "applicable": true
+      }
+    },
+    "DiaDem": {
+      "path": "badminton_captions/diadem.txt",
+      "sha256": "be2ff6571642e2672b50327bd5d4341c8dcb1ff09d9f17bbebd44ccd4cf8333b",
+      "scene_facts": {
+        "室内羽毛球场和隔网练习": {
+          "hit": true,
+          "quote": "indoor court"
+        },
+        "第一镜头近端黑衣人有击球动作，技术类别另评": {
+          "hit": true,
+          "quote": "lunging and jumping to return shots"
+        },
+        "视角转换后的练习镜头中远端的人击球": {
+          "hit": false,
+          "quote": null
+        },
+        "结尾切到持拍者面对镜头示意": {
+          "hit": false,
+          "quote": null
+        }
+      },
+      "context_hits": 2,
+      "speech_gist_evidence": {
+        "U1": "往这边跳",
+        "U3": "一个",
+        "U4": "两个",
+        "U5": "好"
+      },
+      "speech_gist_hits": 4,
+      "speech_timing": {
+        "predicted_interval_s": {},
+        "tIoU": {},
+        "mean_tIoU_matched": null,
+        "mean_tIoU_all4": 0.0
+      },
+      "matched_action_ids": [],
+      "matched_direction_ids": [],
+      "matched_edge_ids": [],
+      "action_recall": "0/15",
+      "direction_recall": "0/4",
+      "edge_recall": "0/15",
+      "action_boundary_error_s": null,
+      "short_quotes_for_review": [
+        "throughout the clip",
+        "lunging and jumping"
+      ],
+      "judgment_zh": "捕捉到近端移动接球和四个主要语音内容，动作只以反复跨步、跳动概括。把全片描述为同一固定全景，漏了结尾切镜。",
+      "count_window": {
+        "explicit_paragraph_s": null,
+        "ids_covered": [],
+        "covered": 0,
+        "applicable": false
+      }
+    },
+    "TimeChat": {
+      "path": "badminton_captions/timechat.txt",
+      "sha256": "e2c9c67c59bc56924dca6c7db45cf83f32d4b8582735ae16a95891e39d39d8ba",
+      "scene_facts": {
+        "室内羽毛球场和隔网练习": {
+          "hit": true,
+          "quote": "badminton hall"
+        },
+        "第一镜头近端黑衣人有击球动作，技术类别另评": {
+          "hit": true,
+          "quote": "coach demonstrates the footwork"
+        },
+        "视角转换后的练习镜头中远端的人击球": {
+          "hit": false,
+          "quote": null
+        },
+        "结尾切到持拍者面对镜头示意": {
+          "hit": false,
+          "quote": null
+        }
+      },
+      "context_hits": 2,
+      "speech_gist_evidence": {
+        "U1": "往这边跳",
+        "U3": "一个",
+        "U4": "两个",
+        "U5": "好"
+      },
+      "speech_gist_hits": 4,
+      "speech_timing": {
+        "predicted_interval_s": {},
+        "tIoU": {},
+        "mean_tIoU_matched": null,
+        "mean_tIoU_all4": 0.0
+      },
+      "matched_action_ids": [],
+      "matched_direction_ids": [],
+      "matched_edge_ids": [],
+      "action_recall": "0/15",
+      "direction_recall": "0/4",
+      "edge_recall": "0/15",
+      "action_boundary_error_s": null,
+      "short_quotes_for_review": [
+        "jump smash",
+        "00:05-00:09",
+        "00:10-00:12",
+        "好，你来"
+      ],
+      "judgment_zh": "描述了练习先后和两次重复，但多处写成跳杀。末两段部分或全部越过8秒，结尾还补写“你来”。",
+      "count_window": {
+        "explicit_paragraph_s": [
+          5,
+          9
+        ],
+        "ids_covered": [
+          "U4"
+        ],
+        "covered": 1,
+        "applicable": true
+      }
+    }
+  },
+  "supplementary": [
+    {
+      "model": "MotionAtlas-4B",
+      "variant": "motionatlas_first_mask",
+      "path": "badminton_captions/motionatlas_first_mask.txt",
+      "sha256": "4cff7d5b2a580d54f414e2b4c9137bb6669469b2fabdbb168a013a598650081f",
+      "example": "forehand and backhand",
+      "review": "开场人物的横移和回撤概述可用，正反手连续击球缺少足够证据。",
+      "scope": "开场目标人物区域描述，音频与全片指标不适用。"
+    },
+    {
+      "model": "MotionAtlas-4B",
+      "variant": "motionatlas_overlay_all",
+      "path": "badminton_captions/motionatlas_overlay_all.txt",
+      "sha256": "eea389170da80dfc7a9335dc452d276e2a8d24fe36610c1785f4f1b57e7faac8",
+      "example": "preparing to serve",
+      "review": "明确说向上挥拍、重新站好，但把近端练习者写成发球人，动作链的起点已错。",
+      "scope": "开场目标人物区域描述，音频与全片指标不适用。"
+    },
+    {
+      "model": "Qwen3.8-Omni-Flash",
+      "path": "av_caption_benchmark/qwen3.8_omni_results/20261122_212122/badminton_response.txt",
+      "sha256": "448e2446a846dee5f6be904b220f761e2814ee94654d733193b52744726bfd04",
+      "run": "20261122_212122",
+      "scope": "归档的早期专用prompt，独立于用作候选的v0.8输出。只补充核查语音时序。",
+      "speech_timing": {
+        "predicted_interval_s": {
+          "U1": [
+            0.9,
+            1.5
+          ],
+          "U3": [
+            3,
+            3.3
+          ],
+          "U4": [
+            4.6,
+            5
+          ],
+          "U5": [
+            5.9,
+            6.6
+          ]
+        },
+        "tIoU": {
+          "U1": 0.7879,
+          "U3": 0.0,
+          "U4": 0.0,
+          "U5": 0.0
+        },
+        "mean_tIoU_matched": 0.197,
+        "mean_tIoU_all4": 0.197
+      },
+      "review": "“一个”放在3.0–3.3秒，“两个”放在4.6–5.0秒，两个计数区间与对应参考均无交集。"
+    }
+  ],
+  "minimal_pair": {
+    "scope": "仅使用第三和第四次回球的挥拍及“一个”“两个”两条语音。由参考构造，算法自检。",
+    "variants": [
+      {
+        "condition": "按原片配对",
+        "audio_intervals": {
+          "U3": [
+            4.68,
+            4.94
+          ],
+          "U4": [
+            7.0,
+            7.33
+          ]
+        },
+        "edges": [
+          [
+            "A11",
+            "U3"
+          ],
+          [
+            "A15",
+            "U4"
+          ]
+        ],
+        "edge_f1": 1.0
+      },
+      {
+        "condition": "对调两句计数",
+        "audio_intervals": {
+          "U3": [
+            7.0,
+            7.33
+          ],
+          "U4": [
+            4.68,
+            4.94
+          ]
+        },
+        "edges": [
+          [
+            "A11",
+            "U4"
+          ],
+          [
+            "A15",
+            "U3"
+          ]
+        ],
+        "edge_f1": 0.0
+      }
+    ]
+  }
+}
