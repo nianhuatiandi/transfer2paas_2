@@ -1,0 +1,279 @@
+[R01] FineGym: A Hierarchical Video Dataset for Fine-Grained Action Understanding
+CVPR 2020
+https://openaccess.thecvf.com/content_CVPR_2020/html/Shao_FineGym_A_Hierarchical_Video_Dataset_for_Fine-Grained_Action_Understanding_CVPR_2020_paper.html
+
+[R02] FineDiving: A Fine-Grained Dataset for Procedure-Aware Action Quality Assessment
+CVPR 2022
+https://openaccess.thecvf.com/content/CVPR2022/html/Xu_FineDiving_A_Fine-Grained_Dataset_for_Procedure-Aware_Action_Quality_Assessment_CVPR_2022_paper.html
+
+[R03] FineAction: A Fine-Grained Video Dataset for Temporal Action Localization
+IEEE TIP 2022；arXiv 初版 2021
+https://arxiv.org/abs/2105.11107
+
+[R04] FineSports: A Multi-person Hierarchical Sports Video Dataset for Fine-grained Action Understanding
+CVPR 2024
+https://openaccess.thecvf.com/content/CVPR2024/html/Xu_FineSports_A_Multi-person_Hierarchical_Sports_Video_Dataset_for_Fine-grained_Action_CVPR_2024_paper.html
+
+[R05] FineParser: A Fine-grained Spatio-temporal Action Parser for Human-centric Action Quality Assessment
+CVPR 2024
+https://openaccess.thecvf.com/content/CVPR2024/html/Xu_FineParser_A_Fine-grained_Spatio-temporal_Action_Parser_for_Human-centric_Action_Quality_CVPR_2024_paper.html
+
+[R06] SportsHHI: A Dataset for Human-Human Interaction Detection in Sports Videos
+CVPR 2024
+https://openaccess.thecvf.com/content/CVPR2024/html/Wu_SportsHHI_A_Dataset_for_Human-Human_Interaction_Detection_in_Sports_Videos_CVPR_2024_paper.html
+
+[R07] HAA500: Human-Centric Atomic Action Dataset With Curated Videos
+ICCV 2021
+https://openaccess.thecvf.com/content/ICCV2021/papers/Chung_HAA500_Human-Centric_Atomic_Action_Dataset_With_Curated_Videos_ICCV_2021_paper.pdf
+
+[R08] Intra- and Inter-Action Understanding via Temporal Action Parsing
+CVPR 2020
+https://arxiv.org/abs/2005.10229
+
+[R09] BABEL: Bodies, Action and Behavior With English Labels
+CVPR 2021
+https://openaccess.thecvf.com/content/CVPR2021/html/Punnakkal_BABEL_Bodies_Action_and_Behavior_With_English_Labels_CVPR_2021_paper.html
+
+[R10] Generating Diverse and Natural 3D Human Motions From Text
+CVPR 2022
+https://openaccess.thecvf.com/content/CVPR2022/html/Guo_Generating_Diverse_and_Natural_3D_Human_Motions_From_Text_CVPR_2022_paper.html
+
+[R11] MOMA: Multi-Object Multi-Actor Activity Parsing
+NeurIPS 2021
+https://proceedings.neurips.cc/paper_files/paper/2021/hash/95688ba636a4720a85b3634acfec8cdd-Abstract.html
+
+[R12] MOMA-LRG: Language-Refined Graphs for Multi-Object Multi-Actor Activity Parsing
+NeurIPS 2022 Datasets and Benchmarks
+https://proceedings.nips.cc/paper_files/paper/2022/hash/22c16986b2f50af520f56dc34d91e403-Abstract-Datasets_and_Benchmarks.html
+
+[R13] MotionGPT: Human Motion as a Foreign Language
+NeurIPS 2023
+https://arxiv.org/abs/2306.14795
+
+[R14] Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives
+CVPR 2024
+https://openaccess.thecvf.com/content/CVPR2024/html/Grauman_Ego-Exo4D_Understanding_Skilled_Human_Activity_from_First-_and_Third-Person_Perspectives_CVPR_2024_paper.html
+
+[R15] MotionBench: Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models
+CVPR 2025
+https://arxiv.org/abs/2501.02955
+
+[R16] FAVOR-Bench: A Comprehensive Benchmark for Fine-Grained Video Motion Understanding
+NeurIPS 2025 Datasets and Benchmarks
+https://arxiv.org/abs/2503.14935
+
+[R17] Encoder-Free Human Motion Understanding via Structured Motion Descriptions
+arXiv；未在本次核验会议版本
+https://arxiv.org/abs/2604.21668
+
+[R18] FineMotion: A Dataset and Benchmark with both Spatial and Temporal Annotation for Fine-grained Motion Generation and Editing
+arXiv；未在本次核验会议版本
+https://arxiv.org/abs/2507.19850
+
+[R19] MA-Bench: Towards Fine-grained Micro-Action Understanding
+CVPR 2026
+https://openaccess.thecvf.com/content/CVPR2026/html/Li_MA-Bench_Towards_Fine-grained_Micro-Action_Understanding_CVPR_2026_paper.html
+
+[R20] EgoActionBench: Benchmarking Dense Action Captioning for Egocentric Human Videos
+arXiv 2026-11-02；未在本次核验会议版本
+https://arxiv.org/abs/2611.03646
+
+[R21] Dense-Captioning Events in Videos
+ICCV 2017
+https://openaccess.thecvf.com/content_iccv_2017/html/Krishna_Dense-Captioning_Events_in_ICCV_2017_paper.html
+
+[R22] Towards Automatic Learning of Procedures from Web Instructional Videos
+AAAI 2018；arXiv 初版 2017
+https://arxiv.org/abs/1703.09788
+
+[R23] End-to-End Dense Video Captioning With Parallel Decoding
+ICCV 2021
+https://openaccess.thecvf.com/content/ICCV2021/html/Wang_End-to-End_Dense_Video_Captioning_With_Parallel_Decoding_ICCV_2021_paper.html
+
+[R24] Vid2Seq: Large-Scale Pretraining of a Visual Language Model for Dense Video Captioning
+CVPR 2023
+https://openaccess.thecvf.com/content/CVPR2023/html/Yang_Vid2Seq_Large-Scale_Pretraining_of_a_Visual_Language_Model_for_Dense_CVPR_2023_paper.html
+
+[R25] TimeChat: A Time-sensitive Multimodal Large Language Model for Long Video Understanding
+CVPR 2024
+https://openaccess.thecvf.com/content/CVPR2024/html/Ren_TimeChat_A_Time-sensitive_Multimodal_Large_Language_Model_for_Long_Video_CVPR_2024_paper.html
+
+[R26] VTimeLLM: Empower LLM to Grasp Video Moments
+CVPR 2024
+https://openaccess.thecvf.com/content/CVPR2024/html/Huang_VTimeLLM_Empower_LLM_to_Grasp_Video_Moments_CVPR_2024_paper.html
+
+[R27] AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark
+ICLR 2025；arXiv 初版 2024
+https://arxiv.org/abs/2410.03051
+
+[R28] VALOR: Vision-Audio-Language Omni-Perception Pretraining Model and Dataset
+arXiv；本次以2023版本为来源
+https://arxiv.org/abs/2304.08345
+
+[R29] VAST: A Vision-Audio-Subtitle-Text Omni-Modality Foundation Model and Dataset
+arXiv；本次以2023版本为来源
+https://arxiv.org/abs/2305.18500
+
+[R30] Exploring the Role of Audio in Video Captioning
+CVPR 2024 Workshops（非主会论文）
+https://openaccess.thecvf.com/content/CVPR2024W/MULA/html/Shen_Exploring_the_Role_of_Audio_in_Video_Captioning_CVPRW_2024_paper.html
+
+[R31] video-SALMONN 2: Captioning-Enhanced Audio-Visual Large Language Models
+arXiv 2025版本；与2024早期同系稿合并计数
+https://arxiv.org/abs/2506.15220
+
+[R32] UGC-VideoCaptioner: An Omni UGC Video Detail Caption Model and New Benchmarks
+arXiv；未在本次核验会议版本
+https://arxiv.org/abs/2507.11336
+
+[R33] Omni-Captioner: Data Pipeline, Models, and Benchmark for Omni Detailed Perception
+ICLR 2026；arXiv 初版 2025
+https://arxiv.org/abs/2510.12720
+
+[R34] FAVE: A Structured Benchmark for Fine-Grained Audio-Visual Temporal Evaluation in Multimodal LLMs
+CVPR 2026
+https://openaccess.thecvf.com/content/CVPR2026/html/Lu_FAVE_A_Structured_Benchmark_for_Fine-Grained_Audio-Visual_Temporal_Evaluation_in_CVPR_2026_paper.html
+
+[R35] Temporal and Cross-Modal Alignment for Enhanced Audiovisual Video Captioning
+ECCV 2026；已核验Springer会议论文集及作者发布页
+https://arxiv.org/abs/2607.01667
+
+[R36] AVSCap: Orchestrating Audio-Visual Synergy for Omni-modal Video Captioning
+arXiv 2026-07；未在本次核验会议版本
+https://arxiv.org/abs/2607.12820
+
+[R37] AVCap: Reinforcing Audio-Video Joint Caption with Detail-Aware Reward
+arXiv 2026-08；未在本次核验会议版本
+https://arxiv.org/abs/2608.06930
+
+[R38] OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning
+NeurIPS 2026 Evaluations & Datasets；已核验会议官方论文清单，会议尚未举行
+https://arxiv.org/abs/2610.12458
+
+[R39] AVTrace: Diagnosing Audio-Visual Temporal Reasoning in Omni Models
+arXiv 2026-09；未在本次核验会议版本
+https://arxiv.org/abs/2609.19991
+
+[R40] AudioCaps: Generating Captions for Audios in The Wild
+NAACL 2019
+https://aclanthology.org/N19-1011/
+
+[R41] Clotho: An Audio Captioning Dataset
+ICASSP 2020；arXiv初版2019，规模采用原版论文
+https://arxiv.org/abs/1910.09387
+
+[R42] Perception Test: A Diagnostic Benchmark for Multimodal Video Models
+NeurIPS 2023 Datasets and Benchmarks
+https://proceedings.neurips.cc/paper_files/paper/2023/hash/8540fba4abdc7f9f7a7b1cc6cd60e409-Abstract.html
+
+[R43] OmniBench: Towards The Future of Universal Omni-Language Models
+arXiv；本次以2024版本为来源
+https://arxiv.org/abs/2409.15272
+
+[R44] Audio-Visual Event Localization in Unconstrained Videos
+ECCV 2018
+https://www.ecva.net/papers/eccv_2018/papers_ECCV/html/Yapeng_Tian_Audio-Visual_Event_Localization_ECCV_2018_paper.php
+
+[R45] Unified Multisensory Perception: Weakly-Supervised Audio-Visual Video Parsing
+ECCV 2020
+https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/513_ECCV_2020_paper.php
+
+[R46] WorldSense: Evaluating Real-world Omnimodal Understanding for Multimodal LLMs
+arXiv；本次以2025版本为来源
+https://arxiv.org/abs/2502.04326
+
+[R47] Daily-Omni: Towards Audio-Visual Reasoning with Temporal Alignment across Modalities
+arXiv；本次以2025版本为来源
+https://arxiv.org/abs/2505.17862
+
+[R48] SODA: Story Oriented Dense Video Captioning Evaluation Framework
+ECCV 2020
+https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/6406_ECCV_2020_paper.php
+
+[R49] FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
+EMNLP 2023
+https://aclanthology.org/2023.emnlp-main.741/
+
+[R50] G-Eval: NLG Evaluation using Gpt-4 with Better Human Alignment
+EMNLP 2023
+https://aclanthology.org/2023.emnlp-main.153/
+
+[R51] Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena
+NeurIPS 2023 Datasets and Benchmarks
+https://arxiv.org/abs/2306.05685
+
+[R52] CLAIR: Evaluating Image Captions with Large Language Models
+EMNLP 2023
+https://aclanthology.org/2023.emnlp-main.841/
+
+[R53] SPICE: Semantic Propositional Image Caption Evaluation
+arXiv 初版 2016；本次以该版本为来源
+https://arxiv.org/abs/1607.08822
+
+[R54] CIDEr: Consensus-Based Image Description Evaluation
+CVPR 2015
+https://openaccess.thecvf.com/content_cvpr_2015/html/Vedantam_CIDEr_Consensus-Based_Image_2015_CVPR_paper.html
+
+[R55] BERTScore: Evaluating Text Generation with BERT
+ICLR 2020；arXiv 初版 2019
+https://arxiv.org/abs/1904.09675
+
+[R56] LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos
+CVPR 2025
+https://openaccess.thecvf.com/content/CVPR2025/html/Geng_LongVALE_Vision-Audio-Language-Event_Benchmark_Towards_Time-Aware_Omni-Modal_Perception_of_Long_Videos_CVPR_2025_paper.html
+
+[R57] TAC: Timestamped Audio Captioning
+arXiv 2026-02；未在本次核验会议版本
+https://arxiv.org/abs/2602.15766
+
+[R58] Audio-centric Video Understanding Benchmark without Text Shortcut
+EMNLP 2025
+https://aclanthology.org/2025.emnlp-main.333/
+
+[R59] Action Genome: Actions As Compositions of Spatio-Temporal Scene Graphs
+CVPR 2020
+https://openaccess.thecvf.com/content_CVPR_2020/html/Ji_Action_Genome_Actions_As_Compositions_of_Spatio-Temporal_Scene_Graphs_CVPR_2020_paper.html
+
+[R60] TALL: Temporal Activity Localization via Language Query
+ICCV 2017
+https://openaccess.thecvf.com/content_iccv_2017/html/Gao_TALL_Temporal_Activity_ICCV_2017_paper.html
+
+[R61] Detecting Moments and Highlights in Videos via Natural Language Queries
+NeurIPS 2021
+https://proceedings.neurips.cc/paper_files/paper/2021/hash/62e0973455fd26eb03e91d5741a4a3bb-Abstract.html
+
+[R62] AVHBench: A Cross-Modal Hallucination Benchmark for Audio-Visual Large Language Models
+arXiv；本次以2024版本为来源
+https://arxiv.org/abs/2410.18325
+
+[R63] Can Audio Captions Be Evaluated with Image Caption Metrics?
+ICASSP 2022；arXiv 初版 2021
+https://arxiv.org/abs/2110.04684
+
+[R64] Object Hallucination in Image Captioning
+EMNLP 2018
+https://aclanthology.org/D18-1437/
+
+[R65] LongCap: Hour-Scale Timestamped Audio Captioning via Chunk-wise Processing
+arXiv 2026-11-08；未在本次核验会议版本
+https://arxiv.org/abs/2611.11125
+
+[R66] OmniScript: Towards Audio-Visual Script Generation for Long-Form Cinematic Video
+arXiv 2026-04；未在本次核验会议版本
+https://arxiv.org/abs/2604.11102
+
+[R67] AVoCaDO: An Audiovisual Video Captioner Driven by Temporal Orchestration
+arXiv 2025-10；未在本次核验会议版本
+https://arxiv.org/abs/2510.10395
+
+[R68] VCapsBench: A Large-scale Fine-grained Benchmark for Video Caption Quality Evaluation
+arXiv；未在本次核验会议版本
+https://arxiv.org/abs/2505.23484
+
+[R69] TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions
+ICML 2026（PMLR 正式论文页核验）
+https://proceedings.mlr.press/v306/yao26o.html
+
+[R70] Putting Captions to the Test: Evaluating Video Caption Quality through Multiple-Choice Question Answering
+ACL 2026 Long Papers
+https://aclanthology.org/2026.acl-long.777/

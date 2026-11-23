@@ -1,0 +1,52 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "video": "badminton_lift_31679122798_first8s.mp4",
+  "rounds": [
+    {
+      "version": "v0.4",
+      "directory": "E:\\Download\\sports_video_data\\qwen3.8_omni_results\\20261123_000311_v04",
+      "method": "single call",
+      "new_api_requests": 1,
+      "new_tokens": 21743,
+      "all_requests_complete": true,
+      "closing_subtitle_present": false,
+      "forehand_high_serve_labels": 0,
+      "limitations": "Manual observations are not a labelled benchmark or accuracy score."
+    },
+    {
+      "version": "v0.5",
+      "directory": "E:\\Download\\sports_video_data\\qwen3.8_omni_results\\20261123_000758_v05",
+      "method": "single call; prompt-only change",
+      "new_api_requests": 1,
+      "new_tokens": 21474,
+      "all_requests_complete": true,
+      "closing_subtitle_present": false,
+      "forehand_high_serve_labels": 0,
+      "limitations": "Manual observations are not a labelled benchmark or accuracy score."
+    },
+    {
+      "version": "v0.6",
+      "directory": "E:\\Download\\sports_video_data\\qwen3.8_omni_results\\20261123_001444_pipeline_v06",
+      "method": "three visual shots plus separate audio",
+      "new_api_requests": 4,
+      "new_tokens": 79746,
+      "all_requests_complete": true,
+      "closing_subtitle_present": true,
+      "forehand_high_serve_labels": 1,
+      "limitations": "Manual observations are not a labelled benchmark or accuracy score."
+    },
+    {
+      "version": "v0.7",
+      "directory": "E:\\Download\\sports_video_data\\qwen3.8_omni_results\\20261123_002028_pipeline_v07",
+      "method": "review two visual shots; reuse audio and closing shot",
+      "new_api_requests": 2,
+      "new_tokens": 70487,
+      "all_requests_complete": true,
+      "closing_subtitle_present": true,
+      "forehand_high_serve_labels": 0,
+      "limitations": "Manual observations are not a labelled benchmark or accuracy score."
+    }
+  ],
+  "total_new_requests": 8,
+  "total_new_tokens": 193450
+}

@@ -1,0 +1,26 @@
+{
+  "shot": "S03",
+  "speech_segments": [
+    {
+      "source_utterance_id": "U05",
+      "start": 7.633,
+      "end": 7.88,
+      "speaker": "V01",
+      "text": "你……",
+      "state": "tail of an utterance ('好，你……') that began before the camera cut; only the final syllable(s) fall inside this shot; delivery transitioning into the next point",
+      "speaker_status": "supported",
+      "actor": "S03-P01",
+      "confidence": "medium",
+      "evidence": "The only person on screen (S03-P01) faces the camera wearing a clipped lapel microphone, and his mouth shape changes continuously across frames 7.633–7.967 (open, mid-speech positions), matching the audible male Mandarin voice V01 at this interval; no competing speaker is visible or plausible. Because the utterance straddles the cut (~7.5–7.633), only its trailing portion is attributed to this shot, so timing/text are approximate.",
+      "related_actions": []
+    }
+  ],
+  "action_sounds": [],
+  "unmatched_sounds": [],
+  "uncertainties": [
+    "The on-screen subtitle '你们是不是经常遇到这个问题' appears at 7.967, implying a new utterance begins just before the clip ends at 8.0; its audibility and exact onset cannot be confirmed from the supplied candidate list, so it is not transcribed as speech here.",
+    "The precise cut point between the rally scene and the coach-to-camera shot lies between 7.5 and 7.633, so the split of U05 ('好' before the cut, '你……' after) is an estimate.",
+    "No candidate actions exist in this shot, so no action-sound attribution was possible; the rhythmic thudding and taps from the earlier rally scene end by 7.0 and do not overlap this shot."
+  ],
+  "validation_warnings": []
+}

@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "shot_count": 3,
+  "action_count": 14,
+  "sorted_action_ids": true,
+  "timestamps_and_labels_validated": true,
+  "warnings": [
+    "Single-frame visible text normalized to source frame exposure: S03 at 00:07.967"
+  ],
+  "limits": [
+    "Visual event content and audio transcription are model estimates, not verified ground truth.",
+    "No automatic assignment of voices or sounds to visible people or actions.",
+    "Scene-cut detection uses a configurable pixel-change threshold and requires review on other videos."
+  ]
+}

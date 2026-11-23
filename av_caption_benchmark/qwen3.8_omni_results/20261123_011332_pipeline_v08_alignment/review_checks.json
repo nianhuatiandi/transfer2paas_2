@@ -1,0 +1,38 @@
+{
+  "response": "qwen3.8_omni_results\\20261123_011332_pipeline_v08_alignment\\badminton_response.txt",
+  "four_sections_in_order": true,
+  "storyline_intervals": [
+    [
+      0.0,
+      3.867
+    ],
+    [
+      3.867,
+      7.633
+    ],
+    [
+      7.633,
+      8.0
+    ]
+  ],
+  "storyline_gaps_seconds": [],
+  "invalid_intervals": [],
+  "action_count": 16,
+  "duplicate_action_ids": [],
+  "action_ids_sequential": true,
+  "actions_in_start_time_order": true,
+  "technique_counts": {
+    "hand feed": 4,
+    "lunge": 4,
+    "recovery": 4,
+    "upward return": 4
+  },
+  "unknown_techniques": [],
+  "visual_evidence_fields": 16,
+  "observed_shot_ids": [
+    "S01",
+    "S02",
+    "S03"
+  ],
+  "limitations": "Structural checks only. Shot content, identity, terminology correctness, audio transcription, and event boundaries require independent review."
+}

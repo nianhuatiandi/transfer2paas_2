@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "shot_count": 3,
+  "action_count": 16,
+  "sorted_action_ids": true,
+  "timestamps_and_labels_validated": true,
+  "warnings": [
+    "Rounded action onset bounded to observed shot: S02 S02-P01",
+    "Unverified model pixel coordinates in evidence: S02 S02-P01",
+    "Unverified model pixel coordinates in evidence: S02 S02-P02",
+    "Unverified model pixel coordinates in evidence: S02 S02-P01",
+    "Unverified model pixel coordinates in evidence: S02 S02-P02",
+    "Unverified model pixel coordinates in evidence: S02 S02-P02",
+    "U05: Cross-cut transcript fragments may repeat a syllable; exact split remains uncertain (original fragments preserved).",
+    "Single-frame visible text normalized to source frame exposure: S03 at 00:07.967"
+  ],
+  "av_alignment": "model_reviewed",
+  "limits": [
+    "Visual event content and audio transcription are model estimates, not verified ground truth.",
+    "AV links are model-reviewed estimates, not human-verified synchronization.",
+    "Scene-cut detection uses a configurable pixel-change threshold and requires review on other videos."
+  ]
+}

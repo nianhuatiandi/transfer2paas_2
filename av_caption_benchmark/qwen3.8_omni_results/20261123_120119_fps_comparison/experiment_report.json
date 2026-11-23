@@ -1,0 +1,367 @@
+{
+  "full_clip": {
+    "default_video": {
+      "shot_count": 2,
+      "shots": [
+        {
+          "start": 0.0,
+          "end": 3.95,
+          "description": "Fixed wide view from behind one player on an indoor badminton court with blue playing surface and green borders. The foreground player is seen mostly from the back in a black short-sleeved shirt with pink graphics, light gray shorts, white socks, and dark shoes, holding a racket in his right hand; across the net, another male player in a dark top and dark shorts faces him. They rally continuously: shuttlecock travels over the net, both players move laterally and step into shots, and by about 2 to 4 seconds the far-side player jumps for overhead returns while the near-side player stays lower and reacts from midcourt."
+        },
+        {
+          "start": 3.96,
+          "end": 7.8,
+          "description": "A cut changes to a fixed rear view of a different pairing on the same court. In the foreground stands a curly-haired man in a navy sleeveless vest over a white T-shirt, black shorts, orange socks, and dark shoes, watching rather than actively rallying. Across the net, a younger-looking boy in a maroon or red-toned top and dark pants performs repeated practice strokes while moving side to side under feeders' tosses from off-screen left and/or right. He crouches, steps, lifts the racket, and at least once rises into a jumping overhead action before landing and resetting."
+        }
+      ],
+      "tail": {
+        "last_observed_time": 7.8,
+        "description": "Near the end, the second shot remains visible: the vested adult stands upright in the foreground facing the net, while the child continues active movement on the far side of the court after hitting successive fed shuttles. No further scene change is observed within the clip.",
+        "readable_text": [
+          "YONEX",
+          "旭日星空",
+          "XURI STAR 专业羽毛球学院",
+          "李宇轩教练 bilibili"
+        ]
+      },
+      "event_count": 11,
+      "usage": {
+        "prompt_tokens": 5182,
+        "total_tokens": 7468,
+        "completion_tokens": 2286,
+        "prompt_tokens_details": {
+          "cached_tokens": 3584,
+          "audio_tokens": 58,
+          "video_tokens": 4754,
+          "text_tokens": 370
+        },
+        "completion_tokens_details": {
+          "text_tokens": 2286
+        }
+      },
+      "elapsed_seconds": 37.44,
+      "tail_subtitle_read": false
+    },
+    "nested_fps10_legacy": {
+      "shot_count": 2,
+      "shots": [
+        {
+          "start": 0.0,
+          "end": 3.9,
+          "description": "Fixed wide view across a blue indoor badminton court with green side borders and white lines. A foreground player in a black short-sleeved shirt with pink graphics on the back, light gray shorts, dark socks, and athletic shoes stands near center facing away from the camera toward the net. Across the net, another player in a dark top and dark lower garment is visible at midcourt. The far-side player feeds shuttlecocks over the net; the foreground player moves laterally and forward-backward to hit them with a racket. Banners hang high in the background."
+        },
+        {
+          "start": 4.0,
+          "end": 7.6,
+          "description": "Same fixed wide angle continues after a cut or change in setup within the same court scene. The foreground now shows a different player wearing a dark sleeveless outer layer over a white short-sleeved shirt, black shorts, dark socks, and athletic shoes, standing nearer the right half of the near court and facing the net. Across the net, a feeder in a dark maroon/burgundy top and light-colored pants repeatedly sends shuttlecocks over. The near player mostly watches and makes small preparatory movements rather than clearly striking each feed during this interval."
+        }
+      ],
+      "tail": {
+        "last_observed_time": 7.6,
+        "description": "Near the end, both players remain on opposite sides of the net in the same wide court view. The near player in the dark sleeveless top over a white shirt stays poised on the right side of the near court while the far-side feeder in a maroon/burgundy top and light pants remains active around the service area. No new action beyond continued feeding/preparation is clearly completed before the clip ends.",
+        "readable_text": [
+          "YONEX",
+          "旭日星空 XURI STAR 专业羽毛球学院",
+          "李宇轩教练 bilibili"
+        ]
+      },
+      "event_count": 4,
+      "usage": {
+        "prompt_tokens": 5182,
+        "total_tokens": 6727,
+        "completion_tokens": 1545,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "video_tokens": 4754,
+          "text_tokens": 370
+        },
+        "completion_tokens_details": {
+          "text_tokens": 1545
+        }
+      },
+      "elapsed_seconds": 27.52,
+      "tail_subtitle_read": false
+    },
+    "api_fps10_sibling": {
+      "shot_count": 2,
+      "shots": [
+        {
+          "start": 0.0,
+          "end": 3.9,
+          "description": "Static wide rear-court view on an indoor blue badminton court with green side borders, white net across mid-frame, yellow posts, and hanging banners in the background. Two players are visible: a nearer player seen from behind wears a black short-sleeved shirt with pink lettering/graphic on the back, light gray shorts, white socks, dark shoes, and holds a racket in the right hand; a farther player beyond the net faces camera in a pink-and-white top with dark lower garment. The near player repeatedly receives shuttles fed by the far player and performs low two-handed defensive returns near waist height, resetting between feeds. A shuttle tube or dispenser area is visible at the left side of the court."
+        },
+        {
+          "start": 3.9,
+          "end": 7.8,
+          "description": "Cut to another static wide rear-court angle on the same venue. The foreground player now stands with back to camera wearing a dark sleeveless vest over a white short-sleeved shirt, black shorts, dark socks, and dark shoes, holding a racket in the right hand. Across the net, the demonstrator/player in pink-and-white clothing faces camera and performs repeated low two-handed defensive returns while receiving multiple feed shots from the foreground side. Several loose shuttles are scattered on the floor near the right sideline. No interval within this shot is unobserved."
+        }
+      ],
+      "tail": {
+        "last_observed_time": 7.8,
+        "description": "The final observed frame remains in the second wide court setup: the foreground player in a dark vest over white shirt stands with back to camera holding the racket, while the opposite player in pink-and-white clothing is still engaged in the drill facing camera. Background banners remain visible overhead.",
+        "readable_text": [
+          "YONEX",
+          "旭日星空 XURI STAR 专业羽毛球学院",
+          "李宇轩教练 bilibili"
+        ]
+      },
+      "event_count": 6,
+      "usage": {
+        "prompt_tokens": 24190,
+        "total_tokens": 25636,
+        "completion_tokens": 1446,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "video_tokens": 23762,
+          "text_tokens": 370
+        },
+        "completion_tokens_details": {
+          "text_tokens": 1446
+        }
+      },
+      "elapsed_seconds": 31.19,
+      "tail_subtitle_read": false
+    },
+    "local_10fps_images_plus_video": {
+      "shot_count": 3,
+      "shots": [
+        {
+          "start": 0.0,
+          "end": 3.833,
+          "description": "Wide static view from behind the near-side player on an indoor badminton court with a blue playing surface and green borders, net across mid-frame, yellow posts, shuttle containers near the left post, and banners overhead reading \"YONEX\", \"旭日星空 XURI STAR 专业羽毛球学院\", plus top-right overlay text \"李宇轩教练 bilibili\". The near-side player wears a black short-sleeve shirt with pink graphics on the back, light gray shorts, white socks, and dark shoes; he holds the racket in his right hand and faces away from camera toward the far side. Across the net, a second player in a pink-and-black top and dark bottoms feeds shuttles by hand to him. In sequence, the near-side player performs two low forward defensive returns over the net, then recovers upright into ready stance while another feed is prepared."
+        },
+        {
+          "start": 3.867,
+          "end": 7.6,
+          "description": "A cut changes to another wide static angle on the same court, now looking from behind a different near-side observer/player wearing a dark sleeveless outer layer over a lighter short-sleeve shirt, black shorts, and dark shoes. He stands mostly still facing the far side with racket in hand. Across the net, the demonstrator in a maroon or reddish-brown long-sleeve top, light gray shorts, white socks, and dark shoes repeatedly drops into a very deep crouched position and makes quick low racket actions near the tape line, apparently practicing push/net-control style strokes. Multiple shuttlecock contacts occur during this segment; exact counts are uncertain because some frames show the shuttle in flight and others show only the follow-through."
+        },
+        {
+          "start": 7.633,
+          "end": 7.967,
+          "description": "Cut to a medium front-facing shot of a man standing alone on the court, smiling and speaking directly to camera. He has brown hair and wears glasses, a black T-shirt with red logo and white chest text \"ACTIVE\", bright pink shorts, and a small lapel microphone clipped near the collar. He gestures with his left hand while holding a badminton racket vertically in his right hand. At about 7.9 seconds, subtitle text appears at the bottom: \"你们是不是经常遇到这个问题\"."
+        }
+      ],
+      "tail": {
+        "last_observed_time": 7.967,
+        "description": "Near the end, the coach-like speaker remains centered in a medium shot, smiling and addressing the camera while lifting the racket slightly upward in his right hand and gesturing outward with his left. No gameplay is visible in these final moments.",
+        "readable_text": [
+          "李宇轩教练",
+          "bilibili",
+          "ACTIVE",
+          "你们是不是经常遇到这个问题"
+        ]
+      },
+      "event_count": 9,
+      "usage": {
+        "prompt_tokens": 49945,
+        "total_tokens": 52125,
+        "completion_tokens": 2180,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "image_tokens": 43008,
+          "video_tokens": 4754,
+          "text_tokens": 2125
+        },
+        "completion_tokens_details": {
+          "text_tokens": 2180
+        }
+      },
+      "elapsed_seconds": 43.47,
+      "tail_subtitle_read": true
+    }
+  },
+  "focused_tail": {
+    "api_fps10_sibling": {
+      "shot_count": 1,
+      "shots": [
+        {
+          "start": 7.5,
+          "end": 8.0,
+          "description": "A front-facing medium shot on the indoor badminton court shows one young man centered in frame, wearing a black short-sleeved shirt with white chest text and bright pink shorts. He faces the camera directly, smiling broadly or laughing, holding a racket upright in his right hand while his left hand gestures outward at about waist height as if speaking. The blue court floor remains visible behind him, along with green boundary lines, part of a net post area, gray walls, stacked chairs, and overhead lighting. No shuttlecock is clearly visible in this final view."
+        }
+      ],
+      "tail": {
+        "last_observed_time": 8.0,
+        "description": "The last visible image is still the same front-facing shot of the man on court. He continues facing the camera with an open smile/laughing expression, racket raised vertically in his right hand, and his left hand slightly extended as if mid-explanation. Readable text includes 'ACTIVE' on his shirt and '李宇轩教练 bilibili' at top right.",
+        "readable_text": [
+          "ACTIVE",
+          "李宇轩教练 bilibili"
+        ]
+      },
+      "event_count": 1,
+      "usage": {
+        "prompt_tokens": 24277,
+        "total_tokens": 24793,
+        "completion_tokens": 516,
+        "prompt_tokens_details": {
+          "cached_tokens": 23296,
+          "audio_tokens": 58,
+          "video_tokens": 23762,
+          "text_tokens": 457
+        },
+        "completion_tokens_details": {
+          "text_tokens": 516
+        }
+      },
+      "elapsed_seconds": 11.53,
+      "tail_subtitle_read": false
+    },
+    "local_10fps_images_plus_video": {
+      "shot_count": 1,
+      "shots": [
+        {
+          "start": 7.5,
+          "end": 8.0,
+          "description": "At 7.5–7.6 seconds, a static wide indoor badminton-court view shows two players across the net: near side, an adult man with his back to camera in a dark navy sleeveless top over white short sleeves and black shorts, holding a racket in his right hand; far side, another player facing him in dark/maroon clothing and light gray shorts, low ready stance with knees bent. By about 7.7 seconds, there is a cut to a medium front-facing shot of one smiling male coach/player on court wearing glasses, a black T-shirt with “ACTIVE” on the chest, bright pink shorts, and holding a badminton racket upright in his right hand while gesturing with his left. From roughly 7.9–8.0 seconds he remains centered speaking toward camera, with subtitle text appearing at the bottom."
+        }
+      ],
+      "tail": {
+        "last_observed_time": 8.0,
+        "description": "The last visible image is the same frontal medium shot of the smiling man in glasses on the blue badminton court, holding his racket up in his right hand and gesturing with his left as he speaks. Bottom-center Chinese subtitle text is visible.",
+        "readable_text": [
+          "李宇轩教练 bilibili",
+          "旭日星空 XURI STAR 专业羽毛球学院",
+          "YONEX",
+          "ACTIVE",
+          "你们是不是经常遇到这个问题"
+        ]
+      },
+      "event_count": 3,
+      "usage": {
+        "prompt_tokens": 50032,
+        "total_tokens": 50888,
+        "completion_tokens": 856,
+        "prompt_tokens_details": {
+          "cached_tokens": 48384,
+          "audio_tokens": 58,
+          "image_tokens": 43008,
+          "video_tokens": 4754,
+          "text_tokens": 2212
+        },
+        "completion_tokens_details": {
+          "text_tokens": 856
+        }
+      },
+      "elapsed_seconds": 18.16,
+      "tail_subtitle_read": true
+    }
+  },
+  "full_clip_config": {
+    "source": "E:\\Download\\sports_video_data\\transfer2paas_2\\badminton_lift_31679122798_first8s.mp4",
+    "source_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "model": "qwen3.8-omni-flash",
+    "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+    "enable_thinking": false,
+    "max_tokens": 4096,
+    "repetitions_per_mode": 1,
+    "prompt_sha256": "33ab6fae9f23be67007d716e8e5301e2eb1d22c9afe2f24aa6aebcbb913321f1",
+    "additional_image_count": 84,
+    "image_size": "960x540 JPEG, as used by the current pipeline",
+    "modes": {
+      "default_video": {
+        "video_part": {
+          "type": "video_url",
+          "video_url": {
+            "url": "[same MP4 base64]"
+          }
+        }
+      },
+      "nested_fps10_legacy": {
+        "video_part": {
+          "type": "video_url",
+          "video_url": {
+            "url": "[same MP4 base64]",
+            "fps": 10
+          }
+        }
+      },
+      "api_fps10_sibling": {
+        "video_part": {
+          "type": "video_url",
+          "video_url": {
+            "url": "[same MP4 base64]"
+          },
+          "fps": 10
+        }
+      },
+      "local_10fps_images_plus_video": {
+        "video_part": {
+          "type": "video_url",
+          "video_url": {
+            "url": "[same MP4 base64]"
+          }
+        },
+        "additional_images": 84
+      }
+    },
+    "limits": [
+      "One invocation per mode; content quality differences are observations, not statistical accuracy estimates.",
+      "Local image mode also changes modality representation, timestamp text and image resizing; token totals are not directly comparable as frame counts."
+    ]
+  },
+  "focused_tail_config": {
+    "source": "E:\\Download\\sports_video_data\\transfer2paas_2\\badminton_lift_31679122798_first8s.mp4",
+    "source_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "model": "qwen3.8-omni-flash",
+    "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+    "enable_thinking": false,
+    "max_tokens": 4096,
+    "repetitions_per_mode": 1,
+    "prompt_sha256": "d8d41fc6bff31579bcbd53d2bae57b0db0ea6051038bd704fa98ad97f3549050",
+    "tail_only": true,
+    "additional_image_count": 84,
+    "image_size": "960x540 JPEG, as used by the current pipeline",
+    "modes": {
+      "default_video": {
+        "video_part": {
+          "type": "video_url",
+          "video_url": {
+            "url": "[same MP4 base64]"
+          }
+        }
+      },
+      "nested_fps10_legacy": {
+        "video_part": {
+          "type": "video_url",
+          "video_url": {
+            "url": "[same MP4 base64]",
+            "fps": 10
+          }
+        }
+      },
+      "api_fps10_sibling": {
+        "video_part": {
+          "type": "video_url",
+          "video_url": {
+            "url": "[same MP4 base64]"
+          },
+          "fps": 10
+        }
+      },
+      "local_10fps_images_plus_video": {
+        "video_part": {
+          "type": "video_url",
+          "video_url": {
+            "url": "[same MP4 base64]"
+          }
+        },
+        "additional_images": 84
+      }
+    },
+    "limits": [
+      "One invocation per mode; content quality differences are observations, not statistical accuracy estimates.",
+      "Local image mode also changes modality representation, timestamp text and image resizing; token totals are not directly comparable as frame counts."
+    ]
+  },
+  "conclusions": [
+    "Correct content-part sibling fps=10 changes native video token usage from 4754 to 23762, approximately 5x; the legacy nested video_url.fps produces the same 4754 as the default.",
+    "Native fps=10 omitted the final shot in the broad task but described it when explicitly asked about the final 0.5 s; omission is not proof that the server supplied no tail frames.",
+    "Local frames plus video read the final subtitle in both tasks. This path includes explicitly timestamped pictures and guaranteed source-shot endpoint frames, so it is not identical to a bare native fps setting.",
+    "The local path uses 49945 total input tokens versus native fps10 24190 for the broad task; this comparison includes image/text overhead and different modality preprocessing, not just frame rate.",
+    "These are single diagnostic trials per task/mode, not a statistically controlled accuracy benchmark. Different output event counts are not accuracy scores.",
+    "The tests use non-thinking mode, identical prompts within each task, and the same model/video/output limit. The production pipeline has different stage prompts and uses thinking mode for visual review."
+  ]
+}

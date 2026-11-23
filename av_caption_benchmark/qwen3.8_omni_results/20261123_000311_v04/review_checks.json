@@ -1,0 +1,34 @@
+{
+  "response": "qwen3.8_omni_results\\20261123_000311_v04\\badminton_response.txt",
+  "four_sections_in_order": true,
+  "storyline_intervals": [
+    [
+      0.0,
+      3.5
+    ],
+    [
+      3.5,
+      8.0
+    ]
+  ],
+  "storyline_gaps_seconds": [],
+  "invalid_intervals": [],
+  "action_count": 9,
+  "duplicate_action_ids": [],
+  "action_ids_sequential": true,
+  "actions_in_start_time_order": false,
+  "technique_counts": {
+    "lunge": 2,
+    "movement": 3,
+    "racket swing": 1,
+    "recovery": 2,
+    "return": 1
+  },
+  "unknown_techniques": [],
+  "visual_evidence_fields": 9,
+  "observed_shot_ids": [
+    "S01",
+    "S02"
+  ],
+  "limitations": "Structural checks only. Shot content, identity, terminology correctness, audio transcription, and event boundaries require independent review."
+}

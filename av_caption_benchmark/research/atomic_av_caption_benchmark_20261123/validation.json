@@ -1,0 +1,17 @@
+{
+  "paper_count": 70,
+  "unique_titles": 70,
+  "unique_source_urls": 70,
+  "category_counts": {
+    "运动与原子动作": 21,
+    "密集描述与时间定位": 9,
+    "音视频描述与联合理解": 28,
+    "评价方法与可靠性": 12
+  },
+  "report_sections": 12,
+  "paper_links_in_report": 70,
+  "internal_links_valid": true,
+  "duplicate_html_ids": false,
+  "replacement_characters": 0,
+  "raw_model_calls_in_this_task": 0
+}

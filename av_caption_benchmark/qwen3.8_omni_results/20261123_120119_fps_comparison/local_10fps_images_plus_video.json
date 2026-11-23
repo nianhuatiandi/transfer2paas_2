@@ -1,0 +1,140 @@
+{
+  "shots": [
+    {
+      "start": 0.0,
+      "end": 3.833,
+      "description": "Wide static view from behind the near-side player on an indoor badminton court with a blue playing surface and green borders, net across mid-frame, yellow posts, shuttle containers near the left post, and banners overhead reading \"YONEX\", \"旭日星空 XURI STAR 专业羽毛球学院\", plus top-right overlay text \"李宇轩教练 bilibili\". The near-side player wears a black short-sleeve shirt with pink graphics on the back, light gray shorts, white socks, and dark shoes; he holds the racket in his right hand and faces away from camera toward the far side. Across the net, a second player in a pink-and-black top and dark bottoms feeds shuttles by hand to him. In sequence, the near-side player performs two low forward defensive returns over the net, then recovers upright into ready stance while another feed is prepared."
+    },
+    {
+      "start": 3.867,
+      "end": 7.6,
+      "description": "A cut changes to another wide static angle on the same court, now looking from behind a different near-side observer/player wearing a dark sleeveless outer layer over a lighter short-sleeve shirt, black shorts, and dark shoes. He stands mostly still facing the far side with racket in hand. Across the net, the demonstrator in a maroon or reddish-brown long-sleeve top, light gray shorts, white socks, and dark shoes repeatedly drops into a very deep crouched position and makes quick low racket actions near the tape line, apparently practicing push/net-control style strokes. Multiple shuttlecock contacts occur during this segment; exact counts are uncertain because some frames show the shuttle in flight and others show only the follow-through."
+    },
+    {
+      "start": 7.633,
+      "end": 7.967,
+      "description": "Cut to a medium front-facing shot of a man standing alone on the court, smiling and speaking directly to camera. He has brown hair and wears glasses, a black T-shirt with red logo and white chest text \"ACTIVE\", bright pink shorts, and a small lapel microphone clipped near the collar. He gestures with his left hand while holding a badminton racket vertically in his right hand. At about 7.9 seconds, subtitle text appears at the bottom: \"你们是不是经常遇到这个问题\"."
+    }
+  ],
+  "tail_observation": {
+    "last_observed_time": 7.967,
+    "description": "Near the end, the coach-like speaker remains centered in a medium shot, smiling and addressing the camera while lifting the racket slightly upward in his right hand and gesturing outward with his left. No gameplay is visible in these final moments.",
+    "readable_text": [
+      "李宇轩教练",
+      "bilibili",
+      "ACTIVE",
+      "你们是不是经常遇到这个问题"
+    ]
+  },
+  "racket_and_shuttle_events": [
+    {
+      "start": 0.0,
+      "end": 0.4,
+      "actor": "far-side feeder in pink-and-black top",
+      "description": "Bare-hand delivery: the far-side player raises one arm and releases a shuttlecock by hand toward the near-side player."
+    },
+    {
+      "start": 0.5,
+      "end": 1.2,
+      "actor": "near-side player in black shirt and light gray shorts",
+      "description": "Racket stroke: he steps forward into a low stance and hits the incoming shuttle back over the net with his right-handed racket."
+    },
+    {
+      "start": 1.3,
+      "end": 1.8,
+      "actor": "far-side feeder in pink-and-black top",
+      "description": "Second bare-hand delivery: another shuttle is fed by hand from the far side."
+    },
+    {
+      "start": 1.9,
+      "end": 2.6,
+      "actor": "near-side player in black shirt and light gray shorts",
+      "description": "Racket stroke: he again lowers his body and returns the shuttle with a compact right-handed swing."
+    },
+    {
+      "start": 2.7,
+      "end": 3.833,
+      "actor": "both players in first drill setup",
+      "description": "The near-side player rises back into ready posture after the return. Another hand-fed shuttle appears to be set up before the scene change, but the exact contact point for that next exchange is not fully resolved within the sampled evidence."
+    },
+    {
+      "start": 3.867,
+      "end": 5.0,
+      "actor": "demonstrator across the net in maroon/reddish-brown top",
+      "description": "Low racket action: starting from a deep squat/crouch, he brings the racket down close to the net area and makes at least one clearly timed shuttle interaction, consistent with a push or tight net control stroke. A nearby frame shows a shuttle above the net around this interval, supporting active play rather than pure shadowing."
+    },
+    {
+      "start": 5.0,
+      "end": 6.2,
+      "actor": "demonstrator across the net in maroon/reddish-brown top",
+      "description": "Repeated low practice exchanges: he continues alternating between crouched recovery and short racket motions near the tape line. One additional shuttle-in-flight moment is visible later in the segment, so more than one hit likely occurs here, though the precise number cannot be fixed confidently from the available views."
+    },
+    {
+      "start": 6.2,
+      "end": 7.6,
+      "actor": "demonstrator across the net in maroon/reddish-brown top",
+      "description": "Further low-to-mid-height racket actions: he stays close to the net area, sometimes rising slightly and extending both arms before dropping back into crouch. A clear shuttle is visible in flight once during this broader portion, indicating continued live hitting, but the full count of contacts remains uncertain."
+    },
+    {
+      "start": 7.633,
+      "end": 7.967,
+      "actor": "front-facing speaker in black \"ACTIVE\" shirt and pink shorts",
+      "description": "Conversational gesture only: he holds the racket upright as a prop while talking and gesturing with his free hand. No shuttle is present and no strike occurs."
+    }
+  ],
+  "footwork_observations": [
+    {
+      "start": 0.0,
+      "end": 1.2,
+      "actor": "near-side player in black shirt and light gray shorts",
+      "description": "He begins in a split-step ready stance, then moves forward into a lunge-like receiving posture for the first return, with knees bent and weight shifted toward the net before recovering backward/upright."
+    },
+    {
+      "start": 1.9,
+      "end": 2.6,
+      "actor": "near-side player in black shirt and light gray shorts",
+      "description": "For the second return, he again lowers into a broad, bent-knee stance and drives through a compact forward movement, then resets toward center."
+    },
+    {
+      "start": 3.867,
+      "end": 7.6,
+      "actor": "demonstrator across the net in maroon/reddish-brown top",
+      "description": "His footwork is dominated by repeated deep squats or lunges near the forecourt/tape area, followed by brief rises and immediate re-crouching. The pattern emphasizes staying extremely low and balanced under the shuttle rather than large travel across the court."
+    },
+    {
+      "start": 3.867,
+      "end": 7.6,
+      "actor": "near-side observer/player in dark sleeveless layer and black shorts",
+      "description": "He largely remains planted in a watching stance throughout this segment, with little visible locomotion beyond minor balance adjustments."
+    },
+    {
+      "start": 7.633,
+      "end": 7.967,
+      "actor": "front-facing speaker in black \"ACTIVE\" shirt and pink shorts",
+      "description": "Standing almost stationary while speaking; only upper-body motion and hand gestures are evident."
+    }
+  ],
+  "audible_speech": [
+    {
+      "start": 0.0,
+      "end": 0.8,
+      "text": "往这边跳。"
+    },
+    {
+      "start": 2.0,
+      "end": 2.5,
+      "text": "一个。"
+    },
+    {
+      "start": 4.0,
+      "end": 4.5,
+      "text": "两个，好。"
+    }
+  ],
+  "uncertainties": [
+    "The middle demonstration section contains multiple rapid low actions and several shuttle appearances, but the exact total number of completed hits cannot be determined reliably from the sampled visual evidence.",
+    "Some frames in the middle segment could represent either real shuttle contacts or tightly spaced practice repetitions; only those supported by visible shuttle presence or clear impact timing are treated as confirmed events.",
+    "Fine-grained shoe-by-shoe mechanics are not consistently legible at this distance, especially during the deepest crouches in the middle segment.",
+    "No other spoken lines are audibly recoverable beyond the counted phrases already listed, even though the final speaker is visibly talking."
+  ]
+}

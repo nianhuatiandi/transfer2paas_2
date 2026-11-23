@@ -1,0 +1,113 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "stages": [
+    {
+      "stage": "audio",
+      "model": "qwen3.8-omni-flash",
+      "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+      "prompt_sha256": "cab7aa390d8408f201305fc354efe1dd062ded384aaf1aac1018fcee9f46b4bf",
+      "enable_thinking": false,
+      "max_tokens": 4096,
+      "http_status": 200,
+      "response_id": "chatcmpl-509394fd-25f8-97a8-951d-8a74018007de",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 439,
+        "total_tokens": 815,
+        "completion_tokens": 376,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 58,
+          "text_tokens": 381
+        },
+        "completion_tokens_details": {
+          "text_tokens": 376
+        }
+      },
+      "status": "complete",
+      "elapsed_seconds": 4.91
+    },
+    {
+      "stage": "review_S01",
+      "model": "qwen3.8-omni-flash",
+      "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+      "prompt_sha256": "c37756b9c8837bc309fe557cda3e7ee4fb1d22af6bdba87991632aa74f07fd42",
+      "enable_thinking": true,
+      "max_tokens": 12288,
+      "http_status": 200,
+      "response_id": "chatcmpl-783f6003-ccb5-9c0c-993e-830e53f7df94",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 26674,
+        "total_tokens": 37269,
+        "completion_tokens": 10595,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 20480,
+          "text_tokens": 6194
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8301,
+          "text_tokens": 2294
+        }
+      },
+      "status": "complete",
+      "elapsed_seconds": 142.08
+    },
+    {
+      "stage": "review_S02",
+      "model": "qwen3.8-omni-flash",
+      "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+      "prompt_sha256": "d043104f4a29f5954affeeb418aae106d275c2f0965127887f4480eb2ad2984f",
+      "enable_thinking": true,
+      "max_tokens": 12288,
+      "http_status": 200,
+      "response_id": "chatcmpl-8534ea50-beaf-97b5-a431-0e7d751d1f81",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 26596,
+        "total_tokens": 33218,
+        "completion_tokens": 6622,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 19968,
+          "text_tokens": 6628
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3474,
+          "text_tokens": 3148
+        }
+      },
+      "status": "complete",
+      "elapsed_seconds": 89.39
+    },
+    {
+      "stage": "visual_S03",
+      "model": "qwen3.8-omni-flash",
+      "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+      "prompt_sha256": "60b8dfbfb9887cad734d334bc461fdd05a753f2a6df93a19684b8a469b828415",
+      "enable_thinking": true,
+      "max_tokens": 12288,
+      "http_status": 200,
+      "response_id": "chatcmpl-26cdcddc-5efa-9eb7-a686-31bc9612a961",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 5657,
+        "total_tokens": 7968,
+        "completion_tokens": 2311,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2560,
+          "text_tokens": 3097
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1368,
+          "text_tokens": 943
+        }
+      },
+      "status": "complete",
+      "elapsed_seconds": 31.31
+    }
+  ],
+  "total_tokens": 79270
+}

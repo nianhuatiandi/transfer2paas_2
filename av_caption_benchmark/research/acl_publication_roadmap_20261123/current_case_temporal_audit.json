@@ -1,0 +1,180 @@
+{
+  "status": "Schema-only arithmetic audit of model-estimated intervals, not independently verified GT or model performance experiment",
+  "interval_rule": "Positive duration intersection; no tolerance applied; tiny intersections may be ambiguous",
+  "source": "E:\\Download\\sports_video_data\\qwen3.8_omni_results\\20261123_011332_pipeline_v08_alignment\\alignment.json",
+  "action_count": 16,
+  "min_action_duration": 0.2,
+  "median_action_duration": 0.39999999999999997,
+  "max_action_duration": 0.7330000000000001,
+  "actions_shorter_than_1s": 16,
+  "old_relation_edge_count": 4,
+  "new_raw_intersection_edge_count": 11,
+  "rows": [
+    {
+      "utterance_id": "U01",
+      "audio_interval": [
+        0.84,
+        1.32
+      ],
+      "old_related_actions": [
+        "A02"
+      ],
+      "positive_duration_overlaps": [
+        {
+          "action_id": "A02",
+          "technique": "lunge",
+          "intersection": [
+            0.84,
+            1.0
+          ],
+          "duration": 0.16
+        },
+        {
+          "action_id": "A03",
+          "technique": "upward return",
+          "intersection": [
+            0.9,
+            1.3
+          ],
+          "duration": 0.4
+        },
+        {
+          "action_id": "A04",
+          "technique": "recovery",
+          "intersection": [
+            1.1,
+            1.32
+          ],
+          "duration": 0.22
+        }
+      ]
+    },
+    {
+      "utterance_id": "U02",
+      "audio_interval": [
+        2.96,
+        3.16
+      ],
+      "old_related_actions": [
+        "A07"
+      ],
+      "positive_duration_overlaps": [
+        {
+          "action_id": "A06",
+          "technique": "lunge",
+          "intersection": [
+            2.96,
+            3.0
+          ],
+          "duration": 0.04
+        },
+        {
+          "action_id": "A07",
+          "technique": "upward return",
+          "intersection": [
+            2.96,
+            3.16
+          ],
+          "duration": 0.2
+        },
+        {
+          "action_id": "A08",
+          "technique": "recovery",
+          "intersection": [
+            3.1,
+            3.16
+          ],
+          "duration": 0.06
+        }
+      ]
+    },
+    {
+      "utterance_id": "U03",
+      "audio_interval": [
+        4.52,
+        4.76
+      ],
+      "old_related_actions": [
+        "A11"
+      ],
+      "positive_duration_overlaps": [
+        {
+          "action_id": "A10",
+          "technique": "lunge",
+          "intersection": [
+            4.52,
+            4.76
+          ],
+          "duration": 0.24
+        },
+        {
+          "action_id": "A11",
+          "technique": "upward return",
+          "intersection": [
+            4.52,
+            4.76
+          ],
+          "duration": 0.24
+        }
+      ]
+    },
+    {
+      "utterance_id": "U04",
+      "audio_interval": [
+        6.68,
+        7.08
+      ],
+      "old_related_actions": [
+        "A15"
+      ],
+      "positive_duration_overlaps": [
+        {
+          "action_id": "A14",
+          "technique": "lunge",
+          "intersection": [
+            6.68,
+            6.8
+          ],
+          "duration": 0.12
+        },
+        {
+          "action_id": "A15",
+          "technique": "upward return",
+          "intersection": [
+            6.68,
+            7.08
+          ],
+          "duration": 0.4
+        }
+      ]
+    },
+    {
+      "utterance_id": "U05",
+      "audio_interval": [
+        7.32,
+        7.633
+      ],
+      "old_related_actions": [],
+      "positive_duration_overlaps": [
+        {
+          "action_id": "A16",
+          "technique": "recovery",
+          "intersection": [
+            7.32,
+            7.5
+          ],
+          "duration": 0.18
+        }
+      ]
+    },
+    {
+      "utterance_id": "U05",
+      "audio_interval": [
+        7.633,
+        7.88
+      ],
+      "old_related_actions": [],
+      "positive_duration_overlaps": []
+    }
+  ]
+}

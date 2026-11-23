@@ -1,0 +1,459 @@
+{
+  "version": "0.8",
+  "status": "model_reviewed",
+  "source_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+  "action_signature": [
+    {
+      "id": "A01",
+      "shot": "S01",
+      "actor": "S01-P02",
+      "start": 0.0,
+      "end": 0.2,
+      "technique": "hand feed"
+    },
+    {
+      "id": "A02",
+      "shot": "S01",
+      "actor": "S01-P01",
+      "start": 0.5,
+      "end": 1.0,
+      "technique": "lunge"
+    },
+    {
+      "id": "A03",
+      "shot": "S01",
+      "actor": "S01-P01",
+      "start": 0.9,
+      "end": 1.3,
+      "technique": "upward return"
+    },
+    {
+      "id": "A04",
+      "shot": "S01",
+      "actor": "S01-P01",
+      "start": 1.1,
+      "end": 1.7,
+      "technique": "recovery"
+    },
+    {
+      "id": "A05",
+      "shot": "S01",
+      "actor": "S01-P02",
+      "start": 2.0,
+      "end": 2.4,
+      "technique": "hand feed"
+    },
+    {
+      "id": "A06",
+      "shot": "S01",
+      "actor": "S01-P01",
+      "start": 2.6,
+      "end": 3.0,
+      "technique": "lunge"
+    },
+    {
+      "id": "A07",
+      "shot": "S01",
+      "actor": "S01-P01",
+      "start": 2.9,
+      "end": 3.3,
+      "technique": "upward return"
+    },
+    {
+      "id": "A08",
+      "shot": "S01",
+      "actor": "S01-P01",
+      "start": 3.1,
+      "end": 3.833,
+      "technique": "recovery"
+    },
+    {
+      "id": "A09",
+      "shot": "S02",
+      "actor": "S02-P01",
+      "start": 3.8666666666666667,
+      "end": 4.2,
+      "technique": "hand feed"
+    },
+    {
+      "id": "A10",
+      "shot": "S02",
+      "actor": "S02-P02",
+      "start": 4.3,
+      "end": 4.8,
+      "technique": "lunge"
+    },
+    {
+      "id": "A11",
+      "shot": "S02",
+      "actor": "S02-P02",
+      "start": 4.4,
+      "end": 5.0,
+      "technique": "upward return"
+    },
+    {
+      "id": "A12",
+      "shot": "S02",
+      "actor": "S02-P02",
+      "start": 5.0,
+      "end": 5.3,
+      "technique": "recovery"
+    },
+    {
+      "id": "A13",
+      "shot": "S02",
+      "actor": "S02-P01",
+      "start": 5.6,
+      "end": 6.1,
+      "technique": "hand feed"
+    },
+    {
+      "id": "A14",
+      "shot": "S02",
+      "actor": "S02-P02",
+      "start": 6.4,
+      "end": 6.8,
+      "technique": "lunge"
+    },
+    {
+      "id": "A15",
+      "shot": "S02",
+      "actor": "S02-P02",
+      "start": 6.5,
+      "end": 7.2,
+      "technique": "upward return"
+    },
+    {
+      "id": "A16",
+      "shot": "S02",
+      "actor": "S02-P02",
+      "start": 7.2,
+      "end": 7.5,
+      "technique": "recovery"
+    }
+  ],
+  "shots": [
+    {
+      "shot": "S01",
+      "speech_segments": [
+        {
+          "source_utterance_id": "U01",
+          "start": 0.84,
+          "end": 1.32,
+          "speaker": "V01",
+          "text": "往这边跳。",
+          "state": "instructional delivery; timing as supplied, words clear",
+          "speaker_status": "uncertain",
+          "actor": null,
+          "confidence": "medium",
+          "evidence": "A male Mandarin voice gives a short directive ('jump/move to this side') overlapping P01's first lunge-and-return. Neither player's mouth is resolvable at this camera distance (P02 is far side, P01背对镜头), so no visible lip movement can confirm the speaker; the feeder/coach role is plausible but not proven, and an off-screen coach cannot be excluded.",
+          "related_actions": [
+            {
+              "action_id": "A02",
+              "relationship": "instruction",
+              "evidence": "The directive to move to 'this side' temporally coincides with P01 stepping out to his forehand (screen-right) side into the loaded lunge (0.5–1.0, peak reach ~0.8), matching the instructed direction."
+            }
+          ]
+        },
+        {
+          "source_utterance_id": "U02",
+          "start": 2.96,
+          "end": 3.16,
+          "speaker": "V01",
+          "text": "一。",
+          "state": "counting; brief utterance, timing as supplied",
+          "speaker_status": "uncertain",
+          "actor": null,
+          "confidence": "medium",
+          "evidence": "Same male Mandarin voice counting 'one' immediately after the sharp impact transient at 2.8–3.0. Mouth movement is not verifiable at this distance, so speaker identity remains uncertain despite the coaching context.",
+          "related_actions": [
+            {
+              "action_id": "A07",
+              "relationship": "retrospective comment",
+              "evidence": "The count follows within ~0.1 s of the percussive tap that aligns with P01's low forehand-side contact (~3.0, racket blur at right hip, outgoing shuttle rising 3.1–3.3); the same tap→count pattern recurs later (taps 4.4–4.6/6.5–6.7 with counts 4.52/6.68), indicating '一' scores this repetition."
+            }
+          ]
+        }
+      ],
+      "action_sounds": [
+        {
+          "action_id": "A01",
+          "status": "none_detected",
+          "description": "No distinguishable sound attributable to the bare-hand feed; the release itself is cropped before shot start and a hand toss produces no discrete transient.",
+          "sound_time": null,
+          "visual_time": 0.1,
+          "confidence": "medium",
+          "evidence": "Frames 0.0–0.2 show only P02's overhead follow-through with the shuttle already airborne; audio in this window contains only the continuous rhythmic thudding, with no isolated impact.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A02",
+          "status": "none_detected",
+          "description": "No separable footfall/squeak can be attributed to the lunge; the only audio is the sustained rhythmic thudding across 0–7 s, which must not be assigned to a specific movement by default.",
+          "sound_time": null,
+          "visual_time": 0.8,
+          "confidence": "medium",
+          "evidence": "Visual lunge (step-out and loaded reach 0.5–1.0) is clear, but no discrete transient is localized at the step; background thudding is continuous and non-specific.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A03",
+          "status": "uncertain",
+          "description": "A racket-shuttle impact is expected at the visible contact (~1.0), but no discrete tap is localized there in the supplied audio; the nearest listed transient (2.8–3.0) aligns with A07 instead, and the rhythmic background overlaps this moment.",
+          "sound_time": null,
+          "visual_time": 1.0,
+          "confidence": "low",
+          "evidence": "Frames 0.9–1.1 show low forehand contact (racket blur across body at 1.0) and the outgoing shuttle rising above the net at 1.1, confirming the strike visually; however the audio evidence provides no isolated impact sound near 1.0, so attribution remains unresolved.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A04",
+          "status": "none_detected",
+          "description": "No distinguishable sound attributable to the recovery footwork; only the continuous rhythmic thudding is present.",
+          "sound_time": null,
+          "visual_time": 1.7,
+          "confidence": "medium",
+          "evidence": "Recovery to ready stance (1.1–1.7) is visible, but no discrete footfall can be separated from the sustained background.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A05",
+          "status": "none_detected",
+          "description": "No sound attributable to the second bare-hand feed; the overhead hand release at ~2.1 is silent.",
+          "sound_time": null,
+          "visual_time": 2.1,
+          "confidence": "medium",
+          "evidence": "Frames 2.0–2.2 show P02's raised bare right hand and the shuttle appearing high at 2.1–2.2; no transient coincides with the release.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A06",
+          "status": "none_detected",
+          "description": "No separable footfall for the second lunge; the rhythmic thudding continues and cannot be assigned to this specific step.",
+          "sound_time": null,
+          "visual_time": 2.8,
+          "confidence": "medium",
+          "evidence": "Loaded reach to screen-right is visible 2.6–2.9, but the audio offers no isolated transient at the step distinct from the background and from the later impact tap.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A07",
+          "status": "supported",
+          "description": "Sharp percussive tap consistent with racket-shuttle contact on the low forehand-side return.",
+          "sound_time": 2.9,
+          "visual_time": 3.0,
+          "confidence": "medium",
+          "evidence": "The listed tap at 2.8–3.0 coincides with the visible contact (~3.0: racket blur at right hip, shuttle at hip height) and the outgoing shuttle rising above the net at 3.1–3.3; no competing impact occurs in this window, and the sound-to-vision offset (~0.1 s) is within tolerance.",
+          "audio_minus_visual_seconds": -0.1
+        },
+        {
+          "action_id": "A08",
+          "status": "none_detected",
+          "description": "No distinguishable sound attributable to the post-return recovery; only continuous rhythmic thudding.",
+          "sound_time": null,
+          "visual_time": 3.6,
+          "confidence": "medium",
+          "evidence": "Unwinding and stance reset (3.1–3.8) are visible, but no discrete transient is localized to these footfalls.",
+          "audio_minus_visual_seconds": null
+        }
+      ],
+      "unmatched_sounds": [
+        {
+          "start": 0.0,
+          "end": 3.8,
+          "description": "Continuous rhythmic thudding/bouncing on the hard court surface (footwork-like), spanning the whole shot and not attributable to any single candidate action."
+        }
+      ],
+      "uncertainties": [
+        "Speaker identity for V01 cannot be visually confirmed: neither player's mouth is resolvable at this distance, so an on-screen feeder/coach versus an off-screen coach remains open.",
+        "A03's visible contact (~1.0) has no localized discrete impact sound in the supplied audio evidence; whether a soft hit sound exists within the rhythmic background is unresolved.",
+        "U02 ('一') is associated with A07 based on the tap→count pattern also seen later in the clip (counts at 4.52/6.68 following taps at 4.4–4.6/6.5–6.7); the first visible return (A03) appears uncounted, which is inferred rather than directly verified.",
+        "Utterances U03–U05 (4.52 s onward) fall outside this shot's window (0–3.867 s) and were not reviewed here."
+      ],
+      "validation_warnings": []
+    },
+    {
+      "shot": "S02",
+      "speech_segments": [
+        {
+          "source_utterance_id": "U03",
+          "start": 4.52,
+          "end": 4.76,
+          "speaker": "V01",
+          "text": "一个。",
+          "state": "counting, clear Mandarin delivery",
+          "speaker_status": "uncertain",
+          "actor": null,
+          "confidence": "medium",
+          "evidence": "A male Mandarin count ('one') is audible immediately after the first fed shuttle is returned (~4.6 s). The near-side feeder (S02-P01) is the plausible source given the coaching role, but he stands with his back to the camera, so no lip movement can be verified; the far-side player (S02-P02) faces the camera but shows no discernible mouth movement during this span. Speaker identity therefore cannot be visually confirmed.",
+          "related_actions": [
+            {
+              "action_id": "A11",
+              "relationship": "retrospective comment",
+              "evidence": "The count 'one' tallies the first completed upward return, whose contact (~4.6 s) immediately precedes the utterance onset at 4.52-4.76 s."
+            }
+          ]
+        },
+        {
+          "source_utterance_id": "U04",
+          "start": 6.68,
+          "end": 7.08,
+          "speaker": "V01",
+          "text": "两个。",
+          "state": "counting, clear Mandarin delivery",
+          "speaker_status": "uncertain",
+          "actor": null,
+          "confidence": "medium",
+          "evidence": "A male Mandarin count ('two') is audible right after the second return contact (~6.6 s). As with the first count, the likely speaker is the near-side feeder whose back is to the camera, preventing lip-sync verification; the far-side player's mouth is not observably moving.",
+          "related_actions": [
+            {
+              "action_id": "A15",
+              "relationship": "retrospective comment",
+              "evidence": "The count 'two' tallies the second completed upward return, whose contact (~6.6 s) immediately precedes the utterance."
+            }
+          ]
+        },
+        {
+          "source_utterance_id": "U05",
+          "start": 7.32,
+          "end": 7.633,
+          "speaker": "V01",
+          "text": "好，你……",
+          "state": "transition phrase, cut off at the shot boundary (full utterance extends to ~7.88 s beyond this shot); Cross-cut transcript fragments may repeat a syllable; exact split remains uncertain (original fragments preserved).",
+          "speaker_status": "uncertain",
+          "actor": null,
+          "confidence": "low",
+          "evidence": "A male Mandarin phrase beginning 'hao, ni...' is audible from 7.32 s and is truncated by the shot end at 7.633 s. The voice matches the same instructional speaker as the counts, but no visible mouth movement can confirm the source (near-side player back-turned; far-side player not visibly speaking).",
+          "related_actions": []
+        }
+      ],
+      "action_sounds": [
+        {
+          "action_id": "A09",
+          "status": "none_detected",
+          "description": "No distinguishable sound from the bare-hand toss; the sharp tap near 4.5 s coincides with the subsequent racket-shuttle contact, not the feed release.",
+          "sound_time": null,
+          "visual_time": null,
+          "confidence": "medium",
+          "evidence": "Frames show a hand release at ~3.9 s with no racket involved; audio in 3.87-4.3 s contains only the continuous footfall-like thudding background, no discrete transient attributable to the toss.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A10",
+          "status": "none_detected",
+          "description": "No isolatable footfall transient for the lunge; step sounds blend into the sustained rhythmic thudding background.",
+          "sound_time": null,
+          "visual_time": null,
+          "confidence": "medium",
+          "evidence": "The lunge step (~4.3-4.5 s) occurs within a continuous rhythmic thudding span; per policy, sustained background rhythm is not assigned to a specific action, and no discrete impact can be separated from it.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A11",
+          "status": "supported",
+          "description": "Sharp percussive racket-shuttle tap heard at ~4.5 s, matching the underarm contact on the fed shuttle.",
+          "sound_time": 4.5,
+          "visual_time": 4.6,
+          "confidence": "medium",
+          "evidence": "Audio shows a discrete sharp tap in the 4.4-4.6 s window; frames show the shuttle at the racket near the net at 4.467-4.567 s and rising above the tape by 4.667 s, consistent with contact ~4.6 s. Sound-visual offset ~0.1 s, within tolerance; no competing impact in the window.",
+          "audio_minus_visual_seconds": -0.1
+        },
+        {
+          "action_id": "A12",
+          "status": "none_detected",
+          "description": "No distinguishable sound attributable to the recovery steps; footfalls merge with the rhythmic background thudding.",
+          "sound_time": null,
+          "visual_time": null,
+          "confidence": "medium",
+          "evidence": "Recovery (5.0-5.3 s) shows push-back steps, but audio offers only the continuous thudding rhythm without an isolatable transient for this movement.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A13",
+          "status": "none_detected",
+          "description": "No distinguishable sound from the second bare-hand toss; the tap near 6.6 s belongs to the following racket contact.",
+          "sound_time": null,
+          "visual_time": null,
+          "confidence": "medium",
+          "evidence": "Frames show the hand release at ~6.0 s with racket held low in the other hand; audio in 5.6-6.4 s contains no discrete transient attributable to the toss itself.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A14",
+          "status": "none_detected",
+          "description": "No isolatable footfall transient for the second lunge; step sounds are part of the sustained rhythmic thudding.",
+          "sound_time": null,
+          "visual_time": null,
+          "confidence": "medium",
+          "evidence": "The lunge (~6.4-6.6 s) coincides with the ongoing thudding background; no discrete impact can be separated and assigned to this specific step.",
+          "audio_minus_visual_seconds": null
+        },
+        {
+          "action_id": "A15",
+          "status": "supported",
+          "description": "Sharp percussive racket-shuttle tap heard at ~6.6 s, matching the second underarm contact.",
+          "sound_time": 6.6,
+          "visual_time": 6.6,
+          "confidence": "medium",
+          "evidence": "Audio shows a discrete sharp tap in the 6.5-6.7 s window; frames show the shuttle blur at racket height near the net at 6.567-6.667 s and rising above the tape by 6.767 s, consistent with contact ~6.6 s. Sound and visual times align; no competing impact in the window.",
+          "audio_minus_visual_seconds": 0.0
+        },
+        {
+          "action_id": "A16",
+          "status": "none_detected",
+          "description": "No distinguishable sound attributable to the second recovery; any footfalls blend into the rhythmic background.",
+          "sound_time": null,
+          "visual_time": null,
+          "confidence": "medium",
+          "evidence": "Recovery (7.2-7.5 s) shows the player lowering the racket and resetting, but audio provides only the continuous thudding rhythm without an isolatable transient.",
+          "audio_minus_visual_seconds": null
+        }
+      ],
+      "unmatched_sounds": [
+        {
+          "start": 3.867,
+          "end": 7.0,
+          "description": "Continuous rhythmic footfall-like thudding on the hard court surface, consistent with player bounce/step rhythm during the drill; not attributable to any single candidate action."
+        }
+      ],
+      "uncertainties": [
+        "Speaker identity unresolved: the counting/transition voice is plausibly the near-side feeder (coach role), but his back is to the camera, so no lip movement can be verified; the far-side player shows no observable mouth movement.",
+        "U05 is truncated at the shot boundary (7.633 s); its full content and intended referent (likely an instruction for the next repetition) lie outside this shot.",
+        "The sharp taps at ~4.5 s and ~6.6 s are attributed to racket-shuttle contacts based on timing alignment with the observed contacts; they are not independently confirmable as stroke-type-specific sounds.",
+        "Landing depth of both returned shuttles is not captured in frame, so the upward returns' outcome is unobserved.",
+        "Individual footfalls during lunges and recoveries cannot be separated from the sustained rhythmic thudding background."
+      ],
+      "validation_warnings": []
+    },
+    {
+      "shot": "S03",
+      "speech_segments": [
+        {
+          "source_utterance_id": "U05",
+          "start": 7.633,
+          "end": 7.88,
+          "speaker": "V01",
+          "text": "你……",
+          "state": "tail of an utterance ('好，你……') that began before the camera cut; only the final syllable(s) fall inside this shot; delivery transitioning into the next point; Cross-cut transcript fragments may repeat a syllable; exact split remains uncertain (original fragments preserved).",
+          "speaker_status": "supported",
+          "actor": "S03-P01",
+          "confidence": "medium",
+          "evidence": "The only person on screen (S03-P01) faces the camera wearing a clipped lapel microphone, and his mouth shape changes continuously across frames 7.633–7.967 (open, mid-speech positions), matching the audible male Mandarin voice V01 at this interval; no competing speaker is visible or plausible. Because the utterance straddles the cut (~7.5–7.633), only its trailing portion is attributed to this shot, so timing/text are approximate.",
+          "related_actions": []
+        }
+      ],
+      "action_sounds": [],
+      "unmatched_sounds": [],
+      "uncertainties": [
+        "The on-screen subtitle '你们是不是经常遇到这个问题' appears at 7.967, implying a new utterance begins just before the clip ends at 8.0; its audibility and exact onset cannot be confirmed from the supplied candidate list, so it is not transcribed as speech here.",
+        "The precise cut point between the rally scene and the coach-to-camera shot lies between 7.5 and 7.633, so the split of U05 ('好' before the cut, '你……' after) is an estimate.",
+        "No candidate actions exist in this shot, so no action-sound attribution was possible; the rhythmic thudding and taps from the earlier rally scene end by 7.0 and do not overlap this shot."
+      ],
+      "validation_warnings": []
+    }
+  ],
+  "boundary_warnings": [
+    "U05: Cross-cut transcript fragments may repeat a syllable; exact split remains uncertain (original fragments preserved)."
+  ],
+  "limits": "Model-backed associations, not human-verified synchronization or measured impact times."
+}

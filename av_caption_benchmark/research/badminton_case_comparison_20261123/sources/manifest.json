@@ -1,0 +1,26 @@
+[
+  {
+    "file": "finebadminton_sample.json",
+    "url": "https://huggingface.co/datasets/iLearn-Lab/Finebadminton-20K/resolve/main/finebadminton-20K/0001_updated.json",
+    "bytes": 665617,
+    "sha256": "88d62e4bc8492f9247a9e619b42397a19e75c608b18edcf4691c72d9c2afd8be"
+  },
+  {
+    "file": "fb_movement_qa.json",
+    "url": "https://huggingface.co/datasets/iLearn-Lab/FineBadmintonBenchmark/resolve/main/finebadmintonbenchmark/benchmark_moving_recognization.json",
+    "bytes": 234954,
+    "sha256": "542bc5ed547c508bb77695a3aea4408afb79d323f0f4f44c6306e20021f30938"
+  },
+  {
+    "file": "fb_stroke_comment_qa.json",
+    "url": "https://huggingface.co/datasets/iLearn-Lab/FineBadmintonBenchmark/resolve/main/finebadmintonbenchmark/benchmark_hitting_comment2_updated.json",
+    "bytes": 552203,
+    "sha256": "9c4195d2a97550d1783b75b25ce2a10327e7fde047ebfbe58cb0cc28491bc39a"
+  },
+  {
+    "file": "fb_action_localization_qa.json",
+    "url": "https://huggingface.co/datasets/iLearn-Lab/FineBadmintonBenchmark/resolve/main/finebadmintonbenchmark/benchmark_action_localization.json",
+    "bytes": 184242,
+    "sha256": "e7140836ce6e40480d4c7c66df6147b2c116c968b92610fa8fb6d1da31819ef3"
+  }
+]

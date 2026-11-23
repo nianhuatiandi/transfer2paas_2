@@ -1,0 +1,27 @@
+{
+  "stage": "review_S02",
+  "model": "qwen3.8-omni-flash",
+  "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+  "prompt_sha256": "d043104f4a29f5954affeeb418aae106d275c2f0965127887f4480eb2ad2984f",
+  "enable_thinking": true,
+  "max_tokens": 12288,
+  "http_status": 200,
+  "response_id": "chatcmpl-8534ea50-beaf-97b5-a431-0e7d751d1f81",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 26596,
+    "total_tokens": 33218,
+    "completion_tokens": 6622,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 19968,
+      "text_tokens": 6628
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3474,
+      "text_tokens": 3148
+    }
+  },
+  "status": "complete",
+  "elapsed_seconds": 89.39
+}

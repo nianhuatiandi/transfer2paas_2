@@ -1,0 +1,222 @@
+Dense caption → structured caption / event graph 转换管线调研
+调研日期：2026-11-23
+范围：保留被测模型的原生提示词和输出，将输出文本统一解析为可审计的动作—人物—音频—时间关系结构。
+状态：文献与公开代码静态审阅；未运行下载的第三方源码，未调用付费模型，未取得新实验分数。
+
+一、结论
+
+这条路线可行，相关基础也已经存在。“用 LLM 把 caption 变成 JSON”本身不是新贡献。最直接的前例是 OmniCapBench 的 post-hoc parsing；图像 caption 的 SPICE、FACTUAL、CAPTURE 则提供了文本到场景图的成熟路线。
+
+对本项目更有意义的目标是：在不改变被测模型输出方式的情况下，忠实保留 caption 实际表达的人物、原子动作、专业细节、话语及其关系，且能够测出转换器自身造成的漏抽、增补和错误合并。
+
+需要区分三种任务：
+1. 语法适配：从原生 JSON、时间戳段落或自由文本读取内容；部分专用 captioner 本来就输出 JSON，困难不一定在 JSON 语法。
+2. 语义解析：识别动作实例、参与者、限定词、指代、关系及原文证据。这是本次研究核心。
+3. 视频重新理解：用视频、音频、ASR 或外部定位器补出原 caption 未包含的内容。这是额外系统能力，不能计入原 caption 模型表现。
+
+二、直接相关工作与可迁移组件
+
+[1] OmniCapBench（2026）——最接近的音视频后处理基线
+论文：https://arxiv.org/html/2610.12458v1
+代码：https://github.com/Tencent-Hunyuan/OmniCapBench
+位置：Appendix B.5/B.6；omnicapbench_eval/native_vs_posthoc.py。
+论文描述一个所有被测模型共享、看 caption 而不看视频的解析器，将 caption 转为 references / events / shots。其结果说明结构合法性提高不等于语义与绑定正确性提高。
+代码审阅补充：检查的版本会把 shot_time 作为独立输入传给解析器；该字段由 load_input_data(gt_path) 的 item 写入 caption 记录。提示词要求直接使用给定镜头边界。因而该脚本不是严格仅依赖 caption 字符串的转换，也不能用所得 Shot tIoU 单独证明文本恢复了边界。
+还需注意：脚本的 caption 阶段使用统一的 dense-caption prompt，未自动保留各模型原生任务提示词。复用到本项目时应直接接入原生输出。
+论文报告的实验与当前仓库快照是否完全一致，单靠静态代码无法确认。本文不由此断言论文结果错误。
+可复用：两阶段解耦、共享 parser、统一结构校验。缺口：动作级实例、证据对齐、专业术语粒度以及 parser 独立标注评估。
+
+[2] SPICE: Semantic Propositional Image Caption Evaluation（ECCV 2016）
+论文：https://arxiv.org/abs/1607.08822
+项目：https://panderson.me/spice/
+代码：https://github.com/peteanderson80/SPICE
+流程：文本语法分析 → 对象、属性、关系构成的场景图 → 语义元组匹配。
+可复用：将措辞差异与语义单元分开评估。局限：静态场景图；不直接建模多次动作实例、话语作用域和时间关系。官方 README 说明重复元组不会受到惩罚，因此不能直接承担重复运动实例的评估。
+
+[3] FACTUAL: A Benchmark for Faithful and Consistent Textual Scene Graph Parsing（Findings ACL 2023）
+论文：https://aclanthology.org/2023.findings-acl.398/
+代码：https://github.com/zhuang-li/FACTUAL
+流程：重新标注 caption 的 FACTUAL-MR 中间表示 → 训练文本解析器 → 转成对象、属性、关系图。
+可复用：给“文本到结构”本身建立独立标注，而非只观察最终 caption 分数；同时考察忠实性和一致性。
+局限：原始任务是图像/区域 caption，不提供本项目完整的动作、话语、时间结构。当前代码功能可能超出原论文，不能把后来新增的分句/修订选项都当成 2023 年论文贡献。
+
+[4] Benchmarking and Improving Detail Image Caption / CAPTURE（2024）
+论文：https://arxiv.org/abs/2405.19092
+代码：https://github.com/foundation-multimodal-models/CAPTURE
+实际评估流程：分句 → FACTUAL 的 flan-t5-base-VG-factual-sg parser → 合并对象、属性、关系 → 过滤 → exact / synonym / soft matching → 分项评分。
+已核对 capture/capture_metric/capture.py。merge_sentence_results 使用集合合并，attributes 按对象词条聚合；相同文字关系重复出现会折叠。对于两个同类人物、重复动作，这会丢失实例区分。
+可复用：解析与匹配模块分离、同义词处理。不可直接照搬：集合合并规则和宽松语义匹配，尤其不能把专业动作的上下位关系当成同义关系。
+仓库另有看图生成详细 caption 的多阶段数据构建流程，那部分不是本项目所需的纯文本转换器。
+
+[5] FActScore（EMNLP 2023）
+论文：https://aclanthology.org/2023.emnlp-main.741/
+代码：https://github.com/shmsw25/FActScore
+抽取入口：https://github.com/shmsw25/FActScore/blob/main/factscore/atomic_facts.py
+流程：长文本 → 句子及原子事实 → 检索与事实核验。
+可复用：原子事实拆分。本文仅建议借用拆分思想；外部知识核验与 caption 文本忠实性是不同任务。
+局限：原项目主要围绕长篇事实文本，不能假设人物传记示例与默认设置能直接处理中文体育动作、否定和动作时间。
+
+[6] A Closer Look at Claim Decomposition / DecompScore（*SEM 2024）
+论文：https://aclanthology.org/2024.starsem-1.13/
+关键发现：最终 factuality 得分会受拆分方法影响，拆分器错误可能被误算为生成模型错误。
+可复用：独立审计 decomposition；不能仅以最终分数上涨判断转换更好。
+注意：DecompScore 的支持子声明计数不能直接替代本项目需要的完整度、忠实度、实例一致性和关系正确性评估。
+
+[7] DnDScore: Decontextualization and Decomposition for Factuality Verification in Long-Form Text Generation（EMNLP 2025）
+论文：https://aclanthology.org/2025.emnlp-main.1205/
+关键问题：拆分让事实失去上下文；补回上下文又可能引入多个额外事实，改变核验对象。
+可复用：把被评估的原子声明和用于理解它的上下文分开保存。例如“他再次挑球”中的“他”要链接到人物，但不能把人物此前全部描述都重复计成新事实。
+局限：该工作不是音视频动作转换器，需要补上事件实例和音画关系表示。
+
+[8] Davidsonian Scene Graph / DSG（ICLR 2024）
+项目：https://google.github.io/dsg/
+代码：https://github.com/j-min/DSG
+代码入口：dsg/query_utils.py、dsg/parse_utils.py。
+流程：文本提示 → 语义元组 → 问题及依赖关系 → 用图像回答验证生成图像是否符合文本。
+已核对代码分别生成 tuple、question、dependency；元组提示词强调只抽文本明确描述的内容。
+可复用：事实之间的依赖，例如主体不存在时其属性不能独立获奖。后半段图像 VQA 不属于 caption-only 转换。
+
+[9] MAVEN-ERE（EMNLP 2022）
+论文：https://aclanthology.org/2022.emnlp-main.60/
+代码：https://github.com/THU-KEG/MAVEN-ERE
+内容：统一标注事件共指、时间、因果与子事件关系。
+可复用：事件提及与事件实例分开；同一个事件可以多次被提及，同类动作也可以是不同实例。时间先后、因果、包含是不同关系。
+局限：文本事件关系数据集，不是开箱即用的视频 caption 转换器；直接迁移到中文体育领域尚未验证。
+
+[10] AVoCaDO（2025）
+论文：https://arxiv.org/html/2510.10395v1
+位置：Appendix F.2 caption→keypoints，F.4/F.5 对话抽取及说话者一致性相关提示。
+可复用：从音视频描述中抽关键点、话语及说话者信息的任务划分。
+局限：整套奖励/验证链条包含其他输入，不能把整套方法都称为不看视频的转换器；也没有直接解决本项目完整事件图。
+
+[11] video-SALMONN 2（2025）
+论文：https://arxiv.org/html/2506.15220v1
+位置：3.3.1、Appendix E。
+流程：先把 GT caption 分解为 atomic events；评估器读取候选 caption 与 GT 事件表，找 missing / incorrect / hallucination events。
+可复用：动作信息缺失与错误分开报告。
+边界：这是 GT 驱动的评估过程，不等于先对候选 caption 做独立、完整的结构转换；也不是完整的时间关系图。
+
+[12] TCA-Bench（2026）
+论文：https://arxiv.org/html/2607.01667v1
+位置：4.3。
+流程：结构化 GT binding pairs / temporal triples → 针对候选 caption 逐项核验。
+可复用：音画绑定和时序分项诊断，关系正确性与事件覆盖度分开观察。
+边界：GT checklist 本来就是 scorer 输入；不能把它混入独立 caption parser 后再声称 parser 没看答案。
+
+[13] CapRiCorn-1K（2026）
+论文：https://arxiv.org/html/2606.21949v1
+位置：3.2.2。
+流程：以 GT keypoints 为锚点，从候选 caption 抽局部人物描述，再判断这些描述是否共指。
+可复用：人物跨句一致性。边界：这是 GT 引导的局部抽取和评分，不是独立的全量候选事件图构造。
+
+相邻工作（不计入上述 13 项核心对照）：
+LongVALE 的带时间段输出可用于研究原生格式适配，但其生成与时间定位任务不等于事后文本事件图解析：
+https://openaccess.thecvf.com/content/CVPR2025/supplemental/Geng_LongVALE_Vision-Audio-Language-Event_Benchmark_CVPR_2025_supplemental.pdf
+OmniScript 的层次化剧本及字段评分有表示上的借鉴价值，但主要从音视频生成结构，不是可直接替代的纯文本转换器：
+https://arxiv.org/html/2604.11102v1
+
+三、建议的转换管线（设计方案，尚未实测）
+
+原生模型输出
+→ 确定性格式适配
+→ 第 1 轮：声明、人物、动作、话语、声音抽取
+→ 第 2 轮：实例消歧、专业术语归一与关系构建
+→ 第 3 轮：文本证据与覆盖度审计
+→ 确定性结构校验
+→ 冻结候选事件图
+→ 与细粒度 GT 匹配及分项评分
+
+输入限制：parser 读取候选原文、原生输出自带时间、固定 schema、预先冻结的通用领域词表；不读取样本 GT、视频或音频。若允许额外提供 duration、镜头边界或字幕，必须记录来源并单独定义评测条件。
+
+步骤 0：格式适配。
+把原生 JSON/段落/时间戳段落转成 source_blocks，保存原始字符串及字符偏移。纯语法提取优先用规则，不让 LLM 改写原文。每块的时间范围只作为其容器时间；不能直接复制成块内每个子动作的真实起止时间。
+
+第 1 轮：证据约束抽取。
+为人物提及、动作提及、动作细节、话语和声音建立独立记录，保留引用原文及证据位置。动作可以拆成 actor、type、body_part、tool、target、manner、direction、result 等槽位；只填原文支持的槽位。
+必须保留否定、可能性、尝试、条件、指令与引用的作用域。原 caption 的错误也要忠实保留，交由 scorer 判断，不能在这里纠正为“更合理”的动作。
+
+第 2 轮：建图。
+先解析人物指代，再区分动作实例。同词不等于同实例；相同实例的补充描述可以合并，但要保留多条证据。“挑了两次球”可以先保留 counted_event_group，不能凭空编造两次各自的细节和时间。
+术语映射保存 raw_label、canonical_label、mapping_relation（equivalent / broader / narrower / ambiguous）。开放措辞仍保留，词表外内容不得直接丢弃。
+不能因为“挑球”常常伴随迈步，就自动添加迈步；不能把“上前移动”升级为“并步”。
+关系分为：事件先后/重叠/包含；音源和说话者；话语描述/指令所指的动作内容；可选因果与子事件。句子排列不是时间证据，“一边”通常支持重叠，不自动支持完全同时开始/结束。
+同一句话提到某动作，不表示该话语与画面某次动作已绑定。若无法确认具体实例，保留未解析引用。
+
+第 3 轮：双向审计。
+图→原文：每个字段是否有充分证据？是否把不确定改成确定、把计划改成发生、把宽泛词改成专业细词？
+原文→图：是否漏掉动作、重复次数、否定、说话者、声音或明确关系？
+审计只能依据原文修复解析失真；不能为了提高分数删除原文确实说出的错误内容。
+程序校验 ID 引用、证据偏移、数值单位、原生时间转换和关系冲突。原文自身矛盾应保留并标记，不能静默删边使图看起来一致。
+
+四、推荐表示
+
+source_blocks：不可变原文、原生时间及其来源。
+entities：人物/物体实例与其 mentions；无法确定同一人时保留歧义。
+events：动作、话语、声音；事件 ID、参与者、原始词、归一词、粒度、细节声明。
+assertions：每条独立声明的 polarity、certainty、scope 和 evidence。
+relations：source/target、类型、作用域、证据；明确区分原文直接陈述与逻辑推导。
+time：explicit interval / explicit point / source segment container / unknown；保持原始精度。
+unresolved：模糊指代、未绑定动作、未知时间、词表歧义；未知不得自动表示为 0。
+
+动作事件和其细节声明应分层保存。一个跳跃可以有“摆臂”“双脚离地”等已描述子动作，但一个仅写了“跳跃”的预测不能自动覆盖所有 GT 子动作。
+
+五、必须通过的边界案例
+
+A. 原文：教练说“先并步再挑球”，队员没有移动。
+   正确：保留真实话语事件；并步、挑球是话语内的指令内容；两者的 before 只在指令作用域内；移动为否定声明。
+   错误：把队员的并步与挑球当成已发生动作，再声称完成音画对齐。
+
+B. 原文：队员先并步，再挑球，随后再次挑球。
+   正确：一个并步实例、两个挑球实例，以及明确顺序；全部没有秒级时间。
+   错误：按动词去重成一个挑球，或自行分配 0–1 / 1–2 / 2–3 秒。
+
+C. 原文：[0–7 s] 他完成了一次立定跳远。
+   正确：一个跳远事件，来源段覆盖 0–7 s；动作精确边界未知。
+   错误：补出未描述的预摆、蹬伸、腾空、落地，或把 0–7 s 当作每个阶段的定位。
+
+D. 原文：他似乎先用左脚触地。
+   正确：左脚、触地和“似乎”的不确定性同时保留。
+   错误：转成确定的左脚落地事实，或通过运动常识改成双脚落地。
+
+六、如何与细粒度 GT 评估而不奖励转换器编造
+
+1. 分开评估文本解析质量与视频内容正确性。parser 的人工参考结构由标注员只看原 caption 建立；内容 benchmark GT 则来自视频，二者用途不同。
+2. 固定一套 parser 用于所有模型；不因知道模型身份而换提示或修复规则。
+3. 匹配先对齐人物和事件实例，再比较动作词、执行细节、话语和关系。重复事件使用实例级约束，不能由一条泛化预测获得多次完整命中。
+4. 高层动作命中与细粒度细节命中分开；更一般的表达可以获粗粒度分，但未描述细节不得获分。
+5. 语义、相对时序、音画指代/绑定、绝对时间分别报告。没有时间戳的模型仍可参加语义与相对时间评估；绝对时间评估要报告时间输出覆盖率，缺失不能从分母悄悄移除。不要填入 GT 时间。
+6. GT 不一定穷尽所有真事实。候选新增声明应先标为未在 GT 找到支持，必要时人工核查；不能仅凭 GT 未收录就断言幻觉。
+7. 不把 LLM 自报 confidence 当作经过校准的概率；是否可信需用人工标注校准。
+
+七、验证实验与最小可行版本
+
+建议先取 100–200 条原生 caption 做开发性 pilot，覆盖多个模型、领域和输出格式。这只是启动规模建议，不是论文充分性标准。
+人工只看 caption 建立解析参考图，重点抽查：重复动作、双人指代、术语上下位、引用/否定、跨句先后、无时间戳和粗段时间。
+
+转换基线：
+B1. 单次 LLM，直接按固定 schema 抽取。
+B2. OmniCapBench 的 post-hoc 思路适配；将仅 caption 与额外 shot_time 两种输入条件明确分开。
+B3. FACTUAL/CAPTURE 静态元组抽取，仅比较其表达能力覆盖的子任务；不把其不支持的关系字段当成同等设置。
+B4. 三轮证据审计的事件图解析。
+B5. 人工解析同一候选 caption，作为转换质量参考。它不表示候选本身正确，也不保证任何评分器的数学上界。
+另设直接 GT-checklist judge 作为评分协议对照；它与独立候选图的输入信息不同。
+
+转换器指标：文本支持的预测声明比例、原文可表示声明覆盖率、人物与事件共指错误、重复实例合并错误、关系 F1、否定/作用域保持率、证据定位有效率。简单“证据字符串存在”不能证明该字符串蕴含输出声明。
+系统指标：自动解析与人工解析所得模型排序差异；同义改写和格式变换下分数稳定性；否定翻转、主体交换、先后互换时能否检出错误；运行成本与重复调用稳定性。
+消融：去掉证据审计、实例 ID、作用域、专业词表、上下文链接；观察各类错误，而非只看总分。
+开发集定好提示、词表与阈值后冻结；在未参与开发的模型输出上检验，避免针对某种输出风格优化。
+
+八、研究定位
+
+可以形成的研究问题是：如何让原生自由输出与结构化输出的模型，在保留专业动作细节和音画时间关系的共同语义空间中被公平评估，并量化转换带来的测量误差？
+潜在贡献要靠证据建立：专业动作与话语作用域 schema、原生 caption→结构的独立人工标注、可靠的转换协议，以及最终排序相对人工判断更稳定。单纯多轮 prompt、JSON schema 或组合现成 parser，不足以单独证明方法创新。
+这份调研支持开展原型和标注 pilot；尚不能据此保证 ACL/ICML 录用，也没有证明建议管线优于现有方法。
+
+九、代码审阅可复现信息
+
+sources/manifest.json 记录 4 个仓库、10 个下载文件的 commit、URL 和 SHA-256。源码只用于静态审阅，未执行。主要位置：
+OmniCapBench 24328d3faff0a6f8519fc5072a195edac6f093d1：native_vs_posthoc.py，约 86–150 行 parser prompt、265–271 行 shot_time 记录、370–389 行 parser 输入。
+CAPTURE 52eeb2781e8b4b1854c07a57b573c75edfd45688：capture.py，约 75–97 行集合合并、310–348 行分句与 FACTUAL parser。
+FACTUAL 60c40f48c692ac5eb074f39e2ffd3904165d14f4：scene_graph_parser.py，parse 与 graph_string_to_object。
+DSG 7330119a39f76ff90e619a8bd3ff321e71aa986b：query_utils.py，三类抽取任务和 generate_dsg。
+已下载 mtss_transformer_convert.py 作为辅助材料，但本次关键结论依据 native_vs_posthoc.py；下载不等于逐行审阅整个项目。

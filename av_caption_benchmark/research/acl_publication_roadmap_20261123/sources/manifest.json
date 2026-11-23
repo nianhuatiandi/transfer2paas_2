@@ -1,0 +1,74 @@
+[
+  {
+    "name": "fave",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Lu_FAVE_A_Structured_Benchmark_for_Fine-Grained_Audio-Visual_Temporal_Evaluation_in_CVPR_2026_paper.pdf",
+    "pages": 10,
+    "status": "downloaded_and_text_extracted",
+    "bytes": 2847695,
+    "sha256": "e685582e835e5cae856ab4458b68d66f0ebb0736ecdebbf95ff634b33f8d6807"
+  },
+  {
+    "name": "fave_supp",
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Lu_FAVE_A_Structured_CVPR_2026_supplemental.pdf",
+    "pages": 6,
+    "status": "downloaded_and_text_extracted",
+    "bytes": 1038211,
+    "sha256": "26646122a62bde6ea8cd2035026b36bf01926770841113908b77263baee4d551"
+  },
+  {
+    "name": "capquiz",
+    "url": "https://aclanthology.org/2026.acl-long.777.pdf",
+    "pages": 21,
+    "status": "downloaded_and_text_extracted",
+    "bytes": 5025619,
+    "sha256": "6888bea42cb5dc1da27267687f4195e53fceba43cbe12cb3ce0cd346c82c4991"
+  },
+  {
+    "name": "tuna",
+    "url": "https://aclanthology.org/2025.acl-long.91.pdf",
+    "pages": 30,
+    "status": "downloaded_and_text_extracted",
+    "bytes": 16030291,
+    "sha256": "ff9e496d41ff40809d2fa5fc15b0c957026bacc21e448de2be83f377d88f9c3a"
+  },
+  {
+    "name": "avut",
+    "url": "https://aclanthology.org/2025.emnlp-main.333.pdf",
+    "pages": 19,
+    "status": "downloaded_and_text_extracted",
+    "bytes": 8096573,
+    "sha256": "c3c8a36639f8381fe0d139f1b2712e867cf27db0514d8fc4acbe25ed2793453a"
+  },
+  {
+    "name": "vidomni",
+    "url": "https://aclanthology.org/2026.emnlp-main.104.pdf",
+    "pages": 19,
+    "status": "downloaded_and_text_extracted",
+    "bytes": 4563156,
+    "sha256": "5f6a106a1076ae58f09f33bb3984580bcbe5418099f9435f4b096747382b4921"
+  },
+  {
+    "name": "avtime",
+    "url": "https://arxiv.org/pdf/2610.26046",
+    "pages": 35,
+    "status": "downloaded_and_text_extracted",
+    "bytes": 1848459,
+    "sha256": "d5a81171fe207dbc0fc60798f94c3c1df4a26de8d1c61b27fab2423d6bbbe158"
+  },
+  {
+    "name": "egoactionbench",
+    "url": "https://arxiv.org/pdf/2611.03646",
+    "pages": 32,
+    "status": "downloaded_and_text_extracted",
+    "bytes": 23124374,
+    "sha256": "d9dcca0ac6108c67424a99ab82c3fa19d94ef01f32f3fbab8ab4b92c5393e489"
+  },
+  {
+    "name": "kpm",
+    "url": "https://arxiv.org/pdf/2602.17768",
+    "pages": 26,
+    "status": "downloaded_and_text_extracted",
+    "bytes": 12548211,
+    "sha256": "923af91a972bf96a42e17db8763c0146031ebc93f41433490a83eb837ba1c983"
+  }
+]

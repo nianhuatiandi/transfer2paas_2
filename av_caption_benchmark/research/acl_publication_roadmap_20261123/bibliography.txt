@@ -1,0 +1,484 @@
+相关论文索引：80 项
+日期：2026-11-23
+阅读深度：此前70项范围综述+本轮10项补充；非80篇全文逐页精读。
+当前任务：专业原子动作与音频片段的纯同期关系。历史语义指向建议不作为当前提案。
+
+[R01] FineGym | CVPR 2020
+FineGym: A Hierarchical Video Dataset for Fine-Grained Action Understanding
+https://openaccess.thecvf.com/content_CVPR_2020/html/Shao_FineGym_A_Hierarchical_Video_Dataset_for_Fine-Grained_Action_Understanding_CVPR_2020_paper.html
+已有贡献：用体操的 event/set/element 层级及动作、子动作时间标注研究细粒度识别。
+当前对照：专业层级和子动作边界已有先例。
+
+[R02] FineDiving | CVPR 2022
+FineDiving: A Fine-Grained Dataset for Procedure-Aware Action Quality Assessment
+https://openaccess.thecvf.com/content/CVPR2022/html/Xu_FineDiving_A_Fine-Grained_Dataset_for_Procedure-Aware_Action_Quality_Assessment_CVPR_2022_paper.html
+已有贡献：以跳水动作程序及步骤的语义、时间对应支持动作质量评分。
+当前对照：专业步骤与时间分解已有先例；质量评分不同于caption准确性。
+
+[R03] FineAction | IEEE TIP 2022；arXiv 初版 2021
+FineAction: A Fine-Grained Video Dataset for Temporal Action Localization
+https://arxiv.org/abs/2105.11107
+已有贡献：包含106类动作、约103K时间实例，强调细粒度、密集及并行动作定位。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R04] FineSports | CVPR 2024
+FineSports: A Multi-person Hierarchical Sports Video Dataset for Fine-grained Action Understanding
+https://openaccess.thecvf.com/content/CVPR2024/html/Xu_FineSports_A_Multi-person_Hierarchical_Sports_Video_Dataset_for_Fine-grained_Action_CVPR_2024_paper.html
+已有贡献：NBA视频中的细粒度动作类别、层级及人物动作时空框；专业人士参与词汇体系制定。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R05] FineParser | CVPR 2024
+FineParser: A Fine-grained Spatio-temporal Action Parser for Human-centric Action Quality Assessment
+https://openaccess.thecvf.com/content/CVPR2024/html/Xu_FineParser_A_Fine-grained_Spatio-temporal_Action_Parser_for_Human-centric_Action_Quality_CVPR_2024_paper.html
+已有贡献：引入以人体为中心的细粒度时空解析，并扩展FineDiving的人体前景动作掩码。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R06] SportsHHI | CVPR 2024
+SportsHHI: A Dataset for Human-Human Interaction Detection in Sports Videos
+https://openaccess.thecvf.com/content/CVPR2024/html/Wu_SportsHHI_A_Dataset_for_Human-Human_Interaction_Detection_in_Sports_Videos_CVPR_2024_paper.html
+已有贡献：面向体育中的人物之间交互检测，研究高层互动和时空上下文。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R07] HAA500 | ICCV 2021
+HAA500: Human-Centric Atomic Action Dataset With Curated Videos
+https://openaccess.thecvf.com/content/ICCV2021/papers/Chung_HAA500_Human-Centric_Atomic_Action_Dataset_With_Curated_Videos_ICCV_2021_paper.pdf
+已有贡献：人工整理500类以人体为中心的原子动作，区分不同运动项目中的细致姿态类别。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R08] TAPOS | CVPR 2020
+Intra- and Inter-Action Understanding via Temporal Action Parsing
+https://arxiv.org/abs/2005.10229
+已有贡献：在体育视频上标注子动作，研究动作内部结构与动作之间关系的时间解析。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R09] BABEL | CVPR 2021
+BABEL: Bodies, Action and Behavior With English Labels
+https://openaccess.thecvf.com/content/CVPR2021/html/Punnakkal_BABEL_Bodies_Action_and_Behavior_With_English_Labels_CVPR_2021_paper.html
+已有贡献：为3D动作捕捉序列提供时间对齐的语言标签，允许不同持续时间的动作重叠。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R10] HumanML3D | CVPR 2022
+Generating Diverse and Natural 3D Human Motions From Text
+https://openaccess.thecvf.com/content/CVPR2022/html/Guo_Generating_Diverse_and_Natural_3D_Human_Motions_From_Text_CVPR_2022_paper.html
+已有贡献：提出文本驱动3D人体运动生成及HumanML3D动作—文本资源。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R11] MOMA | NeurIPS 2021
+MOMA: Multi-Object Multi-Actor Activity Parsing
+https://proceedings.neurips.cc/paper_files/paper/2021/hash/95688ba636a4720a85b3634acfec8cdd-Abstract.html
+已有贡献：用活动、子活动、原子动作及人物物体关系构建activity parsing和Action Hypergraph。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R12] MOMA-LRG | NeurIPS 2022 Datasets and Benchmarks
+MOMA-LRG: Language-Refined Graphs for Multi-Object Multi-Actor Activity Parsing
+https://proceedings.nips.cc/paper_files/paper/2022/hash/22c16986b2f50af520f56dc34d91e403-Abstract-Datasets_and_Benchmarks.html
+已有贡献：将复杂人体活动组织为可转换为自然语言的层级活动图，用于适配和评价VLM。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R13] MotionGPT | NeurIPS 2023
+MotionGPT: Human Motion as a Foreign Language
+https://arxiv.org/abs/2306.14795
+已有贡献：将离散化3D动作和语言统一建模，覆盖动作生成、caption、预测等任务。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R14] Ego-Exo4D | CVPR 2024
+Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives
+https://openaccess.thecvf.com/content/CVPR2024/html/Grauman_Ego-Exo4D_Understanding_Skilled_Human_Activity_from_First-_and_Third-Person_Perspectives_CVPR_2024_paper.html
+已有贡献：多视角技能活动资源，包含音频、多种语言描述以及教练和教师的专家评论。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R15] MotionBench | CVPR 2025
+MotionBench: Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models
+https://arxiv.org/abs/2501.02955
+已有贡献：用六类运动问题测量VLM细粒度运动理解，并研究高帧率输入与时序特征融合。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R16] FAVOR-Bench | NeurIPS 2025 Datasets and Benchmarks
+FAVOR-Bench: A Comprehensive Benchmark for Fine-Grained Video Motion Understanding
+https://arxiv.org/abs/2503.14935
+已有贡献：兼有选择题与开放动作描述；使用GPT辅助评分及结构提取后的序列比较。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R17] SMD | arXiv；未在本次核验会议版本
+Encoder-Free Human Motion Understanding via Structured Motion Descriptions
+https://arxiv.org/abs/2604.21668
+已有贡献：把关节位置序列规则化转换为关节角度、身体部位运动与轨迹的结构化文本。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R18] FineMotion | arXiv；未在本次核验会议版本
+FineMotion: A Dataset and Benchmark with both Spatial and Temporal Annotation for Fine-grained Motion Generation and Editing
+https://arxiv.org/abs/2507.19850
+已有贡献：提供身体部位运动的细粒度时空文字描述，支持运动生成及编辑。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R19] MA-Bench | CVPR 2026
+MA-Bench: Towards Fine-grained Micro-Action Understanding
+https://openaccess.thecvf.com/content/CVPR2026/html/Li_MA-Bench_Towards_Fine-grained_Micro-Action_Understanding_CVPR_2026_paper.html
+已有贡献：以微动作感知、关系理解及解释推理分层评价人体细微动作理解。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R20] EgoActionBench | arXiv 2026-11-02；未在本次核验会议版本
+EgoActionBench: Benchmarking Dense Action Captioning for Egocentric Human Videos
+https://arxiv.org/abs/2611.03646
+已有贡献：对左手、右手、双手原子动作进行密集描述和时间定位；分开测量语义、时间和手归属。
+当前对照：已核对全文评测节：原子动作、手归属、语义/时间/覆盖分项；直接视觉侧先例。
+
+[R21] ActivityNet Captions | ICCV 2017
+Dense-Captioning Events in Videos
+https://openaccess.thecvf.com/content_iccv_2017/html/Krishna_Dense-Captioning_Events_in_ICCV_2017_paper.html
+已有贡献：建立同时检测多个事件的时间边界并生成描述的dense captioning任务。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R22] YouCook2 | AAAI 2018；arXiv 初版 2017
+Towards Automatic Learning of Procedures from Web Instructional Videos
+https://arxiv.org/abs/1703.09788
+已有贡献：构建带时间定位和文字描述的烹饪步骤数据，研究教学视频程序学习。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R23] PDVC | ICCV 2021
+End-to-End Dense Video Captioning With Parallel Decoding
+https://openaccess.thecvf.com/content/ICCV2021/html/Wang_End-to-End_Dense_Video_Captioning_With_Parallel_Decoding_ICCV_2021_paper.html
+已有贡献：把密集caption建模为事件集合预测，并行输出时间边界和描述。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R24] Vid2Seq | CVPR 2023
+Vid2Seq: Large-Scale Pretraining of a Visual Language Model for Dense Video Captioning
+https://openaccess.thecvf.com/content/CVPR2023/html/Yang_Vid2Seq_Large-Scale_Pretraining_of_a_Visual_Language_Model_for_Dense_CVPR_2023_paper.html
+已有贡献：用时间token联合生成事件边界及文本，并利用转录句子边界作预训练伪监督。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R25] TimeChat | CVPR 2024
+TimeChat: A Time-sensitive Multimodal Large Language Model for Long Video Understanding
+https://openaccess.thecvf.com/content/CVPR2024/html/Ren_TimeChat_A_Time-sensitive_Multimodal_Large_Language_Model_for_Long_Video_CVPR_2024_paper.html
+已有贡献：通过带时间戳的帧编码和滑动Q-Former支持密集描述、定位及长视频理解。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R26] VTimeLLM | CVPR 2024
+VTimeLLM: Empower LLM to Grasp Video Moments
+https://openaccess.thecvf.com/content/CVPR2024/html/Huang_VTimeLLM_Empower_LLM_to_Grasp_Video_Moments_CVPR_2024_paper.html
+已有贡献：用阶段化训练增强视频事件边界意识，覆盖时间定位和密集caption。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R27] AuroraCap / VDC | ICLR 2025；arXiv 初版 2024
+AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark
+https://arxiv.org/abs/2410.03051
+已有贡献：提出详细视频描述模型与VDC，采用将长描述拆成短问题的LLM辅助评价。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R28] VALOR | arXiv；本次以2023版本为来源
+VALOR: Vision-Audio-Language Omni-Perception Pretraining Model and Dataset
+https://arxiv.org/abs/2304.08345
+已有贡献：联合视觉、音频和语言预训练，并建立带音视频联合描述的VALOR-1M。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R29] VAST | arXiv；本次以2023版本为来源
+VAST: A Vision-Audio-Subtitle-Text Omni-Modality Foundation Model and Dataset
+https://arxiv.org/abs/2305.18500
+已有贡献：分别生成视觉和音频描述，再结合字幕由LLM融合为全模态caption。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R30] Audio in Video Captioning | CVPR 2024 Workshops（非主会论文）
+Exploring the Role of Audio in Video Captioning
+https://openaccess.thecvf.com/content/CVPR2024W/MULA/html/Shen_Exploring_the_Role_of_Audio_in_Video_Captioning_CVPRW_2024_paper.html
+已有贡献：研究原始音频相对ASR文本的作用及预训练时的模态过度依赖。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R31] video-SALMONN 2 | arXiv 2025版本；与2024早期同系稿合并计数
+video-SALMONN 2: Captioning-Enhanced Audio-Visual Large Language Models
+https://arxiv.org/abs/2506.15220
+已有贡献：通过偏好优化增强详细音视频描述，并评价信息完整性和错误。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R32] UGC-VideoCap | arXiv；未在本次核验会议版本
+UGC-VideoCaptioner: An Omni UGC Video Detail Caption Model and New Benchmarks
+https://arxiv.org/abs/2507.11336
+已有贡献：短UGC视频的详细音视频caption；使用音频、视觉及联合语义的人机标注流程。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R33] Omni-Captioner / Omni-Cloze | ICLR 2026；arXiv 初版 2025
+Omni-Captioner: Data Pipeline, Models, and Benchmark for Omni Detailed Perception
+https://arxiv.org/abs/2510.12720
+已有贡献：构建详细音频/音视频描述管道和模型，用cloze式任务衡量细节信息保留。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R34] FAVE | CVPR 2026
+FAVE: A Structured Benchmark for Fine-Grained Audio-Visual Temporal Evaluation in Multimodal LLMs
+https://openaccess.thecvf.com/content/CVPR2026/html/Lu_FAVE_A_Structured_Benchmark_for_Fine-Grained_Audio-Visual_Temporal_Evaluation_in_CVPR_2026_paper.html
+已有贡献：测量跨模态时间对齐、事件时间关系和片段级音视频描述。
+当前对照：已下载论文及补充：同期跨模态QA已有先例；其事件构建协议要求持续超过5秒。
+
+[R35] TCA-Captioner / TCA-Bench | ECCV 2026；已核验Springer会议论文集及作者发布页
+Temporal and Cross-Modal Alignment for Enhanced Audiovisual Video Captioning
+https://arxiv.org/abs/2607.01667
+已有贡献：以声音—来源绑定列表及跨模态时间关系三元组构造GT，并进行解耦评价。
+当前对照：同步/先后与绑定已有先例；专业原子区间需另证增量。
+
+[R36] AVSCap | arXiv 2026-07；未在本次核验会议版本
+AVSCap: Orchestrating Audio-Visual Synergy for Omni-modal Video Captioning
+https://arxiv.org/abs/2607.12820
+已有贡献：围绕跨模态事件绑定构建描述模型及基准，分别评价视觉、音频和协同事件。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R37] AVCap | arXiv 2026-08；未在本次核验会议版本
+AVCap: Reinforcing Audio-Video Joint Caption with Detail-Aware Reward
+https://arxiv.org/abs/2608.06930
+已有贡献：建立细节丰富音视频数据、AVCap-Bench及AVCap-Score，通过GT原子问答探针评价候选caption。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R38] OmniCapBench | NeurIPS 2026 Evaluations & Datasets；已核验会议官方论文清单，会议尚未举行
+OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning
+https://arxiv.org/abs/2610.12458
+已有贡献：原生输出实体、镜头及音频事件单位，结合确定性结构约束与局部LLM语义评分。
+当前对照：已核对原子subshot与重叠时间区间；EVSA为音频事件到镜头关联。
+
+[R39] AVTrace | arXiv 2026-09；未在本次核验会议版本
+AVTrace: Diagnosing Audio-Visual Temporal Reasoning in Omni Models
+https://arxiv.org/abs/2609.19991
+已有贡献：银标准诊断集覆盖起点/区间定位、同步、事件顺序及链解析，采用规范化后确定性评分。
+当前对照：已有时间定位、跨模态定位、同步及扰动诊断；不能把时序诊断泛称首次。
+
+[R40] AudioCaps | NAACL 2019
+AudioCaps: Generating Captions for Audios in The Wild
+https://aclanthology.org/N19-1011/
+已有贡献：通过众包建立真实世界音频与人工文字描述，研究一般声音caption。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R41] Clotho | ICASSP 2020；arXiv初版2019，规模采用原版论文
+Clotho: An Audio Captioning Dataset
+https://arxiv.org/abs/1910.09387
+已有贡献：为一般音频提供多条人工自由描述，强调描述多样性。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R42] Perception Test | NeurIPS 2023 Datasets and Benchmarks
+Perception Test: A Diagnostic Benchmark for Multimodal Video Models
+https://proceedings.neurips.cc/paper_files/paper/2023/hash/8540fba4abdc7f9f7a7b1cc6cd60e409-Abstract.html
+已有贡献：以记忆、抽象、物理、语义等技能组织真实视频，并标注动作和声音时间片段等标签。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R43] OmniBench | arXiv；本次以2024版本为来源
+OmniBench: Towards The Future of Universal Omni-Language Models
+https://arxiv.org/abs/2409.15272
+已有贡献：检验视觉、声学和文本的联合推理，主要是三模态QA。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R44] AVE | ECCV 2018
+Audio-Visual Event Localization in Unconstrained Videos
+https://www.ecva.net/papers/eccv_2018/papers_ECCV/html/Yapeng_Tian_Audio-Visual_Event_Localization_ECCV_2018_paper.php
+已有贡献：定义同时可见且可听的事件，研究事件时间定位和跨模态定位。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R45] LLP / AVVP | ECCV 2020
+Unified Multisensory Perception: Weakly-Supervised Audio-Visual Video Parsing
+https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/513_ECCV_2020_paper.php
+已有贡献：将视频分成声音可闻、画面可见或两者共有的时间事件。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R46] WorldSense | arXiv；本次以2025版本为来源
+WorldSense: Evaluating Real-world Omnimodal Understanding for Multimodal LLMs
+https://arxiv.org/abs/2502.04326
+已有贡献：跨多个现实领域的视听同步视频QA，强调音视频联合信息。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R47] Daily-Omni | arXiv；本次以2025版本为来源
+Daily-Omni: Towards Audio-Visual Reasoning with Temporal Alignment across Modalities
+https://arxiv.org/abs/2505.17862
+已有贡献：构建日常情景的音视频QA和时间对齐管道，并提供分模块系统基线。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R48] SODA | ECCV 2020
+SODA: Story Oriented Dense Video Captioning Evaluation Framework
+https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/6406_ECCV_2020_paper.php
+已有贡献：针对密集caption的事件顺序与故事结构设计评测，补充单个匹配句子评分的不足。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R49] FActScore | EMNLP 2023
+FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
+https://aclanthology.org/2023.emnlp-main.741/
+已有贡献：把长文本拆为原子事实，测量可靠知识源支持的事实比例。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R50] G-Eval | EMNLP 2023
+G-Eval: NLG Evaluation using Gpt-4 with Better Human Alignment
+https://aclanthology.org/2023.emnlp-main.153/
+已有贡献：用量表和结构化填表式LLM评价语言生成，并分析与人工判断的一致性。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R51] MT-Bench judge | NeurIPS 2023 Datasets and Benchmarks
+Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena
+https://arxiv.org/abs/2306.05685
+已有贡献：研究LLM judge与人工偏好的一致性，以及位置、冗长和自我偏好等偏差。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R52] CLAIR | EMNLP 2023
+CLAIR: Evaluating Image Captions with Large Language Models
+https://aclanthology.org/2023.emnlp-main.841/
+已有贡献：用LLM比较候选和参考caption，并检验与人工评价的相关性。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R53] SPICE | arXiv 初版 2016；本次以该版本为来源
+SPICE: Semantic Propositional Image Caption Evaluation
+https://arxiv.org/abs/1607.08822
+已有贡献：基于场景图中的语义命题衡量caption内容，超越表面词重合。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R54] CIDEr | CVPR 2015
+CIDEr: Consensus-Based Image Description Evaluation
+https://openaccess.thecvf.com/content_cvpr_2015/html/Vedantam_CIDEr_Consensus-Based_Image_2015_CVPR_paper.html
+已有贡献：以多参考描述中的人类共识衡量caption相似度。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R55] BERTScore | ICLR 2020；arXiv 初版 2019
+BERTScore: Evaluating Text Generation with BERT
+https://arxiv.org/abs/1904.09675
+已有贡献：基于上下文词表示匹配候选与参考文本，缓解词面不同带来的误罚。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R56] LongVALE | CVPR 2025
+LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos
+https://openaccess.thecvf.com/content/CVPR2025/html/Geng_LongVALE_Vision-Audio-Language-Event_Benchmark_Towards_Time-Aware_Omni-Modal_Perception_of_Long_Videos_CVPR_2025_paper.html
+已有贡献：提供长视频中带精确边界和跨模态关系描述的视听语言事件，并建立模型基线。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R57] TAC | arXiv 2026-02；未在本次核验会议版本
+TAC: Timestamped Audio Captioning
+https://arxiv.org/abs/2602.15766
+已有贡献：生成具有时间边界的重叠声音描述，并通过TAC-V融合视觉形成音视频描述。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R58] AVUT | EMNLP 2025
+Audio-centric Video Understanding Benchmark without Text Shortcut
+https://aclanthology.org/2025.emnlp-main.333/
+已有贡献：以音频为中心评价视频理解，并通过答案置换过滤仅靠问题文本可作答的捷径。
+当前对照：已下载全文；以消除文本捷径支撑音频中心benchmark的有效性。
+
+[R59] Action Genome | CVPR 2020
+Action Genome: Actions As Compositions of Spatio-Temporal Scene Graphs
+https://openaccess.thecvf.com/content_CVPR_2020/html/Ji_Action_Genome_Actions_As_Compositions_of_Spatio-Temporal_Scene_Graphs_CVPR_2020_paper.html
+已有贡献：用人物物体的时空关系图分解动作，研究组合式行为理解。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R60] TALL / Charades-STA | ICCV 2017
+TALL: Temporal Activity Localization via Language Query
+https://openaccess.thecvf.com/content_iccv_2017/html/Gao_TALL_Temporal_Activity_ICCV_2017_paper.html
+已有贡献：根据自然语言查询定位动作时间片段，建立Charades-STA。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R61] QVHighlights | NeurIPS 2021
+Detecting Moments and Highlights in Videos via Natural Language Queries
+https://proceedings.neurips.cc/paper_files/paper/2021/hash/62e0973455fd26eb03e91d5741a4a3bb-Abstract.html
+已有贡献：对查询相关的多个视频时刻及显著程度标注，并提出集合预测基线。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R62] AVHBench | arXiv；本次以2024版本为来源
+AVHBench: A Cross-Modal Hallucination Benchmark for Audio-Visual Large Language Models
+https://arxiv.org/abs/2410.18325
+已有贡献：评价跨模态幻觉、匹配和推理，分析一种模态对另一种模态的误导。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R63] FENSE | ICASSP 2022；arXiv 初版 2021
+Can Audio Captions Be Evaluated with Image Caption Metrics?
+https://arxiv.org/abs/2110.04684
+已有贡献：检验图像caption指标在音频上的适用性，结合语义相似和错误检测提出FENSE。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R64] CHAIR | EMNLP 2018
+Object Hallucination in Image Captioning
+https://aclanthology.org/D18-1437/
+已有贡献：提出面向对象幻觉的诊断指标，指出句子指标好不代表幻觉少。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R65] LongCap | arXiv 2026-11-08；未在本次核验会议版本
+LongCap: Hour-Scale Timestamped Audio Captioning via Chunk-wise Processing
+https://arxiv.org/abs/2611.11125
+已有贡献：针对长时音频的时间化caption提出分块处理、人工基准和时间线/粒度/内容指标。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R66] OmniScript | arXiv 2026-04；未在本次核验会议版本
+OmniScript: Towards Audio-Visual Script Generation for Long-Form Cinematic Video
+https://arxiv.org/abs/2604.11102
+已有贡献：将长篇影视视频转为包含人物动作、对话、表情和声音的分层脚本并作时间感知评价。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R67] AVoCaDO | arXiv 2025-10；未在本次核验会议版本
+AVoCaDO: An Audiovisual Video Captioner Driven by Temporal Orchestration
+https://arxiv.org/abs/2510.10395
+已有贡献：利用时间对齐的视听描述数据及后训练改善时间一致性、对话准确性。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R68] VCapsBench | arXiv；未在本次核验会议版本
+VCapsBench: A Large-scale Fine-grained Benchmark for Video Caption Quality Evaluation
+https://arxiv.org/abs/2505.23484
+已有贡献：以细粒度QA测量caption准确性、不一致及覆盖率，关注视频生成所需的时空细节。
+当前对照：背景参照；应在原子动作描述与纯同期音画关系定义下使用。
+
+[R69] TimeChat-Captioner / OmniDCBench | ICML 2026（PMLR 正式论文页核验）
+TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions
+https://proceedings.mlr.press/v306/yao26o.html
+已有贡献：提出带时间戳和六维结构的Omni Dense Captioning、OmniDCBench及SodaM评价。
+当前对照：scene级时序caption；是时间和内容联合评分的必要对照。
+
+[R70] CapQuiz | ACL 2026 Long Papers
+Putting Captions to the Test: Evaluating Video Caption Quality through Multiple-Choice Question Answering
+https://aclanthology.org/2026.acl-long.777/
+已有贡献：以人工核验的细粒度选择题衡量caption保留的信息及事实性，减少单参考表述局限。
+当前对照：已下载全文；caption的信息覆盖/真实性及人类相关性是ACL评测论文先例。
+
+[R71] TUNA | ACL 2025 主会长文
+TUNA: Comprehensive Fine-grained Temporal Understanding Evaluation on Dense Dynamic Videos
+https://aclanthology.org/2025.acl-long.91/
+已有贡献：caption 事件拆分、序列匹配、原子视觉事实核验；caption 与 QA 两种任务。
+当前对照：已覆盖原生 caption 的事件化评测；本项目应验证精确跨模态时间保真与专业动作的增量。
+
+[R72] FineBadminton | ACM MM 2025
+FineBadminton: A Multi-Level Dataset for Fine-Grained Badminton Video Understanding
+https://arxiv.org/html/2508.07554v1
+已有贡献：逐拍专业动作、子类、战术与评价；有移动路径和第几拍定位问答。
+当前对照：专业名词与细节并非空白；需以独立步法/击球实例及音频区间评测形成可验证差异。
+
+[R73] AVTime | arXiv 预印本；本轮未确认会议录用
+AVTime: Reinforcing Dense Audio-Visual Captions with Bidirectional Alignment
+https://arxiv.org/html/2610.26046v1
+已有贡献：Joint Event 时间线及 T2E/E2T/E2E，音频与视觉分支评分；采用百分比时间桶。
+当前对照：构成直接时序评测先例；必须比较短原子动作、分离时间轴和区间重叠的诊断价值。
+
+[R74] VidCapBench | Findings ACL 2025
+VidCapBench: A Comprehensive Benchmark of Video Captioning for Controllable Text-to-Video Generation
+https://aclanthology.org/2025.findings-acl.449/
+已有贡献：对 caption 格式不敏感的关键内容评估，并验证与下游视频生成质量的相关性。
+当前对照：原生输出兼容不是首创；可借鉴下游效度而非依靠更长字段列表证明价值。
+
+[R75] VidOmni-Bench | EMNLP 2026 主会
+VidOmni-Bench: A Benchmark for Fine-Grained Video Understanding via Spatio-Temporal Event Verification across Complexity and Duration
+https://aclanthology.org/2026.emnlp-main.104/
+已有贡献：以人类核验的句子/事件真假标签评价模型对密集描述的验证能力。
+当前对照：可借鉴自然错误与高相似错误对照；其事件验证任务与音视频时序caption生成不同。
+
+[R76] KPM-Bench | arXiv 预印本；本轮未确认会议录用
+KPM-Bench: A Kinematic Parsing Motion Benchmark for Fine-grained Motion-centric Video Understanding
+https://arxiv.org/html/2602.17768v1
+已有贡献：运动学分析、肢体级描述以及从 caption 抽取动作属性的 MoPE。
+当前对照：动作细节与结构解析均有近例；本项目应检查术语规则、实例保留和音画时序。
+
+[R77] CapRiCorn-1K | arXiv 预印本；本轮未确认会议录用
+CapRiCorn-1K: A Comprehensive Benchmark for Video Captioning and Subject Referential Consistency Across Temporal Scales
+https://arxiv.org/html/2606.21949v1
+已有贡献：跨时间尺度的 caption 质量、人物指代一致性和下游效度。
+当前对照：跨镜头身份一致性本身已有先例；人物限制是范围控制，不是独立创新。
+
+[R78] FACTUAL | Findings ACL 2023
+FACTUAL: A Benchmark for Faithful and Consistent Textual Scene Graph Parsing
+https://aclanthology.org/2023.findings-acl.398/
+已有贡献：为文本场景图解析建立人工中间表示，考察忠实性和一致性。
+当前对照：应为 caption 转换器单独建立人工解析真值；不能把解析错误全部算成模型错误。
+
+[R79] DualFact+ | Findings ACL 2026；网页与 PDF 长标题有差异，采用短名
+DualFact+
+https://aclanthology.org/2026.findings-acl.1912.pdf
+已有贡献：程序性 caption 子句分解、动作区间、语义角色事实及核验。
+当前对照：原子事实分解并非首创；本项目以同期区间关系为准，不沿用此前语义指向提案。
+
+[R80] TempCompass | Findings ACL 2024
+TempCompass: Do Video LLMs Really Understand Videos?
+https://aclanthology.org/2024.findings-acl.517/
+已有贡献：多种时序能力/任务形式；构造静态内容相近而时间属性不同的对照视频。
+当前对照：时间扰动与抗捷径实验已有先例；可用于检验本项目测量是否真的关注时间。

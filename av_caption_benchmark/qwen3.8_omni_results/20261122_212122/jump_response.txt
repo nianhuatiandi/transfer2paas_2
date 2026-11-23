@@ -1,0 +1,47 @@
+## Storyline
+
+00:00.000 - 00:01.999
+The video opens with a medium close-up shot of a young East Asian man standing outdoors in what appears to be a park or community fitness area. He has short black hair held back by a black athletic headband, and he wears a sleeveless teal-blue training top with a small black lavalier microphone clipped to the collar. His expression is animated and engaging as he speaks directly to the camera. Behind him, dense green foliage and tree trunks fill the background, and a yellow-and-blue horizontal pull-up bar is partially visible on the left edge of the frame. On the far right, a woman in a dark jacket walks along a paved path, slightly out of focus. The lighting is natural daylight with soft shadows, suggesting an overcast or shaded environment. A white subtitle appears at the bottom center reading "如何在一分钟之内就立竿见影". In the top-right corner, a persistent watermark reads "跑步的子章老师 bilibili". The man's voice is clear, energetic, and delivered in standard Mandarin with a slightly fast, instructional cadence. No music or distinct ambient sound effects are present beyond faint outdoor ambience.
+
+00:02.000 - 00:05.999
+The scene cuts to a wide static shot of an outdoor red-surfaced track or court enclosed by a tall chain-link fence. Behind the fence, multi-story residential apartment buildings with beige and white facades are visible under a bright sky. The same man, now seen full-body in black athletic pants and white running shoes, stands near the left-center of the frame. He begins a standing long jump: first dropping into a deep squat with his arms swinging backward (00:02–00:03), then explosively extending his hips and knees while driving his arms forward and upward (00:03–00:04). At approximately 00:04 he leaves the ground with both feet simultaneously, traveling forward through the air with his legs extended ahead of him. By 00:05 his feet make initial contact with the red track surface, and he absorbs the impact by bending his knees into a low crouch. The subtitle at the bottom center changes to "如同作弊一般提升立定跳远的成绩呢". The man's voice continues as a voice-over, maintaining the same energetic instructional tone. No distinct landing sound effect is audible; the audio remains dominated by speech with only faint environmental ambience.
+
+00:06.000 - 00:07.000
+The man remains in the crouched landing position on the red track, knees deeply bent and torso leaning forward, arms extended slightly behind him for balance. The subtitle updates to "今天给大家介绍三个方法". His voice-over concludes the introductory sentence. The camera remains static in the wide shot. The background elements—fence, apartment buildings, scattered equipment such as a rolled mat and a blue crate—stay unchanged. The clip ends with the man still in the landed crouch.
+
+## Visible Text
+
+00:00.000 - 00:07.000
+"跑步的子章老师 bilibili": white text watermark with a small bilibili logo icon, positioned in the top-right corner of the frame, persistent throughout the entire clip.
+
+00:00.000 - 00:01.999
+"如何在一分钟之内就立竿见影": white subtitle text with a thin dark outline, centered at the bottom of the frame.
+
+00:02.000 - 00:05.999
+"如同作弊一般提升立定跳远的成绩呢": white subtitle text with a thin dark outline, centered at the bottom of the frame.
+
+00:06.000 - 00:07.000
+"今天给大家介绍三个方法": white subtitle text with a thin dark outline, centered at the bottom of the frame.
+
+## Speakers and Transcript
+
+Speaker profiles:
+Man in blue sleeveless top / voice-over - Young adult East Asian male, standard Mandarin (Putonghua), energetic and instructional tone, moderately fast speaking rate, clear articulation, slight enthusiasm typical of a fitness coach addressing an audience.
+
+00:00.000 - 00:06.800
+Speaker: Man in blue sleeveless top / voice-over
+State: Continuous speech, energetic instructional delivery, moderate-to-fast pace, confident and engaging tone; begins on-camera in close-up and continues as voice-over after the cut to the wide shot.
+Content: "如何在一分钟之内就立竿见影，如同作弊一般提升立定跳远的成绩呢？今天给大家介绍三个方法。"
+Related actions: A01 (temporal overlap only – the speech introduces the topic while the jump is demonstrated visually)
+
+## Atomic Sports Actions
+
+00:02.000 - 00:06.000
+Action ID: A01
+Actor: Man in blue sleeveless top
+Technique: standing long jump
+Detail: The man starts from a stationary upright position on the red track, drops into a deep squat with simultaneous backward arm swing (preparation phase, ~00:02–00:03), then explosively extends hips and knees while swinging arms forward and upward. Both feet leave the ground together at approximately 00:03.5–00:04.0 (takeoff). He travels forward through the air with legs extended ahead (~00:04–00:05). Initial landing occurs at approximately 00:05.0 with both feet contacting the track surface, followed by a deep knee-flexion crouch to absorb impact and stabilize (~00:05–00:06). The camera is a static wide shot capturing the full jump from a side-front angle. No run-up is present; the jump is purely from a standing position.
+Key moments:
+- takeoff: ~00:03.800 (both feet leave the ground)
+- initial landing: ~00:05.000 (first foot contact with track)
+Aligned sounds: none distinctly audible; faint ambient outdoor noise only, no clear footfall or landing impact sound separated from the voice-over.

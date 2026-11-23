@@ -1,0 +1,54 @@
+{
+  "source": "E:\\Download\\sports_video_data\\transfer2paas_2\\badminton_lift_31679122798_first8s.mp4",
+  "source_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+  "model": "qwen3.8-omni-flash",
+  "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+  "enable_thinking": false,
+  "max_tokens": 4096,
+  "repetitions_per_mode": 1,
+  "prompt_sha256": "d8d41fc6bff31579bcbd53d2bae57b0db0ea6051038bd704fa98ad97f3549050",
+  "tail_only": true,
+  "additional_image_count": 84,
+  "image_size": "960x540 JPEG, as used by the current pipeline",
+  "modes": {
+    "default_video": {
+      "video_part": {
+        "type": "video_url",
+        "video_url": {
+          "url": "[same MP4 base64]"
+        }
+      }
+    },
+    "nested_fps10_legacy": {
+      "video_part": {
+        "type": "video_url",
+        "video_url": {
+          "url": "[same MP4 base64]",
+          "fps": 10
+        }
+      }
+    },
+    "api_fps10_sibling": {
+      "video_part": {
+        "type": "video_url",
+        "video_url": {
+          "url": "[same MP4 base64]"
+        },
+        "fps": 10
+      }
+    },
+    "local_10fps_images_plus_video": {
+      "video_part": {
+        "type": "video_url",
+        "video_url": {
+          "url": "[same MP4 base64]"
+        }
+      },
+      "additional_images": 84
+    }
+  },
+  "limits": [
+    "One invocation per mode; content quality differences are observations, not statistical accuracy estimates.",
+    "Local image mode also changes modality representation, timestamp text and image resizing; token totals are not directly comparable as frame counts."
+  ]
+}

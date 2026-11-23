@@ -1,0 +1,103 @@
+## Storyline
+
+00:00.000 - 00:03.900
+Shot: S01 (cut boundary estimated; the exact switch occurs between the sampled frames at 00:03.000 and 00:04.000 and is not directly observed). An indoor badminton hall with a blue court, green surrounds, a white-taped net on yellow posts, and overhead sponsor banners. Two players are visible. S01-P01 stands in the foreground with his back to the camera, wearing a black T-shirt with a large pink graphic on the back, light grey shorts, white socks and dark shoes, racket in his right hand. S01-P02 is on the far side of the net near the tape, wearing a dark top with pink accents and black shorts. At the first observed frame (00:00.000) P01 is in a bent-knee ready stance in midcourt while a shuttlecock hangs in the air above P02. Through 00:01.000-00:02.000 P01 steps forward toward the net and swings his racket (motion blur at 00:02.000); by 00:03.000 he is in a follow-through posture and the shuttlecock is seen rising above the net toward the far side, indicating he has redirected it upward. P02 remains near the net on the far side, bending low around 00:01.000-00:02.000. Audio in this interval: an off-screen male voice says "往这边跳" (approx. 00:00.900-00:01.700, estimated), shoe/footstep sounds around 00:01.000, a sharp impact sound around 00:02.200 (estimated) consistent with racket-shuttle contact, and the voice counting "一个" (approx. 00:03.300-00:03.800, estimated).
+
+00:03.900 - 00:08.000
+Shot: S02 (new viewpoint from behind a different player on the right side of the same court; identity links to S01 participants are not demonstrable). In the foreground right, S02-P01 stands upright watching, wearing a dark navy sleeveless vest over a white T-shirt, black shorts and dark shoes with orange accents, racket held low. On the far side of the net, S02-P02 wears a maroon long-sleeve top and light grey shorts. At the first observed frame of this shot (00:04.000) P02 is in a deep, wide, loaded stance close to the net with his racket low; by 00:05.000 he has stretched upward with his lead leg bent and bearing weight and his racket raised, with the shuttlecock adjacent to the racket head (contact localized only approximately). From 00:06.000 to 00:07.000 the shuttlecock is seen high above the net area, drifting toward screen left/up; its landing is not observed. P01 in the foreground makes only small stance adjustments and does not swing. Audio: a sharp impact sound around 00:05.000 (estimated) aligned with P02's strike, shoe squeaks around 00:04.000-00:05.000, and the off-screen voice saying "两个" (approx. 00:06.000-00:06.600, estimated) followed by "好，你" (approx. 00:06.900-00:07.600, estimated). Visual evidence ends at the 00:07.000 sample; the interval 00:07.000-00:08.000 is unobserved visually (audio only).
+
+## Visible Text
+
+00:00.000 - 00:03.900
+Shot: S01
+"YONEX": white brand text with logo on the left overhead banner and on the centre overhead banner, blue background.
+"旭日星空": red Chinese characters on the centre overhead banner.
+"XURI STAR 专业羽毛球学院": smaller text beneath "旭日星空" on the centre banner.
+"旭日星空 XURI STAR 专业[illegible]": partially cropped right-hand overhead banner, same style as centre banner.
+"李宇轩教练": white watermark text, top-right corner.
+"bilibili": white logo/text beside the watermark, top-right corner.
+
+00:03.900 - 00:07.000
+Shot: S02
+"YONEX": white brand text with logo on left and centre overhead banners.
+"旭日星空": red Chinese characters on the centre overhead banner.
+"XURI STAR 专业羽毛球学院": text beneath on the centre banner.
+"旭日星空 XURI STAR 专业[illegible]": partially cropped right-hand banner.
+"李宇轩教练": white watermark, top-right corner.
+"bilibili": watermark logo, top-right corner.
+"[illegible]": faint Chinese characters on the dark back wall behind the net, only discernible in this shot, not reliably readable.
+
+## Speakers and Transcript
+
+Speaker profiles:
+V01 - Male voice speaking Mandarin in a calm instructional/counting tone; no visible person is shown speaking, so the speaker is off-screen/unidentified for all intervals.
+
+00:00.900 - 00:01.700
+Speaker: V01 (off-screen)
+State: Clear, directive, moderate volume (timing estimated).
+Content: "往这边跳"
+Related actions: A01: instruction.
+
+00:03.300 - 00:03.800
+Speaker: V01 (off-screen)
+State: Short counting utterance (timing estimated).
+Content: "一个"
+Related actions: A02: retrospective comment.
+
+00:06.000 - 00:06.600
+Speaker: V01 (off-screen)
+State: Short counting utterance (timing estimated).
+Content: "两个"
+Related actions: A04: retrospective comment.
+
+00:06.900 - 00:07.600
+Speaker: V01 (off-screen)
+State: Continuing address, sentence trails at clip end (timing estimated).
+Content: "好，你"
+Related actions: none.
+
+## Atomic Sports Actions
+
+00:00.000 - 00:02.000
+Action ID: A01
+Shot: S01
+Actor: S01-P01
+Technique: movement
+Chinese term: 移动（步法未定）
+Visual evidence: P01 displaces forward toward the net between 00:00.000 and 00:02.000 (stance narrows/advances, racket drawn back), but at the available ~1 fps sampling the individual step sequence (split step, chasse, crossover) cannot be resolved; missing cue: discernible foot-by-foot pattern.
+Detail: Foreground player in black T-shirt and grey shorts moves screen-forward toward the net preparing to receive; travel direction is toward the net (away from camera). Boundaries estimated from sampled frames.
+Key moments: none required.
+Aligned sounds: footstep/shoe sounds around 00:01.000 (estimated); causal attribution uncertain.
+
+00:01.500 - 00:03.000
+Action ID: A02
+Shot: S01
+Actor: S01-P01
+Technique: upward return
+Chinese term: 向上回球（球种未定）
+Visual evidence: Racket swing with motion blur visible at 00:02.000; at 00:03.000 the shuttlecock is above the net rising toward the far side, confirming redirection. Contact itself falls between sampled frames, and P01's contact zone appears midcourt rather than clearly forecourt, so lift is not confirmed; missing cue: visible forecourt contact and confirmed deep landing.
+Detail: Right-handed swing from a forward-moving stance; outgoing shuttle path rises over the net toward the opponent's side. Interval boundaries estimated.
+Key moments: racket-shuttle contact uncertain (between 00:02.000 and 00:03.000).
+Aligned sounds: sharp impact sound around 00:02.200 (estimated), consistent with racket-shuttle contact for this stroke.
+
+00:04.000 - 00:05.200
+Action ID: A03
+Shot: S02
+Actor: S02-P02
+Technique: lunge
+Chinese term: 弓步／跨步上网
+Visual evidence: At 00:04.000 P02 is in a deep wide stance near the net with the lead leg bent and loaded; at 00:05.000 he is stretched upward reaching with the racket hand toward the shuttle area, lead leg still bearing weight. The initiating reaching step precedes the first sampled frame of this shot, so onset is cropped.
+Detail: Far-side player in maroon top lunges toward the net (screen-forward relative to his side) to reach a low shuttle; loaded lead leg and extended reach visible. Interval start estimated at shot onset.
+Key moments: maximum loaded reach around 00:05.000 (estimated).
+Aligned sounds: shoe squeak around 00:04.000-00:05.000 (estimated), consistent with the lunge push.
+
+00:04.500 - 00:06.000
+Action ID: A04
+Shot: S02
+Actor: S02-P02
+Technique: upward return
+Chinese term: 向上回球（球种未定）
+Visual evidence: Racket raised to the shuttlecock with the shuttle adjacent to the racket head at 00:05.000 (strike supported); from 00:06.000 to 00:07.000 the shuttlecock is high above the net area moving toward screen left/up, i.e., an outgoing rising path. Forecourt origin is suggested by his net proximity, but the destination/depth of the return is not observed, so lift is not confirmed; side (forehand/backhand) also unresolved.
+Detail: Far-side player strikes upward from a lunging posture near the net; outgoing shuttle rises and travels away from him across the net region. Contact localized only approximately at the 00:05.000 sample.
+Key moments: racket-shuttle contact around 00:05.000 (estimated).
+Aligned sounds: sharp impact sound around 00:05.000 (estimated), aligned with this strike.

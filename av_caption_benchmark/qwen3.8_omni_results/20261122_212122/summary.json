@@ -1,0 +1,76 @@
+[
+  {
+    "name": "badminton",
+    "model": "qwen3.8-omni-flash",
+    "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+    "prompt": "badminton_prompt.txt",
+    "prompt_sha256": "2318fe0e2dbe19c9efc3c05f9cb33d5c3dc569046056750e23d84754ea21aa31",
+    "video": "transfer2paas_2/badminton_lift_31679122798_first8s.mp4",
+    "video_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "clip_duration_seconds": 8,
+    "requested_fps": 10,
+    "enable_thinking": true,
+    "max_tokens": 16384,
+    "http_status": 200,
+    "request_id": "5243f961-a94e-9c12-b6e1-5c4318cf73be",
+    "response_id": "chatcmpl-5243f961-a94e-9c12-b6e1-5c4318cf73be",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 7774,
+      "total_tokens": 20611,
+      "completion_tokens": 12837,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "video_tokens": 4754,
+        "text_tokens": 2962
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 9431,
+        "text_tokens": 3406
+      }
+    },
+    "four_sections_in_order": true,
+    "timestamps_beyond_clip": [],
+    "output_characters": 12117,
+    "status": "complete",
+    "elapsed_seconds": 172.81
+  },
+  {
+    "name": "jump",
+    "model": "qwen3.8-omni-flash",
+    "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+    "prompt": "jump_prompt.txt",
+    "prompt_sha256": "d8d55d554878acf12a650557be6ef763138e78e3cd4944220595c8e73dd09f55",
+    "video": "transfer2paas_2/standing_long_jump_1039046118_0-7s.mp4",
+    "video_sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91",
+    "clip_duration_seconds": 7,
+    "requested_fps": 10,
+    "enable_thinking": true,
+    "max_tokens": 16384,
+    "http_status": 200,
+    "request_id": "d952990b-44a8-9026-add0-c9935880c41f",
+    "response_id": "chatcmpl-d952990b-44a8-9026-add0-c9935880c41f",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 5997,
+      "total_tokens": 8323,
+      "completion_tokens": 2326,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 51,
+        "video_tokens": 4160,
+        "text_tokens": 1786
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 967,
+        "text_tokens": 1359
+      }
+    },
+    "four_sections_in_order": true,
+    "timestamps_beyond_clip": [],
+    "output_characters": 5255,
+    "status": "complete",
+    "elapsed_seconds": 34.62
+  }
+]

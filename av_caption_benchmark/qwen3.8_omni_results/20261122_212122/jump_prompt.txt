@@ -1,0 +1,125 @@
+
+Provide a detailed description of the video.
+
+Make sure your description covers every one of the following dimensions:
+
+Visual
+- Subjects and characters: appearance, clothing, gender/age cues, identity, distinctive features
+- Actions and events in chronological order, and how the scene evolves over time
+- Setting and background: location, environment, time of day
+- Spatial layout and relations between subjects/objects; counts and quantities
+- On-screen text: captions, titles, subtitles, logos, UI — exact content and appearance
+- Visual style: colors, lighting, camera shots, angles, and camera movement
+
+Audio
+- Speech: the exact spoken content, transcribed verbatim
+- Speakers: who is speaking (mapped to the on-screen person or voice-over), with accent, tone, gender/age cues
+- Speaking state: prosody, emotion, volume, and speaking style
+- Music: presence, genre/mood, and lyrics if any
+- Sound effects and ambient/background sounds
+- Non-speech vocalizations: laughter, crying, applause, etc.
+
+Audio-visual correspondence
+- Which speech or sound aligns with which on-screen person or visual event
+- The timing of each event, expressed with timestamps
+
+It should explicitly include four sections, in the order shown:
+
+1. A structured chronological storyline of **every noticeable audio and visual details**
+2. A structured list of all visible text. For each text element, include start timestamp, end timestamp, the exact text content, the appearance characteristics. If no text appears, explicitly state so.
+3. A structured speech-to-text transcription, include the speaker (corresponding to the person or voice-over in Section 1, including their accent and tone), exact spoken content, start timestamp, end timestamp, and speaking state (prosody, emotion, and style). If no speech appears, explicitly state so.
+
+4. A structured timeline of atomic sports actions. For each occurrence, include its start and end timestamp, actor, one exact English label from the sport vocabulary below, a short description of this occurrence, and any supported key moments and aligned sounds. Give each action a unique ID.
+
+Rules:
+
+- Add as much descriptive detail as possible.
+- Do not use Markdown bold formatting.
+- Carefully look at frames and listen to the audio, making sure no detail is overlooked.
+
+- Write captions and annotations in English. Keep the four section headings and field names exactly as shown. Preserve readable on-screen text and audible speech in their original language.
+- Use elapsed time from the start of the supplied clip for all timelines. Keep times within the clip. Start/end times cover the observed event from its first to its last relevant moment. Use the millisecond timestamp format for consistency, with the precision supported by the sampled frames and audio. Mark estimated boundaries or cropped events in Detail. Write uncertain for an unsupported key moment.
+- Describe visible people, objects, distinctive parts and attributes, spatial layout, and background in Storyline. Use the recognized sport term to summarize the technique, then use Detail to say how this particular occurrence looks, using visible body orientation, direction, equipment, or trajectory when useful.
+- Order actions by start time and assign A01, A02, and so forth. Record separate repetitions separately. Distinct footwork and strokes can overlap. If a named footwork pattern is used to recover, describe its purpose in that same entry. Use the most specific supported fallback label when a formal label lacks the required evidence. Keep each person's reference consistent across sections.
+- Timestamp the actual audible start and end of each distinct utterance, and split on speaker changes or clear pauses. Transcribe what was said and use [inaudible] for an unclear span. Use the same speaker identity across sections and mark off-screen or unidentified speakers as such. Describe non-speech sounds in Storyline and give a timestamp in Aligned sounds when they can be matched to an action.
+- Add action IDs to the transcript only when speech clearly refers to them or audibly lines up with them. Use "instruction", "description", "retrospective comment", or "temporal overlap only" to state the relationship. "Temporal overlap only" records co-occurrence without implying that the speaker is describing or causing the action. If no link is supported, write "none". Use "No visible text", "No intelligible speech", or "No discernible sports actions" in an empty section, as appropriate.
+- Treat each identifiable standing long jump attempt as one event. Use "takeoff" (the first moment both feet are off the ground) and "initial landing" (the first foot contact with the ground after flight) as key moments. Describe phases observed within the same jump in Detail, such as hip and knee flexion or a backward arm swing, the arm swing and push-off, posture in the air, which part of the foot touches down first, and knee flexion or changes in balance after landing.
+- Keep actual attempts distinct from setup steps or follow-up movements. If a transition is hidden or cropped, describe the portion that is visible and mark the corresponding time as uncertain. Match takeoff or landing sounds only when the clip supports the source and timing.
+
+Sport vocabulary v0.1 — Standing long jump
+- standing long jump — A forward jump from a stationary position with a two-foot takeoff and horizontal displacement. Support the label with visible evidence such as the stance before takeoff, both feet leaving the ground, and forward travel in the air or at landing. Annotate each uninterrupted attempt from the first identifiable preparation for that jump until the person begins to stabilize after landing or the clip cuts off. Count another attempt only if there is a separate forward takeoff.
+Fallback labels when visual evidence is limited
+- forward jump — A forward jump is visible, with insufficient evidence of a stationary two-foot takeoff.
+
+Output Format:
+
+```
+## Storyline
+
+<xx:xx.xxx> - <xx:xx.xxx>
+<an unstructured long paragraph in natural language describing what happened during this period, blending both audio and video details.>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+<an unstructured long paragraph in natural language describing what happened during this period, blending both audio and video details.>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+<an unstructured long paragraph in natural language describing what happened during this period, blending both audio and video details.>
+
+...
+
+## Visible Text
+
+<xx:xx.xxx> - <xx:xx.xxx>
+“<element>”: <appearance>
+“<element>”: <appearance>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+“<element>”: <appearance>
+“<element>”: <appearance>
+“<element>”: <appearance>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+“<element>”: <appearance>
+
+...
+
+## Speakers and Transcript
+
+Speaker profiles:
+<speaker> - <profile>
+<speaker> - <profile>
+<speaker> - <profile>
+...
+
+<xx:xx.xxx> - <xx:xx.xxx>
+Speaker: <speaker>
+State: <description>
+Content: “<content>”
+Related actions: <action ID and relationship, or none>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+Speaker: <speaker>
+State: <description>
+Content: “<content>”
+Related actions: <action ID and relationship, or none>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+Speaker: <speaker>
+State: <description>
+Content: “<content>”
+Related actions: <action ID and relationship, or none>
+
+...
+
+## Atomic Sports Actions
+
+<xx:xx.xxx> - <xx:xx.xxx>
+Action ID: <A01>
+Actor: <consistent person reference>
+Technique: <one exact English label>
+Detail: <how the action was performed and any uncertainty in its boundaries>
+Key moments: <anchor name and timestamp, uncertain for an unsupported applicable anchor, or none for a movement without an applicable anchor>
+Aligned sounds: <sound and timestamp, uncertain if the match is unclear, or none>
+
+...
+```

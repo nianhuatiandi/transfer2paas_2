@@ -1,0 +1,18 @@
+VISUAL STAGE: inspect only this shot's timestamped source frames. No audio is supplied to this stage. Return one JSON object, no Markdown or commentary. The pipeline will render the final four-section report; do not output those sections here.
+
+Use caller-provided shot boundaries as segmentation metadata; determine people, text and events from the actual images. Frame times are global clip times, not a new local clock. All reported times must be numeric seconds within this shot. First/last frame gaps are not permission to invent a movement. If the shot begins/ends during an action, describe the observed portion and mark the boundary cropped.
+
+Inspect each person across ALL frames, not just the first image. Do not assume a person initially waiting remains still. Separate successive strokes even if their postures resemble each other. Use consecutive foot positions to identify chasse steps; feet need not meet. Use the stroke's visible contact region and outgoing path to distinguish lift from clear, net shot and upward return. A hidden landing is not a reason by itself to reject lift. A rising racket alone is not a rising shuttle.
+
+Record specific evidence for the selected label. One stroke gets one most-specific supported label. Distinct footwork and stroke events may overlap. Do not label conversational racket gestures as sports strokes. A waiting stance or minor weight shift belongs in storyline, not an invented full-shot movement event. All action descriptions must stay consistent with storyline. Do not infer speech, music, impact sounds, camera viewpoint changes or unseen shot outcomes. State contact time null if unobservable. Estimated visual times normally use the 0.100-second grid; caller shot boundaries are exact segmentation metadata and can delimit cropped actions.
+
+JSON schema (all keys required):
+{
+  "shot": "caller shot ID",
+  "actors": [{"id": "S01-P01", "description": "visible clothing, location, racket hand if supported; neutral identity"}],
+  "storyline": "English paragraph describing scene and visible sequence, first and last observed state, all actors' important changes, and any cropped/uncertain observations",
+  "visible_text": [{"start": 0.0, "end": 0.4, "text": "verbatim readable text; [illegible] for unreadable parts", "appearance": "position/style; timing uncertainty"}],
+  "actions": [{"start": 0.0, "end": 0.4, "actor": "an actor ID defined above", "technique": "one allowed canonical label", "evidence": "visible body/foot/racket/shuttle cues with frame times, including missing cues for fallback", "detail": "English description; separate screen direction of body from shuttle trajectory; cropped/estimated boundaries; recovery purpose if applicable", "key_moments": [{"name": "applicable anchor name", "time": null}]}],
+  "uncertainties": ["observations that cannot be resolved from these frames"]
+}
+Use empty arrays for genuinely absent text/actions; do not populate placeholder examples. Actor IDs must begin with the caller shot ID. Do not link identities across shots because no other shot is supplied. For text visible in only one frame, state single-frame observation in appearance and use that frame's source display interval (up to 1/source_fps second, bounded by the shot); do not claim a longer display duration.

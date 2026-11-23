@@ -1,0 +1,12 @@
+Inspect the supplied 8-second video using the actual available visual and audio evidence. If additional timestamped pictures are supplied, they are source frames of this SAME video, not extra scenes. Their labels are elapsed source-clip times. Do not infer unseen frames from duration or instructions. Do not assume an expected number of shots or actions.
+Return JSON only:
+{
+"shots":[{"start":0.0,"end":1.0,"description":"camera viewpoint, visible people/clothing and chronological events; estimated boundaries and unobserved intervals explicitly stated"}],
+"tail_observation":{"last_observed_time":null,"description":"what is actually visible near the end, or unobserved","readable_text":["only verbatim text readable near the end"]},
+"racket_and_shuttle_events":[{"start":0.0,"end":0.2,"actor":"stable visible-person description and shot","description":"observed racket/hand/shuttle event; distinguish bare-hand delivery, racket delivery, stroke and conversational gesture; indicate uncertainty"}],
+"footwork_observations":[{"start":0.0,"end":0.2,"actor":"person description","description":"visible foot-by-foot evidence, or unresolved foot pattern"}],
+"audible_speech":[{"start":0.0,"end":0.2,"text":"audible original-language words; do not read subtitles as speech"}],
+"uncertainties":["limitations of actual observed evidence"]
+}
+Use empty lists for absent observations; no example values or pixel coordinates. Times are estimated seconds between 0 and 8. Scan the entire available clip, including its final frames. Describe every distinguishable occurrence but do not guess frame availability or claimed sampling rate.
+FOCUSED FOLLOW-UP: Focus ONLY on the final 0.5 seconds, from 7.500 to 8.000. In shots and event lists include only observations in this final window. Describe the last actual visible image and readable text. Do not assume the previous scene continues. If the final window is not actually visible, explicitly say so instead of guessing. Keep the same JSON schema.

@@ -1,0 +1,91 @@
+{
+  "status": "proposal_not_run",
+  "scope": "temporal_cooccurrence_only",
+  "pilot_video_target": [
+    100,
+    150
+  ],
+  "pilot_target_is_publication_requirement": false,
+  "experiments": [
+    {
+      "id": "E1",
+      "question": "内容正确的caption是否仍缺失或错误表达精确时间？",
+      "setup": "自然原生输出；内容、时间覆盖、已提供时间准确性分别评分",
+      "required_controls": [
+        "专家评价",
+        "输出长度",
+        "按动作时长分桶"
+      ],
+      "reject_inference": "未提供时间不能直接推断模型没有时间感知能力"
+    },
+    {
+      "id": "E2",
+      "question": "原子粒度比镜头/粗事件增加什么可测信息？",
+      "setup": "相同视频三层标注与同一组模型输出",
+      "required_controls": [
+        "相同视频",
+        "现有强时间指标",
+        "人类偏好/错误定位"
+      ],
+      "reject_inference": "不能把不同数据难度当成粒度贡献"
+    },
+    {
+      "id": "E3",
+      "question": "同期关系能否由分模态定位管道充分解释？",
+      "setup": "视觉动作定位＋音频定位＋区间求交，与omni端到端系统比较",
+      "required_controls": [
+        "全部主结果用预测时间",
+        "GT时间仅oracle",
+        "成本和输入预算"
+      ],
+      "reject_inference": "求交公式不是新对齐算法"
+    },
+    {
+      "id": "E4",
+      "question": "内容不变而时间偏移时，输出与指标是否响应？",
+      "setup": "受控音频偏移，GT按偏移更新，保留共同有效窗口",
+      "required_controls": [
+        "原始自然主集",
+        "避免边缘静音捷径",
+        "按动作时长设偏移幅度"
+      ],
+      "reject_inference": "扰动分数不能替代自然分布表现"
+    },
+    {
+      "id": "E5",
+      "question": "指标能否区分内容错、时间错及等义改写？",
+      "setup": "人工确认的单因素caption变体",
+      "required_controls": [
+        "时间交换",
+        "人物交换",
+        "短动作遗漏",
+        "同义改写",
+        "与SODA/SodaM/OCB/AVTime等可适配指标比较"
+      ],
+      "reject_inference": "只胜过词重叠指标不足以证明必要性"
+    },
+    {
+      "id": "E6",
+      "question": "模态、帧率和输出长度分别影响哪些错误？",
+      "setup": "单模态、分模态、omni；可控采样与长度预算",
+      "required_controls": [
+        "实际帧与时间戳记录",
+        "API采样限制披露",
+        "外部ASR输入单列诊断"
+      ],
+      "reject_inference": "观测不足不能一概归因于推理失败"
+    },
+    {
+      "id": "E7",
+      "question": "评分是否可靠并有使用价值？",
+      "setup": "独立专家评价、caption-only时间窗检索或动作清单恢复",
+      "required_controls": [
+        "parser人工解析集",
+        "跨judge检查",
+        "视频/来源级置信区间",
+        "开发测试隔离"
+      ],
+      "reject_inference": "同视频多条边不能当成独立样本放大显著性"
+    }
+  ]
+}

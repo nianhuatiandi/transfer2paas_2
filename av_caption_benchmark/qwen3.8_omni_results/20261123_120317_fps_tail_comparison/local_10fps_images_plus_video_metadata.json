@@ -1,0 +1,28 @@
+{
+  "stage": "local_10fps_images_plus_video",
+  "model": "qwen3.8-omni-flash",
+  "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+  "prompt_sha256": "d8d41fc6bff31579bcbd53d2bae57b0db0ea6051038bd704fa98ad97f3549050",
+  "enable_thinking": false,
+  "max_tokens": 4096,
+  "http_status": 200,
+  "response_id": "chatcmpl-0de6cdfc-a078-9298-9791-e54a9d588e93",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 50032,
+    "total_tokens": 50888,
+    "completion_tokens": 856,
+    "prompt_tokens_details": {
+      "cached_tokens": 48384,
+      "audio_tokens": 58,
+      "image_tokens": 43008,
+      "video_tokens": 4754,
+      "text_tokens": 2212
+    },
+    "completion_tokens_details": {
+      "text_tokens": 856
+    }
+  },
+  "status": "complete",
+  "elapsed_seconds": 18.16
+}

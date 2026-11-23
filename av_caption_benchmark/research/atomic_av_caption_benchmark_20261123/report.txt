@@ -1,0 +1,666 @@
+细粒度原子动作音视频 Caption Benchmark：70篇论文调研与研究设计
+检索截止：2026-11-23
+
+01. 研究判断：当前组合有价值，但创新性需要进一步收紧
+
+按截至2026年11月23日可核验的文献，若贡献仅为“选择不超过两个人的视频—用专业词拆动作—给动作写详细caption和时间戳—用一个LLM对照GT打分”，我的判断是：尚不足以据此形成有说服力的ACL或ICML创新主张。这个判断针对目前的贡献表述，不是在断言该方向无法发表。
+
+最直接的重叠来自FAVOR-Bench、EgoActionBench、LongVALE、TimeChat-Captioner、FAVE、TCA-Bench、AVCap和OmniCapBench。[R16][R20][R56][R69][R34][R35][R37][R38] 它们分别覆盖开放动作描述、原子动作与时间评分、音视频密集caption、跨模态时间关系以及结构化GT和局部judge。单纯把已有格式用于羽毛球等领域，容易被认为是增量数据扩展。
+
+仍值得验证的研究问题是：当场景和事件词汇都相似时，模型能否恢复专业动作的执行过程，并把具体动作实例与话语指涉、可听声音、人物角色和时间关系正确绑定？尤其是它是否会把教练说出的目标动作，当成运动者实际完成的动作。这个定位比“更详细的描述”更明确，但目前仍是研究假设，不能直接宣称首次。
+
+人物≤2是合理的控制条件，能降低身份歧义和标注成本。它本身不是主要创新；更有价值的结论可能是：即使只有一两个人，先进模型也会在同类动作重复、动作—话语错配、非语言声学证据上出现稳定且可解释的失误。
+
+02. 调研范围、证据和计数
+
+本次整理70篇去重论文：运动与原子动作21篇，密集描述与时间定位9篇，音视频描述与联合理解28篇，评价方法与可靠性12篇。每篇均记录题目、年份/版本、原始来源、核心工作和对本项目的意义；文末可逐条检索。
+
+采用定向范围综述：先检索motion、atomic action、dense video captioning、audio-visual captioning、temporal grounding、LLM judge等主题，再沿最相关论文追踪引用。依据来自作者论文原稿、正式出版页及作者项目页；没有把聚合网站或AI论文解读作为结论依据。
+
+阅读深度有区分：70篇完成摘要或原始任务说明核验；对最接近的若干论文另核对方法、标注或评价段落。此处不声称70篇全部逐页精读，也不声称这是穷尽所有数据库的系统综述。论文自身的“首次”和“SOTA”表述不自动作为本报告的结论。
+
+同一论文的arXiv与会议版只计一次；video-SALMONN 2的早期同系稿也合并。TimeChat与TimeChat-Captioner是两篇不同论文。仅核验到arXiv的条目保守标注版本，不推断未发表。FAVE正文原站直接打开曾返回403，但检索可返回CVF原文，补充材料可访问；有关构建协议的细节以补充材料为依据。
+
+03. 最接近的工作及必须回答的差异
+
+以下“差异”是根据所查任务和协议提出的定位要求，不意味着这些论文的数据绝对没有运动、短动作或语音。特别是AVSCap本身包含体育领域，Ego-Exo4D也包含技能活动及专家评论；不能写成“已有数据没有专业运动”。[R36][R14]
+
+工作 | 已经覆盖的内容 | 你的论文仍须证明
+
+[R01] FineGym / [R02] FineDiving | 专业技能的层级、子动作及时间结构 | 动作细节语言与原始声音、实际话语形成了什么新的可测量联系
+[R16] FAVOR-Bench | 开放式细粒度运动描述，对照人工描述评分 | 专业词的判别证据、动作实例级时间和音频关系带来独立信息
+[R20] EgoActionBench | 原子动作caption、时间定位、手归属及细粒度语义评分 | 全身专业技能与真实声学/话语关系的差异；不能仅把hand字段改为actor
+[R56] LongVALE | 带边界和跨模态关联描述的视听事件 | 事件内部的动作相位、重复实例与短时证据是否构成不同难题
+[R69] TimeChat-Captioner / OmniDCBench | 六维结构化音视频描述、时间评价与SodaM | 动作级而非场景级标注为何能发现其评价遗漏的错误
+[R34] FAVE | 音画时间对齐、事件关系和给定片段描述 | 自主发现动作边界、亚秒级动作、专业判别是否超出已有任务
+[R35] TCA-Bench | 声音来源绑定及跨模态先后/同时关系GT | 话语指涉具体哪次动作、指令与执行一致性及相位关系的新增价值
+[R37] AVCap / [R36] AVSCap | 原子事实探针、音视频协同事件评价 | 同样事实都出现，但人物/时间/动作实例错配时能否正确扣分
+[R38] OmniCapBench | 原生原子单位、身份/时间/音画关联、规则与局部judge | 不能把结构化+规则+LLM当首次；需新增专业技能测量问题及可靠性证据
+
+04. 怎样重写创新点
+
+建议把核心任务定义为：从完整音视频恢复可验证的技能动作轨迹，描述每个动作的执行属性，并生成与话语及声音证据关联的关系结构。模型的主任务仍然是你指定的完整标注生成；查询式QA只作为诊断，不替代主任务。
+
+贡献一可以是标注对象的明确性：共享的动作描述结构加领域术语体系，区分专业动作类别、动作相位、可观测执行细节、语音内容和证据来源。关键不是字段数量，而是不同标注者是否能依据同一规则得到一致结果。
+
+贡献二可以是新的诊断集合：保留近似的动作和语音内容，只改变实例、角色、相位、时序或指令执行是否一致。这样能检验模型是否建立了联系，而不是只识别“有人挥拍、有人说话”。对照构造需人工验证，避免不自然剪辑成为捷径。
+
+贡献三可以是经人工校准的测量协议与实证发现：证明现有caption指标在专业动作或关系错配时漏检，你的测量能定位问题，并且跨模型、跨领域、跨judge仍然稳定。只提出一个加权分数而没有这些验证，贡献较弱。
+
+不建议作为主创新的表述包括：两人限制、prompt改写、多轮模型自我检查、先视觉后音频再融合、JSON输出、换成更新的judge模型。这些可以是实现选择；相近方法已见于VAST、UGC-VideoCap等工作。[R29][R32]
+
+05. 原子动作标准：先解决“怎样拆才算对”
+
+原子动作不是自然界唯一的最小单位。建议保留三层：技能或专业动作实例、功能相位、可观测执行属性。例如一个专业击球动作可以保留完整实例，同时标注准备/接触/随挥等相位；移动步法可以与挥拍重叠。不要把术语层级与时间最小片段混成一层。
+
+可操作的拆分规则是：同一主体及动作通道上，当任务功能、主导运动、接触状态、操作对象或重复次数发生有意义改变时考虑新建实例；仅有姿态微抖不拆分。具体领域应由专家把规则写成正例、反例和边界例。这里是建议方案，不是引用来的通用标准。
+
+每个专业标签需要定义、同义词、上下位关系、易混淆标签、最低可见证据，以及证据不足时的回退标签。专业词匹配和执行细节匹配分别给分，避免标签猜对就拿满分；也避免意思正确但用词不同被判错。
+
+时间边界以原始媒体时间和帧位置为准。出入画、遮挡、裁剪开头/结尾、慢放、回放和镜头切换须有规则；截断动作可标记left_censored/right_censored。不同动作通道允许重叠，不能用一个强制互斥分段去表示所有身体运动。[R09]
+
+人数约束需在数据规范中写清是整段独立身份数、同时可见人数，还是参与目标任务的主体数；背景路人、反射和跨镜头人物也应有统一规则。本次调研沿用≤2约束，没有替你更改筛选口径。不同镜头里各有两人，不自动等于整段只有两个人。
+
+06. GT结构及三种不同的音画关系
+
+建议GT保存为可校验JSON，再渲染成类似当前txt的阅读版本。主结构包含：实体entities、动作actions、话语utterances、非语言声音sound_events、关系relations和每项证据/不确定性。主体ID与声纹ID分开；同一声音不能仅凭教练角色就绑定到画面人物。
+
+动作字段可包括actor_id、专业类别、所属动作实例/相位、start/end、身体部位、左右侧、方向、姿态、操作对象、关键时刻及可见证据。方向区分人物自身左右与画面左右；没有可靠尺度或姿态重建时，不编造精确角度、力或球速。
+
+物理时间关系：两个区间是否先后、重叠、包含，或两个关键时刻的偏差。这类关系由已对齐时间数据计算，边界附近允许不确定区间。
+
+事件/声源绑定：哪次击球声对应哪次击球，谁发出话语，有无画外声音。时间相近只提供候选，不能单独证明同源或因果。
+
+话语的语义指涉：一句话在指导、纠正、描述、评价或计数哪个动作实例。它可能指向刚刚发生的动作、正在发生的动作、未来动作或一般知识；所以说话时段与动作重叠，不代表话语指向当前动作。
+
+建议在少量诊断样本中增加“指令—执行一致性”：教练要求某动作，运动者实际做了另一动作时，两者分别标注。时间领先不自动证明指令引发动作；可观察的符合/冲突与因果解释分开。
+
+现在的badminton_response.txt可以作为标注草稿，不能直接称为金标准。它包含机器估计的时间、未解决的说话人归属与跨镜头转录碎片。文本中还存在“约4.6秒的接触先于4.52秒的语音起点”的表述矛盾，至少需要核对区间与关键时刻，而不是让judge继承这一判断。该例是对现有文件的检查，不是重新人工听辨后的修订。
+
+07. GPT6 Luna作为judge：可作候选，但需要先校准
+
+你提出用GPT6 Luna读取GT和待测输出再评分，这个方案可以作为候选实现。这里不预设该模型已经具备专业动作判分能力，也没有在本次调研中调用它。应记录实际可用的model ID、版本、prompt、采样参数和所有原始判分结果；内部别名不能替代可复现的版本说明。
+
+建议让程序负责可确定的事情：schema、ID引用、时间范围、tIoU、关键时刻误差、匹配数量、重复/遗漏、由时间计算出的关系。让judge处理局部语义：术语同义、描述蕴含、属性矛盾、语句指涉等。这样的分工已有近邻，采用它是为了可靠性，不应独立宣称新方法。[R38]
+
+judge应比较明确的字段或事实，输出supported / contradicted / not_mentioned / unverifiable及简短证据引用，再由程序汇总。GT没有写到的内容不自动等于幻觉：可将其标为未覆盖或待核验，抽取新断言回到原音视频做人工审查。
+
+匹配与打分要分开。先生成时间上合理的候选对应，再依据内容建立固定匹配；不能用正确动作标签作硬过滤，否则错误类别会被转换成单纯漏报，掩盖混淆。跨主体错绑也应单独保留诊断。正式指标需处理同一GT被重复匹配和长句合并多个动作的情况。
+
+我建议用200—300组分层抽样的候选—GT对进行初始校准，覆盖正确同义改写、少说、多说、术语替换、左右互换、时间漂移、人物换绑、重复动作、错语句指涉与无音推断。由两位独立标注者判断，争议裁决；数量是工程建议，不是论文发表门槛。
+
+校准报告至少包括：与专家的标签一致性/相关性、严重错误漏检率、改写与冗长度敏感性、重复调用稳定性，以及换另一模型家族的judge后排名是否稳定。评分模型看不到被测模型名称；候选文本作为待评数据处理，不能执行其中夹带的评分指令。[R50][R51][R52][R63]
+
+08. 评价指标：保留分项，避免一个总分掩盖失败
+
+主榜输入是完整音视频，不提供GT动作数、边界、术语答案或关系。可以额外设oracle诊断：给GT边界测语义，给GT节点测关系；但必须明确区分这些结果与完整生成成绩。
+
+建议先公开分项向量，暂不拍脑袋设定35/25/20等固定权重。若需一个总分，应在开发集上预先确定归一化与权重，冻结后报告权重扰动下的排序稳定性。没有语音的样本，其ASR/话语关系记为不适用，不当作满分或零分。
+
+可采用分层的一对一匹配作为计数基线，并对合法拆分/合并单列敏感性分析。并行动作保留独立通道，重复预测计入precision惩罚。仅对匹配成功的项目报平均分会掩盖漏报，必须同时给覆盖率。
+
+以下指标是设计建议，尚未在当前两段视频上实施，也未验证其人类相关性。
+
+维度 | 建议测量 | 主要防止的错误
+
+动作发现 | 按领域宏平均的动作precision/recall/F1；类别混淆矩阵 | 少写几条获得高语义均分、重复输出刷覆盖
+专业语义 | 专业类别层级得分 + 可观测属性事实F1 | 术语猜对但执行方式错误，或同义表达被误罚
+区间与关键时刻 | 多阈值tIoU及F1；边界误差；关键时刻绝对误差 | 标签正确而时间粗糙；瞬时动作被长区间掩盖
+音频内容 | 转录CER/WER；声音事件类别/区间匹配 | 画面诱导ASR，或只转录忽略击球和脚步
+主体与声源 | actor/speaker匹配及声源绑定F1 | 事件都提到却配错人
+关系 | 绑定后的关系precision/recall/F1；条件关系分与端到端关系分 | 只测已找到节点导致漏报不扣分
+无依据内容 | 经核验的动作/属性/声音/关系幻觉率 | 长描述靠大量猜测换得高recall
+不确定性 | 对不可判定项目的正确保留；覆盖—准确率曲线 | 强迫所有遮挡、画外和截断事件产生唯一答案
+
+09. 必须做的实验和对照
+
+模态依赖：比较视频单独、音频单独、ASR文本单独、视频+ASR、完整音视频、以及分阶段管道。语音字幕/OCR是否直接透露动作名称也要单独检查。完整音视频相对单模态不提升时，需解释是数据缺少互补信息，还是模型融合失败，不能直接当作benchmark难度证明。[R30][R58][R62]
+
+专业性依赖：比较有术语表和无术语表、粗粒度标签和专业标签、只看动作名和看动作执行细节。这能区分模型缺乏词汇知识、运动感知不足和语义绑定失败。若给词表就完全解决，贡献应诚实定位为专业语言知识评测。
+
+时间采样：在可控本地基线测试1/2/5/10fps以及原始帧率参考，记录实际帧、分辨率、时间戳、音频编码和输入预算。此前单个片段的API fps与本地图像比较，改变了编码和端点采样，不能直接作为本benchmark的公平实验或结论。
+
+输入对照与judge对照分开。输入对照可使用经人工确认的自然近似动作对、音频时间移动和同类动作重复。输出对照则从正确caption出发只改一个术语、人物或时间关系，测judge能否发现。前者评价被测模型，后者评价评分器，不得混成一个结果。
+
+泛化与数据泄漏：按原视频、上传者/教程系列、人物和相似片段分组划分；同一长视频裁剪出的片段不得随机分散到训练和测试。测试集冻结后停止针对测试例反复改prompt；现有反复使用的羽毛球片段应归开发集。
+
+基线选择应包含通用原生音视频模型、视觉模型+ASR/声音模块、专业caption模型和当前分阶段管道。优先核验TimeChat-Captioner、AVoCaDO、video-SALMONN 2及相关模型能否在统一条件下运行；论文历史排行榜不能当作你的新实验结果。[R69][R67][R31]
+
+统计分析以视频/原视频来源为重采样单位，报告bootstrap区间、跨领域宏平均、长短动作分组、两人角色错绑率和专家参照。一个视频里几十个相关动作不应当作几十个完全独立样本。模型差距、排名和失误类型都应能超出标注及judge的噪声。
+
+10. ACL与ICML：有投稿路径，但不能仅凭点子判断录用
+
+ACL方向：如果核心论点是专业动作语言的可验证语义、话语对动作的指涉、描述事实性，以及可靠的自然语言生成评价，主题匹配较好。CapQuiz已是ACL 2026长文，AVUT发表于EMNLP 2025，说明相关评价问题有明确先例。[R70][R58] 这不保证你的方案达到同等贡献，也不能只把CV动作识别包装成caption。
+
+ICML方向：TimeChat-Captioner已在ICML 2026正式论文集中出现，证明结构化音视频caption及其基准属于可发表主题。[R69] 更重要的是，目前可访问的ICML 2027官方贡献类型明确包括Datasets, Evaluations and Benchmarks，并明确此类贡献不要求新学习算法。因此，不应为了投稿机械增加一个模型或RL模块。
+
+我的判断：以当前方案直接写论文，创新论证偏弱；若补齐专家一致的原子技能定义、现有指标漏检的关系对照、可靠judge校准和跨领域实证，ACL/EMNLP与ICML都值得考虑。偏语言指涉和生成评价时优先ACL/EMNLP；偏通用机器学习测量及系统性失效分析时可按ICML评测贡献定位。这是研究判断，不是录用概率预测。
+
+两条路线都需要回答：为什么已有benchmark不能测这个现象？为什么你的GT可信？为什么分数真反映目标能力？为什么这些发现超出某个模型、某个教练视频或某种prompt？如果这四点回答充分，单独做高质量benchmark也有价值。
+
+会议范围依据见文末官方页面。报告引用2026已发表工作和目前可访问的2027贡献说明，不提供未经核验的下一轮投稿截止日期，也不把预印本当作已录用论文。
+
+11. 建议先做的100段试验集
+
+建议先选5个满足拆分标准的领域，每类约20段，共100段；每段人数按冻结后的≤2规则筛选。可以覆盖球拍类技能、跳跃/落地、健身、舞蹈以及手工/器械操作等，但领域选择取决于是否具备术语、可观察动作及足够音频证据。数量和领域是试验建议。
+
+先拿其中少量片段让两位标注者独立拆分，比较动作层级、边界和关系是否一致。若专家也无法稳定区分某术语或时间边界，优先修改规范、标为不可判定或移出该子任务，不能靠生成更多模型标注弥补。
+
+冻结小规模GT后运行3—5种有代表性的模型/系统，构造200—300组judge校准样本，完成模态、术语表与输出单因素扰动对照。主目标是证明存在可重复的能力缺口和可靠的测量方法。
+
+继续扩大的条件是：标注规则可复现；有足够项目真正需要联合音视频；新指标可检出现有指标漏掉的关键错误；模型差异大于标注和judge噪声。若只能得到“某模型认不出羽毛球术语”，应重新定位为专业词汇/动作知识基准。
+
+通过试验后再依据覆盖率和统计精度决定规模，例如800—1500段、6—10个领域作为预算讨论起点。不存在达到某个视频数量就能发顶会的门槛；稀有专业标签和跨模态关系的覆盖往往比总片段数更关键。
+
+12. 阅读顺序与研究边界
+
+先读R69、R38、R35、R20和R16：分别确认结构化音视频caption、原子评测、音画关系、动作级定位描述及开放运动描述已做到哪里。然后读R34、R56、R37、R36、R14和R01：厘清时间粒度、联合证据和专家技能资源。
+
+指标部分优先读R48、R49、R51、R63、R68、R70，结合已有模型错误设计你自己的人工校准集。传统CIDEr/SPICE/BERTScore作为对照有用，不能替代逐动作和逐关系验证。
+
+最值得写在研究提案里的问题是：语义内容相同或高度相似时，模型是否仍能从证据恢复“谁在何时以何种方式做了什么，以及某句话/声音对应其中哪一次动作”？专业术语是表达精度的工具，能够稳定测出这种区别才是论文价值。
+
+当前未完成的是新的数据标注、专家一致性实验、GPT6 Luna judge校准及模型基准实测。这份报告完成的是文献调研与研究设计评估，没有把这些建议实验描述为已经执行。
+
+13. 会议官方依据（不计入70篇论文）
+
+ACL 2026 Main Conference Topics
+https://2026.aclweb.org/calls/main_conference_papers/
+
+ACL Rolling Review Call for Papers
+https://aclrollingreview.org/cfp
+
+ICML 2027 Contribution Types
+https://icml.cc/Conferences/2027/ContributionTypes
+
+14. 70篇论文清单
+
+[R01] FineGym: A Hierarchical Video Dataset for Fine-Grained Action Understanding
+2020 | CVPR 2020 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content_CVPR_2020/html/Shao_FineGym_A_Hierarchical_Video_Dataset_for_Fine-Grained_Action_Understanding_CVPR_2020_paper.html
+工作：用体操的 event/set/element 层级及动作、子动作时间标注研究细粒度识别。
+对项目的意义：专业术语、动作分解及层级本身已有先例；应借鉴其边界定义与类别判别规则。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R02] FineDiving: A Fine-Grained Dataset for Procedure-Aware Action Quality Assessment
+2022 | CVPR 2022 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content/CVPR2022/html/Xu_FineDiving_A_Fine-Grained_Dataset_for_Procedure-Aware_Action_Quality_Assessment_CVPR_2022_paper.html
+工作：以跳水动作程序及步骤的语义、时间对应支持动作质量评分。
+对项目的意义：专业运动子动作与时间结构已有成熟资源；运动表现评分与caption正确性评分必须区分。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R03] FineAction: A Fine-Grained Video Dataset for Temporal Action Localization
+2022 | IEEE TIP 2022；arXiv 初版 2021 | 运动与原子动作
+来源：https://arxiv.org/abs/2105.11107
+工作：包含106类动作、约103K时间实例，强调细粒度、密集及并行动作定位。
+对项目的意义：短动作、同一时段多类动作和边界歧义必须进入评测设计。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R04] FineSports: A Multi-person Hierarchical Sports Video Dataset for Fine-grained Action Understanding
+2024 | CVPR 2024 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content/CVPR2024/html/Xu_FineSports_A_Multi-person_Hierarchical_Sports_Video_Dataset_for_Fine-grained_Action_CVPR_2024_paper.html
+工作：NBA视频中的细粒度动作类别、层级及人物动作时空框；专业人士参与词汇体系制定。
+对项目的意义：人物—动作归属和专家术语已有先例；限制两人主要是范围控制。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R05] FineParser: A Fine-grained Spatio-temporal Action Parser for Human-centric Action Quality Assessment
+2024 | CVPR 2024 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content/CVPR2024/html/Xu_FineParser_A_Fine-grained_Spatio-temporal_Action_Parser_for_Human-centric_Action_Quality_CVPR_2024_paper.html
+工作：引入以人体为中心的细粒度时空解析，并扩展FineDiving的人体前景动作掩码。
+对项目的意义：人体局部证据有价值；本项目无需一开始承担完整姿态或掩码标注。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R06] SportsHHI: A Dataset for Human-Human Interaction Detection in Sports Videos
+2024 | CVPR 2024 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content/CVPR2024/html/Wu_SportsHHI_A_Dataset_for_Human-Human_Interaction_Detection_in_Sports_Videos_CVPR_2024_paper.html
+工作：面向体育中的人物之间交互检测，研究高层互动和时空上下文。
+对项目的意义：双人喂球、接球等应保留角色及交互边，不能仅独立列两个人的动作。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R07] HAA500: Human-Centric Atomic Action Dataset With Curated Videos
+2021 | ICCV 2021 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content/ICCV2021/papers/Chung_HAA500_Human-Centric_Atomic_Action_Dataset_With_Curated_Videos_ICCV_2021_paper.pdf
+工作：人工整理500类以人体为中心的原子动作，区分不同运动项目中的细致姿态类别。
+对项目的意义：atomic一词并非新贡献；必须说明本项目的原子单位及与已有类别的差异。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R08] Intra- and Inter-Action Understanding via Temporal Action Parsing
+2020 | CVPR 2020 | 运动与原子动作
+来源：https://arxiv.org/abs/2005.10229
+工作：在体育视频上标注子动作，研究动作内部结构与动作之间关系的时间解析。
+对项目的意义：把连续动作拆成可解释片段已有先例；边界可靠性比切得更多更重要。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R09] BABEL: Bodies, Action and Behavior With English Labels
+2021 | CVPR 2021 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content/CVPR2021/html/Punnakkal_BABEL_Bodies_Action_and_Behavior_With_English_Labels_CVPR_2021_paper.html
+工作：为3D动作捕捉序列提供时间对齐的语言标签，允许不同持续时间的动作重叠。
+对项目的意义：应支持并步、挥拍等并行动作；其3D输入与真实RGB+音频任务需要区分。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R10] Generating Diverse and Natural 3D Human Motions From Text
+2022 | CVPR 2022 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content/CVPR2022/html/Guo_Generating_Diverse_and_Natural_3D_Human_Motions_From_Text_CVPR_2022_paper.html
+工作：提出文本驱动3D人体运动生成及HumanML3D动作—文本资源。
+对项目的意义：可借鉴方向、节奏、动作方式描述；不能把3D生成数据当作音视频caption的直接基准。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R11] MOMA: Multi-Object Multi-Actor Activity Parsing
+2021 | NeurIPS 2021 | 运动与原子动作
+来源：https://proceedings.neurips.cc/paper_files/paper/2021/hash/95688ba636a4720a85b3634acfec8cdd-Abstract.html
+工作：用活动、子活动、原子动作及人物物体关系构建activity parsing和Action Hypergraph。
+对项目的意义：层级动作图本身已有先例；新贡献需落在具体跨模态证据和测量问题上。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R12] MOMA-LRG: Language-Refined Graphs for Multi-Object Multi-Actor Activity Parsing
+2022 | NeurIPS 2022 Datasets and Benchmarks | 运动与原子动作
+来源：https://proceedings.nips.cc/paper_files/paper/2022/hash/22c16986b2f50af520f56dc34d91e403-Abstract-Datasets_and_Benchmarks.html
+工作：将复杂人体活动组织为可转换为自然语言的层级活动图，用于适配和评价VLM。
+对项目的意义：结构化动作与语言的结合不新；应比较术语、动作细节和关系的测量单位。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R13] MotionGPT: Human Motion as a Foreign Language
+2023 | NeurIPS 2023 | 运动与原子动作
+来源：https://arxiv.org/abs/2306.14795
+工作：将离散化3D动作和语言统一建模，覆盖动作生成、caption、预测等任务。
+对项目的意义：motion captioning已是独立研究方向；本项目区别在真实视频与音频证据。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R14] Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives
+2024 | CVPR 2024 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content/CVPR2024/html/Grauman_Ego-Exo4D_Understanding_Skilled_Human_Activity_from_First-_and_Third-Person_Perspectives_CVPR_2024_paper.html
+工作：多视角技能活动资源，包含音频、多种语言描述以及教练和教师的专家评论。
+对项目的意义：专业技能+专家语言+多模态并非空白；原场景话语与事后专家评语应区别。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R15] MotionBench: Benchmarking and Improving Fine-grained Video Motion Understanding for Vision Language Models
+2025 | CVPR 2025 | 运动与原子动作
+来源：https://arxiv.org/abs/2501.02955
+工作：用六类运动问题测量VLM细粒度运动理解，并研究高帧率输入与时序特征融合。
+对项目的意义：应控制帧率和信息预算；只有模型分数低不足以说明发现了新的能力。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R16] FAVOR-Bench: A Comprehensive Benchmark for Fine-Grained Video Motion Understanding
+2025 | NeurIPS 2025 Datasets and Benchmarks | 运动与原子动作
+来源：https://arxiv.org/abs/2503.14935
+工作：兼有选择题与开放动作描述；使用GPT辅助评分及结构提取后的序列比较。
+对项目的意义：与完整动作描述+GT judge高度重叠；需要更专业且可验证的动作—音频关系。
+核验深度：重点核对原文方法或评测段落
+
+[R17] Encoder-Free Human Motion Understanding via Structured Motion Descriptions
+2026 | arXiv；未在本次核验会议版本 | 运动与原子动作
+来源：https://arxiv.org/abs/2604.21668
+工作：把关节位置序列规则化转换为关节角度、身体部位运动与轨迹的结构化文本。
+对项目的意义：运动学属性的文字化已有研究；RGB中不可观测的角度不应强行作为精确GT。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R18] FineMotion: A Dataset and Benchmark with both Spatial and Temporal Annotation for Fine-grained Motion Generation and Editing
+2025 | arXiv；未在本次核验会议版本 | 运动与原子动作
+来源：https://arxiv.org/abs/2507.19850
+工作：提供身体部位运动的细粒度时空文字描述，支持运动生成及编辑。
+对项目的意义：详细身体部位描述不能单独声称首次；其输入和生成目标与本项目不同。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R19] MA-Bench: Towards Fine-grained Micro-Action Understanding
+2026 | CVPR 2026 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content/CVPR2026/html/Li_MA-Bench_Towards_Fine-grained_Micro-Action_Understanding_CVPR_2026_paper.html
+工作：以微动作感知、关系理解及解释推理分层评价人体细微动作理解。
+对项目的意义：细微身体动作和关系推理已有近邻；不能仅以细粒度命名体现差异。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R20] EgoActionBench: Benchmarking Dense Action Captioning for Egocentric Human Videos
+2026 | arXiv 2026-11-02；未在本次核验会议版本 | 运动与原子动作
+来源：https://arxiv.org/abs/2611.03646
+工作：对左手、右手、双手原子动作进行密集描述和时间定位；分开测量语义、时间和手归属。
+对项目的意义：原子动作+细节+时间+主体评分已有直接先例；应加入真实声学和专业动作判别证据。
+核验深度：重点核对原文方法或评测段落
+
+[R21] Dense-Captioning Events in Videos
+2017 | ICCV 2017 | 密集描述与时间定位
+来源：https://openaccess.thecvf.com/content_iccv_2017/html/Krishna_Dense-Captioning_Events_in_ICCV_2017_paper.html
+工作：建立同时检测多个事件的时间边界并生成描述的dense captioning任务。
+对项目的意义：完整视频到多个带时间戳描述的任务骨架已成熟。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R22] Towards Automatic Learning of Procedures from Web Instructional Videos
+2018 | AAAI 2018；arXiv 初版 2017 | 密集描述与时间定位
+来源：https://arxiv.org/abs/1703.09788
+工作：构建带时间定位和文字描述的烹饪步骤数据，研究教学视频程序学习。
+对项目的意义：范围可覆盖可拆解的日常技能；不要因专业术语只来自运动而人为局限任务。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R23] End-to-End Dense Video Captioning With Parallel Decoding
+2021 | ICCV 2021 | 密集描述与时间定位
+来源：https://openaccess.thecvf.com/content/ICCV2021/html/Wang_End-to-End_Dense_Video_Captioning_With_Parallel_Decoding_ICCV_2021_paper.html
+工作：把密集caption建模为事件集合预测，并行输出时间边界和描述。
+对项目的意义：事件个数、遗漏和重复必须评分；不能只比较已匹配事件的文本。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R24] Vid2Seq: Large-Scale Pretraining of a Visual Language Model for Dense Video Captioning
+2023 | CVPR 2023 | 密集描述与时间定位
+来源：https://openaccess.thecvf.com/content/CVPR2023/html/Yang_Vid2Seq_Large-Scale_Pretraining_of_a_Visual_Language_Model_for_Dense_CVPR_2023_paper.html
+工作：用时间token联合生成事件边界及文本，并利用转录句子边界作预训练伪监督。
+对项目的意义：话语边界可以提供线索，但benchmark不能直接假设话语边界就是动作边界。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R25] TimeChat: A Time-sensitive Multimodal Large Language Model for Long Video Understanding
+2024 | CVPR 2024 | 密集描述与时间定位
+来源：https://openaccess.thecvf.com/content/CVPR2024/html/Ren_TimeChat_A_Time-sensitive_Multimodal_Large_Language_Model_for_Long_Video_CVPR_2024_paper.html
+工作：通过带时间戳的帧编码和滑动Q-Former支持密集描述、定位及长视频理解。
+对项目的意义：显式时间戳输入已有先例；与TimeChat-Captioner是不同论文。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R26] VTimeLLM: Empower LLM to Grasp Video Moments
+2024 | CVPR 2024 | 密集描述与时间定位
+来源：https://openaccess.thecvf.com/content/CVPR2024/html/Huang_VTimeLLM_Empower_LLM_to_Grasp_Video_Moments_CVPR_2024_paper.html
+工作：用阶段化训练增强视频事件边界意识，覆盖时间定位和密集caption。
+对项目的意义：可用作时间感知模型类别的基线依据；不能把给定GT边界的结果混入完整生成主榜。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R27] AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark
+2025 | ICLR 2025；arXiv 初版 2024 | 密集描述与时间定位
+来源：https://arxiv.org/abs/2410.03051
+工作：提出详细视频描述模型与VDC，采用将长描述拆成短问题的LLM辅助评价。
+对项目的意义：细节丰富、结构化长caption及QA式评分已有先例。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R28] VALOR: Vision-Audio-Language Omni-Perception Pretraining Model and Dataset
+2023 | arXiv；本次以2023版本为来源 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2304.08345
+工作：联合视觉、音频和语言预训练，并建立带音视频联合描述的VALOR-1M。
+对项目的意义：音视频联合caption不是新任务；应证明更细动作关系带来新的诊断价值。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R29] VAST: A Vision-Audio-Subtitle-Text Omni-Modality Foundation Model and Dataset
+2023 | arXiv；本次以2023版本为来源 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2305.18500
+工作：分别生成视觉和音频描述，再结合字幕由LLM融合为全模态caption。
+对项目的意义：先分模态再融合的标注管道已有先例；管道工程可作为实现而非主要创新。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R30] Exploring the Role of Audio in Video Captioning
+2024 | CVPR 2024 Workshops（非主会论文） | 音视频描述与联合理解
+来源：https://openaccess.thecvf.com/content/CVPR2024W/MULA/html/Shen_Exploring_the_Role_of_Audio_in_Video_Captioning_CVPRW_2024_paper.html
+工作：研究原始音频相对ASR文本的作用及预训练时的模态过度依赖。
+对项目的意义：必须对比视频+转录与视频+原始音频，证明非语言声音的增量。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R31] video-SALMONN 2: Captioning-Enhanced Audio-Visual Large Language Models
+2025 | arXiv 2025版本；与2024早期同系稿合并计数 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2506.15220
+工作：通过偏好优化增强详细音视频描述，并评价信息完整性和错误。
+对项目的意义：漏报与幻觉需分开统计；同系早期版本不重复算论文。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R32] UGC-VideoCaptioner: An Omni UGC Video Detail Caption Model and New Benchmarks
+2025 | arXiv；未在本次核验会议版本 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2507.11336
+工作：短UGC视频的详细音视频caption；使用音频、视觉及联合语义的人机标注流程。
+对项目的意义：单模态独立标注后联合核验适用于本项目，但本身不构成新贡献。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R33] Omni-Captioner: Data Pipeline, Models, and Benchmark for Omni Detailed Perception
+2026 | ICLR 2026；arXiv 初版 2025 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2510.12720
+工作：构建详细音频/音视频描述管道和模型，用cloze式任务衡量细节信息保留。
+对项目的意义：应与事实探针式评分对比，并检验完整caption是否保留动作关系证据。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R34] FAVE: A Structured Benchmark for Fine-Grained Audio-Visual Temporal Evaluation in Multimodal LLMs
+2026 | CVPR 2026 | 音视频描述与联合理解
+来源：https://openaccess.thecvf.com/content/CVPR2026/html/Lu_FAVE_A_Structured_Benchmark_for_Fine-Grained_Audio-Visual_Temporal_Evaluation_in_CVPR_2026_paper.html
+工作：测量跨模态时间对齐、事件时间关系和片段级音视频描述。
+对项目的意义：直接覆盖时间关系创新主张；需要证明专业动作层面的新问题超出现有一般事件任务。
+核验深度：重点核对原文方法、评测或补充材料段落
+
+[R35] Temporal and Cross-Modal Alignment for Enhanced Audiovisual Video Captioning
+2026 | ECCV 2026；已核验Springer会议论文集及作者发布页 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2607.01667
+工作：以声音—来源绑定列表及跨模态时间关系三元组构造GT，并进行解耦评价。
+对项目的意义：与声音对应谁、先发生哪个事件高度重叠；最需要逐项正面对比的近邻之一。
+核验深度：重点核对原文方法或评测段落
+
+[R36] AVSCap: Orchestrating Audio-Visual Synergy for Omni-modal Video Captioning
+2026 | arXiv 2026-07；未在本次核验会议版本 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2607.12820
+工作：围绕跨模态事件绑定构建描述模型及基准，分别评价视觉、音频和协同事件。
+对项目的意义：仅把声音和动作写在一起不够；需要准确关系，同时避免只强调语音忽略非语言声。
+核验深度：重点核对原文方法、评测或补充材料段落
+
+[R37] AVCap: Reinforcing Audio-Video Joint Caption with Detail-Aware Reward
+2026 | arXiv 2026-08；未在本次核验会议版本 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2608.06930
+工作：建立细节丰富音视频数据、AVCap-Bench及AVCap-Score，通过GT原子问答探针评价候选caption。
+对项目的意义：原子事实及GT+judge评分已有直接先例；须额外检验时间、动作实例和主体的配对正确性。
+核验深度：重点核对原文方法或评测段落
+
+[R38] OmniCapBench: A Deep-Structured Evaluation Framework for Fine-Grained Audio-Visual Captioning
+2026 | NeurIPS 2026 Evaluations & Datasets；已核验会议官方论文清单，会议尚未举行 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2610.12458
+工作：原生输出实体、镜头及音频事件单位，结合确定性结构约束与局部LLM语义评分。
+对项目的意义：结构化GT、规则+局部judge以及音画绑定已经存在；不能将这一组合宣称为首次。
+核验深度：重点核对原文方法或评测段落
+
+[R39] AVTrace: Diagnosing Audio-Visual Temporal Reasoning in Omni Models
+2026 | arXiv 2026-09；未在本次核验会议版本 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2609.19991
+工作：银标准诊断集覆盖起点/区间定位、同步、事件顺序及链解析，采用规范化后确定性评分。
+对项目的意义：需区别金标准与银标准；内容相似度不能代替时间定位，并应加入模态扰动实验。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R40] AudioCaps: Generating Captions for Audios in The Wild
+2019 | NAACL 2019 | 音视频描述与联合理解
+来源：https://aclanthology.org/N19-1011/
+工作：通过众包建立真实世界音频与人工文字描述，研究一般声音caption。
+对项目的意义：非语言声音是独立信息来源；不能将音频评测缩减为ASR。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R41] Clotho: An Audio Captioning Dataset
+2020 | ICASSP 2020；arXiv初版2019，规模采用原版论文 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/1910.09387
+工作：为一般音频提供多条人工自由描述，强调描述多样性。
+对项目的意义：同一声音存在合理多种描述，GT应允许语义等价表达。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R42] Perception Test: A Diagnostic Benchmark for Multimodal Video Models
+2023 | NeurIPS 2023 Datasets and Benchmarks | 音视频描述与联合理解
+来源：https://proceedings.neurips.cc/paper_files/paper/2023/hash/8540fba4abdc7f9f7a7b1cc6cd60e409-Abstract.html
+工作：以记忆、抽象、物理、语义等技能组织真实视频，并标注动作和声音时间片段等标签。
+对项目的意义：基准应围绕可检验能力和错误类型组织，不能只汇总一个总分。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R43] OmniBench: Towards The Future of Universal Omni-Language Models
+2024 | arXiv；本次以2024版本为来源 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2409.15272
+工作：检验视觉、声学和文本的联合推理，主要是三模态QA。
+对项目的意义：须确认任务确实依赖多模态；静态图像+音频QA与完整时序caption存在区别。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R44] Audio-Visual Event Localization in Unconstrained Videos
+2018 | ECCV 2018 | 音视频描述与联合理解
+来源：https://www.ecva.net/papers/eccv_2018/papers_ECCV/html/Yapeng_Tian_Audio-Visual_Event_Localization_ECCV_2018_paper.php
+工作：定义同时可见且可听的事件，研究事件时间定位和跨模态定位。
+对项目的意义：声音与可见事件定位是基础任务；需证明专业动作边界和实例绑定的新价值。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R45] Unified Multisensory Perception: Weakly-Supervised Audio-Visual Video Parsing
+2020 | ECCV 2020 | 音视频描述与联合理解
+来源：https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/513_ECCV_2020_paper.php
+工作：将视频分成声音可闻、画面可见或两者共有的时间事件。
+对项目的意义：GT必须允许仅听到、仅看到及无法绑定的事件，不能强行一一对应。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R46] WorldSense: Evaluating Real-world Omnimodal Understanding for Multimodal LLMs
+2025 | arXiv；本次以2025版本为来源 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2502.04326
+工作：跨多个现实领域的视听同步视频QA，强调音视频联合信息。
+对项目的意义：可以作外部迁移测评，但选择题成绩不能代替开放式caption生成能力。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R47] Daily-Omni: Towards Audio-Visual Reasoning with Temporal Alignment across Modalities
+2025 | arXiv；本次以2025版本为来源 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2505.17862
+工作：构建日常情景的音视频QA和时间对齐管道，并提供分模块系统基线。
+对项目的意义：联合推理及分阶段管道已有先例；可用于检查新动作标注是否保留跨模态信息。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R48] SODA: Story Oriented Dense Video Captioning Evaluation Framework
+2020 | ECCV 2020 | 评价方法与可靠性
+来源：https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/6406_ECCV_2020_paper.php
+工作：针对密集caption的事件顺序与故事结构设计评测，补充单个匹配句子评分的不足。
+对项目的意义：多事件顺序及整体结构应评分；并行动作不能机械强制为单一全序。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R49] FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
+2023 | EMNLP 2023 | 评价方法与可靠性
+来源：https://aclanthology.org/2023.emnlp-main.741/
+工作：把长文本拆为原子事实，测量可靠知识源支持的事实比例。
+对项目的意义：可借鉴逐事实验证，但只有precision会鼓励少说，须同时评价覆盖率。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R50] G-Eval: NLG Evaluation using Gpt-4 with Better Human Alignment
+2023 | EMNLP 2023 | 评价方法与可靠性
+来源：https://aclanthology.org/2023.emnlp-main.153/
+工作：用量表和结构化填表式LLM评价语言生成，并分析与人工判断的一致性。
+对项目的意义：judge需要明确量表和人工校准；语言任务上的可靠性不能直接外推到运动术语。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R51] Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena
+2023 | NeurIPS 2023 Datasets and Benchmarks | 评价方法与可靠性
+来源：https://arxiv.org/abs/2306.05685
+工作：研究LLM judge与人工偏好的一致性，以及位置、冗长和自我偏好等偏差。
+对项目的意义：匿名化被测模型、控制长短风格、复测并替换judge，检查排序是否稳定。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R52] CLAIR: Evaluating Image Captions with Large Language Models
+2023 | EMNLP 2023 | 评价方法与可靠性
+来源：https://aclanthology.org/2023.emnlp-main.841/
+工作：用LLM比较候选和参考caption，并检验与人工评价的相关性。
+对项目的意义：候选文本+GT交给LLM评分不是新方法；本项目要验证其时间和专业语义可靠性。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R53] SPICE: Semantic Propositional Image Caption Evaluation
+2016 | arXiv 初版 2016；本次以该版本为来源 | 评价方法与可靠性
+来源：https://arxiv.org/abs/1607.08822
+工作：基于场景图中的语义命题衡量caption内容，超越表面词重合。
+对项目的意义：可以借鉴实体、属性和关系的分解；时间关系仍需显式表示。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R54] CIDEr: Consensus-Based Image Description Evaluation
+2015 | CVPR 2015 | 评价方法与可靠性
+来源：https://openaccess.thecvf.com/content_cvpr_2015/html/Vedantam_CIDEr_Consensus-Based_Image_2015_CVPR_paper.html
+工作：以多参考描述中的人类共识衡量caption相似度。
+对项目的意义：适合作为传统辅助指标；不能单凭高词汇相似度认定动作时间关系正确。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R55] BERTScore: Evaluating Text Generation with BERT
+2020 | ICLR 2020；arXiv 初版 2019 | 评价方法与可靠性
+来源：https://arxiv.org/abs/1904.09675
+工作：基于上下文词表示匹配候选与参考文本，缓解词面不同带来的误罚。
+对项目的意义：可作文本相似基线，但需专门测量左右、否定、先后颠倒等关键差异。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R56] LongVALE: Vision-Audio-Language-Event Benchmark Towards Time-Aware Omni-Modal Perception of Long Videos
+2025 | CVPR 2025 | 音视频描述与联合理解
+来源：https://openaccess.thecvf.com/content/CVPR2025/html/Geng_LongVALE_Vision-Audio-Language-Event_Benchmark_Towards_Time-Aware_Omni-Modal_Perception_of_Long_Videos_CVPR_2025_paper.html
+工作：提供长视频中带精确边界和跨模态关系描述的视听语言事件，并建立模型基线。
+对项目的意义：时间对齐+视听关系caption已有直接先例；本项目应聚焦动作内部结构和证据判别。
+核验深度：重点核对原文方法或评测段落
+
+[R57] TAC: Timestamped Audio Captioning
+2026 | arXiv 2026-02；未在本次核验会议版本 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2602.15766
+工作：生成具有时间边界的重叠声音描述，并通过TAC-V融合视觉形成音视频描述。
+对项目的意义：时间化声音轨道已有模型；可作为音频模块基线，需独立人工检验瞬时击球声。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R58] Audio-centric Video Understanding Benchmark without Text Shortcut
+2025 | EMNLP 2025 | 音视频描述与联合理解
+来源：https://aclanthology.org/2025.emnlp-main.333/
+工作：以音频为中心评价视频理解，并通过答案置换过滤仅靠问题文本可作答的捷径。
+对项目的意义：应做文本、转录、静音视频等消融，排除术语先验或字幕直接泄漏答案。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R59] Action Genome: Actions As Compositions of Spatio-Temporal Scene Graphs
+2020 | CVPR 2020 | 运动与原子动作
+来源：https://openaccess.thecvf.com/content_CVPR_2020/html/Ji_Action_Genome_Actions_As_Compositions_of_Spatio-Temporal_Scene_Graphs_CVPR_2020_paper.html
+工作：用人物物体的时空关系图分解动作，研究组合式行为理解。
+对项目的意义：动作关系图不是独有创新；球拍、球和身体的联系可作为专业动作判别证据。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R60] TALL: Temporal Activity Localization via Language Query
+2017 | ICCV 2017 | 密集描述与时间定位
+来源：https://openaccess.thecvf.com/content_iccv_2017/html/Gao_TALL_Temporal_Activity_ICCV_2017_paper.html
+工作：根据自然语言查询定位动作时间片段，建立Charades-STA。
+对项目的意义：查询式定位与无查询完整标注生成必须分榜；后者还要测遗漏动作。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R61] Detecting Moments and Highlights in Videos via Natural Language Queries
+2021 | NeurIPS 2021 | 密集描述与时间定位
+来源：https://proceedings.neurips.cc/paper_files/paper/2021/hash/62e0973455fd26eb03e91d5741a4a3bb-Abstract.html
+工作：对查询相关的多个视频时刻及显著程度标注，并提出集合预测基线。
+对项目的意义：可借鉴多实例定位评测；关注事件检索与全量caption任务的区别。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R62] AVHBench: A Cross-Modal Hallucination Benchmark for Audio-Visual Large Language Models
+2024 | arXiv；本次以2024版本为来源 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2410.18325
+工作：评价跨模态幻觉、匹配和推理，分析一种模态对另一种模态的误导。
+对项目的意义：看到挥拍不能推断必然听见击球；要纳入无对应声音和矛盾模态样本。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R63] Can Audio Captions Be Evaluated with Image Caption Metrics?
+2022 | ICASSP 2022；arXiv 初版 2021 | 评价方法与可靠性
+来源：https://arxiv.org/abs/2110.04684
+工作：检验图像caption指标在音频上的适用性，结合语义相似和错误检测提出FENSE。
+对项目的意义：评分指标需要在本领域做人类相关性验证，不能直接迁移既有指标结论。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R64] Object Hallucination in Image Captioning
+2018 | EMNLP 2018 | 评价方法与可靠性
+来源：https://aclanthology.org/D18-1437/
+工作：提出面向对象幻觉的诊断指标，指出句子指标好不代表幻觉少。
+对项目的意义：需要独立统计动作、声源、人物和关系的无依据增写。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R65] LongCap: Hour-Scale Timestamped Audio Captioning via Chunk-wise Processing
+2026 | arXiv 2026-11-08；未在本次核验会议版本 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2611.11125
+工作：针对长时音频的时间化caption提出分块处理、人工基准和时间线/粒度/内容指标。
+对项目的意义：虽然片长不同，但拆分粒度本身可以成为评测维度，不能只评语义相似度。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R66] OmniScript: Towards Audio-Visual Script Generation for Long-Form Cinematic Video
+2026 | arXiv 2026-04；未在本次核验会议版本 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2604.11102
+工作：将长篇影视视频转为包含人物动作、对话、表情和声音的分层脚本并作时间感知评价。
+对项目的意义：脚本式多字段GT已有先例；专业动作执行层级是需要额外论证的区别。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R67] AVoCaDO: An Audiovisual Video Captioner Driven by Temporal Orchestration
+2025 | arXiv 2025-10；未在本次核验会议版本 | 音视频描述与联合理解
+来源：https://arxiv.org/abs/2510.10395
+工作：利用时间对齐的视听描述数据及后训练改善时间一致性、对话准确性。
+对项目的意义：属于直接caption模型基线，也与已有下载输出相关；需按统一输入协议实测。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R68] VCapsBench: A Large-scale Fine-grained Benchmark for Video Caption Quality Evaluation
+2025 | arXiv；未在本次核验会议版本 | 评价方法与可靠性
+来源：https://arxiv.org/abs/2505.23484
+工作：以细粒度QA测量caption准确性、不一致及覆盖率，关注视频生成所需的时空细节。
+对项目的意义：评分应覆盖正确、遗漏、矛盾三个方向，不能让语言流畅性掩盖信息错误。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读
+
+[R69] TimeChat-Captioner: Scripting Multi-Scene Videos with Time-Aware and Structural Audio-Visual Captions
+2026 | ICML 2026（PMLR 正式论文页核验） | 音视频描述与联合理解
+来源：https://proceedings.mlr.press/v306/yao26o.html
+工作：提出带时间戳和六维结构的Omni Dense Captioning、OmniDCBench及SodaM评价。
+对项目的意义：这是结构化音视频caption+时间评价的直接顶会先例；不能只增加运动术语而忽略与其对比。
+核验深度：重点核对原文方法或评测段落
+
+[R70] Putting Captions to the Test: Evaluating Video Caption Quality through Multiple-Choice Question Answering
+2026 | ACL 2026 Long Papers | 评价方法与可靠性
+来源：https://aclanthology.org/2026.acl-long.777/
+工作：以人工核验的细粒度选择题衡量caption保留的信息及事实性，减少单参考表述局限。
+对项目的意义：ACL有caption评测先例；可增设仅凭生成caption完成关系QA的诊断副任务。
+核验深度：核验作者原稿摘要或原始出版/项目页；未声称逐页精读

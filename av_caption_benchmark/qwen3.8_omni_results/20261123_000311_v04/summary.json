@@ -1,0 +1,39 @@
+[
+  {
+    "name": "badminton",
+    "model": "qwen3.8-omni-flash",
+    "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+    "prompt": "badminton_prompt_v0.4.txt",
+    "prompt_sha256": "ab2ee80db28f9bec742f8d917ea155094b01d66eaaab1ba670e5238b0f790087",
+    "video": "transfer2paas_2/badminton_lift_31679122798_first8s.mp4",
+    "video_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "clip_duration_seconds": 8,
+    "requested_fps": 10,
+    "enable_thinking": true,
+    "max_tokens": 16384,
+    "http_status": 200,
+    "request_id": "49a9d3fe-abb3-9910-8130-3f0c8d09c198",
+    "response_id": "chatcmpl-49a9d3fe-abb3-9910-8130-3f0c8d09c198",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 8713,
+      "total_tokens": 21743,
+      "completion_tokens": 13030,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 58,
+        "video_tokens": 4754,
+        "text_tokens": 3901
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 10360,
+        "text_tokens": 2670
+      }
+    },
+    "four_sections_in_order": true,
+    "timestamps_beyond_clip": [],
+    "output_characters": 9123,
+    "status": "complete",
+    "elapsed_seconds": 167.84
+  }
+]

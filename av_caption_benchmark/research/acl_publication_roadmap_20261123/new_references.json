@@ -1,0 +1,92 @@
+[
+  [
+    "TUNA",
+    "TUNA: Comprehensive Fine-grained Temporal Understanding Evaluation on Dense Dynamic Videos",
+    2025,
+    "ACL 2025 主会长文",
+    "https://aclanthology.org/2025.acl-long.91/",
+    "caption 事件拆分、序列匹配、原子视觉事实核验；caption 与 QA 两种任务。",
+    "已覆盖原生 caption 的事件化评测；本项目应验证精确跨模态时间保真与专业动作的增量。"
+  ],
+  [
+    "FineBadminton",
+    "FineBadminton: A Multi-Level Dataset for Fine-Grained Badminton Video Understanding",
+    2025,
+    "ACM MM 2025",
+    "https://arxiv.org/html/2508.07554v1",
+    "逐拍专业动作、子类、战术与评价；有移动路径和第几拍定位问答。",
+    "专业名词与细节并非空白；需以独立步法/击球实例及音频区间评测形成可验证差异。"
+  ],
+  [
+    "AVTime",
+    "AVTime: Reinforcing Dense Audio-Visual Captions with Bidirectional Alignment",
+    2026,
+    "arXiv 预印本；本轮未确认会议录用",
+    "https://arxiv.org/html/2610.26046v1",
+    "Joint Event 时间线及 T2E/E2T/E2E，音频与视觉分支评分；采用百分比时间桶。",
+    "构成直接时序评测先例；必须比较短原子动作、分离时间轴和区间重叠的诊断价值。"
+  ],
+  [
+    "VidCapBench",
+    "VidCapBench: A Comprehensive Benchmark of Video Captioning for Controllable Text-to-Video Generation",
+    2025,
+    "Findings ACL 2025",
+    "https://aclanthology.org/2025.findings-acl.449/",
+    "对 caption 格式不敏感的关键内容评估，并验证与下游视频生成质量的相关性。",
+    "原生输出兼容不是首创；可借鉴下游效度而非依靠更长字段列表证明价值。"
+  ],
+  [
+    "VidOmni-Bench",
+    "VidOmni-Bench: A Benchmark for Fine-Grained Video Understanding via Spatio-Temporal Event Verification across Complexity and Duration",
+    2026,
+    "EMNLP 2026 主会",
+    "https://aclanthology.org/2026.emnlp-main.104/",
+    "以人类核验的句子/事件真假标签评价模型对密集描述的验证能力。",
+    "可借鉴自然错误与高相似错误对照；其事件验证任务与音视频时序caption生成不同。"
+  ],
+  [
+    "KPM-Bench",
+    "KPM-Bench: A Kinematic Parsing Motion Benchmark for Fine-grained Motion-centric Video Understanding",
+    2026,
+    "arXiv 预印本；本轮未确认会议录用",
+    "https://arxiv.org/html/2602.17768v1",
+    "运动学分析、肢体级描述以及从 caption 抽取动作属性的 MoPE。",
+    "动作细节与结构解析均有近例；本项目应检查术语规则、实例保留和音画时序。"
+  ],
+  [
+    "CapRiCorn-1K",
+    "CapRiCorn-1K: A Comprehensive Benchmark for Video Captioning and Subject Referential Consistency Across Temporal Scales",
+    2026,
+    "arXiv 预印本；本轮未确认会议录用",
+    "https://arxiv.org/html/2606.21949v1",
+    "跨时间尺度的 caption 质量、人物指代一致性和下游效度。",
+    "跨镜头身份一致性本身已有先例；人物限制是范围控制，不是独立创新。"
+  ],
+  [
+    "FACTUAL",
+    "FACTUAL: A Benchmark for Faithful and Consistent Textual Scene Graph Parsing",
+    2023,
+    "Findings ACL 2023",
+    "https://aclanthology.org/2023.findings-acl.398/",
+    "为文本场景图解析建立人工中间表示，考察忠实性和一致性。",
+    "应为 caption 转换器单独建立人工解析真值；不能把解析错误全部算成模型错误。"
+  ],
+  [
+    "DualFact+",
+    "DualFact+",
+    2026,
+    "Findings ACL 2026；网页与 PDF 长标题有差异，采用短名",
+    "https://aclanthology.org/2026.findings-acl.1912.pdf",
+    "程序性 caption 子句分解、动作区间、语义角色事实及核验。",
+    "原子事实分解并非首创；本项目以同期区间关系为准，不沿用此前语义指向提案。"
+  ],
+  [
+    "TempCompass",
+    "TempCompass: Do Video LLMs Really Understand Videos?",
+    2024,
+    "Findings ACL 2024",
+    "https://aclanthology.org/2024.findings-acl.517/",
+    "多种时序能力/任务形式；构造静态内容相近而时间属性不同的对照视频。",
+    "时间扰动与抗捷径实验已有先例；可用于检验本项目测量是否真的关注时间。"
+  ]
+]

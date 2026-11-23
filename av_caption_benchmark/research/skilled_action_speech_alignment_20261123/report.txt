@@ -1,0 +1,245 @@
+专业动作拆分与细粒度话语—动作对应：创新性定向调研
+日期：2026-11-23
+范围：人物不超过 2 人、能够依照稳定标准拆分的技能活动；原生音视频 caption 的细粒度评估。
+方法：检索并核对 25 项核心相关工作的论文、项目页及标注说明。重点阅读最相近工作的任务定义和标注规则；不声称逐页精读全部论文。未运行模型或进行新实验。
+
+一、判断
+
+单独提出专业术语动作拆分、一句话对应多个片段、音画先后关系，均有明确先例。不能把其中任一项写成首次提出。
+更值得验证的候选贡献是：针对技能教学中的真实话语，分别记录说话区间与被指向的动作区间，保留短语—动作实例—执行细节—动作组关系，并对自然 caption 的完整表达能力作评估。
+本次检索未找到完整覆盖上述设定且采用完全相同评测协议的工作。这只是有限检索结果，不等同于已经证明全球首创。形成贡献还需要相关工作对照、专家标注一致性和诊断实验。
+
+二、概念边界
+
+1. 动作标签与动作执行事实不同。
+   “挑球”是动作类别；持拍手、击球位置、身体朝向、移动方式、落脚次序、击球结果是事件实例的执行细节。
+2. 动作拆分与任意切碎不同。
+   一个专业动作可有准备、执行、恢复阶段；一个阶段内也可有同时发生的肢体动作。不能把每个动词或每次关节变化都自动定义为原子动作。
+3. 话语时间与话语指向的动作时间不同。
+   讲解可能先于演示、伴随演示、回顾前一次演示，或者仅表达尚未执行的指令。
+4. 声音来源、语义指向和时间关系不同。
+   教练是语音来源；学员的动作可能是语义指向；语音可与无关动作同时发生。击球声与击球动作属于声源/物理事件对应，不能与讲解关系混为一类。
+5. 文本查询对应多个片段，与录音中的一句话对应多个动作不是完全相同的任务。
+   前者已经是成熟的视频检索研究问题；后者还要保留原始话语结构、说话区间、人物和指向关系。前者仍然是必须讨论的相关先例。
+
+三、最直接的先例
+
+DualFact+（Findings ACL 2026）及其 YouCook3/CraftBench 标注，将复合动作句拆为单动作子句并逐个标注视频区间；附录 C/D 排除指向过去或未来步骤、仅表达意图等情况。这覆盖了“多动作句拆分＋逐动作对齐”的基本构想，但其过滤规则与保留真实错时讲解的方案不同。[17]
+
+Ego-Exo4D 同时提供原子动作描述、边做边讲和专家点评。公开说明中的原子描述主要锚定时间点，并建议减少重复动作描述；专家点评通过暂停视频录音并记录暂停位置。它已经覆盖专业技能与语言监督，但这两种时间锚点不自动构成精确的话语短语到多个动作区间的对应表。[7]
+
+HTM-Align 标注 ASR 句子是否能在画面中找到对应内容，并修改其起止时间以匹配视觉内容。HT-Step 则标注文章步骤与视频片段，包括完整/部分匹配。故“说话内容不一定与当前画面同步”及“步骤—画面对应”本身已有研究。[11][12]
+
+QVHighlights 与 QV-M2 已研究一个查询对应多个相关时间片段。仅将输出从一个时间区间改为多个区间，不足以构成新的研究问题。[15][16]
+
+四、核心相关工作列表
+
+下列“未覆盖”仅指本文核查的主要任务或公开标注协议，不断言其原始视频不含相关现象。
+
+[1] FineGym（CVPR 2020，数据集与评估）
+已有：专业体操的语义层级、动作及子动作时间边界。
+区别：不以原生话语到动作实例的对应作为主要评测。
+https://sdolivia.github.io/FineGym/
+
+[2] FineDiving（CVPR 2022，数据集＋方法）
+已有：跳水动作类型、子动作序列、阶段转换帧和动作质量评分。
+区别：不能将“体育动作内部拆分”视为新概念；话语关系是另一个层面。
+https://github.com/xujinglin/FineDiving
+
+[3] FineSports（CVPR 2024，数据集＋方法）
+已有：篮球专业词表、动作/子动作层级和多人时空定位。
+区别：主要评价细粒度动作定位，不是原生讲解语音的语义指向。
+https://openaccess.thecvf.com/content/CVPR2024/papers/Xu_FineSports_A_Multi-person_Hierarchical_Sports_Video_Dataset_for_Fine-grained_Action_CVPR_2024_paper.pdf
+
+[4] FineBadminton / FBBench（ACM MM 2025，数据集与 benchmark）
+已有：羽毛球基础动作、战术语义、决策评价等多层标注。
+区别：仅换到羽毛球或增加专业术语不构成充分差异。
+https://github.com/iLearn-Lab/MM25-FineBadminton
+https://arxiv.org/abs/2508.07554
+
+[5] MotionBench（CVPR 2025，benchmark＋方法）
+已有：运动层面的细节、动作顺序等能力评估，并提供细致运动描述。
+区别：细粒度身体运动理解已被单独评估；需证明音画指向带来的额外难点。
+https://openaccess.thecvf.com/content/CVPR2025/papers/Hong_MotionBench_Benchmarking_and_Improving_Fine-grained_Video_Motion_Understanding_for_Vision_CVPR_2025_paper.pdf
+
+[6] Video Action Differencing / VidDiffBench（ICLR 2025，新任务＋benchmark＋方法）
+已有：用自然语言比较同一动作的执行差异。
+区别：执行细节描述已有任务；该任务以两个视频的比较为中心。
+https://jmhb0.github.io/viddiff/
+
+[7] Ego-Exo4D（CVPR 2024，大规模数据集与多任务 benchmark）
+已有：技能活动、多视角、专家点评、边做边讲、原子动作描述。
+具体时间协议与本项目的差异见第三部分。不能笼统声称此前缺少专业动作与语音资料。
+https://openaccess.thecvf.com/content/CVPR2024/html/Grauman_Ego-Exo4D_Understanding_Skilled_Human_Activity_from_First-_and_Third-Person_Perspectives_CVPR_2024_paper.html
+https://docs.ego-exo4d-data.org/annotations/atomic_descriptions/
+https://docs.ego-exo4d-data.org/annotations/expert_commentary/
+
+[8] ExAct（NeurIPS 2025 Datasets and Benchmarks）
+已有：3,521 个专家技能视频问答，涉及 11 类活动、6 个领域；五选一专家分析。
+区别：专业知识和专家难度已有 benchmark；本项目需增加密集、可定位的关系评估，而非仅以开放输出区别于选择题。
+https://proceedings.neurips.cc/paper_files/paper/2025/hash/0ab3ba1baa38a47a5820b01f1124b7ed-Abstract-Datasets_and_Benchmarks_Track.html
+
+[9] ExpertAF（CVPR 2025，任务＋方法＋评估）
+已有：根据学习者与专家示范生成可操作的专业反馈。
+区别：已有“具体动作错误如何用语言纠正”的研究；任务方向是反馈生成。
+https://openaccess.thecvf.com/content/CVPR2025/papers/Ashutosh_ExpertAF_Expert_Actionable_Feedback_from_Video_CVPR_2025_paper.pdf
+https://github.com/thechargedneutron/ExpertAF
+
+[10] QEVD / What to Say and When to Say it（NeurIPS 2024 Datasets and Benchmarks）
+已有：识别健身动作与错误，在适当时间给出反馈。
+区别：说什么、何时说并非空白；本项目是理解现成话语的指向，不是决定模型何时开口。
+https://arxiv.org/abs/2407.08101
+
+[11] Temporal Alignment Networks / HTM-Align（CVPR 2022，方法＋对齐数据）
+已有：ASR 句子可对齐性，以及修正后的视觉对应时间区间。
+区别：句子级对齐不自动提供专业原子动作及组级话语关系。
+https://www.robots.ox.ac.uk/~vgg/research/tan/index.html
+
+[12] HT-Step（NeurIPS 2023 Datasets and Benchmarks）
+已有：文章步骤到教学视频的时间定位，并区分完整和部分匹配。
+区别：文章步骤不是录音中的原始话语；仍需保留音频时间与引用指向。
+https://facebookresearch.github.io/htstep/
+https://proceedings.neurips.cc/paper_files/paper/2023/file/9d58d85bfc041b4f901c62ba37a3f322-Paper-Datasets_and_Benchmarks.pdf
+
+[13] StepFormer（CVPR 2023，方法）
+已有：从字幕抽动词短语，借助可拒绝异常项的序列对齐学习步骤发现与定位。
+区别：可用作字幕/动作对齐基线；不等于手工验证的专业话语指向图。
+https://openaccess.thecvf.com/content/CVPR2023/papers/Dvornik_StepFormer_Self-Supervised_Step_Discovery_and_Localization_in_Instructional_Videos_CVPR_2023_paper.pdf
+
+[14] Multi-Sentence Grounding / HowToStep（ECCV 2024，方法与自动构建数据）
+已有：ASR 转描述性步骤，再定位多个句子对应的视频时间。
+区别：文本清洗及对齐已有成熟路线；本项目若保留口语指代和不执行的指令，需要另行标注。
+https://lzq5.github.io/Video-Text-Alignment/
+
+[15] QVHighlights（NeurIPS 2021，benchmark＋模型）
+已有：一个自然语言查询对应多个不连续的相关片段。
+区别：不能把一对多时间定位本身写成首创；也不应误说它已经实现全部专业语音—动作评估。
+https://arxiv.org/abs/2107.09609
+
+[16] When One Moment Isn't Enough / QV-M2（NeurIPS 2025，benchmark＋方法）
+已有：多片段检索及针对该任务的评估。
+区别：对“一句话→多个片段”的创新声明构成直接相关先例。
+https://proceedings.neurips.cc/paper_files/paper/2025/hash/faaa187af979e46dc54f4d43f8b815b2-Abstract-Conference.html
+
+[17] DualFact+（Findings ACL 2026，评估框架＋数据）
+已有：程序性 caption 的子句拆分、语义角色事实及视觉核验。
+必须对照的章节：4.1、附录 C.1/C.2 和 D.2/D.3；关键重合与区别见第三部分。
+https://aclanthology.org/2026.findings-acl.1912/
+https://aclanthology.org/2026.findings-acl.1912.pdf
+
+[18] Unified Multisensory Perception / LLP（ECCV 2020，任务＋数据＋方法）
+已有：将视频划分为事件片段，分别标记可听、可见或两者皆有。
+区别：模态出现关系不等于教练话语对技术动作的语义指向。
+https://arxiv.org/abs/2007.10558
+
+[19] TCA-Bench（2026，方法论文中的 benchmark）
+已有：声音—来源绑定，以及 A_then_V / V_then_A / AV_simultaneous 时间关系。
+区别：需要额外标注话语短语指向哪个动作实例及细节、组级约束；一般跨模态时序已经不是新点。
+https://arxiv.org/html/2607.01667v1
+
+[20] OmniCapBench（2026，结构化音视频 caption benchmark）
+已有：人物、音频事件、视觉镜头及跨轨关系的结构化评估。
+区别：图结构和跨轨链接已有；专业动作内部结构及话语指向是否覆盖需逐字段比较。
+https://arxiv.org/html/2610.12458v1
+
+[21] AURA（2025，音视频推理 benchmark）
+已有：因果、同步、技能、不可回答等任务，以及事实和推理分开评价。
+区别：不能仅以“更关注音画关系”作为差异；需要精确的动作实例与密集 caption 评测定义。
+https://arxiv.org/abs/2508.07470
+
+[22] EvaOmni（2026，音视频证据 benchmark；本次按预印本记录）
+已有：答案同时附带音频和视觉证据区间，评价证据覆盖和模态定位瓶颈。
+区别：多模态时间证据不是新概念；本项目应突出每条话语的语义目标及专业执行关系。
+https://arxiv.org/abs/2610.28444
+
+[23] Action Modifiers（CVPR 2020，方法）
+已有：利用教学视频旁白的动作—副词学习动作执行方式。
+区别：不能只把“动作＋快慢/轻重等细节”当新点。
+https://openaccess.thecvf.com/content_CVPR_2020/papers/Doughty_Action_Modifiers_Learning_From_Adverbs_in_Instructional_Videos_CVPR_2020_paper.pdf
+
+[24] Language-Guided Audio-Visual Learning for Long-Term Sports Assessment（CVPR 2025，方法）
+已有：领域动作知识及动作—音乐协调，用于长期运动质量评价。
+区别：动作与音频的细粒度对应有不同含义；音乐节奏、动作发声、语音指向应分别讨论。
+https://openaccess.thecvf.com/content/CVPR2025/papers/Xu_Language-Guided_Audio-Visual_Learning_for_Long-Term_Sports_Assessment_CVPR_2025_paper.pdf
+
+[25] InstrAct / InstrAction（2026，方法＋诊断 benchmark）
+已有：动作语义、步骤顺序、细微程序差异评估，以及动作/顺序困难负例。
+区别：仅加入顺序交换负例不是新设计；可把它作为验证本 benchmark 是否依赖动作信息的基线思路。
+https://arxiv.org/abs/2604.08762
+https://zyyangzy.github.io/InstrAct/
+
+五、“一句话对应两个动作”至少有四种设定
+
+A. 可拆分的复合句。
+“先并步，再挑球。”包含两个动作提及。保留句子父节点，分别把短语连到动作即可。基本想法已有先例，作为主创新偏弱。
+
+B. 同类动作多次发生。
+“刚才第二次挑球拍面更稳。”目标是第二个实例，不能匹配到任意挑球。需要实例 ID、重复次数和正确的指代范围。多片段检索提供邻近先例，专业评价属性绑定仍需专门验证。
+
+C. 一条评价作用于动作组。
+“这两个动作之间不要停顿。”指向并步—挑球这一组合，评价的是衔接。不能简单变成“并步不要停顿”和“挑球不要停顿”。可用动作组节点或有明确成员的关系记录表示，不必宣称一种新的图数据结构。
+
+D. 多句共同描述动作，或者话语没有实际对应动作。
+“先沉髋”“膝盖跟脚尖方向一致”可能共同作用于某次下蹲；“下次试试反手”可能没有本视频内的执行实例。需要多对多关系、未执行指令、未知和无对应等状态，避免强制配对。
+
+六、建议的标注对象与例子
+
+以下均为设计示例，时间为人为示意值，不是已有视频的测量结果。
+
+语音 U1 [0.0, 2.2]：“先并步，再挑球。”
+动作 A1 [2.8, 3.5]：并步；动作 A2 [3.6, 4.1]：挑球。
+语音 U2 [4.5, 5.8]：“刚才这两下要连起来。”
+
+应分别记录：
+- U1 的两个短语各指向 A1、A2；整句话具有动作组 {A1,A2} 的有序指令语义。
+- U1 发生在两个动作之前，但“时间先于”不能单独证明它是指令。
+- U2 回指动作组 {A1,A2}，并对 transition(A1,A2) 提出要求。
+- 如果画面不能确认 U2 的目标，保留候选集合或歧义状态，而非标注员凭常识选一个。
+- 若 A2 有击球声，声响与动作另建 source/production 对应；它不是 U1/U2 的讲解关系。
+
+最小字段：
+actor_id；action_instance_id；专业动作类别；可见执行细节；动作起止及边界不确定性；utterance_id；原始转写；短语字符跨度及其音频时间；speaker_id；target_action_ids/target_group；语义关系；客观时间关系；证据与歧义状态。
+
+“原子”采用领域相对定义：专家可辨识、边界可复核、具有稳定技术含义的最小评测单元。标签名、分解层级和身体细节是三种标注层，不应混用。时间顺序不能替代语义关系；语义关系也不能自动推出具体起止秒数。
+
+七、如何证明这是有价值的新 benchmark
+
+候选主张：现有模型可能分别识别动作、转写语言，却无法可靠判断话语所指的具体动作实例、组级执行约束和时间关系。
+需要通过实验检验该主张，不预先假定所有模型均失败。
+
+1. 独立视觉与语言标注。
+   第一轮视觉标注者只看静音视频，记录实际执行；语言标注者独立转写音频。第二轮联合标注跨模态链接，区分看得见的事实与讲话者提出的规范/意图，避免用语音提示污染动作 GT。
+2. 专家一致性。
+   对动作类别、分解层级、边界、实例指代、组级关系分别报告一致性与争议，不只报告最终修订后一致率。身体遮挡或离屏动作保留未知，不补不可见细节。
+3. 模态消融。
+   比较 V、A、V+ASR、V+人工转写、AV。若人工转写已足以解决所有问题，应将贡献定位为话语—动作语义理解，不夸大原始声学信息的重要性。若主张完整音视频能力，则另测击球/脚步/呼吸、韵律等确有用的声学因素。
+4. 对应基线。
+   时间重叠、最近时间邻居、语义相似度检索、句子级 grounding、分句后 grounding、已有 checklist judge。尤其检验时间重叠即可答对的比例。
+5. 困难样本与负例。
+   同类重复动作、先讲后做、回顾前次、相同术语不同执行、话语评价衔接、未执行指令。可构造对照，但必须人工验证；不能让编辑痕迹成为答案线索。
+6. 关系评分。
+   先评价动作/语音信息覆盖，再评价实例匹配、语义关系、动作组目标集合、相对时间和绝对时间。报告条件正确率和全量覆盖，避免只对已经找到的简单实例计分。
+7. Caption 的表达边界。
+   保持专用模型的原生 prompt，用独立转换器抽取候选。模型没说出的关系计为未表达，不能让 judge 从 GT 或视频补出。另用定向 QA/grounding 诊断“理解不到”还是“原生 caption 没有表达”，两种任务分开报告。
+8. 对转换器单独审计。
+   人工只看候选 caption 制作参考解析，对比自动解析带来的分数/排序偏差。这个参考与视频 GT 不同。
+9. 数据划分。
+   按原始视频、教练/参与者或录制来源分组，避免同一教学视频、回放和重复示范跨 train/test。人物 ≤2 是控制变量，不能单独视为创新贡献。
+
+八、创新性分层判断
+
+专业术语替换：弱；动作识别、术语词表和细节描述均有先例。
+一句话拆成多个动作并逐个对齐：弱至有限增量；已有直接相关标注。
+专业动作分层＋精确话语—动作实例对应：有条件的 benchmark 贡献；需充分比较相关资源。
+保留原始话语、双时间区间、组级约束、错时指代和不执行情况，并证明现有指标漏检这些错误：更有研究价值，但仍是待实验证实的候选贡献。
+
+不建议的论文表述：首个细粒度动作数据集、首个专业动作语言 benchmark、首个一对多对齐、首个音画时序评估、严格信息无损。
+建议的研究问题：在技能教学音视频中，模型能否正确描述动作执行细节，并把讲解、回顾和纠错关联到正确的动作实例及动作组合？
+
+若主要投稿 ACL，可以围绕话语指代、组合语义、语义角色和证据定位组织贡献；若面向 ICML，应进一步展示具有普遍性的学习/评测发现，而非仅增加领域标签。以上是研究定位建议，不是录用预测。
+
+九、下一步建议（尚未执行）
+
+先做一个跨 2–3 个可稳定标注领域的小规模 pilot，例如羽毛球、跳跃技术和另一个教学技能。规模由每类关系能否获得足够实例及专家一致性决定，不用预设几百或几千就能发表。
+每类保留：可拆复合句、组级约束、先讲后做、事后回顾、重复动作指代、未执行指令；先检验其自然出现频率和可标注性。
+最重要的成功证据不是整体分数低，而是：在动作与转写已正确的条件下，关系仍系统性出错；新标注/指标能识别这些错误，并与专家判断一致。

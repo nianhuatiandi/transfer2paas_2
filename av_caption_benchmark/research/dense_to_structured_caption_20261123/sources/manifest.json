@@ -1,0 +1,102 @@
+[
+  {
+    "repo": "Tencent-Hunyuan/OmniCapBench",
+    "commit": "24328d3faff0a6f8519fc5072a195edac6f093d1",
+    "path": "omnicapbench_eval/native_vs_posthoc.py",
+    "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/OmniCapBench/24328d3faff0a6f8519fc5072a195edac6f093d1/omnicapbench_eval/native_vs_posthoc.py",
+    "bytes": 29548,
+    "sha256": "cf76704b7da4927698d79c2e4a22abdaa558dbe75f0f678023e07ca6e5797bc0",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\OmniCapBench\\omnicapbench_eval\\native_vs_posthoc.py",
+    "status": "downloaded_not_executed"
+  },
+  {
+    "repo": "Tencent-Hunyuan/OmniCapBench",
+    "commit": "24328d3faff0a6f8519fc5072a195edac6f093d1",
+    "path": "omnicapbench_eval/mtss_transformer_convert.py",
+    "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/OmniCapBench/24328d3faff0a6f8519fc5072a195edac6f093d1/omnicapbench_eval/mtss_transformer_convert.py",
+    "bytes": 21381,
+    "sha256": "6d70f6db6af48cefbb6589f1827046b7ffef10ef682f3973c53f1847f11c247a",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\OmniCapBench\\omnicapbench_eval\\mtss_transformer_convert.py",
+    "status": "downloaded_not_executed"
+  },
+  {
+    "repo": "Tencent-Hunyuan/OmniCapBench",
+    "commit": "24328d3faff0a6f8519fc5072a195edac6f093d1",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/OmniCapBench/24328d3faff0a6f8519fc5072a195edac6f093d1/README.md",
+    "bytes": 16083,
+    "sha256": "aa95e163ee0ee6916f739fa74548090832983363362baa640ad00ad8e89864e0",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\OmniCapBench\\README.md",
+    "status": "downloaded_not_executed"
+  },
+  {
+    "repo": "foundation-multimodal-models/CAPTURE",
+    "commit": "52eeb2781e8b4b1854c07a57b573c75edfd45688",
+    "path": "capture/capture_metric/capture.py",
+    "url": "https://raw.githubusercontent.com/foundation-multimodal-models/CAPTURE/52eeb2781e8b4b1854c07a57b573c75edfd45688/capture/capture_metric/capture.py",
+    "bytes": 20957,
+    "sha256": "f3afd9c99126c6cee9b82443c88d0f0a32f35a20d8490c0871a68c703c213d65",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\CAPTURE\\capture\\capture_metric\\capture.py",
+    "status": "downloaded_not_executed"
+  },
+  {
+    "repo": "foundation-multimodal-models/CAPTURE",
+    "commit": "52eeb2781e8b4b1854c07a57b573c75edfd45688",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/foundation-multimodal-models/CAPTURE/52eeb2781e8b4b1854c07a57b573c75edfd45688/README.md",
+    "bytes": 8529,
+    "sha256": "480e5c0e5032d87be93b70c645b649b8c2cdf9fe8b8f150cdeec99fc864b8985",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\CAPTURE\\README.md",
+    "status": "downloaded_not_executed"
+  },
+  {
+    "repo": "zhuang-li/FACTUAL",
+    "commit": "60c40f48c692ac5eb074f39e2ffd3904165d14f4",
+    "path": "src/factual_scene_graph/parser/scene_graph_parser.py",
+    "url": "https://raw.githubusercontent.com/zhuang-li/FACTUAL/60c40f48c692ac5eb074f39e2ffd3904165d14f4/src/factual_scene_graph/parser/scene_graph_parser.py",
+    "bytes": 14293,
+    "sha256": "f7583b78290f0c257c90d1bbba43ca6e9a5cd8e7e754a46b9b2d55a2193654b3",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\FACTUAL\\src\\factual_scene_graph\\parser\\scene_graph_parser.py",
+    "status": "downloaded_not_executed"
+  },
+  {
+    "repo": "zhuang-li/FACTUAL",
+    "commit": "60c40f48c692ac5eb074f39e2ffd3904165d14f4",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/zhuang-li/FACTUAL/60c40f48c692ac5eb074f39e2ffd3904165d14f4/README.md",
+    "bytes": 20493,
+    "sha256": "89a47ce6272449ad4f90cae01015f5a0766ca8846557cbf6efefc3e938c98820",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\FACTUAL\\README.md",
+    "status": "downloaded_not_executed"
+  },
+  {
+    "repo": "j-min/DSG",
+    "commit": "7330119a39f76ff90e619a8bd3ff321e71aa986b",
+    "path": "dsg/query_utils.py",
+    "url": "https://raw.githubusercontent.com/j-min/DSG/7330119a39f76ff90e619a8bd3ff321e71aa986b/dsg/query_utils.py",
+    "bytes": 14938,
+    "sha256": "391e67c315486a78742664176ce650bc8edc151390632e9703931091402d6c23",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\DSG\\dsg\\query_utils.py",
+    "status": "downloaded_not_executed"
+  },
+  {
+    "repo": "j-min/DSG",
+    "commit": "7330119a39f76ff90e619a8bd3ff321e71aa986b",
+    "path": "dsg/parse_utils.py",
+    "url": "https://raw.githubusercontent.com/j-min/DSG/7330119a39f76ff90e619a8bd3ff321e71aa986b/dsg/parse_utils.py",
+    "bytes": 2888,
+    "sha256": "4bd3026ded2700d8d127ceeef768a97c667a9d64e73e644af000a3000da52551",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\DSG\\dsg\\parse_utils.py",
+    "status": "downloaded_not_executed"
+  },
+  {
+    "repo": "j-min/DSG",
+    "commit": "7330119a39f76ff90e619a8bd3ff321e71aa986b",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/j-min/DSG/7330119a39f76ff90e619a8bd3ff321e71aa986b/README.md",
+    "bytes": 13356,
+    "sha256": "e473e306a93b7c618dc3a50925c5437171996b0a127bc9e9efc2d0ee8cf78305",
+    "local": "research\\dense_to_structured_caption_20261123\\sources\\DSG\\README.md",
+    "status": "downloaded_not_executed"
+  }
+]

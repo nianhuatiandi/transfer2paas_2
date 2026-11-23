@@ -1,0 +1,25 @@
+AV ALIGNMENT REVIEW. Use the supplied original video WITH its audio and the additional timestamped source frames to review only the target shot. The full video/audio clock starts at 0; additional images are frames of that SAME video, not extra scenes. All output times are global source-clip seconds inside the target shot. Inspect the images for visual details that may not appear in the video's server-sampled frames.
+
+Candidate annotations are fallible hypotheses. Verify associations against raw sound AND image evidence. Return JSON only. Do not output a reasoning trace. Do not change sports labels or invent a new action ID in this stage.
+
+Speech:
+- Review audible speech overlapping this shot. Split an utterance at a camera cut; do not extend an on-screen speaker identity across a cut. Correct candidate words/timing only when the raw audio supports the correction. Text on screen is NOT an audio transcript; do not copy subtitles into speech. Mark unclear spans [inaudible].
+- source_utterance_id references U01, U02, etc. in the supplied candidate list; use null for an actually audible utterance missing from that list. speaker must be a supplied voice ID. Different-looking people across cuts do not prove different voices; do not infer a visible identity from a name watermark or video subject.
+- speaker_status=supported requires matching visible mouth movement and audible speech in this interval with no equally plausible competing speaker. A visible open mouth, a plausible coaching role, or temporal coincidence alone is insufficient. Use off_screen if no visible person is plausibly speaking; otherwise uncertain. actor is null unless the on-screen link is supported. Explain specific visual/audio evidence and confidence high/medium/low. A very short or poorly visible mouth sequence can remain uncertain.
+- Link speech to existing action IDs only with a clear relationship: instruction, description, retrospective comment, or temporal overlap only. Temporal overlap alone is not instruction or description. Temporal-overlap links must actually overlap. Retrospective counting may refer to an earlier action only if its referent is supported. Use an empty related_actions list if unresolved.
+
+Action sounds:
+- Assess EVERY candidate action in this shot exactly once. Listen for individual transients/squeaks/footfalls; a sustained rhythmic background must not be assigned to a specific action by default.
+- status=supported requires a distinguishable heard sound and a compatible observed event at a consistent time, plus evidence excluding plausible competing events. Merely being near in time is insufficient. Do not turn an audible hit into proof of stroke type.
+- Report sound_time and visual_time separately, as numeric seconds, or null when unlocalizable. Both are estimates. visual_time must fall inside that action's interval. A difference over 0.200 seconds needs further review and cannot be claimed supported here. Do not copy the candidate contact time as a sound measurement.
+- Use uncertain if there are competing impacts, obscured contact, or ambiguous sound source. Use none_detected when no distinguishable sound can be attributed to that action after listening. Do not invent sound from a visible swing, hand feed or footstep. Null sound_time when no discrete heard sound can be localized.
+
+JSON schema, all fields required:
+{
+ "shot":"S01",
+ "speech_segments":[{"source_utterance_id":"U01 or null", "start":0.0,"end":0.3,"speaker":"V01","text":"audible original-language speech","state":"English delivery, timing/word uncertainty","speaker_status":"supported or off_screen or uncertain","actor":null,"confidence":"high or medium or low","evidence":"specific audible and visual evidence; limitations","related_actions":[{"action_id":"A01","relationship":"instruction or description or retrospective comment or temporal overlap only","evidence":"why this association is supported"}]}],
+ "action_sounds":[{"action_id":"A01","status":"supported or uncertain or none_detected","description":"English description of actually heard sound, or no distinguishable attributable sound","sound_time":null,"visual_time":null,"confidence":"high or medium or low","evidence":"independent audio and image evidence, timing uncertainty, competing sources"}],
+ "unmatched_sounds":[{"start":0.0,"end":0.2,"description":"audible sound that cannot be linked to a candidate action"}],
+ "uncertainties":["unresolved observations"]
+}
+Empty arrays are valid when nothing occurs. Return exactly the supplied shot ID and valid supplied action/person/voice IDs. Do not supply fictitious examples, pixel coordinates, or claims of measured lip synchronization.

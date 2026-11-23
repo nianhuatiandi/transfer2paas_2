@@ -1,0 +1,74 @@
+{
+  "api_fps10_sibling": {
+    "shot_count": 1,
+    "shots": [
+      {
+        "start": 7.5,
+        "end": 8.0,
+        "description": "A front-facing medium shot on the indoor badminton court shows one young man centered in frame, wearing a black short-sleeved shirt with white chest text and bright pink shorts. He faces the camera directly, smiling broadly or laughing, holding a racket upright in his right hand while his left hand gestures outward at about waist height as if speaking. The blue court floor remains visible behind him, along with green boundary lines, part of a net post area, gray walls, stacked chairs, and overhead lighting. No shuttlecock is clearly visible in this final view."
+      }
+    ],
+    "tail": {
+      "last_observed_time": 8.0,
+      "description": "The last visible image is still the same front-facing shot of the man on court. He continues facing the camera with an open smile/laughing expression, racket raised vertically in his right hand, and his left hand slightly extended as if mid-explanation. Readable text includes 'ACTIVE' on his shirt and '李宇轩教练 bilibili' at top right.",
+      "readable_text": [
+        "ACTIVE",
+        "李宇轩教练 bilibili"
+      ]
+    },
+    "event_count": 1,
+    "usage": {
+      "prompt_tokens": 24277,
+      "total_tokens": 24793,
+      "completion_tokens": 516,
+      "prompt_tokens_details": {
+        "cached_tokens": 23296,
+        "audio_tokens": 58,
+        "video_tokens": 23762,
+        "text_tokens": 457
+      },
+      "completion_tokens_details": {
+        "text_tokens": 516
+      }
+    },
+    "elapsed_seconds": 11.53
+  },
+  "local_10fps_images_plus_video": {
+    "shot_count": 1,
+    "shots": [
+      {
+        "start": 7.5,
+        "end": 8.0,
+        "description": "At 7.5–7.6 seconds, a static wide indoor badminton-court view shows two players across the net: near side, an adult man with his back to camera in a dark navy sleeveless top over white short sleeves and black shorts, holding a racket in his right hand; far side, another player facing him in dark/maroon clothing and light gray shorts, low ready stance with knees bent. By about 7.7 seconds, there is a cut to a medium front-facing shot of one smiling male coach/player on court wearing glasses, a black T-shirt with “ACTIVE” on the chest, bright pink shorts, and holding a badminton racket upright in his right hand while gesturing with his left. From roughly 7.9–8.0 seconds he remains centered speaking toward camera, with subtitle text appearing at the bottom."
+      }
+    ],
+    "tail": {
+      "last_observed_time": 8.0,
+      "description": "The last visible image is the same frontal medium shot of the smiling man in glasses on the blue badminton court, holding his racket up in his right hand and gesturing with his left as he speaks. Bottom-center Chinese subtitle text is visible.",
+      "readable_text": [
+        "李宇轩教练 bilibili",
+        "旭日星空 XURI STAR 专业羽毛球学院",
+        "YONEX",
+        "ACTIVE",
+        "你们是不是经常遇到这个问题"
+      ]
+    },
+    "event_count": 3,
+    "usage": {
+      "prompt_tokens": 50032,
+      "total_tokens": 50888,
+      "completion_tokens": 856,
+      "prompt_tokens_details": {
+        "cached_tokens": 48384,
+        "audio_tokens": 58,
+        "image_tokens": 43008,
+        "video_tokens": 4754,
+        "text_tokens": 2212
+      },
+      "completion_tokens_details": {
+        "text_tokens": 856
+      }
+    },
+    "elapsed_seconds": 18.16
+  }
+}

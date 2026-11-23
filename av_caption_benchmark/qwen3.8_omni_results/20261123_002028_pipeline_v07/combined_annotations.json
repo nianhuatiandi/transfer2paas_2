@@ -1,0 +1,742 @@
+{
+  "shots": [
+    {
+      "shot": "S01",
+      "actors": [
+        {
+          "id": "S01-P01",
+          "description": "Near-side player, back to camera, black T-shirt with pink graphic on the back, light gray shorts, white socks, dark shoes; racket held in right hand."
+        },
+        {
+          "id": "S01-P02",
+          "description": "Far-side player facing camera, pink/magenta shirt with white sleeves, black shorts; right hand raised bare overhead during deliveries while the racket appears held low in the left hand (frames 1.8–2.0)."
+        }
+      ],
+      "storyline": "Indoor badminton hall with a blue court, green surrounds, a net across mid-frame, and YONEX / 旭日星空 banners overhead; a 李宇轩教练 + bilibili watermark sits top-right. The clip opens with the shuttle already in flight, descending from high above the net toward S01-P01's screen-right side (0.0–0.9); S01-P02's raised right arm at 0.0–0.2 is the follow-through of a delivery whose release occurred before the shot start. S01-P01, from a wide ready stance, steps out to his forehand side and loads into a reach (0.5–0.9), meeting the low shuttle around 0.9–1.0 with a right-handed sideways-to-upward swing; the shuttle rises high above the net center at 1.1 and leaves view. P01 recovers to a balanced ready stance by 1.5–1.7 while P02 resets and briefly gestures with his right hand (1.8–1.9, no shuttle release). Around 2.0–2.2 P02 raises his bare right hand overhead and releases the shuttle, which arcs high (2.1–2.3) and descends toward P01's screen-right side (2.4–2.9). P01 again lunges forehand-side, contacts low near 2.9–3.0, and the shuttle climbs above the net to screen-right (3.1–3.3) before beginning to descend (3.4–3.8); the clip ends with that shuttle still in flight and P01 returning upright. No speech or sounds are available to this stage.",
+      "visible_text": [
+        {
+          "start": 0.0,
+          "end": 3.833,
+          "text": "YONEX",
+          "appearance": "white letters with logo on blue banner, upper left"
+        },
+        {
+          "start": 0.0,
+          "end": 3.833,
+          "text": "旭日星空",
+          "appearance": "large characters on center-left blue banner beside red circular logo"
+        },
+        {
+          "start": 0.0,
+          "end": 3.833,
+          "text": "STAR 专业羽毛球学院",
+          "appearance": "smaller line beneath 旭日星空 on center-left banner; leading Latin letters partly obscured"
+        },
+        {
+          "start": 0.0,
+          "end": 3.833,
+          "text": "YONEX",
+          "appearance": "white letters with logo on blue-green panel, center-right banner"
+        },
+        {
+          "start": 0.0,
+          "end": 3.833,
+          "text": "旭日",
+          "appearance": "partial large red characters on rightmost banner, cut by frame edge"
+        },
+        {
+          "start": 0.0,
+          "end": 3.833,
+          "text": "XURI STAR 专业羽",
+          "appearance": "partial line on rightmost banner, truncated at frame edge"
+        },
+        {
+          "start": 0.0,
+          "end": 3.833,
+          "text": "李宇轩教练",
+          "appearance": "white watermark text, top right"
+        },
+        {
+          "start": 0.0,
+          "end": 3.833,
+          "text": "bilibili",
+          "appearance": "white logo wordmark, top right beside the coach-name watermark"
+        }
+      ],
+      "actions": [
+        {
+          "start": 0.0,
+          "end": 0.2,
+          "actor": "S01-P02",
+          "technique": "hand feed",
+          "evidence": "Shuttle already airborne at 0.0 high above the net (dot ~y250) and tracking down toward the near side through 0.9, i.e., leaving P02's court; P02's right arm is raised overhead at 0.0–0.2 as a follow-through, so the release itself is cropped before the shot start. Racket is not in the raised striking hand (later frames 1.8–2.0 show the racket low in his left hand while the right hand is free).",
+          "detail": "Overhead bare-hand delivery to S01-P01's screen-right side; interval cropped at shot start, visible portion is follow-through plus outgoing shuttle descent.",
+          "key_moments": [
+            {
+              "name": "shuttle release",
+              "time": null
+            }
+          ]
+        },
+        {
+          "start": 0.5,
+          "end": 1.0,
+          "actor": "S01-P01",
+          "technique": "lunge",
+          "evidence": "From ready stance at 0.4, P01 steps out toward screen-right and loads: wide base with right knee flexing and racket arm extended right at 0.6–0.9, body weight committed to the reach through 0.9–1.0.",
+          "detail": "Reaching step to his forehand (screen-right) side to meet the descending shuttle; loaded reach peaks ~0.8.",
+          "key_moments": [
+            {
+              "name": "maximum loaded reach",
+              "time": 0.8
+            }
+          ]
+        },
+        {
+          "start": 0.9,
+          "end": 1.3,
+          "actor": "S01-P01",
+          "technique": "upward return",
+          "evidence": "Low contact on the right (forehand) side ~0.9–1.0 (shuttle at right-hip height ~y480–520, racket blur across body at 1.0), followed by a clearly rising outgoing shuttle high above the net center at 1.1 before it leaves view; follow-through with racket raised across the upper body 1.1–1.3. Contact region is low mid/forecourt and outgoing depth/landing is not visible, so the lift subtype is unresolved.",
+          "detail": "Forehand-side low strike redirecting the shuttle upward and back over the net toward the far court; outgoing path visible rising at 1.1 then lost from view.",
+          "key_moments": [
+            {
+              "name": "racket-shuttle contact",
+              "time": 1.0
+            }
+          ]
+        },
+        {
+          "start": 1.1,
+          "end": 1.7,
+          "actor": "S01-P01",
+          "technique": "recovery",
+          "evidence": "After the follow-through (racket high 1.1–1.3), feet reposition and the stance narrows back to a balanced ready posture by 1.5–1.7 while he watches the far court.",
+          "detail": "Reestablishment of ready stance following the forehand-side return; purpose = recovery.",
+          "key_moments": [
+            {
+              "name": "ready stance re-established",
+              "time": 1.7
+            }
+          ]
+        },
+        {
+          "start": 2.0,
+          "end": 2.4,
+          "actor": "S01-P02",
+          "technique": "hand feed",
+          "evidence": "Play had reset (no shuttle in flight 1.6–1.9; P02 stationary, racket low in left hand, right hand free at 1.8–1.9). P02 raises his bare right hand overhead 2.0–2.2, the shuttle is released and appears high at 2.1–2.2, then follows a high arc descending into the near court 2.3–2.9. Overhead (not underarm) mechanics exclude a forehand high serve; repeated drill delivery context supports a feed.",
+          "detail": "Overhead bare-hand delivery initiating the next repetition, sending the shuttle high toward S01-P01's screen-right side.",
+          "key_moments": [
+            {
+              "name": "shuttle release",
+              "time": 2.1
+            }
+          ]
+        },
+        {
+          "start": 2.6,
+          "end": 3.0,
+          "actor": "S01-P01",
+          "technique": "lunge",
+          "evidence": "Against the descending shuttle (2.7–2.9), P01 steps out to screen-right into a wide loaded stance with racket extended right at 2.6–2.9, reaching through contact at ~2.9–3.0.",
+          "detail": "Reaching step to the forehand side to intercept the fed shuttle low on his right; loaded reach peaks ~2.8.",
+          "key_moments": [
+            {
+              "name": "maximum loaded reach",
+              "time": 2.8
+            }
+          ]
+        },
+        {
+          "start": 2.9,
+          "end": 3.3,
+          "actor": "S01-P01",
+          "technique": "upward return",
+          "evidence": "Low forehand-side contact ~2.9–3.0 (shuttle at right-hip height, racket blur at 3.0), outgoing shuttle rising above the net to screen-right at 3.1–3.3, then beginning to descend 3.4–3.8. Contact region is low mid-court rather than confirmed forecourt, and the eventual landing is not seen, so the lift subtype is not fixed.",
+          "detail": "Forehand-side low strike sending the shuttle upward and across to the far court's right side; outgoing flight continues past the clip end (cropped).",
+          "key_moments": [
+            {
+              "name": "racket-shuttle contact",
+              "time": 3.0
+            }
+          ]
+        },
+        {
+          "start": 3.1,
+          "end": 3.833,
+          "actor": "S01-P01",
+          "technique": "recovery",
+          "evidence": "Following the upward return, P01 unwinds the swing (racket lowering 3.1–3.4) and returns to an upright, balanced stance facing the net by 3.5–3.8 as the outgoing shuttle descends in the far court.",
+          "detail": "Stance reestablishment after the second return; observation cropped at shot end before a fully settled ready position is confirmed.",
+          "key_moments": [
+            {
+              "name": "ready stance re-established",
+              "time": null
+            }
+          ]
+        }
+      ],
+      "uncertainties": [
+        "The release of S01-P02's first hand feed occurred before 0.0 and is cropped; the bare-hand attribution is inferred from frames 1.8–2.0 where the racket appears in his left hand while the right hand is free, so the first delivery's mechanism carries residual uncertainty.",
+        "Landing points/outcomes of both of S01-P01's upward returns are not visible (first leaves frame after 1.1; second still descending at clip end 3.833).",
+        "Contact height/position for P01's returns is low mid-court; the forecourt origin required for 'lift' is not confirmed, hence the fallback upward return.",
+        "P02's deliveries are overhead, which excludes a forehand high serve; they are annotated as hand feeds on drill-context and visible-release evidence, but a formal-serve vs drill-feed distinction beyond mechanics is not fully resolvable.",
+        "P02's horizontal right-hand gesture at 1.8–1.9 involves no shuttle release and is treated as a conversational/preparatory gesture, not an action.",
+        "No audio was supplied to this stage, so impact sounds or speech cannot be aligned to any action."
+      ]
+    },
+    {
+      "shot": "S02",
+      "actors": [
+        {
+          "id": "S02-P01",
+          "description": "Near-side player seen from behind, black sleeveless top over white short-sleeved shirt, black shorts, dark shoes with white soles; carries racket in left hand held low at his side, feeds shuttles with a raised right hand; stands on the right half of the near court."
+        },
+        {
+          "id": "S02-P02",
+          "description": "Far-side player facing the camera, dark maroon/black top, light grey trousers, holds racket in right hand; positioned around the centre of the far court in a crouched ready stance."
+        }
+      ],
+      "storyline": "Single static shot of an indoor blue badminton court with green surrounds and sponsor banners overhead. S02-P01 (near, back to camera) performs two bare-hand overhand feeds: at ~3.9 s he releases a shuttle from his raised right hand and it descends across the net into S02-P02's right forecourt (screen left); S02-P02 lunges forward and plays a low underarm stroke (~4.5-4.6 s), the shuttle then climbs steeply above the net tape (visible at 4.667 s) and exits the top of the tracked view, after which S02-P02's racket finishes high (4.767-4.967 s) and he steps back to a ready stance by ~5.3 s. Both players hold position until ~5.7 s, when S02-P01 again raises the shuttle in his right hand and releases it (~6.0 s); the second feed descends to the same forecourt area (6.1-6.5 s). S02-P02 lunges once more, strikes low near the net (~6.6 s), and the shuttle rises above the net (6.767-6.867 s) before leaving view; his follow-through keeps the racket up through ~7.2 s before he recovers to an upright ready stance. The clip ends with S02-P01 still standing with racket lowered at his left side and S02-P02 in a crouched ready position; no racket stroke by S02-P01 is visible in this shot, his deliveries are bare-hand tosses.",
+      "visible_text": [
+        {
+          "start": 3.867,
+          "end": 7.6,
+          "text": "YONEX",
+          "appearance": "white letters with shuttlecock logo on green/blue banner panels, upper left and upper centre-right; present throughout the shot"
+        },
+        {
+          "start": 3.867,
+          "end": 7.6,
+          "text": "旭日星空 XURI STAR 专业羽毛球学院",
+          "appearance": "red circular logo and white/yellow Chinese and English text on the centre banner, upper middle; present throughout"
+        },
+        {
+          "start": 3.867,
+          "end": 7.6,
+          "text": "李宇轩教练",
+          "appearance": "white overlay text, top right corner, above the bilibili logo; present throughout"
+        },
+        {
+          "start": 3.867,
+          "end": 7.6,
+          "text": "bilibili",
+          "appearance": "white platform watermark logo, top right corner; present throughout"
+        },
+        {
+          "start": 3.867,
+          "end": 7.6,
+          "text": "旭日星空 XURI STAR 专业…",
+          "appearance": "partially cropped banner at extreme top right; text readable only in part; present throughout"
+        },
+        {
+          "start": 3.867,
+          "end": 7.6,
+          "text": "[illegible]",
+          "appearance": "faint dark characters on the back wall behind the far court, too dim to read; present throughout"
+        }
+      ],
+      "actions": [
+        {
+          "start": 3.8,
+          "end": 4.2,
+          "actor": "S02-P01",
+          "technique": "hand feed",
+          "evidence": "At 3.867 s S02-P01's right hand is raised holding a shuttle above his head while his left hand holds the racket low; by 3.967-4.067 s the shuttle is in free flight (≈(683,265)->(640,285)) descending toward the far court and his right arm is coming down. Bare-hand release with outgoing shuttle observed; racket held in the other hand does not make this a stroke.",
+          "detail": "Overhand bare-hand toss from the near right side delivering the first practice shuttle diagonally down to S02-P02's right forecourt (screen left); release localized ≈3.9 s, follow-through through ≈4.2 s.",
+          "key_moments": [
+            {
+              "name": "shuttle release",
+              "time": 3.9
+            }
+          ]
+        },
+        {
+          "start": 4.3,
+          "end": 4.8,
+          "actor": "S02-P02",
+          "technique": "lunge",
+          "evidence": "From 4.267 s S02-P02 steps forward and to his right (screen left) toward the descending feed; by 4.367-4.567 s his lead knee is flexed and bearing weight with the racket arm extended low toward the shuttle at net height; unloading/push-back begins after 4.667 s as the shuttle rises away.",
+          "detail": "Reaching step into the right forecourt with loaded forward reach; overlaps the stroke event. Boundaries estimated on the 0.1 s grid.",
+          "key_moments": [
+            {
+              "name": "maximum loaded reach",
+              "time": 4.5
+            }
+          ]
+        },
+        {
+          "start": 4.4,
+          "end": 5.0,
+          "actor": "S02-P02",
+          "technique": "upward return",
+          "evidence": "Underarm preparation with racket low and forward on his right side (racket in right hand, facing camera) at 4.467-4.567 s; shuttle tracked near the racket at (525,530)/(535,552) at 4.467-4.567 s, then climbing steeply to (578,322), above the net tape, at 4.667 s and exiting the top of frame by 4.767 s; racket follow-through finishes high at 4.767-4.967 s. Forecourt origin and a clearly rising outgoing path are supported, but the eventual depth/landing is not captured, so the lift subtype's deep-path requirement is unmet; recorded as upward return with forehand-side mechanics noted in detail.",
+          "detail": "Low forecourt underarm strike (right-hand/forehand mechanics) redirecting the fed shuttle upward and over the net toward the near court; contact localized approximately between 4.567 and 4.667 s. Outgoing trajectory rises sharply out of view; landing depth unobserved.",
+          "key_moments": [
+            {
+              "name": "racket-shuttle contact",
+              "time": 4.6
+            }
+          ]
+        },
+        {
+          "start": 5.0,
+          "end": 5.3,
+          "actor": "S02-P02",
+          "technique": "recovery",
+          "evidence": "After the high follow-through (4.967 s), S02-P02 pushes back off the lunge and by 5.167-5.267 s stands upright in a central ready stance with racket at waist height.",
+          "detail": "Return from the forecourt lunge to an observable ready position; purpose is recovery. Specific foot pattern (chasse vs simple steps) not resolvable at this distance, so recorded as recovery only.",
+          "key_moments": [
+            {
+              "name": "ready stance re-established",
+              "time": 5.3
+            }
+          ]
+        },
+        {
+          "start": 5.6,
+          "end": 6.1,
+          "actor": "S02-P01",
+          "technique": "hand feed",
+          "evidence": "At 5.667-5.867 s S02-P01's right hand is raised holding a shuttle (≈(775,310)->(788,250)) while the left hand keeps the racket low; by 5.967-6.067 s the shuttle is in free flight (≈(672,255)) descending toward the far court and his right arm completes the toss. Bare-hand release with outgoing shuttle observed.",
+          "detail": "Second overhand bare-hand toss from the near right side delivering the practice shuttle diagonally down to S02-P02's right forecourt (screen left); release localized ≈6.0 s, follow-through through ≈6.1 s.",
+          "key_moments": [
+            {
+              "name": "shuttle release",
+              "time": 6.0
+            }
+          ]
+        },
+        {
+          "start": 6.4,
+          "end": 6.8,
+          "actor": "S02-P02",
+          "technique": "lunge",
+          "evidence": "Following the second hand-feed, S02-P02 moves forward and to his right (screen left) from 6.367 s; at 6.467-6.667 s the lead leg is loaded in a deep reach with the racket extended low beside the net as the shuttle arrives near (528,425)-(540,445).",
+          "detail": "Second reaching step into the right forecourt with weight on the flexed lead knee; overlaps the second stroke. Boundaries estimated.",
+          "key_moments": [
+            {
+              "name": "maximum loaded reach",
+              "time": 6.6
+            }
+          ]
+        },
+        {
+          "start": 6.5,
+          "end": 7.2,
+          "actor": "S02-P02",
+          "technique": "upward return",
+          "evidence": "Preparation with racket low and forward on his right side at 6.467-6.667 s; shuttle blur at racket height near the net at 6.567-6.667 s, then rising above the net tape toward the upper frame (≈(462,300)) at 6.767-6.867 s and leaving view; racket follow-through remains elevated through 6.967-7.167 s. Forecourt origin plus a discriminative upward outgoing path are supported, but landing depth is not captured, so the lift deep-path requirement is unmet; recorded as upward return with forehand-side mechanics noted.",
+          "detail": "Low forecourt underarm strike (right-hand/forehand mechanics) sending the fed shuttle upward over the net toward the near court; contact approximated between 6.567 and 6.667 s. Landing depth not observed.",
+          "key_moments": [
+            {
+              "name": "racket-shuttle contact",
+              "time": 6.6
+            }
+          ]
+        },
+        {
+          "start": 7.2,
+          "end": 7.5,
+          "actor": "S02-P02",
+          "technique": "recovery",
+          "evidence": "After the elevated follow-through (7.167 s), S02-P02 lowers the racket and by 7.367-7.467 s is upright in a central crouched-ready stance facing the net.",
+          "detail": "Re-establishment of ready position following the second lunge/stroke; foot pattern not individually resolvable, recorded as recovery with purpose stated.",
+          "key_moments": [
+            {
+              "name": "ready stance re-established",
+              "time": 7.5
+            }
+          ]
+        }
+      ],
+      "uncertainties": [
+        "The outgoing shuttle path after each strike is only visible rising above the net and exiting the top of frame; the eventual landing point (depth into the near court) is not captured, so the strokes are labeled upward return rather than lift.",
+        "Exact racket-shuttle contact frames fall between sampled frames; contact times 4.6 s and 6.6 s are estimates.",
+        "S02-P01's deliveries are bare-hand overhand tosses (shuttle released from the raised right hand at ≈3.9 s and ≈6.0 s); no racket contact by him is visible, so no stroke is annotated for him. His racket appears carried in the left hand, but handedness is not confirmed by any stroke.",
+        "S02-P02's recovery foot patterns (chasse vs plain steps) cannot be resolved at this camera distance, so recoveries are labeled generically.",
+        "No split step or other preparatory hop by S02-P02 is clearly visible before either lunge; only a crouched ready stance is observed."
+      ]
+    },
+    {
+      "shot": "S03",
+      "actors": [
+        {
+          "id": "S03-P01",
+          "description": "Adult male standing centre-court on a blue badminton floor, facing the camera; black short-sleeve t-shirt printed with a red circular logo and the word 'ACTIVE', bright pink shorts, a small lapel microphone clipped at the collar; holds a badminton racket (orange grip) in his right hand (screen-left) and gestures with his open left hand (screen-right); smiling throughout."
+        }
+      ],
+      "storyline": "A single static medium shot of one coach-like figure standing on an indoor badminton court, framed against a dark hall with a blue 'YONEX' banner overhead and a '李宇轩教练 bilibili' watermark at top right. At 7.633 s he stands upright, racket lowered at his right side (screen-left), left hand raised in an open explanatory gesture, mouth open as if speaking. Between 7.733 s and 7.833 s the racket is lifted from the lowered position to a vertical hold beside his head; the 7.733 s frame shows the racket head motion-blurred during the raise, and by 7.833–7.933 s the racket is held steady, head pointing up near the top of the frame, while his left hand continues to gesture and he keeps smiling/talking. This racket raise is a conversational illustrative gesture, not a stroke: no shuttle is visible at any point, there is no striking preparation toward an incoming bird, and no contact or outgoing path occurs. At 7.967 s (final sampled frame) a Chinese subtitle line appears at the bottom while the pose is unchanged. The shot ends with him still holding the racket upright and gesturing; the action is ongoing/cropped at the boundary. Feet remain essentially planted in a standing stance with no discernible footwork pattern.",
+      "visible_text": [
+        {
+          "start": 7.633,
+          "end": 7.967,
+          "text": "YONEX [illegible]",
+          "appearance": "white/green lettering on a blue hanging banner across the top of the frame; right portion of banner text partly cut off and unreadable"
+        },
+        {
+          "start": 7.633,
+          "end": 7.967,
+          "text": "ACTIVE",
+          "appearance": "white capital letters with a red circular logo to their left, printed on the chest of the black t-shirt worn by S03-P01"
+        },
+        {
+          "start": 7.633,
+          "end": 7.967,
+          "text": "李宇轩教练 bilibili",
+          "appearance": "white watermark text plus logo, fixed at the top-right corner"
+        },
+        {
+          "start": 7.967,
+          "end": 7.967,
+          "text": "你们是不是经常遇到这个问题",
+          "appearance": "white Chinese subtitle with dark outline, centred along the bottom edge; first observed in the final sampled frame, onset between 7.933 s and 7.967 s, continuation beyond the shot unknown (cropped)"
+        }
+      ],
+      "actions": [],
+      "uncertainties": [
+        "No shuttlecock is visible in any frame, so no stroke, contact, or outgoing trajectory can be established; the racket raise is interpreted as a conversational gesture rather than a sports action.",
+        "Audio is not supplied to this stage, so the speech content and any sound accompanying the gesture are unverified; the subtitle text is read visually only.",
+        "Foot positions are largely occluded by the framing and stance, so no specific footwork label (split step, chasse, etc.) can be confirmed; the person appears to stand in place.",
+        "The right-hand portion of the overhead banner text is illegible and not transcribed.",
+        "The subtitle's true onset and offset cannot be pinpointed beyond the sampled frames; it is seen only at 7.967 s and the shot boundary crops its duration."
+      ]
+    }
+  ],
+  "audio": {
+    "speakers": [
+      {
+        "id": "V01",
+        "description": "male speaker, Mandarin Chinese, instructional tone"
+      }
+    ],
+    "utterances": [
+      {
+        "start": 0.84,
+        "end": 1.32,
+        "speaker": "V01",
+        "state": "instructional",
+        "text": "往这边跳。"
+      },
+      {
+        "start": 2.96,
+        "end": 3.16,
+        "speaker": "V01",
+        "state": "counting",
+        "text": "一。"
+      },
+      {
+        "start": 4.52,
+        "end": 4.76,
+        "speaker": "V01",
+        "state": "counting",
+        "text": "一个。"
+      },
+      {
+        "start": 6.68,
+        "end": 7.08,
+        "speaker": "V01",
+        "state": "counting",
+        "text": "两个。"
+      },
+      {
+        "start": 7.32,
+        "end": 7.88,
+        "speaker": "V01",
+        "state": "transitioning to next point; cut off at the end of the clip",
+        "text": "好，你……"
+      }
+    ],
+    "sounds": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "description": "rhythmic thudding sounds on a hard surface, consistent with jumping or bouncing movements"
+      },
+      {
+        "start": 2.8,
+        "end": 3.0,
+        "description": "sharp percussive tap"
+      },
+      {
+        "start": 4.4,
+        "end": 4.6,
+        "description": "sharp percussive tap"
+      },
+      {
+        "start": 6.5,
+        "end": 6.7,
+        "description": "sharp percussive tap"
+      }
+    ],
+    "uncertainties": []
+  },
+  "actions": [
+    {
+      "start": 0.0,
+      "end": 0.2,
+      "actor": "S01-P02",
+      "technique": "hand feed",
+      "evidence": "Shuttle already airborne at 0.0 high above the net (dot ~y250) and tracking down toward the near side through 0.9, i.e., leaving P02's court; P02's right arm is raised overhead at 0.0–0.2 as a follow-through, so the release itself is cropped before the shot start. Racket is not in the raised striking hand (later frames 1.8–2.0 show the racket low in his left hand while the right hand is free).",
+      "detail": "Overhead bare-hand delivery to S01-P01's screen-right side; interval cropped at shot start, visible portion is follow-through plus outgoing shuttle descent.",
+      "key_moments": [
+        {
+          "name": "shuttle release",
+          "time": null
+        }
+      ],
+      "shot": "S01",
+      "id": "A01"
+    },
+    {
+      "start": 0.5,
+      "end": 1.0,
+      "actor": "S01-P01",
+      "technique": "lunge",
+      "evidence": "From ready stance at 0.4, P01 steps out toward screen-right and loads: wide base with right knee flexing and racket arm extended right at 0.6–0.9, body weight committed to the reach through 0.9–1.0.",
+      "detail": "Reaching step to his forehand (screen-right) side to meet the descending shuttle; loaded reach peaks ~0.8.",
+      "key_moments": [
+        {
+          "name": "maximum loaded reach",
+          "time": 0.8
+        }
+      ],
+      "shot": "S01",
+      "id": "A02"
+    },
+    {
+      "start": 0.9,
+      "end": 1.3,
+      "actor": "S01-P01",
+      "technique": "upward return",
+      "evidence": "Low contact on the right (forehand) side ~0.9–1.0 (shuttle at right-hip height ~y480–520, racket blur across body at 1.0), followed by a clearly rising outgoing shuttle high above the net center at 1.1 before it leaves view; follow-through with racket raised across the upper body 1.1–1.3. Contact region is low mid/forecourt and outgoing depth/landing is not visible, so the lift subtype is unresolved.",
+      "detail": "Forehand-side low strike redirecting the shuttle upward and back over the net toward the far court; outgoing path visible rising at 1.1 then lost from view.",
+      "key_moments": [
+        {
+          "name": "racket-shuttle contact",
+          "time": 1.0
+        }
+      ],
+      "shot": "S01",
+      "id": "A03"
+    },
+    {
+      "start": 1.1,
+      "end": 1.7,
+      "actor": "S01-P01",
+      "technique": "recovery",
+      "evidence": "After the follow-through (racket high 1.1–1.3), feet reposition and the stance narrows back to a balanced ready posture by 1.5–1.7 while he watches the far court.",
+      "detail": "Reestablishment of ready stance following the forehand-side return; purpose = recovery.",
+      "key_moments": [
+        {
+          "name": "ready stance re-established",
+          "time": 1.7
+        }
+      ],
+      "shot": "S01",
+      "id": "A04"
+    },
+    {
+      "start": 2.0,
+      "end": 2.4,
+      "actor": "S01-P02",
+      "technique": "hand feed",
+      "evidence": "Play had reset (no shuttle in flight 1.6–1.9; P02 stationary, racket low in left hand, right hand free at 1.8–1.9). P02 raises his bare right hand overhead 2.0–2.2, the shuttle is released and appears high at 2.1–2.2, then follows a high arc descending into the near court 2.3–2.9. Overhead (not underarm) mechanics exclude a forehand high serve; repeated drill delivery context supports a feed.",
+      "detail": "Overhead bare-hand delivery initiating the next repetition, sending the shuttle high toward S01-P01's screen-right side.",
+      "key_moments": [
+        {
+          "name": "shuttle release",
+          "time": 2.1
+        }
+      ],
+      "shot": "S01",
+      "id": "A05"
+    },
+    {
+      "start": 2.6,
+      "end": 3.0,
+      "actor": "S01-P01",
+      "technique": "lunge",
+      "evidence": "Against the descending shuttle (2.7–2.9), P01 steps out to screen-right into a wide loaded stance with racket extended right at 2.6–2.9, reaching through contact at ~2.9–3.0.",
+      "detail": "Reaching step to the forehand side to intercept the fed shuttle low on his right; loaded reach peaks ~2.8.",
+      "key_moments": [
+        {
+          "name": "maximum loaded reach",
+          "time": 2.8
+        }
+      ],
+      "shot": "S01",
+      "id": "A06"
+    },
+    {
+      "start": 2.9,
+      "end": 3.3,
+      "actor": "S01-P01",
+      "technique": "upward return",
+      "evidence": "Low forehand-side contact ~2.9–3.0 (shuttle at right-hip height, racket blur at 3.0), outgoing shuttle rising above the net to screen-right at 3.1–3.3, then beginning to descend 3.4–3.8. Contact region is low mid-court rather than confirmed forecourt, and the eventual landing is not seen, so the lift subtype is not fixed.",
+      "detail": "Forehand-side low strike sending the shuttle upward and across to the far court's right side; outgoing flight continues past the clip end (cropped).",
+      "key_moments": [
+        {
+          "name": "racket-shuttle contact",
+          "time": 3.0
+        }
+      ],
+      "shot": "S01",
+      "id": "A07"
+    },
+    {
+      "start": 3.1,
+      "end": 3.833,
+      "actor": "S01-P01",
+      "technique": "recovery",
+      "evidence": "Following the upward return, P01 unwinds the swing (racket lowering 3.1–3.4) and returns to an upright, balanced stance facing the net by 3.5–3.8 as the outgoing shuttle descends in the far court.",
+      "detail": "Stance reestablishment after the second return; observation cropped at shot end before a fully settled ready position is confirmed.",
+      "key_moments": [
+        {
+          "name": "ready stance re-established",
+          "time": null
+        }
+      ],
+      "shot": "S01",
+      "id": "A08"
+    },
+    {
+      "start": 3.8666666666666667,
+      "end": 4.2,
+      "actor": "S02-P01",
+      "technique": "hand feed",
+      "evidence": "At 3.867 s S02-P01's right hand is raised holding a shuttle above his head while his left hand holds the racket low; by 3.967-4.067 s the shuttle is in free flight (≈(683,265)->(640,285)) descending toward the far court and his right arm is coming down. Bare-hand release with outgoing shuttle observed; racket held in the other hand does not make this a stroke. Pixel-coordinate claims above are model-generated and unverified, not measured tracking data.",
+      "detail": "Overhand bare-hand toss from the near right side delivering the first practice shuttle diagonally down to S02-P02's right forecourt (screen left); release localized ≈3.9 s, follow-through through ≈4.2 s.; onset cropped at shot boundary (model estimate 00:03.800 fell outside this shot)",
+      "key_moments": [
+        {
+          "name": "shuttle release",
+          "time": 3.9
+        }
+      ],
+      "shot": "S02",
+      "id": "A09"
+    },
+    {
+      "start": 4.3,
+      "end": 4.8,
+      "actor": "S02-P02",
+      "technique": "lunge",
+      "evidence": "From 4.267 s S02-P02 steps forward and to his right (screen left) toward the descending feed; by 4.367-4.567 s his lead knee is flexed and bearing weight with the racket arm extended low toward the shuttle at net height; unloading/push-back begins after 4.667 s as the shuttle rises away.",
+      "detail": "Reaching step into the right forecourt with loaded forward reach; overlaps the stroke event. Boundaries estimated on the 0.1 s grid.",
+      "key_moments": [
+        {
+          "name": "maximum loaded reach",
+          "time": 4.5
+        }
+      ],
+      "shot": "S02",
+      "id": "A10"
+    },
+    {
+      "start": 4.4,
+      "end": 5.0,
+      "actor": "S02-P02",
+      "technique": "upward return",
+      "evidence": "Underarm preparation with racket low and forward on his right side (racket in right hand, facing camera) at 4.467-4.567 s; shuttle tracked near the racket at (525,530)/(535,552) at 4.467-4.567 s, then climbing steeply to (578,322), above the net tape, at 4.667 s and exiting the top of frame by 4.767 s; racket follow-through finishes high at 4.767-4.967 s. Forecourt origin and a clearly rising outgoing path are supported, but the eventual depth/landing is not captured, so the lift subtype's deep-path requirement is unmet; recorded as upward return with forehand-side mechanics noted in detail. Pixel-coordinate claims above are model-generated and unverified, not measured tracking data.",
+      "detail": "Low forecourt underarm strike (right-hand/forehand mechanics) redirecting the fed shuttle upward and over the net toward the near court; contact localized approximately between 4.567 and 4.667 s. Outgoing trajectory rises sharply out of view; landing depth unobserved.",
+      "key_moments": [
+        {
+          "name": "racket-shuttle contact",
+          "time": 4.6
+        }
+      ],
+      "shot": "S02",
+      "id": "A11"
+    },
+    {
+      "start": 5.0,
+      "end": 5.3,
+      "actor": "S02-P02",
+      "technique": "recovery",
+      "evidence": "After the high follow-through (4.967 s), S02-P02 pushes back off the lunge and by 5.167-5.267 s stands upright in a central ready stance with racket at waist height.",
+      "detail": "Return from the forecourt lunge to an observable ready position; purpose is recovery. Specific foot pattern (chasse vs simple steps) not resolvable at this distance, so recorded as recovery only.",
+      "key_moments": [
+        {
+          "name": "ready stance re-established",
+          "time": 5.3
+        }
+      ],
+      "shot": "S02",
+      "id": "A12"
+    },
+    {
+      "start": 5.6,
+      "end": 6.1,
+      "actor": "S02-P01",
+      "technique": "hand feed",
+      "evidence": "At 5.667-5.867 s S02-P01's right hand is raised holding a shuttle (≈(775,310)->(788,250)) while the left hand keeps the racket low; by 5.967-6.067 s the shuttle is in free flight (≈(672,255)) descending toward the far court and his right arm completes the toss. Bare-hand release with outgoing shuttle observed. Pixel-coordinate claims above are model-generated and unverified, not measured tracking data.",
+      "detail": "Second overhand bare-hand toss from the near right side delivering the practice shuttle diagonally down to S02-P02's right forecourt (screen left); release localized ≈6.0 s, follow-through through ≈6.1 s.",
+      "key_moments": [
+        {
+          "name": "shuttle release",
+          "time": 6.0
+        }
+      ],
+      "shot": "S02",
+      "id": "A13"
+    },
+    {
+      "start": 6.4,
+      "end": 6.8,
+      "actor": "S02-P02",
+      "technique": "lunge",
+      "evidence": "Following the second hand-feed, S02-P02 moves forward and to his right (screen left) from 6.367 s; at 6.467-6.667 s the lead leg is loaded in a deep reach with the racket extended low beside the net as the shuttle arrives near (528,425)-(540,445). Pixel-coordinate claims above are model-generated and unverified, not measured tracking data.",
+      "detail": "Second reaching step into the right forecourt with weight on the flexed lead knee; overlaps the second stroke. Boundaries estimated.",
+      "key_moments": [
+        {
+          "name": "maximum loaded reach",
+          "time": 6.6
+        }
+      ],
+      "shot": "S02",
+      "id": "A14"
+    },
+    {
+      "start": 6.5,
+      "end": 7.2,
+      "actor": "S02-P02",
+      "technique": "upward return",
+      "evidence": "Preparation with racket low and forward on his right side at 6.467-6.667 s; shuttle blur at racket height near the net at 6.567-6.667 s, then rising above the net tape toward the upper frame (≈(462,300)) at 6.767-6.867 s and leaving view; racket follow-through remains elevated through 6.967-7.167 s. Forecourt origin plus a discriminative upward outgoing path are supported, but landing depth is not captured, so the lift deep-path requirement is unmet; recorded as upward return with forehand-side mechanics noted. Pixel-coordinate claims above are model-generated and unverified, not measured tracking data.",
+      "detail": "Low forecourt underarm strike (right-hand/forehand mechanics) sending the fed shuttle upward over the net toward the near court; contact approximated between 6.567 and 6.667 s. Landing depth not observed.",
+      "key_moments": [
+        {
+          "name": "racket-shuttle contact",
+          "time": 6.6
+        }
+      ],
+      "shot": "S02",
+      "id": "A15"
+    },
+    {
+      "start": 7.2,
+      "end": 7.5,
+      "actor": "S02-P02",
+      "technique": "recovery",
+      "evidence": "After the elevated follow-through (7.167 s), S02-P02 lowers the racket and by 7.367-7.467 s is upright in a central crouched-ready stance facing the net.",
+      "detail": "Re-establishment of ready position following the second lunge/stroke; foot pattern not individually resolvable, recorded as recovery with purpose stated.",
+      "key_moments": [
+        {
+          "name": "ready stance re-established",
+          "time": 7.5
+        }
+      ],
+      "shot": "S02",
+      "id": "A16"
+    }
+  ],
+  "warnings": [
+    "Rounded action onset bounded to observed shot: S02 S02-P01",
+    "Unverified model pixel coordinates in evidence: S02 S02-P01",
+    "Unverified model pixel coordinates in evidence: S02 S02-P02",
+    "Unverified model pixel coordinates in evidence: S02 S02-P01",
+    "Unverified model pixel coordinates in evidence: S02 S02-P02",
+    "Unverified model pixel coordinates in evidence: S02 S02-P02",
+    "Single-frame visible text normalized to source frame exposure: S03 at 00:07.967"
+  ]
+}

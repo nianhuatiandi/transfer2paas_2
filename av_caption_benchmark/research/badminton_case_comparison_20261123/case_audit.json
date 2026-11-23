@@ -1,0 +1,136 @@
+{
+  "audited_on": "2026-11-23",
+  "source_file": "E:\\Download\\sports_video_data\\qwen3.8_omni_results\\20261123_011332_pipeline_v08_alignment\\alignment.json",
+  "source_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+  "annotation_status": "model_reviewed",
+  "annotation_limits": "Model-backed associations, not human-verified synchronization or measured impact times.",
+  "action_count": 16,
+  "action_type_counts": {
+    "hand feed": 4,
+    "lunge": 4,
+    "upward return": 4,
+    "recovery": 4
+  },
+  "speech_segment_count": 6,
+  "unique_source_utterance_count": 5,
+  "speech_links": [
+    {
+      "utterance": "U01",
+      "text": "往这边跳。",
+      "interval": [
+        0.84,
+        1.32
+      ],
+      "targets": [
+        "A02"
+      ]
+    },
+    {
+      "utterance": "U02",
+      "text": "一。",
+      "interval": [
+        2.96,
+        3.16
+      ],
+      "targets": [
+        "A07"
+      ]
+    },
+    {
+      "utterance": "U03",
+      "text": "一个。",
+      "interval": [
+        4.52,
+        4.76
+      ],
+      "targets": [
+        "A11"
+      ]
+    },
+    {
+      "utterance": "U04",
+      "text": "两个。",
+      "interval": [
+        6.68,
+        7.08
+      ],
+      "targets": [
+        "A15"
+      ]
+    },
+    {
+      "utterance": "U05",
+      "text": "好，你……",
+      "interval": [
+        7.32,
+        7.633
+      ],
+      "targets": []
+    },
+    {
+      "utterance": "U05",
+      "text": "你……",
+      "interval": [
+        7.633,
+        7.88
+      ],
+      "targets": []
+    }
+  ],
+  "multi_action_speech_segment_count": 0,
+  "action_sound_status_counts": {
+    "none_detected": 12,
+    "uncertain": 1,
+    "supported": 3
+  },
+  "illustrative_cycle": [
+    {
+      "id": "A09",
+      "shot": "S02",
+      "actor": "S02-P01",
+      "start": 3.8666666666666667,
+      "end": 4.2,
+      "technique": "hand feed"
+    },
+    {
+      "id": "A10",
+      "shot": "S02",
+      "actor": "S02-P02",
+      "start": 4.3,
+      "end": 4.8,
+      "technique": "lunge"
+    },
+    {
+      "id": "A11",
+      "shot": "S02",
+      "actor": "S02-P02",
+      "start": 4.4,
+      "end": 5.0,
+      "technique": "upward return"
+    },
+    {
+      "id": "A12",
+      "shot": "S02",
+      "actor": "S02-P02",
+      "start": 5.0,
+      "end": 5.3,
+      "technique": "recovery"
+    }
+  ],
+  "timing_inconsistency": {
+    "utterance": "U03",
+    "speech_start": 4.52,
+    "speech_end": 4.76,
+    "visual_contact_estimate": 4.6,
+    "claim_in_file": "contact immediately precedes utterance onset",
+    "numeric_relationship": "contact estimate is inside utterance interval; onset precedes contact by 0.08 s",
+    "qualification": "Model estimates; this numerical inconsistency does not establish true audio/video timing."
+  },
+  "finebadminton_public_sample": {
+    "file": "sources/finebadminton_sample.json",
+    "rallies": 47,
+    "hits": 537,
+    "scope": "One public annotation file, not a full-corpus absence audit."
+  },
+  "video_review_scope": "Previously inspected local frames near 1.0 s and 4.567 s; no new independent full-clip audiovisual verification."
+}

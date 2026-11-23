@@ -1,0 +1,44 @@
+{
+  "shot": "S03",
+  "actors": [
+    {
+      "id": "S03-P01",
+      "description": "Adult male standing centre-court on a blue badminton floor, facing the camera; black short-sleeve t-shirt printed with a red circular logo and the word 'ACTIVE', bright pink shorts, a small lapel microphone clipped at the collar; holds a badminton racket (orange grip) in his right hand (screen-left) and gestures with his open left hand (screen-right); smiling throughout."
+    }
+  ],
+  "storyline": "A single static medium shot of one coach-like figure standing on an indoor badminton court, framed against a dark hall with a blue 'YONEX' banner overhead and a '李宇轩教练 bilibili' watermark at top right. At 7.633 s he stands upright, racket lowered at his right side (screen-left), left hand raised in an open explanatory gesture, mouth open as if speaking. Between 7.733 s and 7.833 s the racket is lifted from the lowered position to a vertical hold beside his head; the 7.733 s frame shows the racket head motion-blurred during the raise, and by 7.833–7.933 s the racket is held steady, head pointing up near the top of the frame, while his left hand continues to gesture and he keeps smiling/talking. This racket raise is a conversational illustrative gesture, not a stroke: no shuttle is visible at any point, there is no striking preparation toward an incoming bird, and no contact or outgoing path occurs. At 7.967 s (final sampled frame) a Chinese subtitle line appears at the bottom while the pose is unchanged. The shot ends with him still holding the racket upright and gesturing; the action is ongoing/cropped at the boundary. Feet remain essentially planted in a standing stance with no discernible footwork pattern.",
+  "visible_text": [
+    {
+      "start": 7.633,
+      "end": 7.967,
+      "text": "YONEX [illegible]",
+      "appearance": "white/green lettering on a blue hanging banner across the top of the frame; right portion of banner text partly cut off and unreadable"
+    },
+    {
+      "start": 7.633,
+      "end": 7.967,
+      "text": "ACTIVE",
+      "appearance": "white capital letters with a red circular logo to their left, printed on the chest of the black t-shirt worn by S03-P01"
+    },
+    {
+      "start": 7.633,
+      "end": 7.967,
+      "text": "李宇轩教练 bilibili",
+      "appearance": "white watermark text plus logo, fixed at the top-right corner"
+    },
+    {
+      "start": 7.967,
+      "end": 7.967,
+      "text": "你们是不是经常遇到这个问题",
+      "appearance": "white Chinese subtitle with dark outline, centred along the bottom edge; first observed in the final sampled frame, onset between 7.933 s and 7.967 s, continuation beyond the shot unknown (cropped)"
+    }
+  ],
+  "actions": [],
+  "uncertainties": [
+    "No shuttlecock is visible in any frame, so no stroke, contact, or outgoing trajectory can be established; the racket raise is interpreted as a conversational gesture rather than a sports action.",
+    "Audio is not supplied to this stage, so the speech content and any sound accompanying the gesture are unverified; the subtitle text is read visually only.",
+    "Foot positions are largely occluded by the framing and stance, so no specific footwork label (split step, chasse, etc.) can be confirmed; the person appears to stand in place.",
+    "The right-hand portion of the overhead banner text is illegible and not transcribed.",
+    "The subtitle's true onset and offset cannot be pinpointed beyond the sampled frames; it is seen only at 7.967 s and the shot boundary crops its duration."
+  ]
+}

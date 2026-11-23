@@ -1,0 +1,149 @@
+Provide a detailed description of the video.
+
+Make sure your description covers every one of the following dimensions:
+
+Visual
+- Subjects and characters: appearance, clothing, gender/age cues, identity, distinctive features
+- Actions and events in chronological order, and how the scene evolves over time
+- Setting and background: location, environment, time of day
+- Spatial layout and relations between subjects/objects; counts and quantities
+- On-screen text: captions, titles, subtitles, logos, UI — exact content and appearance
+- Visual style: colors, lighting, camera shots, angles, and camera movement
+
+Audio
+- Speech: the exact spoken content, transcribed verbatim
+- Speakers: who is speaking (mapped to the on-screen person or voice-over), with accent, tone, gender/age cues
+- Speaking state: prosody, emotion, volume, and speaking style
+- Music: presence, genre/mood, and lyrics if any
+- Sound effects and ambient/background sounds
+- Non-speech vocalizations: laughter, crying, applause, etc.
+
+Audio-visual correspondence
+- Which speech or sound aligns with which on-screen person or visual event
+- The timing of each event, expressed with timestamps
+
+It should explicitly include four sections, in the order shown:
+
+1. A structured chronological storyline of **every noticeable audio and visual details**
+2. A structured list of all visible text. For each text element, include start timestamp, end timestamp, the exact text content, the appearance characteristics. If no text appears, explicitly state so.
+3. A structured speech-to-text transcription, include the speaker (corresponding to the person or voice-over in Section 1, including their accent and tone), exact spoken content, start timestamp, end timestamp, and speaking state (prosody, emotion, and style). If no speech appears, explicitly state so.
+
+4. A structured timeline of atomic sports actions. For each occurrence, include its start and end timestamp, actor, one exact English label from the sport vocabulary below, a short description of this occurrence, and any supported key moments and aligned sounds. Give each action a unique ID.
+
+Rules:
+
+- Add as much descriptive detail as possible.
+- Do not use Markdown bold formatting.
+- Carefully look at frames and listen to the audio, making sure no detail is overlooked.
+
+- Write captions and annotations in English. Keep the four section headings and field names exactly as shown. Preserve readable on-screen text and audible speech in their original language.
+- Use elapsed time from the start of the supplied clip for all timelines. Keep times within the clip. Start/end times cover the observed event from its first to its last relevant moment. Use the millisecond timestamp format for consistency, with the precision supported by the sampled frames and audio. Mark estimated boundaries or cropped events in Detail. Write uncertain for an unsupported key moment.
+- Describe visible people, objects, distinctive parts and attributes, spatial layout, and background in Storyline. Use the recognized sport term to summarize the technique, then use Detail to say how this particular occurrence looks, using visible body orientation, direction, equipment, or trajectory when useful.
+- Order actions by start time and assign A01, A02, and so forth. Record separate repetitions separately. Distinct footwork and strokes can overlap. If a named footwork pattern is used to recover, describe its purpose in that same entry. Use the most specific supported fallback label when a formal label lacks the required evidence. Keep each person's reference consistent across sections.
+- Timestamp the actual audible start and end of each distinct utterance, and split on speaker changes or clear pauses. Transcribe what was said and use [inaudible] for an unclear span. Use the same speaker identity across sections and mark off-screen or unidentified speakers as such. Describe non-speech sounds in Storyline and give a timestamp in Aligned sounds when they can be matched to an action.
+- Add action IDs to the transcript only when speech clearly refers to them or audibly lines up with them. Use "instruction", "description", "retrospective comment", or "temporal overlap only" to state the relationship. "Temporal overlap only" records co-occurrence without implying that the speaker is describing or causing the action. If no link is supported, write "none". Use "No visible text", "No intelligible speech", or "No discernible sports actions" in an empty section, as appropriate.
+- Use screen directions by default and label them as screen left, screen right, upper left of the frame, or upper right of the frame when applicable. Explicitly identify player-relative directions if used. Preserve distinct directions for footwork and shuttle travel. State forehand, backhand, and court zones only when the view supports them.
+- Use "racket-shuttle contact" as the key moment for a stroke when supported. Time the matched racket sound separately from visual contact if the available timestamps support the distinction. Sound alone may help locate contact but does not establish the stroke type.
+
+Badminton reference and vocabulary v0.2
+
+Use the Badminton World Federation's Schools Badminton Teachers' Manual (Shuttle Time, second edition, February 2021) to identify and name techniques. The page numbers below are the printed page numbers.
+https://badmintonner.nl/pdf/4.-BWF-ST-Teachers-Manual_Inclusivity_ENGLISH.pdf
+
+For recovery, also use the BWF Coaches' Manual, Level 2, Module 6, p. 80 (Forecourt Recovery).
+https://vbadminton.ru/sites/default/files/BWF_Coach_Manual_Level_2_English.pdf#page=100
+
+Apply the definitions below using the evidence in the clip. Look for chassé steps, lifts, and recovery in particular. Label each occurrence only when its own evidence supports it. For chassé steps, report the direction of the player's movement. For a lift, report the shuttle's direction separately and specify forehand or backhand only when visible. Describe a return toward the ready position when observable. Give the movement, stroke, and any distinct recovery their own time intervals.
+- split step — A brief unweighting or small hop followed by both feet reestablishing support before the player moves off or changes direction. Annotate from unweighting or the hop until support is reestablished. An ordinary step or change of supporting foot during a run is insufficient evidence. (Shuttle Time, pp. 40 and 51, starting footwork)
+- chassé steps — The lead foot steps in the direction of travel and the trailing foot closes the gap without passing it. Group consecutive steps in the same direction and state the visible step count if discernible. Start a new event after a pause, a change of direction, or an intervening footwork pattern. A crossover step or generic sideways movement is insufficient evidence. (Shuttle Time, pp. 35 and 44, chasse steps)
+- lunge — A long step in which the lead knee bends and bears weight as the torso or racket hand reaches toward the target. Annotate from the start of the step until the player begins to unload and push out of it. A lunge and a stroke can overlap. (Shuttle Time, pp. 45–46, lunging)
+- lift — An upward stroke from the forecourt whose visible path or outgoing direction supports a shot toward the opponent's rear court. The shuttle may leave the frame. Report its landing point only if visible. Include the discernible striking swing and follow-through. Use a broader label if only a rising racket or a rising shuttle is visible. (Shuttle Time, pp. 54–56, backhand and forehand lift)
+- net shot — A forecourt stroke in which the shuttle passes close to the top of the net and lands short or visibly descends toward the opponent's forecourt. Include the discernible striking swing and follow-through. Use trajectory evidence to distinguish it from a lift. Contact position or a gentle motion alone is insufficient. (Shuttle Time, pp. 49–51, backhand and forehand net shot)
+- drive — A fast, flat shot that typically travels through midcourt on a nearly level path. Include the discernible striking swing and follow-through. Swing speed or a loud impact alone is insufficient evidence. (Shuttle Time, pp. 62–65, backhand and forehand drive)
+- smash — A stroke from a high contact point that sends the shuttle sharply downward at speed. Note any visible jump in Detail. Include the discernible striking swing and follow-through. A raised racket or loud impact alone is insufficient evidence. (Shuttle Time, pp. 74–75, forehand smash)
+- recovery — Movement toward an identifiable ready position after a stroke or reach, or the reestablishment of a stance for the next shot. Annotate from the exit from the preceding action until the player is ready, stops, or starts a new action. If the player uses identifiable named footwork, describe recovery as the purpose of that footwork in the same entry. (Shuttle Time, pp. 61 and 69, ready position and recovery, and Coaches' Manual Level 2, p. 80, forecourt recovery)
+- backhand serve — A backhand stroke that starts a rally from the service court. Use the start-of-rally context and the visible backhand serving action. (Shuttle Time, pp. 52–53, backhand serve)
+- forehand high serve — A forehand stroke that starts a rally and sends the shuttle high and deep toward the back of the receiving service court. Use both the serving context and the visible trajectory. (Shuttle Time, p. 57, forehand high serve)
+- clear — A shot from the rear court toward the opponent's rear court. Use the point of contact and the deep outgoing trajectory to distinguish it from a lift played from the forecourt. (Shuttle Time, pp. 70–71, forehand overhead clear)
+- drop shot — A shot from the rear court that descends into the opponent's forecourt. Use the rear-court contact point and the short trajectory to distinguish it from a net shot. (Shuttle Time, pp. 72–73, forehand overhead drop shot)
+- backhand block — A defensive backhand return that redirects an incoming attack toward the opponent's forecourt or midcourt. Look for the incoming shot, defensive contact, and the redirected path. (Shuttle Time, pp. 76–77, backhand block off the body)
+- scissor jump — A rear-court jump with visible body rotation and an exchange of the legs' forward and backward positions. Annotate the jump from takeoff through landing. A jump and a stroke can overlap. (Shuttle Time, p. 69, scissor jump)
+
+Fallback labels when visual evidence is limited
+- movement — Displacement is visible, but the footwork pattern cannot be identified.
+- return — There is evidence of a stroke, but its type cannot be identified.
+- upward return — The shuttle rises after contact, but a path from the forecourt toward the opponent's rear court cannot be established.
+- racket swing — The swing is visible, with insufficient evidence of shuttle contact.
+
+Output Format:
+
+```
+## Storyline
+
+<xx:xx.xxx> - <xx:xx.xxx>
+<an unstructured long paragraph in natural language describing what happened during this period, blending both audio and video details.>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+<an unstructured long paragraph in natural language describing what happened during this period, blending both audio and video details.>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+<an unstructured long paragraph in natural language describing what happened during this period, blending both audio and video details.>
+
+...
+
+## Visible Text
+
+<xx:xx.xxx> - <xx:xx.xxx>
+“<element>”: <appearance>
+“<element>”: <appearance>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+“<element>”: <appearance>
+“<element>”: <appearance>
+“<element>”: <appearance>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+“<element>”: <appearance>
+
+...
+
+## Speakers and Transcript
+
+Speaker profiles:
+<speaker> - <profile>
+<speaker> - <profile>
+<speaker> - <profile>
+...
+
+<xx:xx.xxx> - <xx:xx.xxx>
+Speaker: <speaker>
+State: <description>
+Content: “<content>”
+Related actions: <action ID and relationship, or none>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+Speaker: <speaker>
+State: <description>
+Content: “<content>”
+Related actions: <action ID and relationship, or none>
+
+<xx:xx.xxx> - <xx:xx.xxx>
+Speaker: <speaker>
+State: <description>
+Content: “<content>”
+Related actions: <action ID and relationship, or none>
+
+...
+
+## Atomic Sports Actions
+
+<xx:xx.xxx> - <xx:xx.xxx>
+Action ID: <A01>
+Actor: <consistent person reference>
+Technique: <one exact English label>
+Detail: <how the action was performed and any uncertainty in its boundaries>
+Key moments: <anchor name and timestamp, uncertain for an unsupported applicable anchor, or none for a movement without an applicable anchor>
+Aligned sounds: <sound and timestamp, uncertain if the match is unclear, or none>
+
+...
+```

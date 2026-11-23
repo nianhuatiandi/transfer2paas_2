@@ -1,0 +1,14 @@
+{
+  "new_requests": 3,
+  "new_tokens": 97549,
+  "sound_status_counts": {
+    "none_detected": 12,
+    "uncertain": 1,
+    "supported": 3
+  },
+  "speech_segments": 6,
+  "supported_speaker_links": 1,
+  "warnings": [
+    "U05: Cross-cut transcript fragments may repeat a syllable; exact split remains uncertain (original fragments preserved)."
+  ]
+}
