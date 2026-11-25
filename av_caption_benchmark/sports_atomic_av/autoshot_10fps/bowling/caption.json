@@ -1,0 +1,255 @@
+{
+  "clip": "bowling",
+  "media_sha256": "6f7a05703419de72ea2ad1b6a7c96950e988852fbb74a0ca3783c114e2ea6d88",
+  "shots": {
+    "S1": [
+      0.0,
+      8.6
+    ]
+  },
+  "actions": [
+    {
+      "shot": "S1",
+      "actor": "athlete",
+      "term": "approach",
+      "start": 3.8,
+      "end": 6.2,
+      "detail": "After a stationary set stance holding the ball (0.0-3.6 s, no action), the athlete takes his first approach step at ~3.8-4.0 s (legs separate, body leans in), continues consecutive steps at 4.2-5.2 s, and the approach concludes when the final sliding step finishes into the delivery at ~6.0-6.2 s. Evidence: progressive forward foot travel across frames 4.0-5.4 s ending in the low slide posture at 5.6-6.2 s.",
+      "attributes": {},
+      "id": "A001",
+      "part": "S1_0000_0086"
+    },
+    {
+      "shot": "S1",
+      "actor": "athlete",
+      "term": "backswing",
+      "start": 4.6,
+      "end": 5.4,
+      "detail": "The ball travels rearward from ~4.6 s: it is low and behind the body at 4.8-5.0 s (single-hand grip visible at the right hip), then rises up and behind the head, reaching the rear apex at 5.4 s with the arm extended overhead. Change of direction is marked by the apex frame at 5.4 s.",
+      "attributes": {
+        "support_style": "one_handed"
+      },
+      "id": "A002",
+      "part": "S1_0000_0086"
+    },
+    {
+      "shot": "S1",
+      "actor": "athlete",
+      "term": "forward_swing",
+      "start": 5.4,
+      "end": 6.0,
+      "detail": "From the rear apex at 5.4 s the ball swings forward and downward past the body (5.6-5.8 s, ball near the knee/ground beside the slide leg) until hand separation at ~6.0 s. The ball is supported by one hand throughout the swing; no second-hand support is visible.",
+      "attributes": {
+        "support_style": "one_handed"
+      },
+      "id": "A003",
+      "part": "S1_0000_0086"
+    },
+    {
+      "shot": "S1",
+      "actor": "athlete",
+      "term": "slide",
+      "start": 5.6,
+      "end": 6.6,
+      "detail": "The final front-foot plant/slide into delivery is observable from ~5.6 s: the body drops low over the planted slide foot while the trailing leg lifts and extends behind (5.8-6.4 s), and the slide posture is held until he begins to rise out of it at ~6.6 s. This overlaps the forward swing and release.",
+      "attributes": {
+        "finish_leg": "trailing_lifted"
+      },
+      "id": "A004",
+      "part": "S1_0000_0086"
+    },
+    {
+      "shot": "S1",
+      "actor": "athlete",
+      "term": "release",
+      "start": 6.0,
+      "end": 6.2,
+      "detail": "At ~6.0 s the hand ceases to support the ball and it begins independent lane travel: a yellow ball is visible on the lane just past the foul line at 6.0-6.2 s, continuing down the lane at 6.4-6.8 s. Exact finger-separation instant is between the 5.8 s and 6.0 s frames, so timing is approximate.",
+      "attributes": {
+        "support_style": "one_handed"
+      },
+      "id": "A005",
+      "part": "S1_0000_0086"
+    },
+    {
+      "shot": "S1",
+      "actor": "athlete",
+      "term": "follow_through",
+      "start": 6.2,
+      "end": 7.4,
+      "detail": "After release the throwing arm continues its upward/forward path and the body remains low with the trailing leg lifted and extended behind (6.2-7.0 s), then the athlete recovers to an upright stance and starts walking back at ~7.2-7.4 s. Pin impact (~7.6-7.8 s) is excluded as non-technique action.",
+      "attributes": {
+        "finish_leg": "trailing_lifted"
+      },
+      "id": "A006",
+      "part": "S1_0000_0086"
+    }
+  ],
+  "audio": [
+    {
+      "kind": "transient",
+      "start": 5.34,
+      "end": 5.46,
+      "text": "",
+      "detail": "A brief, sharp click or tap sound.",
+      "id": "U001"
+    },
+    {
+      "kind": "transient",
+      "start": 7.71,
+      "end": 8.6,
+      "text": "",
+      "detail": "A loud clattering and scraping noise, like objects being moved or dropped on a hard surface.",
+      "id": "U002"
+    }
+  ],
+  "audio_from": "solo_pilot/runs/bowling/audio",
+  "parts": [
+    {
+      "id": "S1_0000_0086",
+      "shot": "S1",
+      "range": [
+        0,
+        86
+      ],
+      "interval": [
+        0.0,
+        8.6
+      ]
+    }
+  ],
+  "caption": "After a stationary set stance holding the ball (0.0-3.6 s), the athlete begins his approach at ~3.8 s, taking consecutive steps until the final sliding step concludes into delivery at ~6.2 s. Concurrently, he executes a one-handed backswing starting at ~4.6 s, reaching the rear apex at 5.4 s where a brief sharp click is heard (U001). From this apex, he transitions immediately into a forward swing (5.4-6.0 s) while dropping into a low slide posture with the trailing leg lifted (5.6-6.6 s). He releases the yellow ball at ~6.0 s, which travels down the lane past the foul line. Following the release, he maintains the follow-through position with arm extended and body low until ~7.0 s, then recovers to an upright stance and walks back by 7.4 s. A loud clattering noise occurs from 7.71-8.6 s (U002) as the ball impacts the pins.",
+  "continuations": [],
+  "continuation_review": [],
+  "cooccurrences": {
+    "action_audio": [
+      {
+        "members": [
+          "A001",
+          "U001"
+        ],
+        "interval": [
+          5.34,
+          5.46
+        ]
+      },
+      {
+        "members": [
+          "A002",
+          "U001"
+        ],
+        "interval": [
+          5.34,
+          5.4
+        ]
+      },
+      {
+        "members": [
+          "A003",
+          "U001"
+        ],
+        "interval": [
+          5.4,
+          5.46
+        ]
+      }
+    ],
+    "same_actor_actions": [
+      {
+        "members": [
+          "A001",
+          "A002"
+        ],
+        "interval": [
+          4.6,
+          5.4
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "A003"
+        ],
+        "interval": [
+          5.4,
+          6.0
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "A004"
+        ],
+        "interval": [
+          5.6,
+          6.2
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "A005"
+        ],
+        "interval": [
+          6.0,
+          6.2
+        ]
+      },
+      {
+        "members": [
+          "A003",
+          "A004"
+        ],
+        "interval": [
+          5.6,
+          6.0
+        ]
+      },
+      {
+        "members": [
+          "A004",
+          "A005"
+        ],
+        "interval": [
+          6.0,
+          6.2
+        ]
+      },
+      {
+        "members": [
+          "A004",
+          "A006"
+        ],
+        "interval": [
+          6.2,
+          6.6
+        ]
+      }
+    ],
+    "different_actor_actions": [],
+    "two_actions_audio": [
+      {
+        "members": [
+          "A001",
+          "A002",
+          "U001"
+        ],
+        "interval": [
+          5.34,
+          5.4
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "A003",
+          "U001"
+        ],
+        "interval": [
+          5.4,
+          5.46
+        ]
+      }
+    ]
+  }
+}

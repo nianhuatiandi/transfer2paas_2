@@ -1,0 +1,448 @@
+{
+  "clip": "badminton",
+  "media_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+  "shots": {
+    "S1": [
+      0.0,
+      3.866667
+    ],
+    "S2": [
+      3.866667,
+      7.633333
+    ],
+    "S3": [
+      7.633333,
+      8.0
+    ]
+  },
+  "actions": [
+    {
+      "shot": "S1",
+      "actor": "far",
+      "term": "hand_feed",
+      "start": 0.0,
+      "end": 0.3,
+      "detail": "Far player (coach side) stands at the net with bare right arm raised holding a shuttle (0.0 s) and releases it; the shuttle is visible in the air above/just past his hand at 0.2 s, falling toward the near player's court to supply the drill repetition. Racket is held in the other hand, so this is a hand delivery, not a stroke.",
+      "attributes": {
+        "object": "shuttle"
+      },
+      "id": "A001",
+      "part": "S1_0000_0039"
+    },
+    {
+      "shot": "S1",
+      "actor": "near",
+      "term": "upward_return",
+      "start": 0.4,
+      "end": 1.4,
+      "detail": "Near player answers the first feed with a forehand underarm swing: racket prepared low behind the right side at 0.4 s, swung forward with contact around 0.6-0.8 s (arms spread in follow-through at 0.8 s), then the racket wraps up and across to the left by 1.0-1.4 s. The shuttle is seen crossing the net low at 0.8 s and rising high on the far side at 1.0-1.2 s, confirming an upward redirected path. Contact is made from mid-court (not forecourt) and the landing is never shown, so depth is unresolved and 'lift' is not claimed; a small forward-right step accompanies the reach but is not a full loaded lunge.",
+      "attributes": {
+        "object": "shuttle",
+        "side": "forehand",
+        "contact_height": "underarm/waist"
+      },
+      "id": "A002",
+      "part": "S1_0000_0039"
+    },
+    {
+      "shot": "S1",
+      "actor": "near",
+      "term": "recovery",
+      "start": 1.4,
+      "end": 1.8,
+      "detail": "After the wrapped follow-through, the near player lowers the racket (1.6 s) and resettles into a wide, knees-bent ready stance by 1.8 s in anticipation of the next feed. Specific step pattern during this reset is not clearly resolvable, so it is recorded as recovery rather than a named footwork cycle.",
+      "attributes": {},
+      "id": "A003",
+      "part": "S1_0000_0039"
+    },
+    {
+      "shot": "S1",
+      "actor": "far",
+      "term": "hand_feed",
+      "start": 1.8,
+      "end": 2.2,
+      "detail": "Second repetition: far player again raises the bare right hand at 1.8-2.0 s and releases the shuttle, which is visible descending above the net line at 2.2 s toward the near player. This repeats the same feed pattern as the first repetition, confirming a practice-drill context.",
+      "attributes": {
+        "object": "shuttle",
+        "repetition": 2
+      },
+      "id": "A004",
+      "part": "S1_0000_0039"
+    },
+    {
+      "shot": "S1",
+      "actor": "near",
+      "term": "upward_return",
+      "start": 2.3,
+      "end": 3.4,
+      "detail": "Near player strikes the second feed with another forehand underarm swing: racket low and back at 2.2-2.4 s, forward swing with contact around 2.6-2.7 s (racket extended right at 2.6 s, arms spread at 2.8 s), followed by the same wrap of the racket across to the left at 3.2-3.4 s. The outgoing shuttle is tracked rising over the net to the far right (3.0 s near tape, 3.2-3.8 s high above the far court), showing an upward path; the landing is not visible within the clip, so depth remains unresolved and the stroke is not labeled a lift or clear. A modest right-side step supports the reach but does not show a fully loaded lunge.",
+      "attributes": {
+        "object": "shuttle",
+        "side": "forehand",
+        "contact_height": "underarm/waist",
+        "repetition": 2
+      },
+      "id": "A005",
+      "part": "S1_0000_0039"
+    },
+    {
+      "shot": "S1",
+      "actor": "near",
+      "term": "movement",
+      "start": 3.4,
+      "end": 3.866667,
+      "detail": "After the second stroke's follow-through, the near player repositions toward his right (camera left): a stride is visible at 3.6 s and he settles into a wide stance at 3.8 s. The exact foot sequence (chasse vs. plain steps) is not resolvable in the sampled frames, so it is recorded as movement with unresolved footwork; the action is still in progress when the clip ends.",
+      "attributes": {
+        "direction": "player's right / camera left",
+        "boundary_status": "truncated at clip end"
+      },
+      "id": "A006",
+      "part": "S1_0000_0039"
+    },
+    {
+      "shot": "S2",
+      "actor": "far",
+      "term": "lunge",
+      "start": 4.267,
+      "end": 4.667,
+      "detail": "Tracking the incoming shuttle (visible descending at 4.067-4.267), the far player strides out to his right (camera left) with a long reaching step; the lead knee flexes and loads while the racket arm extends low toward the shuttle near 4.467-4.667. Contact occurs in mid-court, not the forecourt.",
+      "attributes": {
+        "object": "shuttlecock"
+      },
+      "id": "A007",
+      "part": "S2_0000_0038"
+    },
+    {
+      "shot": "S2",
+      "actor": "far",
+      "term": "upward_return",
+      "start": 4.467,
+      "end": 4.867,
+      "detail": "From the low loaded lunge, the far player swings and redirects the shuttle; at 4.867 the shuttle is seen rising above net height on his side of the court. The outgoing path is upward but depth toward the rear court is not resolved, so it is labeled upward_return rather than lift.",
+      "attributes": {
+        "object": "shuttlecock"
+      },
+      "id": "A008",
+      "part": "S2_0000_0038"
+    },
+    {
+      "shot": "S2",
+      "actor": "far",
+      "term": "recovery",
+      "start": 4.867,
+      "end": 5.267,
+      "detail": "After the stroke the far player pushes off the loaded leg, withdraws from the lunge, and re-establishes an upright ready stance near mid-court by 5.267.",
+      "attributes": {},
+      "id": "A009",
+      "part": "S2_0000_0038"
+    },
+    {
+      "shot": "S2",
+      "actor": "near",
+      "term": "hand_feed",
+      "start": 5.467,
+      "end": 6.267,
+      "detail": "The near player raises his bare right hand holding the shuttle (clearly aloft at 5.667-5.867, racket retained in the left hand) and releases it; the shuttle then travels over the net toward the far player (in flight at 6.067-6.267). This is a hand toss, not a racket stroke.",
+      "attributes": {
+        "object": "shuttlecock"
+      },
+      "id": "A010",
+      "part": "S2_0000_0038"
+    },
+    {
+      "shot": "S2",
+      "actor": "far",
+      "term": "lunge",
+      "start": 6.267,
+      "end": 6.667,
+      "detail": "Reading the fed shuttle (descending at 6.267), the far player moves to his right (camera left) and commits to a deep reaching lunge; the loaded stride with racket extended low is visible at 6.467-6.667, with the shuttle at racket height around 6.667.",
+      "attributes": {
+        "object": "shuttlecock"
+      },
+      "id": "A011",
+      "part": "S2_0000_0038"
+    },
+    {
+      "shot": "S2",
+      "actor": "far",
+      "term": "upward_return",
+      "start": 6.667,
+      "end": 6.867,
+      "detail": "The low stroke from the lunge redirects the shuttle upward; at 6.867 the shuttle is high above the net line travelling toward the near side. Outgoing depth is unresolved, so upward_return is used instead of lift.",
+      "attributes": {
+        "object": "shuttlecock"
+      },
+      "id": "A012",
+      "part": "S2_0000_0038"
+    },
+    {
+      "shot": "S2",
+      "actor": "far",
+      "term": "recovery",
+      "start": 6.867,
+      "end": 7.267,
+      "detail": "The far player unloads from the lunge and returns to a balanced ready stance near mid-court by 7.267, holding the racket forward in anticipation of the next feed.",
+      "attributes": {},
+      "id": "A013",
+      "part": "S2_0000_0038"
+    },
+    {
+      "shot": "S3",
+      "actor": "other",
+      "term": "racket_swing",
+      "start": 7.633333,
+      "end": 7.833333,
+      "detail": "Speaker/instructor close-up (actor other): the right hand performs an upward racket sweep while the coach talks. At 7.633 the racket is held low at the right side and the empty left hand gestures at chest height; at 7.733 the racket head is motion-blurred, sweeping up across the chest with a diagonal shaft; by 7.833 the shaft is vertical with the head up. At 7.933 the racket stays in that same vertical position, i.e. the upward motion has stopped, so the vertical hold from 7.833-7.933 is a static demonstration pose and NOT a stroke follow-through; the swing interval therefore ends at 7.833. No shuttle is visible in any frame, so neither contact nor an outgoing redirection can be confirmed, which is why the motion is logged as racket_swing rather than a named stroke (lift/clear/smash/net_shot/return). It is ambiguous whether the sweep is an intentional shadow-stroke demonstration or merely a conversational gesticulation; either way no shuttle interaction is supported. The feet are cropped out of frame (the shot cuts at thigh/knee level), so no footwork pattern (chasse_step, split_step, lunge, recovery, movement) is observable, and the left-hand movement is a communicative gesture, not an annotated sports action.",
+      "attributes": {
+        "limb": "right_arm",
+        "shuttle_visible": false,
+        "contact_confirmed": false,
+        "redirection_confirmed": false,
+        "feet_visible": false,
+        "held_pose_note": "vertical racket at 7.833-7.933 is a static demonstration pose, excluded from the swing interval",
+        "ambiguity": "upward sweep could be a shadow-stroke demo or a speaking gesture; no shuttle present in either case",
+        "boundary_status": "complete"
+      },
+      "id": "A014",
+      "part": "S3_0000_0004_stills"
+    }
+  ],
+  "audio": [
+    {
+      "kind": "speech",
+      "start": 0.84,
+      "end": 1.32,
+      "text": "往这边跳。",
+      "detail": "",
+      "id": "U001"
+    },
+    {
+      "kind": "transient",
+      "start": 2.91,
+      "end": 2.93,
+      "text": "",
+      "detail": "A sharp, percussive impact sound.",
+      "id": "U002"
+    },
+    {
+      "kind": "speech",
+      "start": 3.24,
+      "end": 3.48,
+      "text": "屁股。",
+      "detail": "",
+      "id": "U003"
+    },
+    {
+      "kind": "transient",
+      "start": 4.48,
+      "end": 4.52,
+      "text": "",
+      "detail": "A sharp, percussive impact sound.",
+      "id": "U004"
+    },
+    {
+      "kind": "speech",
+      "start": 4.68,
+      "end": 4.92,
+      "text": "一个。",
+      "detail": "",
+      "id": "U005"
+    },
+    {
+      "kind": "transient",
+      "start": 6.63,
+      "end": 6.64,
+      "text": "",
+      "detail": "A sharp, percussive impact sound.",
+      "id": "U006"
+    },
+    {
+      "kind": "speech",
+      "start": 7.02,
+      "end": 7.26,
+      "text": "两个。",
+      "detail": "",
+      "id": "U007"
+    },
+    {
+      "kind": "speech",
+      "start": 7.5,
+      "end": 7.78,
+      "text": "好，你。",
+      "detail": "",
+      "id": "U008"
+    }
+  ],
+  "audio_from": "runs/v3/badminton/audio",
+  "parts": [
+    {
+      "id": "S1_0000_0039",
+      "shot": "S1",
+      "range": [
+        0,
+        39
+      ],
+      "interval": [
+        0.0,
+        3.866667
+      ]
+    },
+    {
+      "id": "S2_0000_0038",
+      "shot": "S2",
+      "range": [
+        0,
+        38
+      ],
+      "interval": [
+        3.866667,
+        7.633333
+      ]
+    },
+    {
+      "id": "S3_0000_0004_stills",
+      "shot": "S3",
+      "range": [
+        0,
+        4
+      ],
+      "interval": [
+        7.633333,
+        8.0
+      ]
+    }
+  ],
+  "caption": "In a badminton training drill, the far player (coach) hand-feeds shuttles to the near player, who responds with forehand underarm returns. The first feed occurs at 0.0s, met by an upward return from 0.4s to 1.4s accompanied by the instruction \"往这边跳\" (Jump this way) at 0.84s-1.32s. After a brief recovery, a second feed is released at 1.8s, struck by another underarm return between 2.3s and 3.4s; a sharp impact sound is heard at 2.91s, followed by the comment \"屁股\" (Buttocks/Hips) at 3.24s-3.48s as the near player repositions.\n\nThe roles reverse in the next sequence: the near player hand-feeds a shuttle starting at 5.467s after the far player completes a lunge and upward return (4.267s-4.867s). During this earlier exchange, an impact sound occurs at 4.48s, followed by the count \"一个\" (One) at 4.68s-4.92s. The far player then lunges to meet the new feed (6.267s-6.667s), producing an impact sound at 6.63s, and executes an upward return ending at 6.867s. He recovers to a ready stance while the instructor counts \"两个\" (Two) at 7.02s-7.26s.\n\nThe clip concludes with a close-up of the instructor demonstrating technique. From 7.633s to 7.833s, he performs an upward racket sweep without contacting a shuttle, holding the racket vertically afterwards. As he gestures, he says \"好，你\" (Okay, you) between 7.5s and 7.78s.",
+  "continuations": [],
+  "continuation_review": [],
+  "cooccurrences": {
+    "action_audio": [
+      {
+        "members": [
+          "A002",
+          "U001"
+        ],
+        "interval": [
+          0.84,
+          1.32
+        ]
+      },
+      {
+        "members": [
+          "A005",
+          "U002"
+        ],
+        "interval": [
+          2.91,
+          2.93
+        ]
+      },
+      {
+        "members": [
+          "A005",
+          "U003"
+        ],
+        "interval": [
+          3.24,
+          3.4
+        ]
+      },
+      {
+        "members": [
+          "A006",
+          "U003"
+        ],
+        "interval": [
+          3.4,
+          3.48
+        ]
+      },
+      {
+        "members": [
+          "A007",
+          "U004"
+        ],
+        "interval": [
+          4.48,
+          4.52
+        ]
+      },
+      {
+        "members": [
+          "A008",
+          "U004"
+        ],
+        "interval": [
+          4.48,
+          4.52
+        ]
+      },
+      {
+        "members": [
+          "A008",
+          "U005"
+        ],
+        "interval": [
+          4.68,
+          4.867
+        ]
+      },
+      {
+        "members": [
+          "A011",
+          "U006"
+        ],
+        "interval": [
+          6.63,
+          6.64
+        ]
+      },
+      {
+        "members": [
+          "A013",
+          "U007"
+        ],
+        "interval": [
+          7.02,
+          7.26
+        ]
+      },
+      {
+        "members": [
+          "A014",
+          "U008"
+        ],
+        "interval": [
+          7.633333,
+          7.78
+        ]
+      }
+    ],
+    "same_actor_actions": [
+      {
+        "members": [
+          "A007",
+          "A008"
+        ],
+        "interval": [
+          4.467,
+          4.667
+        ]
+      }
+    ],
+    "different_actor_actions": [],
+    "two_actions_audio": [
+      {
+        "members": [
+          "A007",
+          "A008",
+          "U004"
+        ],
+        "interval": [
+          4.48,
+          4.52
+        ]
+      }
+    ]
+  }
+}

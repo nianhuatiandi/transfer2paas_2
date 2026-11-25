@@ -1,0 +1,103 @@
+{
+  "clip": "skate",
+  "media_sha256": "b7bfa1fb2b4341600ff8695e9ac3404f1afbb18c27159753b0c8507323f38f8c",
+  "shots": {
+    "S1": [
+      0.0,
+      5.5
+    ]
+  },
+  "actions": [
+    {
+      "shot": "S1",
+      "actor": "athlete",
+      "term": "rolling",
+      "start": 1.8,
+      "end": 2.5,
+      "detail": "The athlete in the green t-shirt enters from the left edge at 1.8 s already standing on the skateboard and travels rightward across the concrete plaza (frames 1.8, 2.0, 2.2, 2.4). By 2.2-2.4 s he crouches and spreads his arms, loading for a pop. No pushing foot is visible; he is aboard the board the whole time.",
+      "attributes": {
+        "object": "skateboard",
+        "travel_direction": "right"
+      },
+      "id": "A001",
+      "part": "S1_0000_0055"
+    },
+    {
+      "shot": "S1",
+      "actor": "athlete",
+      "term": "unresolved_flip",
+      "start": 2.6,
+      "end": 3.2,
+      "detail": "At 2.6 s the tail strikes the ground and the board pops up nose-high while the athlete's arms fly outward (load/pop). At 2.8 s he is fully airborne with knees tucked and the deck rotating beneath him, its underside graphic (blue with yellow lettering) turned toward the camera, showing the board is rolling about its long axis rather than spinning flat on a vertical axis. At 3.0 s the deck levels out griptape-up under his feet and he descends; at 3.2 s the wheels are back down and he rides away, so the trick is landed. From this side-on view the flicking foot and roll direction (toe-side kickflip vs heel-side heelflip) cannot be distinguished, so the conservative family unresolved_flip is used; flip axis (longitudinal) and airborne board rotation are certain.",
+      "attributes": {
+        "object": "skateboard",
+        "travel_direction": "right",
+        "outcome": "landed",
+        "flip_axis": "longitudinal",
+        "board_orientation": "underside graphic visible mid-air at 2.8 s, level griptape-up at 3.0 s",
+        "uncertain": "initiating foot / flip direction (kickflip vs heelflip) not resolvable"
+      },
+      "id": "A002",
+      "part": "S1_0000_0055"
+    },
+    {
+      "shot": "S1",
+      "actor": "athlete",
+      "term": "rolling",
+      "start": 3.2,
+      "end": 4.5,
+      "detail": "After the wheels-down landing at 3.2 s, the athlete continues riding rightward on the board (frames 3.2, 3.4, 3.6, 3.8, 4.0, 4.2, 4.4), leaning forward as he exits the right edge of the frame; by 4.6 s the plaza is empty again. This is a separate post-trick rolling instance from the approach roll.",
+      "attributes": {
+        "object": "skateboard",
+        "travel_direction": "right"
+      },
+      "id": "A003",
+      "part": "S1_0000_0055"
+    }
+  ],
+  "audio": [
+    {
+      "kind": "transient",
+      "start": 2.78,
+      "end": 3.18,
+      "text": "",
+      "detail": "A sharp impact sound followed by a brief rustling noise.",
+      "id": "U001"
+    }
+  ],
+  "audio_from": "solo_pilot/runs/skate/audio",
+  "parts": [
+    {
+      "id": "S1_0000_0055",
+      "shot": "S1",
+      "range": [
+        0,
+        55
+      ],
+      "interval": [
+        0.0,
+        5.5
+      ]
+    }
+  ],
+  "caption": "An athlete in a green t-shirt rolls rightward on a skateboard across a concrete plaza, entering the frame at 1.8 s. Between 2.2 and 2.4 s, he crouches and spreads his arms to load for a trick. At 2.6 s, the tail strikes the ground with a sharp impact sound heard from 2.78 to 3.18 s, popping the board nose-high as the athlete becomes fully airborne by 2.8 s. The deck rotates along its longitudinal axis, revealing an underside graphic with blue background and yellow lettering facing the camera. By 3.0 s, the board levels out griptape-up beneath his feet, and he lands with wheels down at 3.2 s, riding away rightward until exiting the frame around 4.5 s.",
+  "continuations": [],
+  "continuation_review": [],
+  "cooccurrences": {
+    "action_audio": [
+      {
+        "members": [
+          "A002",
+          "U001"
+        ],
+        "interval": [
+          2.78,
+          3.18
+        ]
+      }
+    ],
+    "same_actor_actions": [],
+    "different_actor_actions": [],
+    "two_actions_audio": []
+  }
+}

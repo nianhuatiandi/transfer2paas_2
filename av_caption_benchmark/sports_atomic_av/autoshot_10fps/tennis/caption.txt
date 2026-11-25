@@ -1,0 +1,5 @@
+At 0.0-1.28 s, a male voice says "a sacar." while the athlete performs the first of two pre-serve hand bounces (A001) with his non-racket left arm between 0.4 and 1.2 s; a sharp click sound occurs at 0.168-0.218 s.
+
+The athlete executes the second pre-serve hand bounce (A002) using his left arm from 1.6 to 2.4 s, holding the ball in his left hand before dropping it to rebound off the court surface.
+
+From 5.0 to 7.0 s, the athlete completes a full service stroke (A006), beginning with an overhead toss by the left arm (A003) at 5.0-5.4 s, followed by the racket-arm upward swing (A004) from 5.4 to 6.0 s, and concluding with the cross-body follow-through and landing recovery (A005) between 6.0 and 7.0 s.

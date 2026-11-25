@@ -1,0 +1,488 @@
+{
+  "clip": "jump",
+  "media_sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91",
+  "shots": {
+    "S1": [
+      0.0,
+      2.08
+    ],
+    "S2": [
+      2.08,
+      7.0
+    ]
+  },
+  "actions": [
+    {
+      "shot": "S2",
+      "actor": "athlete",
+      "term": "crouch",
+      "start": 2.78,
+      "end": 3.68,
+      "detail": "From the upright arms-overhead stance held at 2.08-2.58, the athlete flexes knees and hips into a deep squat (visible bend at 2.78, lowest position by ~3.28) and holds the loaded crouch through 3.68; feet stay flat on the track, body oriented to the right. This is the preparatory dip, not a held pose, since it immediately precedes the jump.",
+      "attributes": {
+        "knee_action": "flex",
+        "feet": "both",
+        "body_direction": "right"
+      },
+      "id": "A001",
+      "part": "S2_0000_0050"
+    },
+    {
+      "shot": "S2",
+      "actor": "athlete",
+      "term": "backswing",
+      "start": 2.78,
+      "end": 3.68,
+      "detail": "Simultaneous with the crouch, both arms travel from overhead down and backward, reaching full rear extension behind the hips by 3.18-3.68 (arms trailing low behind the body in the deep squat frames).",
+      "attributes": {
+        "arm_direction": "backward"
+      },
+      "id": "A002",
+      "part": "S2_0000_0050"
+    },
+    {
+      "shot": "S2",
+      "actor": "athlete",
+      "term": "forward_swing",
+      "start": 3.98,
+      "end": 4.58,
+      "detail": "Arms reverse from the rear through a low forward position (3.98-4.08), drive up in front of the body at takeoff (4.28), and finish overhead during early flight (4.58), providing the propulsive swing for the standing jump.",
+      "attributes": {
+        "arm_direction": "forward_up"
+      },
+      "id": "A003",
+      "part": "S2_0000_0050"
+    },
+    {
+      "shot": "S2",
+      "actor": "athlete",
+      "term": "leg_extension",
+      "start": 4.08,
+      "end": 4.48,
+      "detail": "Push-off from the crouch: at 4.28 the hips/knees are extending with heels lifting off the track, and by ~4.4-4.5 both feet have left the ground (airborne by 4.58). Exact toe-off instant falls between the 4.28 and 4.58 frames, so the end time is approximate.",
+      "attributes": {
+        "knee_action": "extend",
+        "feet": "both"
+      },
+      "id": "A004",
+      "part": "S2_0000_0050"
+    },
+    {
+      "shot": "S2",
+      "actor": "athlete",
+      "term": "flight",
+      "start": 4.48,
+      "end": 4.88,
+      "detail": "Feet unsupported: body fully extended with arms overhead at 4.58, then knees drawn forward and arms reaching ahead during descent at 4.78; first ground contact occurs at 4.88.",
+      "attributes": {
+        "feet": "both"
+      },
+      "id": "A005",
+      "part": "S2_0000_0050"
+    },
+    {
+      "shot": "S2",
+      "actor": "athlete",
+      "term": "landing_absorption",
+      "start": 4.88,
+      "end": 5.48,
+      "detail": "Both feet contact at 4.88 and the athlete sinks into a deep squat by 5.08-5.28, loading the knees/hips to absorb the jump; arms drop low beside/behind the body during settling. Absorption ends as the recovery swing begins (~5.5); exact end is approximate between frames.",
+      "attributes": {
+        "knee_action": "flex",
+        "feet": "both",
+        "body_direction": "right"
+      },
+      "id": "A006",
+      "part": "S2_0000_0050"
+    },
+    {
+      "shot": "S2",
+      "actor": "athlete",
+      "term": "rise",
+      "start": 5.58,
+      "end": 6.88,
+      "detail": "Stand-up after landing, not a second jump: from the deep squat the arms swing from low front (5.58) up to overhead (6.08-6.28) while still crouched, then knees and hips extend (6.58) to an upright arms-overhead stance by 6.78-6.88, which is then held to the end of the window. Arm swing and leg extension are sequential here, so they are logged within one rise action.",
+      "attributes": {
+        "knee_action": "extend",
+        "arm_direction": "forward_up",
+        "feet": "both"
+      },
+      "id": "A007",
+      "part": "S2_0000_0050"
+    }
+  ],
+  "audio": [
+    {
+      "kind": "transient",
+      "start": 0.73,
+      "end": 0.75,
+      "text": "",
+      "detail": "A sharp impact sound.",
+      "id": "U001"
+    },
+    {
+      "kind": "speech",
+      "start": 0.18,
+      "end": 2.94,
+      "text": "如何在一分钟之内就立竿见影，",
+      "detail": "",
+      "id": "U002"
+    },
+    {
+      "kind": "transient",
+      "start": 1.82,
+      "end": 1.84,
+      "text": "",
+      "detail": "A sharp impact sound.",
+      "id": "U003"
+    },
+    {
+      "kind": "transient",
+      "start": 2.92,
+      "end": 2.93,
+      "text": "",
+      "detail": "A sharp impact sound.",
+      "id": "U004"
+    },
+    {
+      "kind": "speech",
+      "start": 2.94,
+      "end": 5.28,
+      "text": "如同作弊一般提升立定跳远的成绩呢？",
+      "detail": "",
+      "id": "U005"
+    },
+    {
+      "kind": "transient",
+      "start": 3.31,
+      "end": 3.35,
+      "text": "",
+      "detail": "A sharp impact sound.",
+      "id": "U006"
+    },
+    {
+      "kind": "transient",
+      "start": 4.01,
+      "end": 4.02,
+      "text": "",
+      "detail": "A sharp impact sound.",
+      "id": "U007"
+    },
+    {
+      "kind": "transient",
+      "start": 5.1,
+      "end": 5.11,
+      "text": "",
+      "detail": "A sharp impact sound.",
+      "id": "U008"
+    },
+    {
+      "kind": "speech",
+      "start": 5.46,
+      "end": 7.0,
+      "text": "今天给大家介绍三个方法。",
+      "detail": "",
+      "id": "U009"
+    }
+  ],
+  "audio_from": "runs/v3/jump/audio",
+  "parts": [
+    {
+      "id": "S1_0000_0021",
+      "shot": "S1",
+      "range": [
+        0,
+        21
+      ],
+      "interval": [
+        0.0,
+        2.08
+      ]
+    },
+    {
+      "id": "S2_0000_0050",
+      "shot": "S2",
+      "range": [
+        0,
+        50
+      ],
+      "interval": [
+        2.08,
+        7.0
+      ]
+    }
+  ],
+  "caption": "An athlete performs a standing long jump on a track, oriented to the right. From an upright stance with arms overhead (held until ~2.58s), the athlete executes a preparatory dip by crouching deeply and swinging both arms backward simultaneously between 2.78s and 3.68s. The propulsive phase follows immediately: arms swing forward and upward while legs extend for takeoff between 3.98s and 4.48s, leaving the ground by ~4.5s. During flight (4.48s–4.88s), the body extends fully before knees draw forward for landing. Upon contact at 4.88s, the athlete absorbs impact into a deep squat until ~5.48s, then rises back to an upright position with arms overhead by 6.88s. Concurrently, Mandarin narration explains methods to improve standing long jump performance ('如何在一分钟之内就立竿见影...'), accompanied by intermittent sharp transient sounds unrelated to specific footfalls or impacts in the video timeline.",
+  "continuations": [],
+  "continuation_review": [
+    {
+      "proposal": [
+        "A001",
+        "A002"
+      ],
+      "reason": "events differ in term/actor or are not in adjacent parts"
+    },
+    {
+      "proposal": [
+        "A003",
+        "A004"
+      ],
+      "reason": "events differ in term/actor or are not in adjacent parts"
+    }
+  ],
+  "cooccurrences": {
+    "action_audio": [
+      {
+        "members": [
+          "A001",
+          "U002"
+        ],
+        "interval": [
+          2.78,
+          2.94
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "U004"
+        ],
+        "interval": [
+          2.92,
+          2.93
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "U005"
+        ],
+        "interval": [
+          2.94,
+          3.68
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "U006"
+        ],
+        "interval": [
+          3.31,
+          3.35
+        ]
+      },
+      {
+        "members": [
+          "A002",
+          "U002"
+        ],
+        "interval": [
+          2.78,
+          2.94
+        ]
+      },
+      {
+        "members": [
+          "A002",
+          "U004"
+        ],
+        "interval": [
+          2.92,
+          2.93
+        ]
+      },
+      {
+        "members": [
+          "A002",
+          "U005"
+        ],
+        "interval": [
+          2.94,
+          3.68
+        ]
+      },
+      {
+        "members": [
+          "A002",
+          "U006"
+        ],
+        "interval": [
+          3.31,
+          3.35
+        ]
+      },
+      {
+        "members": [
+          "A003",
+          "U005"
+        ],
+        "interval": [
+          3.98,
+          4.58
+        ]
+      },
+      {
+        "members": [
+          "A003",
+          "U007"
+        ],
+        "interval": [
+          4.01,
+          4.02
+        ]
+      },
+      {
+        "members": [
+          "A004",
+          "U005"
+        ],
+        "interval": [
+          4.08,
+          4.48
+        ]
+      },
+      {
+        "members": [
+          "A005",
+          "U005"
+        ],
+        "interval": [
+          4.48,
+          4.88
+        ]
+      },
+      {
+        "members": [
+          "A006",
+          "U005"
+        ],
+        "interval": [
+          4.88,
+          5.28
+        ]
+      },
+      {
+        "members": [
+          "A006",
+          "U008"
+        ],
+        "interval": [
+          5.1,
+          5.11
+        ]
+      },
+      {
+        "members": [
+          "A007",
+          "U009"
+        ],
+        "interval": [
+          5.58,
+          6.88
+        ]
+      }
+    ],
+    "same_actor_actions": [
+      {
+        "members": [
+          "A001",
+          "A002"
+        ],
+        "interval": [
+          2.78,
+          3.68
+        ]
+      },
+      {
+        "members": [
+          "A003",
+          "A004"
+        ],
+        "interval": [
+          4.08,
+          4.48
+        ]
+      },
+      {
+        "members": [
+          "A003",
+          "A005"
+        ],
+        "interval": [
+          4.48,
+          4.58
+        ]
+      }
+    ],
+    "different_actor_actions": [],
+    "two_actions_audio": [
+      {
+        "members": [
+          "A001",
+          "A002",
+          "U002"
+        ],
+        "interval": [
+          2.78,
+          2.94
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "A002",
+          "U004"
+        ],
+        "interval": [
+          2.92,
+          2.93
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "A002",
+          "U005"
+        ],
+        "interval": [
+          2.94,
+          3.68
+        ]
+      },
+      {
+        "members": [
+          "A001",
+          "A002",
+          "U006"
+        ],
+        "interval": [
+          3.31,
+          3.35
+        ]
+      },
+      {
+        "members": [
+          "A003",
+          "A004",
+          "U005"
+        ],
+        "interval": [
+          4.08,
+          4.48
+        ]
+      },
+      {
+        "members": [
+          "A003",
+          "A005",
+          "U005"
+        ],
+        "interval": [
+          4.48,
+          4.58
+        ]
+      }
+    ]
+  }
+}
