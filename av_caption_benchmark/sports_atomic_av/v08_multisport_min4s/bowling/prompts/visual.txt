@@ -1,0 +1,26 @@
+Video captioning pipeline v0.8, sport: bowling. Describe the scene, people, clothing, setting, readable text and each execution in English. Preserve original-language text. Give movement direction in screen coordinates, observed starts and finishes, uncertainty, and separate repeated or overlapping actions. The allowed sports techniques follow.
+- approach | 助走: travel toward delivery from the first approach step until the final sliding step finishes
+- backswing | 后摆: ball travels rearward up to the change in direction
+- forward swing | 前摆: ball swings forward from the rear apex toward hand separation
+- slide | 滑步: final observable front-foot slide or plant into delivery
+- release | 出手: short transition as the hands cease to support the ball and it starts independent lane travel
+- follow through | 随挥: continuing arm and body movement after ball release into the finish
+- spare | 补中: delivery converting the remaining pins on a second attempt; require attempt context
+- other | 其他动作: other observable bowling action
+Use support_style two_handed/one_handed if visible during delivery and finish_leg trailing_lifted if visible during follow-through. Multiple limb phases can overlap. Ignore pin action as an athlete technique. A stationary set or finish pose alone is outside the action inventory. Distinguish motion from a held pose.
+VISUAL STAGE: inspect only this shot's timestamped source frames. No audio is supplied to this stage. Return one JSON object, no Markdown or commentary. The pipeline will render the final four-section report; do not output those sections here.
+
+Use caller-provided shot boundaries as segmentation metadata; determine people, text and events from the actual images. Frame times are global clip times, not a new local clock. All reported times must be numeric seconds within this shot. First/last frame gaps are not permission to invent a movement. If the shot begins/ends during an action, describe the observed portion and mark the boundary cropped.
+
+JSON schema (all keys required):
+{
+  "shot": "caller shot ID",
+  "actors": [{"id": "S01-P01", "description": "visible clothing, location, equipment or leading limb if supported; neutral identity"}],
+  "storyline": "English paragraph describing scene and visible sequence, first and last observed state, all actors' important changes, and any cropped/uncertain observations",
+  "visible_text": [{"start": 0.0, "end": 0.4, "text": "verbatim readable text; [illegible] for unreadable parts", "appearance": "position/style; timing uncertainty"}],
+  "actions": [{"start": 0.0, "end": 0.4, "actor": "an actor ID defined above", "technique": "one allowed canonical label", "evidence": "visible body/foot/equipment cues with frame times, including missing cues for fallback", "detail": "English description; separate screen direction of body from equipment trajectory; cropped/estimated boundaries; recovery purpose if applicable", "key_moments": [{"name": "applicable anchor name", "time": null}]}],
+  "uncertainties": ["observations that cannot be resolved from these frames"]
+}
+Use empty arrays for genuinely absent text/actions; do not populate placeholder examples. Actor IDs must begin with the caller shot ID. Do not link identities across shots because no other shot is supplied. For text visible in only one frame, state single-frame observation in appearance and use that frame's source display interval (up to 1/source_fps second, bounded by the shot); do not claim a longer display duration.
+
+Caller metadata: {"shot": "S01", "start": 0.0, "end": 8.600000000000001, "duration": 8.600000000000001, "source_fps": 30.0, "frame_times": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5.0, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6.0, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8, 6.9, 7.0, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 8.0, 8.1, 8.2, 8.3, 8.4, 8.5, 8.566667]}

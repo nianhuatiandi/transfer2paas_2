@@ -1,0 +1,101 @@
+{
+  "shot": "S01",
+  "speech_segments": [
+    {
+      "source_utterance_id": "U01",
+      "start": 0.0,
+      "end": 0.56,
+      "speaker": "V01",
+      "text": "a sacar.",
+      "state": "Neutral tone, moderate pace; Spanish narration, phrase appears clipped at clip start (likely tail of a longer sentence such as 'va a sacar').",
+      "speaker_status": "off_screen",
+      "actor": null,
+      "confidence": "high",
+      "evidence": "A male Spanish voice is heard at 0.0–0.56 s while the on-screen player (S01-P01) is crouched looking down at the ball, mouth not moving in a speech-compatible way; no visible person is plausibly producing the line, so it is narration rather than on-screen speech.",
+      "related_actions": [
+        {
+          "action_id": "A05",
+          "relationship": "description",
+          "evidence": "The utterance 'a sacar' ('to serve') announces/describes the service demonstration that the player performs later in the same shot (toss and serve, 5.0–7.0 s); content directly matches the served action rather than the incidental ball bounces overlapping the speech."
+        }
+      ]
+    }
+  ],
+  "action_sounds": [
+    {
+      "action_id": "A01",
+      "status": "none_detected",
+      "description": "No distinguishable ball-bounce transient; only continuous instrumental music is audible during 0.4–0.9 s.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Frames show the hand-driven bounce (release ~0.5 s, floor contact ~0.7 s, catch ~0.9 s), but the audio track contains only the narration tail and steady guitar/percussion music; no discrete impact can be isolated from the music bed."
+    },
+    {
+      "action_id": "A02",
+      "status": "none_detected",
+      "description": "No distinguishable ball-bounce transient for the second pre-serve bounce.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Visual bounce occurs ~1.8–2.3 s (floor contact ~2.0 s), but no separate impact sound is audible above the continuous background music."
+    },
+    {
+      "action_id": "A03",
+      "status": "none_detected",
+      "description": "No audible sound attributable to placing the ball on the strings.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "The ball-to-strings transfer at ~2.4–2.6 s is a soft, low-energy contact; audio shows only music, with no transient at that time."
+    },
+    {
+      "action_id": "A04",
+      "status": "none_detected",
+      "description": "No audible sound attributable to the ball toss release.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Toss release ~5.2 s is visually clear (ball blur above head, arm extended by 5.4 s) but produces no distinguishable sound over the music."
+    },
+    {
+      "action_id": "A05",
+      "status": "none_detected",
+      "description": "No distinguishable serve-impact sound; ball–racket contact is not visible and no transient separates from the music.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "The serve spans 5.0–7.0 s with inferred contact near overhead extension (~6.1–6.2 s); the audio during this window is only the continuous instrumental track, so no impact can be confirmed or localized."
+    },
+    {
+      "action_id": "A06",
+      "status": "none_detected",
+      "description": "No audible sound attributable to the upward racket swing.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Racket acceleration 5.5–6.2 s is visible (frames show racket tracing from low screen-left to overhead), but a swing alone produces no distinguishable sound in the mix."
+    },
+    {
+      "action_id": "A07",
+      "status": "none_detected",
+      "description": "No audible sound attributable to the follow-through or landing.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Follow-through and landing lunge 6.3–7.0 s are visible, but no footfall or racket swoosh transient can be separated from the background music."
+    }
+  ],
+  "unmatched_sounds": [
+    {
+      "start": 0.0,
+      "end": 7.28,
+      "description": "Continuous upbeat instrumental background music with acoustic guitar strumming and light percussion; sustained bed not attributable to any specific action."
+    }
+  ],
+  "uncertainties": [
+    "The utterance 'a sacar' begins mid-phrase at 0.0 s, so the full sentence and any preceding words are unavailable; its descriptive link to the serve (A05) is based on content, not overlap.",
+    "Ball–racket contact during the serve is never directly visible, so contact timing (~6.1–6.2 s) is inferred from body position only.",
+    "The constant music bed could mask small transient sounds (bounces, impact, footfalls); absence of detected action sounds may reflect masking rather than true silence."
+  ]
+}

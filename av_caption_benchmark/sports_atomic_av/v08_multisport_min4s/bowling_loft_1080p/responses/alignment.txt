@@ -1,0 +1,91 @@
+{
+  "shot": "S01",
+  "speech_segments": [
+    {
+      "source_utterance_id": "U01",
+      "start": 4.8,
+      "end": 5.2,
+      "speaker": "V01",
+      "text": "Whoa!",
+      "state": "loud single-word exclamation; wording and timing as supplied",
+      "speaker_status": "uncertain",
+      "actor": null,
+      "confidence": "medium",
+      "evidence": "A loud male exclamation is audible at ~4.8-5.2 s, shortly after the pin crash. Neither on-screen person offers mouth evidence: the bowler (S01-P01) has his back to the camera throughout, and the seated spectator (S01-P02) is seen only from behind. The voice could belong to the bowler reacting to his own shot or to an off-camera companion, so no visible speaker can be confirmed.",
+      "related_actions": []
+    }
+  ],
+  "action_sounds": [
+    {
+      "action_id": "A01",
+      "status": "none_detected",
+      "description": "No distinguishable sound attributable to the backswing; only the continuous ambient murmur is present during 0.2-1.0 s.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "The swing motion is silent in the audio; no transient or squeak separates from the background during the backswing interval."
+    },
+    {
+      "action_id": "A02",
+      "status": "none_detected",
+      "description": "No distinguishable footfall or approach sound separable from the ambient background during 0.25-1.4 s.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Steps are visually implied but the audio contains no discrete step transients in this window; the only sharp impact in the clip occurs later (~1.7 s) and is better explained by ball-lane contact."
+    },
+    {
+      "action_id": "A03",
+      "status": "none_detected",
+      "description": "No distinguishable sound attributable to the forward swing itself.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "The arm swing produces no audible transient; the subsequent impact sound begins after hand separation."
+    },
+    {
+      "action_id": "A04",
+      "status": "none_detected",
+      "description": "No separable slide-foot brake sound; the sharp thud near 1.7 s is accompanied by rolling clatter, indicating the ball rather than the foot.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "The 1.72-2.08 s event is an impact followed by sustained rolling, which a foot plant cannot produce; therefore the sound is not attributed to the slide."
+    },
+    {
+      "action_id": "A05",
+      "status": "uncertain",
+      "description": "Sharp thud of the ball contacting the lane followed by rolling clatter, consistent with the release; audible onset (~1.72 s) trails the visual hand separation (~1.35 s) by more than 0.2 s.",
+      "sound_time": 1.72,
+      "visual_time": 1.35,
+      "confidence": "low",
+      "evidence": "Frames show the ball free-rolling on the lane from ~1.4 s, matching the rolling clatter that follows the impact. However the impact transient localizes at ~1.72 s, over 0.2 s after the visual release moment, and the slide-foot brake is a residual competing source, so supported status cannot be claimed."
+    },
+    {
+      "action_id": "A06",
+      "status": "none_detected",
+      "description": "No distinguishable sound attributable to the follow-through; the bowler's arm and balance movements are silent.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "During 1.4-2.3 s the only audio is ambient murmur plus the tail of the ball's rolling, which belongs to the ball's travel, not the body motion."
+    }
+  ],
+  "unmatched_sounds": [
+    {
+      "start": 0.0,
+      "end": 5.36,
+      "description": "Continuous low-level background murmur of indistinct voices (ambient alley noise), not attributable to any candidate action."
+    },
+    {
+      "start": 3.44,
+      "end": 4.08,
+      "description": "Pin-deck crash: multiple hard objects colliding and scattering as the ball strikes the pins (~3.9 s, visible in frames at 3.9-4.1 s). No candidate action covers the ball-pin impact, so this sound remains unlinked."
+    }
+  ],
+  "uncertainties": [
+    "Speaker of the 'Whoa!' exclamation cannot be visually confirmed; both on-screen persons are viewed from behind.",
+    "Onset of the ball-lane impact sound (~1.72 s) lags the visual release (~1.35 s) by more than 0.2 s, preventing a supported attribution to A05.",
+    "The pin-crash sound at 3.44-4.08 s has no corresponding candidate action in the inventory (actions end at 2.3 s)."
+  ]
+}

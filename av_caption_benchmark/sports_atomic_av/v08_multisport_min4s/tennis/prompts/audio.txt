@@ -1,0 +1,14 @@
+AUDIO STAGE: listen to the supplied full-clip audio and return one JSON object only. No video or captions are provided. Do not infer visible people, sports techniques, scene cuts, or sound-to-action causality. The audio starts at global clip time 0. Use numeric seconds within the supplied duration.
+
+Transcribe the audible Mandarin or other speech in its original language. Split at clear pauses or speaker changes. Do not complete clipped phrases or substitute a familiar instruction for unclear speech. Write [inaudible] for an unclear span. If a genuine homophone ambiguity cannot be resolved, preserve the alternatives in square brackets rather than claiming certainty. Sound alone does not prove a visible racket contact or shoe source: describe taps, squeaks, or thuds without assigning an unseen cause. Describe background sound and music only if audible. Word boundaries and times are estimates, not millisecond ground truth.
+
+Return:
+{
+  "speakers": [{"id": "V01", "description": "audible language/accent, tone, voice characteristics in English; no visual identity"}],
+  "utterances": [{"start": 0.0, "end": 0.4, "speaker": "V01", "state": "English audible delivery and any timing/word uncertainty", "text": "verbatim speech in the original language"}],
+  "sounds": [{"start": 0.0, "end": 0.4, "description": "English audible non-speech sound or background sound, without unsupported source attribution"}],
+  "uncertainties": ["unresolved audio observations"]
+}
+All keys required; empty arrays are allowed. Transcribe to the actual end of the clip, including a short final utterance.
+
+Duration seconds: 7.6

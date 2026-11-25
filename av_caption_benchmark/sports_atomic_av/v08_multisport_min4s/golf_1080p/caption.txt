@@ -1,0 +1,156 @@
+## Storyline
+
+00:00.000 - 00:05.205
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+The clip is a montage of four golf driving views on a tropical course (dense green treeline, palms, a white yardage sign and utility pole in the first view; chairs, a bin and a bystander in the second; a wide fairway with a distant green mound in the third; a green range mat in the fourth), carrying a persistent 'DIEGO GARCIA' watermark whose pink/magenta highlight sweeps letter-by-letter across the text (roughly 2.2–3.7 s). View 1 (0.0–1.67 s): at grass level, P01's legs stand left of a teed ball; a dark motion-blurred club head flashes low between the legs and the ball at 0.0 s while the ball remains on the tee through 0.8 s (non-contact pass); the ball is gone by 0.9 s (bare tee stub) with no club framed, i.e. the strike itself is off-camera; from about 1.0–1.67 s the rear foot lifts with the sole facing camera and the planted foot bears weight, a held lower-body finish/weight-shift (a slight lateral shift of the planted foot leaves a step as an alternative reading). View 2 (1.7–3.44 s): after a cut, P02's Nike-shod foot stands behind a ball marked '3' with a driver head grounded beside it at 1.7 s; the head blurs moving toward frame-right at 1.8 s and exits the right edge at 1.9 s while the ball stays teed (no contact); the ball remains on the tee through 2.9 s and is gone by 3.0 s with no club framed; 3.0–3.44 s the Nike foot pivots/rotates and a second foot/leg enters at the right edge (stance change/repositioning). P05's jeans and boots stand in the upper-right background throughout. View 3 (3.47–4.40 s): a wide shot shows P03 at address over a teed ball (orange tee) with two spare balls on the grass to the right; the backswing is not captured in the sampled frames; at ~3.77 s the shaft/head blurs down through the hitting zone and the teed ball is no longer visible by 3.87 s; P03 then rotates into a held finish with arms wrapped across the chest and the club over his left shoulder through 4.40 s. View 4 (4.44–5.17 s): a final cut returns to a low rear view of P04's legs over a teed ball beside the green mat; the ball is on the tee at 4.53 s and gone by 4.63 s with the club never framed; P04 holds a weight-shifted finish with the rear heel raised (gum sole visible) until the clip ends, and a golf bag/tripod edges into the left frame late (from ~4.94 s). People: S01-P01: Lower body only, left of frame in the first view: black shorts, white low-top sneakers, small dark tattoo on the outer ankle; standing beside a teed golf ball in a low ground-level view.; S01-P02: Single lower leg and foot, center of the second view: black-and-white Nike sneaker with black ankle sock; positioned at a ball on a tee (ball stamped '3') in a low ground-level view.; S01-P03: Full-figure male golfer, center-left of the third view: white sleeveless tank top, khaki cargo shorts, white sneakers, dark hair; holding a driver on an open palm-lined fairway.; S01-P04: Lower body from behind/side in the fourth view: khaki shorts, white sneakers with tan/gum soles; standing over a teed ball (orange tee) next to a green driving-range mat.; S01-P05: Background bystander, upper-right of the second view: blue jeans and brown boots, legs only, standing near chairs and a bin.
+Audio: 00:01.120 - 00:01.320: sharp impact sound; 00:02.920 - 00:03.120: sharp impact sound; 00:03.440 - 00:04.520: wind blowing across microphone; 00:04.520 - 00:04.720: sharp impact sound
+Speech (AV reviewed; associations below): 00:00.000 - 00:03.280 V01: took turns hitting three golf balls apiece as far as they could.; 00:04.760 - 00:05.200 V01: Each person
+
+## Visible Text
+
+00:00.000 - 00:05.172
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+"DIEGO GARCIA": bold white sans-serif with thin black outline, lower-right quadrant; an animated pink/magenta highlight sweeps sequentially across the letters (approximately 2.2–3.7 s, timing approximate); present in every frame of all four views.
+
+## Speakers and Transcript
+
+Speaker profiles:
+V01 - male speaker, neutral tone, standard American English accent; visual identity assessed per utterance by model AV review.
+
+00:00.000 - 00:03.280
+Speaker: V01 (off_screen)
+State: clear narration, continuous across the first two views
+Content: "took turns hitting three golf balls apiece as far as they could."
+Related actions: A02: description (Narration describes players hitting golf balls as far as possible; the off-camera strike that removes the teed ball in view 1 occurs within this utterance's span.); A05: description (Second ball departure (view 2) falls inside the same narrated sentence about hitting balls as far as they could.)
+AV evidence: Male voice-over in neutral American English describing the contest; no on-screen person is shown speaking (views 1-2 frame only lower bodies, view 3 golfer is looking down mid-swing with no mouth movement), so the narrator is off-screen.; model confidence=high
+
+00:04.760 - 00:05.200
+Speaker: V01 (off_screen)
+State: narration cut off mid-sentence at clip end
+Content: "Each person"
+Related actions: A10: temporal overlap only (The truncated phrase overlaps the held follow-through pose in view 4; no explicit referent is established before the clip ends.)
+AV evidence: Same male narrator voice resumes after the view-3/view-4 cut; no visible speaker in the low rear view of P04, so off-screen.; model confidence=high
+
+## Atomic Sports Actions
+
+00:00.000 - 00:00.100
+Action ID: A01
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P01
+Technique: other
+Chinese term: 其他动作
+Visual evidence: A dark motion-blurred club head appears low near the teed ball at 0.0 s, but the ball is still on the tee at 0.1–0.8 s, so this is a non-contact pass; the club is not visible in any later frame of this view.
+Detail: Tail end or fragment of a practice swing/whiff captured right at the clip start (boundary cropped); body essentially static; the single blurred frame does not establish movement direction or phase (downswing vs follow-through indeterminate).
+Key moments: club_head_blur: 00:00.000 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable sound attributable to the blurred club-head pass at clip start; the first sharp impact in the audio occurs much later (~1.2 s).; confidence=medium; evidence: Frame 0.0 shows a motion-blurred club head but the ball remains teed through 0.8 s, so no contact; no transient is localizable at 0.0-0.1 s.
+
+00:00.800 - 00:00.900
+Action ID: A02
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P01
+Technique: other
+Chinese term: 其他动作
+Visual evidence: Ball present on the tee at 0.8008 s and absent (bare tee stub only) at 0.9009 s; no club or swing arc is framed in between.
+Detail: The ball leaves the tee between sampled frames with the actual stroke off-camera; contact not directly visible.
+Key moments: ball_vanishes: uncertain
+Aligned sounds: uncertain after model AV review: A sharp impact/crack is heard around 1.12-1.32 s, plausibly the strike that removes the teed ball, but it lags the visual ball departure (~0.85-0.9 s) by more than 0.2 s.; audio=00:01.220 (estimated); visual=00:00.850 (estimated); audio-minus-visual=+0.370 s; confidence=low; evidence: Ball present at 0.8008 s and gone by 0.9009 s (strike off-camera); the only nearby transient is the candidate impact at 1.12-1.32 s. The >0.2 s offset prevents a supported claim; the sound could be a delayed/edited impact or an unrelated transient.
+
+00:00.900 - 00:01.668
+Action ID: A03
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P01
+Technique: follow through
+Chinese term: 随挥
+Visual evidence: From ~1.0 s the rear foot lifts with the sole facing the camera while the tattooed-ankle foot stays planted bearing weight, held through 1.67 s; consistent with a lower-body finish after the off-camera strike; the club is never framed.
+Detail: Held weight-shifted finish pose (rear heel raised), not walking — the lifted foot stays static for ~0.6 s; a slight leftward shift of the planted foot between 0.8 and 1.0 s leaves a step as an alternative reading (see uncertainties).
+Key moments: heel_lifted_finish: 00:01.201 (estimated)
+Aligned sounds: none_detected after model AV review: No discrete sound attributable to the held heel-raised finish pose; the nearby impact transient is assigned (uncertainly) to the preceding strike.; confidence=medium; evidence: Static lower-body pose from ~1.0-1.67 s produces no footfall or club sound distinguishable from ambience.
+
+00:01.702 - 00:01.902
+Action ID: A04
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P02
+Technique: other
+Chinese term: 其他动作
+Visual evidence: Driver head grounded beside the teed ball '3' at 1.7017 s, blurs moving toward frame-right at 1.8018 s, and exits the right edge at 1.9019 s while the ball remains on the tee through 2.9 s.
+Detail: Non-contact club sweep past the ball (whiff/practice pass); because the ball stays teed, no strike occurred; with the target direction unknown from this low angle, the pass could equally read as the start of a backswing moving away from address — phase indeterminate.
+Key moments: address_driver: 00:01.702 (estimated); club_blur_right: 00:01.802 (estimated)
+Aligned sounds: none_detected after model AV review: No sound attributable to the non-contact club sweep past the teed ball at 1.7-1.9 s.; confidence=medium; evidence: Ball '3' remains on the tee through 2.9 s, confirming no contact; no whoosh or impact is localized in 1.7-1.9 s.
+
+00:02.903 - 00:03.003
+Action ID: A05
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P02
+Technique: other
+Chinese term: 其他动作
+Visual evidence: Ball on the tee through 2.9029 s, gone by 3.003 s; no club is framed at the moment of departure.
+Detail: The ball leaves the tee between frames; the strike (or removal) is off-camera and not directly visible.
+Key moments: ball_vanishes: 00:03.003 (estimated)
+Aligned sounds: supported after model AV review: Sharp impact/crack of a driver striking the teed ball, heard at ~2.92-3.12 s.; audio=00:03.000 (estimated); visual=00:02.950 (estimated); audio-minus-visual=+0.050 s; confidence=medium; evidence: Ball on tee at 2.9029 s and gone by 3.003 s; the transient coincides within ~0.1 s of the ball's departure, with no competing impact nearby (P02's foot pivot follows after 3.0 s).
+
+00:03.003 - 00:03.437
+Action ID: A06
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P02
+Technique: other
+Chinese term: 其他动作
+Visual evidence: The Nike-shod foot pivots/rotates (toe turning toward frame-left) and a second foot/leg enters at the right edge from ~3.0–3.2 s; no club visible.
+Detail: Stance change/repositioning after the ball departs; without a framed club this cannot be confirmed as a swing finish.
+Key moments: none
+Aligned sounds: none_detected after model AV review: No distinguishable sound for the stance change/repositioning after the ball departs.; confidence=medium; evidence: Foot pivot and second leg entering frame produce no localized transient; wind noise begins only at 3.44 s.
+
+00:03.702 - 00:03.871
+Action ID: A07
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P03
+Technique: downswing
+Chinese term: 下杆
+Visual evidence: From address (3.47–3.67 s, club grounded behind the teed ball) the shaft and head blur downward through the hitting zone at ~3.77 s, and the teed ball is no longer visible by 3.87 s (spare balls to the right remain).
+Detail: Downswing into impact on an open fairway; the backswing itself is not captured in the sampled frames (gap between 3.67 and 3.77 s); contact inferred from ball departure and club blur, not directly seen.
+Key moments: impact_blur: 00:03.770 (estimated)
+Aligned sounds: none_detected after model AV review: No discrete impact sound can be localized for the fairway drive; the interval is covered by wind noise across the microphone.; confidence=medium; evidence: Club blur at ~3.77 s and ball gone by 3.87 s indicate a strike, but the candidate audio lists only wind (3.44-4.52 s) through this window and the next sharp impact (4.52-4.72 s) aligns with the later view-4 strike, not this one.
+
+00:03.871 - 00:04.404
+Action ID: A08
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P03
+Technique: follow through
+Chinese term: 随挥
+Visual evidence: Hands rise past the waist at 3.87–3.97 s, arms wrap across the chest and the club finishes over the left shoulder by 4.07–4.27 s, held through 4.37–4.40 s with the torso rotated toward the target line.
+Detail: Full upper-body follow-through into a held finish pose after the drive; gaze follows the ball downrange.
+Key moments: finish_held: 00:04.271 (estimated)
+Aligned sounds: none_detected after model AV review: No sound attributable to the upper-body follow-through; only ambient wind.; confidence=medium; evidence: Held finish pose 3.87-4.4 s occurs within the wind-noise span with no separate transient.
+
+00:04.538 - 00:04.638
+Action ID: A09
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P04
+Technique: other
+Chinese term: 其他动作
+Visual evidence: Ball on the tee (orange tee) at 4.4378–4.5379 s and gone by 4.6380 s; the club is never inside the low frame.
+Detail: Strike occurs between frames with the club not visible; contact inferred only from ball departure and the simultaneous onset of weight transfer.
+Key moments: ball_vanishes: 00:04.638 (estimated)
+Aligned sounds: supported after model AV review: Sharp impact/crack of the drive in view 4, heard at ~4.52-4.72 s.; audio=00:04.600 (estimated); visual=00:04.600 (estimated); audio-minus-visual=+0.000 s; confidence=medium; evidence: Ball on orange tee at 4.5379 s and gone by 4.638 s; the transient coincides with the ball's departure and the onset of the weight transfer, with no competing impact in the window.
+
+00:04.638 - 00:05.172
+Action ID: A10
+Inference segment: S01
+Detected camera cuts within this segment: 00:01.702, 00:03.470, 00:04.438
+Actor: S01-P04
+Technique: follow through
+Chinese term: 随挥
+Visual evidence: Rear (left) heel lifts off the grass showing the gum sole from ~4.74 s, weight settles on the front foot, and the stance is held through 5.17 s; a golf bag/tripod enters the left edge from ~4.94 s.
+Detail: Lower-body follow-through/finish after the off-camera drive, viewed from behind at grass level; the club remains out of frame throughout.
+Key moments: heel_lifted_finish: 00:05.038 (estimated)
+Aligned sounds: none_detected after model AV review: No discrete sound for the held heel-raised finish in view 4.; confidence=medium; evidence: Static lower-body pose 4.64-5.17 s; the preceding impact is assigned to A09, and no footfall or club sound is localized here.

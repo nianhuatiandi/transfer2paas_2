@@ -1,0 +1,87 @@
+{
+  "shot": "S01",
+  "speech_segments": [],
+  "action_sounds": [
+    {
+      "action_id": "A01",
+      "status": "none_detected",
+      "description": "No distinguishable footfall transients above the continuous ambient hum during the approach steps (3.7–5.3 s).",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Audio contains only a steady low-frequency hum plus one isolated tap (~5.3 s) and the later pin clatter; no rhythmic step sounds accompany the visible approach, so no sound can be attributed to A01."
+    },
+    {
+      "action_id": "A02",
+      "status": "none_detected",
+      "description": "No distinguishable sound attributable to the backswing.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Backswing (4.5–5.0 s) is a silent body motion; the only nearby transient (tap at 5.2–5.4 s) falls after the backswing apex and is better explained by release/slide contact."
+    },
+    {
+      "action_id": "A03",
+      "status": "none_detected",
+      "description": "No distinguishable sound attributable to the forward swing.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Forward swing (5.0–5.3 s) produces no separate audible event; the tap at 5.2–5.4 s coincides with ball-floor contact at the end of this motion and is assigned to the release moment instead."
+    },
+    {
+      "action_id": "A04",
+      "status": "none_detected",
+      "description": "No clearly separable slide-footfall sound; the single tap near 5.3 s is ambiguous and tentatively attributed to ball-on-lane contact at release.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "low",
+      "evidence": "Slide finishes ~5.4 s, exactly when the sharp tap occurs, but a ball striking the lane at release is an equally plausible source; without a second transient, the slide cannot claim the sound exclusively."
+    },
+    {
+      "action_id": "A05",
+      "status": "uncertain",
+      "description": "A single sharp tap at ~5.3 s is consistent with the ball contacting the lane surface at hand separation (~5.4 s), but the final slide footfall is a competing source.",
+      "sound_time": 5.3,
+      "visual_time": 5.4,
+      "confidence": "low",
+      "evidence": "Frames show the ball leaving the hand and resting on the lane at 5.4–5.5 s; the isolated tap in the audio (5.2–5.4 s) matches this contact time within ~0.1 s, yet the simultaneous front-foot plant (A04) could produce the same transient, so the source cannot be excluded."
+    },
+    {
+      "action_id": "A06",
+      "status": "none_detected",
+      "description": "No distinguishable sound attributable to the follow-through pose.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Follow-through (5.5–6.8 s) is a held posture; audio during this span is only the ambient hum before the ball reaches the pins."
+    },
+    {
+      "action_id": "A07",
+      "status": "none_detected",
+      "description": "No distinguishable footstep sound attributable to the turn and walk-back.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "The loud clatter/scraping at 7.3–8.1 s aligns with the ball striking the pin rack (~7.7 s) and pin settling, not with the bowler's steps; his walk-back produces no separable transient above the hum."
+    }
+  ],
+  "unmatched_sounds": [
+    {
+      "start": 0.0,
+      "end": 8.6,
+      "description": "Continuous low-frequency ambient hum/rumble present for the entire shot; background, not attributable to any candidate action."
+    },
+    {
+      "start": 7.3,
+      "end": 8.1,
+      "description": "Loud clatter of the bowling ball striking the pin rack (~7.7 s, pins visibly scatter on lane 14) followed by scraping/settling sounds; the pin impact is not represented by any candidate action."
+    }
+  ],
+  "uncertainties": [
+    "The isolated sharp tap at 5.2–5.4 s cannot be definitively assigned between the slide foot plant (A04) and the ball contacting the lane at release (A05).",
+    "The ball reads pink/red while in hand but gold/tan once on the lane; lighting/material ambiguity noted in the candidate description.",
+    "Which foot executes the slide could not be resolved from the rear view.",
+    "No speech or voices are present in this shot; the candidate utterance and voice lists are empty, and no audible dialogue was detected."
+  ]
+}

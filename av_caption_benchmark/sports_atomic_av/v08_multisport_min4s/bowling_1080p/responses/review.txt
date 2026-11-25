@@ -1,0 +1,117 @@
+{
+  "shot": "S01",
+  "actors": [
+    {
+      "id": "S01-P01",
+      "description": "Male bowler viewed from behind on the right side of the frame, standing on the approach of a multi-lane PBA tournament center. He wears a black short-sleeved collared shirt with 'ZACH WILKINS' in light lettering across the upper back, dark trousers, dark shoes and a dark cap. He carries and delivers a reddish/pink-orange bowling ball with one hand (one_handed support)."
+    }
+  ],
+  "storyline": "One continuous, slightly drifting shot looks diagonally down a row of oiled lanes (overhead rail numbers 12–18) inside a PBA event, with a large white 'Gene Carter's Pro Shop Classic' banner at upper-left, a black date strip 'AUG 16-18, 2019' and a 'THIS IS BOWLING' strip across the top, vertical player pennants (JONES, DAUGHERTY, ARCHER, TEECE, PRATHER, TACKETT) hanging above the pin decks, and a partially cut-off white schedule/scoring board at the far-left edge. The bowler S01-P01 stands nearly motionless at the right-side approach, ball held low at his side, watching the lanes from 0.0 s to about 3.5 s. Around 3.6 s he begins his approach, translating up-screen and drifting toward screen-left along the lane perspective toward the foul line; he bends at the waist as the ball drops into the backswing (≈4.5–4.9 s), swings it forward (≈4.9–5.2 s) while his front foot slides into delivery, and at ≈5.3 s the hand opens so the ball separates and starts independent travel up-screen/screen-left down the lane (visible rolling from ≈5.4 s). He holds a one_handed follow-through with the throwing arm extended up/forward and the trailing leg kicked high behind (finish_leg trailing_lifted) through ≈5.4–6.6 s, then gradually lowers the pose and stands watching (≈7.2–8.0 s, a held stance outside the action inventory). Pin scatter is visible at the left pin decks near 7.7–8.3 s (not an athlete technique). From ≈8.0 s he pivots away from the lane, rotating toward screen-left to face back toward the seating area, and begins walking off the approach; the shot ends mid-turn at 8.567 s, cropping the recovery. Camera framing drifts subtly right-to-left over the clip, progressively revealing the TEECE/PRATHER pennants, the lane-12 rail number, and more of the left schedule board.",
+  "visible_text": [
+    {"start": 0.0, "end": 8.567, "text": "Professional Bowlers Association", "appearance": "small print atop the white banner, upper-left"},
+    {"start": 0.0, "end": 8.567, "text": "GENE CARTER'S PRO SHOP", "appearance": "large red script on the white banner, left"},
+    {"start": 0.0, "end": 8.567, "text": "CLASSIC", "appearance": "lettered on the orange arrow beneath the shop name"},
+    {"start": 0.0, "end": 8.567, "text": "PBA", "appearance": "circular logo on the white banner"},
+    {"start": 0.0, "end": 8.567, "text": "13 14 15 16 17 18", "appearance": "white lane numbers on the black overhead rail; 17/18 partly occluded by the bowler early, clearer after he moves; a '12' becomes visible at the far-left of the rail after ≈3.8 s as framing drifts"},
+    {"start": 0.0, "end": 8.567, "text": "QUBICA AMF", "appearance": "repeated sponsor wordmark under the lane numbers"},
+    {"start": 0.0, "end": 8.567, "text": "JONES", "appearance": "vertical dark-red pennant above lane 15"},
+    {"start": 0.0, "end": 8.567, "text": "DAUGHERTY", "appearance": "vertical light pennant above lane 15/16"},
+    {"start": 0.0, "end": 8.567, "text": "ARCHER", "appearance": "vertical purple pennant above lane 16"},
+    {"start": 3.8, "end": 8.567, "text": "TEECE", "appearance": "vertical light pennant above lane 17; only 'TE' legible while the bowler's head occludes the lower letters (before ≈3.8 s)"},
+    {"start": 3.0, "end": 8.567, "text": "PRATHER", "appearance": "vertical light pennant above lane 17/18; revealed as the bowler steps away and framing drifts"},
+    {"start": 0.0, "end": 8.567, "text": "TACKETT", "appearance": "vertical dark-red pennant above lane 18, right"},
+    {"start": 0.0, "end": 8.567, "text": "AUG 16-18, 2019", "appearance": "white-on-black date strip, top center"},
+    {"start": 0.0, "end": 8.567, "text": "THIS IS BOWLING", "appearance": "top-right strip; early frames show only 'IS BOWLING' before the 'THIS' is revealed by the drift"},
+    {"start": 0.0, "end": 8.0, "text": "ZACH WILKINS", "appearance": "light lettering across the back of the bowler's black shirt; lost once he turns to profile at ≈8.0–8.3 s"},
+    {"start": 0.0, "end": 8.567, "text": "[illegible] SCHEDULE / TOUR SCHEDULE / CHASING300 / 300 / 12", "appearance": "white scoring/schedule board at far-left edge; progressively more readable as framing drifts, partly cut off throughout"}
+  ],
+  "actions": [
+    {
+      "start": 3.6,
+      "end": 4.5,
+      "actor": "S01-P01",
+      "technique": "approach",
+      "evidence": "After a near-held stance (0.0–3.5 s) with only minor weight shifts, the bowler takes forward steps; his body translates up-screen and drifts toward screen-left along the lane perspective toward the foul line, ball carried low at the side. First clear step ≈3.6 s; arrival at the slide/foul-line area ≈4.5 s.",
+      "detail": "Approach walk from the waiting stance into the delivery area; movement is away from the camera (up-screen) with a screen-left drift following the lane axis. The start boundary is estimated because the pre-3.6 s posture is essentially static.",
+      "key_moments": [
+        {"name": "first_approach_step", "time": 3.6},
+        {"name": "foul_line_arrival", "time": 4.5}
+      ]
+    },
+    {
+      "start": 4.5,
+      "end": 4.9,
+      "actor": "S01-P01",
+      "technique": "backswing",
+      "evidence": "Torso flexes forward and the ball travels rearward/downward behind the body, reaching the rear apex ≈4.9 s as he bends at the waist (frames 4.6–4.9 show the ball low behind the sliding foot).",
+      "detail": "One_handed backswing; ball moves from the side carry to a low rear position behind the body.",
+      "key_moments": [
+        {"name": "rear_apex", "time": 4.9}
+      ]
+    },
+    {
+      "start": 4.5,
+      "end": 5.2,
+      "actor": "S01-P01",
+      "technique": "slide",
+      "evidence": "Front foot plants and glides on the approach surface into the delivery crouch, overlapping the backswing/forward-swing window (≈4.5–5.2 s); body lowers and rotates toward the lane.",
+      "detail": "Final sliding step of the approach; the slide finish coincides with the ball reaching the ankle at the start of release.",
+      "key_moments": [
+        {"name": "slide_plant", "time": 4.6},
+        {"name": "slide_finish", "time": 5.2}
+      ]
+    },
+    {
+      "start": 4.9,
+      "end": 5.2,
+      "actor": "S01-P01",
+      "technique": "forward swing",
+      "evidence": "Ball swings forward from the rear apex toward the lane, passing the body at ankle/foot level by ≈5.2 s (frames 5.0–5.2).",
+      "detail": "One_handed forward swing accelerating the ball toward the release point.",
+      "key_moments": []
+    },
+    {
+      "start": 5.2,
+      "end": 5.4,
+      "actor": "S01-P01",
+      "technique": "release",
+      "evidence": "Hand opens and the ball separates from the fingers at ≈5.3 s, beginning independent travel; the ball is visible on the lane from ≈5.4 s rolling up-screen/screen-left toward the pin decks.",
+      "detail": "Release at the slide; ball trajectory is away from the camera down the lane, converging toward the left-side pin decks in this diagonal perspective.",
+      "key_moments": [
+        {"name": "ball_separation", "time": 5.3}
+      ]
+    },
+    {
+      "start": 5.4,
+      "end": 7.2,
+      "actor": "S01-P01",
+      "technique": "follow through",
+      "evidence": "Throwing arm stays extended up/forward and the trailing leg is kicked high behind (trailing_lifted) through ≈5.4–6.6 s, then the pose gradually lowers as he watches the ball; arm/leg return toward neutral by ≈7.2 s.",
+      "detail": "One_handed delivery with finish_leg trailing_lifted; body leans into the lane while the ball continues down-screen. The held watching stance after ≈7.2 s is not part of the technique.",
+      "key_moments": [
+        {"name": "arm_extended_peak", "time": 5.6},
+        {"name": "trailing_leg_lift_peak", "time": 5.8},
+        {"name": "pose_lowering", "time": 7.0}
+      ]
+    },
+    {
+      "start": 8.0,
+      "end": 8.567,
+      "actor": "S01-P01",
+      "technique": "other",
+      "evidence": "Bowler pivots away from the lane, rotating toward screen-left into a left profile (glasses visible), and starts walking back off the approach; the turn is still in progress when the shot ends, so the recovery is cropped at the boundary.",
+      "detail": "Post-delivery recovery/turn-away, not a delivery technique; body rotation is toward screen-left, movement back down-screen toward the seating area.",
+      "key_moments": [
+        {"name": "turn_initiated", "time": 8.1}
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact lane number used by the bowler is ambiguous: the diagonal camera perspective makes the ball's down-lane path appear to align with the left pin decks (13/14) while the bowler stands at the right-side approach (≈16/17).",
+    "The precise instant of the first approach step is estimated (≈3.6 s); the 0.0–3.5 s posture is a near-held stance with only minor adjustments, so the approach start boundary is approximate.",
+    "Pin fall/count at the far deck (≈7.7–8.3 s) is observable but excluded from athlete techniques per the inventory; whether the delivery was a strike or a leave cannot be confirmed from these frames.",
+    "Left-edge schedule-board text is partially cut off and only intermittently legible; transcribed fragments may be incomplete.",
+    "The TEECE and PRATHER pennant letterings become fully legible only as the bowler steps away and the framing drifts; their exact reveal times (≈3.0–3.8 s) are approximate.",
+    "The final turn/walk-back is cropped by the shot end at 8.567 s, so its full extent and final facing direction are not completely observed."
+  ]
+}

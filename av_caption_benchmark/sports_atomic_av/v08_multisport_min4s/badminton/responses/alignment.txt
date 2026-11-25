@@ -1,0 +1,247 @@
+{
+  "shot": "S01",
+  "speech_segments": [
+    {
+      "source_utterance_id": "U01",
+      "start": 0.96,
+      "end": 1.52,
+      "speaker": "V01",
+      "text": "往这边跳。",
+      "state": "Clear imperative coaching cue; timing matches audible speech.",
+      "speaker_status": "off_screen",
+      "actor": null,
+      "confidence": "medium",
+      "evidence": "Male Mandarin instructional voice (V01) is audible, but in view 1 no speaker is verifiable: P01 has his back to the camera and P02 is too distant for lip resolution. The cue overlaps P01's return/recovery phase.",
+      "related_actions": [
+        {
+          "action_id": "A03",
+          "relationship": "instruction",
+          "evidence": "Imperative 'hop this way' directs the jumping footwork of the drill and is spoken exactly as P01 completes the upward return off the feed (A03, 0.9-1.1 s) into recovery."
+        }
+      ]
+    },
+    {
+      "source_utterance_id": "U02",
+      "start": 3.48,
+      "end": 3.72,
+      "speaker": "V01",
+      "text": "一个，",
+      "state": "Rhythmic count, clear.",
+      "speaker_status": "off_screen",
+      "actor": null,
+      "confidence": "medium",
+      "evidence": "Count follows immediately after the second exchange of view 1 (return impact ~3.2-3.4 s, P01 recovering 3.4-3.8 s). No visible mouth movement: P01 back-to-camera, P02 distant.",
+      "related_actions": [
+        {
+          "action_id": "A07",
+          "relationship": "retrospective comment",
+          "evidence": "'One' is uttered right after the completed feed-lunge-return exchange (A05-A07) whose return contact is at ~3.0 s and whose impact sound precedes the count by ~0.2 s."
+        }
+      ]
+    },
+    {
+      "source_utterance_id": "U03",
+      "start": 6.96,
+      "end": 7.32,
+      "speaker": "V01",
+      "text": "两个。",
+      "state": "Rhythmic count, clear.",
+      "speaker_status": "off_screen",
+      "actor": null,
+      "confidence": "medium",
+      "evidence": "Count follows P04's second return in view 2 (impact ~6.8-7.0 s). P03 (feeder) has his back to camera and P04 is distant, so no lip confirmation; voice consistent with V01.",
+      "related_actions": [
+        {
+          "action_id": "A15",
+          "relationship": "retrospective comment",
+          "evidence": "'Two' is uttered directly after the toss-lunge-return exchange (A13-A15) completing at ~6.8-7.0 s."
+        }
+      ]
+    },
+    {
+      "source_utterance_id": "U04",
+      "start": 7.52,
+      "end": 7.633,
+      "speaker": "V01",
+      "text": "好，",
+      "state": "Transition phrase beginning before the cut; remainder continues in next view.",
+      "speaker_status": "off_screen",
+      "actor": null,
+      "confidence": "medium",
+      "evidence": "Pre-cut portion of U04 in view 2; no visible speaker (P03 back turned, P04 distant). Utterance split at the 7.633 s camera cut per policy.",
+      "related_actions": []
+    },
+    {
+      "source_utterance_id": "U04",
+      "start": 7.633,
+      "end": 8.0,
+      "speaker": "V01",
+      "text": "你……",
+      "state": "Cut off mid-phrase at shot end; onset of a new explanatory sentence.",
+      "speaker_status": "supported",
+      "actor": "S01-P05",
+      "confidence": "medium",
+      "evidence": "After the cut, the presenter (P05) faces the camera, mouth visibly moving and gesturing with the racket in frames 7.733-7.967 s; he is the only person on screen and the audible male voice matches. On-screen subtitle text is not used as transcript.",
+      "related_actions": []
+    }
+  ],
+  "action_sounds": [
+    {
+      "action_id": "A01",
+      "status": "none_detected",
+      "description": "No distinguishable racket-shuttle impact localized near the 0.3 s feed contact; only continuous shoe noise present.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Visual feed contact at ~0.3 s, but the audio's discrete impacts begin only at ~1.2 s; the feed pop is not separable from background."
+    },
+    {
+      "action_id": "A02",
+      "status": "none_detected",
+      "description": "No discrete footfall attributable; lunge steps blend into the sustained rhythmic shoe squeaks.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Continuous 0.0-8.0 s shoe thuds/squeaks are a rhythmic background and cannot be assigned to this specific lunge."
+    },
+    {
+      "action_id": "A03",
+      "status": "uncertain",
+      "description": "A sharp impact-like pop occurs at ~1.2-1.4 s, compatible with the return stroke but lagging the estimated contact.",
+      "sound_time": 1.3,
+      "visual_time": 1.0,
+      "confidence": "low",
+      "evidence": "Frames show racket blur at 1.0 s and shuttle already high above the net at 1.1 s, implying contact <=1.0 s; the heard pop at 1.2-1.4 s differs by 0.2-0.4 s (>0.2 s tolerance), so support cannot be claimed."
+    },
+    {
+      "action_id": "A04",
+      "status": "none_detected",
+      "description": "No distinguishable sound attributable to the recovery steps.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Only continuous shoe noise; no discrete transient isolated to 1.2-1.7 s."
+    },
+    {
+      "action_id": "A05",
+      "status": "none_detected",
+      "description": "No distinguishable impact localized near the 2.3 s feed contact.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Visual contact ~2.3 s; nearest discrete pop is at 3.2-3.4 s, which aligns with the subsequent return instead."
+    },
+    {
+      "action_id": "A06",
+      "status": "none_detected",
+      "description": "Lunge footfalls not separable from the continuous shoe squeak bed.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Sustained rhythmic background only during 2.5-2.9 s."
+    },
+    {
+      "action_id": "A07",
+      "status": "uncertain",
+      "description": "Sharp pop at ~3.2-3.4 s compatible with the return, but later than the estimated contact.",
+      "sound_time": 3.3,
+      "visual_time": 3.0,
+      "confidence": "low",
+      "evidence": "Racket blur at 2.9-3.0 s and shuttle crossing the net by 3.2 s suggest contact ~3.0 s; the 0.2-0.4 s offset to the heard pop exceeds the support tolerance."
+    },
+    {
+      "action_id": "A08",
+      "status": "none_detected",
+      "description": "No discrete sound attributable to recovery at 3.4-3.8 s.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Continuous shoe noise only; the count '一个' follows but is speech, not an action sound."
+    },
+    {
+      "action_id": "A09",
+      "status": "none_detected",
+      "description": "Bare-hand toss produces no audible impact.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "Release at ~3.9 s is a hand feed; no transient in the audio at that time, consistent with a silent release."
+    },
+    {
+      "action_id": "A10",
+      "status": "none_detected",
+      "description": "Lunge footfalls blend into continuous shoe squeaks.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "No discrete transient isolated to 4.2-4.6 s."
+    },
+    {
+      "action_id": "A11",
+      "status": "supported",
+      "description": "Sharp racket-shuttle pop at ~4.8-4.9 s matching the rising return off the toss.",
+      "sound_time": 4.85,
+      "visual_time": 4.7,
+      "confidence": "medium",
+      "evidence": "Visual contact ~4.7 s (shuttle rising above net at 4.667 s, follow-through blur 4.8-4.9 s); heard pop within 0.2 s; no competing impact (toss was silent, next toss at 6.0 s)."
+    },
+    {
+      "action_id": "A12",
+      "status": "none_detected",
+      "description": "No distinguishable sound for the recovery at 5.0-5.5 s.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Only the continuous shoe-noise bed; no discrete transient."
+    },
+    {
+      "action_id": "A13",
+      "status": "none_detected",
+      "description": "Second bare-hand toss is silent.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "Release ~6.0 s; no audio transient at that time."
+    },
+    {
+      "action_id": "A14",
+      "status": "none_detected",
+      "description": "Lunge footfalls not separable from background squeaks.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Continuous rhythmic shoe noise only during 6.2-6.6 s."
+    },
+    {
+      "action_id": "A15",
+      "status": "supported",
+      "description": "Sharp racket-shuttle pop at ~6.8-6.9 s matching the rising return off the second toss.",
+      "sound_time": 6.85,
+      "visual_time": 6.8,
+      "confidence": "medium",
+      "evidence": "Visual contact ~6.8 s with shuttle lifting off the racket by 6.867 s; heard pop within 0.1-0.2 s; no competing impact nearby."
+    },
+    {
+      "action_id": "A16",
+      "status": "none_detected",
+      "description": "No discrete sound attributable to the final recovery at 7.1-7.6 s.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Only continuous shoe noise; the following speech ('好，你') is not an action sound."
+    }
+  ],
+  "unmatched_sounds": [
+    {
+      "start": 0.0,
+      "end": 8.0,
+      "description": "Continuous rhythmic thuds and squeaks of shoes moving on the hard court surface, spanning all three views; not assignable to any single action."
+    }
+  ],
+  "uncertainties": [
+    "Counting semantics of U02/U03: each view contains two feed-return exchanges, yet '一个' follows the second exchange of view 1 and '两个' the second of view 2; it is unresolved whether the coach counts pairs of feeds or only fully observed reps.",
+    "The off-screen voice (V01) cannot be visually bound to P02/P03 or to a cameraperson/coach; speaker_status remains off_screen for U01-U04 pre-cut.",
+    "Impact pops at 1.2-1.4 s and 3.2-3.4 s lag the estimated A03/A07 contacts by 0.2-0.4 s, so those two returns are marked uncertain rather than supported.",
+    "U04 spans the 7.633 s cut and has been split; the exact boundary between the pre-cut '好' and the presenter's '你……' is approximate."
+  ]
+}

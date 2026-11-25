@@ -1,0 +1,127 @@
+{
+  "video": "video.mp4",
+  "video_sha256": "71997173af532d41193ebdd926736042ab903f0b5373cef75dca59eb096f10f7",
+  "source_width": 1920,
+  "source_height": 1080,
+  "sent_frame_width": 1920,
+  "duration_s": 5.2052000000000005,
+  "sampling_fps": 9.99000999000999,
+  "minimum_segment_seconds": 4,
+  "detected_cut_seconds": [
+    1.7017,
+    3.470133,
+    4.437767
+  ],
+  "retained_cut_seconds": [],
+  "segments": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 5.2052000000000005,
+      "internal_cut_seconds": [
+        1.7017,
+        3.470133,
+        4.437767
+      ],
+      "sampled_frame_times": [
+        0.0,
+        0.1001,
+        0.2002,
+        0.3003,
+        0.4004,
+        0.5005,
+        0.6006,
+        0.7007,
+        0.8008,
+        0.9009,
+        1.001,
+        1.1011,
+        1.2012,
+        1.3013,
+        1.4014,
+        1.5015,
+        1.6016,
+        1.668333,
+        1.7017,
+        1.8018,
+        1.9019,
+        2.002,
+        2.1021,
+        2.2022,
+        2.3023,
+        2.4024,
+        2.5025,
+        2.6026,
+        2.7027,
+        2.8028,
+        2.9029,
+        3.003,
+        3.1031,
+        3.2032,
+        3.3033,
+        3.4034,
+        3.436767,
+        3.470133,
+        3.570233,
+        3.670333,
+        3.770433,
+        3.870533,
+        3.970633,
+        4.070733,
+        4.170833,
+        4.270933,
+        4.371033,
+        4.4044,
+        4.437767,
+        4.537867,
+        4.637967,
+        4.738067,
+        4.838167,
+        4.938267,
+        5.038367,
+        5.138467,
+        5.171833
+      ]
+    }
+  ],
+  "stages": {
+    "audio": {
+      "model": "qwen3.8-omni-flash",
+      "prompt": "prompts/audio.txt",
+      "prompt_sha256": "0fb8f79c8ce35549e775ca8e647d67b23f349ca10f7bca6842719928205327f5",
+      "response": "responses/audio.txt",
+      "response_sha256": "61c7ebd0fb93438453a7a9fd1cc11b2e7c804f96171652bc69410884c1d253ec"
+    },
+    "visual": {
+      "model": "qwen3.8-omni-flash",
+      "prompt": "prompts/visual.txt",
+      "prompt_sha256": "057007124dc542efc205ff9b18cb502ab681976739a1d2aed08184917a80eac8",
+      "response": "responses/visual.txt",
+      "response_sha256": "19283bdf10ae9b2d58ff79169aa79869e5187b6ba355eb2f49eeebfe271f4480"
+    },
+    "review": {
+      "model": "qwen3.8-omni-flash",
+      "prompt": "prompts/review.txt",
+      "prompt_sha256": "1f2eeeb601d0db345504450718285959ad5be74cf7fba7adb0614f43276aa16c",
+      "response": "responses/review.txt",
+      "response_sha256": "b2759be53524a12b3f9f561fe137fe65b50ceb4bfed0114a9c9d248440f1b943"
+    },
+    "alignment": {
+      "model": "qwen3.8-omni-flash",
+      "prompt": "prompts/alignment.txt",
+      "prompt_sha256": "96c0632a18f06d5585165cab04521f2ce8c39eb2c6129fe3bcbe2e2af96a5c60",
+      "response": "responses/alignment.txt",
+      "response_sha256": "50c66c779e502d00f1e414209b4afe621507b8cf8ff3bddfb9b077a62ca59a4c"
+    }
+  },
+  "source": {
+    "source_page": "https://commons.wikimedia.org/wiki/File:Diego_Garcia_Long_Drive_Challenge_(957829).webm",
+    "author": "U.S. Navy / Seaman Gary Buckles",
+    "license": "Public domain in the United States",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "source_start_seconds": 10.35,
+    "source_end_seconds": 15.55,
+    "change": "Native-size excerpt or full-length transcode with source audio; times relative to the start of the distributed clip.",
+    "source_sha256": "bfdfc589891da32df4846dbdf1c324c90556d250a281b8b288a6f7ab64560214"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "shot": "S01",
+  "actors": [
+    {
+      "id": "S01-P01",
+      "description": "Male bowler seen from behind on the left-center approach of a multi-lane alley, wearing a black short-sleeve shirt with a grey back panel printed 'GET MOTIVATED' (upper back) and 'EJ Tackett' (stylized name on the panel), black trousers and dark shoes; right-handed delivery, ball carried and swung in the right hand with the left arm used only for balance."
+    },
+    {
+      "id": "S01-P02",
+      "description": "Seated spectator in the right foreground, only the back of the head (dark hair) and shoulders visible in a tan/beige bowling chair, facing the lanes; stationary for the whole clip."
+    }
+  ],
+  "storyline": "Single fixed (slightly drifting) shot from behind the seating area of a multi-lane bowling alley. Overhead lane markers 8–13 carry repeated 'QUBICA AMF' branding; sponsor banners read ANCHOR Buick GMC (left), '2019 GO BOWLING! PBA SUMMER TOUR SCHEDULE' with the USBC CUP shield and '#CHASING300' (center), and GENE CARTER'S PRO SHOP CLASSIC / Professional Bowlers Association (right), with a U.S. flag at top right. In the foreground a round scoring console, a glass bottle, papers, a plate and a phone sit on the table, and the seated spectator S01-P02 occupies the right chair. The bowler S01-P01 opens in a set stance at the approach (ball at his right hip, which appears on the image-right side of his torso since he faces away from camera). He then executes one complete right-handed delivery: push-away and backswing (ball drops low behind him around 0.4–0.5 and rises to a rear apex around 0.9–1.0 while he bends forward), a forward swing past the body (1.0–1.3), a sliding step in which his front foot plants toward the foul line and his trailing left leg lifts high and extends to image-left (1.0–1.5), and release at about 1.3–1.45, after which the ball rolls independently up-screen and slightly right down the lane (from ~x280,y600 at 1.4 to ~x505,y410 at 3.0) toward the pin deck aligned under marker 11. His follow-through holds the right arm raised above his head (1.6–2.1) with the trailing leg extended, then he straightens into an observing stance by ~2.3 and remains standing, watching, through the end of the clip. Around 3.9–4.4 the ball reaches the rack and pins scatter, leaving a small number of pins standing; this pin action is observed but is not an athlete technique. The clip begins with the bowler already set and ends with him standing and watching, and his feet are partly hidden by the foreground console during the early approach, so the first step and the exact slide-plant instant are estimated.",
+  "visible_text": [
+    {"start": 0.0, "end": 5.47, "text": "ANCHOR", "appearance": "large black header on left overhead banner"},
+    {"start": 0.0, "end": 5.47, "text": "AnchorBuickGMC.com", "appearance": "small text top-left of ANCHOR banner"},
+    {"start": 0.0, "end": 5.47, "text": "800-423-4479", "appearance": "phone number top-left of ANCHOR banner"},
+    {"start": 0.0, "end": 5.47, "text": "It's Easy", "appearance": "script tagline on ANCHOR banner"},
+    {"start": 0.0, "end": 5.47, "text": "Your local dealer, just 15 minutes away in Elkton!", "appearance": "black strip along bottom of ANCHOR banner"},
+    {"start": 0.0, "end": 5.47, "text": "GM", "appearance": "logo at right of ANCHOR banner beside red truck"},
+    {"start": 0.0, "end": 5.47, "text": "USBC CUP", "appearance": "shield logo on center schedule banner"},
+    {"start": 0.0, "end": 5.47, "text": "2019 GO BOWLING! PBA SUMMER TOUR SCHEDULE", "appearance": "header of center white banner"},
+    {"start": 0.0, "end": 5.47, "text": "#CHASING300", "appearance": "hashtag at lower-right of center banner"},
+    {"start": 0.0, "end": 5.47, "text": "[illegible schedule grid]", "appearance": "small tabular text on center banner"},
+    {"start": 0.0, "end": 5.47, "text": "Professional Bowlers Association", "appearance": "small text top of right banner"},
+    {"start": 0.0, "end": 5.47, "text": "GENE CARTER'S PRO SHOP", "appearance": "large red script on right banner; cropped to 'GENE CARTER'S P…' at the right frame edge in early frames and revealing more ('…PRO S…') as the camera drifts later"},
+    {"start": 0.0, "end": 5.47, "text": "C·L·A·S·S·I·C", "appearance": "spaced letters under the Gene Carter's name on right banner"},
+    {"start": 0.0, "end": 5.47, "text": "QUBICA AMF", "appearance": "repeated lane-marker branding above each lane"},
+    {"start": 0.0, "end": 5.47, "text": "8 10 11 12 13", "appearance": "lane numbers on the overhead marker strip (9 occluded by the bowler at 0.0–~1.0)"},
+    {"start": 1.1, "end": 5.47, "text": "9", "appearance": "lane number revealed once the bowler moves right; single continuous visibility from ~1.1 s to shot end"},
+    {"start": 0.0, "end": 5.47, "text": "GET MOTIVATED", "appearance": "white text across upper back of bowler's shirt; clearest 0.0–1.0, less legible while bent/turning"},
+    {"start": 0.0, "end": 5.47, "text": "EJ Tackett", "appearance": "stylized name on grey back panel of bowler's shirt; fully legible early, reduced to 'EJ T…' at distance/angle later"}
+  ],
+  "actions": [
+    {
+      "start": 0.25,
+      "end": 1.4,
+      "actor": "S01-P01",
+      "technique": "approach",
+      "evidence": "Static set stance at 0.0–0.2 (ball at right hip, upright). From ~0.3 the torso and hips translate down-lane (body shifts from image-x≈150 at 0.8 to ≈200–230 at 1.2–1.4) with steps toward the foul line; feet are partly hidden by the foreground scoring console, so the first-step instant is estimated.",
+      "detail": "Body travels forward/down-range, on screen toward image-right and slightly up, from the set position to the delivery slide; ends as the sliding step completes ~1.3–1.5. Start boundary cropped/estimated due to console occlusion of the feet.",
+      "key_moments": [{"name": "approach_start", "time": 0.25}, {"name": "approach_end", "time": 1.4}]
+    },
+    {
+      "start": 0.2,
+      "end": 1.0,
+      "actor": "S01-P01",
+      "technique": "backswing",
+      "evidence": "Ball leaves the hip hold at ~0.2 (push-away) and swings rearward/downward on the bowler's right side, which appears on the image-RIGHT of his torso because he faces away from camera: low point near the floor at 0.4–0.5 (ball ~x210,y750), then rising behind the shoulder to the rear apex at ~0.9–1.0 (deep forward bend, arm extended back-up, ball ~x270–280,y350–400).",
+      "detail": "One-handed right-arm swing rearward up to the change of direction; on-screen the ball moves down then up along the image-right side of the body. Overlaps the early approach steps.",
+      "key_moments": [{"name": "push_away", "time": 0.2}, {"name": "backswing_apex", "time": 0.95}]
+    },
+    {
+      "start": 1.0,
+      "end": 1.3,
+      "actor": "S01-P01",
+      "technique": "forward swing",
+      "evidence": "From the rear apex the ball swings forward and down past the body (image-right toward center), reaching the low release point at the floor by ~1.2–1.3 (ball ~x230–280,y600–650).",
+      "detail": "Arm drives the ball from the rear apex toward hand separation; on-screen trajectory moves from the raised rear position down and slightly left-to-right into the release pocket at the foul line.",
+      "key_moments": [{"name": "forward_swing_start", "time": 1.0}, {"name": "hand_separation", "time": 1.3}]
+    },
+    {
+      "start": 1.0,
+      "end": 1.5,
+      "actor": "S01-P01",
+      "technique": "slide",
+      "evidence": "Front (right) foot plants/slides toward the foul line while the torso leans down-lane; the trailing (left) leg lifts and extends backward to image-LEFT, fully airborne by 1.3–1.6 (trailing foot ~x30–80,y600–650), lowering by ~2.0.",
+      "detail": "Final sliding step into the delivery; slide direction is down-range (image-right/up), trailing leg rises behind to image-left. Overlaps the tail of the approach, the forward swing and the release.",
+      "key_moments": [{"name": "slide_start", "time": 1.0}, {"name": "slide_finish", "time": 1.5}]
+    },
+    {
+      "start": 1.3,
+      "end": 1.45,
+      "actor": "S01-P01",
+      "technique": "release",
+      "evidence": "Hands cease supporting the ball at the low swing point ~1.3; the ball is seen rolling independently on the lane surface from 1.4 (x≈280,y≈600) onward, with the bowler's right hand empty and rising.",
+      "detail": "Short transition from swing to free-rolling ball; ball trajectory on screen heads up-screen and slightly right down the lane toward the pin deck.",
+      "key_moments": [{"name": "release", "time": 1.35}]
+    },
+    {
+      "start": 1.4,
+      "end": 2.3,
+      "actor": "S01-P01",
+      "technique": "follow through",
+      "evidence": "After release the right arm continues upward, hand raised above the head from ~1.6 to ~2.1 (against the ANCHOR banner), while the body balances on the slide foot and the trailing left leg stays extended high to image-left through ~1.9, then lowers as he straightens into an upright observing stance by ~2.2–2.3.",
+      "detail": "Continuing arm and body movement into the finish; support_style = one_handed (left arm only counterbalances), finish_leg = trailing_lifted. Body faces down-range (image-right/up). After ~2.3 he merely stands and watches (held pose, outside the action inventory).",
+      "key_moments": [{"name": "follow_through_start", "time": 1.4}, {"name": "finish_pose", "time": 2.3}]
+    }
+  ],
+  "uncertainties": [
+    "The bowler's feet are partly hidden by the foreground scoring console during 0.0–1.0, so the exact first approach step and the precise slide-plant instant are estimated rather than directly observed.",
+    "Lane identification: the impacted pin deck aligns under overhead marker 11 in the early frames, but slight camera drift and the angled view make the exact lane (10 vs 11) not fully certain.",
+    "Whether the opening 0.0–0.2 hold already includes the push-away or is purely a static set stance cannot be fully resolved; the backswing is timed from the first clear rearward ball motion (~0.2).",
+    "The number of pins left standing after the impact (~3.9–4.4) is only roughly resolvable; pin action is excluded from the athlete-technique inventory regardless.",
+    "Spectator S01-P02 is seen only from behind (head/shoulders), so clothing and identity cannot be described."
+  ]
+}

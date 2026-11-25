@@ -1,0 +1,161 @@
+{
+  "shot": "S01",
+  "speech_segments": [
+    {
+      "source_utterance_id": "U01",
+      "start": 0.08,
+      "end": 2.08,
+      "speaker": "V01",
+      "text": "如何在一分钟之内就立竿见影",
+      "state": "Fast-paced, enthusiastic delivery; the clause actually finishes slightly after the 2.08 s cut (its subtitle persists until ~2.8 s in the second view), so this segment holds the pre-cut portion.",
+      "speaker_status": "supported",
+      "actor": "S01-P01",
+      "confidence": "high",
+      "evidence": "Medium close-up of S01-P01 facing camera with a clipped lavalier mic; mouth shape changes frame-to-frame (open ~0.16, pursed ~0.24, smiling ~0.48-0.56) consistent with continuous speech, and the audible male Mandarin voice matches his on-camera delivery. No competing speaker visible.",
+      "related_actions": []
+    },
+    {
+      "source_utterance_id": "U01",
+      "start": 2.08,
+      "end": 5.2,
+      "speaker": "V01",
+      "text": "如同作弊一般提升立定跳远的成绩呢",
+      "state": "Voiceover continuation across the cut; the tail of the preceding clause ('...立竿见影') completes around 2.8 s per subtitle timing before this clause begins (~2.88 s).",
+      "speaker_status": "off_screen",
+      "actor": null,
+      "confidence": "medium",
+      "evidence": "After the 2.08 s cut the athlete is shown in left profile performing a standing long jump; his mouth is not visible in a speaking configuration and shows no sync with the ongoing narration, while the same male voice (V01) continues seamlessly. The speech therefore functions as off-screen narration over the demonstration rather than on-camera speech.",
+      "related_actions": [
+        {
+          "action_id": "A05",
+          "relationship": "temporal overlap only",
+          "evidence": "Narration (2.08-5.2 s) runs over the takeoff/leg-extension phase (3.92-4.32 s); the rhetorical question about standing-long-jump performance coincides with the demonstrated jump but does not instruct or describe this specific push-off."
+        },
+        {
+          "action_id": "A06",
+          "relationship": "temporal overlap only",
+          "evidence": "Speech overlaps the airborne flight phase (4.32-5.04 s) of the same jump demonstration."
+        },
+        {
+          "action_id": "A07",
+          "relationship": "temporal overlap only",
+          "evidence": "Speech ends at 5.2 s, overlapping the first ~0.16 s of the landing absorption (5.04-5.44 s)."
+        }
+      ]
+    },
+    {
+      "source_utterance_id": "U02",
+      "start": 5.36,
+      "end": 6.96,
+      "speaker": "V01",
+      "text": "今天给大家介绍三个方法",
+      "state": "Clear concluding statement, steady pace.",
+      "speaker_status": "off_screen",
+      "actor": null,
+      "confidence": "medium",
+      "evidence": "The athlete remains in profile on the track, rising from the landing and then gesturing with his arms; no visible mouth movement synchronized to the line, and the identical male voice continues as narration. Subtitle for this line appears from ~5.52 s, matching the audio.",
+      "related_actions": [
+        {
+          "action_id": "A08",
+          "relationship": "temporal overlap only",
+          "evidence": "Narration (5.36-6.96 s) overlaps the rise-out-of-landing recovery (5.52-6.48 s)."
+        },
+        {
+          "action_id": "A09",
+          "relationship": "temporal overlap only",
+          "evidence": "Narration overlaps the final standing arm-lower/gesture (6.56-6.96 s) up to the clip end."
+        }
+      ]
+    }
+  ],
+  "action_sounds": [
+    {
+      "action_id": "A01",
+      "status": "none_detected",
+      "description": "No distinguishable sound; a static overhead-arm hold produces no expected transient, and none is heard under the narration.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "Frames 2.08-2.72 s show a motionless start posture; audio in this window is continuous speech plus low outdoor ambience with no discrete event."
+    },
+    {
+      "action_id": "A02",
+      "status": "none_detected",
+      "description": "No distinguishable footfall or shoe-scuff attributable to the countermovement crouch.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Crouch on a rubberized track (2.56-3.28 s) would produce at most soft contact; the narration dominates and no isolated transient can be localized to this action."
+    },
+    {
+      "action_id": "A03",
+      "status": "none_detected",
+      "description": "Arm backswing is silent; no cloth-whoosh or other transient separable from the voice track.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "Frames 2.72-3.6 s show bilateral arm travel only; audio contains speech and ambience without a matching discrete sound."
+    },
+    {
+      "action_id": "A04",
+      "status": "none_detected",
+      "description": "Propulsive forward arm swing produces no audible transient.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "Rapid swing with motion blur (3.68-4.24 s) but no separable sound under the continuous narration."
+    },
+    {
+      "action_id": "A05",
+      "status": "none_detected",
+      "description": "Takeoff/push-off foot contact not distinguishable as a discrete sound.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Toe-off ~4.32 s on a cushioned track; any impact is masked by the overlapping speech (U01 runs to 5.2 s), so no sound can be attributed with confidence."
+    },
+    {
+      "action_id": "A06",
+      "status": "none_detected",
+      "description": "Flight phase is inherently silent; no sound event corresponds to it.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "Airborne 4.32-5.04 s with no ground contact; audio shows only narration/ambience."
+    },
+    {
+      "action_id": "A07",
+      "status": "none_detected",
+      "description": "Landing footfall not separable as a distinct audible impact.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "First contact ~5.04 s; the narration continues to 5.2 s and U02 begins ~5.36 s, and no isolated thud/scuff can be confidently localized to the landing on the rubber surface."
+    },
+    {
+      "action_id": "A08",
+      "status": "none_detected",
+      "description": "Rise from the squat produces no distinguishable sound.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "Slow extension 5.52-6.48 s; audio is the concluding narration plus ambience, with no discrete transient tied to the movement."
+    },
+    {
+      "action_id": "A09",
+      "status": "none_detected",
+      "description": "Standing arm gesture produces no audible transient.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "high",
+      "evidence": "Arms lower then swing forward 6.56-6.96 s; no sound event beyond speech/ambience is present."
+    }
+  ],
+  "unmatched_sounds": [],
+  "uncertainties": [
+    "The first clause of U01 ('如何在一分钟之内就立竿见影') continues past the 2.08 s camera cut (its subtitle remains until ~2.8 s), so the exact word boundary at the cut is approximate; the split was made at the cut per protocol.",
+    "Speaker status after the cut is inferred as off-screen narration: the same athlete is visible but in profile with no syncable mouth movement; a same-person on-location recording cannot be fully excluded, though it is unlikely.",
+    "Any faint takeoff (≈4.32 s) or landing (≈5.04 s) footfall on the rubberized track is masked by the continuous narration and could not be confirmed as a discrete sound.",
+    "A09's purpose (gesture vs. start of another countermovement) is cropped by the clip end at 6.96 s."
+  ]
+}

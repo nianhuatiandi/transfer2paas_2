@@ -1,0 +1,549 @@
+{
+  "shots": [
+    {
+      "shot": "S01",
+      "actors": [
+        {
+          "id": "S01-P01",
+          "description": "Adult male bowler seen from behind on the right of frame, wearing a black short-sleeved shirt with white block lettering 'ZACH WATKINS' across the upper back and a small logo below, black trousers and dark bowling shoes; he stands beside a round buttoned scoring/ball-return console in the foreground and carries a single bowling ball (reads pink/red in hand, gold/tan once on the lane)."
+        }
+      ],
+      "storyline": "Wide view down a row of polished bowling lanes (headers 13–18, with 12 and 17 revealed later) inside a PBA tournament venue, hung with vertical sponsor banners (LONZOL, DAUGHERTY, ARCHER, TEED, PRATHER, TACKETT) and a large 'Gene Carter's Pro Shop CLASSIC' sign plus 'AUG 16-18, 2019' and 'THIS IS BOWLING' strips overhead; the camera is largely static with a slow slight pan left over the clip. A dark crouching figure is visible at the pin deck of lane 16 in the background for much of the first half (identity unresolved). For ~0.0–3.6 s the bowler S01-P01 stands motionless at the right, back to camera, watching the lanes (held pose, no action). From ~3.7 s he shifts, turns into the approach and walks forward into the screen and leftward toward the lane-14/15 area, carrying the ball one-handed. He bends into a low backswing (≈4.5–5.0 s), drives the ball forward (≈5.0–5.3 s), plants/slides into delivery (≈5.1–5.4 s) and releases (≈5.3–5.4 s); a gold/tan ball then rolls independently down the lane away from camera (≈5.4–7.6 s). He holds a long follow-through with the trailing leg lifted high behind him (≈5.5–6.8 s), straightens and watches (≈6.8–7.6 s); the rack on lane 14 scatters at ≈7.7–7.9 s. He then turns toward the camera (≈7.7–8.1 s) and walks back toward the right/foreground seating (≈8.1–8.57 s), the clip ending mid-walk. Ball colour differs between hand and lane (lighting/material unresolved), and the exact lane and pin count cannot be fully confirmed.",
+      "visible_text": [
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "Professional Bowlers Association",
+          "appearance": "small dark text atop the white left-side sign"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "GENE CARTER'S PRO SHOP",
+          "appearance": "large red script on the white left-side sign"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "CLASSIC",
+          "appearance": "gold serif text beneath the pro-shop name on the same sign"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "AUG 16-18, 2019",
+          "appearance": "white text on a black banner strip at top centre"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "THIS IS BOWLING",
+          "appearance": "black text on white banner at top right; partly cut at the frame edge early, fully readable after the slight left pan (~2.8 s)"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "LONZOL",
+          "appearance": "vertical white letters on a dark hanging banner over the lanes"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "DAUGHERTY",
+          "appearance": "vertical white letters on a light hanging banner"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "ARCHER",
+          "appearance": "vertical white letters on a purple hanging banner"
+        },
+        {
+          "start": 0.0,
+          "end": 2.7,
+          "text": "TE[...]",
+          "appearance": "vertical black letters on a white hanging banner, only the first letters visible before the pan"
+        },
+        {
+          "start": 2.8,
+          "end": 8.5667,
+          "text": "TEED",
+          "appearance": "vertical black letters on a white hanging banner, fully revealed as framing shifts left"
+        },
+        {
+          "start": 2.8,
+          "end": 8.5667,
+          "text": "PRATHER",
+          "appearance": "vertical black letters on a white hanging banner, revealed as framing shifts left"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "TACKETT",
+          "appearance": "vertical white letters on a dark hanging banner at far right edge"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "13  QUBICAAMF  14  15  QUBICAAMF  16  18",
+          "appearance": "lane numbers and grey 'QUBICAAMF' branding on the dark header panels above the lanes"
+        },
+        {
+          "start": 2.8,
+          "end": 8.5667,
+          "text": "12  ...  17",
+          "appearance": "additional lane numbers entering view on the left and centre-right as the camera pans slightly left"
+        },
+        {
+          "start": 0.0,
+          "end": 8.5667,
+          "text": "ZACH WATKINS",
+          "appearance": "white block lettering across the bowler's upper back"
+        },
+        {
+          "start": 2.9,
+          "end": 8.5667,
+          "text": "[...] TOUR SCHEDULE / [...] CHASING300 / 12 13",
+          "appearance": "partial white schedule board at far left, increasingly readable as the view pans left"
+        }
+      ],
+      "actions": [
+        {
+          "start": 3.7,
+          "end": 5.3,
+          "actor": "S01-P01",
+          "technique": "approach",
+          "evidence": "From a stationary back-to-camera stance through 3.6 s he initiates movement at ~3.7 s, stepping forward into the screen and drifting left toward the lane-14/15 area (4.1–4.5 s), continuing through the crouched swing (4.6–5.1 s) until the front-foot plant at ≈5.2–5.3 s.",
+          "detail": "Body travels away from camera and slightly leftward down the approach area; one-handed ball carry (ball held at his right side). First step estimated at 3.7 s from a subtle weight shift; final sliding step completes ≈5.3 s.",
+          "key_moments": [
+            {
+              "name": "first_step",
+              "time": 3.7
+            },
+            {
+              "name": "approach_end_slide",
+              "time": 5.3
+            }
+          ]
+        },
+        {
+          "start": 4.5,
+          "end": 5.0,
+          "actor": "S01-P01",
+          "technique": "backswing",
+          "evidence": "At 4.6–5.0 s he bends forward and the ball is drawn rearward and low behind his hip (pink/red ball visible at his right side), reaching the rear apex before reversing.",
+          "detail": "Ball moves rearward relative to his torso during the latter part of the approach; one-handed grip, free arm tucked/extended for balance.",
+          "key_moments": [
+            {
+              "name": "backswing_apex",
+              "time": 5.0
+            }
+          ]
+        },
+        {
+          "start": 5.0,
+          "end": 5.3,
+          "actor": "S01-P01",
+          "technique": "forward swing",
+          "evidence": "From the rear apex at 5.0 s the ball swings forward through 5.1–5.2 s, passing his sliding foot and rising toward the release point at 5.3 s.",
+          "detail": "Ball trajectory reverses from rearward to forward, travelling toward the lane (away from camera).",
+          "key_moments": [
+            {
+              "name": "forward_swing_start",
+              "time": 5.0
+            }
+          ]
+        },
+        {
+          "start": 5.1,
+          "end": 5.4,
+          "actor": "S01-P01",
+          "technique": "slide",
+          "evidence": "At 5.1–5.3 s his front foot slides/plants on the approach while the body lowers into the delivery posture, finishing the slide by ≈5.4 s as the ball reaches the floor.",
+          "detail": "Front-foot slide into delivery; body oriented down the target lane. Which foot slides cannot be resolved reliably (see uncertainties).",
+          "key_moments": [
+            {
+              "name": "slide_finish",
+              "time": 5.4
+            }
+          ]
+        },
+        {
+          "start": 5.3,
+          "end": 5.5,
+          "actor": "S01-P01",
+          "technique": "release",
+          "evidence": "Around 5.3–5.4 s the hand ceases to support the ball and a gold/tan ball is seen on the lane surface at his feet, then rolling independently (5.5 s onward).",
+          "detail": "One-handed release; ball begins independent travel down the lane, away from camera and leftward in screen coordinates. Note ball colour reads pink/red in hand but gold/tan on lane (lighting/material uncertainty).",
+          "key_moments": [
+            {
+              "name": "hand_separation",
+              "time": 5.4
+            }
+          ]
+        },
+        {
+          "start": 5.5,
+          "end": 6.8,
+          "actor": "S01-P01",
+          "technique": "follow through",
+          "evidence": "After release the throwing arm continues through its arc (5.5–6.0 s) while the trailing leg lifts high behind him (clearly airborne 5.6–6.5 s, shoe visible on screen-left of the planted foot); he holds the extended finish then begins to recover upright by ≈6.6–6.8 s.",
+          "detail": "support_style = one_handed; finish_leg = trailing_lifted (trailing leg raised well off the floor). Body remains bent over the lane watching the ball travel away from camera.",
+          "key_moments": [
+            {
+              "name": "trailing_leg_lift_peak",
+              "time": 5.8
+            },
+            {
+              "name": "follow_through_end",
+              "time": 6.8
+            }
+          ]
+        },
+        {
+          "start": 7.7,
+          "end": 8.5667,
+          "actor": "S01-P01",
+          "technique": "other",
+          "evidence": "Having stood and watched the ball reach the pins (rack on lane 14 scatters ≈7.7–7.9 s), he turns to face the camera at 7.7–8.1 s and walks back toward the right/foreground seating (8.1–8.5 s).",
+          "detail": "Post-shot recovery walk toward camera and screen-right; not a delivery technique. Clip ends mid-walk (boundary cropped at 8.5667 s).",
+          "key_moments": [
+            {
+              "name": "turn_to_camera",
+              "time": 7.9
+            }
+          ]
+        }
+      ],
+      "uncertainties": [
+        "Ball colour appears pink/red while held (4.6–5.1 s) but gold/tan once on the lane (5.4 s onward); cannot confirm whether this is lighting/reflection or a different ball.",
+        "Target lane read as lane 14 from the ball path and the pin scatter at ≈7.7 s, but lane-numbering perspective and the slight camera pan make ±1 lane possible.",
+        "Final pin count / whether the delivery is a strike or leaves pins is not clearly resolvable; pins on lane 14 are seen scattering ≈7.7–7.9 s but the resulting rack is obscured.",
+        "Handedness/slide foot conflict: the ball is carried in the right hand during the approach, yet the lifted trailing leg appears on screen-left during follow-through; which foot slides cannot be verified from these frames.",
+        "The opening 0.0–3.6 s is a stationary held pose (no action logged); precise onset of the first approach step is estimated at 3.7 s from a subtle weight shift.",
+        "A dark crouching figure is present at the pin deck of lane 16 in the background for much of the first half; its identity and activity cannot be resolved.",
+        "Left-edge schedule board text is partially cut off in most frames; only fragments ('TOUR SCHEDULE', 'CHASING300', lane numbers 12/13) are legible, and 'TEED'/'PRATHER' banners are only fully readable after the slight left pan (~2.8 s)."
+      ]
+    }
+  ],
+  "audio": {
+    "speakers": [],
+    "utterances": [],
+    "sounds": [
+      {
+        "start": 0.0,
+        "end": 8.6,
+        "description": "Continuous low-frequency background hum or rumble."
+      },
+      {
+        "start": 5.2,
+        "end": 5.4,
+        "description": "A single sharp tap."
+      },
+      {
+        "start": 7.3,
+        "end": 8.1,
+        "description": "A loud clatter followed by scraping sounds."
+      }
+    ],
+    "uncertainties": []
+  },
+  "actions": [
+    {
+      "start": 3.7,
+      "end": 5.3,
+      "actor": "S01-P01",
+      "technique": "approach",
+      "evidence": "From a stationary back-to-camera stance through 3.6 s he initiates movement at ~3.7 s, stepping forward into the screen and drifting left toward the lane-14/15 area (4.1–4.5 s), continuing through the crouched swing (4.6–5.1 s) until the front-foot plant at ≈5.2–5.3 s.",
+      "detail": "Body travels away from camera and slightly leftward down the approach area; one-handed ball carry (ball held at his right side). First step estimated at 3.7 s from a subtle weight shift; final sliding step completes ≈5.3 s.",
+      "key_moments": [
+        {
+          "name": "first_step",
+          "time": 3.7
+        },
+        {
+          "name": "approach_end_slide",
+          "time": 5.3
+        }
+      ],
+      "shot": "S01",
+      "id": "A01"
+    },
+    {
+      "start": 4.5,
+      "end": 5.0,
+      "actor": "S01-P01",
+      "technique": "backswing",
+      "evidence": "At 4.6–5.0 s he bends forward and the ball is drawn rearward and low behind his hip (pink/red ball visible at his right side), reaching the rear apex before reversing.",
+      "detail": "Ball moves rearward relative to his torso during the latter part of the approach; one-handed grip, free arm tucked/extended for balance.",
+      "key_moments": [
+        {
+          "name": "backswing_apex",
+          "time": 5.0
+        }
+      ],
+      "shot": "S01",
+      "id": "A02"
+    },
+    {
+      "start": 5.0,
+      "end": 5.3,
+      "actor": "S01-P01",
+      "technique": "forward swing",
+      "evidence": "From the rear apex at 5.0 s the ball swings forward through 5.1–5.2 s, passing his sliding foot and rising toward the release point at 5.3 s.",
+      "detail": "Ball trajectory reverses from rearward to forward, travelling toward the lane (away from camera).",
+      "key_moments": [
+        {
+          "name": "forward_swing_start",
+          "time": 5.0
+        }
+      ],
+      "shot": "S01",
+      "id": "A03"
+    },
+    {
+      "start": 5.1,
+      "end": 5.4,
+      "actor": "S01-P01",
+      "technique": "slide",
+      "evidence": "At 5.1–5.3 s his front foot slides/plants on the approach while the body lowers into the delivery posture, finishing the slide by ≈5.4 s as the ball reaches the floor.",
+      "detail": "Front-foot slide into delivery; body oriented down the target lane. Which foot slides cannot be resolved reliably (see uncertainties).",
+      "key_moments": [
+        {
+          "name": "slide_finish",
+          "time": 5.4
+        }
+      ],
+      "shot": "S01",
+      "id": "A04"
+    },
+    {
+      "start": 5.3,
+      "end": 5.5,
+      "actor": "S01-P01",
+      "technique": "release",
+      "evidence": "Around 5.3–5.4 s the hand ceases to support the ball and a gold/tan ball is seen on the lane surface at his feet, then rolling independently (5.5 s onward).",
+      "detail": "One-handed release; ball begins independent travel down the lane, away from camera and leftward in screen coordinates. Note ball colour reads pink/red in hand but gold/tan on lane (lighting/material uncertainty).",
+      "key_moments": [
+        {
+          "name": "hand_separation",
+          "time": 5.4
+        }
+      ],
+      "shot": "S01",
+      "id": "A05"
+    },
+    {
+      "start": 5.5,
+      "end": 6.8,
+      "actor": "S01-P01",
+      "technique": "follow through",
+      "evidence": "After release the throwing arm continues through its arc (5.5–6.0 s) while the trailing leg lifts high behind him (clearly airborne 5.6–6.5 s, shoe visible on screen-left of the planted foot); he holds the extended finish then begins to recover upright by ≈6.6–6.8 s.",
+      "detail": "support_style = one_handed; finish_leg = trailing_lifted (trailing leg raised well off the floor). Body remains bent over the lane watching the ball travel away from camera.",
+      "key_moments": [
+        {
+          "name": "trailing_leg_lift_peak",
+          "time": 5.8
+        },
+        {
+          "name": "follow_through_end",
+          "time": 6.8
+        }
+      ],
+      "shot": "S01",
+      "id": "A06"
+    },
+    {
+      "start": 7.7,
+      "end": 8.5667,
+      "actor": "S01-P01",
+      "technique": "other",
+      "evidence": "Having stood and watched the ball reach the pins (rack on lane 14 scatters ≈7.7–7.9 s), he turns to face the camera at 7.7–8.1 s and walks back toward the right/foreground seating (8.1–8.5 s).",
+      "detail": "Post-shot recovery walk toward camera and screen-right; not a delivery technique. Clip ends mid-walk (boundary cropped at 8.5667 s).",
+      "key_moments": [
+        {
+          "name": "turn_to_camera",
+          "time": 7.9
+        }
+      ],
+      "shot": "S01",
+      "id": "A07"
+    }
+  ],
+  "warnings": [],
+  "alignment": {
+    "version": "0.8",
+    "status": "model_reviewed",
+    "source_sha256": "6f7a05703419de72ea2ad1b6a7c96950e988852fbb74a0ca3783c114e2ea6d88",
+    "action_signature": [
+      {
+        "id": "A01",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 3.7,
+        "end": 5.3,
+        "technique": "approach"
+      },
+      {
+        "id": "A02",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 4.5,
+        "end": 5.0,
+        "technique": "backswing"
+      },
+      {
+        "id": "A03",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 5.0,
+        "end": 5.3,
+        "technique": "forward swing"
+      },
+      {
+        "id": "A04",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 5.1,
+        "end": 5.4,
+        "technique": "slide"
+      },
+      {
+        "id": "A05",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 5.3,
+        "end": 5.5,
+        "technique": "release"
+      },
+      {
+        "id": "A06",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 5.5,
+        "end": 6.8,
+        "technique": "follow through"
+      },
+      {
+        "id": "A07",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 7.7,
+        "end": 8.5667,
+        "technique": "other"
+      }
+    ],
+    "shots": [
+      {
+        "shot": "S01",
+        "speech_segments": [],
+        "action_sounds": [
+          {
+            "action_id": "A01",
+            "status": "none_detected",
+            "description": "No distinguishable footfall transients above the continuous ambient hum during the approach steps (3.7–5.3 s).",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "medium",
+            "evidence": "Audio contains only a steady low-frequency hum plus one isolated tap (~5.3 s) and the later pin clatter; no rhythmic step sounds accompany the visible approach, so no sound can be attributed to A01.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A02",
+            "status": "none_detected",
+            "description": "No distinguishable sound attributable to the backswing.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "medium",
+            "evidence": "Backswing (4.5–5.0 s) is a silent body motion; the only nearby transient (tap at 5.2–5.4 s) falls after the backswing apex and is better explained by release/slide contact.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A03",
+            "status": "none_detected",
+            "description": "No distinguishable sound attributable to the forward swing.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "medium",
+            "evidence": "Forward swing (5.0–5.3 s) produces no separate audible event; the tap at 5.2–5.4 s coincides with ball-floor contact at the end of this motion and is assigned to the release moment instead.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A04",
+            "status": "none_detected",
+            "description": "No clearly separable slide-footfall sound; the single tap near 5.3 s is ambiguous and tentatively attributed to ball-on-lane contact at release.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "low",
+            "evidence": "Slide finishes ~5.4 s, exactly when the sharp tap occurs, but a ball striking the lane at release is an equally plausible source; without a second transient, the slide cannot claim the sound exclusively.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A05",
+            "status": "uncertain",
+            "description": "A single sharp tap at ~5.3 s is consistent with the ball contacting the lane surface at hand separation (~5.4 s), but the final slide footfall is a competing source.",
+            "sound_time": 5.3,
+            "visual_time": 5.4,
+            "confidence": "low",
+            "evidence": "Frames show the ball leaving the hand and resting on the lane at 5.4–5.5 s; the isolated tap in the audio (5.2–5.4 s) matches this contact time within ~0.1 s, yet the simultaneous front-foot plant (A04) could produce the same transient, so the source cannot be excluded.",
+            "audio_minus_visual_seconds": -0.1
+          },
+          {
+            "action_id": "A06",
+            "status": "none_detected",
+            "description": "No distinguishable sound attributable to the follow-through pose.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "medium",
+            "evidence": "Follow-through (5.5–6.8 s) is a held posture; audio during this span is only the ambient hum before the ball reaches the pins.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A07",
+            "status": "none_detected",
+            "description": "No distinguishable footstep sound attributable to the turn and walk-back.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "medium",
+            "evidence": "The loud clatter/scraping at 7.3–8.1 s aligns with the ball striking the pin rack (~7.7 s) and pin settling, not with the bowler's steps; his walk-back produces no separable transient above the hum.",
+            "audio_minus_visual_seconds": null
+          }
+        ],
+        "unmatched_sounds": [
+          {
+            "start": 0.0,
+            "end": 8.6,
+            "description": "Continuous low-frequency ambient hum/rumble present for the entire shot; background, not attributable to any candidate action."
+          },
+          {
+            "start": 7.3,
+            "end": 8.1,
+            "description": "Loud clatter of the bowling ball striking the pin rack (~7.7 s, pins visibly scatter on lane 14) followed by scraping/settling sounds; the pin impact is not represented by any candidate action."
+          }
+        ],
+        "uncertainties": [
+          "The isolated sharp tap at 5.2–5.4 s cannot be definitively assigned between the slide foot plant (A04) and the ball contacting the lane at release (A05).",
+          "The ball reads pink/red while in hand but gold/tan once on the lane; lighting/material ambiguity noted in the candidate description.",
+          "Which foot executes the slide could not be resolved from the rear view.",
+          "No speech or voices are present in this shot; the candidate utterance and voice lists are empty, and no audible dialogue was detected."
+        ],
+        "validation_warnings": []
+      }
+    ],
+    "boundary_warnings": [],
+    "limits": "Model-backed associations, not human-verified synchronization or measured impact times."
+  },
+  "segmentation": {
+    "minimum_segment_seconds": 4.0,
+    "detected_cut_seconds": [],
+    "retained_cut_seconds": [],
+    "segments": [
+      {
+        "shot": "S01",
+        "start": 0.0,
+        "end": 8.600000000000001,
+        "internal_cut_seconds": []
+      }
+    ]
+  }
+}

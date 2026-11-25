@@ -1,0 +1,26 @@
+Video captioning pipeline v0.8, sport: bowling. Describe the scene, people, clothing, setting, readable text and each execution in English. Preserve original-language text. Give movement direction in screen coordinates, observed starts and finishes, uncertainty, and separate repeated or overlapping actions. The allowed sports techniques follow.
+- approach | 助走: travel toward delivery from the first approach step until the final sliding step finishes
+- backswing | 后摆: ball travels rearward up to the change in direction
+- forward swing | 前摆: ball swings forward from the rear apex toward hand separation
+- slide | 滑步: final observable front-foot slide or plant into delivery
+- release | 出手: short transition as the hands cease to support the ball and it starts independent lane travel
+- follow through | 随挥: continuing arm and body movement after ball release into the finish
+- spare | 补中: delivery converting the remaining pins on a second attempt; require attempt context
+- other | 其他动作: other observable bowling action
+Use support_style two_handed/one_handed if visible during delivery and finish_leg trailing_lifted if visible during follow-through. Multiple limb phases can overlap. Ignore pin action as an athlete technique. A stationary set or finish pose alone is outside the action inventory. Distinguish motion from a held pose.
+VISUAL STAGE: inspect only this shot's timestamped source frames. No audio is supplied to this stage. Return one JSON object, no Markdown or commentary. The pipeline will render the final four-section report; do not output those sections here.
+
+Use caller-provided shot boundaries as segmentation metadata; determine people, text and events from the actual images. Frame times are global clip times, not a new local clock. All reported times must be numeric seconds within this shot. First/last frame gaps are not permission to invent a movement. If the shot begins/ends during an action, describe the observed portion and mark the boundary cropped.
+
+JSON schema (all keys required):
+{
+  "shot": "caller shot ID",
+  "actors": [{"id": "S01-P01", "description": "visible clothing, location, equipment or leading limb if supported; neutral identity"}],
+  "storyline": "English paragraph describing scene and visible sequence, first and last observed state, all actors' important changes, and any cropped/uncertain observations",
+  "visible_text": [{"start": 0.0, "end": 0.4, "text": "verbatim readable text; [illegible] for unreadable parts", "appearance": "position/style; timing uncertainty"}],
+  "actions": [{"start": 0.0, "end": 0.4, "actor": "an actor ID defined above", "technique": "one allowed canonical label", "evidence": "visible body/foot/equipment cues with frame times, including missing cues for fallback", "detail": "English description; separate screen direction of body from equipment trajectory; cropped/estimated boundaries; recovery purpose if applicable", "key_moments": [{"name": "applicable anchor name", "time": null}]}],
+  "uncertainties": ["observations that cannot be resolved from these frames"]
+}
+Use empty arrays for genuinely absent text/actions; do not populate placeholder examples. Actor IDs must begin with the caller shot ID. Do not link identities across shots because no other shot is supplied. For text visible in only one frame, state single-frame observation in appearance and use that frame's source display interval (up to 1/source_fps second, bounded by the shot); do not claim a longer display duration.
+
+Caller metadata: {"shot": "S01", "start": 0.0, "end": 5.5055000000000005, "duration": 5.5055000000000005, "source_fps": 29.97002997002997, "frame_times": [0.0, 0.1001, 0.2002, 0.3003, 0.4004, 0.5005, 0.6006, 0.7007, 0.8008, 0.9009, 1.001, 1.1011, 1.2012, 1.3013, 1.4014, 1.5015, 1.6016, 1.7017, 1.8018, 1.9019, 2.002, 2.1021, 2.2022, 2.3023, 2.4024, 2.5025, 2.6026, 2.7027, 2.8028, 2.9029, 3.003, 3.1031, 3.2032, 3.3033, 3.4034, 3.5035, 3.6036, 3.7037, 3.8038, 3.9039, 4.004, 4.1041, 4.2042, 4.3043, 4.4044, 4.5045, 4.6046, 4.7047, 4.8048, 4.9049, 5.005, 5.1051, 5.2052, 5.3053, 5.4054, 5.472133]}

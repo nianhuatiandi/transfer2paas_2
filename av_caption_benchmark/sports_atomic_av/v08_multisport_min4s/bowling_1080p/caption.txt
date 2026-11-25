@@ -1,0 +1,157 @@
+## Storyline
+
+00:00.000 - 00:08.600
+Inference segment: S01
+One continuous, slightly drifting shot looks diagonally down a row of oiled lanes (overhead rail numbers 12–18) inside a PBA event, with a large white 'Gene Carter's Pro Shop Classic' banner at upper-left, a black date strip 'AUG 16-18, 2019' and a 'THIS IS BOWLING' strip across the top, vertical player pennants (JONES, DAUGHERTY, ARCHER, TEECE, PRATHER, TACKETT) hanging above the pin decks, and a partially cut-off white schedule/scoring board at the far-left edge. The bowler S01-P01 stands nearly motionless at the right-side approach, ball held low at his side, watching the lanes from 0.0 s to about 3.5 s. Around 3.6 s he begins his approach, translating up-screen and drifting toward screen-left along the lane perspective toward the foul line; he bends at the waist as the ball drops into the backswing (≈4.5–4.9 s), swings it forward (≈4.9–5.2 s) while his front foot slides into delivery, and at ≈5.3 s the hand opens so the ball separates and starts independent travel up-screen/screen-left down the lane (visible rolling from ≈5.4 s). He holds a one_handed follow-through with the throwing arm extended up/forward and the trailing leg kicked high behind (finish_leg trailing_lifted) through ≈5.4–6.6 s, then gradually lowers the pose and stands watching (≈7.2–8.0 s, a held stance outside the action inventory). Pin scatter is visible at the left pin decks near 7.7–8.3 s (not an athlete technique). From ≈8.0 s he pivots away from the lane, rotating toward screen-left to face back toward the seating area, and begins walking off the approach; the shot ends mid-turn at 8.567 s, cropping the recovery. Camera framing drifts subtly right-to-left over the clip, progressively revealing the TEECE/PRATHER pennants, the lane-12 rail number, and more of the left schedule board. People: S01-P01: Male bowler viewed from behind on the right side of the frame, standing on the approach of a multi-lane PBA tournament center. He wears a black short-sleeved collared shirt with 'ZACH WILKINS' in light lettering across the upper back, dark trousers, dark shoes and a dark cap. He carries and delivers a reddish/pink-orange bowling ball with one hand (one_handed support).
+Audio: 00:00.000 - 00:07.240: continuous low-frequency background hum and indistinct room chatter; 00:05.160 - 00:05.360: a single sharp tap or click; 00:07.240 - 00:08.520: a brief burst of rapid shuffling footsteps followed by a dull thud
+
+## Visible Text
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"Professional Bowlers Association": small print atop the white banner, upper-left
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"GENE CARTER'S PRO SHOP": large red script on the white banner, left
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"CLASSIC": lettered on the orange arrow beneath the shop name
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"PBA": circular logo on the white banner
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"13 14 15 16 17 18": white lane numbers on the black overhead rail; 17/18 partly occluded by the bowler early, clearer after he moves; a '12' becomes visible at the far-left of the rail after ≈3.8 s as framing drifts
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"QUBICA AMF": repeated sponsor wordmark under the lane numbers
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"JONES": vertical dark-red pennant above lane 15
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"DAUGHERTY": vertical light pennant above lane 15/16
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"ARCHER": vertical purple pennant above lane 16
+
+00:03.800 - 00:08.567
+Inference segment: S01
+"TEECE": vertical light pennant above lane 17; only 'TE' legible while the bowler's head occludes the lower letters (before ≈3.8 s)
+
+00:03.000 - 00:08.567
+Inference segment: S01
+"PRATHER": vertical light pennant above lane 17/18; revealed as the bowler steps away and framing drifts
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"TACKETT": vertical dark-red pennant above lane 18, right
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"AUG 16-18, 2019": white-on-black date strip, top center
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"THIS IS BOWLING": top-right strip; early frames show only 'IS BOWLING' before the 'THIS' is revealed by the drift
+
+00:00.000 - 00:08.000
+Inference segment: S01
+"ZACH WILKINS": light lettering across the back of the bowler's black shirt; lost once he turns to profile at ≈8.0–8.3 s
+
+00:00.000 - 00:08.567
+Inference segment: S01
+"[illegible] SCHEDULE / TOUR SCHEDULE / CHASING300 / 300 / 12": white scoring/schedule board at far-left edge; progressively more readable as framing drifts, partly cut off throughout
+
+## Speakers and Transcript
+
+Speaker profiles:
+
+No intelligible speech
+
+## Atomic Sports Actions
+
+00:03.600 - 00:04.500
+Action ID: A01
+Inference segment: S01
+Actor: S01-P01
+Technique: approach
+Chinese term: 助走
+Visual evidence: After a near-held stance (0.0–3.5 s) with only minor weight shifts, the bowler takes forward steps; his body translates up-screen and drifts toward screen-left along the lane perspective toward the foul line, ball carried low at the side. First clear step ≈3.6 s; arrival at the slide/foul-line area ≈4.5 s.
+Detail: Approach walk from the waiting stance into the delivery area; movement is away from the camera (up-screen) with a screen-left drift following the lane axis. The start boundary is estimated because the pre-3.6 s posture is essentially static.
+Key moments: first_approach_step: 00:03.600 (estimated); foul_line_arrival: 00:04.500 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable approach footfalls; only the continuous ambient hum and indistinct chatter during 3.6-4.5 s.; confidence=medium; evidence: Audio across the approach window contains only the sustained background bed with no discrete transients aligned to his steps; visible footfalls alone are not evidence of sound.
+
+00:04.500 - 00:04.900
+Action ID: A02
+Inference segment: S01
+Actor: S01-P01
+Technique: backswing
+Chinese term: 后摆
+Visual evidence: Torso flexes forward and the ball travels rearward/downward behind the body, reaching the rear apex ≈4.9 s as he bends at the waist (frames 4.6–4.9 show the ball low behind the sliding foot).
+Detail: One_handed backswing; ball moves from the side carry to a low rear position behind the body.
+Key moments: rear_apex: 00:04.900 (estimated)
+Aligned sounds: none_detected after model AV review: No audible sound attributable to the backswing.; confidence=medium; evidence: The backswing is a silent body motion; no transient occurs in 4.5-4.9 s beyond the ambient bed.
+
+00:04.500 - 00:05.200
+Action ID: A03
+Inference segment: S01
+Actor: S01-P01
+Technique: slide
+Chinese term: 滑步
+Visual evidence: Front foot plants and glides on the approach surface into the delivery crouch, overlapping the backswing/forward-swing window (≈4.5–5.2 s); body lowers and rotates toward the lane.
+Detail: Final sliding step of the approach; the slide finish coincides with the ball reaching the ankle at the start of release.
+Key moments: slide_plant: 00:04.600 (estimated); slide_finish: 00:05.200 (estimated)
+Aligned sounds: none_detected after model AV review: Slide plant/glide not separately audible; the only nearby transient (5.16-5.36 s) aligns with ball release rather than the ~4.6 s plant.; confidence=medium; evidence: No discrete squeak or thud can be localized to the slide; the tap occurs roughly 0.6 s after the plant moment.
+
+00:04.900 - 00:05.200
+Action ID: A04
+Inference segment: S01
+Actor: S01-P01
+Technique: forward swing
+Chinese term: 前摆
+Visual evidence: Ball swings forward from the rear apex toward the lane, passing the body at ankle/foot level by ≈5.2 s (frames 5.0–5.2).
+Detail: One_handed forward swing accelerating the ball toward the release point.
+Key moments: none
+Aligned sounds: none_detected after model AV review: Forward swing produces no distinguishable sound.; confidence=medium; evidence: Swing is silent; ambient-only audio until the release transient.
+
+00:05.200 - 00:05.400
+Action ID: A05
+Inference segment: S01
+Actor: S01-P01
+Technique: release
+Chinese term: 出手
+Visual evidence: Hand opens and the ball separates from the fingers at ≈5.3 s, beginning independent travel; the ball is visible on the lane from ≈5.4 s rolling up-screen/screen-left toward the pin decks.
+Detail: Release at the slide; ball trajectory is away from the camera down the lane, converging toward the left-side pin decks in this diagonal perspective.
+Key moments: ball_separation: 00:05.300 (estimated)
+Aligned sounds: supported after model AV review: Single sharp tap/click as the ball leaves the hand and contacts the lane.; audio=00:05.260 (estimated); visual=00:05.300 (estimated); audio-minus-visual=-0.040 s; confidence=medium; evidence: A lone transient at 5.16-5.36 s coincides with frame-verified ball separation (~5.3 s) and first lane contact; no competing impact at that instant. Minor ambiguity with a late slide stop exists, but timing favors the release.
+
+00:05.400 - 00:07.200
+Action ID: A06
+Inference segment: S01
+Actor: S01-P01
+Technique: follow through
+Chinese term: 随挥
+Visual evidence: Throwing arm stays extended up/forward and the trailing leg is kicked high behind (trailing_lifted) through ≈5.4–6.6 s, then the pose gradually lowers as he watches the ball; arm/leg return toward neutral by ≈7.2 s.
+Detail: One_handed delivery with finish_leg trailing_lifted; body leans into the lane while the ball continues down-screen. The held watching stance after ≈7.2 s is not part of the technique.
+Key moments: arm_extended_peak: 00:05.600 (estimated); trailing_leg_lift_peak: 00:05.800 (estimated); pose_lowering: 00:07.000 (estimated)
+Aligned sounds: none_detected after model AV review: The follow-through pose itself generates no sound; the later ball roll and pin crash stem from the ball, not the held finish.; confidence=medium; evidence: After release, audio remains ambient until the rolling/pin sounds at ~7.2-8.5 s, which are not attributable to the bowler's pose.
+
+00:08.000 - 00:08.567
+Action ID: A07
+Inference segment: S01
+Actor: S01-P01
+Technique: other
+Chinese term: 其他动作
+Visual evidence: Bowler pivots away from the lane, rotating toward screen-left into a left profile (glasses visible), and starts walking back off the approach; the turn is still in progress when the shot ends, so the recovery is cropped at the boundary.
+Detail: Post-delivery recovery/turn-away, not a delivery technique; body rotation is toward screen-left, movement back down-screen toward the seating area.
+Key moments: turn_initiated: 00:08.100 (estimated)
+Aligned sounds: uncertain after model AV review: Possible shuffling footfalls as he pivots and walks back (~8.1-8.5 s), but the same window carries pin-impact clatter/reverberation, leaving the source ambiguous.; audio=00:08.300 (estimated); visual=00:08.200 (estimated); audio-minus-visual=+0.100 s; confidence=low; evidence: The 7.24-8.52 s burst mixes roll/pin sounds with any turn steps; frames show the turn beginning ~8.1 s, so footfalls cannot be cleanly separated from the pin-crash tail.

@@ -1,0 +1,1 @@
+{"speakers": [], "utterances": [], "sounds": [{"start": 0.0, "end": 3.2, "description": "A rolling sound on a hard surface with faint background chatter"}, {"start": 3.2, "end": 3.6, "description": "A sharp impact followed by clattering"}], "uncertainties": []}

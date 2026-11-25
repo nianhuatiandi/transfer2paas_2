@@ -1,0 +1,1 @@
+{"speakers": [], "utterances": [], "sounds": [{"start": 0.0, "end": 8.6, "description": "Continuous low-frequency background hum or rumble."}, {"start": 5.2, "end": 5.4, "description": "A single sharp tap."}, {"start": 7.3, "end": 8.1, "description": "A loud clatter followed by scraping sounds."}], "uncertainties": []}

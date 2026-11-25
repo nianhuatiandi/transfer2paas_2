@@ -1,0 +1,161 @@
+## Storyline
+
+00:00.000 - 00:05.506
+Inference segment: S01
+Single fixed (slightly drifting) shot from behind the seating area of a multi-lane bowling alley. Overhead lane markers 8–13 carry repeated 'QUBICA AMF' branding; sponsor banners read ANCHOR Buick GMC (left), '2019 GO BOWLING! PBA SUMMER TOUR SCHEDULE' with the USBC CUP shield and '#CHASING300' (center), and GENE CARTER'S PRO SHOP CLASSIC / Professional Bowlers Association (right), with a U.S. flag at top right. In the foreground a round scoring console, a glass bottle, papers, a plate and a phone sit on the table, and the seated spectator S01-P02 occupies the right chair. The bowler S01-P01 opens in a set stance at the approach (ball at his right hip, which appears on the image-right side of his torso since he faces away from camera). He then executes one complete right-handed delivery: push-away and backswing (ball drops low behind him around 0.4–0.5 and rises to a rear apex around 0.9–1.0 while he bends forward), a forward swing past the body (1.0–1.3), a sliding step in which his front foot plants toward the foul line and his trailing left leg lifts high and extends to image-left (1.0–1.5), and release at about 1.3–1.45, after which the ball rolls independently up-screen and slightly right down the lane (from ~x280,y600 at 1.4 to ~x505,y410 at 3.0) toward the pin deck aligned under marker 11. His follow-through holds the right arm raised above his head (1.6–2.1) with the trailing leg extended, then he straightens into an observing stance by ~2.3 and remains standing, watching, through the end of the clip. Around 3.9–4.4 the ball reaches the rack and pins scatter, leaving a small number of pins standing; this pin action is observed but is not an athlete technique. The clip begins with the bowler already set and ends with him standing and watching, and his feet are partly hidden by the foreground console during the early approach, so the first step and the exact slide-plant instant are estimated. People: S01-P01: Male bowler seen from behind on the left-center approach of a multi-lane alley, wearing a black short-sleeve shirt with a grey back panel printed 'GET MOTIVATED' (upper back) and 'EJ Tackett' (stylized name on the panel), black trousers and dark shoes; right-handed delivery, ball carried and swung in the right hand with the left arm used only for balance.; S01-P02: Seated spectator in the right foreground, only the back of the head (dark hair) and shoulders visible in a tan/beige bowling chair, facing the lanes; stationary for the whole clip.
+Audio: 00:00.000 - 00:05.360: continuous low-level background murmur of indistinct voices; 00:01.720 - 00:02.080: sharp impact sound followed by a rolling clatter; 00:03.440 - 00:04.080: multiple hard objects colliding and scattering across a surface
+Speech (AV reviewed; associations below): 00:04.800 - 00:05.200 V01: Whoa!
+
+## Visible Text
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"ANCHOR": large black header on left overhead banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"AnchorBuickGMC.com": small text top-left of ANCHOR banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"800-423-4479": phone number top-left of ANCHOR banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"It's Easy": script tagline on ANCHOR banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"Your local dealer, just 15 minutes away in Elkton!": black strip along bottom of ANCHOR banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"GM": logo at right of ANCHOR banner beside red truck
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"USBC CUP": shield logo on center schedule banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"2019 GO BOWLING! PBA SUMMER TOUR SCHEDULE": header of center white banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"#CHASING300": hashtag at lower-right of center banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"[illegible schedule grid]": small tabular text on center banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"Professional Bowlers Association": small text top of right banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"GENE CARTER'S PRO SHOP": large red script on right banner; cropped to 'GENE CARTER'S P…' at the right frame edge in early frames and revealing more ('…PRO S…') as the camera drifts later
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"C·L·A·S·S·I·C": spaced letters under the Gene Carter's name on right banner
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"QUBICA AMF": repeated lane-marker branding above each lane
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"8 10 11 12 13": lane numbers on the overhead marker strip (9 occluded by the bowler at 0.0–~1.0)
+
+00:01.100 - 00:05.470
+Inference segment: S01
+"9": lane number revealed once the bowler moves right; single continuous visibility from ~1.1 s to shot end
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"GET MOTIVATED": white text across upper back of bowler's shirt; clearest 0.0–1.0, less legible while bent/turning
+
+00:00.000 - 00:05.470
+Inference segment: S01
+"EJ Tackett": stylized name on grey back panel of bowler's shirt; fully legible early, reduced to 'EJ T…' at distance/angle later
+
+## Speakers and Transcript
+
+Speaker profiles:
+V01 - male voice, mid-range pitch, speaking in English with an exclamatory tone; visual identity assessed per utterance by model AV review.
+
+00:04.800 - 00:05.200
+Speaker: V01 (uncertain)
+State: loud single-word exclamation; wording and timing as supplied
+Content: "Whoa!"
+Related actions: none after AV review
+AV evidence: A loud male exclamation is audible at ~4.8-5.2 s, shortly after the pin crash. Neither on-screen person offers mouth evidence: the bowler (S01-P01) has his back to the camera throughout, and the seated spectator (S01-P02) is seen only from behind. The voice could belong to the bowler reacting to his own shot or to an off-camera companion, so no visible speaker can be confirmed.; model confidence=medium
+
+## Atomic Sports Actions
+
+00:00.200 - 00:01.000
+Action ID: A01
+Inference segment: S01
+Actor: S01-P01
+Technique: backswing
+Chinese term: 后摆
+Visual evidence: Ball leaves the hip hold at ~0.2 (push-away) and swings rearward/downward on the bowler's right side, which appears on the image-RIGHT of his torso because he faces away from camera: low point near the floor at 0.4–0.5 (ball ~x210,y750), then rising behind the shoulder to the rear apex at ~0.9–1.0 (deep forward bend, arm extended back-up, ball ~x270–280,y350–400).
+Detail: One-handed right-arm swing rearward up to the change of direction; on-screen the ball moves down then up along the image-right side of the body. Overlaps the early approach steps.
+Key moments: push_away: 00:00.200 (estimated); backswing_apex: 00:00.950 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable sound attributable to the backswing; only the continuous ambient murmur is present during 0.2-1.0 s.; confidence=high; evidence: The swing motion is silent in the audio; no transient or squeak separates from the background during the backswing interval.
+
+00:00.250 - 00:01.400
+Action ID: A02
+Inference segment: S01
+Actor: S01-P01
+Technique: approach
+Chinese term: 助走
+Visual evidence: Static set stance at 0.0–0.2 (ball at right hip, upright). From ~0.3 the torso and hips translate down-lane (body shifts from image-x≈150 at 0.8 to ≈200–230 at 1.2–1.4) with steps toward the foul line; feet are partly hidden by the foreground scoring console, so the first-step instant is estimated.
+Detail: Body travels forward/down-range, on screen toward image-right and slightly up, from the set position to the delivery slide; ends as the sliding step completes ~1.3–1.5. Start boundary cropped/estimated due to console occlusion of the feet.
+Key moments: approach_start: 00:00.250 (estimated); approach_end: 00:01.400 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable footfall or approach sound separable from the ambient background during 0.25-1.4 s.; confidence=medium; evidence: Steps are visually implied but the audio contains no discrete step transients in this window; the only sharp impact in the clip occurs later (~1.7 s) and is better explained by ball-lane contact.
+
+00:01.000 - 00:01.300
+Action ID: A03
+Inference segment: S01
+Actor: S01-P01
+Technique: forward swing
+Chinese term: 前摆
+Visual evidence: From the rear apex the ball swings forward and down past the body (image-right toward center), reaching the low release point at the floor by ~1.2–1.3 (ball ~x230–280,y600–650).
+Detail: Arm drives the ball from the rear apex toward hand separation; on-screen trajectory moves from the raised rear position down and slightly left-to-right into the release pocket at the foul line.
+Key moments: forward_swing_start: 00:01.000 (estimated); hand_separation: 00:01.300 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable sound attributable to the forward swing itself.; confidence=high; evidence: The arm swing produces no audible transient; the subsequent impact sound begins after hand separation.
+
+00:01.000 - 00:01.500
+Action ID: A04
+Inference segment: S01
+Actor: S01-P01
+Technique: slide
+Chinese term: 滑步
+Visual evidence: Front (right) foot plants/slides toward the foul line while the torso leans down-lane; the trailing (left) leg lifts and extends backward to image-LEFT, fully airborne by 1.3–1.6 (trailing foot ~x30–80,y600–650), lowering by ~2.0.
+Detail: Final sliding step into the delivery; slide direction is down-range (image-right/up), trailing leg rises behind to image-left. Overlaps the tail of the approach, the forward swing and the release.
+Key moments: slide_start: 00:01.000 (estimated); slide_finish: 00:01.500 (estimated)
+Aligned sounds: none_detected after model AV review: No separable slide-foot brake sound; the sharp thud near 1.7 s is accompanied by rolling clatter, indicating the ball rather than the foot.; confidence=medium; evidence: The 1.72-2.08 s event is an impact followed by sustained rolling, which a foot plant cannot produce; therefore the sound is not attributed to the slide.
+
+00:01.300 - 00:01.450
+Action ID: A05
+Inference segment: S01
+Actor: S01-P01
+Technique: release
+Chinese term: 出手
+Visual evidence: Hands cease supporting the ball at the low swing point ~1.3; the ball is seen rolling independently on the lane surface from 1.4 (x≈280,y≈600) onward, with the bowler's right hand empty and rising.
+Detail: Short transition from swing to free-rolling ball; ball trajectory on screen heads up-screen and slightly right down the lane toward the pin deck.
+Key moments: release: 00:01.350 (estimated)
+Aligned sounds: uncertain after model AV review: Sharp thud of the ball contacting the lane followed by rolling clatter, consistent with the release; audible onset (~1.72 s) trails the visual hand separation (~1.35 s) by more than 0.2 s.; audio=00:01.720 (estimated); visual=00:01.350 (estimated); audio-minus-visual=+0.370 s; confidence=low; evidence: Frames show the ball free-rolling on the lane from ~1.4 s, matching the rolling clatter that follows the impact. However the impact transient localizes at ~1.72 s, over 0.2 s after the visual release moment, and the slide-foot brake is a residual competing source, so supported status cannot be claimed.
+
+00:01.400 - 00:02.300
+Action ID: A06
+Inference segment: S01
+Actor: S01-P01
+Technique: follow through
+Chinese term: 随挥
+Visual evidence: After release the right arm continues upward, hand raised above the head from ~1.6 to ~2.1 (against the ANCHOR banner), while the body balances on the slide foot and the trailing left leg stays extended high to image-left through ~1.9, then lowers as he straightens into an upright observing stance by ~2.2–2.3.
+Detail: Continuing arm and body movement into the finish; support_style = one_handed (left arm only counterbalances), finish_leg = trailing_lifted. Body faces down-range (image-right/up). After ~2.3 he merely stands and watches (held pose, outside the action inventory).
+Key moments: follow_through_start: 00:01.400 (estimated); finish_pose: 00:02.300 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable sound attributable to the follow-through; the bowler's arm and balance movements are silent.; confidence=high; evidence: During 1.4-2.3 s the only audio is ambient murmur plus the tail of the ball's rolling, which belongs to the ball's travel, not the body motion.

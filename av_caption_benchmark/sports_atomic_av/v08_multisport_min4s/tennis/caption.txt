@@ -1,0 +1,108 @@
+## Storyline
+
+00:00.000 - 00:07.600
+Inference segment: S01
+A single player stands alone under a spotlight on a dark court, bent forward at the waist in a pre-serve routine, racket dangling in his right hand at screen left and ball in his left hand at screen right. From 0.4 s he drives the ball down with his left hand for the first bounce (ball on the floor at ~0.7 s, re-caught by 0.9 s), holds it briefly at waist height (1.0–1.6 s), then repeats a second hand-driven bounce between 1.7 s and 2.3 s (floor contact ~2.0–2.1 s, catch 2.3 s). At 2.4–2.6 s he swings the racket horizontal in front of his body and transfers the ball from his left hand onto the strings, then remains almost motionless in this ball-on-strings holding posture, gazing toward screen right, from ~2.6 s until ~4.9 s. From 5.0 s the left (non-racket) arm lifts the ball off the strings and releases it into the service toss (ball visible as a green blur high above his head at 5.2 s, tossing arm fully extended by 5.3–5.4 s). The racket arm, cocked back low on screen left at 5.5 s, then accelerates upward along the screen-left side (5.6–6.0 s) into an overhead extension (~6.1–6.2 s), after which the racket and arm sweep across and down toward screen right in the follow-through (6.3–7.0 s); his feet appear momentarily off the ground during the strike/extension phase (~6.4–6.7 s) and he lands in a forward lunge facing screen right by ~6.9–7.0 s. From 7.1 s to the end of the clip (7.567 s) he recovers upright and draws the racket back in front of his body with both hands in a ready position. Ball–racket contact itself is never visible in these frames, and the long static ball-on-strings hold between the bounce routine and the toss is recorded only as context, not as a technique. People: S01-P01: Male tennis player with dark hair, centre-frame on a dark blue court against a black background, facing screen right. He wears a yellow short-sleeved shirt with a diagonal blue/purple front panel and red sleeve trim, black shorts, white crew socks and white tennis shoes. He holds the racket in his right hand (screen left) and the ball in his left hand (screen right) during the pre-serve routine.
+Audio: 00:00.000 - 00:07.280: Continuous upbeat instrumental background music featuring acoustic guitar strumming and light percussion.
+Speech (AV reviewed; associations below): 00:00.000 - 00:00.560 V01: a sacar.
+
+## Visible Text
+
+00:00.000 - 00:07.566
+Inference segment: S01
+"[illegible]": small light-coloured chest logo on the blue/purple panel of the shirt, centre torso; too low-resolution to read; present whenever the torso faces the camera across the whole shot
+
+00:00.000 - 00:07.566
+Inference segment: S01
+"[illegible]": small white logo on the leg of the black shorts; unreadable at this resolution; visible throughout while the lower body faces camera
+
+## Speakers and Transcript
+
+Speaker profiles:
+V01 - Male voice speaking Spanish with a neutral accent and clear articulation.; visual identity assessed per utterance by model AV review.
+
+00:00.000 - 00:00.560
+Speaker: V01 (off_screen)
+State: Neutral tone, moderate pace; Spanish narration, phrase appears clipped at clip start (likely tail of a longer sentence such as 'va a sacar').
+Content: "a sacar."
+Related actions: A05: description (The utterance 'a sacar' ('to serve') announces/describes the service demonstration that the player performs later in the same shot (toss and serve, 5.0–7.0 s); content directly matches the served action rather than the incidental ball bounces overlapping the speech.)
+AV evidence: A male Spanish voice is heard at 0.0–0.56 s while the on-screen player (S01-P01) is crouched looking down at the ball, mouth not moving in a speech-compatible way; no visible person is plausibly producing the line, so it is narration rather than on-screen speech.; model confidence=high
+
+## Atomic Sports Actions
+
+00:00.400 - 00:00.900
+Action ID: A01
+Inference segment: S01
+Actor: S01-P01
+Technique: ball bounce
+Chinese term: 拍球
+Visual evidence: Left hand lowers from waist (0.4–0.5 s), ball descends past thigh/knee (0.5–0.6 s), ball is on the floor at ~0.7 s, rises again past the shin (0.8 s) and is re-caught in the left hand by 0.9 s; racket stays idle in the right hand on screen left throughout.
+Detail: First pre-serve hand-driven bounce; ball travels vertically down and back up on the screen-right side of the body, near the left leg; body remains crouched and facing screen right.
+Key moments: release: 00:00.500 (estimated); ground_contact: 00:00.700 (estimated); catch: 00:00.900 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable ball-bounce transient; only continuous instrumental music is audible during 0.4–0.9 s.; confidence=medium; evidence: Frames show the hand-driven bounce (release ~0.5 s, floor contact ~0.7 s, catch ~0.9 s), but the audio track contains only the narration tail and steady guitar/percussion music; no discrete impact can be isolated from the music bed.
+
+00:01.700 - 00:02.300
+Action ID: A02
+Inference segment: S01
+Actor: S01-P01
+Technique: ball bounce
+Chinese term: 拍球
+Visual evidence: Ball held at waist in left hand at 1.7 s, drops to knee (1.8 s), reaches the floor (1.9–2.1 s), rebounds past the knee (2.2 s) and is caught again in the left hand at 2.3 s.
+Detail: Second pre-serve hand-driven bounce, same vertical path on the screen-right side of the body; immediately after this catch he begins moving the ball toward the racket.
+Key moments: release: 00:01.800 (estimated); ground_contact: 00:02.000 (estimated); catch: 00:02.300 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable ball-bounce transient for the second pre-serve bounce.; confidence=medium; evidence: Visual bounce occurs ~1.8–2.3 s (floor contact ~2.0 s), but no separate impact sound is audible above the continuous background music.
+
+00:02.400 - 00:02.600
+Action ID: A03
+Inference segment: S01
+Actor: S01-P01
+Technique: other
+Chinese term: 其他动作
+Visual evidence: At 2.4–2.5 s the right hand swings the racket head up to a horizontal position in front of the body while the left hand carrying the ball meets the strings; by 2.6 s the ball rests on the strings with the left hand at the throat, a posture held unchanged through ~4.9 s.
+Detail: Transfer of the bounced ball onto the racket strings as part of the pre-serve settling routine; no stroke is played. The subsequent static hold (2.6–4.9 s) is outside the technique scope and is not logged separately.
+Key moments: ball_placed_on_strings: 00:02.600 (estimated)
+Aligned sounds: none_detected after model AV review: No audible sound attributable to placing the ball on the strings.; confidence=medium; evidence: The ball-to-strings transfer at ~2.4–2.6 s is a soft, low-energy contact; audio shows only music, with no transient at that time.
+
+00:05.000 - 00:05.400
+Action ID: A04
+Inference segment: S01
+Actor: S01-P01
+Technique: ball toss
+Chinese term: 抛球
+Visual evidence: Left (non-racket) hand raises the ball from the strings at 5.0–5.1 s, releases it (ball visible as a green blur above the head at 5.2 s), and the left arm finishes fully extended upward at 5.3–5.4 s.
+Detail: Non-racket-arm toss rising vertically above the head; ball leaves the hand between 5.1 and 5.2 s.
+Key moments: release: 00:05.200 (estimated); arm_fully_extended: 00:05.400 (estimated)
+Aligned sounds: none_detected after model AV review: No audible sound attributable to the ball toss release.; confidence=medium; evidence: Toss release ~5.2 s is visually clear (ball blur above head, arm extended by 5.4 s) but produces no distinguishable sound over the music.
+
+00:05.000 - 00:07.000
+Action ID: A05
+Inference segment: S01
+Actor: S01-P01
+Technique: serve
+Chinese term: 发球
+Visual evidence: Parent stroke spanning the toss initiation (left hand lifts ball off strings, 5.0–5.1 s), the release and upward flight of the ball (5.2 s), the racket dropping back and accelerating overhead (5.5–6.2 s), and the sweep across/down to screen right after extension (6.3–7.0 s); feet leave the ground around 6.4–6.7 s and he lands lunging toward screen right by 6.9–7.0 s.
+Detail: Complete service motion from toss initiation through follow-through; body rises from the crouch, rotates to face screen right, jumps, and finishes with the racket crossing to the screen-right/down side. Ball–racket contact is not directly visible, so contact timing is inferred only from the overhead extension at ~6.1–6.2 s.
+Key moments: toss_initiation: 00:05.000 (estimated); overhead_extension: 00:06.200 (estimated); stroke_completion: 00:07.000 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable serve-impact sound; ball–racket contact is not visible and no transient separates from the music.; confidence=medium; evidence: The serve spans 5.0–7.0 s with inferred contact near overhead extension (~6.1–6.2 s); the audio during this window is only the continuous instrumental track, so no impact can be confirmed or localized.
+
+00:05.500 - 00:06.200
+Action ID: A06
+Inference segment: S01
+Actor: S01-P01
+Technique: upward swing
+Chinese term: 向上挥拍
+Visual evidence: Racket arm (right) is cocked back low on screen left at 5.5 s, then the racket traces upward along the screen-left side (5.6–5.9 s) and reaches the overhead position beside the extended tossing arm by 6.0–6.2 s; torso arches backward and head tilts up.
+Detail: Racket accelerates from the dropped-back position up toward the overhead; equipment trajectory runs from lower screen-left to upper centre; no ball contact is visible in the frames.
+Key moments: swing_start: 00:05.500 (estimated); overhead: 00:06.200 (estimated)
+Aligned sounds: none_detected after model AV review: No audible sound attributable to the upward racket swing.; confidence=medium; evidence: Racket acceleration 5.5–6.2 s is visible (frames show racket tracing from low screen-left to overhead), but a swing alone produces no distinguishable sound in the mix.
+
+00:06.300 - 00:07.000
+Action ID: A07
+Inference segment: S01
+Actor: S01-P01
+Technique: follow through
+Chinese term: 随挥
+Visual evidence: After the overhead extension the racket arm sweeps across the body: arms spread at 6.3–6.4 s, body arched with feet off the ground ~6.4–6.7 s, then the blurred racket and arm continue down and out to the screen-right side (6.8–6.9 s) as the body uncoils into the landing lunge, finishing low at screen right by 7.0 s.
+Detail: Post-extension continuation of the racket and arm from overhead across to the screen-right/down side; body momentum carries him forward toward screen right, feet returning to the court by ~7.0 s.
+Key moments: follow_through_start: 00:06.300 (estimated); finish: 00:07.000 (estimated)
+Aligned sounds: none_detected after model AV review: No audible sound attributable to the follow-through or landing.; confidence=medium; evidence: Follow-through and landing lunge 6.3–7.0 s are visible, but no footfall or racket swoosh transient can be separated from the background music.

@@ -1,0 +1,26 @@
+Video captioning pipeline v0.8, sport: skate. Describe the scene, people, clothing, setting, readable text and each execution in English. Preserve original-language text. Give movement direction in screen coordinates, observed starts and finishes, uncertainty, and separate repeated or overlapping actions. The allowed sports techniques follow.
+- kickflip | 尖翻: aerial trick with a toe-side flick and a deck roll about its long axis
+- heelflip | 跟翻: aerial trick with heel-side flick and opposite long-axis roll
+- ollie | 豚跳: pop and jump with board rising level, without a deck flip
+- pop shove it | 板面水平旋转: board spins primarily around a vertical axis
+- unresolved flip | 翻板方向未明: airborne deck clearly flips but its direction or initiating foot is unresolved
+- push | 蹬地推进: one foot drives along the ground to propel the board
+- rolling | 滑行: observable wheels-down travel with the rider aboard
+- other | 其他动作: other observed skating technique
+Use travel_direction left/right relative to screen and outcome landed/stepped_off only if supported. Score a complete trick from the final visible load/pop through wheels-down landing; rolling before and after are separate instances. Keep flip axis, board orientation and feet in the evidence. Give the conservative family when the footage cannot distinguish flip direction.
+VISUAL STAGE: inspect only this shot's timestamped source frames. No audio is supplied to this stage. Return one JSON object, no Markdown or commentary. The pipeline will render the final four-section report; do not output those sections here.
+
+Use caller-provided shot boundaries as segmentation metadata; determine people, text and events from the actual images. Frame times are global clip times, not a new local clock. All reported times must be numeric seconds within this shot. First/last frame gaps are not permission to invent a movement. If the shot begins/ends during an action, describe the observed portion and mark the boundary cropped.
+
+JSON schema (all keys required):
+{
+  "shot": "caller shot ID",
+  "actors": [{"id": "S01-P01", "description": "visible clothing, location, equipment or leading limb if supported; neutral identity"}],
+  "storyline": "English paragraph describing scene and visible sequence, first and last observed state, all actors' important changes, and any cropped/uncertain observations",
+  "visible_text": [{"start": 0.0, "end": 0.4, "text": "verbatim readable text; [illegible] for unreadable parts", "appearance": "position/style; timing uncertainty"}],
+  "actions": [{"start": 0.0, "end": 0.4, "actor": "an actor ID defined above", "technique": "one allowed canonical label", "evidence": "visible body/foot/equipment cues with frame times, including missing cues for fallback", "detail": "English description; separate screen direction of body from equipment trajectory; cropped/estimated boundaries; recovery purpose if applicable", "key_moments": [{"name": "applicable anchor name", "time": null}]}],
+  "uncertainties": ["observations that cannot be resolved from these frames"]
+}
+Use empty arrays for genuinely absent text/actions; do not populate placeholder examples. Actor IDs must begin with the caller shot ID. Do not link identities across shots because no other shot is supplied. For text visible in only one frame, state single-frame observation in appearance and use that frame's source display interval (up to 1/source_fps second, bounded by the shot); do not claim a longer display duration.
+
+Caller metadata: {"shot": "S01", "start": 0.0, "end": 5.5, "duration": 5.5, "source_fps": 24.0, "frame_times": [0.0, 0.083333, 0.166667, 0.25, 0.333333, 0.416667, 0.5, 0.583333, 0.666667, 0.75, 0.833333, 0.916667, 1.0, 1.083333, 1.166667, 1.25, 1.333333, 1.416667, 1.5, 1.583333, 1.666667, 1.75, 1.833333, 1.916667, 2.0, 2.083333, 2.166667, 2.25, 2.333333, 2.416667, 2.5, 2.583333, 2.666667, 2.75, 2.833333, 2.916667, 3.0, 3.083333, 3.166667, 3.25, 3.333333, 3.416667, 3.5, 3.583333, 3.666667, 3.75, 3.833333, 3.916667, 4.0, 4.083333, 4.166667, 4.25, 4.333333, 4.416667, 4.5, 4.583333, 4.666667, 4.75, 4.833333, 4.916667, 5.0, 5.083333, 5.166667, 5.25, 5.333333, 5.416667, 5.458333]}

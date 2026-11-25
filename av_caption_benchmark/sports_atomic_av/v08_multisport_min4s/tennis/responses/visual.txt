@@ -1,0 +1,119 @@
+{
+  "shot": "S01",
+  "actors": [
+    {
+      "id": "S01-P01",
+      "description": "Male tennis player, dark hair, wearing a yellow short-sleeved shirt with a diagonal blue/purple front panel and red sleeve trim, black shorts, white crew socks and white tennis shoes; holds a racket in his right hand (screen left) and the ball in his left hand (screen right); positioned centre-frame on a dark blue court against a black background, facing screen right."
+    }
+  ],
+  "storyline": "A single player stands alone under a spotlight on a dark court, bent forward at the waist in a pre-serve routine. From 0.4 s he drives the ball down with his left hand for the first bounce (ball on the floor about 0.7 s, caught again by 0.9 s), holds it briefly, then repeats a second hand-driven bounce between 1.7 s and 2.3 s. At 2.4–2.6 s he transfers the ball from his left hand onto the strings of the horizontally held racket and then remains almost motionless in this ready/holding posture, gazing toward screen right, until about 4.9 s. From 5.0 s he lifts the ball off the strings and releases it into the service toss (ball visible high above his head at 5.2 s, tossing arm fully extended by 5.3–5.4 s). The racket arm, which had dropped back behind him on screen left, then accelerates upward (5.5–6.2 s) into an overhead extension, after which the racket and arm sweep across and down to screen right in the follow-through (6.3–6.9 s); his feet appear momentarily off the ground during the strike phase and he lands in a forward lunge facing screen right. By 7.0–7.5 s he has recovered upright and drawn the racket back in front of his body with both hands in a ready position as the clip ends. Ball–racket contact itself is never visible in these frames, and the long static hold between the bounce routine and the toss is recorded only as context, not as a technique.",
+  "visible_text": [
+    {
+      "start": 0.0,
+      "end": 7.566,
+      "text": "[illegible]",
+      "appearance": "small light-coloured chest logo on the blue panel of the shirt, centre torso; too low-resolution to read; present whenever the torso faces camera"
+    },
+    {
+      "start": 0.0,
+      "end": 7.566,
+      "text": "[illegible]",
+      "appearance": "small white logo on the left leg of the black shorts; unreadable at this resolution"
+    }
+  ],
+  "actions": [
+    {
+      "start": 0.4,
+      "end": 0.9,
+      "actor": "S01-P01",
+      "technique": "ball bounce",
+      "evidence": "Left hand lowers from waist (0.4–0.5 s), ball descends past the knee (0.5–0.6 s), ball is on the floor at ~0.7 s, rises again (0.8 s) and is re-caught in the left hand by 0.9 s; racket stays idle in the right hand on screen left.",
+      "detail": "First pre-serve hand-driven bounce; ball travels vertically down and back up on the screen-right side of the body, near the left leg; body remains crouched and facing screen right.",
+      "key_moments": [
+        {"name": "release", "time": 0.5},
+        {"name": "ground_contact", "time": 0.7},
+        {"name": "catch", "time": 0.9}
+      ]
+    },
+    {
+      "start": 1.7,
+      "end": 2.3,
+      "actor": "S01-P01",
+      "technique": "ball bounce",
+      "evidence": "Ball held at waist at 1.7 s, drops to knee (1.8 s), reaches the floor (1.9–2.1 s), rebounds (2.2 s) and is caught again in the left hand at 2.3 s.",
+      "detail": "Second pre-serve hand-driven bounce, same vertical path on the screen-right side of the body; immediately after this catch he begins moving the ball toward the racket.",
+      "key_moments": [
+        {"name": "release", "time": 1.8},
+        {"name": "ground_contact", "time": 2.0},
+        {"name": "catch", "time": 2.3}
+      ]
+    },
+    {
+      "start": 2.4,
+      "end": 2.6,
+      "actor": "S01-P01",
+      "technique": "other",
+      "evidence": "At 2.4–2.5 s the left hand carrying the ball meets the racket head held horizontally in front of the body; by 2.6 s the ball rests on the strings with the left hand at the throat, a posture held unchanged through 4.9 s.",
+      "detail": "Transfer of the bounced ball onto the racket strings as part of the pre-serve settling routine; no stroke is played. The subsequent static hold (2.6–4.9 s) is outside the technique scope and is not logged separately.",
+      "key_moments": [
+        {"name": "ball_placed_on_strings", "time": 2.6}
+      ]
+    },
+    {
+      "start": 5.0,
+      "end": 6.9,
+      "actor": "S01-P01",
+      "technique": "serve",
+      "evidence": "Parent stroke spanning the toss initiation (left hand lifts ball off strings, 5.0–5.1 s), the release and upward flight of the ball (5.2 s), the racket dropping back and then accelerating overhead (5.5–6.2 s), and the sweep across/down after extension (6.3–6.9 s); feet leave the ground around 6.5–6.7 s and he lands lunging toward screen right.",
+      "detail": "Complete service motion from toss initiation through follow-through; body rises from the crouch, rotates to face screen right, jumps, and finishes with the racket crossing to the screen-right side. Ball–racket contact is not directly visible, so contact timing is inferred only from the overhead extension at ~6.2 s.",
+      "key_moments": [
+        {"name": "toss_initiation", "time": 5.0},
+        {"name": "overhead_extension", "time": 6.2},
+        {"name": "stroke_completion", "time": 6.9}
+      ]
+    },
+    {
+      "start": 5.0,
+      "end": 5.4,
+      "actor": "S01-P01",
+      "technique": "ball toss",
+      "evidence": "Left (non-racket) hand raises the ball from the strings at 5.0–5.1 s, releases it (ball visible as a green blur above the head at 5.2 s), and the left arm finishes fully extended upward at 5.3–5.4 s.",
+      "detail": "Non-racket-arm toss rising vertically above the head, slightly screen-left of the body midline; ball leaves the hand between 5.1 and 5.2 s.",
+      "key_moments": [
+        {"name": "release", "time": 5.2},
+        {"name": "arm_fully_extended", "time": 5.4}
+      ]
+    },
+    {
+      "start": 5.5,
+      "end": 6.2,
+      "actor": "S01-P01",
+      "technique": "upward swing",
+      "evidence": "Racket arm (right) is cocked back low on screen left at 5.5 s, then the racket traces upward along the screen-left side (5.6–5.9 s) and reaches the overhead position beside the extended tossing arm by 6.0–6.2 s; torso arches backward.",
+      "detail": "Racket accelerates from the dropped-back position up toward the overhead; equipment trajectory runs from lower screen-left to upper centre; no ball contact is visible in the frames.",
+      "key_moments": [
+        {"name": "swing_start", "time": 5.5},
+        {"name": "overhead", "time": 6.2}
+      ]
+    },
+    {
+      "start": 6.3,
+      "end": 6.9,
+      "actor": "S01-P01",
+      "technique": "follow through",
+      "evidence": "After the overhead extension the racket arm sweeps across the body: arms spread at 6.4 s, racket passes behind/left of the head (6.5 s), then the blurred racket and arm continue down and out to the screen-right side (6.6–6.9 s) as the body uncoils into the landing lunge.",
+      "detail": "Post-contact continuation of the racket and arm from overhead across to the screen-right/down side; body momentum carries him forward toward screen right, feet returning to the court by 7.0 s.",
+      "key_moments": [
+        {"name": "follow_through_start", "time": 6.3},
+        {"name": "finish", "time": 6.9}
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Ball–racket contact is never visible in any frame (the served ball leaves the field of view), so the exact instant of contact and any spin cannot be confirmed; the overhead extension at ~6.2 s is the only proxy.",
+    "Motion blur and the 10 fps sampling make the boundaries between upward swing, contact and follow-through approximate (±0.1 s).",
+    "Whether the player truly leaves the ground is suggested by the airborne-looking feet at 6.5–6.7 s but not sharply resolved.",
+    "Only two hand-driven bounces are observable in this clip; earlier or later bounces outside the shot are unknown.",
+    "The small chest and shorts logos are present but unreadable at this resolution."
+  ]
+}

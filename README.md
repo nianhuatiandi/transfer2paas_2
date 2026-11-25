@@ -6,6 +6,7 @@
 
 | 内容 | 入口 |
 | --- | --- |
+| 最新 8 个运动样例，含 3 个原生 1080p 视频 | [视频、英文 caption、时间戳与实际 prompt](av_caption_benchmark/sports_atomic_av/v08_multisport_min4s/README.md) |
 | 教师汇报：专业原子动作音视频描述评测 | [PPT、PDF、逐页讲稿与素材包](av_caption_benchmark/idea_talk/README.md) |
 | 当前确认的研究想法、评测边界与候选贡献 | [CURRENT_PROPOSAL.md](av_caption_benchmark/CURRENT_PROPOSAL.md) |
 | 已有实验、Qwen 原始输出、FPS 对照及视频结果 | [RESULTS.md](av_caption_benchmark/RESULTS.md) |

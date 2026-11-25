@@ -1,0 +1,154 @@
+{
+  "shot": "S01",
+  "speech_segments": [
+    {
+      "source_utterance_id": "U01",
+      "start": 0.0,
+      "end": 3.28,
+      "speaker": "V01",
+      "text": "took turns hitting three golf balls apiece as far as they could.",
+      "state": "clear narration, continuous across the first two views",
+      "speaker_status": "off_screen",
+      "actor": null,
+      "confidence": "high",
+      "evidence": "Male voice-over in neutral American English describing the contest; no on-screen person is shown speaking (views 1-2 frame only lower bodies, view 3 golfer is looking down mid-swing with no mouth movement), so the narrator is off-screen.",
+      "related_actions": [
+        {
+          "action_id": "A02",
+          "relationship": "description",
+          "evidence": "Narration describes players hitting golf balls as far as possible; the off-camera strike that removes the teed ball in view 1 occurs within this utterance's span."
+        },
+        {
+          "action_id": "A05",
+          "relationship": "description",
+          "evidence": "Second ball departure (view 2) falls inside the same narrated sentence about hitting balls as far as they could."
+        }
+      ]
+    },
+    {
+      "source_utterance_id": "U02",
+      "start": 4.76,
+      "end": 5.2,
+      "speaker": "V01",
+      "text": "Each person",
+      "state": "narration cut off mid-sentence at clip end",
+      "speaker_status": "off_screen",
+      "actor": null,
+      "confidence": "high",
+      "evidence": "Same male narrator voice resumes after the view-3/view-4 cut; no visible speaker in the low rear view of P04, so off-screen.",
+      "related_actions": [
+        {
+          "action_id": "A10",
+          "relationship": "temporal overlap only",
+          "evidence": "The truncated phrase overlaps the held follow-through pose in view 4; no explicit referent is established before the clip ends."
+        }
+      ]
+    }
+  ],
+  "action_sounds": [
+    {
+      "action_id": "A01",
+      "status": "none_detected",
+      "description": "No distinguishable sound attributable to the blurred club-head pass at clip start; the first sharp impact in the audio occurs much later (~1.2 s).",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Frame 0.0 shows a motion-blurred club head but the ball remains teed through 0.8 s, so no contact; no transient is localizable at 0.0-0.1 s."
+    },
+    {
+      "action_id": "A02",
+      "status": "uncertain",
+      "description": "A sharp impact/crack is heard around 1.12-1.32 s, plausibly the strike that removes the teed ball, but it lags the visual ball departure (~0.85-0.9 s) by more than 0.2 s.",
+      "sound_time": 1.22,
+      "visual_time": 0.85,
+      "confidence": "low",
+      "evidence": "Ball present at 0.8008 s and gone by 0.9009 s (strike off-camera); the only nearby transient is the candidate impact at 1.12-1.32 s. The >0.2 s offset prevents a supported claim; the sound could be a delayed/edited impact or an unrelated transient."
+    },
+    {
+      "action_id": "A03",
+      "status": "none_detected",
+      "description": "No discrete sound attributable to the held heel-raised finish pose; the nearby impact transient is assigned (uncertainly) to the preceding strike.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Static lower-body pose from ~1.0-1.67 s produces no footfall or club sound distinguishable from ambience."
+    },
+    {
+      "action_id": "A04",
+      "status": "none_detected",
+      "description": "No sound attributable to the non-contact club sweep past the teed ball at 1.7-1.9 s.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Ball '3' remains on the tee through 2.9 s, confirming no contact; no whoosh or impact is localized in 1.7-1.9 s."
+    },
+    {
+      "action_id": "A05",
+      "status": "supported",
+      "description": "Sharp impact/crack of a driver striking the teed ball, heard at ~2.92-3.12 s.",
+      "sound_time": 3.0,
+      "visual_time": 2.95,
+      "confidence": "medium",
+      "evidence": "Ball on tee at 2.9029 s and gone by 3.003 s; the transient coincides within ~0.1 s of the ball's departure, with no competing impact nearby (P02's foot pivot follows after 3.0 s)."
+    },
+    {
+      "action_id": "A06",
+      "status": "none_detected",
+      "description": "No distinguishable sound for the stance change/repositioning after the ball departs.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Foot pivot and second leg entering frame produce no localized transient; wind noise begins only at 3.44 s."
+    },
+    {
+      "action_id": "A07",
+      "status": "none_detected",
+      "description": "No discrete impact sound can be localized for the fairway drive; the interval is covered by wind noise across the microphone.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Club blur at ~3.77 s and ball gone by 3.87 s indicate a strike, but the candidate audio lists only wind (3.44-4.52 s) through this window and the next sharp impact (4.52-4.72 s) aligns with the later view-4 strike, not this one."
+    },
+    {
+      "action_id": "A08",
+      "status": "none_detected",
+      "description": "No sound attributable to the upper-body follow-through; only ambient wind.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Held finish pose 3.87-4.4 s occurs within the wind-noise span with no separate transient."
+    },
+    {
+      "action_id": "A09",
+      "status": "supported",
+      "description": "Sharp impact/crack of the drive in view 4, heard at ~4.52-4.72 s.",
+      "sound_time": 4.6,
+      "visual_time": 4.6,
+      "confidence": "medium",
+      "evidence": "Ball on orange tee at 4.5379 s and gone by 4.638 s; the transient coincides with the ball's departure and the onset of the weight transfer, with no competing impact in the window."
+    },
+    {
+      "action_id": "A10",
+      "status": "none_detected",
+      "description": "No discrete sound for the held heel-raised finish in view 4.",
+      "sound_time": null,
+      "visual_time": null,
+      "confidence": "medium",
+      "evidence": "Static lower-body pose 4.64-5.17 s; the preceding impact is assigned to A09, and no footfall or club sound is localized here."
+    }
+  ],
+  "unmatched_sounds": [
+    {
+      "start": 3.44,
+      "end": 4.52,
+      "description": "Wind blowing across the microphone, spanning the view-3 fairway shot; environmental noise not attributable to any candidate action."
+    }
+  ],
+  "uncertainties": [
+    "A02: the only nearby impact transient (1.12-1.32 s) lags the visual ball departure (~0.85-0.9 s) by more than 0.2 s, so the strike sound association remains uncertain (possible delayed/edited audio).",
+    "A07: a strike is visually evident (ball gone by 3.87 s) but no discrete impact sound is localizable under the wind noise; the 4.52-4.72 s impact aligns with A09 instead.",
+    "A03: the lifted-rear-foot pose could alternatively be read as a step, since the planted foot shifts slightly between 0.8 and 1.0 s.",
+    "A04: with the target direction unknown from the low angle, the club sweep could read as either a whiff past the ball or the start of a backswing; phase indeterminate.",
+    "U02 is cut off mid-sentence at the clip end, so its full referent is unresolved."
+  ]
+}

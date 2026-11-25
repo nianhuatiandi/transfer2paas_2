@@ -1,0 +1,51 @@
+{
+  "shot": "S01",
+  "speech_segments": [],
+  "action_sounds": [
+    {
+      "action_id": "A01",
+      "status": "supported",
+      "description": "Continuous wheel-on-concrete rolling rumble audible while the skater approaches and translates left-to-right across the flat plaza.",
+      "sound_time": 2.2,
+      "visual_time": 2.2,
+      "confidence": "medium",
+      "evidence": "Image: frames 1.833-2.583 s show the skater fully on the board, wheels down, moving screen-left to screen-right on flat concrete. Audio: the rolling rumble (candidate sound 1) is present throughout this window and matches the visible translation; the rumble beginning before 1.833 s is consistent with the same skater rolling in off-frame. Limitation: the rumble is sustained rather than a discrete transient, so the exact in-window moment is an estimate."
+    },
+    {
+      "action_id": "A02",
+      "status": "uncertain",
+      "description": "A sharp impact followed by clattering is heard at ~3.2-3.6 s, adjacent to the visual landing, but the pop transient at the takeoff (~2.6 s) is not separately isolated and the impact onset lags the wheels-down frame.",
+      "sound_time": 3.2,
+      "visual_time": 3.083,
+      "confidence": "low",
+      "evidence": "Image: pop/load at 2.583-2.667 s, deck airborne and flipped 2.75-2.917 s, feet catch at 3.0 s, wheels down at 3.083 s. Audio: only one discrete event (sharp impact + clatter) is localized, starting ~3.2 s, i.e. ~0.1-0.2 s after the visual wheels-down contact; no distinct pop is separable from the preceding rumble. Competing readings: the impact could be the landing with slight audio lag, or the pop with a larger sync offset; the 24 fps sampling cannot resolve the flip foot sweep, so the sound cannot be firmly tied to a specific phase of the trick."
+    },
+    {
+      "action_id": "A03",
+      "status": "uncertain",
+      "description": "No distinct ride-away rumble can be localized after ~3.6 s even though the skater is visibly rolling to the right edge until ~4.5 s; the clatter tail may merge with the initial roll-away sound.",
+      "sound_time": null,
+      "visual_time": 3.3,
+      "confidence": "low",
+      "evidence": "Image: 3.083-4.5 s show wheels-down travel to the right frame border. Audio: the localized sound events end at ~3.6 s (impact/clatter attributed to the landing); nothing separable is identified as continued rolling during 3.6-4.5 s. Ambiguity: the tail of the landing clatter could contain the first moments of roll-away rumble, but it is not distinguishable from the impact event, so attribution to A03 alone is not supported."
+    }
+  ],
+  "unmatched_sounds": [
+    {
+      "start": 0.0,
+      "end": 1.833,
+      "description": "Wheel rolling rumble on hard surface before the skater enters the frame, consistent with an off-screen approach; no candidate action interval covers this span."
+    },
+    {
+      "start": 0.0,
+      "end": 3.2,
+      "description": "Faint background chatter/ambient noise underlying the rolling rumble; no intelligible words and no supplied voice."
+    }
+  ],
+  "uncertainties": [
+    "The single sharp impact + clatter at ~3.2-3.6 s sits ~0.1-0.2 s after the visual wheels-down landing (3.083 s); the takeoff pop at ~2.6 s is not isolated as a separate transient, so phase attribution within the flip trick remains ambiguous.",
+    "The rolling rumble is reported as continuous 0.0-3.2 s although the board is airborne ~2.6-3.0 s; the candidate segmentation may have merged approach roll, pop, and landing into two coarse events.",
+    "No separable ride-away rumble is localized after 3.6 s despite visible rolling until ~4.5 s; absence may reflect faint level rather than absence of sound.",
+    "Faint background chatter is audible but no utterances or voices are supplied; no speech transcription or speaker linkage was attempted."
+  ]
+}

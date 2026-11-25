@@ -1,0 +1,22 @@
+{
+ "shot":"S01",
+ "speech_segments":[],
+ "action_sounds":[
+  {"action_id":"A01","status":"none_detected","description":"No distinguishable approach footfalls; only the continuous ambient hum and indistinct chatter during 3.6-4.5 s.","sound_time":null,"visual_time":null,"confidence":"medium","evidence":"Audio across the approach window contains only the sustained background bed with no discrete transients aligned to his steps; visible footfalls alone are not evidence of sound."},
+  {"action_id":"A02","status":"none_detected","description":"No audible sound attributable to the backswing.","sound_time":null,"visual_time":null,"confidence":"medium","evidence":"The backswing is a silent body motion; no transient occurs in 4.5-4.9 s beyond the ambient bed."},
+  {"action_id":"A03","status":"none_detected","description":"Slide plant/glide not separately audible; the only nearby transient (5.16-5.36 s) aligns with ball release rather than the ~4.6 s plant.","sound_time":null,"visual_time":null,"confidence":"medium","evidence":"No discrete squeak or thud can be localized to the slide; the tap occurs roughly 0.6 s after the plant moment."},
+  {"action_id":"A04","status":"none_detected","description":"Forward swing produces no distinguishable sound.","sound_time":null,"visual_time":null,"confidence":"medium","evidence":"Swing is silent; ambient-only audio until the release transient."},
+  {"action_id":"A05","status":"supported","description":"Single sharp tap/click as the ball leaves the hand and contacts the lane.","sound_time":5.26,"visual_time":5.3,"confidence":"medium","evidence":"A lone transient at 5.16-5.36 s coincides with frame-verified ball separation (~5.3 s) and first lane contact; no competing impact at that instant. Minor ambiguity with a late slide stop exists, but timing favors the release."},
+  {"action_id":"A06","status":"none_detected","description":"The follow-through pose itself generates no sound; the later ball roll and pin crash stem from the ball, not the held finish.","sound_time":null,"visual_time":null,"confidence":"medium","evidence":"After release, audio remains ambient until the rolling/pin sounds at ~7.2-8.5 s, which are not attributable to the bowler's pose."},
+  {"action_id":"A07","status":"uncertain","description":"Possible shuffling footfalls as he pivots and walks back (~8.1-8.5 s), but the same window carries pin-impact clatter/reverberation, leaving the source ambiguous.","sound_time":8.3,"visual_time":8.2,"confidence":"low","evidence":"The 7.24-8.52 s burst mixes roll/pin sounds with any turn steps; frames show the turn beginning ~8.1 s, so footfalls cannot be cleanly separated from the pin-crash tail."}
+ ],
+ "unmatched_sounds":[
+  {"start":0.0,"end":7.24,"description":"Continuous low-frequency hum and indistinct room chatter (ambient alley noise)."},
+  {"start":7.24,"end":8.52,"description":"Ball rolling rumble building to the pin impact clatter/dull thud (~7.7-8.1 s) as the ball reaches the deck on the left-side lane; not tied to a candidate bowler action."}
+ ],
+ "uncertainties":[
+  "The 5.16-5.36 s tap could conceivably be a late slide-foot stop rather than ball-lane contact, though it aligns best with release.",
+  "Whether the bowler's turn-around footfalls are audible at all is unresolved due to overlap with pin-crash reverberation.",
+  "No speech or voices are present in the shot; the empty speech list reflects absence, not exclusion."
+ ]
+}

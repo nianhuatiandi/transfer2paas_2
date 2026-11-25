@@ -1,0 +1,297 @@
+{
+  "shots": [
+    {
+      "shot": "S01",
+      "actors": [
+        {
+          "id": "S01-P01",
+          "description": "Young skater with brown hair, wearing a green short-sleeved T-shirt with a white chest graphic, black trousers and light tan/grey shoes, riding a skateboard with dark griptape on top and a blue graphic on the underside; enters from the screen-left edge and travels to screen right."
+        }
+      ],
+      "storyline": "A static wide shot shows an empty outdoor concrete plaza with several shallow puddles, backed by tiered wooden bleachers with blue metal railings, a bench in front of the bleachers, a blue sign post at left and dense green trees above. From 0.0 s to about 1.75 s the plaza is empty. At 1.833 s the skater (S01-P01) first appears cropped at the left frame border (arm/torso and board edge), and by 1.917–2.0 s he is fully in frame, rolling left-to-right on flat concrete with both feet aboard. Around 2.5–2.583 s he crouches and throws his arms out to load and pop; from about 2.6 s the board leaves the ground. Between 2.667 s and 2.917 s the deck is airborne and rotates once about its long axis: at 2.75 s and 2.833 s the blue underside graphic faces the camera while his feet are clear of the board, and at 2.917 s the deck has returned to griptape-up beneath him. His feet meet the board at about 3.0 s and it is wheels-down at 3.083 s. He then continues rolling rightward, crossing the frame until only his trailing foot/board edge remains at the right border at 4.5 s, fully exiting by 4.583 s. The remainder of the clip (about 4.583 s to 5.458 s) shows the empty plaza again. The initiating foot sweep and rotation sense of the long-axis flip cannot be distinguished at this sampling rate, so the trick is recorded conservatively as an unresolved flip.",
+      "visible_text": [
+        {
+          "start": 2.0,
+          "end": 4.4,
+          "text": "[illegible]",
+          "appearance": "White stylized graphic/lettering on the front of the green T-shirt, centered on the chest; visible while the skater faces the camera but not resolvable into readable characters."
+        },
+        {
+          "start": 2.667,
+          "end": 2.833,
+          "text": "[illegible]",
+          "appearance": "Blue underside graphic with yellow/white shapes on the airborne skateboard deck; brief multi-frame observation during the flip, no readable wording."
+        }
+      ],
+      "actions": [
+        {
+          "start": 1.833,
+          "end": 2.583,
+          "actor": "S01-P01",
+          "technique": "rolling",
+          "evidence": "At 1.833 s only the skater's arm/torso and board edge are at the left frame border; by 1.917–2.0 s he is fully in frame on the board with both feet aboard, wheels down, translating from screen left toward screen right; at 2.5–2.583 s he crouches and extends his arms in preparation for the pop, board still flat on the ground.",
+          "detail": "Approach roll: body and board travel left-to-right across the screen on flat concrete; no push stroke is observed in-frame. Ends as the final load/pop begins.",
+          "key_moments": [
+            {
+              "name": "first_visible_entry",
+              "time": 1.833
+            },
+            {
+              "name": "setup_crouch",
+              "time": 2.5
+            }
+          ]
+        },
+        {
+          "start": 2.583,
+          "end": 3.083,
+          "actor": "S01-P01",
+          "technique": "unresolved flip",
+          "evidence": "Pop visible at 2.583–2.667 s (arms thrown out, board tilting off the ground). At 2.75 s and 2.833 s the deck is airborne and rotated about its long axis with the blue underside graphic facing the camera and the rider's feet clear of the board; at 2.917 s the deck is griptape-up again beneath him; at 3.0 s his feet meet the board and at 3.083 s it is wheels-down. The sweeping foot that initiates the rotation cannot be distinguished as toe-side (kickflip) versus heel-side (heelflip) at 24 fps, so the conservative flip family is used; the horizontal board orientation with underside exposed rules out a vertical-axis shove-it.",
+          "detail": "Flip trick over flat ground: body continues left-to-right while the board completes one long-axis rotation in the air; rider catches and lands rolling in the same direction. Boundaries estimated from the last feet-on-board frame (2.583 s) to the first wheels-down frame (3.083 s).",
+          "key_moments": [
+            {
+              "name": "load_pop",
+              "time": 2.583
+            },
+            {
+              "name": "airborne_deck_flip",
+              "time": 2.75
+            },
+            {
+              "name": "deck_griptape_up",
+              "time": 2.917
+            },
+            {
+              "name": "catch",
+              "time": 3.0
+            },
+            {
+              "name": "wheels_down_landing",
+              "time": 3.083
+            }
+          ]
+        },
+        {
+          "start": 3.083,
+          "end": 4.583,
+          "actor": "S01-P01",
+          "technique": "rolling",
+          "evidence": "From 3.083 s onward both feet are on the board, wheels down, riding away to screen right (3.167–4.333 s); at 4.417–4.5 s only his trailing foot/board edge remains at the right frame border, and the frame is empty by 4.583 s.",
+          "detail": "Ride-away after the landed flip: continued left-to-right travel until the skater leaves the frame on the right; outcome landed.",
+          "key_moments": [
+            {
+              "name": "post_landing_roll",
+              "time": 3.167
+            },
+            {
+              "name": "exit_right_edge",
+              "time": 4.5
+            }
+          ]
+        }
+      ],
+      "uncertainties": [
+        "The long-axis flip direction (kickflip vs heelflip) cannot be resolved: the initiating foot sweep and rotation sense are ambiguous between 2.667 s and 2.917 s at this frame rate.",
+        "The rider's stance (regular/goofy) is not confirmable from these frames.",
+        "Text on the T-shirt graphic and on the skateboard underside is present but illegible.",
+        "Entry at 1.833 s and exit near 4.5–4.583 s are partially cropped by the frame borders, so exact first-visible and last-visible moments are estimated."
+      ]
+    }
+  ],
+  "audio": {
+    "speakers": [],
+    "utterances": [],
+    "sounds": [
+      {
+        "start": 0.0,
+        "end": 3.2,
+        "description": "A rolling sound on a hard surface with faint background chatter"
+      },
+      {
+        "start": 3.2,
+        "end": 3.6,
+        "description": "A sharp impact followed by clattering"
+      }
+    ],
+    "uncertainties": []
+  },
+  "actions": [
+    {
+      "start": 1.833,
+      "end": 2.583,
+      "actor": "S01-P01",
+      "technique": "rolling",
+      "evidence": "At 1.833 s only the skater's arm/torso and board edge are at the left frame border; by 1.917–2.0 s he is fully in frame on the board with both feet aboard, wheels down, translating from screen left toward screen right; at 2.5–2.583 s he crouches and extends his arms in preparation for the pop, board still flat on the ground.",
+      "detail": "Approach roll: body and board travel left-to-right across the screen on flat concrete; no push stroke is observed in-frame. Ends as the final load/pop begins.",
+      "key_moments": [
+        {
+          "name": "first_visible_entry",
+          "time": 1.833
+        },
+        {
+          "name": "setup_crouch",
+          "time": 2.5
+        }
+      ],
+      "shot": "S01",
+      "id": "A01"
+    },
+    {
+      "start": 2.583,
+      "end": 3.083,
+      "actor": "S01-P01",
+      "technique": "unresolved flip",
+      "evidence": "Pop visible at 2.583–2.667 s (arms thrown out, board tilting off the ground). At 2.75 s and 2.833 s the deck is airborne and rotated about its long axis with the blue underside graphic facing the camera and the rider's feet clear of the board; at 2.917 s the deck is griptape-up again beneath him; at 3.0 s his feet meet the board and at 3.083 s it is wheels-down. The sweeping foot that initiates the rotation cannot be distinguished as toe-side (kickflip) versus heel-side (heelflip) at 24 fps, so the conservative flip family is used; the horizontal board orientation with underside exposed rules out a vertical-axis shove-it.",
+      "detail": "Flip trick over flat ground: body continues left-to-right while the board completes one long-axis rotation in the air; rider catches and lands rolling in the same direction. Boundaries estimated from the last feet-on-board frame (2.583 s) to the first wheels-down frame (3.083 s).",
+      "key_moments": [
+        {
+          "name": "load_pop",
+          "time": 2.583
+        },
+        {
+          "name": "airborne_deck_flip",
+          "time": 2.75
+        },
+        {
+          "name": "deck_griptape_up",
+          "time": 2.917
+        },
+        {
+          "name": "catch",
+          "time": 3.0
+        },
+        {
+          "name": "wheels_down_landing",
+          "time": 3.083
+        }
+      ],
+      "shot": "S01",
+      "id": "A02"
+    },
+    {
+      "start": 3.083,
+      "end": 4.583,
+      "actor": "S01-P01",
+      "technique": "rolling",
+      "evidence": "From 3.083 s onward both feet are on the board, wheels down, riding away to screen right (3.167–4.333 s); at 4.417–4.5 s only his trailing foot/board edge remains at the right frame border, and the frame is empty by 4.583 s.",
+      "detail": "Ride-away after the landed flip: continued left-to-right travel until the skater leaves the frame on the right; outcome landed.",
+      "key_moments": [
+        {
+          "name": "post_landing_roll",
+          "time": 3.167
+        },
+        {
+          "name": "exit_right_edge",
+          "time": 4.5
+        }
+      ],
+      "shot": "S01",
+      "id": "A03"
+    }
+  ],
+  "warnings": [],
+  "alignment": {
+    "version": "0.8",
+    "status": "model_reviewed",
+    "source_sha256": "b7bfa1fb2b4341600ff8695e9ac3404f1afbb18c27159753b0c8507323f38f8c",
+    "action_signature": [
+      {
+        "id": "A01",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 1.833,
+        "end": 2.583,
+        "technique": "rolling"
+      },
+      {
+        "id": "A02",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 2.583,
+        "end": 3.083,
+        "technique": "unresolved flip"
+      },
+      {
+        "id": "A03",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 3.083,
+        "end": 4.583,
+        "technique": "rolling"
+      }
+    ],
+    "shots": [
+      {
+        "shot": "S01",
+        "speech_segments": [],
+        "action_sounds": [
+          {
+            "action_id": "A01",
+            "status": "supported",
+            "description": "Continuous wheel-on-concrete rolling rumble audible while the skater approaches and translates left-to-right across the flat plaza.",
+            "sound_time": 2.2,
+            "visual_time": 2.2,
+            "confidence": "medium",
+            "evidence": "Image: frames 1.833-2.583 s show the skater fully on the board, wheels down, moving screen-left to screen-right on flat concrete. Audio: the rolling rumble (candidate sound 1) is present throughout this window and matches the visible translation; the rumble beginning before 1.833 s is consistent with the same skater rolling in off-frame. Limitation: the rumble is sustained rather than a discrete transient, so the exact in-window moment is an estimate.",
+            "audio_minus_visual_seconds": 0.0
+          },
+          {
+            "action_id": "A02",
+            "status": "uncertain",
+            "description": "A sharp impact followed by clattering is heard at ~3.2-3.6 s, adjacent to the visual landing, but the pop transient at the takeoff (~2.6 s) is not separately isolated and the impact onset lags the wheels-down frame.",
+            "sound_time": 3.2,
+            "visual_time": 3.083,
+            "confidence": "low",
+            "evidence": "Image: pop/load at 2.583-2.667 s, deck airborne and flipped 2.75-2.917 s, feet catch at 3.0 s, wheels down at 3.083 s. Audio: only one discrete event (sharp impact + clatter) is localized, starting ~3.2 s, i.e. ~0.1-0.2 s after the visual wheels-down contact; no distinct pop is separable from the preceding rumble. Competing readings: the impact could be the landing with slight audio lag, or the pop with a larger sync offset; the 24 fps sampling cannot resolve the flip foot sweep, so the sound cannot be firmly tied to a specific phase of the trick.",
+            "audio_minus_visual_seconds": 0.117
+          },
+          {
+            "action_id": "A03",
+            "status": "uncertain",
+            "description": "No distinct ride-away rumble can be localized after ~3.6 s even though the skater is visibly rolling to the right edge until ~4.5 s; the clatter tail may merge with the initial roll-away sound.",
+            "sound_time": null,
+            "visual_time": 3.3,
+            "confidence": "low",
+            "evidence": "Image: 3.083-4.5 s show wheels-down travel to the right frame border. Audio: the localized sound events end at ~3.6 s (impact/clatter attributed to the landing); nothing separable is identified as continued rolling during 3.6-4.5 s. Ambiguity: the tail of the landing clatter could contain the first moments of roll-away rumble, but it is not distinguishable from the impact event, so attribution to A03 alone is not supported.",
+            "audio_minus_visual_seconds": null
+          }
+        ],
+        "unmatched_sounds": [
+          {
+            "start": 0.0,
+            "end": 1.833,
+            "description": "Wheel rolling rumble on hard surface before the skater enters the frame, consistent with an off-screen approach; no candidate action interval covers this span."
+          },
+          {
+            "start": 0.0,
+            "end": 3.2,
+            "description": "Faint background chatter/ambient noise underlying the rolling rumble; no intelligible words and no supplied voice."
+          }
+        ],
+        "uncertainties": [
+          "The single sharp impact + clatter at ~3.2-3.6 s sits ~0.1-0.2 s after the visual wheels-down landing (3.083 s); the takeoff pop at ~2.6 s is not isolated as a separate transient, so phase attribution within the flip trick remains ambiguous.",
+          "The rolling rumble is reported as continuous 0.0-3.2 s although the board is airborne ~2.6-3.0 s; the candidate segmentation may have merged approach roll, pop, and landing into two coarse events.",
+          "No separable ride-away rumble is localized after 3.6 s despite visible rolling until ~4.5 s; absence may reflect faint level rather than absence of sound.",
+          "Faint background chatter is audible but no utterances or voices are supplied; no speech transcription or speaker linkage was attempted."
+        ],
+        "validation_warnings": []
+      }
+    ],
+    "boundary_warnings": [],
+    "limits": "Model-backed associations, not human-verified synchronization or measured impact times."
+  },
+  "segmentation": {
+    "minimum_segment_seconds": 4.0,
+    "detected_cut_seconds": [],
+    "retained_cut_seconds": [],
+    "segments": [
+      {
+        "shot": "S01",
+        "start": 0.0,
+        "end": 5.5,
+        "internal_cut_seconds": []
+      }
+    ]
+  }
+}

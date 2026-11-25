@@ -1,0 +1,700 @@
+{
+  "shots": [
+    {
+      "shot": "S01",
+      "actors": [
+        {
+          "id": "S01-P01",
+          "description": "Adult male athlete. In the first view (0.0–2.04 s) he is framed in a medium close-up facing the camera in a tree-lined park, wearing a teal/blue sleeveless athletic top, a black headband with a trailing tail, and a lavalier microphone clipped at his collar. After the cut at 2.08 s he is seen in left profile on a red running track/court inside chain-link fencing, wearing the same blue sleeveless top, black training pants and white sneakers, facing and traveling toward screen-right while performing a standing long jump."
+        },
+        {
+          "id": "S01-P02",
+          "description": "Background pedestrian woman visible only in the first view, at frame-right on the park path; dark jacket over a light top, holding a pink/red smartphone, walking away from the camera."
+        },
+        {
+          "id": "S01-P03",
+          "description": "Distant bystander behind the chain-link fence at the left edge of the second view, in dark clothing with a red accent, standing near the fence line; no sports action performed."
+        }
+      ],
+      "storyline": "The clip contains two views separated by a hard cut at 2.08 s. From 0.0 to 2.04 s the camera holds a medium close-up of S01-P01 standing among trees in a park, speaking directly to the lens with small hand gestures near his chest; S01-P02 walks along the path at frame-right looking at her phone. No jump technique occurs in this view. At 2.08 s the view cuts to a wide side-on shot of an outdoor red track enclosed by chain-link fencing with residential buildings behind; S01-P03 stands far behind the fence at left. S01-P01 is already in a left-profile start stance facing screen-right with both arms locked straight overhead (held 2.08–2.72 s). He then lowers into a crouch (knee/hip flexion onset 2.56 s, deepest around 3.28 s, held loaded until ~3.60 s) while his arms travel from overhead down past the front of his body (2.72–3.04 s) and then swing backward to a rear-loaded position behind the hips (peak ~3.28–3.60 s). He next drives both arms forward and upward (3.68–4.24 s) while extending hips, knees and ankles to push off (leg extension ~3.92–4.32 s), launching a standing long jump that translates toward screen-right. He is airborne with the body extended and arms overhead (flight 4.32–5.04 s, apex ~4.48 s), then lands feet-first ahead of the takeoff spot and absorbs the impact by flexing knees and hips into a deep squat (landing absorption 5.04–5.44 s, arms dropping low in front). From 5.52 s he rises out of the squat, swinging the arms from low/front up to overhead as the torso lifts, reaching an upright stand by ~6.32–6.48 s. In the final second (6.56–6.96 s), still standing with feet planted, he lowers the arms from overhead and swings them forward/outward in a demonstrative gesture; the clip ends before any further movement, so this tail action is cropped. Throughout, a top-right channel watermark is constant and white Chinese subtitles change three times.",
+      "visible_text": [
+        {
+          "start": 0.0,
+          "end": 6.96,
+          "text": "跑步的子章老师 bilibili",
+          "appearance": "top-right corner, white sans-serif Chinese text followed by the bilibili logo; persistent across both shots and the cut (fainter but present in the second view)."
+        },
+        {
+          "start": 0.16,
+          "end": 2.8,
+          "text": "如何在一分钟之内就立竿见影",
+          "appearance": "bottom-center white subtitle with thin dark outline; first appears at 0.16 s in the talking-head shot and remains into the early track shot until 2.80 s."
+        },
+        {
+          "start": 2.88,
+          "end": 5.44,
+          "text": "如同作弊一般提升立定跳远的成绩呢",
+          "appearance": "bottom-center white subtitle; replaces the previous line at 2.88 s and persists through the jump and landing until 5.44 s."
+        },
+        {
+          "start": 5.52,
+          "end": 6.96,
+          "text": "今天给大家介绍三个方法",
+          "appearance": "bottom-center white subtitle; appears at 5.52 s during the rise and continues to the last sampled frame at 6.96 s."
+        }
+      ],
+      "actions": [
+        {
+          "start": 2.08,
+          "end": 2.72,
+          "actor": "S01-P01",
+          "technique": "other",
+          "evidence": "Frames 2.08–2.72 s: immediately after the cut, S01-P01 stands upright in left profile, feet together/planted on the red track, both arms fully extended vertically overhead, no joint flexion yet — a held preparatory start stance before the jump.",
+          "detail": "Static start posture facing screen-right; arms locked overhead, body vertical. Not a propulsive swing; recorded as 'other' to mark the jump's initial configuration, which is already present at the first frame of the shot (the overhead raise itself is not observed).",
+          "key_moments": [
+            {
+              "name": "arms_overhead_hold_start",
+              "time": 2.08
+            },
+            {
+              "name": "arms_overhead_hold_end",
+              "time": 2.72
+            }
+          ]
+        },
+        {
+          "start": 2.56,
+          "end": 3.28,
+          "actor": "S01-P01",
+          "technique": "crouch",
+          "evidence": "From 2.56 s the knees and hips begin to flex (progressive descent 2.64–2.96 s), reaching a deep loaded squat by ~3.12–3.28 s with thighs near parallel and torso inclined forward; both feet remain planted throughout.",
+          "detail": "Preparatory countermovement lowering the centre of mass while facing screen-right; depth increases monotonically to the lowest point around 3.28 s, and the loaded position is then held until the forward swing begins (~3.60 s).",
+          "key_moments": [
+            {
+              "name": "crouch_onset",
+              "time": 2.56
+            },
+            {
+              "name": "deepest_crouch",
+              "time": 3.28
+            }
+          ]
+        },
+        {
+          "start": 2.72,
+          "end": 3.6,
+          "actor": "S01-P01",
+          "technique": "backswing",
+          "evidence": "Arms leave the overhead hold at ~2.72 s and travel downward, passing in front of/low relative to the torso (2.80–3.04 s), then swing backward past the hips with hands behind the thighs/rear-up (3.12–3.60 s), synchronized with the crouch.",
+          "detail": "Bilateral preparatory arm swing from vertical to a rear-loaded position; the hands move screen-left/behind the body relative to the screen-right-facing trunk, storing elastic energy for the jump. Rear-loaded peak is held ~3.28–3.60 s.",
+          "key_moments": [
+            {
+              "name": "backswing_onset",
+              "time": 2.72
+            },
+            {
+              "name": "backswing_peak_rear",
+              "time": 3.44
+            }
+          ]
+        },
+        {
+          "start": 3.68,
+          "end": 4.24,
+          "actor": "S01-P01",
+          "technique": "forward swing",
+          "evidence": "From ~3.68 s the arms reverse direction, sweeping from the rear-loaded position forward and upward (3.76–4.08 s arms rising in front of the torso; 4.16–4.24 s arms extended overhead ahead of the head) with motion blur indicating speed.",
+          "detail": "Propulsive bilateral arm swing toward screen-right/upward, leading the trunk extension; overlaps the start of leg extension. Full overhead arm extension reached by ~4.24 s as the feet begin to unload.",
+          "key_moments": [
+            {
+              "name": "forward_swing_onset",
+              "time": 3.68
+            },
+            {
+              "name": "forward_swing_full_extension",
+              "time": 4.24
+            }
+          ]
+        },
+        {
+          "start": 3.92,
+          "end": 4.32,
+          "actor": "S01-P01",
+          "technique": "leg extension",
+          "evidence": "Hips, knees and ankles extend from the deep squat beginning ~3.92 s (torso rising and inclining forward 4.0–4.24 s); by 4.24–4.32 s the body is fully rising on plantar-flexed feet and ground contact is lost at ~4.32 s.",
+          "detail": "Triple-extension push-off driving the body forward and upward toward screen-right; final toe-off estimated at 4.32 s given 25 fps sampling.",
+          "key_moments": [
+            {
+              "name": "extension_onset",
+              "time": 3.92
+            },
+            {
+              "name": "toe_off",
+              "time": 4.32
+            }
+          ]
+        },
+        {
+          "start": 4.32,
+          "end": 5.04,
+          "actor": "S01-P01",
+          "technique": "flight",
+          "evidence": "Feet unsupported from 4.32 s: 4.40–4.64 s the body is fully airborne and extended with arms overhead, translating screen-right; 4.72–5.04 s the body descends with the legs swinging forward to prepare for landing; no ground contact in this window.",
+          "detail": "Ballistic flight phase of the standing long jump toward screen-right; apex around 4.48 s, then descent with forward leg recovery. First ground contact occurs at ~5.04 s.",
+          "key_moments": [
+            {
+              "name": "flight_apex",
+              "time": 4.48
+            },
+            {
+              "name": "pre_landing_legs_forward",
+              "time": 4.96
+            }
+          ]
+        },
+        {
+          "start": 5.04,
+          "end": 5.44,
+          "actor": "S01-P01",
+          "technique": "landing absorption",
+          "evidence": "First ground contact near 5.04 s with both feet ahead of the takeoff position, followed by rapid knee and hip flexion into a deep squat by 5.28–5.44 s; arms drop low in front of the body during absorption.",
+          "detail": "Two-foot landing with residual forward momentum toward screen-right, dissipated by eccentric lower-limb flexion to the deepest squat at ~5.44 s.",
+          "key_moments": [
+            {
+              "name": "first_contact",
+              "time": 5.04
+            },
+            {
+              "name": "deepest_absorption",
+              "time": 5.44
+            }
+          ]
+        },
+        {
+          "start": 5.52,
+          "end": 6.48,
+          "actor": "S01-P01",
+          "technique": "rise",
+          "evidence": "From 5.52 s the athlete extends out of the landing squat (hips/knees opening 5.6–6.24 s) while swinging the arms from low/front (5.6–5.84 s) up to overhead (5.92–6.48 s); by ~6.32–6.48 s he is upright on the track with arms overhead.",
+          "detail": "Recovery to standing after the jump, facing screen-right; the arm swing to overhead accompanies the rise. The stand-up is essentially complete by the end of this interval.",
+          "key_moments": [
+            {
+              "name": "rise_onset",
+              "time": 5.52
+            },
+            {
+              "name": "upright_stand",
+              "time": 6.4
+            }
+          ]
+        },
+        {
+          "start": 6.56,
+          "end": 6.96,
+          "actor": "S01-P01",
+          "technique": "other",
+          "evidence": "Frames 6.56–6.96 s: standing upright with feet planted, S01-P01 lowers the arms from the overhead position (6.56–6.64 s) and then swings them forward/outward to about shoulder height (6.72–6.96 s); no knee/hip flexion or takeoff occurs before the clip ends.",
+          "detail": "A standing demonstrative arm-swing gesture (or the very beginning of a possible second countermovement) after the completed jump; cropped by the end of the clip at 6.96 s, so its purpose is not fully observable. Recorded as 'other' because no propulsive or landing phase follows within the sampled frames.",
+          "key_moments": [
+            {
+              "name": "arms_lower_from_overhead",
+              "time": 6.64
+            },
+            {
+              "name": "forward_arm_gesture_cropped_end",
+              "time": 6.96
+            }
+          ]
+        }
+      ],
+      "uncertainties": [
+        "The first view (0.0–2.04 s) is a talking-head introduction with small hand gestures only; no jump technique occurs there, so no sport actions are logged for that interval.",
+        "The overhead arm position at 2.08 s is already present at the first frame after the cut; the raising of the arms is not observed, so the start boundary of the 'other' stance is the shot cut itself.",
+        "Exact toe-off (~4.32 s) and first ground contact (~5.04 s) frames are estimated to the nearest sampled frame at 25 fps; sub-frame timing may differ slightly.",
+        "No distinct preparatory heel raise is clearly visible before propulsion, so 'heel raise' is not logged.",
+        "It cannot be resolved whether the 6.56–6.96 s standing arm swing is a pure demonstration gesture or the start of a second jump repetition, because the clip ends before any crouch or takeoff develops.",
+        "The background pedestrians S01-P02 (first view) and S01-P03 (second view, behind the fence) perform no tracked sports action."
+      ]
+    }
+  ],
+  "audio": {
+    "speakers": [
+      {
+        "id": "V01",
+        "description": "Male speaker using Mandarin Chinese with a standard accent, energetic and fast-paced instructional tone."
+      }
+    ],
+    "utterances": [
+      {
+        "start": 0.08,
+        "end": 5.2,
+        "speaker": "V01",
+        "state": "Fast-paced, enthusiastic delivery.",
+        "text": "如何在一分钟之内就立竿见影，如同作弊一般提升立定跳远的成绩呢？"
+      },
+      {
+        "start": 5.36,
+        "end": 6.96,
+        "speaker": "V01",
+        "state": "Concluding statement, clear articulation.",
+        "text": "今天给大家介绍三个方法。"
+      }
+    ],
+    "sounds": [],
+    "uncertainties": []
+  },
+  "actions": [
+    {
+      "start": 2.08,
+      "end": 2.72,
+      "actor": "S01-P01",
+      "technique": "other",
+      "evidence": "Frames 2.08–2.72 s: immediately after the cut, S01-P01 stands upright in left profile, feet together/planted on the red track, both arms fully extended vertically overhead, no joint flexion yet — a held preparatory start stance before the jump.",
+      "detail": "Static start posture facing screen-right; arms locked overhead, body vertical. Not a propulsive swing; recorded as 'other' to mark the jump's initial configuration, which is already present at the first frame of the shot (the overhead raise itself is not observed).",
+      "key_moments": [
+        {
+          "name": "arms_overhead_hold_start",
+          "time": 2.08
+        },
+        {
+          "name": "arms_overhead_hold_end",
+          "time": 2.72
+        }
+      ],
+      "shot": "S01",
+      "id": "A01"
+    },
+    {
+      "start": 2.56,
+      "end": 3.28,
+      "actor": "S01-P01",
+      "technique": "crouch",
+      "evidence": "From 2.56 s the knees and hips begin to flex (progressive descent 2.64–2.96 s), reaching a deep loaded squat by ~3.12–3.28 s with thighs near parallel and torso inclined forward; both feet remain planted throughout.",
+      "detail": "Preparatory countermovement lowering the centre of mass while facing screen-right; depth increases monotonically to the lowest point around 3.28 s, and the loaded position is then held until the forward swing begins (~3.60 s).",
+      "key_moments": [
+        {
+          "name": "crouch_onset",
+          "time": 2.56
+        },
+        {
+          "name": "deepest_crouch",
+          "time": 3.28
+        }
+      ],
+      "shot": "S01",
+      "id": "A02"
+    },
+    {
+      "start": 2.72,
+      "end": 3.6,
+      "actor": "S01-P01",
+      "technique": "backswing",
+      "evidence": "Arms leave the overhead hold at ~2.72 s and travel downward, passing in front of/low relative to the torso (2.80–3.04 s), then swing backward past the hips with hands behind the thighs/rear-up (3.12–3.60 s), synchronized with the crouch.",
+      "detail": "Bilateral preparatory arm swing from vertical to a rear-loaded position; the hands move screen-left/behind the body relative to the screen-right-facing trunk, storing elastic energy for the jump. Rear-loaded peak is held ~3.28–3.60 s.",
+      "key_moments": [
+        {
+          "name": "backswing_onset",
+          "time": 2.72
+        },
+        {
+          "name": "backswing_peak_rear",
+          "time": 3.44
+        }
+      ],
+      "shot": "S01",
+      "id": "A03"
+    },
+    {
+      "start": 3.68,
+      "end": 4.24,
+      "actor": "S01-P01",
+      "technique": "forward swing",
+      "evidence": "From ~3.68 s the arms reverse direction, sweeping from the rear-loaded position forward and upward (3.76–4.08 s arms rising in front of the torso; 4.16–4.24 s arms extended overhead ahead of the head) with motion blur indicating speed.",
+      "detail": "Propulsive bilateral arm swing toward screen-right/upward, leading the trunk extension; overlaps the start of leg extension. Full overhead arm extension reached by ~4.24 s as the feet begin to unload.",
+      "key_moments": [
+        {
+          "name": "forward_swing_onset",
+          "time": 3.68
+        },
+        {
+          "name": "forward_swing_full_extension",
+          "time": 4.24
+        }
+      ],
+      "shot": "S01",
+      "id": "A04"
+    },
+    {
+      "start": 3.92,
+      "end": 4.32,
+      "actor": "S01-P01",
+      "technique": "leg extension",
+      "evidence": "Hips, knees and ankles extend from the deep squat beginning ~3.92 s (torso rising and inclining forward 4.0–4.24 s); by 4.24–4.32 s the body is fully rising on plantar-flexed feet and ground contact is lost at ~4.32 s.",
+      "detail": "Triple-extension push-off driving the body forward and upward toward screen-right; final toe-off estimated at 4.32 s given 25 fps sampling.",
+      "key_moments": [
+        {
+          "name": "extension_onset",
+          "time": 3.92
+        },
+        {
+          "name": "toe_off",
+          "time": 4.32
+        }
+      ],
+      "shot": "S01",
+      "id": "A05"
+    },
+    {
+      "start": 4.32,
+      "end": 5.04,
+      "actor": "S01-P01",
+      "technique": "flight",
+      "evidence": "Feet unsupported from 4.32 s: 4.40–4.64 s the body is fully airborne and extended with arms overhead, translating screen-right; 4.72–5.04 s the body descends with the legs swinging forward to prepare for landing; no ground contact in this window.",
+      "detail": "Ballistic flight phase of the standing long jump toward screen-right; apex around 4.48 s, then descent with forward leg recovery. First ground contact occurs at ~5.04 s.",
+      "key_moments": [
+        {
+          "name": "flight_apex",
+          "time": 4.48
+        },
+        {
+          "name": "pre_landing_legs_forward",
+          "time": 4.96
+        }
+      ],
+      "shot": "S01",
+      "id": "A06"
+    },
+    {
+      "start": 5.04,
+      "end": 5.44,
+      "actor": "S01-P01",
+      "technique": "landing absorption",
+      "evidence": "First ground contact near 5.04 s with both feet ahead of the takeoff position, followed by rapid knee and hip flexion into a deep squat by 5.28–5.44 s; arms drop low in front of the body during absorption.",
+      "detail": "Two-foot landing with residual forward momentum toward screen-right, dissipated by eccentric lower-limb flexion to the deepest squat at ~5.44 s.",
+      "key_moments": [
+        {
+          "name": "first_contact",
+          "time": 5.04
+        },
+        {
+          "name": "deepest_absorption",
+          "time": 5.44
+        }
+      ],
+      "shot": "S01",
+      "id": "A07"
+    },
+    {
+      "start": 5.52,
+      "end": 6.48,
+      "actor": "S01-P01",
+      "technique": "rise",
+      "evidence": "From 5.52 s the athlete extends out of the landing squat (hips/knees opening 5.6–6.24 s) while swinging the arms from low/front (5.6–5.84 s) up to overhead (5.92–6.48 s); by ~6.32–6.48 s he is upright on the track with arms overhead.",
+      "detail": "Recovery to standing after the jump, facing screen-right; the arm swing to overhead accompanies the rise. The stand-up is essentially complete by the end of this interval.",
+      "key_moments": [
+        {
+          "name": "rise_onset",
+          "time": 5.52
+        },
+        {
+          "name": "upright_stand",
+          "time": 6.4
+        }
+      ],
+      "shot": "S01",
+      "id": "A08"
+    },
+    {
+      "start": 6.56,
+      "end": 6.96,
+      "actor": "S01-P01",
+      "technique": "other",
+      "evidence": "Frames 6.56–6.96 s: standing upright with feet planted, S01-P01 lowers the arms from the overhead position (6.56–6.64 s) and then swings them forward/outward to about shoulder height (6.72–6.96 s); no knee/hip flexion or takeoff occurs before the clip ends.",
+      "detail": "A standing demonstrative arm-swing gesture (or the very beginning of a possible second countermovement) after the completed jump; cropped by the end of the clip at 6.96 s, so its purpose is not fully observable. Recorded as 'other' because no propulsive or landing phase follows within the sampled frames.",
+      "key_moments": [
+        {
+          "name": "arms_lower_from_overhead",
+          "time": 6.64
+        },
+        {
+          "name": "forward_arm_gesture_cropped_end",
+          "time": 6.96
+        }
+      ],
+      "shot": "S01",
+      "id": "A09"
+    }
+  ],
+  "warnings": [],
+  "alignment": {
+    "version": "0.8",
+    "status": "model_reviewed",
+    "source_sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91",
+    "action_signature": [
+      {
+        "id": "A01",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 2.08,
+        "end": 2.72,
+        "technique": "other"
+      },
+      {
+        "id": "A02",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 2.56,
+        "end": 3.28,
+        "technique": "crouch"
+      },
+      {
+        "id": "A03",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 2.72,
+        "end": 3.6,
+        "technique": "backswing"
+      },
+      {
+        "id": "A04",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 3.68,
+        "end": 4.24,
+        "technique": "forward swing"
+      },
+      {
+        "id": "A05",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 3.92,
+        "end": 4.32,
+        "technique": "leg extension"
+      },
+      {
+        "id": "A06",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 4.32,
+        "end": 5.04,
+        "technique": "flight"
+      },
+      {
+        "id": "A07",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 5.04,
+        "end": 5.44,
+        "technique": "landing absorption"
+      },
+      {
+        "id": "A08",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 5.52,
+        "end": 6.48,
+        "technique": "rise"
+      },
+      {
+        "id": "A09",
+        "shot": "S01",
+        "actor": "S01-P01",
+        "start": 6.56,
+        "end": 6.96,
+        "technique": "other"
+      }
+    ],
+    "shots": [
+      {
+        "shot": "S01",
+        "speech_segments": [
+          {
+            "source_utterance_id": "U01",
+            "start": 0.08,
+            "end": 2.08,
+            "speaker": "V01",
+            "text": "如何在一分钟之内就立竿见影",
+            "state": "Fast-paced, enthusiastic delivery; the clause actually finishes slightly after the 2.08 s cut (its subtitle persists until ~2.8 s in the second view), so this segment holds the pre-cut portion.",
+            "speaker_status": "supported",
+            "actor": "S01-P01",
+            "confidence": "high",
+            "evidence": "Medium close-up of S01-P01 facing camera with a clipped lavalier mic; mouth shape changes frame-to-frame (open ~0.16, pursed ~0.24, smiling ~0.48-0.56) consistent with continuous speech, and the audible male Mandarin voice matches his on-camera delivery. No competing speaker visible.",
+            "related_actions": []
+          },
+          {
+            "source_utterance_id": "U01",
+            "start": 2.08,
+            "end": 5.2,
+            "speaker": "V01",
+            "text": "如同作弊一般提升立定跳远的成绩呢",
+            "state": "Voiceover continuation across the cut; the tail of the preceding clause ('...立竿见影') completes around 2.8 s per subtitle timing before this clause begins (~2.88 s).",
+            "speaker_status": "off_screen",
+            "actor": null,
+            "confidence": "medium",
+            "evidence": "After the 2.08 s cut the athlete is shown in left profile performing a standing long jump; his mouth is not visible in a speaking configuration and shows no sync with the ongoing narration, while the same male voice (V01) continues seamlessly. The speech therefore functions as off-screen narration over the demonstration rather than on-camera speech.",
+            "related_actions": [
+              {
+                "action_id": "A05",
+                "relationship": "temporal overlap only",
+                "evidence": "Narration (2.08-5.2 s) runs over the takeoff/leg-extension phase (3.92-4.32 s); the rhetorical question about standing-long-jump performance coincides with the demonstrated jump but does not instruct or describe this specific push-off."
+              },
+              {
+                "action_id": "A06",
+                "relationship": "temporal overlap only",
+                "evidence": "Speech overlaps the airborne flight phase (4.32-5.04 s) of the same jump demonstration."
+              },
+              {
+                "action_id": "A07",
+                "relationship": "temporal overlap only",
+                "evidence": "Speech ends at 5.2 s, overlapping the first ~0.16 s of the landing absorption (5.04-5.44 s)."
+              }
+            ]
+          },
+          {
+            "source_utterance_id": "U02",
+            "start": 5.36,
+            "end": 6.96,
+            "speaker": "V01",
+            "text": "今天给大家介绍三个方法",
+            "state": "Clear concluding statement, steady pace.",
+            "speaker_status": "off_screen",
+            "actor": null,
+            "confidence": "medium",
+            "evidence": "The athlete remains in profile on the track, rising from the landing and then gesturing with his arms; no visible mouth movement synchronized to the line, and the identical male voice continues as narration. Subtitle for this line appears from ~5.52 s, matching the audio.",
+            "related_actions": [
+              {
+                "action_id": "A08",
+                "relationship": "temporal overlap only",
+                "evidence": "Narration (5.36-6.96 s) overlaps the rise-out-of-landing recovery (5.52-6.48 s)."
+              },
+              {
+                "action_id": "A09",
+                "relationship": "temporal overlap only",
+                "evidence": "Narration overlaps the final standing arm-lower/gesture (6.56-6.96 s) up to the clip end."
+              }
+            ]
+          }
+        ],
+        "action_sounds": [
+          {
+            "action_id": "A01",
+            "status": "none_detected",
+            "description": "No distinguishable sound; a static overhead-arm hold produces no expected transient, and none is heard under the narration.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "high",
+            "evidence": "Frames 2.08-2.72 s show a motionless start posture; audio in this window is continuous speech plus low outdoor ambience with no discrete event.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A02",
+            "status": "none_detected",
+            "description": "No distinguishable footfall or shoe-scuff attributable to the countermovement crouch.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "medium",
+            "evidence": "Crouch on a rubberized track (2.56-3.28 s) would produce at most soft contact; the narration dominates and no isolated transient can be localized to this action.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A03",
+            "status": "none_detected",
+            "description": "Arm backswing is silent; no cloth-whoosh or other transient separable from the voice track.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "high",
+            "evidence": "Frames 2.72-3.6 s show bilateral arm travel only; audio contains speech and ambience without a matching discrete sound.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A04",
+            "status": "none_detected",
+            "description": "Propulsive forward arm swing produces no audible transient.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "high",
+            "evidence": "Rapid swing with motion blur (3.68-4.24 s) but no separable sound under the continuous narration.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A05",
+            "status": "none_detected",
+            "description": "Takeoff/push-off foot contact not distinguishable as a discrete sound.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "medium",
+            "evidence": "Toe-off ~4.32 s on a cushioned track; any impact is masked by the overlapping speech (U01 runs to 5.2 s), so no sound can be attributed with confidence.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A06",
+            "status": "none_detected",
+            "description": "Flight phase is inherently silent; no sound event corresponds to it.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "high",
+            "evidence": "Airborne 4.32-5.04 s with no ground contact; audio shows only narration/ambience.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A07",
+            "status": "none_detected",
+            "description": "Landing footfall not separable as a distinct audible impact.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "medium",
+            "evidence": "First contact ~5.04 s; the narration continues to 5.2 s and U02 begins ~5.36 s, and no isolated thud/scuff can be confidently localized to the landing on the rubber surface.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A08",
+            "status": "none_detected",
+            "description": "Rise from the squat produces no distinguishable sound.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "high",
+            "evidence": "Slow extension 5.52-6.48 s; audio is the concluding narration plus ambience, with no discrete transient tied to the movement.",
+            "audio_minus_visual_seconds": null
+          },
+          {
+            "action_id": "A09",
+            "status": "none_detected",
+            "description": "Standing arm gesture produces no audible transient.",
+            "sound_time": null,
+            "visual_time": null,
+            "confidence": "high",
+            "evidence": "Arms lower then swing forward 6.56-6.96 s; no sound event beyond speech/ambience is present.",
+            "audio_minus_visual_seconds": null
+          }
+        ],
+        "unmatched_sounds": [],
+        "uncertainties": [
+          "The first clause of U01 ('如何在一分钟之内就立竿见影') continues past the 2.08 s camera cut (its subtitle remains until ~2.8 s), so the exact word boundary at the cut is approximate; the split was made at the cut per protocol.",
+          "Speaker status after the cut is inferred as off-screen narration: the same athlete is visible but in profile with no syncable mouth movement; a same-person on-location recording cannot be fully excluded, though it is unlikely.",
+          "Any faint takeoff (≈4.32 s) or landing (≈5.04 s) footfall on the rubberized track is masked by the continuous narration and could not be confirmed as a discrete sound.",
+          "A09's purpose (gesture vs. start of another countermovement) is cropped by the clip end at 6.96 s."
+        ],
+        "validation_warnings": []
+      }
+    ],
+    "boundary_warnings": [],
+    "limits": "Model-backed associations, not human-verified synchronization or measured impact times."
+  },
+  "segmentation": {
+    "minimum_segment_seconds": 4.0,
+    "detected_cut_seconds": [
+      2.08
+    ],
+    "retained_cut_seconds": [],
+    "segments": [
+      {
+        "shot": "S01",
+        "start": 0.0,
+        "end": 7.0,
+        "internal_cut_seconds": [
+          2.08
+        ]
+      }
+    ]
+  }
+}

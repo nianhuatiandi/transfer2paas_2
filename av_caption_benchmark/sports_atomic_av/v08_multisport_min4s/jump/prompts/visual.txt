@@ -1,0 +1,29 @@
+Video captioning pipeline v0.8, sport: jump. Describe the scene, people, clothing, setting, readable text and each execution in English. Preserve original-language text. Give movement direction in screen coordinates, observed starts and finishes, uncertainty, and separate repeated or overlapping actions. The allowed sports techniques follow.
+- backswing | 后摆: preparatory backward arm swing
+- crouch | 屈髋屈膝: preparatory knee and hip flexion
+- forward swing | 前摆: forward/upward propulsive arm swing
+- leg extension | 蹬伸: push-off through propulsive leg extension
+- flight | 腾空: feet unsupported until first ground contact
+- landing absorption | 落地缓冲: initial ground contact through loaded knee flexion
+- rise | 起身: stand back up after landing
+- heel raise | 提踵: distinct preparatory heel raise before propulsion, only with visible evidence
+- step | 调整步: visible approach/repositioning step
+- other | 其他动作: other observable sports action
+Track both arms and both legs independently, including overlapping phases and support changes.
+VISUAL STAGE: inspect only this shot's timestamped source frames. No audio is supplied to this stage. Return one JSON object, no Markdown or commentary. The pipeline will render the final four-section report; do not output those sections here.
+
+Use caller-provided shot boundaries as segmentation metadata; determine people, text and events from the actual images. Frame times are global clip times, not a new local clock. All reported times must be numeric seconds within this shot. First/last frame gaps are not permission to invent a movement. If the shot begins/ends during an action, describe the observed portion and mark the boundary cropped.
+
+JSON schema (all keys required):
+{
+  "shot": "caller shot ID",
+  "actors": [{"id": "S01-P01", "description": "visible clothing, location, equipment or leading limb if supported; neutral identity"}],
+  "storyline": "English paragraph describing scene and visible sequence, first and last observed state, all actors' important changes, and any cropped/uncertain observations",
+  "visible_text": [{"start": 0.0, "end": 0.4, "text": "verbatim readable text; [illegible] for unreadable parts", "appearance": "position/style; timing uncertainty"}],
+  "actions": [{"start": 0.0, "end": 0.4, "actor": "an actor ID defined above", "technique": "one allowed canonical label", "evidence": "visible body/foot/equipment cues with frame times, including missing cues for fallback", "detail": "English description; separate screen direction of body from equipment trajectory; cropped/estimated boundaries; recovery purpose if applicable", "key_moments": [{"name": "applicable anchor name", "time": null}]}],
+  "uncertainties": ["observations that cannot be resolved from these frames"]
+}
+Use empty arrays for genuinely absent text/actions; do not populate placeholder examples. Actor IDs must begin with the caller shot ID. Do not link identities across shots because no other shot is supplied. For text visible in only one frame, state single-frame observation in appearance and use that frame's source display interval (up to 1/source_fps second, bounded by the shot); do not claim a longer display duration.
+
+Caller metadata: {"shot": "S01", "start": 0.0, "end": 7.0, "duration": 7.0, "source_fps": 25.0, "frame_times": [0.0, 0.08, 0.16, 0.24, 0.32, 0.4, 0.48, 0.56, 0.64, 0.72, 0.8, 0.88, 0.96, 1.04, 1.12, 1.2, 1.28, 1.36, 1.44, 1.52, 1.6, 1.68, 1.76, 1.84, 1.92, 2.0, 2.04, 2.08, 2.16, 2.24, 2.32, 2.4, 2.48, 2.56, 2.64, 2.72, 2.8, 2.88, 2.96, 3.04, 3.12, 3.2, 3.28, 3.36, 3.44, 3.52, 3.6, 3.68, 3.76, 3.84, 3.92, 4.0, 4.08, 4.16, 4.24, 4.32, 4.4, 4.48, 4.56, 4.64, 4.72, 4.8, 4.88, 4.96, 5.04, 5.12, 5.2, 5.28, 5.36, 5.44, 5.52, 5.6, 5.68, 5.76, 5.84, 5.92, 6.0, 6.08, 6.16, 6.24, 6.32, 6.4, 6.48, 6.56, 6.64, 6.72, 6.8, 6.88, 6.96]}
+This inference segment contains camera cuts at these absolute clip seconds: [2.08]. Preserve the changes of view and the order and independent times of actions and sounds. Do not infer continuity of an action or identity from the edit alone. Repetitions and overlapping subsecond events must retain their own boundaries.

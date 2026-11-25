@@ -1,0 +1,274 @@
+## Storyline
+
+00:00.000 - 00:08.000
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Indoor badminton hall with a blue court, green run-off areas, a taut net on yellow posts, overhead sponsor banners (YONEX / 旭日星空 / XURI STAR) and a top-right channel watermark. The supplied segment contains two internal camera cuts (≈3.9 s and ≈7.6 s), so three distinct views are present and person identity is not carried across them. In the first view (0.0-3.8 s) the near-side player P01 (black tee, grey shorts, back to camera) faces the far-side player P02 (pink shirt). P02 twice raises his racket overhead and delivers shuttles across the net; P01 steps out to his own right (screen-right) into a loaded sideways reach for each delivery and answers with a rising return back over the net (the second return is tracked arcing over the net and descending into the far right court at 3.2-3.8 s), then re-spreads into a wide ready stance between deliveries. At the first cut the pairing and roles change: in the second view (3.9-7.6 s) the near-side player P03 (black sleeveless top, back to camera) keeps a racket low in his left hand and tosses shuttles from his raised bare right hand, while the far-side player P04 (maroon shirt, light shorts) lunges forward or sideways to play each tossed shuttle with a rising return and then resets upright; P03 stays largely stationary between tosses, consistent with a feeder role. At the second cut (≈7.6 s) the camera shows a single presenter P05 facing the lens in a black ACTIVE T-shirt and pink shorts, smiling and waving the raised racket in a conversational manner (no stroke is performed); in the final frame a Chinese subtitle appears at the bottom of the screen. Action preparations at 0.0 s and at the 3.9 s view start are cropped because the racket/hand is already raised in the first observed frame of each view. People: S01-P01: Near-side player in the first view (0.0-3.8 s), back to camera, black T-shirt with a pink graphic on the upper back, light grey shorts, dark shoes with white socks; racket carried in the right hand (racket head visible at his right at 0.0 s and extended to screen-right during reaches).; S01-P02: Far-side player in the first view (0.0-3.8 s), facing camera, magenta/pink shirt, dark shorts; raises the racket overhead and swings to deliver shuttles toward P01, retrieving the next shuttle between deliveries.; S01-P03: Near-side feeder in the second view (3.9-7.6 s), back to camera, black sleeveless top with white short sleeves, black shorts, dark shoes; holds a red-framed racket low in his left hand while raising his bare right hand overhead with a shuttle to toss it to P04.; S01-P04: Far-side player in the second view (3.9-7.6 s), facing camera, dark maroon shirt, light grey shorts; receives the tossed shuttles with forward/sideways lunges and rising returns.; S01-P05: Presenter in the third view (7.6-8.0 s), facing camera, black T-shirt with a red circular logo and the word ACTIVE, pink shorts; holds a racket in the right hand and gestures with it while speaking to the lens. Identity continuity with P01/P03 is not established across the cuts.
+Audio: 00:00.000 - 00:08.000: Continuous rhythmic thuds and squeaks of shoes moving on a hard surface.; 00:01.200 - 00:01.400: A sharp impact sound like a ball being hit.; 00:03.200 - 00:03.400: A sharp impact sound like a ball being hit.; 00:04.800 - 00:05.000: A sharp impact sound like a ball being hit.; 00:06.800 - 00:07.000: A sharp impact sound like a ball being hit.
+Speech (AV reviewed; associations below): 00:00.960 - 00:01.520 V01: 往这边跳。; 00:03.480 - 00:03.720 V01: 一个，; 00:06.960 - 00:07.320 V01: 两个。; 00:07.520 - 00:07.633 V01: 好，; 00:07.633 - 00:08.000 V01: 你……
+
+## Visible Text
+
+00:00.000 - 00:07.967
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+"YONEX": white wordmark on green/blue banner panels across the top of the frame; present in all three views though cropped differently after each cut
+
+00:00.000 - 00:07.600
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+"旭日星空": red logo with purple Chinese characters on the central overhead banner, first and second views
+
+00:00.000 - 00:07.600
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+"XURI STAR 专业羽毛球学院": smaller Latin + Chinese line beneath the 旭日星空 logo on the overhead banners, first and second views
+
+00:00.000 - 00:07.967
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+"李宇轩教练 bilibili": white watermark with logo at the top-right corner, persistent across all views
+
+00:07.633 - 00:07.967
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+"ACTIVE": white capital letters with a red circular emblem on the chest of the presenter's black T-shirt, third view only
+
+00:07.967 - 00:08.000
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+"你们是不是经常遇到这个问题": white Chinese subtitle with dark outline at bottom-centre; single-frame observation at the last supplied frame
+
+## Speakers and Transcript
+
+Speaker profiles:
+V01 - Male voice speaking Mandarin with a standard accent, instructional tone.; visual identity assessed per utterance by model AV review.
+
+00:00.960 - 00:01.520
+Speaker: V01 (off_screen)
+State: Clear imperative coaching cue; timing matches audible speech.
+Content: "往这边跳。"
+Related actions: A03: instruction (Imperative 'hop this way' directs the jumping footwork of the drill and is spoken exactly as P01 completes the upward return off the feed (A03, 0.9-1.1 s) into recovery.)
+AV evidence: Male Mandarin instructional voice (V01) is audible, but in view 1 no speaker is verifiable: P01 has his back to the camera and P02 is too distant for lip resolution. The cue overlaps P01's return/recovery phase.; model confidence=medium
+
+00:03.480 - 00:03.720
+Speaker: V01 (off_screen)
+State: Rhythmic count, clear.
+Content: "一个，"
+Related actions: A07: retrospective comment ('One' is uttered right after the completed feed-lunge-return exchange (A05-A07) whose return contact is at ~3.0 s and whose impact sound precedes the count by ~0.2 s.)
+AV evidence: Count follows immediately after the second exchange of view 1 (return impact ~3.2-3.4 s, P01 recovering 3.4-3.8 s). No visible mouth movement: P01 back-to-camera, P02 distant.; model confidence=medium
+
+00:06.960 - 00:07.320
+Speaker: V01 (off_screen)
+State: Rhythmic count, clear.
+Content: "两个。"
+Related actions: A15: retrospective comment ('Two' is uttered directly after the toss-lunge-return exchange (A13-A15) completing at ~6.8-7.0 s.)
+AV evidence: Count follows P04's second return in view 2 (impact ~6.8-7.0 s). P03 (feeder) has his back to camera and P04 is distant, so no lip confirmation; voice consistent with V01.; model confidence=medium
+
+00:07.520 - 00:07.633
+Speaker: V01 (off_screen)
+State: Transition phrase beginning before the cut; remainder continues in next view.
+Content: "好，"
+Related actions: none after AV review
+AV evidence: Pre-cut portion of U04 in view 2; no visible speaker (P03 back turned, P04 distant). Utterance split at the 7.633 s camera cut per policy.; model confidence=medium
+
+00:07.633 - 00:08.000
+Speaker: V01 (supported: S01-P05)
+State: Cut off mid-phrase at shot end; onset of a new explanatory sentence.
+Content: "你……"
+Related actions: none after AV review
+AV evidence: After the cut, the presenter (P05) faces the camera, mouth visibly moving and gesturing with the racket in frames 7.733-7.967 s; he is the only person on screen and the audible male voice matches. On-screen subtitle text is not used as transcript.; model confidence=medium
+
+## Atomic Sports Actions
+
+00:00.000 - 00:00.400
+Action ID: A01
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P02
+Technique: racket feed
+Chinese term: 球拍喂球
+Visual evidence: At 0.0-0.2 s P02's racket is already raised overhead (preparation cropped by the shot start) with the shuttle above him (white dot ≈445,250); at 0.3-0.4 s he swings down and the shuttle departs across the net toward P01 (dots descending on P01's side at 0.6-0.9 s). Repeated overhead racket delivery with the partner striking the arriving shuttle supports a practice feed rather than a serve (no underarm serving mechanics, not start-of-play).
+Detail: Overhead racket delivery from the far court to the near court; outgoing shuttle crosses the net toward screen-right/centre where P01 waits. Boundary cropped at the shot start.
+Key moments: racket-shuttle contact: 00:00.300 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable racket-shuttle impact localized near the 0.3 s feed contact; only continuous shoe noise present.; confidence=medium; evidence: Visual feed contact at ~0.3 s, but the audio's discrete impacts begin only at ~1.2 s; the feed pop is not separable from background.
+
+00:00.500 - 00:00.900
+Action ID: A02
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P01
+Technique: lunge
+Chinese term: 弓步／跨步上网
+Visual evidence: At 0.5 s P01's right foot moves outward and by 0.6-0.8 s his right knee is deeply flexed and bearing weight while his torso leans screen-right and the racket extends low to that side toward the descending shuttle (dot at ≈510-525,420-485). This is a reaching step with lead-leg loading, not merely a wide stance.
+Detail: Sideways loaded reach to his own right (screen-right) to meet the incoming feed on the near court; ends as the swing begins to unload at 0.9 s.
+Key moments: maximum loaded reach: 00:00.800 (estimated)
+Aligned sounds: none_detected after model AV review: No discrete footfall attributable; lunge steps blend into the sustained rhythmic shoe squeaks.; confidence=medium; evidence: Continuous 0.0-8.0 s shoe thuds/squeaks are a rhythmic background and cannot be assigned to this specific lunge.
+
+00:00.900 - 00:01.100
+Action ID: A03
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P01
+Technique: upward return
+Chinese term: 向上回球（球种未定）
+Visual evidence: Racket sweeps from the right (0.9 s) through a blurred follow-through (1.0 s, blur ≈530,585) and the shuttle is seen rising to a high point above the net (1.1 s, white dot ≈467,287). The outgoing rising path is observed, but the contact region (low reach at his right, roughly mid/forecourt boundary) and the shuttle's depth beyond the net are not firmly resolved, so no lift/clear subtype is claimed.
+Detail: Underarm forehand-side strike off the feed with a rising outgoing path back over the net toward the far court; overlaps the end of the lunge.
+Key moments: racket-shuttle contact: 00:01.000 (estimated)
+Aligned sounds: uncertain after model AV review: A sharp impact-like pop occurs at ~1.2-1.4 s, compatible with the return stroke but lagging the estimated contact.; audio=00:01.300 (estimated); visual=00:01.000 (estimated); audio-minus-visual=+0.300 s; confidence=low; evidence: Frames show racket blur at 1.0 s and shuttle already high above the net at 1.1 s, implying contact <=1.0 s; the heard pop at 1.2-1.4 s differs by 0.2-0.4 s (>0.2 s tolerance), so support cannot be claimed.
+
+00:01.200 - 00:01.700
+Action ID: A04
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P01
+Technique: recovery
+Chinese term: 回位
+Visual evidence: After the follow-through (racket over the left shoulder 1.2-1.4 s) P01 steps the racket down and re-spreads into the same wide balanced ready stance seen at 0.0 s by 1.6-1.7 s.
+Detail: Re-establishes the ready stance following the return; purpose = recovery.
+Key moments: ready stance re-established: 00:01.700 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable sound attributable to the recovery steps.; confidence=medium; evidence: Only continuous shoe noise; no discrete transient isolated to 1.2-1.7 s.
+
+00:01.800 - 00:02.400
+Action ID: A05
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P02
+Technique: racket feed
+Chinese term: 球拍喂球
+Visual evidence: P02 reaches forward at 1.8-1.9 s (collecting the returned shuttle) then raises the racket overhead 2.0-2.2 s with the shuttle above him (dot ≈388,275 at 2.1-2.2 s) and strikes at 2.3 s; the shuttle then travels to P01's side (dots 2.6-2.9 s descending screen-right). Same repeated overhead-delivery pattern as the first feed.
+Detail: Second overhead racket delivery from far court to near court; outgoing shuttle crosses the net toward P01.
+Key moments: racket-shuttle contact: 00:02.300 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable impact localized near the 2.3 s feed contact.; confidence=medium; evidence: Visual contact ~2.3 s; nearest discrete pop is at 3.2-3.4 s, which aligns with the subsequent return instead.
+
+00:02.500 - 00:02.900
+Action ID: A06
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P01
+Technique: lunge
+Chinese term: 弓步／跨步上网
+Visual evidence: At 2.5-2.6 s P01's right foot steps out and by 2.7-2.8 s the right knee is loaded and flexed with the torso leaning screen-right and the racket extended low to that side toward the descending shuttle (dots ≈495-510,325-375).
+Detail: Sideways loaded reach to his own right (screen-right) to intercept the second feed; ends as the swing begins at 2.9 s.
+Key moments: maximum loaded reach: 00:02.800 (estimated)
+Aligned sounds: none_detected after model AV review: Lunge footfalls not separable from the continuous shoe squeak bed.; confidence=medium; evidence: Sustained rhythmic background only during 2.5-2.9 s.
+
+00:02.900 - 00:03.200
+Action ID: A07
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P01
+Technique: upward return
+Chinese term: 向上回球（球种未定）
+Visual evidence: Racket blurs on the right at 2.9-3.0 s, then a high follow-through on the left at 3.1 s; the shuttle is tracked rising, crossing the net and descending into the far right court (dots 3.2-3.8 s moving right and down toward P02's area). The rising outgoing path is observed; the exact contact region is low at his right and the forecourt/deep origin needed for a lift subtype is not firmly resolved, so upward return is used.
+Detail: Rising underarm forehand-side return off the feed; the outgoing shuttle arcs over the net toward the far right side; overlaps the end of the lunge.
+Key moments: racket-shuttle contact: 00:03.000 (estimated)
+Aligned sounds: uncertain after model AV review: Sharp pop at ~3.2-3.4 s compatible with the return, but later than the estimated contact.; audio=00:03.300 (estimated); visual=00:03.000 (estimated); audio-minus-visual=+0.300 s; confidence=low; evidence: Racket blur at 2.9-3.0 s and shuttle crossing the net by 3.2 s suggest contact ~3.0 s; the 0.2-0.4 s offset to the heard pop exceeds the support tolerance.
+
+00:03.400 - 00:03.800
+Action ID: A08
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P01
+Technique: recovery
+Chinese term: 回位
+Visual evidence: Following the 3.1 s follow-through, P01 lowers the racket and returns to the wide ready stance by 3.7-3.8 s (last frames of the first view).
+Detail: Re-establishes ready posture after the return; purpose = recovery. Boundary cropped at the view cut (≈3.9 s).
+Key moments: ready stance re-established: 00:03.800 (estimated)
+Aligned sounds: none_detected after model AV review: No discrete sound attributable to recovery at 3.4-3.8 s.; confidence=medium; evidence: Continuous shoe noise only; the count '一个' follows but is speech, not an action sound.
+
+00:03.870 - 00:04.100
+Action ID: A09
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P03
+Technique: hand feed
+Chinese term: 手抛喂球
+Visual evidence: At the second view's first frame (3.867 s) P03's bare right hand is already raised overhead holding a shuttle (white blob at the raised hand) while the red-framed racket is held low in his other hand (visible ≈672,270 at 4.067 s); the shuttle is released and then descends toward P04 (dots 3.967-4.467 s moving from ≈677,143 down to ≈560,250). This is a bare-hand release, not a racket strike, and not a serve (no underarm serving mechanics; repeated drill delivery).
+Detail: Overhead hand toss from the near court to the far court toward P04; preparation cropped at the view cut.
+Key moments: shuttle release: 00:03.900 (estimated)
+Aligned sounds: none_detected after model AV review: Bare-hand toss produces no audible impact.; confidence=high; evidence: Release at ~3.9 s is a hand feed; no transient in the audio at that time, consistent with a silent release.
+
+00:04.200 - 00:04.600
+Action ID: A10
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P04
+Technique: lunge
+Chinese term: 弓步／跨步上网
+Visual evidence: P04 steps forward and loads the lead knee while reaching the racket toward the descending toss (4.3-4.6 s, low extended posture with racket at the shuttle, body travelling toward screen-left/his right).
+Detail: Forward loaded reach on the far court to play the tossed shuttle.
+Key moments: maximum loaded reach: 00:04.500 (estimated)
+Aligned sounds: none_detected after model AV review: Lunge footfalls blend into continuous shoe squeaks.; confidence=medium; evidence: No discrete transient isolated to 4.2-4.6 s.
+
+00:04.500 - 00:04.900
+Action ID: A11
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P04
+Technique: upward return
+Chinese term: 向上回球（球种未定）
+Visual evidence: Overlapping the end of the lunge, P04's racket contacts the toss and the shuttle is seen rising above the net (4.667 s dot ≈572,170 region) with his follow-through racket blur at 4.8-4.9 s. The outgoing path rises, but the shuttle's depth on the near side is not tracked and the contact origin is not firmly forecourt, so upward return is used rather than lift.
+Detail: Rising return off the hand feed directed back toward the near court; overlaps the lunge.
+Key moments: racket-shuttle contact: 00:04.700 (estimated)
+Aligned sounds: supported after model AV review: Sharp racket-shuttle pop at ~4.8-4.9 s matching the rising return off the toss.; audio=00:04.850 (estimated); visual=00:04.700 (estimated); audio-minus-visual=+0.150 s; confidence=medium; evidence: Visual contact ~4.7 s (shuttle rising above net at 4.667 s, follow-through blur 4.8-4.9 s); heard pop within 0.2 s; no competing impact (toss was silent, next toss at 6.0 s).
+
+00:05.000 - 00:05.500
+Action ID: A12
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P04
+Technique: recovery
+Chinese term: 回位
+Visual evidence: After the 4.9 s follow-through P04 straightens up and re-sets a balanced ready stance by 5.3-5.5 s while P03 remains stationary.
+Detail: Returns to ready posture after the return; purpose = recovery.
+Key moments: ready stance re-established: 00:05.500 (estimated)
+Aligned sounds: none_detected after model AV review: No distinguishable sound for the recovery at 5.0-5.5 s.; confidence=medium; evidence: Only the continuous shoe-noise bed; no discrete transient.
+
+00:05.600 - 00:06.000
+Action ID: A13
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P03
+Technique: hand feed
+Chinese term: 手抛喂球
+Visual evidence: P03 again raises his bare right hand overhead with a shuttle (white blob at the raised hand 5.667-5.967 s) while the racket stays low in the other hand, then releases it; the shuttle descends toward P04 (dots 6.067-6.567 s moving from ≈665,135 down the far court). Same repeated bare-hand delivery pattern; not a serve and not a racket strike.
+Detail: Second overhead hand toss from near court to far court toward P04.
+Key moments: shuttle release: 00:06.000 (estimated)
+Aligned sounds: none_detected after model AV review: Second bare-hand toss is silent.; confidence=high; evidence: Release ~6.0 s; no audio transient at that time.
+
+00:06.200 - 00:06.600
+Action ID: A14
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P04
+Technique: lunge
+Chinese term: 弓步／跨步上网
+Visual evidence: P04 pushes off and lunges sideways with the lead knee deeply flexed and the racket extended low toward the arriving toss (6.3-6.6 s, deep bent-knee reach, body travelling toward screen-right/his left).
+Detail: Sideways loaded reach on the far court to play the second toss.
+Key moments: maximum loaded reach: 00:06.500 (estimated)
+Aligned sounds: none_detected after model AV review: Lunge footfalls not separable from background squeaks.; confidence=medium; evidence: Continuous rhythmic shoe noise only during 6.2-6.6 s.
+
+00:06.600 - 00:07.000
+Action ID: A15
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P04
+Technique: upward return
+Chinese term: 向上回球（球种未定）
+Visual evidence: Overlapping the lunge's end, P04's racket rises through contact (6.7-6.9 s) and the shuttle is tracked lifting off his racket to a high point (6.867 s dot ≈467,155 region). Outgoing path rises; depth and forecourt origin are not firmly resolved, so upward return is used.
+Detail: Rising return off the second hand feed; overlaps the lunge.
+Key moments: racket-shuttle contact: 00:06.800 (estimated)
+Aligned sounds: supported after model AV review: Sharp racket-shuttle pop at ~6.8-6.9 s matching the rising return off the second toss.; audio=00:06.850 (estimated); visual=00:06.800 (estimated); audio-minus-visual=+0.050 s; confidence=medium; evidence: Visual contact ~6.8 s with shuttle lifting off the racket by 6.867 s; heard pop within 0.1-0.2 s; no competing impact nearby.
+
+00:07.100 - 00:07.600
+Action ID: A16
+Inference segment: S01
+Detected camera cuts within this segment: 00:03.867, 00:07.633
+Actor: S01-P04
+Technique: recovery
+Chinese term: 回位
+Visual evidence: After the 6.9-7.0 s follow-through P04 lowers the racket and stands upright in a ready posture through 7.4-7.6 s (last frames of the second view before the cut to the presenter).
+Detail: Re-establishes ready stance after the return; purpose = recovery. Boundary cropped at the view cut (≈7.6 s).
+Key moments: ready stance re-established: 00:07.600 (estimated)
+Aligned sounds: none_detected after model AV review: No discrete sound attributable to the final recovery at 7.1-7.6 s.; confidence=medium; evidence: Only continuous shoe noise; the following speech ('好，你') is not an action sound.
