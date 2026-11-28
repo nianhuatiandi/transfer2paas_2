@@ -1,0 +1,55 @@
+0.00–5.40 s | V0001 · visible_speech · Woman with long brown hair tied back, wearing a patterned black top | speaking
+A woman stands while speaking and gesturing. She faces forward toward another person, moving her mouth as she speaks. She uses hand gestures to emphasize her points. Posture: standing. Visible evidence: continuous lip movement and jaw articulation while looking at the other person
+Included in silver reference
+
+0.00–7.48 s | A0001 · music · unidentified source | music
+Upbeat instrumental music plays continuously from the beginning of the clip until it fades out at 00:07.
+Included in silver reference
+
+0.30–0.60 s | V0002 · gesture · Woman with long brown hair tied back, wearing a patterned black top | pointing
+The woman points at the man. She extends her right index finger towards him.
+Included in silver reference
+
+0.32–2.48 s | A0002 · speech · unidentified voice | Speech
+I won't spend your money, absolutely won't spend your money, come push my cart.
+Original: 不花你的钱，绝对不花你钱，来推我推车。
+Included in silver reference
+
+1.90–2.70 s | V0003 · gesture · Woman with long brown hair tied back, wearing a patterned black top | extending hand
+The woman holds out her hand to ask for something. She extends both hands forward with palms up.
+Included in silver reference
+
+2.80–5.40 s | V0004 · visible_speech · Man with short dark hair wearing a green and black jacket over a red shirt | speaking
+A man sits at a table and speaks. He looks up towards the standing woman, moving his lips as he talks. He holds a small object in one hand near his chest. Posture: seated. Visible evidence: No separate facial evidence supplied in this proposal.
+Review: Facial evidence missing, Visible speaker not corroborated in the muted face pass
+
+3.52–5.04 s | A0003 · speech · unidentified voice | Speech
+Hurry up, don't drive recklessly, I have experience.
+Original: 快点不能乱开啊，我有经验的。
+Included in silver reference
+
+5.04–5.60 s | A0004 · speech · unidentified voice | Speech
+Won't drive recklessly.
+Original: 不乱开。
+Included in silver reference
+
+5.50–6.10 s | V0005 · motion · Man with short dark hair wearing a green and black jacket over a red shirt | passing keys
+The man gives car keys to the woman. He reaches across the table and places the keys into her extended hand.
+Included in silver reference
+
+6.00–6.40 s | V0006 · visible_speech · Man with short dark hair wearing a green and black jacket over a red shirt | man speaking while handing over keys
+A seated man extends his arm and speaks briefly. While still sitting, he reaches out with his right hand holding an object towards the other person. His mouth moves slightly as if saying something short. Posture: seated. Visible evidence: Frames from 00:06.000 to 00:06.400 show the man’s lips parting and moving in distinct shapes indicative of talking, synchronized with his arm extending across the table to hand over the keys.
+Review: Muted face observation not corroborated in joint review
+
+6.20–6.80 s | V0007 · visible_speech · Woman with long brown hair tied back, wearing a patterned black top | speaking
+A standing woman takes an offered item and smiles. She steps closer, reaching out with both hands to accept the object being handed to her. Her facial expression changes into a wide smile as she receives it. Posture: standing. Visible evidence: No separate facial evidence supplied in this proposal.
+Review: Facial evidence missing, Visible speaker not corroborated in the muted face pass
+
+6.40–6.72 s | A0005 · speech · unidentified voice | Speech
+Come on.
+Original: 来吧。
+Included in silver reference
+
+6.80–7.50 s | V0008 · motion · Woman with long brown hair tied back, wearing a patterned black top | turning and walking
+The woman turns around and walks away from the table. She pivots on her feet and takes steps towards the background area.
+Included in silver reference

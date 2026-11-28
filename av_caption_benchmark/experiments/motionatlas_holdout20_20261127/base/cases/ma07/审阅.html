@@ -1,0 +1,35 @@
+<!doctype html><meta charset="utf-8">
+<title>动画角色在室内互动</title>
+<style>body{max-width:980px;margin:2em auto;padding:0 1em;font:16px/1.65 system-ui;color:#183b42}video{max-width:100%;max-height:48vh}li{margin:1em 0}button{cursor:pointer}a{color:#056d78}</style>
+<a href="../../试标总览.html">返回总览</a><h1>动画角色在室内互动</h1>
+<video id="clip" controls preload="metadata" src="../../../cases/ma07/clip.mp4"></video>
+<p>主要执行者 3 位（动画角色）。按主要参与者筛选，路人、观众及背景角色不计。</p>
+<p>视觉初标（<a href="stages/visual/prompt.txt">指令</a> · <a href="stages/visual/response.txt">原文</a>）</p>
+<h2>人物与执行段</h2><ul>
+<li>S01-P01　黄色方形角色，穿着白衬衫红领带和棕色短裤，头戴带有花生装饰的粉色帽子</li>
+<li>S01-P02　绿色长条形角色，穿着白色制服和红领结，站在吧台后方</li>
+<li>S02-P01　粉红色海星角色，头戴带有花生装饰的粉色帽子，手里拿着蓝色勺子</li>
+<li>S02-P02　黄色方形角色，仅露出头部和肩部，头戴带有花生装饰的粉色帽子</li>
+<li><button data-t="0.0">▶ 0.00 s</button> EX-S01-WALK　0.000–0.500 秒　双腿交替迈步向画面前方走动</li>
+<li><button data-t="0.625">▶ 0.62 s</button> EX-S01-STAND　0.625–1.500 秒　停止走动后保持站立姿态</li>
+<li><button data-t="0.75">▶ 0.75 s</button> EX-S01-SERVE　0.750–1.375 秒　端起托盘上的饮料并递给顾客</li>
+<li><button data-t="1.875">▶ 1.88 s</button> EX-S02-EAT　1.875–2.125 秒　将勺子送入口中进食</li>
+<li><button data-t="2.25">▶ 2.25 s</button> EX-S02-HOLD_SPOON　2.250–5.250 秒　手持勺子停留在胸前位置</li>
+<li><button data-t="2.875">▶ 2.88 s</button> EX-S02-RISE　2.875–3.125 秒　从吧台下方升起进入画面</li>
+<li><button data-t="4.0">▶ 4.00 s</button> EX-S02-BLINK　4.000–4.125 秒　双眼闭合后重新睁开</li>
+</ul>
+<h2>视觉动作 · 无声帧初标</h2><ul>
+<li><button data-t="0.0">▶ 0.00 s</button> ACT-S01-WALK　S01-P01　motion / 走动　0.000–0.500 秒<br>动作简述　黄色方形角色走到吧台前停下。<br>详细描述　角色双臂自然下垂，双腿交替向前迈出步伐，身体伴随步伐轻微起伏，直至在吧台前停下脚步。<br>画面证据　0 秒　左腿在前，右腿在后，处于迈步状态<br>画面证据　0.25 秒　右腿抬起准备向前迈<br>画面证据　0.5 秒　左脚落地，右脚在后，即将停步<br>画面证据　0.625 秒　双脚平行站立，停止移动</li>
+<li><button data-t="0.625">▶ 0.62 s</button> ACT-S01-STAND　S01-P01　held_pose / 站立等待　0.625–1.500 秒<br>动作简述　黄色方形角色在吧台前静止站立。<br>详细描述　角色站定后，双臂垂于身体两侧，面部表情由皱眉变为睁大眼睛，保持静止姿态直到镜头切换。<br>画面证据　0.625 秒　站定，眼睛圆睁，嘴巴微张<br>画面证据　1.5 秒　保持相同站姿和表情</li>
+<li><button data-t="0.75">▶ 0.75 s</button> ACT-S01-SERVE_DRINK　S01-P02　motion / 递送饮料　0.750–1.375 秒<br>动作简述　绿色服务员将饮料托盘放到柜台上。<br>详细描述　绿色角色双手端起装有紫色饮料的托盘，将其向右平移放置在柜台上，随后松开手收回手臂。<br>画面证据　0.75 秒　双手接触托盘边缘<br>画面证据　1 秒　托盘被举起并向右移动<br>画面证据　1.25 秒　托盘放置在水杯旁的台面上<br>画面证据　1.375 秒　手部离开托盘<br>子阶段　0.750–1.000 秒　端起托盘　双手握住托盘边缘并将其抬离台面<br>子阶段　1.000–1.375 秒　递交并放下　将托盘水平移动至目标位置并放下<br>关键点　1.25　放下托盘</li>
+<li><button data-t="1.875">▶ 1.88 s</button> ACT-S02-EAT_ICE_CREAM　S02-P01　motion / 吃冰淇淋　1.875–2.125 秒<br>动作简述　粉红海星用勺子吃了一大口冰淇淋。<br>详细描述　粉红海星右手持蓝色勺子向上送至嘴边，张大嘴巴咬住勺子前端，随后闭嘴咀嚼并将勺子拉出。<br>画面证据　1.875 秒　勺子靠近嘴部，嘴巴张开<br>画面证据　2 秒　勺子完全进入口中，嘴巴闭合<br>画面证据　2.125 秒　勺子移出嘴部，嘴巴再次张开<br>子阶段　1.875–2.000 秒　送食入口　手臂上举使勺子接触口腔<br>子阶段　2.000–2.125 秒　咀嚼吞咽　含住勺子并进行咀嚼动作<br>关键点　2.0　咬住勺子</li>
+<li><button data-t="2.25">▶ 2.25 s</button> ACT-S02-HOLD_SPOON_POSE　S02-P01　held_pose / 持勺停顿　2.250–5.250 秒<br>动作简述　粉红海星拿着勺子静止不动地看着旁边。<br>详细描述　吃完一口后，粉红海星将拿勺子的手停在胸前高度，目光注视前方的香蕉船，期间除了眨眼和表情变化外没有大幅肢体动作。<br>画面证据　2.25 秒　勺子停在半空中，不再移动<br>画面证据　3.375 秒　转头看向左侧出现的同伴<br>画面证据　5.25 秒　依然保持持勺姿势看着对方</li>
+<li><button data-t="2.875">▶ 2.88 s</button> ACT-S02-RISE_FROM_BELOW　S02-P02　motion / 探头出现　2.875–3.125 秒<br>动作简述　黄色方块从吧台下方探出头来。<br>详细描述　黄色方块的头部从画面左下角垂直向上移动，越过木质吧台边缘，最终停留在与视线平齐的位置。<br>画面证据　2.875 秒　头顶刚露出吧台边缘<br>画面证据　3 秒　整个头部升入画面<br>画面证据　3.125 秒　停止上升，稳定在吧台上方<br>关键点　3.0　越过吧台</li>
+<li><button data-t="4.0">▶ 4.00 s</button> ACT-S02-BLINK_EYES　S02-P02　gesture / 眨眼示意　4.000–4.125 秒<br>动作简述　黄色方块快速眨了一下眼睛。<br>详细描述　黄色方块的眼皮向下闭合遮住眼球，持续约两帧后迅速向上睁开恢复原状。<br>画面证据　4 秒　双眼紧闭呈横线状<br>画面证据　4.125 秒　双眼重新睁开成圆形<br>关键点　4.0　闭眼<br>关键点　4.125　睁眼</li>
+</ul>
+<h2>音频与同期关系</h2><ul>
+<li>此输入缺少可核验的原声音轨，仅完成视觉初标。</li>
+</ul>
+<h2>待核对</h2><ul>
+</ul>
+<script>document.addEventListener("click",e=>{if(e.target.hasAttribute("data-t")){clip.currentTime=Number(e.target.dataset.t);clip.play()}})</script>

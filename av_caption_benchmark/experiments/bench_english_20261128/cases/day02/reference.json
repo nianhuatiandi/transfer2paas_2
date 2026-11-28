@@ -1,0 +1,234 @@
+{
+  "schema": "av-events/1.0",
+  "description_language": "en",
+  "source_sha256": "6f597d888a63629e4552613064e0ef646169b2c6fc0d7e19ec86a8d0674a53ca",
+  "protocol_sha256": "75740841043c476246042816ac76cd1ab0f75eb4dbfd6149dad3d1960d5d587a",
+  "duration_seconds": 9.668503,
+  "actors": [
+    {
+      "id": "P1",
+      "appearance": "man with grey hair and beard, wearing an orange sweatshirt"
+    }
+  ],
+  "clock": "source seconds, half-open intervals",
+  "relation_semantics": "Evidence of temporal co-occurrence only. Speaker identity and acoustic causation are separate claims.",
+  "reference_status": "machine_reviewed_silver",
+  "events": [
+    {
+      "id": "A0001",
+      "kind": "sound",
+      "actor": "steam whistle",
+      "start": 0,
+      "end": 4.12,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "steam whistle",
+      "detail": "A loud, high-pitched steam whistle blows in several distinct bursts throughout the interval and fades out at the end.",
+      "layer": "foreground",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "V0001",
+      "kind": "state",
+      "actor": "man with grey hair and beard, wearing an orange sweatshirt",
+      "start": 0,
+      "end": 8.5,
+      "sources": [
+        "shot00000/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "stands mostly still behind the table",
+      "brief": "The man stands mostly still behind the table, occasionally shifting his gaze downwards.",
+      "detail": "He remains largely stationary in place from 0.0s to 8.5s, though his head movements indicate he is looking at the items on the table.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "The man is not completely stationary; he looks down at the objects on the table between 1.5s and 3.5s before looking back up.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0002",
+      "kind": "visible_speech",
+      "actor": "man with grey hair and beard, wearing an orange sweatshirt",
+      "start": 4.9,
+      "end": 7.6,
+      "sources": [
+        "shot00000/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "addresses camera",
+      "brief": "A man with grey hair and beard wearing an orange sweatshirt speaks while looking off-camera.",
+      "detail": "From 4.9s to 7.6s, the man looks slightly upwards and to his left (viewer's right). His mouth moves continuously as if speaking. Around 6.5s, he raises his right hand towards his face/chest area.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "At 4.9s, the man's mouth opens and begins moving continuously as he faces forward toward the camera until approximately 7.6s.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip",
+      "posture": "unclear",
+      "visual_evidence": "Visible lip movements and jaw articulation are present from 00:04 to 00:08, synchronized with facial expressions that indicate active speech.",
+      "posture_evidence": "The man's lower body and hips are obscured by objects in the foreground, making it impossible to determine whether he is standing or seated."
+    },
+    {
+      "id": "A0002",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 5.1,
+      "end": 5.73,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Pretty cool,",
+      "transcript_original": "Pretty cool,",
+      "layer": "background",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        5.3,
+        6.18
+      ],
+      "word_interval": [
+        5.1,
+        5.73
+      ]
+    },
+    {
+      "id": "A0003",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 6.18,
+      "end": 6.62,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "huh?",
+      "transcript_original": "huh?",
+      "layer": "background",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        6.18,
+        6.62
+      ]
+    },
+    {
+      "id": "V0003",
+      "kind": "gesture",
+      "actor": "man with grey hair and beard, wearing an orange sweatshirt",
+      "start": 7.0,
+      "end": 8.5,
+      "sources": [
+        "shot00000/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "points at ear and up",
+      "brief": "The man points at his ear and then gestures upwards.",
+      "detail": "From 7.0s to 8.5s, he raises his right hand, touches his index finger to his ear, and then moves it upward while looking towards the camera.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Between 7.0s and 8.5s, the man raises his left hand (appearing on the right side of the screen), touches his index finger to his ear area, and then points upward.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0004",
+      "kind": "motion",
+      "actor": "man with grey hair and beard, wearing an orange sweatshirt",
+      "start": 8.5,
+      "end": 9.6,
+      "sources": [
+        "shot00000/visual/3"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "walks away",
+      "brief": "The man turns and walks out of the frame to the right.",
+      "detail": "Starting around 8.5s, he pivots on his feet and exits the view by 9.6s.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Starting around 8.5s, the man pivots his body and walks laterally to the right, exiting the frame entirely by the end of the clip at 9.6s.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    }
+  ],
+  "relations": [
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0,
+      "end": 4.12,
+      "robust_interval": [
+        0,
+        4.12
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 5.1,
+      "end": 5.73,
+      "robust_interval": [
+        5.1,
+        5.73
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0003",
+      "type": "temporal_overlap",
+      "start": 6.18,
+      "end": 6.62,
+      "robust_interval": [
+        6.18,
+        6.62
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 5.1,
+      "end": 5.73,
+      "robust_interval": [
+        5.1,
+        5.73
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0003",
+      "type": "temporal_overlap",
+      "start": 6.18,
+      "end": 6.62,
+      "robust_interval": [
+        6.18,
+        6.62
+      ],
+      "review_flags": []
+    }
+  ],
+  "phase_relations": []
+}

@@ -1,0 +1,496 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "ma12",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "楼外阳台上的人物",
+    "sample_ids": [
+      98
+    ],
+    "visible_people_screened": 1,
+    "official_path": "videos/CameraBench-9ea372e0-5454.1.17.mp4",
+    "local_original": "CameraBench-9ea372e0-5454.1.17.mp4",
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "source_window_seconds": [
+      0,
+      1.6
+    ],
+    "official_sha256": "e213f5272c2a119f277d919947c9e8dfd7ee6796409039a2fbd6182fd03843e9",
+    "clip_sha256": "e213f5272c2a119f277d919947c9e8dfd7ee6796409039a2fbd6182fd03843e9",
+    "audio_source": "official"
+  },
+  "duration_seconds": 1.6,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.04,
+      "first_frame": 0,
+      "end_frame_exclusive": 1
+    },
+    {
+      "id": "S02",
+      "start": 0.04,
+      "end": 1.6,
+      "first_frame": 1,
+      "end_frame_exclusive": 40
+    }
+  ],
+  "input_frames": {
+    "visual": 17,
+    "review": 40
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含两个镜头，主要展示一名男子站在公寓楼阳台上的画面。S01为远景，S02为推近至中景的连续镜头。由于画面存在鱼眼畸变且部分帧模糊，仅记录清晰可见的动作与姿态。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "位于画面上方阳台的一名男子，身穿深色外套"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "位于画面上方阳台的一名男子，身穿带有白色图案/文字的深色夹克和浅色内搭"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S02-E01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 0.44,
+        "end": 1.56,
+        "description": "男子将右手举至嘴边并持续停留"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": null,
+        "kind": "held_pose",
+        "label": "站立于阳台",
+        "start": 0.0,
+        "end": 0.04,
+        "start_range": [
+          0.0,
+          0.04
+        ],
+        "end_range": [
+          0.0,
+          0.04
+        ],
+        "detail": "在极短的远景镜头中，男子静止站在二楼外侧走廊的栏杆后方，身体朝向镜头方向。因距离较远且画面边缘有暗角，无法看清具体肢体细节。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "远景中可见一人影立于上方阳台栏杆处"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "空间定位"
+        ],
+        "subphases": [],
+        "brief": "男子在远景中静止站立于阳台栏杆后"
+      },
+      {
+        "id": "S02-A01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": null,
+        "kind": "motion",
+        "label": "镜头推进下的站立",
+        "start": 0.04,
+        "end": 0.44,
+        "start_range": [
+          0.04,
+          0.16
+        ],
+        "end_range": [
+          0.36,
+          0.44
+        ],
+        "detail": "随着摄像机快速向前变焦推进，男子始终站在阳台金属网格护栏后方。起初画面剧烈晃动模糊（0.04s-0.24s），随后逐渐稳定清晰（0.36s起）。在此期间，男子双手自然下垂或扶在身前不可见位置，未做明显大幅动作，目光直视前方。",
+        "evidence": [
+          {
+            "time": 0.04,
+            "observation": "画面开始快速放大，伴有强烈动态模糊"
+          },
+          {
+            "time": 0.24,
+            "observation": "模糊中仍可辨认人影保持在阳台中央"
+          },
+          {
+            "time": 0.36,
+            "observation": "画面趋于稳定，男子面部及上半身轮廓变得清晰"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "画面由模糊转清晰",
+            "time": 0.36,
+            "time_range": [
+              0.24,
+              0.44
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": true,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "头部"
+        ],
+        "movement_roles": [
+          "主体保持"
+        ],
+        "subphases": [
+          {
+            "label": "模糊推进期",
+            "start": 0.04,
+            "end": 0.24,
+            "detail": "镜头急速拉近导致画面严重失焦和拖影，只能看到大致的人形轮廓在原地不动。",
+            "evidence": [
+              {
+                "time": 0.04,
+                "observation": "极度模糊的建筑与人影"
+              },
+              {
+                "time": 0.16,
+                "observation": "模糊程度略有减轻但仍难辨细节"
+              }
+            ]
+          },
+          {
+            "label": "清晰定格前奏",
+            "start": 0.24,
+            "end": 0.44,
+            "detail": "焦点迅速合实，男子的深色夹克、浅色内搭以及背后的砖墙结构变得锐利，他维持直立站姿直到准备抬手。",
+            "evidence": [
+              {
+                "time": 0.36,
+                "observation": "人物五官与衣物纹理首次完全清晰呈现"
+              }
+            ]
+          }
+        ],
+        "brief": "镜头从模糊远景快速推近至清晰中景，男子全程静立阳台"
+      },
+      {
+        "id": "S02-A02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E01",
+        "kind": "gesture",
+        "label": "举手至嘴边",
+        "start": 0.44,
+        "end": 1.56,
+        "start_range": [
+          0.44,
+          0.52
+        ],
+        "end_range": [
+          1.44,
+          1.56
+        ],
+        "detail": "男子抬起右臂，手部靠近口鼻区域并保持该姿势直至片段结束。由于分辨率限制，手中是否持有物品（如麦克风或香烟）无法确证，但手肘弯曲支撑着悬空的手部。左手似乎搭在面前的黑色金属栏杆上以固定身体重心。",
+        "evidence": [
+          {
+            "time": 0.44,
+            "observation": "右手开始离开腰部水平向上移动"
+          },
+          {
+            "time": 0.52,
+            "observation": "右手已到达下巴附近高度"
+          },
+          {
+            "time": 0.72,
+            "observation": "右手手指微曲贴近嘴唇，形成稳定的手势"
+          },
+          {
+            "time": 1.56,
+            "observation": "直至最后一帧，右手仍停留在嘴部前方未放下"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "手部抵达面部",
+            "time": 0.52,
+            "time_range": [
+              0.44,
+              0.64
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "手臂",
+          "左手"
+        ],
+        "movement_roles": [
+          "表达性手势",
+          "支撑"
+        ],
+        "subphases": [
+          {
+            "label": "抬升过程",
+            "start": 0.44,
+            "end": 0.52,
+            "detail": "右前臂向上折叠，手掌向面部靠拢。",
+            "evidence": [
+              {
+                "time": 0.44,
+                "observation": "手臂处于较低位置"
+              },
+              {
+                "time": 0.52,
+                "observation": "手部接近脸部"
+              }
+            ]
+          },
+          {
+            "label": "持握停顿",
+            "start": 0.52,
+            "end": 1.56,
+            "detail": "右手维持在唇边约一拳距离，可能在进行说话或某种细微操作，但因画质原因无法分辨具体指部动作；左手一直轻扣在栏杆顶部。",
+            "evidence": [
+              {
+                "time": 0.72,
+                "observation": "清晰的贴脸手势"
+              },
+              {
+                "time": 1.24,
+                "observation": "姿势无显著变化"
+              },
+              {
+                "time": 1.56,
+                "observation": "动作延续至镜头末尾"
+              }
+            ]
+          }
+        ],
+        "brief": "男子举起右手置于嘴边并保持，左手扶着阳台栏杆"
+      }
+    ],
+    "uncertainties": [
+      "S02中男子右手所持物体不明，可能是麦克风、手机或仅为手势，受限于清晰度无法确认",
+      "S01时间极短且为远景，难以排除该镜头是否为S02的前置抽帧而非独立逻辑镜头"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "N001",
+        "kind": "music",
+        "layer": "background",
+        "start": 0.0,
+        "end": 1.6,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          1.5,
+          1.7
+        ],
+        "speaker_id": null,
+        "description": "带有节奏感鼓点和合成器旋律的嘻哈伴奏音乐",
+        "evidence": [
+          {
+            "time": 0.2,
+            "observation": "清晰的电子鼓点节拍和低音线开始播放"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.48,
+        "end": 1.36,
+        "start_range": [
+          0.38,
+          0.58
+        ],
+        "end_range": [
+          1.26,
+          1.46
+        ],
+        "speaker_id": "V01",
+        "description": "男声说唱，语速中等，语气自信且富有节奏感",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "人声进入，与背景音乐同步"
+          },
+          {
+            "time": 1.0,
+            "observation": "清晰听到 'between' 等词汇"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": "So between bad."
+      }
+    ],
+    "uncertainties": [
+      "语音部分较短且被截断，具体歌词内容可能存在识别误差"
+    ]
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          0.04
+        ],
+        "overlap_s": 0.04
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.04,
+          0.44
+        ],
+        "overlap_s": 0.4
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.44,
+          1.56
+        ],
+        "overlap_s": 1.12
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.48,
+          1.36
+        ],
+        "overlap_s": 0.88
+      }
+    ],
+    "primary_edges": [],
+    "context_edges": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          0.04
+        ],
+        "overlap_s": 0.04
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.04,
+          0.44
+        ],
+        "overlap_s": 0.4
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.44,
+          1.56
+        ],
+        "overlap_s": 1.12
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.48,
+          1.36
+        ],
+        "overlap_s": 0.88
+      }
+    ]
+  },
+  "warnings": [
+    "S02中男子右手所持物体不明，可能是麦克风、手机或仅为手势，受限于清晰度无法确认",
+    "S01时间极短且为远景，难以排除该镜头是否为S02的前置抽帧而非独立逻辑镜头",
+    "Invalid end uncertainty bracket: N001"
+  ]
+}

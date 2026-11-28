@@ -1,0 +1,25 @@
+VISUAL-ONLY TECHNIQUE ANNOTATION
+Inspect only the supplied timestamped source frames. No audio is available in this pass.
+Return the supplied JSON schema. Write descriptions, evidence and uncertainties in concise Chinese; keep canonical labels and IDs as specified.
+
+ANNOTATION UNIT AND HIERARCHY
+An action is one distinguishable instance of a movement technique, stroke technique, or delivery. Use the supplied vocabulary and its visible-cue rules. A vocabulary is not an expected checklist: no mandatory sequence, repetitions, or technique counts. Preserve incorrect, incomplete and cropped performances as observed.
+Execution parents organize distinguishable attempts; they are not extra counted actions. Footwork and strokes can belong to the same execution while having their own overlapping intervals. Use a null execution_id when grouping is uncertain.
+Movement roles (start, approach, hit, recover) describe the function of an action and belong in movement_roles. They are not standalone action labels. A functional role does not identify a footwork technique. Inspect the sequence of foot placements to identify actual movement; if that sequence is unresolved use movement_unspecified. Never mechanically convert a recovery into a chasse.
+Keep one complete stroke as one technique instance. Visible preparation, backswing, forward_swing and follow_through may be represented in its subphases. Their intervals are independently estimated and contained in the parent stroke. Do not also put them in the top-level actions array. A contact is a key_moment, not another action. Do not invent a missing subphase. A long stationary preparation belongs in held_pose, not in an artificially long stroke.
+Different body parts may move concurrently. A footwork interval must not disappear because a racket action covers that time. Conversely, one coordinated technique should not be split into new actions for every joint change. Put knee flexion, trunk inclination and arm orientation into the description when they are attributes of that technique.
+The internal jump/landing of split_step or hop_pivot must not also be counted as separate jump and landing actions. If using independent jump and landing instances, use the supplied vocabulary's declared counting convention.
+Use kind=held_pose and label=held_pose for maintained positions; kind=gesture and label=explanatory_gesture for visible explanatory gestures. They are retained separately from sport motion counts. Dynamic posture adjustments may use other_motion only when independently distinguishable, with the actual motion described.
+
+VISUAL EVIDENCE
+Use shot-local actor IDs S01-P01 etc. At most two main participants per logical shot. Do not infer identity across cuts. Cover both participants when visible, including training deliveries. A raised arm alone does not establish hand feeding or racket contact.
+Name body_parts using the schema choices; racket_arm avoids unsupported anatomical-side claims. Each action needs evidence at supplied frame timestamps. Use at most three decisive frames per action and at most two per subphase.
+For direction, explicitly distinguish screen left/right from the person's anatomical left/right. Compare the same person's trunk/pelvis and supporting feet before and after movement. Equipment direction or a single pose is not evidence of whole-person travel. Account for camera motion; leave direction unresolved if necessary.
+A net lift may be comparatively flat/attacking or high/defensive. Classify using the combination of visible stroke mechanics, court position and outgoing flight evidence. A high arc or a verified final landing is not mandatory for all lifts. Do not infer a successful deep landing from the technique name; an upward swing alone is insufficient to name a lift. Use the appropriate broader vocabulary entry when evidence is insufficient.
+Ignore subtitles, titles and filenames as action evidence. Do not perform OCR, infer intentions or use a remembered sport demonstration as a template.
+
+TIME AND COVERAGE
+All timestamps are seconds from clip zero, never reset at cuts. Each action stays in one shot. Estimate start/end and plausible start_range/end_range using supplied frames; 10 fps input does not establish millisecond accuracy. Preserve clipped or uncertain boundaries. Subphases may be coarse; do not split just to match a fixed duration.
+For each person, examine behavior before, between and after identified actions. Account for actual transitions, including motion between repetitions, without filling unobserved gaps or inventing movement during stillness. Intervals can overlap and need not meet exactly. State unresolved coverage in uncertainties.
+Key-moment time and time_range may both be null if the moment was not observed. Never assert an exact contact just because a swing passed through an expected contact zone.
+Keep descriptions to two short sentences. Output JSON only.

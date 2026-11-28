@@ -1,0 +1,757 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "ma36",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "第一人称游戏中的攀爬与视角变化",
+    "sample_ids": [
+      108
+    ],
+    "main_subject_count": 1,
+    "subject_kind": "游戏角色",
+    "selection_note": "主要动作由同一虚拟角色完成，画面中可见其手部。",
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/CameraBench-232c85d5-IWv0EhEGmNI.4.3.mp4",
+    "local_original": "CameraBench-232c85d5-IWv0EhEGmNI.4.3.mp4",
+    "source_window_seconds": [
+      0,
+      2.5025
+    ],
+    "official_sha256": "e76019962a81e4aa6bca782df69262df4c98d142215468a2bcff573b0617dae2",
+    "clip_sha256": "e76019962a81e4aa6bca782df69262df4c98d142215468a2bcff573b0617dae2",
+    "audio_source": "official",
+    "upstream_video_frames_checked": null
+  },
+  "duration_seconds": 2.5025,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 2.5025,
+      "first_frame": 0,
+      "end_frame_exclusive": 150
+    }
+  ],
+  "input_frames": {
+    "visual": 26,
+    "review": 148
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了第一人称视角下的夜间潜行行动，包含攀爬梯子和举枪警戒两个主要动作阶段。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "第一人称视角的主角，佩戴战术手套，手持带消音器的突击步枪。"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E-S01-P01-ClimbLadder",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.3013,
+        "description": "主角通过双手交替抓握金属梯级，沿垂直通道向上攀爬直至到达屋顶边缘。"
+      },
+      {
+        "id": "E-S01-P01-RaiseWeapon",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 1.75175,
+        "end": 2.4858,
+        "description": "主角在屋顶站稳后，将装有消音器和红点瞄具的步枪抬起至射击预备姿势，指向前方高处目标。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A-S01-P01-ClimbLadder",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-ClimbLadder",
+        "kind": "motion",
+        "label": "攀爬梯子",
+        "start": 0.0,
+        "end": 1.3013,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          1.2,
+          1.4
+        ],
+        "detail": "初始状态下，主角右手紧握梯子右侧竖直栏杆（0.0s）。随后左手抓住下方横档（0.2s），右手迅速上移至更高处的横档（0.5s）。这种手脚交替向上的模式持续进行，视野随之不断升高，周围的砖墙纹理逐渐后退。约在1.1s时，双手最后一次用力上拉，视野越过梯子顶部的横梁结构。至1.3s，手部完全脱离梯子框架出画，标志着攀爬动作结束，主角已抵达屋顶平面。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "右手特写，紧抓梯子右侧绿色发光的竖杆。"
+          },
+          {
+            "time": 0.2,
+            "observation": "左手出现在左下方，握住一根横向梯级。"
+          },
+          {
+            "time": 0.5,
+            "observation": "右手再次出现，位置比之前更高，抓住了新的横档。"
+          },
+          {
+            "time": 1.1,
+            "observation": "视野接近梯子顶端开口处，可以看到上方的平台边缘。"
+          },
+          {
+            "time": 1.3,
+            "observation": "手部消失，视野变为开阔的屋顶瓦片，确认登顶成功。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "前臂"
+        ],
+        "movement_roles": [
+          "牵引身体上升",
+          "维持平衡"
+        ],
+        "subphases": [
+          {
+            "label": "起步抓握",
+            "start": 0.0,
+            "end": 0.3,
+            "detail": "确立初始支点，右手高抓竖杆，左手低抓横档。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "右手占据画面右半部分，紧贴圆柱形扶手。"
+              },
+              {
+                "time": 0.2,
+                "observation": "左手进入画面左下角，扣住水平梯级。"
+              }
+            ]
+          },
+          {
+            "label": "交替上行",
+            "start": 0.3,
+            "end": 1.0,
+            "detail": "典型的爬梯节奏，一手固定一手移动，视野稳步抬升。",
+            "evidence": [
+              {
+                "time": 0.5,
+                "observation": "右手快速掠过镜头前方，抓向更高的位置。"
+              },
+              {
+                "time": 0.8,
+                "observation": "左手跟进，抓取上一轮右手附近的梯级。"
+              }
+            ]
+          },
+          {
+            "label": "登顶脱手",
+            "start": 1.0,
+            "end": 1.3013,
+            "detail": "最后一步拉升，身体重心转移至屋顶，双手退出视野。",
+            "evidence": [
+              {
+                "time": 1.1,
+                "observation": "看到梯子顶端的U型弯管结构。"
+              },
+              {
+                "time": 1.3,
+                "observation": "画面中不再有任何肢体接触梯子，只剩屋顶景物。"
+              }
+            ]
+          }
+        ],
+        "brief": "主角戴着手套的双手交替抓握梯级，推动视角向上移动完成攀爬。"
+      },
+      {
+        "id": "A-S01-P01-RaiseWeapon",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-RaiseWeapon",
+        "kind": "motion",
+        "label": "举枪警戒",
+        "start": 1.75175,
+        "end": 2.4858,
+        "start_range": [
+          1.7,
+          1.9
+        ],
+        "end_range": [
+          2.4,
+          2.5
+        ],
+        "detail": "在短暂的空窗期（约1.4s-1.7s）适应屋顶环境后，1.75s时枪管前端切入画面中央偏下位置。紧接着，整个枪身被平稳地托起，露出顶部的导轨和红点瞄准镜。左手护木握持位置清晰可见，右手扳机手指搭在护圈外（非射击态）。最终在2.0s后保持静止的警戒姿态，枪口微微上扬指向远处的铁丝网围栏方向，直至片段结束。",
+        "evidence": [
+          {
+            "time": 1.75175,
+            "observation": "白色的消音器枪头首先出现在画面正中下方。"
+          },
+          {
+            "time": 1.9,
+            "observation": "枪身上部结构显现，包括提把位置的瞄具底座。"
+          },
+          {
+            "time": 2.0,
+            "observation": "完整的步枪形态呈现，处于标准的腰际/胸际持枪高度。"
+          },
+          {
+            "time": 2.4,
+            "observation": "姿势未变，持续监视前方屋顶边缘的障碍物。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "武器系统"
+        ],
+        "movement_roles": [
+          "战术准备",
+          "索敌观察"
+        ],
+        "subphases": [
+          {
+            "label": "出枪",
+            "start": 1.75175,
+            "end": 2.002,
+            "detail": "武器从不可见状态迅速提升至视野中心。",
+            "evidence": [
+              {
+                "time": 1.75175,
+                "observation": "仅有枪口装置可见。"
+              },
+              {
+                "time": 2.0,
+                "observation": "全枪轮廓完整展示。"
+              }
+            ]
+          },
+          {
+            "label": "据枪锁定",
+            "start": 2.002,
+            "end": 2.4858,
+            "detail": "维持稳定的持枪角度，微调指向以覆盖潜在威胁区。",
+            "evidence": [
+              {
+                "time": 2.2,
+                "observation": "枪身相对于地平线的角度基本恒定。"
+              },
+              {
+                "time": 2.4,
+                "observation": "继续对准前方的矮墙和尖刺护栏。"
+              }
+            ]
+          }
+        ],
+        "brief": "主角将配备消音器的步枪从低位抬起，进入据枪瞄准状态。"
+      }
+    ],
+    "uncertainties": [],
+    "motion_tracks": [
+      {
+        "context": "画面为第一人称视角，主角佩戴战术手套。镜头起始时位于暗处，正前方是一扇带有金属横杆的窗户或通风口结构，透过缝隙可见外部布满噪点的绿色夜视景象。此时主角双手未持枪，HUD显示其装备有一把带消音器的突击步枪。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 66,
+            "caption": "主角执行攀爬动作。右手首先抓住右侧的金属竖管，随后左手交替向上抓握更高的横杆。随着手臂反复伸展与收缩拉动身体上升，视野随之抬高并穿过窗框结构，最终翻越障碍到达屋顶边缘。",
+            "start": 0.0,
+            "end": 1.1011,
+            "action_ids": [
+              "A-S01-P01-ClimbLadder"
+            ]
+          },
+          {
+            "from_frame": 72,
+            "to_frame": 102,
+            "caption": "主角站立在铺有瓦片的屋顶上。此时双手暂时离开画面中心区域（处于收枪状态），视线平稳地扫过前方的屋脊和远处的建筑轮廓，处于观察环境的静止阶段。",
+            "start": 1.2012,
+            "end": 1.7017,
+            "action_ids": [
+              "A-S01-P01-ClimbLadder"
+            ]
+          },
+          {
+            "from_frame": 108,
+            "to_frame": 149,
+            "caption": "主角拔枪戒备。一把装有全息瞄准镜和消音器的突击步枪从画面右下方迅速升起进入视野中央。双手分别握住护木和握把将枪支端平，准星指向左前方的黑暗区域，保持据枪姿态直至片段结束。",
+            "start": 1.8018,
+            "end": 2.4858166666666666,
+            "action_ids": [
+              "A-S01-P01-RaiseWeapon"
+            ]
+          }
+        ],
+        "camera": "全程采用第一人称主观视角（FPV）。镜头运动紧密跟随主角的身体动态：在攀爬阶段（0-66帧），摄像机随肢体动作产生明显的垂直位移和晃动；登顶后（72-102帧）转为平缓的水平视角移动；最后（108-149帧）因武器举起而略微压低重心，形成稳定的射击视点构图。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "第一人称视角的主角，佩戴战术手套，手持带消音器的突击步枪。",
+        "inspections": {
+          "pose": [
+            {
+              "from_frame": 0,
+              "to_frame": 6,
+              "description": "主角右手佩戴战术手套，手掌张开贴住画面右侧的一根垂直金属圆管（梯子侧栏），随后手指收紧抓握该圆管。",
+              "start": 0.0,
+              "end": 0.1001,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 12,
+              "to_frame": 30,
+              "description": "左手从画面左侧伸入，五指扣住一根水平梯级横杆；与此同时，右手松开原竖管位置并向上移动，越过视野中心去抓取更高处的结构。",
+              "start": 0.2002,
+              "end": 0.5005,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 42,
+              "to_frame": 54,
+              "description": "随着身体重心上移，视角穿过狭窄的窗框区域。双手交替动作加速，左手向下移出视野的同时，右手在画面上方再次出现，抓住顶部的横梁结构。",
+              "start": 0.7007,
+              "end": 0.9009,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 60,
+              "to_frame": 72,
+              "description": "主角完成最后的拉升动作，视野显著抬高越过梯子顶端。双手短暂支撑在顶部边缘后完全脱离接触并退出画面，镜头转为开阔的屋顶视角。",
+              "start": 1.001,
+              "end": 1.2012,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 78,
+              "to_frame": 90,
+              "description": "主角站立于铺有瓦片的屋顶上，前方可见两个倒U型的深色金属管道结构。此时双手未持枪且不在画面中，视线平稳扫过屋脊和远处的围墙。",
+              "start": 1.3013,
+              "end": 1.5015,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 108,
+              "to_frame": 120,
+              "description": "一把装有消音器的步枪枪口首先从画面右下方切入视野中央，随即整支武器被迅速抬起，进入据枪状态。",
+              "reported_frame_range": [
+                108,
+                114
+              ],
+              "start": 1.8018,
+              "end": 2.002,
+              "action_ids": [
+                "A-S01-P01-RaiseWeapon"
+              ]
+            },
+            {
+              "from_frame": 120,
+              "to_frame": 132,
+              "description": "武器完全展开，露出顶部的全息瞄准镜。左手握住护木前端，右手握持机匣后方，将枪支端平至胸际高度。",
+              "start": 2.002,
+              "end": 2.2022,
+              "action_ids": [
+                "A-S01-P01-RaiseWeapon"
+              ]
+            },
+            {
+              "from_frame": 138,
+              "to_frame": 149,
+              "description": "主角保持稳定的警戒姿态，准星指向左前方的黑暗区域及远处带有尖刺护栏的建筑轮廓，直至片段结束。",
+              "start": 2.3023,
+              "end": 2.4858166666666666,
+              "action_ids": [
+                "A-S01-P01-RaiseWeapon"
+              ]
+            }
+          ],
+          "contact": [
+            {
+              "from_frame": 0,
+              "to_frame": 6,
+              "description": "主角右手戴着战术手套，手掌张开贴靠在画面右侧的一根垂直金属圆管上。随后手指弯曲扣住该管道，手腕向下发力带动视角轻微下沉，准备进行攀爬动作。",
+              "start": 0.0,
+              "end": 0.1001,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 12,
+              "to_frame": 30,
+              "description": "主角左手进入视野左侧，五指紧扣一根水平的金属梯级横杆。与此同时，右手松开原位置并向上方移动，在帧24处再次抓住更高一层的水平横杆，完成了一次交替抓握的动作循环。",
+              "start": 0.2002,
+              "end": 0.5005,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 42,
+              "to_frame": 54,
+              "description": "随着身体重心的提升，主角双手交替向上攀援。左手在帧48处短暂可见于上方边缘，随即右手在帧54处紧紧握住最顶端的水平横梁结构，此时透过栏杆缝隙可见的外部噪点背景开始减少。",
+              "start": 0.7007,
+              "end": 0.9009,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 60,
+              "to_frame": 72,
+              "description": "主角双手支撑在梯子顶部的U型弯管结构两侧，用力将身体拉起越过障碍。至帧72时，双手完全脱离金属框架退出画面，视野瞬间变得开阔，显示出屋顶的瓦片纹理和远处的围墙剪影。",
+              "start": 1.001,
+              "end": 1.2012,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 78,
+              "to_frame": 102,
+              "description": "主角处于站立状态，画面中无手部或武器出现。镜头保持相对平稳的前进态势，视线扫过脚下铺设整齐的青灰色屋顶瓦片，正前方是一道带有尖刺护栏的低矮砖墙。",
+              "start": 1.3013,
+              "end": 1.7017,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 108,
+              "to_frame": 120,
+              "description": "一把装有消音器和全息瞄准镜的突击步枪从画面右下方升起切入视野。主角左手迅速握住枪身前部的护木，右手握持握把，将枪支抬升至胸部高度，消音器前端指向左前方的黑暗区域。",
+              "start": 1.8018,
+              "end": 2.002,
+              "action_ids": [
+                "A-S01-P01-RaiseWeapon"
+              ]
+            },
+            {
+              "from_frame": 126,
+              "to_frame": 149,
+              "description": "主角保持据枪警戒姿态，双手稳固地托举着步枪。枪身上的红点/全息瞄具清晰可见，准星持续对准前方屋顶边缘的铁丝网围栏方向，直至片段结束未发生明显的位移或射击动作。",
+              "start": 2.1021,
+              "end": 2.4858166666666666,
+              "action_ids": [
+                "A-S01-P01-RaiseWeapon"
+              ]
+            }
+          ],
+          "camera": [
+            {
+              "from_frame": 0,
+              "to_frame": 6,
+              "description": "画面起始于第一人称视角，主角戴着战术手套的右手占据屏幕右侧前景，紧握住一根垂直的金属管道。透过左侧布满绿色噪点的玻璃或缝隙，可见外部环境昏暗。",
+              "start": 0.0,
+              "end": 0.1001,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 12,
+              "to_frame": 30,
+              "description": "主角开始攀爬动作，视野随身体上升而抬高。左手在下方（Frame 12）短暂入画抓住横档后移出，右手随即向上移动并越过镜头上方（Frame 24-30），交替抓握梯级结构。",
+              "start": 0.2002,
+              "end": 0.5005,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 42,
+              "to_frame": 54,
+              "description": "攀爬持续进行，摄像机视角稳定向上推移。原本位于底部的金属横杆逐渐降至画面下边缘之外，取而代之的是更高处的梯子框架进入视野中心。",
+              "start": 0.7007,
+              "end": 0.9009,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 60,
+              "to_frame": 72,
+              "description": "主角接近梯子顶端。双手最后一次发力上拉，视野穿过顶部的U型弯管护栏结构。随着身体重心上移，手部完全脱离梯子框架退出画面，标志着攀爬阶段结束。",
+              "start": 1.001,
+              "end": 1.2012,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 78,
+              "to_frame": 90,
+              "description": "主角已抵达屋顶平面。此时画面中无肢体遮挡，视野开阔且相对平稳。正前方是铺设整齐的深色瓦片屋顶，远处隐约可见建筑轮廓和夜空背景。",
+              "start": 1.3013,
+              "end": 1.5015,
+              "action_ids": [
+                "A-S01-P01-ClimbLadder"
+              ]
+            },
+            {
+              "from_frame": 96,
+              "to_frame": 102,
+              "description": "主角在屋顶上进行短暂的观察调整。视线轻微扫视周围环境，确认立足点稳固。HUD界面显示生命值满格，弹药充足，处于非战斗待机状态。",
+              "start": 1.6016,
+              "end": 1.7017,
+              "action_ids": []
+            },
+            {
+              "from_frame": 108,
+              "to_frame": 120,
+              "description": "主角执行拔枪动作。一把装有消音器和全息瞄准镜的突击步枪从画面右下方迅速升起进入视野中央。双手分别握住护木和握把将枪支端平，准星指向左前方的黑暗区域。",
+              "start": 1.8018,
+              "end": 2.002,
+              "action_ids": [
+                "A-S01-P01-RaiseWeapon"
+              ]
+            },
+            {
+              "from_frame": 126,
+              "to_frame": 149,
+              "description": "主角保持据枪警戒姿态直至片段结束。枪身相对于地平线的角度基本恒定，红点瞄具清晰可见。视线锁定前方屋顶边缘的铁丝网围栏方向，随时准备应对潜在威胁。",
+              "start": 2.1021,
+              "end": 2.4858166666666666,
+              "action_ids": [
+                "A-S01-P01-RaiseWeapon"
+              ]
+            }
+          ]
+        },
+        "window_review": [
+          {
+            "start": 0.0,
+            "end": 1.2012,
+            "facts": [
+              "[00:00.000 - 00:01.200]　主角　右手及手臂　占据画面右侧至中央区域，整体呈绿色夜视色调。　攀爬金属梯子，手部交替抓握梯子的横档并向上拉动身体。",
+              "[00:00.000 - 00:00.300]　主角　右手（戴战术手套）　位于画面右半部分，紧贴一根垂直的金属立柱。　手掌张开贴住立柱表面进行支撑和定位，随后向左侧移动准备抓取横向结构。",
+              "[00:00.300 - 00:00.600]　主角　左手与左臂　从画面左侧边缘伸入，延伸至画面中上部。　向上伸出并紧紧握住上方的一根水平金属圆管（梯子横档），作为向上的主要发力点。",
+              "[00:00.600 - 00:00.900]　主角　右手　跟随视角上升，出现在画面中部偏下位置。　越过之前的垂直立柱，向上伸展并抓住更高处的水平金属圆管。",
+              "[00:00.900 - 00:01.200]　主角　双手及视野　双手分别稳固地抓在画面上方的两根平行横档上；背景由带有噪点的暗色墙面变为清晰的、平行的多根金属管道结构。　完成一次大幅度的向上位移，视线随动作抬升，最终停留在梯子上部的静止观察状态。"
+            ]
+          },
+          {
+            "start": 1.001,
+            "end": 2.2022,
+            "facts": [
+              "第一人称视角主角　01:00 - 01:24 (Source frame 60-84)　画面呈现明显的绿色夜视仪成像效果。主角正沿着一段带有金属栏杆的楼梯向上攀爬，视线随步伐产生周期性的上下起伏。此时双手未持握武器出现在视野中。",
+              "环境地标 / AI-Qatala Fighter 2　01:30 - 01:48 (Source frame 90-102)　主角到达屋顶平台，前方出现铺满瓦片的倾斜屋顶结构。屏幕下方显示红色字幕“AI-Qatala Fighter 2: Power's out. I'm going to check the fusebox.”，表明另一名角色正在说话并准备离开当前区域去检查保险丝盒。",
+              "带消音器的突击步枪　01:54 - 02:00 (Source frame 108-114)　一把装有消音器和全息瞄准镜的突击步枪从画面右下方迅速切入视野中央。随着武器的举起，可以看到主角戴着战术手套的双手分别握住护木和握把，完成据枪动作。",
+              "第一人称视角主角　02:06 - 02:12 (Source frame 120-126)　主角保持稳定的持枪姿态，向左侧平移移动。透过全息瞄准镜下方的视野，可以清晰看到近处相邻建筑的瓦片屋顶纹理以及远处的围墙轮廓。"
+            ]
+          },
+          {
+            "start": 2.002,
+            "end": 2.4858166666666666,
+            "facts": [
+              "在帧120至149的整个时间段内，画面呈现为单色调的绿色夜视仪成像效果。",
+              "以第一人称视角观察，主角双手持握一把带有全息瞄准镜和消音器的突击步枪，占据画面右下方及中下部区域。",
+              "主角正站在一个铺有瓦片的倾斜屋顶上，前方有一道横向延伸的低矮屋脊作为环境地标。",
+              "从帧120到帧138，主角保持静止站立姿态，视线平视前方远处的黑暗建筑轮廓，武器位置无明显变动。",
+              "在帧144时，主角开始执行下蹲动作，导致画面整体发生位移；根据提供的数据估计，此时画面特征产生向左（dx -1.1）且向下（dy -8.1）的运动趋势。",
+              "对比帧144与帧149，随着下蹲动作的进行，前景中的步枪相对于背景屋檐的位置略微升高并稍显放大（scale > 1），表明视点高度正在降低。",
+              "在帧149时，主角处于半蹲或低姿状态，视野重心较之前明显下降，原本位于画面上方的远处结构被推至更高处或部分移出视野。"
+            ]
+          }
+        ],
+        "integrated_facts": [
+          "[00:00.000 - 00:01.200] 画面呈现第一人称视角，整体笼罩在绿色夜视仪的单色调成像中。主角佩戴战术手套，正沿着一段带有金属栏杆的梯子向上攀爬，双手交替抓握梯级并拉动身体上升。",
+          "[00:00.000 - 00:00.300] 初始状态下，主角右手占据画面右侧前景，手掌张开贴靠在一根垂直的金属圆管（梯子侧栏）上，随后手指弯曲扣紧该管道进行支撑定位。",
+          "[00:00.300 - 00:00.600] 左手从画面左侧边缘伸入，五指紧扣一根水平的金属梯级横杆；与此同时，右手松开原竖管位置并向画面上方移动，越过视野中心去抓取更高处的结构。",
+          "[00:00.600 - 00:01.000] 随着身体重心的提升，主角双手持续交替向上攀援。背景由布满噪点的暗色墙面逐渐变为清晰的平行金属管道结构，视线随动作稳步抬升。",
+          "[00:01.000 - 00:01.300] 主角接近梯子顶端，双手最后一次发力上拉，穿过顶部的U型弯管护栏结构。至1.3秒时，手部完全脱离金属框架退出画面，标志着攀爬阶段结束。",
+          "[00:01.300 - 00:01.750] 主角已抵达屋顶平面，此时画面中无肢体遮挡，视野开阔且相对平稳。正前方是铺设整齐的青灰色瓦片屋顶，远处隐约可见建筑轮廓和夜空背景。屏幕下方显示红色字幕“AI-Qatala Fighter 2: Power's out. I'm going to check the fusebox.”。",
+          "[00:01.750 - 00:02.000] 主角执行拔枪动作。一把装有消音器和全息瞄准镜的突击步枪从画面右下方迅速升起切入视野中央。主角左手握住护木前端，右手握持机匣后方，将枪支端平至胸际高度。",
+          "[00:02.000 - 00:02.400] 武器完全展开后，主角保持稳定的据枪警戒姿态。准星指向左前方的黑暗区域及远处带有尖刺护栏的建筑轮廓，枪身相对于地平线的角度基本恒定。",
+          "[00:02.400 - 00:02.485] 主角开始执行下蹲动作，导致画面整体发生位移。视点高度降低使得前景中的步枪相对于背景屋檐的位置略微升高并稍显放大，原本位于画面上方的远处结构被推至更高处或部分移出视野。"
+        ]
+      }
+    ],
+    "caption_detail_policy": "retain_evidence"
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.0,
+        "end": 1.28,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          1.24,
+          1.36
+        ],
+        "speaker_id": null,
+        "description": "男声，中低音区，语速较快，语气自然，带有轻微房间混响。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "语音起始"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": "这都挺正常的"
+      },
+      {
+        "id": "N001",
+        "kind": "background",
+        "layer": "background",
+        "start": 0.0,
+        "end": 2.5025,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          2.48,
+          2.5025
+        ],
+        "speaker_id": null,
+        "description": "持续的低频环境底噪与室内空间混响。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "背景噪声贯穿整个音频片段"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      }
+    ],
+    "uncertainties": [
+      "说话人身份无法确定"
+    ]
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "A-S01-P01-ClimbLadder",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          1.28
+        ],
+        "overlap_s": 1.28
+      },
+      {
+        "action_id": "A-S01-P01-ClimbLadder",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          1.3013
+        ],
+        "overlap_s": 1.3013
+      },
+      {
+        "action_id": "A-S01-P01-RaiseWeapon",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-RaiseWeapon",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          1.75175,
+          2.4858
+        ],
+        "overlap_s": 0.73405
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "A-S01-P01-ClimbLadder",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          1.28
+        ],
+        "overlap_s": 1.28
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "A-S01-P01-ClimbLadder",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          1.3013
+        ],
+        "overlap_s": 1.3013
+      },
+      {
+        "action_id": "A-S01-P01-RaiseWeapon",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          1.75175,
+          2.4858
+        ],
+        "overlap_s": 0.73405
+      }
+    ]
+  },
+  "warnings": [],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "e0a34c581231cfac7e78d5e825c5a56e14ad7f53181f2e459e1997bcd7eb5d94",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32,
+    "inspection_template_sha256": "8b9603319374998053ef9bee118f58c88bc5a51c3d47c344596c189e3cafe363",
+    "window_prompt_sha256": "d25d6f440b6949b699fc58a15f8f0ddfc9d5d90159236c8e81f0cc03600e6c94"
+  }
+}

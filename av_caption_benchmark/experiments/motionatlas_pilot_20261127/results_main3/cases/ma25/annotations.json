@@ -1,0 +1,380 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma25",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "单人在厨房备菜",
+    "sample_ids": [
+      93
+    ],
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "不同镜头衔接同一位正在备菜的人。",
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/DREAM1k-1efd815c-413.mp4",
+    "local_original": "DREAM1k-1efd815c-413.mp4",
+    "source_window_seconds": [
+      0,
+      7.3
+    ],
+    "official_sha256": "b47632ec93bfae269bf953121ccc1f9d32a8c0d4a62be889985c71896db8940f",
+    "clip_sha256": "b47632ec93bfae269bf953121ccc1f9d32a8c0d4a62be889985c71896db8940f",
+    "audio_source": null,
+    "upstream_video_frames_checked": 219
+  },
+  "duration_seconds": 7.3,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 2.2,
+      "first_frame": 0,
+      "end_frame_exclusive": 66
+    },
+    {
+      "id": "S02",
+      "start": 2.2,
+      "end": 4.1,
+      "first_frame": 66,
+      "end_frame_exclusive": 123
+    },
+    {
+      "id": "S03",
+      "start": 4.1,
+      "end": 6.033333333333333,
+      "first_frame": 123,
+      "end_frame_exclusive": 181
+    },
+    {
+      "id": "S04",
+      "start": 6.033333333333333,
+      "end": 7.3,
+      "first_frame": 181,
+      "end_frame_exclusive": 219
+    }
+  ],
+  "input_frames": {
+    "visual": 77
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了一名女子在厨房准备生菜鸡蛋沙拉的过程，包括切菜、打蛋、调味和搅拌。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿白色吊带背心和卡其色裙子的女子"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "穿白色吊带背心和卡其色裙子的女子"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "穿白色吊带背心和卡其色裙子的女子"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "穿白色吊带背心和卡其色裙子的女子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 2.166667,
+        "description": "左手按住案板上的生菜，右手持刀将生菜切断成小块"
+      },
+      {
+        "id": "S02-E01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 2.2,
+        "end": 4.066667,
+        "description": "双手拿鸡蛋在玻璃碗上方将其敲开并掰碎蛋壳，使蛋液流入碗中"
+      },
+      {
+        "id": "S03-E01",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 4.1,
+        "end": 6.0,
+        "description": "双手握住研磨瓶在玻璃碗上方旋转，向碗中撒入黑胡椒和海盐"
+      },
+      {
+        "id": "S04-E01",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 6.033333,
+        "end": 7.266667,
+        "description": "左手扶住玻璃碗边缘，右手持筷子在碗中不断翻拌食材"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "切生菜",
+        "start": 0.0,
+        "end": 2.166667,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          2.1,
+          2.166667
+        ],
+        "detail": "女子左手手指弯曲按压住案板上的一把绿色生菜，右手握着一把菜刀，刀刃垂直向下切入生菜中，随后向上抬起并再次落下，连续进行切割动作，直到生菜被切成较小的块状。",
+        "evidence": [
+          {
+            "time": 0.8,
+            "observation": "可见右手持刀向下切入生菜，左手固定菜叶"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "下刀切割",
+            "time": 0.8,
+            "time_range": [
+              0.8,
+              0.9
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手"
+        ],
+        "movement_roles": [
+          "按压固定",
+          "持刀切割"
+        ],
+        "subphases": [
+          {
+            "label": "连续切割",
+            "start": 0.0,
+            "end": 2.166667,
+            "detail": "右手持刀反复上下运动，切断左手按住的生菜。",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "刀具处于抬起状态，准备下一次切割"
+              }
+            ]
+          }
+        ],
+        "brief": "女子用刀将案板上的生菜切碎。"
+      },
+      {
+        "id": "S02-A01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E01",
+        "kind": "motion",
+        "label": "打鸡蛋",
+        "start": 2.2,
+        "end": 4.066667,
+        "start_range": [
+          2.2,
+          2.2
+        ],
+        "end_range": [
+          4.0,
+          4.066667
+        ],
+        "detail": "女子双手各持半个鸡蛋壳（或拿着一个完整的鸡蛋在碗边敲击后），拇指抠入裂缝处向外掰开，蛋黄和蛋清随之落入下方装有生菜的透明玻璃碗中。",
+        "evidence": [
+          {
+            "time": 2.6,
+            "observation": "可见双手掰开蛋壳，橙红色的蛋黄正落入碗中"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "蛋液流出",
+            "time": 2.6,
+            "time_range": [
+              2.5,
+              2.7
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "掰开蛋壳"
+        ],
+        "subphases": [
+          {
+            "label": "掰开蛋壳",
+            "start": 2.2,
+            "end": 4.066667,
+            "detail": "双手配合将蛋壳裂口扩大，释放内部液体。",
+            "evidence": [
+              {
+                "time": 3.6,
+                "observation": "双手分别持有蛋壳两半，正在分离"
+              }
+            ]
+          }
+        ],
+        "brief": "女子将鸡蛋打入装有生菜的玻璃碗中。"
+      },
+      {
+        "id": "S03-A01",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "S03-E01",
+        "kind": "motion",
+        "label": "研磨调料",
+        "start": 4.1,
+        "end": 6.0,
+        "start_range": [
+          4.1,
+          4.1
+        ],
+        "end_range": [
+          5.9,
+          6.0
+        ],
+        "detail": "女子双手一上一下握住透明的圆柱形研磨瓶，悬空置于玻璃碗上方，通过手腕转动瓶身顶部，使黑色的颗粒状调料从底部出口洒落进碗中。",
+        "evidence": [
+          {
+            "time": 5.0,
+            "observation": "可见双手握持研磨瓶并进行旋转操作"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "旋转研磨",
+            "time": 5.0,
+            "time_range": [
+              4.5,
+              5.5
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "握持工具",
+          "旋转施力"
+        ],
+        "subphases": [
+          {
+            "label": "持续研磨",
+            "start": 4.1,
+            "end": 6.0,
+            "detail": "保持握姿，手部做圆周运动以挤出调料。",
+            "evidence": [
+              {
+                "time": 5.7,
+                "observation": "研磨瓶位置未变，手部姿态显示正在进行扭转动作"
+              }
+            ]
+          }
+        ],
+        "brief": "女子使用研磨瓶向碗中添加黑胡椒和海盐。"
+      },
+      {
+        "id": "S04-A01",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "S04-E01",
+        "kind": "motion",
+        "label": "搅拌食材",
+        "start": 6.033333,
+        "end": 7.266667,
+        "start_range": [
+          6.033333,
+          6.033333
+        ],
+        "end_range": [
+          7.2,
+          7.266667
+        ],
+        "detail": "女子左手扶稳玻璃碗的边缘以防移动，右手手持一双深色长筷，伸入碗中快速画圈翻动，将底部的黄色蛋液与绿色的生菜充分混合均匀。",
+        "evidence": [
+          {
+            "time": 6.5,
+            "observation": "可见筷子在碗中搅动，食材呈现黄绿相间的混合状态"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "翻拌混合",
+            "time": 6.5,
+            "time_range": [
+              6.3,
+              6.7
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手"
+        ],
+        "movement_roles": [
+          "扶持容器",
+          "持具搅拌"
+        ],
+        "subphases": [
+          {
+            "label": "循环搅拌",
+            "start": 6.033333,
+            "end": 7.266667,
+            "detail": "右手带动筷子在碗内进行连续的翻转和划动。",
+            "evidence": [
+              {
+                "time": 7.0,
+                "observation": "筷子提起部分生菜，显示搅拌过程仍在继续"
+              }
+            ]
+          }
+        ],
+        "brief": "女子用筷子将碗中的生菜和鸡蛋搅拌均匀。"
+      }
+    ],
+    "uncertainties": []
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": []
+}

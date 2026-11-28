@@ -1,0 +1,334 @@
+{
+  "source": {
+    "id": "ugc01",
+    "benchmark": "UGC-VideoCap",
+    "original_id": "PI-1ccc9945-08cd-4b27-9533-7705f628c867",
+    "source_url": "https://drive.google.com/file/d/1_3kvvwOesru0pCtXb615AiQkLvXKnB64/view",
+    "archive_member": null,
+    "original_file": "PI-1ccc9945-08cd-4b27-9533-7705f628c867.mp4",
+    "source_media_sha256": "3f05dc4cdc0287d0ca565c9a3ec49515c30765d368bcf9b3f782969fd8fbed9b",
+    "clip_sha256": "9db097e7230599fb7f070f015b945b8ba883dbd44d7eef0b4f6f7cfcec0be5a7",
+    "source_duration": 58.43333333333333,
+    "source_window_seconds": [
+      10,
+      22
+    ],
+    "card": "01",
+    "domain": "厨房早餐制作",
+    "domain_rule": "",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "disposition": "extra_rejected_audio"
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 12.0,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.9333333333333333,
+      "first_frame": 0,
+      "end_frame_exclusive": 28
+    },
+    {
+      "id": "S02",
+      "start": 0.9333333333333333,
+      "end": 5.766666666666667,
+      "first_frame": 28,
+      "end_frame_exclusive": 173
+    },
+    {
+      "id": "S03",
+      "start": 5.766666666666667,
+      "end": 5.833333333333333,
+      "first_frame": 173,
+      "end_frame_exclusive": 175
+    },
+    {
+      "id": "S04",
+      "start": 5.833333333333333,
+      "end": 8.233333333333333,
+      "first_frame": 175,
+      "end_frame_exclusive": 247
+    },
+    {
+      "id": "S05",
+      "start": 8.233333333333333,
+      "end": 11.9,
+      "first_frame": 247,
+      "end_frame_exclusive": 357
+    },
+    {
+      "id": "S06",
+      "start": 11.9,
+      "end": 11.933333333333334,
+      "first_frame": 357,
+      "end_frame_exclusive": 358
+    },
+    {
+      "id": "S07",
+      "start": 11.933333333333334,
+      "end": 12.0,
+      "first_frame": 358,
+      "end_frame_exclusive": 360
+    }
+  ],
+  "timestamped_frames": 127,
+  "stages": {
+    "visual": "visual",
+    "audio": "audio"
+  },
+  "visual": {
+    "clip_id": "ugc01",
+    "mode": "VISUAL_GT",
+    "clock": {
+      "total_duration": 12.0
+    },
+    "facts": [
+      {
+        "id": "F1",
+        "kind": "action",
+        "level": "L1",
+        "actor": "男子",
+        "object": "平底锅里的鸡蛋",
+        "parent_ids": [],
+        "claim": "男子在炉灶上煎鸡蛋",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.93,
+          8.2
+        ],
+        "visible_spans": [
+          [
+            0.93,
+            5.76
+          ],
+          [
+            5.8,
+            8.2
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.93,
+            0.93
+          ],
+          "end": [
+            8.2,
+            8.2
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time": [
+              0.93,
+              5.76
+            ],
+            "cue": "画面显示男子手持生鸡蛋，将其打入装有其他正在煎制的鸡蛋的平底锅中"
+          },
+          {
+            "time": [
+              5.8,
+              8.2
+            ],
+            "cue": "画面显示男子摇晃平底锅，使锅内鸡蛋受热均匀并继续煎制"
+          }
+        ]
+      },
+      {
+        "id": "F2",
+        "kind": "motion",
+        "level": "L2",
+        "actor": "男子的右手",
+        "object": "生鸡蛋",
+        "parent_ids": [
+          "F1"
+        ],
+        "claim": "男子将生鸡蛋打入平底锅中",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.93,
+          5.76
+        ],
+        "visible_spans": [
+          [
+            0.93,
+            5.76
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.93,
+            0.93
+          ],
+          "end": [
+            5.76,
+            5.76
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time": [
+              0.93,
+              5.76
+            ],
+            "cue": "画面中可见男子的手捏着白色生鸡蛋，在锅边缘磕破并将蛋液倒入锅中"
+          }
+        ]
+      },
+      {
+        "id": "F3",
+        "kind": "motion",
+        "level": "L2",
+        "actor": "男子的右手",
+        "object": "平底锅",
+        "parent_ids": [
+          "F1"
+        ],
+        "claim": "男子握住手柄前后摇晃平底锅",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          5.8,
+          8.2
+        ],
+        "visible_spans": [
+          [
+            5.8,
+            8.2
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            5.8,
+            5.8
+          ],
+          "end": [
+            8.2,
+            8.2
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time": [
+              5.8,
+              8.2
+            ],
+            "cue": "画面中可见男子的手握着黑色手柄，带动平底锅在蓝色火焰上方进行连续的晃动"
+          }
+        ]
+      },
+      {
+        "id": "F4",
+        "kind": "state",
+        "level": null,
+        "actor": null,
+        "object": "平底锅里的鸡蛋",
+        "parent_ids": [
+          "F1"
+        ],
+        "claim": "鸡蛋处于半熟状态",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.93,
+          8.2
+        ],
+        "visible_spans": [
+          [
+            0.93,
+            8.2
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": null,
+        "evidence": [
+          {
+            "time": [
+              0.93,
+              8.2
+            ],
+            "cue": "画面中可见锅内的蛋白逐渐凝固变白，蛋黄保持完整的亮黄色圆形"
+          }
+        ]
+      },
+      {
+        "id": "F5",
+        "kind": "attribute",
+        "level": null,
+        "actor": null,
+        "object": "炉灶",
+        "parent_ids": [
+          "F1"
+        ],
+        "claim": "炉灶带有明火",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          5.8,
+          8.2
+        ],
+        "visible_spans": [
+          [
+            5.8,
+            8.2
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": null,
+        "evidence": [
+          {
+            "time": [
+              5.8,
+              8.2
+            ],
+            "cue": "画面中锅底下方清晰可见蓝色的燃气火焰"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": "R1",
+        "predicate": "contains",
+        "from_id": "F1",
+        "to_id": "F2",
+        "claim": "煎鸡蛋的动作包含了打鸡蛋的过程",
+        "evidence": null,
+        "certainty": "asserted"
+      },
+      {
+        "id": "R2",
+        "predicate": "contains",
+        "from_id": "F1",
+        "to_id": "F3",
+        "claim": "煎鸡蛋的动作包含了摇晃平底锅的过程",
+        "evidence": null,
+        "certainty": "asserted"
+      },
+      {
+        "id": "R3",
+        "predicate": "precedes",
+        "from_id": "F2",
+        "to_id": "F3",
+        "claim": "打鸡蛋的动作发生在摇晃平底锅之前",
+        "evidence": null,
+        "certainty": "asserted"
+      }
+    ],
+    "residual": ""
+  },
+  "audio": {},
+  "original_audio_events": [],
+  "sentence_alignment": {},
+  "temporal_edges": [],
+  "warnings": [
+    "原音频请求 HTTP 400，服务端返回 data_inspection_failed；没有该条音频伪标注。",
+    "本次未输出 L3 部位运动，需按画面判定是否有漏项。"
+  ]
+}

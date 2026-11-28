@@ -1,0 +1,229 @@
+{
+  "schema": "av-events/1.0",
+  "description_language": "en",
+  "source_sha256": "da1a928df1edf9f403917059881a40811e12b718e8256b5b4de1d9f1dc51d19a",
+  "protocol_sha256": "4a09d1881a874c588080aa8381fd08d29e7cd8307f7e685636b072440843af5d",
+  "duration_seconds": 9.009,
+  "actors": [
+    {
+      "id": "P1",
+      "appearance": "drumeo T-shirt"
+    },
+    {
+      "id": "P2",
+      "appearance": "plaid shirt"
+    }
+  ],
+  "clock": "source seconds, half-open intervals",
+  "relation_semantics": "Evidence of temporal co-occurrence only. Speaker identity and acoustic causation are separate claims.",
+  "reference_status": "machine_reviewed_silver",
+  "events": [
+    {
+      "id": "V0001",
+      "kind": "visible_speech",
+      "actor": "drumeo T-shirt",
+      "start": 0,
+      "end": 2.0,
+      "sources": [
+        "shot00000/visual/0",
+        "shot00001/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "speaking to camera",
+      "brief": "A man with short blonde hair wearing a grey 'drumeo' t-shirt speaks directly to the camera while gesturing with his hands.",
+      "detail": "The participant faces forward, maintaining eye contact with the lens. His mouth moves continuously as he speaks, accompanied by expressive hand gestures where both hands move up and down near chest level to emphasize points.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The man's mouth opens and closes repeatedly, showing clear articulatory movements consistent with speaking.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip",
+      "posture": "unclear",
+      "visual_evidence": "Repeated articulatory lip/jaw changes coordinated with facial emphasis while facing the camera.",
+      "posture_evidence": "The subject's upper body is visible, but the hips and legs are not shown in the frame. There is no visible seat contact or weight-bearing lower body to determine if they are standing or sitting."
+    },
+    {
+      "id": "A0001",
+      "kind": "music",
+      "actor": "unidentified source",
+      "start": 0,
+      "end": 7.36,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "upbeat instrumental music",
+      "detail": "An upbeat instrumental track featuring drums and bass guitar plays continuously from the beginning of the clip until it stops at 7.36 seconds.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "A0002",
+      "kind": "speech",
+      "actor": "male narrator",
+      "start": 0.118335,
+      "end": 5.28,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "confidently spend time behind your drum set knowing that you're using lessons that work.",
+      "transcript_original": "confidently spend time behind your drum set knowing that you're using lessons that work.",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        0.24,
+        5.36
+      ],
+      "word_interval": [
+        0.118335,
+        5.28
+      ]
+    },
+    {
+      "id": "V0002",
+      "kind": "motion",
+      "actor": "plaid shirt",
+      "start": 2.04,
+      "end": 7.56,
+      "sources": [
+        "shot00001/visual/1",
+        "shot00002/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "striking drum kit",
+      "brief": "A person plays a drum set while watching a video on a laptop screen.",
+      "detail": "The individual uses drumsticks to hit various parts of the drum kit, including cymbals and snare drums.",
+      "phases": [
+        {
+          "label": "striking drum kit",
+          "start": 3.8462,
+          "end": 7.56,
+          "id": "V0002.P01",
+          "fact_evidence": "From approximately 2.1 seconds onwards, the camera angle changes to a close-up shot focusing specifically on the hi-hat cymbal being struck by a drumstick.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "A person wearing a plaid shirt is seated at a drum kit, holding drumsticks and actively striking the snare drum and cymbals while looking towards a laptop screen displaying video content.",
+      "fact_evidence_clock_origin": 1.69,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0003",
+      "kind": "sound",
+      "actor": "unidentified source",
+      "start": 7.48,
+      "end": 8.0,
+      "sources": [
+        "w00000/audio/2"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "electronic whoosh",
+      "detail": "A short electronic whoosh transition effect is clearly audible between 7.48 and 8.0 seconds, bridging the gap before the next musical segment.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "A0004",
+      "kind": "music",
+      "actor": "unidentified source",
+      "start": 8.08,
+      "end": 9.0,
+      "sources": [
+        "w00000/audio/3"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "drum fill",
+      "detail": "From 8.08 to 9.0 seconds, a drum fill with cymbal crashes is heard, which differs acoustically from the earlier full-band instrumental texture.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    }
+  ],
+  "relations": [
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0,
+      "end": 2.0,
+      "robust_interval": [
+        0,
+        2.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 0.118335,
+      "end": 2.0,
+      "robust_interval": [
+        0.118335,
+        2.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 2.04,
+      "end": 7.36,
+      "robust_interval": [
+        2.04,
+        7.36
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 2.04,
+      "end": 5.28,
+      "robust_interval": [
+        2.04,
+        5.28
+      ],
+      "review_flags": []
+    }
+  ],
+  "phase_relations": [
+    {
+      "visual_id": "V0002.P01",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 3.8462,
+      "end": 7.36,
+      "robust_interval": [
+        3.8462,
+        7.36
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002.P01",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 3.8462,
+      "end": 5.28,
+      "robust_interval": [
+        3.8462,
+        5.28
+      ],
+      "review_flags": []
+    }
+  ]
+}

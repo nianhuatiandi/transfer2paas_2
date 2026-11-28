@@ -1,0 +1,185 @@
+{
+  "flagged_events": [
+    "V0009",
+    "A0003",
+    "A0004",
+    "V0010",
+    "A0005",
+    "V0012",
+    "V0022",
+    "V0024",
+    "V0026",
+    "A0022",
+    "V0031",
+    "A0023",
+    "A0024",
+    "V0033",
+    "A0025",
+    "A0026",
+    "A0033"
+  ],
+  "unlocalized_transcript_candidates": [
+    {
+      "probe": "A0004.2",
+      "candidate": "你挑球挑的不好一挑完了中杀。",
+      "parent_sources": [
+        "w00002/audio/2"
+      ],
+      "search_span": [
+        30.54,
+        41.78
+      ],
+      "reason": "Duplicated content of A0004.1; merged into that clause."
+    },
+    {
+      "probe": "A0005.9",
+      "candidate": "他直接跑错方向，",
+      "parent_sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "search_span": [
+        40.5,
+        60.0
+      ],
+      "reason": "Duplicated content from A0005.8; omitted to avoid repetition."
+    },
+    {
+      "probe": "A0005.10",
+      "candidate": "他立马被动。",
+      "parent_sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "search_span": [
+        40.5,
+        60.0
+      ],
+      "reason": "Duplicated content from A0005.8; omitted to avoid repetition."
+    },
+    {
+      "probe": "w00002/audio/0.1",
+      "candidate": "去重心接一个防守球，",
+      "parent_sources": [
+        "w00002/audio/0"
+      ],
+      "search_span": [
+        10.5,
+        34.5
+      ],
+      "reason": "Candidate text appears as part of a longer utterance at 15.84-17.84s; no independent occurrence found."
+    }
+  ],
+  "uncertain_visible_intervals": [
+    {
+      "scope": "shot00000",
+      "source_start": 0,
+      "evidence_stage": "uncertain_muted_local",
+      "local_report": {
+        "start": 0.0,
+        "end": 4.567,
+        "reason": "The faces of both individuals are either facing away from the camera or too distant and small to observe any mouth movements."
+      }
+    },
+    {
+      "scope": "shot00000",
+      "source_start": 0,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 3.7,
+        "end": 4.567,
+        "reason": "A cut occurs around 3.7s changing the viewpoint; subsequent actions involve different positioning relative to the new camera angle which may represent separate bouts rather than continuous rally flow."
+      }
+    },
+    {
+      "scope": "shot00001",
+      "source_start": 3.16667,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 0.0,
+        "end": 4.433,
+        "reason": "Identity of the second player is ambiguous."
+      }
+    },
+    {
+      "scope": "shot00006",
+      "source_start": 20.8,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 5.2,
+        "end": 6.0,
+        "reason": "Muted wide shot; P1's face is too distant to confirm speech."
+      }
+    },
+    {
+      "scope": "shot00007",
+      "source_start": 25.4,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 0.84,
+        "end": 1.36,
+        "reason": "The player is far away and partially obscured by the net post; the exact type of serve cannot be confirmed."
+      }
+    },
+    {
+      "scope": "shot00007",
+      "source_start": 25.4,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 3.08,
+        "end": 3.68,
+        "reason": "The player is far away and partially obscured by the net post; the exact defensive technique cannot be confirmed."
+      }
+    },
+    {
+      "scope": "shot00007",
+      "source_start": 25.4,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 5.04,
+        "end": 6.4,
+        "reason": "The player is far away and partially obscured by the net post; the exact lifting technique cannot be confirmed."
+      }
+    },
+    {
+      "scope": "shot00008",
+      "source_start": 31.6,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 0.0,
+        "end": 0.2,
+        "reason": "A player is visible on the far side of the net making an upward motion consistent with hitting a shuttlecock, but the action is distant and lacks sufficient detail for confident labeling."
+      }
+    },
+    {
+      "scope": "shot00010",
+      "source_start": 36.4667,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 0.43,
+        "end": 0.87,
+        "reason": "The video cuts from a wide action shot to a medium close-up of the speaker; no distinct human action occurs during this transition."
+      }
+    },
+    {
+      "scope": "shot00010",
+      "source_start": 36.4667,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 5.23,
+        "end": 5.6,
+        "reason": "The video cuts from the speaking segment back to a wide action shot; no distinct human action occurs during this transition."
+      }
+    },
+    {
+      "scope": "shot00012",
+      "source_start": 47.5,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 3.0,
+        "end": 3.667,
+        "reason": "Identity of the active player is uncertain due to conflicting clothing descriptions between frames."
+      }
+    }
+  ]
+}

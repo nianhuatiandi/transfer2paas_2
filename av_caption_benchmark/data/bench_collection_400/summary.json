@@ -1,0 +1,55 @@
+{
+  "total": 400,
+  "sources": {
+    "Local sports": 3,
+    "Daily-Omni": 49,
+    "DiaDemBench": 1,
+    "MSR-VTT": 222,
+    "UGC-VideoCap": 31,
+    "video-SALMONN 2": 55,
+    "Local performance videos": 10,
+    "WorldSense": 29
+  },
+  "duration_bands": {
+    "short": {
+      "count": 240,
+      "min_seconds": 7.0,
+      "median_seconds": 13.9,
+      "max_seconds": 29.418005,
+      "sources": {
+        "Local sports": 2,
+        "Daily-Omni": 11,
+        "DiaDemBench": 1,
+        "MSR-VTT": 209,
+        "UGC-VideoCap": 17
+      }
+    },
+    "medium": {
+      "count": 120,
+      "min_seconds": 30.0,
+      "median_seconds": 38.218945500000004,
+      "max_seconds": 59.953923,
+      "sources": {
+        "Daily-Omni": 38,
+        "MSR-VTT": 13,
+        "UGC-VideoCap": 14,
+        "video-SALMONN 2": 55
+      }
+    },
+    "long": {
+      "count": 40,
+      "min_seconds": 70.203537,
+      "median_seconds": 170.839236,
+      "max_seconds": 294.532313,
+      "sources": {
+        "Local sports": 1,
+        "Local performance videos": 10,
+        "WorldSense": 29
+      }
+    }
+  },
+  "total_seconds": 15193.463,
+  "unique_sha256": 400,
+  "full_decode_passed": 400,
+  "sample_frames": 9480
+}

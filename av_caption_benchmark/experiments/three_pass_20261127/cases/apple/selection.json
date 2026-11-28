@@ -1,0 +1,24 @@
+{
+  "id": "apple",
+  "category": "烹饪与饮食制作",
+  "title": "苹果燕麦制作",
+  "source": {
+    "id": "apple",
+    "domain": "烹饪演示 · 糖煮苹果",
+    "clip_sha256": "22988991a4cc3cd3790a8a634b6623dd0c8cd2d5e7a4285feff5ec95e77a9dfe",
+    "people_limit": 3,
+    "audio_source": "same original MP4",
+    "filename": "2VBRpUe8idw.10.mp4",
+    "media": {
+      "repo": "mhan/shot2story-videos",
+      "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+      "tar_member": "release_134k_videos/2VBRpUe8idw.10.mp4",
+      "header_offset": 9617789440,
+      "size": 793276,
+      "eva_revision": "146a0b13c1b8fe93b16fc7b89b949436d1993c76"
+    }
+  },
+  "source_start": 0,
+  "duration": 17.517491,
+  "sha256": "22988991a4cc3cd3790a8a634b6623dd0c8cd2d5e7a4285feff5ec95e77a9dfe"
+}

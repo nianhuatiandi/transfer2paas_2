@@ -1,0 +1,1282 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "sport01",
+    "benchmark": "自有运动",
+    "domain": "羽毛球",
+    "original_id": "31679122798",
+    "source_url": "用户本地裁片",
+    "archive_member": null,
+    "source_window_seconds": [
+      0,
+      8.0
+    ],
+    "source_duration": 8.0,
+    "source_media_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "clip_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "sport": "badminton"
+  },
+  "duration_seconds": 8.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 3.8666666666666667,
+      "first_frame": 0,
+      "end_frame_exclusive": 116
+    },
+    {
+      "id": "S02",
+      "start": 3.8666666666666667,
+      "end": 7.633333333333334,
+      "first_frame": 116,
+      "end_frame_exclusive": 229
+    },
+    {
+      "id": "S03",
+      "start": 7.633333333333334,
+      "end": 8.0,
+      "first_frame": 229,
+      "end_frame_exclusive": 240
+    }
+  ],
+  "input_frames": {
+    "visual": 84,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "覆盖三个镜头内可见的羽毛球训练与讲解动作；仅依据画面中可辨识的身体运动、球拍轨迹及shuttlecock位置进行标注。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "近端球员，背对镜头，身穿黑色T恤和灰色短裤"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "远端球员，面向镜头，身穿粉色上衣和深色短裤"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "近端球员，背对镜头，身穿深蓝色背心（白色袖口）和黑色短裤"
+      },
+      {
+        "id": "S02-P02",
+        "shot_id": "S02",
+        "description": "远端球员，面向镜头，身穿白色上衣和浅色长裤"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "教练，面对镜头，身穿印有ACTIVE字样的黑色T恤和粉色短裤"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.4,
+        "end": 1.5,
+        "description": "近端球员完成一次后退接高远球的击球回合"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 2.4,
+        "end": 3.6,
+        "description": "近端球员再次后退并完成第二次击球回合"
+      },
+      {
+        "id": "S02-E01",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "start": 4.8,
+        "end": 7.6,
+        "description": "远端球员连续多次挥拍击打高空来球"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "step_back",
+        "start": 0.4,
+        "end": 0.8,
+        "start_range": [
+          0.3,
+          0.5
+        ],
+        "end_range": [
+          0.7,
+          0.9
+        ],
+        "detail": "近端球员从准备姿势开始，双脚交替向屏幕深处移动以退至后场区域。",
+        "evidence": [
+          {
+            "time": 0.4,
+            "observation": "球员身体重心开始后移，右脚先向后退"
+          },
+          {
+            "time": 0.8,
+            "observation": "球员已退至底线附近并转身面向来球"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "movement_roles": [
+          "approach"
+        ],
+        "body_parts": [
+          "legs",
+          "whole_body"
+        ],
+        "subphases": [],
+        "brief": "近端球员后退步法"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "forehand_clear",
+        "start": 0.8,
+        "end": 1.5,
+        "start_range": [
+          0.7,
+          0.9
+        ],
+        "end_range": [
+          1.4,
+          1.6
+        ],
+        "detail": "近端球员在后场使用正手将球拍高举过头顶挥出，将shuttlecock击向对方场地。随挥动作结束后手臂自然放下。",
+        "evidence": [
+          {
+            "time": 1.0,
+            "observation": "球员右臂持拍举过肩部准备击球"
+          },
+          {
+            "time": 1.2,
+            "observation": "球拍在头顶上方接触shuttlecock"
+          },
+          {
+            "time": 1.5,
+            "observation": "随挥结束，球员恢复站立姿态"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "contact",
+            "time": 1.2,
+            "time_range": [
+              1.1,
+              1.3
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "movement_roles": [
+          "hit"
+        ],
+        "body_parts": [
+          "racket_arm",
+          "trunk"
+        ],
+        "subphases": [
+          {
+            "label": "backswing",
+            "start": 0.8,
+            "end": 1.0,
+            "detail": "持拍手臂向后上方举起引拍",
+            "evidence": [
+              {
+                "time": 1.0,
+                "observation": "球拍位于头部后方高处"
+              }
+            ]
+          },
+          {
+            "label": "forward_swing",
+            "start": 1.0,
+            "end": 1.2,
+            "detail": "手臂向前上方加速挥动击球",
+            "evidence": [
+              {
+                "time": 1.2,
+                "observation": "球拍到达最高点并与shuttlecock接触"
+              }
+            ]
+          },
+          {
+            "label": "follow_through",
+            "start": 1.2,
+            "end": 1.5,
+            "detail": "击球后手臂顺势向下前方摆动",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "手臂回落至身侧"
+              }
+            ]
+          }
+        ],
+        "brief": "近端球员正手高远球"
+      },
+      {
+        "id": "S01-A03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "step_back",
+        "start": 2.4,
+        "end": 2.8,
+        "start_range": [
+          2.3,
+          2.5
+        ],
+        "end_range": [
+          2.7,
+          2.9
+        ],
+        "detail": "近端球员再次通过双脚交替的后退步法移动到后场击球位置。",
+        "evidence": [
+          {
+            "time": 2.4,
+            "observation": "球员从中场位置开始向后移动"
+          },
+          {
+            "time": 2.8,
+            "observation": "球员到达后场并调整身体朝向"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "movement_roles": [
+          "approach"
+        ],
+        "body_parts": [
+          "legs",
+          "whole_body"
+        ],
+        "subphases": [],
+        "brief": "近端球员第二次后退步法"
+      },
+      {
+        "id": "S01-A04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "forehand_clear",
+        "start": 2.8,
+        "end": 3.6,
+        "start_range": [
+          2.7,
+          2.9
+        ],
+        "end_range": [
+          3.5,
+          3.7
+        ],
+        "detail": "近端球员在后场再次执行正手 overhead 挥拍，将球击回对方半场。",
+        "evidence": [
+          {
+            "time": 3.0,
+            "observation": "球员持拍手举起准备击打高空来球"
+          },
+          {
+            "time": 3.3,
+            "observation": "球拍在头顶上方击中shuttlecock"
+          },
+          {
+            "time": 3.6,
+            "observation": "随挥动作完成，球员身体转正"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "contact",
+            "time": 3.3,
+            "time_range": [
+              3.2,
+              3.4
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "movement_roles": [
+          "hit"
+        ],
+        "body_parts": [
+          "racket_arm",
+          "trunk"
+        ],
+        "subphases": [
+          {
+            "label": "backswing",
+            "start": 2.8,
+            "end": 3.0,
+            "detail": "持拍手臂向后上方引拍",
+            "evidence": [
+              {
+                "time": 3.0,
+                "observation": "球拍处于身后高位"
+              }
+            ]
+          },
+          {
+            "label": "forward_swing",
+            "start": 3.0,
+            "end": 3.3,
+            "detail": "手臂向前上方挥出击球",
+            "evidence": [
+              {
+                "time": 3.3,
+                "observation": "球拍接触shuttlecock"
+              }
+            ]
+          },
+          {
+            "label": "follow_through",
+            "start": 3.3,
+            "end": 3.6,
+            "detail": "击球后手臂向下随挥",
+            "evidence": [
+              {
+                "time": 3.6,
+                "observation": "手臂回落，动作结束"
+              }
+            ]
+          }
+        ],
+        "brief": "近端球员第二次正手高远球"
+      },
+      {
+        "id": "S02-A01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": null,
+        "kind": "held_pose",
+        "label": "held_pose",
+        "start": 3.87,
+        "end": 7.6,
+        "start_range": [
+          3.87,
+          4.0
+        ],
+        "end_range": [
+          7.5,
+          7.6
+        ],
+        "detail": "近端球员在整个镜头期间保持背对镜头的静止站立姿态，未发生位移或挥拍动作。",
+        "evidence": [
+          {
+            "time": 4.0,
+            "observation": "球员站在右侧发球线附近保持不动"
+          },
+          {
+            "time": 6.0,
+            "observation": "球员依然维持相同的站立姿势"
+          },
+          {
+            "time": 7.5,
+            "observation": "直到镜头切换前均未移动"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "movement_roles": [],
+        "body_parts": [
+          "whole_body"
+        ],
+        "subphases": [],
+        "brief": "近端球员静止站立"
+      },
+      {
+        "id": "S02-A02",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "execution_id": "S02-E01",
+        "kind": "motion",
+        "label": "stroke_unspecified",
+        "start": 4.8,
+        "end": 7.6,
+        "start_range": [
+          4.7,
+          4.9
+        ],
+        "end_range": [
+          7.5,
+          7.7
+        ],
+        "detail": "远端球员在网前连续多次向上挥拍击打来球，由于距离较远且角度受限，具体正反手技术细节无法清晰辨认。",
+        "evidence": [
+          {
+            "time": 5.0,
+            "observation": "远端球员手臂上举挥拍"
+          },
+          {
+            "time": 6.0,
+            "observation": "远端球员再次挥拍击球"
+          },
+          {
+            "time": 7.0,
+            "observation": "远端球员持续进行挥拍练习"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "low",
+        "movement_roles": [
+          "hit"
+        ],
+        "body_parts": [
+          "racket_arm",
+          "trunk"
+        ],
+        "subphases": [],
+        "brief": "远端球员连续挥拍击球"
+      },
+      {
+        "id": "S03-A01",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": null,
+        "kind": "gesture",
+        "label": "explanatory_gesture",
+        "start": 7.63,
+        "end": 8.0,
+        "start_range": [
+          7.63,
+          7.7
+        ],
+        "end_range": [
+          7.9,
+          8.0
+        ],
+        "detail": "教练手持球拍，左手做出摊开手掌的解释性手势配合讲话。",
+        "evidence": [
+          {
+            "time": 7.7,
+            "observation": "教练左手向外摊开做说明状"
+          },
+          {
+            "time": 7.9,
+            "observation": "左手持续保持解释手势"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "movement_roles": [],
+        "body_parts": [
+          "non_racket_arm"
+        ],
+        "subphases": [],
+        "brief": "教练讲解手势"
+      }
+    ],
+    "uncertainties": [
+      "S01中两次击球的具体落点因视角受限无法完全确认，但根据挥拍轨迹判断为正手高远球。",
+      "S02中远端球员的微小脚步调整和挥拍动作幅度较小且距离较远，不作为主要计数动作。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.96,
+        "end": 1.48,
+        "start_range": [
+          0.76,
+          1.16
+        ],
+        "end_range": [
+          1.28,
+          1.68
+        ],
+        "speaker_id": "V01",
+        "description": "男声，中等音量，语速正常，带有指令性语气。",
+        "evidence": [
+          {
+            "time": 1.0,
+            "observation": "可听到清晰的中文短语“往这边跳”。"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "往这边跳。"
+      },
+      {
+        "id": "N001",
+        "kind": "transient",
+        "layer": "foreground",
+        "start": 3.05,
+        "end": 3.37,
+        "start_range": [
+          2.85,
+          3.25
+        ],
+        "end_range": [
+          2.85,
+          3.25
+        ],
+        "speaker_id": null,
+        "description": "清脆的击球声或拍子撞击声。",
+        "evidence": [
+          {
+            "time": 3.1,
+            "observation": "短促、高频的撞击瞬态。"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 3.36,
+        "end": 3.6,
+        "start_range": [
+          3.16,
+          3.56
+        ],
+        "end_range": [
+          3.16,
+          3.56
+        ],
+        "speaker_id": "V01",
+        "description": "男声，轻声确认。",
+        "evidence": [
+          {
+            "time": 3.4,
+            "observation": "可听到简短的“可以”一词。"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": "可以。"
+      },
+      {
+        "id": "N002",
+        "kind": "transient",
+        "layer": "foreground",
+        "start": 4.65,
+        "end": 4.97,
+        "start_range": [
+          4.45,
+          4.85
+        ],
+        "end_range": [
+          4.45,
+          4.85
+        ],
+        "speaker_id": null,
+        "description": "清脆的击球声或拍子撞击声。",
+        "evidence": [
+          {
+            "time": 4.7,
+            "observation": "短促、高频的撞击瞬态。"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 4.88,
+        "end": 5.2,
+        "start_range": [
+          4.68,
+          5.08
+        ],
+        "end_range": [
+          4.68,
+          5.08
+        ],
+        "speaker_id": "V01",
+        "description": "男声，报数。",
+        "evidence": [
+          {
+            "time": 4.9,
+            "observation": "可听到“一个”。"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "一个。"
+      },
+      {
+        "id": "N003",
+        "kind": "transient",
+        "layer": "foreground",
+        "start": 6.85,
+        "end": 7.17,
+        "start_range": [
+          6.65,
+          7.05
+        ],
+        "end_range": [
+          6.65,
+          7.05
+        ],
+        "speaker_id": null,
+        "description": "清脆的击球声或拍子撞击声。",
+        "evidence": [
+          {
+            "time": 6.9,
+            "observation": "短促、高频的撞击瞬态。"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "U004",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 7.28,
+        "end": 8.0,
+        "start_range": [
+          7.08,
+          7.48
+        ],
+        "end_range": [
+          7.8,
+          8.2
+        ],
+        "speaker_id": "V01",
+        "description": "男声，先报数后转为讲解口吻，句子在结尾处被截断。",
+        "evidence": [
+          {
+            "time": 7.3,
+            "observation": "可听到“两个”，随后是“好，你……”并突然中断。"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "两个。好，你"
+      }
+    ],
+    "uncertainties": [
+      "三次 transient 声音（约 3.1s, 4.7s, 6.9s）的具体物理来源无法仅凭听觉完全确定，但声学特征一致为清脆的撞击声。"
+    ]
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [
+      {
+        "id": "S03-A01",
+        "reason": "Invalid action/shot interval; raw value preserved"
+      }
+    ],
+    "pairs": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.96,
+          1.48
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.05,
+          3.37
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.36,
+          3.6
+        ],
+        "overlap_s": 0.24
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U002",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N002",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.65,
+          4.97
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.88,
+          5.2
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.85,
+          7.17
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U004",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.28,
+          7.6
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.8,
+          4.97
+        ],
+        "overlap_s": 0.17
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.88,
+          5.2
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.85,
+          7.17
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.28,
+          7.6
+        ],
+        "overlap_s": 0.32
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.96,
+          1.48
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.05,
+          3.37
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.36,
+          3.6
+        ],
+        "overlap_s": 0.24
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.8,
+          4.97
+        ],
+        "overlap_s": 0.17
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.88,
+          5.2
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.85,
+          7.17
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.28,
+          7.6
+        ],
+        "overlap_s": 0.32
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N002",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.65,
+          4.97
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.88,
+          5.2
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.85,
+          7.17
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U004",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.28,
+          7.6
+        ],
+        "overlap_s": 0.32
+      }
+    ]
+  },
+  "warnings": [
+    "S01中两次击球的具体落点因视角受限无法完全确认，但根据挥拍轨迹判断为正手高远球。",
+    "S02中远端球员的微小脚步调整和挥拍动作幅度较小且距离较远，不作为主要计数动作。",
+    "Invalid end uncertainty bracket: N001",
+    "Invalid end uncertainty bracket: U002",
+    "Invalid end uncertainty bracket: N002",
+    "Invalid end uncertainty bracket: U003",
+    "Invalid end uncertainty bracket: N003",
+    "Invalid end uncertainty bracket: U004",
+    {
+      "id": "S03-A01",
+      "reason": "Invalid action/shot interval; raw value preserved"
+    }
+  ]
+}

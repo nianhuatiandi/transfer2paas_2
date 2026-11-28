@@ -1,0 +1,452 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma08",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "桌前操作",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      79
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchQA-64b9ff1e-09d7277c-bddc-4e85-afbb-a29ce49e5d55_0_13.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      13.0
+    ],
+    "official_sha256": "93a64060a6324a89eb7758a710f69f7734e8294c5855a26695d6d1f7a60a7692",
+    "clip_sha256": "93a64060a6324a89eb7758a710f69f7734e8294c5855a26695d6d1f7a60a7692",
+    "audio_source": null
+  },
+  "duration_seconds": 13.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 13.0,
+      "first_frame": 0,
+      "end_frame_exclusive": 195
+    }
+  ],
+  "input_frames": {
+    "visual": 131
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "单镜头固定视角，记录一名穿白色无袖上衣的人在工作台上组装机械部件。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿白色无袖上衣、深色头发扎起的人"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.8,
+        "end": 4.6,
+        "description": "拿起灰色圆柱形零件并双手翻转检查"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 4.6,
+        "end": 8.6,
+        "description": "放下第一个零件后拿起第二个灰色圆柱形零件进行查看"
+      },
+      {
+        "id": "S01-E03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 8.6,
+        "end": 12.93,
+        "description": "将手中的灰色零件插入黑色长管状组件顶部并调整位置"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "拿取并检查零件",
+        "start": 0.8,
+        "end": 4.6,
+        "start_range": [
+          0.8,
+          1.0
+        ],
+        "end_range": [
+          4.4,
+          4.6
+        ],
+        "detail": "从约0.8秒开始，该人伸出右手越过桌面中央的黑色长管组件，捏住其右侧的一个灰色圆柱形零件并将其拿起；随后在1.5至4.6秒期间，双手将该零件托举在半空中，手指不断转动它以观察各个侧面。",
+        "evidence": [
+          {
+            "time": 0.8,
+            "observation": "右手离开交握状态伸向桌面"
+          },
+          {
+            "time": 1.5,
+            "observation": "成功抓起灰色圆柱形零件"
+          },
+          {
+            "time": 2.0,
+            "observation": "左手加入，双手共同持握零件"
+          },
+          {
+            "time": 4.6,
+            "observation": "准备将手中零件放回桌面"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抓取零件",
+            "time": 1.5,
+            "time_range": null
+          },
+          {
+            "name": "双手持握",
+            "time": 2.0,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "左手"
+        ],
+        "movement_roles": [
+          "伸手",
+          "捏取",
+          "翻转查看"
+        ],
+        "subphases": [
+          {
+            "label": "伸手抓取",
+            "start": 0.8,
+            "end": 1.5,
+            "detail": "右手越过障碍物精准捏住目标零件边缘并提起。",
+            "evidence": [
+              {
+                "time": 0.8,
+                "observation": "手臂前伸"
+              },
+              {
+                "time": 1.5,
+                "observation": "零件离桌"
+              }
+            ]
+          },
+          {
+            "label": "翻转检视",
+            "start": 1.5,
+            "end": 4.6,
+            "detail": "双手配合旋转零件，视线跟随零件移动。",
+            "evidence": [
+              {
+                "time": 2.0,
+                "observation": "左手接应"
+              },
+              {
+                "time": 4.0,
+                "observation": "持续把玩"
+              }
+            ]
+          }
+        ],
+        "brief": "右手越过黑管拿起灰柱并用双手翻看"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "替换检查对象",
+        "start": 4.6,
+        "end": 8.6,
+        "start_range": [
+          4.6,
+          4.8
+        ],
+        "end_range": [
+          8.4,
+          8.6
+        ],
+        "detail": "在4.6秒左右，该人将手中的第一个灰色零件放回桌面原位；紧接着在5.0秒时，右手再次探出，拿起了旁边另一个相似的灰色圆柱形零件，并在接下来的时间里重复了之前的双手翻转检查动作直至8.6秒。",
+        "evidence": [
+          {
+            "time": 4.6,
+            "observation": "手部下压放置旧零件"
+          },
+          {
+            "time": 5.0,
+            "observation": "右手重新抬起新零件"
+          },
+          {
+            "time": 6.0,
+            "observation": "双手交替旋转新零件"
+          },
+          {
+            "time": 8.6,
+            "observation": "停止翻转，准备下一步操作"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "放下旧件",
+            "time": 4.6,
+            "time_range": null
+          },
+          {
+            "name": "拿起新件",
+            "time": 5.0,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "左手"
+        ],
+        "movement_roles": [
+          "释放",
+          "再抓取",
+          "审视"
+        ],
+        "subphases": [
+          {
+            "label": "归位与切换",
+            "start": 4.6,
+            "end": 5.0,
+            "detail": "快速完成一放一拿的动作转换。",
+            "evidence": [
+              {
+                "time": 4.6,
+                "observation": "指尖松开"
+              },
+              {
+                "time": 5.0,
+                "observation": "握住新物"
+              }
+            ]
+          },
+          {
+            "label": "二次检视",
+            "start": 5.0,
+            "end": 8.6,
+            "detail": "对第二个零件进行同样的多角度观察。",
+            "evidence": [
+              {
+                "time": 6.5,
+                "observation": "侧转展示底部"
+              },
+              {
+                "time": 8.0,
+                "observation": "正面朝向自己"
+              }
+            ]
+          }
+        ],
+        "brief": "换拿第二个灰柱继续端详"
+      },
+      {
+        "id": "S01-A03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E03",
+        "kind": "motion",
+        "label": "装配插入动作",
+        "start": 8.6,
+        "end": 12.93,
+        "start_range": [
+          8.6,
+          8.8
+        ],
+        "end_range": [
+          12.8,
+          12.93
+        ],
+        "detail": "自8.6秒起，该人左手扶稳桌上的黑色长管底座以保持不动，右手携带刚才检查过的灰色零件靠近管口上方；经过短暂的对准后，于9.8秒垂直向下施力将其推入管内，并在随后的几秒内微调角度确保完全卡紧到位。",
+        "evidence": [
+          {
+            "time": 8.6,
+            "observation": "左手锁定基座"
+          },
+          {
+            "time": 9.0,
+            "observation": "右手悬停于管口正上方"
+          },
+          {
+            "time": 9.8,
+            "observation": "明显下沉嵌入动作"
+          },
+          {
+            "time": 12.93,
+            "observation": "保持按压姿态确认稳固"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "定位对齐",
+            "time": 9.0,
+            "time_range": null
+          },
+          {
+            "name": "压入结合",
+            "time": 9.8,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手"
+        ],
+        "movement_roles": [
+          "扶持稳定",
+          "引导下落",
+          "压紧固定"
+        ],
+        "subphases": [
+          {
+            "label": "预备对接",
+            "start": 8.6,
+            "end": 9.8,
+            "detail": "建立稳定的支撑点并将活动部件移至安装位。",
+            "evidence": [
+              {
+                "time": 8.6,
+                "observation": "左掌覆盖管身"
+              },
+              {
+                "time": 9.5,
+                "observation": "右指捏准接口"
+              }
+            ]
+          },
+          {
+            "label": "执行插接",
+            "start": 9.8,
+            "end": 12.93,
+            "detail": "克服阻力推进直至齐平或达到预期深度。",
+            "evidence": [
+              {
+                "time": 10.5,
+                "observation": "关节弯曲发力"
+              },
+              {
+                "time": 12.0,
+                "observation": "无明显缝隙残留"
+              }
+            ]
+          }
+        ],
+        "brief": "左手稳住黑管右手塞入灰柱到底"
+      }
+    ],
+    "uncertainties": [
+      "由于面部模糊处理无法判断眼神焦点是否始终落在手上操作的物件上"
+    ],
+    "motion_tracks": [
+      {
+        "context": "画面右侧中景处，一名身穿白色镂空无袖上衣、深色长发扎成低马尾的人站在白色工作台后。其身体正面朝向镜头方向，双手起初交握于腹部前方。工作台上散落着黄色齿轮、黑色圆柱体、灰色支架等零件及组装说明书，背景可见工业设备与玻璃隔断。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 12,
+            "caption": "该主体保持站立姿态，双手在身前自然交叠，目光向下注视桌面上的零件区域，处于观察准备阶段。",
+            "start": 0.0,
+            "end": 0.8,
+            "action_ids": [
+              "S01-A01"
+            ]
+          },
+          {
+            "from_frame": 20,
+            "to_frame": 38,
+            "caption": "主体松开交握的双手并向前伸出，右手从桌面中央拿起一个灰色的环形垫圈组件，左手随即配合接住该物体进行初步查看。",
+            "start": 1.3333333333333333,
+            "end": 2.533333333333333,
+            "action_ids": [
+              "S01-A01"
+            ]
+          },
+          {
+            "from_frame": 44,
+            "to_frame": 75,
+            "caption": "主体将手中的灰色组件放回桌面，随后右手再次伸向同一位置抓取另一个类似的灰色环状零件，并将其拿至胸前高度仔细端详。",
+            "start": 2.933333333333333,
+            "end": 5.0,
+            "action_ids": [
+              "S01-A01",
+              "S01-A02"
+            ]
+          },
+          {
+            "from_frame": 82,
+            "to_frame": 126,
+            "caption": "主体双手持握新拿起的灰色组件，手指持续转动和调整零件的角度以检查细节，期间头部略微低垂，视线始终聚焦于手中物体。",
+            "start": 5.466666666666667,
+            "end": 8.4,
+            "action_ids": [
+              "S01-A02"
+            ]
+          },
+          {
+            "from_frame": 132,
+            "to_frame": 194,
+            "caption": "主体停止检视动作，双手协同将手中的灰色组件移向桌面上竖立的黑色长圆筒上方，小心地将其套入圆筒顶部口沿并进行按压固定，直至安装完成。",
+            "start": 8.8,
+            "end": 12.933333333333334,
+            "action_ids": [
+              "S01-A03"
+            ]
+          }
+        ],
+        "camera": "全程为固定的高角度俯视广角镜头（类似头戴式或胸戴式相机视角），机位无任何推拉摇移，画面边缘稳定，完整记录了操作台面的布局变化。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "穿白色无袖上衣、深色头发扎起的人"
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "由于面部模糊处理无法判断眼神焦点是否始终落在手上操作的物件上"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "37a34b668ff82c498a94d63d31abcc3825ecc3fbb9602b75908589e20e7bb05e",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

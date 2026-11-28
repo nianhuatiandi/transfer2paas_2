@@ -1,0 +1,1126 @@
+{
+  "groups": {
+    "visual": [
+      {
+        "members": [
+          "2.0"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 3.52,
+        "representative": "2.0",
+        "example": {
+          "actor": "穿黑色T恤灰色短裤的男子",
+          "activity": "羽毛球训练",
+          "kind": "motion",
+          "label": "反手挑球",
+          "brief": "男子连续两次向对面做反手挑球动作。",
+          "detail": "双手握拍，身体微蹲，手臂向前上方快速挥动将球挑起。",
+          "start": 0.0,
+          "end": 3.52,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V1"
+      },
+      {
+        "members": [
+          "1.0",
+          "3.0"
+        ],
+        "votes": 2,
+        "start": 0.25,
+        "end": 1.5,
+        "representative": "1.0",
+        "example": {
+          "actor": "近端穿黑色T恤灰色短裤的男子",
+          "activity": "羽毛球练习",
+          "kind": "motion",
+          "label": "正手挑球",
+          "brief": "该男子在网前完成了一次正手挑球动作。",
+          "detail": "他向左侧跨步，右手持拍从下向上挥动击打羽毛球。",
+          "start": 0.0,
+          "end": 1.5,
+          "phases": []
+        },
+        "start_spread": 0.5,
+        "end_spread": 0.0,
+        "id": "V2"
+      },
+      {
+        "members": [
+          "1.1"
+        ],
+        "votes": 1,
+        "start": 1.5,
+        "end": 2.0,
+        "representative": "1.1",
+        "example": {
+          "actor": "远端穿粉黑相间上衣的男子",
+          "activity": "羽毛球练习",
+          "kind": "motion",
+          "label": "上手手喂球",
+          "brief": "该男子站在底线附近，用手将羽毛球抛过网给对手。",
+          "detail": "他举起右臂，将球向前上方抛出。",
+          "start": 1.5,
+          "end": 2.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V3"
+      },
+      {
+        "members": [
+          "1.2",
+          "3.1"
+        ],
+        "votes": 2,
+        "start": 2.25,
+        "end": 3.5,
+        "representative": "1.2",
+        "example": {
+          "actor": "近端穿黑色T恤灰色短裤的男子",
+          "activity": "羽毛球练习",
+          "kind": "motion",
+          "label": "反手挑球",
+          "brief": "该男子在网前完成了一次反手挑球动作。",
+          "detail": "他向右前方移动，右手持拍以反手握法从下向上挥动击球。",
+          "start": 2.0,
+          "end": 3.5,
+          "phases": []
+        },
+        "start_spread": 0.5,
+        "end_spread": 0.0,
+        "id": "V4"
+      },
+      {
+        "members": [
+          "2.1"
+        ],
+        "votes": 1,
+        "start": 3.76,
+        "end": 7.84,
+        "representative": "2.1",
+        "example": {
+          "actor": "站在右侧穿黑白拼色短袖的男子",
+          "activity": "羽毛球训练",
+          "kind": "state",
+          "label": "保持姿态",
+          "brief": "该男子面向左侧站立不动，观察对面的击球练习。",
+          "detail": "",
+          "start": 3.76,
+          "end": 7.84,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V5"
+      },
+      {
+        "members": [
+          "2.2"
+        ],
+        "votes": 1,
+        "start": 3.76,
+        "end": 7.84,
+        "representative": "2.2",
+        "example": {
+          "actor": "在远端场地中央穿黑衣灰裤的男子",
+          "activity": "羽毛球训练",
+          "kind": "motion",
+          "label": "正手网前放网",
+          "brief": "该男子连续三次向近侧做正手网前放网动作。",
+          "detail": "右手持拍，脚步轻移靠近网前，手腕轻柔下压将球拨过网带。",
+          "start": 3.76,
+          "end": 7.84,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V6"
+      },
+      {
+        "members": [
+          "1.3"
+        ],
+        "votes": 1,
+        "start": 4.0,
+        "end": 4.5,
+        "representative": "1.3",
+        "example": {
+          "actor": "远端穿黑色无袖背心的男子",
+          "activity": "羽毛球练习",
+          "kind": "motion",
+          "label": "上手手喂球",
+          "brief": "该男子站在底线附近，用手将羽毛球抛过网给对手。",
+          "detail": "他举起左臂，将球向前下方抛出。",
+          "start": 4.0,
+          "end": 4.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V7"
+      },
+      {
+        "members": [
+          "1.4"
+        ],
+        "votes": 1,
+        "start": 4.5,
+        "end": 5.5,
+        "representative": "1.4",
+        "example": {
+          "actor": "近端穿黑色无袖背心的男子",
+          "activity": "羽毛球练习",
+          "kind": "motion",
+          "label": "正手挑球",
+          "brief": "该男子在网前完成了一次正手挑球动作。",
+          "detail": "他向左前方跨步，右手持拍从下向上挥动击球。",
+          "start": 4.5,
+          "end": 5.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V8"
+      },
+      {
+        "members": [
+          "1.5"
+        ],
+        "votes": 1,
+        "start": 5.5,
+        "end": 6.0,
+        "representative": "1.5",
+        "example": {
+          "actor": "远端穿黑色无袖背心的男子",
+          "activity": "羽毛球练习",
+          "kind": "motion",
+          "label": "上手手喂球",
+          "brief": "该男子站在底线附近，用手将羽毛球抛过网给对手。",
+          "detail": "他举起左臂，将球向前下方抛出。",
+          "start": 5.5,
+          "end": 6.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V9"
+      },
+      {
+        "members": [
+          "1.6"
+        ],
+        "votes": 1,
+        "start": 6.0,
+        "end": 7.5,
+        "representative": "1.6",
+        "example": {
+          "actor": "近端穿黑色无袖背心的男子",
+          "activity": "羽毛球练习",
+          "kind": "motion",
+          "label": "反手挑球",
+          "brief": "该男子在网前完成了一次反手挑球动作。",
+          "detail": "他向右前方跨步，右手持拍以反手握法从下向上挥动击球。",
+          "start": 6.0,
+          "end": 7.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V10"
+      },
+      {
+        "members": [
+          "1.7",
+          "2.3",
+          "3.2"
+        ],
+        "votes": 3,
+        "start": 8.0,
+        "end": 13.5,
+        "representative": "1.7",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "讲解示范",
+          "kind": "gesture",
+          "label": "讲解手势",
+          "brief": "该男子面向镜头说话，并用双手做出解释性的手势。",
+          "detail": "他左手张开，右手握拳或指点，配合言语进行说明。",
+          "start": 8.0,
+          "end": 13.5,
+          "phases": []
+        },
+        "start_spread": 0.08000000000000007,
+        "end_spread": 0.2599999999999998,
+        "id": "V11"
+      },
+      {
+        "members": [
+          "2.4"
+        ],
+        "votes": 1,
+        "start": 13.84,
+        "end": 21.6,
+        "representative": "2.4",
+        "example": {
+          "actor": "主讲人（穿ACTIVE黑T恤粉色短裤）",
+          "activity": "羽毛球示范",
+          "kind": "motion",
+          "label": "错误动作演示",
+          "brief": "主讲人在场上连续多次示范错误的接球和挑球动作。",
+          "detail": "步伐凌乱，重心不稳，挥拍动作僵硬且未能有效击中目标区域。",
+          "start": 13.84,
+          "end": 21.6,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V12"
+      },
+      {
+        "members": [
+          "1.8",
+          "3.3"
+        ],
+        "votes": 2,
+        "start": 15.0,
+        "end": 17.75,
+        "representative": "1.8",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "错误动作演示",
+          "kind": "motion",
+          "label": "低手向上挥拍／回球，具体技术未确定",
+          "brief": "该男子演示了一个不正确的低位击球动作。",
+          "detail": "他在接对方来球时，身体重心不稳，挥拍动作变形。",
+          "start": 14.0,
+          "end": 18.0,
+          "phases": []
+        },
+        "start_spread": 2.0,
+        "end_spread": 0.5,
+        "id": "V13"
+      },
+      {
+        "members": [
+          "1.9"
+        ],
+        "votes": 1,
+        "start": 18.5,
+        "end": 21.0,
+        "representative": "1.9",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "错误动作演示",
+          "kind": "motion",
+          "label": "挑球，正反手未确定",
+          "brief": "该男子演示了一个错误的半场挑球动作。",
+          "detail": "他从蹲姿强行起身挑球，导致失去平衡。",
+          "start": 18.5,
+          "end": 21.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V14"
+      },
+      {
+        "members": [
+          "1.10",
+          "2.5",
+          "3.4"
+        ],
+        "votes": 3,
+        "start": 21.5,
+        "end": 26.0,
+        "representative": "1.10",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "讲解示范",
+          "kind": "gesture",
+          "label": "讲解手势",
+          "brief": "该男子面向镜头继续讲解，并用手势辅助说明。",
+          "detail": "他用手指点和比划来强调要点。",
+          "start": 21.5,
+          "end": 26.0,
+          "phases": []
+        },
+        "start_spread": 0.17999999999999972,
+        "end_spread": 0.3999999999999986,
+        "id": "V15"
+      },
+      {
+        "members": [
+          "2.6"
+        ],
+        "votes": 1,
+        "start": 26.48,
+        "end": 32.24,
+        "representative": "2.6",
+        "example": {
+          "actor": "主讲人（穿ACTIVE黑T恤粉色短裤）",
+          "activity": "羽毛球示范",
+          "kind": "motion",
+          "label": "错误动作演示",
+          "brief": "主讲人再次在场上示范失去重心的被动救球及随后的半场挑球失误。",
+          "detail": "身体大幅度前倾甚至弯腰触地，随后勉强起身完成一次无力的挑球。",
+          "start": 26.48,
+          "end": 32.24,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V16"
+      },
+      {
+        "members": [
+          "1.11"
+        ],
+        "votes": 1,
+        "start": 26.5,
+        "end": 28.5,
+        "representative": "1.11",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "错误动作演示",
+          "kind": "motion",
+          "label": "正手吊球",
+          "brief": "该男子先演示了进攻性的高位击球（如杀球或吊球）。",
+          "detail": "他跳起并在高点位置向下挥拍击球。",
+          "start": 26.5,
+          "end": 28.5,
+          "phases": [
+            {
+              "label": "准备与起跳",
+              "start": 26.5,
+              "end": 27.5
+            },
+            {
+              "label": "空中击球",
+              "start": 27.5,
+              "end": 28.5
+            }
+          ]
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V17"
+      },
+      {
+        "members": [
+          "3.5"
+        ],
+        "votes": 1,
+        "start": 27.5,
+        "end": 29.0,
+        "representative": "3.5",
+        "example": {
+          "actor": "近端黑衣球员",
+          "activity": "错误示范挑球",
+          "kind": "motion",
+          "label": "错误示范挑球",
+          "brief": "近端黑衣球员再次演示了不正确的挑球动作。",
+          "detail": "右手持拍向上挥动，身体姿态不正确，导致回球质量差且失去场地控制。",
+          "start": 27.5,
+          "end": 29.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V18"
+      },
+      {
+        "members": [
+          "1.12"
+        ],
+        "votes": 1,
+        "start": 29.0,
+        "end": 32.0,
+        "representative": "1.12",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "错误动作演示",
+          "kind": "motion",
+          "label": "正手挑球",
+          "brief": "紧接着上一个动作，他上网前做了一个质量很低的挑球。",
+          "detail": "他快速冲向网前，但在较低的点位勉强将球挑起。",
+          "start": 29.0,
+          "end": 32.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V19"
+      },
+      {
+        "members": [
+          "1.13",
+          "2.7",
+          "3.6"
+        ],
+        "votes": 3,
+        "start": 32.5,
+        "end": 33.0,
+        "representative": "1.13",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "讲解示范",
+          "kind": "gesture",
+          "label": "讲解手势",
+          "brief": "该男子再次面向镜头进行口头和手势讲解。",
+          "detail": "他摊开双手，表情认真地解释问题所在。",
+          "start": 32.5,
+          "end": 33.0,
+          "phases": []
+        },
+        "start_spread": 0.17999999999999972,
+        "end_spread": 0.20000000000000284,
+        "id": "V20"
+      },
+      {
+        "members": [
+          "1.14",
+          "2.8"
+        ],
+        "votes": 2,
+        "start": 33.39,
+        "end": 36.81,
+        "representative": "2.8",
+        "example": {
+          "actor": "主讲人（穿ACTIVE黑T恤粉色短裤）",
+          "activity": "羽毛球示范",
+          "kind": "motion",
+          "label": "错误动作演示",
+          "brief": "主讲人示范应对吊球时的错误跑位和低手捞球动作。",
+          "detail": "急停后身体失衡，球拍贴地拖拽试图够到球。",
+          "start": 33.28,
+          "end": 37.12,
+          "phases": []
+        },
+        "start_spread": 0.21999999999999886,
+        "end_spread": 0.6199999999999974,
+        "id": "V21"
+      },
+      {
+        "members": [
+          "1.15",
+          "2.9",
+          "3.7"
+        ],
+        "votes": 3,
+        "start": 37.5,
+        "end": 41.5,
+        "representative": "1.15",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "讲解示范",
+          "kind": "gesture",
+          "label": "讲解手势",
+          "brief": "该男子总结错误原因，并进行手势讲解。",
+          "detail": "他手持球拍，边说边比划，指出挑球不好的后果。",
+          "start": 37.5,
+          "end": 41.5,
+          "phases": []
+        },
+        "start_spread": 0.29999999999999716,
+        "end_spread": 0.5,
+        "id": "V22"
+      },
+      {
+        "members": [
+          "2.10"
+        ],
+        "votes": 1,
+        "start": 42.08,
+        "end": 48.08,
+        "representative": "2.10",
+        "example": {
+          "actor": "穿粉黑渐变上衣黑短裤的球员",
+          "activity": "羽毛球对抗",
+          "kind": "motion",
+          "label": "高质量挑球与杀球",
+          "brief": "该球员先是在底线附近完成高质量的深远区挑球，随后在前场跃起大力扣杀。",
+          "detail": "后退步法流畅，挑球时充分伸展手臂；杀球时高高跃起，收腹鞭打发力。",
+          "start": 42.08,
+          "end": 48.08,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V23"
+      },
+      {
+        "members": [
+          "1.16",
+          "3.8"
+        ],
+        "votes": 2,
+        "start": 42.25,
+        "end": 44.25,
+        "representative": "1.16",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "正确动作演示",
+          "kind": "motion",
+          "label": "正手挑球",
+          "brief": "该男子演示了一个高质量的正手挑球。",
+          "detail": "他步伐稳健地到位，在低点 smoothly 地将球高高挑起至对方后场。",
+          "start": 42.0,
+          "end": 44.0,
+          "phases": []
+        },
+        "start_spread": 0.5,
+        "end_spread": 0.5,
+        "id": "V24"
+      },
+      {
+        "members": [
+          "1.17"
+        ],
+        "votes": 1,
+        "start": 44.0,
+        "end": 48.0,
+        "representative": "1.17",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "正确动作演示",
+          "kind": "motion",
+          "label": "正手杀球",
+          "brief": "面对对方的回球，该男子在后场完成了一记有力的杀球。",
+          "detail": "他后退到位，跳起并在高点用力向下扣杀。",
+          "start": 44.0,
+          "end": 48.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V25"
+      },
+      {
+        "members": [
+          "1.18",
+          "2.11",
+          "3.9"
+        ],
+        "votes": 3,
+        "start": 48.5,
+        "end": 50.4,
+        "representative": "3.9",
+        "example": {
+          "actor": "近端黑衣球员",
+          "activity": "讲解手势",
+          "kind": "gesture",
+          "label": "讲解手势",
+          "brief": "近端黑衣球员面向镜头做手势并说话。",
+          "detail": "竖起一根手指强调重点，随后放下手臂继续讲解。",
+          "start": 48.5,
+          "end": 50.5,
+          "phases": []
+        },
+        "start_spread": 0.3400000000000034,
+        "end_spread": 0.5,
+        "id": "V26"
+      },
+      {
+        "members": [
+          "1.19",
+          "2.12",
+          "3.10"
+        ],
+        "votes": 3,
+        "start": 50.5,
+        "end": 55.0,
+        "representative": "1.19",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "假动作演示",
+          "kind": "motion",
+          "label": "正手被动过渡吊球（暂译）",
+          "brief": "该男子通过假动作迷惑对手，实际打出了一个轻巧的过渡球。",
+          "detail": "他做出要大力抽球的架势，但在触球瞬间改变发力方式，将球轻挡过网。",
+          "start": 50.5,
+          "end": 55.0,
+          "phases": []
+        },
+        "start_spread": 0.5200000000000031,
+        "end_spread": 3.3999999999999986,
+        "id": "V27"
+      },
+      {
+        "members": [
+          "1.20",
+          "2.13",
+          "3.11"
+        ],
+        "votes": 3,
+        "start": 56.5,
+        "end": 59.5,
+        "representative": "1.20",
+        "example": {
+          "actor": "穿粉色短裤的男子",
+          "activity": "开场介绍",
+          "kind": "gesture",
+          "label": "讲解手势",
+          "brief": "该男子正式宣布开始教学，并做开场白。",
+          "detail": "他面带微笑，手持球拍指向镜头，语气肯定地进行自我介绍和课程导入。",
+          "start": 56.5,
+          "end": 59.5,
+          "phases": []
+        },
+        "start_spread": 0.5200000000000031,
+        "end_spread": 0.46000000000000085,
+        "id": "V28"
+      }
+    ],
+    "audio": [
+      {
+        "members": [
+          "3.0"
+        ],
+        "votes": 1,
+        "start": 1.04,
+        "end": 1.52,
+        "representative": "3.0",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "往这边挑。",
+          "start": 1.04,
+          "end": 1.52,
+          "label": "往这边挑。"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A1"
+      },
+      {
+        "members": [
+          "1.0",
+          "2.0"
+        ],
+        "votes": 2,
+        "start": 1.04,
+        "end": 59.82,
+        "representative": "1.0",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "往这边挑。一个，两个。好，你们是不是经常遇到这个问题？当你们在打球的时候，本来你们是主动的，劈吊滑板别人已经接得很难受了，由于你挑球动作不对，由于这个方法不是很正确，你挑的时候挑个半场又接不上力，然后你还失去重心，别人从被动立马推到半场就可以杀下来。或者是你更加的时候你在进攻，你杀完后他本来是失去重心接一个防守球，你往前去，本来球也不是很低，但是动作不对一挑半场球。那如果你动作不对，别人吊球的话那就更不用说了。或者在你打双打或混双啊，后面是一个重炮，你挑球挑得不好，一挑完了中杀。好，但是如果你动作对的话，再怎么难受的球你一挑起来又高又到位，别人杀不下来，再怎么重炮的球员他都杀不下来的。不只是这样子，如果你会了挑球，你还会加上一点假动作，比如这个动作，那就更不用说，他直接跑错方向，他立马被动。OK，今天我就要教你们怎么正确的做一个挑球动作。",
+          "start": 1.04,
+          "end": 59.8,
+          "label": "往这边挑。一个，两个。好，你们是不是经常遇到这个问题？当你们在打球的时候，本来你们是主动的，劈吊滑板别人已经接得很难受了，由于你挑球动作不对，由于这个方法不是很正确，你挑的时候挑个半场又接不上力，然后你还失去重心，别人从被动立马推到半场就可以杀下来。或者是你更加的时候你在进攻，你杀完后他本来是失去重心接一个防守球，你往前去，本来球也不是很低，但是动作不对一挑半场球。那如果你动作不对，别人吊球的话那就更不用说了。或者在你打双打或混双啊，后面是一个重炮，你挑球挑得不好，一挑完了中杀。好，但是如果你动作对的话，再怎么难受的球你一挑起来又高又到位，别人杀不下来，再怎么重炮的球员他都杀不下来的。不只是这样子，如果你会了挑球，你还会加上一点假动作，比如这个动作，那就更不用说，他直接跑错方向，他立马被动。OK，今天我就要教你们怎么正确的做一个挑球动作。"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.04000000000000625,
+        "id": "A2"
+      },
+      {
+        "members": [
+          "2.1"
+        ],
+        "votes": 1,
+        "start": 2.36,
+        "end": 2.76,
+        "representative": "2.1",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "background",
+          "text": "有节奏的敲击和撞击声",
+          "start": 2.36,
+          "end": 2.76,
+          "label": "有节奏的敲击和撞击声"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A3"
+      },
+      {
+        "members": [
+          "2.2"
+        ],
+        "votes": 1,
+        "start": 3.0,
+        "end": 3.32,
+        "representative": "2.2",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "background",
+          "text": "有节奏的敲击和撞击声",
+          "start": 3.0,
+          "end": 3.32,
+          "label": "有节奏的敲击和撞击声"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A4"
+      },
+      {
+        "members": [
+          "2.3"
+        ],
+        "votes": 1,
+        "start": 4.0,
+        "end": 4.24,
+        "representative": "2.3",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "background",
+          "text": "有节奏的敲击和撞击声",
+          "start": 4.0,
+          "end": 4.24,
+          "label": "有节奏的敲击和撞击声"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A5"
+      },
+      {
+        "members": [
+          "2.4"
+        ],
+        "votes": 1,
+        "start": 5.16,
+        "end": 5.52,
+        "representative": "2.4",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "background",
+          "text": "有节奏的敲击和撞击声",
+          "start": 5.16,
+          "end": 5.52,
+          "label": "有节奏的敲击和撞击声"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A6"
+      },
+      {
+        "members": [
+          "2.5"
+        ],
+        "votes": 1,
+        "start": 6.12,
+        "end": 6.44,
+        "representative": "2.5",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "background",
+          "text": "有节奏的敲击和撞击声",
+          "start": 6.12,
+          "end": 6.44,
+          "label": "有节奏的敲击和撞击声"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A7"
+      },
+      {
+        "members": [
+          "2.6"
+        ],
+        "votes": 1,
+        "start": 6.84,
+        "end": 7.12,
+        "representative": "2.6",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "background",
+          "text": "有节奏的敲击和撞击声",
+          "start": 6.84,
+          "end": 7.12,
+          "label": "有节奏的敲击和撞击声"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A8"
+      },
+      {
+        "members": [
+          "3.1"
+        ],
+        "votes": 1,
+        "start": 7.36,
+        "end": 60.0,
+        "representative": "3.1",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "一个，两个。好，你们是不是经常遇到这个问题？当你们在打球的时候，本来你们是主动的，劈吊滑板别人已经接得很难受了，由于你挑球动作不对，由于这个方法不是很正确，你挑的时候挑个半场又接不上力，然后你还失去重心，别人从被动立马推到半场就可以杀下来。或者是你更加说你在进攻，你杀完后他本来是去中心接一个防守球，你往前去，本来球也不是很低，但是动作不对一挑半场球。那如果你动作不对，别人吊球的话那就更不用说了。或者在你打双打或混双啊，后面是一个重炮，你挑球挑的不好，一挑完了，中杀。好，但是如果你动作对的话，再怎么难受的球你一挑起来又高又到位，别人杀不下来，再怎么重炮的球员他都杀不下来的。不只是这样子，如果你会了挑球，你还会加上一点假动作，比如这个动作，那就更不用说，他直接跑错方向，他立马被动。OK，今天我就要教你们怎么正确的做一个小徐总做。",
+          "start": 7.36,
+          "end": 60.0,
+          "label": "一个，两个。好，你们是不是经常遇到这个问题？当你们在打球的时候，本来你们是主动的，劈吊滑板别人已经接得很难受了，由于你挑球动作不对，由于这个方法不是很正确，你挑的时候挑个半场又接不上力，然后你还失去重心，别人从被动立马推到半场就可以杀下来。或者是你更加说你在进攻，你杀完后他本来是去中心接一个防守球，你往前去，本来球也不是很低，但是动作不对一挑半场球。那如果你动作不对，别人吊球的话那就更不用说了。或者在你打双打或混双啊，后面是一个重炮，你挑球挑的不好，一挑完了，中杀。好，但是如果你动作对的话，再怎么难受的球你一挑起来又高又到位，别人杀不下来，再怎么重炮的球员他都杀不下来的。不只是这样子，如果你会了挑球，你还会加上一点假动作，比如这个动作，那就更不用说，他直接跑错方向，他立马被动。OK，今天我就要教你们怎么正确的做一个小徐总做。"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A9"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "visual": "V2",
+      "audio": "A2",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        1.04,
+        1.5
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V4",
+      "audio": "A2",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        2.25,
+        3.5
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V11",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        8.0,
+        13.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V13",
+      "audio": "A2",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        15.0,
+        17.75
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V15",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        21.5,
+        26.0
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V20",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        32.5,
+        33.0
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V21",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        33.39,
+        36.81
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V22",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        37.5,
+        41.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V24",
+      "audio": "A2",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        42.25,
+        44.25
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V26",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        48.5,
+        50.4
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V27",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        50.5,
+        55.0
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V28",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        56.5,
+        59.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    }
+  ]
+}

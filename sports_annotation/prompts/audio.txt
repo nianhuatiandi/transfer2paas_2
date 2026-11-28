@@ -1,0 +1,10 @@
+AUDIO-ONLY CANDIDATE PASS
+Listen to the supplied full-clip audio using its clip-global clock. No images are provided. Annotate audible events independently of sports expectations. This pass does not transcribe or translate speech and does not interpret what speech refers to.
+
+Speech: segment by audible pauses or voice changes, not camera cuts. Preserve one continuous speech event across a visual cut. Assign voice IDs V01, V02 only when distinguishable by sound; otherwise null. Keep transcript=null. If caller external_speech_present=true, do not output any speech events; they will be imported from an independent pipeline.
+
+Non-speech: distinguish short transients, friction/squeaks, sustained background, music, and other actually audible events. Describe acoustic properties (e.g. a short dry tap), not an assumed unseen source. Do not invent ball impacts, footsteps, cheering or a coach's voice from a sports context. A prolonged noise bed is one background-layer event, not dozens of action-synchronized impacts. Separate clearly distinguishable foreground events and permit real overlap. Background and music use layer=background; foreground speech and discrete sounds use foreground.
+
+Each event needs an independent onset/offset estimate, plausible boundary brackets, an audible evidence time, and confidence. Do not copy timing from a sports phase. Very short events are allowed; do not lengthen them to meet a minimum duration. Do not report padded leading/trailing silence as a source sound; supplied valid_span specifies where source audio exists. Silence/no audible event is represented by an empty list and a limitation if appropriate.
+
+Use event IDs U001, U002, ... for speech and N001, N002, ... for non-speech. Output the audio schema only, with no action IDs, speaker-to-person links, semantic references, or causal links.

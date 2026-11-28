@@ -1,0 +1,703 @@
+{
+  "duration_sec": 42.191,
+  "duration_bucket": "<1min",
+  "num_shots": 10,
+  "num_events": 4,
+  "num_main_characters": 3,
+  "num_main_scenes": 3,
+  "shots_per_min": 14.22,
+  "events_per_min": 5.69,
+  "persons_per_min": 4.27,
+  "scenes_per_min": 4.27,
+  "category_l1": "Education",
+  "category_l2": "Career & Professional Skills",
+  "dataset": "Tarsier2-Recap",
+  "shot_time": [
+    [
+      0.0,
+      11.75
+    ],
+    [
+      11.75,
+      15.05
+    ],
+    [
+      15.05,
+      17.58
+    ],
+    [
+      17.58,
+      18.72
+    ],
+    [
+      18.72,
+      20.55
+    ],
+    [
+      20.55,
+      22.26
+    ],
+    [
+      22.26,
+      25.19
+    ],
+    [
+      25.19,
+      29.4
+    ],
+    [
+      29.4,
+      31.87
+    ],
+    [
+      31.87,
+      42.14
+    ]
+  ],
+  "mtss_caption": {
+    "references": [
+      {
+        "ref_id": "PERSON_1",
+        "type": "person",
+        "semantic_description": "A female student enrolled in the welding technology program, sharing her experiences.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A young white woman with light brown hair tied into a ponytail, with a few strands falling across her face. She is between 15 and 25 years old. She is wearing a brown protective welding coat with a dark green velveteen collar and silver buttons. Clear safety glasses rest on top of her head, and she has a small silver earring in her right ear. While speaking, she maintains a calm yet expressive posture, her gaze slightly drifting away from the camera.",
+            "timestamp": "11.0,23.5"
+          },
+          "attributes": {
+            "clothing": "A brown protective welding jacket with a dark green corduroy collar featuring silver snap buttons, worn over a dark shirt.",
+            "hairstyle": "Light brown hair pulled back into a ponytail with some loose strands.",
+            "accessories": "Clear safety glasses resting on top of her head, small silver stud earrings."
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_2",
+        "type": "person",
+        "semantic_description": "A male student in the welding program, discussing the practical benefits of the course.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A young white man with short brown hair and a slight beard on his face is wearing a brown protective welding suit with a green \"TRI-TECH\" logo on the left chest. He has clear safety glasses on his head, and a small black lavalier microphone is pinned to the right side of his jacket collar. As he speaks, his gaze slightly deviates from the camera, maintaining a relaxed and confident expression.",
+            "timestamp": "29.5"
+          },
+          "attributes": {
+            "clothing": "A brown protective welding jacket featuring a green 'TRI-TECH' logo on the left chest area.",
+            "hairstyle": "Short brown hair.",
+            "accessories": "Clear safety glasses worn on his face, a small black lapel microphone clipped to the right side of his jacket collar."
+          }
+        }
+      },
+      {
+        "ref_id": "OBJECT_1",
+        "type": "object",
+        "semantic_description": "A welding torch used by the students for their practical work.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A handheld industrial welding torch featuring a curved metallic nozzle attached to a thick black cable. When in operation, it emits an intense, bright white light and a continuous shower of bright orange sparks upon contacting the metal.",
+            "timestamp": "26.5"
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_1",
+        "type": "scene",
+        "semantic_description": "A web browser interface framing the main video content.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A simulated video hosting webpage interface. It features a top navigation bar with a 'TRI-TECH SKILLS CENTER' logo, a search bar, and user account links. A central video player is bordered by the title 'Welding Technology'. Below the player are playback controls, a yellow 'Success' button, a view count, and like/dislike icons. The right sidebar displays 'REAL STUDENTS REAL SUCCESS' in bold red text, followed by promotional comments such as 'Prepare For Industry Certification'.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_2",
+        "type": "scene",
+        "semantic_description": "The welding workshop where the students are trained.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A spacious industrial workshop equipped for welding training. It features a long row of individual welding booths constructed with grey metal partitions, some marked with numbers like '16' and '17'. The high ceiling supports an extensive network of large grey ventilation ducts with individual extraction arms extending into each booth. The concrete floor area includes scattered heavy equipment, such as red 'Lincoln Electric' welding machines and large gas cylinders.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      }
+    ],
+    "events": [
+      {
+        "event_id": "DIALOGUE_1",
+        "type": "dialogue",
+        "time_range": [
+          3.8,
+          8.5
+        ],
+        "content": {
+          "speaker": "PERSON_1",
+          "line": "I came to Tri-Tech because I heard that it was more hands-on work and that's how...",
+          "description": "[PERSON_1] speaks directly to an off-camera interviewer with a focused and earnest expression. Her voice is clear and steady as she explains her motivation for choosing the program."
+        }
+      },
+      {
+        "event_id": "SFX_1",
+        "type": "sfx",
+        "time_range": [
+          5.8,
+          8.5
+        ],
+        "content": {
+          "description": "A loud, harsh, and rhythmic whirring and grinding sound of a power tool being used on metal, indicating active workshop activities in the background."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_2",
+        "type": "dialogue",
+        "time_range": [
+          9.5,
+          17.6
+        ],
+        "content": {
+          "speaker": "PERSON_1",
+          "line": "In our program, we actually get to do a lot of grinding, we get to use tools like a plasma cutter, um we weld in different positions overhead.",
+          "description": "[PERSON_1] continues speaking, detailing the specific hands-on tasks of the curriculum. She maintains eye contact just off-camera, using natural hand gestures to emphasize her points about grinding and welding."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_3",
+        "type": "dialogue",
+        "time_range": [
+          17.7,
+          25.0
+        ],
+        "content": {
+          "speaker": "PERSON_1",
+          "line": "I'm hoping that this course will actually get me farther ahead so I can actually use welding as a career in my life.",
+          "description": "[PERSON_1] expresses her future career aspirations with a hopeful and determined tone. Her facial expression is sincere as she discusses her long-term goals."
+        }
+      },
+      {
+        "event_id": "SFX_2",
+        "type": "sfx",
+        "time_range": [
+          20.8,
+          22.0
+        ],
+        "content": {
+          "description": "A sudden, sharp burst of intense crackling and sizzling noises, characteristic of an electrical welding arc striking metal."
+        }
+      },
+      {
+        "event_id": "SFX_3",
+        "type": "sfx",
+        "time_range": [
+          25.5,
+          28.5
+        ],
+        "content": {
+          "description": "A loud, continuous crackling, hissing, and popping noise created by an active welding torch melting and fusing metal."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_4",
+        "type": "dialogue",
+        "time_range": [
+          25.8,
+          31.8
+        ],
+        "content": {
+          "speaker": "PERSON_2",
+          "line": "Tri-Tech's a great program, it really gets you like more in the atmosphere of the job instead of in a classroom.",
+          "description": "[PERSON_2] speaks with a relaxed and appreciative demeanor, looking slightly off-camera. He contrasts the immersive workshop environment with traditional classroom learning in a conversational tone."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_5",
+        "type": "dialogue",
+        "time_range": [
+          32.2,
+          40.0
+        ],
+        "content": {
+          "speaker": "PERSON_2",
+          "line": "I gain a lot of hands-on experience, I've gotten my first aid and CPR, just little things that can help you along the way.",
+          "description": "[PERSON_2] speaks in an enthusiastic and informative tone, detailing the practical certifications and hands-on experiences he has gained, such as first aid and CPR training."
+        }
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "shot_1",
+        "time_range": [
+          0.0,
+          11.75
+        ],
+        "shot_transfer": "Opening shot displaying the web browser interface of [SCENE_1], where the central video player plays a montage.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              0.0,
+              11.75
+            ],
+            "sub_shot_content": "[SCENE_1], a static wide shot of a simulated web browser interface with a white background and grey navigation elements."
+          },
+          {
+            "sub_shot_time": [
+              0.0,
+              2.5
+            ],
+            "sub_shot_content": "The central video player shows a forward tracking shot moving down a hallway with light-colored walls and a dark floor."
+          },
+          {
+            "sub_shot_time": [
+              2.5,
+              3.8
+            ],
+            "sub_shot_content": "The image in the video player is tilted upwards, revealing a black sign on the wall that reads \"Welding Technology Mr.Saari RM#305\"."
+          },
+          {
+            "sub_shot_time": [
+              3.8,
+              5.8
+            ],
+            "sub_shot_content": "The video player cuts to show [PERSON_1] speaking, while another person in welding gear walks from right to left in the background."
+          },
+          {
+            "sub_shot_time": [
+              5.8,
+              9.5
+            ],
+            "sub_shot_content": "The video player cuts to show a person using an angle grinder on a metal surface, creating a shower of bright orange sparks."
+          },
+          {
+            "sub_shot_time": [
+              9.5,
+              11.75
+            ],
+            "sub_shot_content": "The video player cuts back to a medium close-up of [PERSON_1] continuing her interview."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_1",
+          "SFX_1",
+          "DIALOGUE_2"
+        ],
+        "references_in_shot": [
+          "SCENE_1",
+          "PERSON_1"
+        ]
+      },
+      {
+        "shot_id": "shot_2",
+        "time_range": [
+          11.75,
+          15.05
+        ],
+        "shot_transfer": "Hard cut expanding the video player content to fill the entire screen, revealing an aisle in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              11.75,
+              15.05
+            ],
+            "sub_shot_content": "[SCENE_2], a static long shot looking down a workshop aisle lined with tall grey metal welding booths numbered '16' and '17'."
+          },
+          {
+            "sub_shot_time": [
+              11.75,
+              15.05
+            ],
+            "sub_shot_content": "Several students wearing protective welding helmets and jackets are visible working inside the booths along the aisle."
+          }
+        ],
+        "camera": {
+          "shot_type": "long shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_2"
+        ],
+        "references_in_shot": [
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_3",
+        "time_range": [
+          15.05,
+          17.58
+        ],
+        "shot_transfer": "Hard cut to an elevated view of the ventilation system in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              15.05,
+              17.58
+            ],
+            "sub_shot_content": "[SCENE_2], a static high angle shot overlooking a complex network of large grey ventilation ducts and extraction arms suspended from the ceiling."
+          },
+          {
+            "sub_shot_time": [
+              16.0,
+              17.58
+            ],
+            "sub_shot_content": "Bright purple and white flashes of light from active welding processes emanate intermittently from the booths below the ducts."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "high angle",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_2"
+        ],
+        "references_in_shot": [
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_4",
+        "time_range": [
+          17.58,
+          18.72
+        ],
+        "shot_transfer": "Hard cut back to [PERSON_1] speaking in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              17.58,
+              18.72
+            ],
+            "sub_shot_content": "[SCENE_2], a static medium close-up of [PERSON_1] against a backdrop of industrial equipment."
+          },
+          {
+            "sub_shot_time": [
+              17.58,
+              18.72
+            ],
+            "sub_shot_content": "[PERSON_1] speaks while looking slightly toward the left off-camera, maintaining an engaged expression."
+          },
+          {
+            "sub_shot_time": [
+              17.58,
+              18.72
+            ],
+            "sub_shot_content": "A person wearing a welding helmet and tan jacket walks briskly from right to left in the background behind [PERSON_1]."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_2",
+          "DIALOGUE_3"
+        ],
+        "references_in_shot": [
+          "SCENE_2",
+          "PERSON_1"
+        ]
+      },
+      {
+        "shot_id": "shot_5",
+        "time_range": [
+          18.72,
+          20.55
+        ],
+        "shot_transfer": "Hard cut to a close-up of a warning sign.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              18.72,
+              20.55
+            ],
+            "sub_shot_content": "A static close-up shot of a safety sign attached to a white cinder block wall."
+          },
+          {
+            "sub_shot_time": [
+              18.72,
+              20.55
+            ],
+            "sub_shot_content": "The sign features a red oval with the word 'DANGER' in white, followed by the text 'DO NOT WATCH THE ARC' in bold black letters."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "low angle",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_3"
+        ],
+        "references_in_shot": []
+      },
+      {
+        "shot_id": "shot_6",
+        "time_range": [
+          20.55,
+          22.26
+        ],
+        "shot_transfer": "Hard cut to a close-up of an active welding process.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              20.55,
+              22.26
+            ],
+            "sub_shot_content": "A static extreme close-up shot dominated by an intense, blinding white-blue light from a welding arc."
+          },
+          {
+            "sub_shot_time": [
+              20.55,
+              22.26
+            ],
+            "sub_shot_content": "[OBJECT_1] is actively welding, sending a vigorous spray of bright orange sparks flying across the frame."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_3",
+          "SFX_2"
+        ],
+        "references_in_shot": [
+          "OBJECT_1"
+        ]
+      },
+      {
+        "shot_id": "shot_7",
+        "time_range": [
+          22.26,
+          25.19
+        ],
+        "shot_transfer": "Hard cut back to [PERSON_1] speaking in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              22.26,
+              25.19
+            ],
+            "sub_shot_content": "[SCENE_2], a static medium close-up of [PERSON_1] in her brown jacket."
+          },
+          {
+            "sub_shot_time": [
+              22.26,
+              25.19
+            ],
+            "sub_shot_content": "[PERSON_1] speaks sincerely to an off-camera interviewer, blinking occasionally and moving her head slightly for emphasis."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_3"
+        ],
+        "references_in_shot": [
+          "SCENE_2",
+          "PERSON_1"
+        ]
+      },
+      {
+        "shot_id": "shot_8",
+        "time_range": [
+          25.19,
+          29.4
+        ],
+        "shot_transfer": "Hard cut to a person actively welding inside a booth in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              25.19,
+              29.4
+            ],
+            "sub_shot_content": "[SCENE_2], a static medium shot showing the interior of a welding booth with white partition walls."
+          },
+          {
+            "sub_shot_time": [
+              25.19,
+              29.4
+            ],
+            "sub_shot_content": "A student seated on a stool, wearing a brown jacket, yellow leather apron, and welding helmet, holds [OBJECT_1] with both gloved hands."
+          },
+          {
+            "sub_shot_time": [
+              25.19,
+              29.4
+            ],
+            "sub_shot_content": "[OBJECT_1] emits an intense bright light and a continuous stream of sparks as it fuses a vertical metal workpiece."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "SFX_3",
+          "DIALOGUE_4"
+        ],
+        "references_in_shot": [
+          "SCENE_2",
+          "OBJECT_1"
+        ]
+      },
+      {
+        "shot_id": "shot_9",
+        "time_range": [
+          29.4,
+          31.87
+        ],
+        "shot_transfer": "Hard cut to [PERSON_2] speaking in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              29.4,
+              31.87
+            ],
+            "sub_shot_content": "[SCENE_2], a static medium close-up of [PERSON_2] positioned in front of electrical panels."
+          },
+          {
+            "sub_shot_time": [
+              29.4,
+              31.87
+            ],
+            "sub_shot_content": "[PERSON_2] speaks while looking toward the left off-camera, with a relaxed posture."
+          },
+          {
+            "sub_shot_time": [
+              30.0,
+              31.87
+            ],
+            "sub_shot_content": "Two individuals in welding gear walk past [PERSON_2] from right to left in the background, one wearing a blue vest."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_4"
+        ],
+        "references_in_shot": [
+          "SCENE_2",
+          "PERSON_2"
+        ]
+      },
+      {
+        "shot_id": "shot_10",
+        "time_range": [
+          31.87,
+          42.14
+        ],
+        "shot_transfer": "Hard cut returning to the simulated web browser interface in [SCENE_1], showing a montage of welding clips in the video player.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              31.87,
+              42.14
+            ],
+            "sub_shot_content": "[SCENE_1], a static wide shot displaying the simulated web browser interface with its persistent layout."
+          },
+          {
+            "sub_shot_time": [
+              31.87,
+              33.2
+            ],
+            "sub_shot_content": "The central video player displays a dark close-up shot where bright orange sparks fly upward."
+          },
+          {
+            "sub_shot_time": [
+              33.2,
+              38.0
+            ],
+            "sub_shot_content": "The video player cuts to a wider shot of a person seated inside a booth, actively welding and producing a massive, blinding white and purple flare."
+          },
+          {
+            "sub_shot_time": [
+              38.0,
+              39.0
+            ],
+            "sub_shot_content": "The video player cuts to a close-up showing bright orange sparks cascading and bouncing near the toe of a pair of heavy brown work boots resting on the floor."
+          },
+          {
+            "sub_shot_time": [
+              39.0,
+              42.14
+            ],
+            "sub_shot_content": "The video playback within the interface concludes and freezes, leaving a static frame of the boots and fallen sparks."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_5"
+        ],
+        "references_in_shot": [
+          "SCENE_1"
+        ]
+      }
+    ],
+    "shot_time": [
+      [
+        0.0,
+        11.75
+      ],
+      [
+        11.75,
+        15.05
+      ],
+      [
+        15.05,
+        17.58
+      ],
+      [
+        17.58,
+        18.72
+      ],
+      [
+        18.72,
+        20.55
+      ],
+      [
+        20.55,
+        22.26
+      ],
+      [
+        22.26,
+        25.19
+      ],
+      [
+        25.19,
+        29.4
+      ],
+      [
+        29.4,
+        31.87
+      ],
+      [
+        31.87,
+        42.14
+      ]
+    ]
+  },
+  "source_video_path": "Tarsier2-Recap/ActivityNet/videos/v_Y-UOZRZ01hI.mp4",
+  "video_path": "test/videos/000282.mp4"
+}

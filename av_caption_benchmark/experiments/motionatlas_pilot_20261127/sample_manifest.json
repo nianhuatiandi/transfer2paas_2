@@ -1,0 +1,117 @@
+[
+  {
+    "id": "ma12",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "阳台人物与楼下人群",
+    "sample_ids": [
+      98
+    ],
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "楼上一人持续处于画面中心，开场楼下人群短暂可见。",
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/CameraBench-9ea372e0-5454.1.17.mp4",
+    "local_original": "CameraBench-9ea372e0-5454.1.17.mp4",
+    "source_window_seconds": [
+      0,
+      1.6
+    ],
+    "official_sha256": "e213f5272c2a119f277d919947c9e8dfd7ee6796409039a2fbd6182fd03843e9",
+    "clip_sha256": "e213f5272c2a119f277d919947c9e8dfd7ee6796409039a2fbd6182fd03843e9",
+    "audio_source": "official",
+    "upstream_video_frames_checked": null
+  },
+  {
+    "id": "ma36",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "第一人称游戏中的攀爬与视角变化",
+    "sample_ids": [
+      108
+    ],
+    "main_subject_count": 1,
+    "subject_kind": "游戏角色",
+    "selection_note": "主要动作由同一虚拟角色完成，画面中可见其手部。",
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/CameraBench-232c85d5-IWv0EhEGmNI.4.3.mp4",
+    "local_original": "CameraBench-232c85d5-IWv0EhEGmNI.4.3.mp4",
+    "source_window_seconds": [
+      0,
+      2.5025
+    ],
+    "official_sha256": "e76019962a81e4aa6bca782df69262df4c98d142215468a2bcff573b0617dae2",
+    "clip_sha256": "e76019962a81e4aa6bca782df69262df4c98d142215468a2bcff573b0617dae2",
+    "audio_source": "official",
+    "upstream_video_frames_checked": null
+  },
+  {
+    "id": "ma02",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "双人排球练习",
+    "sample_ids": [
+      59
+    ],
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "球网两侧各有一名运动员参与。",
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchQA-21a811b4-297b8ba2-2b78-4fd2-ab7a-098f63d6b2f0_0_3.mp4",
+    "local_original": "MotionBenchQA-21a811b4-297b8ba2-2b78-4fd2-ab7a-098f63d6b2f0_0_3.mp4",
+    "source_window_seconds": [
+      0,
+      3.0
+    ],
+    "official_sha256": "1744525bdb2bfb7d53a417549f2ef8b4b34e0fa62ff0237d163248ee59fe1fc3",
+    "clip_sha256": "1744525bdb2bfb7d53a417549f2ef8b4b34e0fa62ff0237d163248ee59fe1fc3",
+    "audio_source": null,
+    "upstream_video_frames_checked": 90
+  },
+  {
+    "id": "ma25",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "单人在厨房备菜",
+    "sample_ids": [
+      93
+    ],
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "不同镜头衔接同一位正在备菜的人。",
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/DREAM1k-1efd815c-413.mp4",
+    "local_original": "DREAM1k-1efd815c-413.mp4",
+    "source_window_seconds": [
+      0,
+      7.3
+    ],
+    "official_sha256": "b47632ec93bfae269bf953121ccc1f9d32a8c0d4a62be889985c71896db8940f",
+    "clip_sha256": "b47632ec93bfae269bf953121ccc1f9d32a8c0d4a62be889985c71896db8940f",
+    "audio_source": null,
+    "upstream_video_frames_checked": 219
+  },
+  {
+    "id": "ma31",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "两位主角与气球",
+    "sample_ids": [
+      30
+    ],
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "中央两人参与互动，首帧左侧另有一位短暂入镜的旁观者。",
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-09939121-813.mp4",
+    "local_original": "Dream1K-09939121-813.mp4",
+    "source_window_seconds": [
+      0,
+      6.006
+    ],
+    "official_sha256": "8cf5765d046fbd59b6c33d2adb13d90a176a7d81d300aae9c387a4f5bf0d34c6",
+    "clip_sha256": "8cf5765d046fbd59b6c33d2adb13d90a176a7d81d300aae9c387a4f5bf0d34c6",
+    "audio_source": null,
+    "upstream_video_frames_checked": 144
+  }
+]

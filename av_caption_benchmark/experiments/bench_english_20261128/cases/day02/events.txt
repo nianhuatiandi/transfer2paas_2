@@ -1,0 +1,39 @@
+0.00–4.12 s | A0001 · sound · steam whistle | steam whistle
+A loud, high-pitched steam whistle blows in several distinct bursts throughout the interval and fades out at the end.
+Included in silver reference
+
+0.00–8.50 s | V0001 · state · man with grey hair and beard, wearing an orange sweatshirt | stands mostly still behind the table
+The man stands mostly still behind the table, occasionally shifting his gaze downwards. He remains largely stationary in place from 0.0s to 8.5s, though his head movements indicate he is looking at the items on the table.
+Included in silver reference
+
+4.90–7.60 s | V0002 · visible_speech · man with grey hair and beard, wearing an orange sweatshirt | addresses camera
+A man with grey hair and beard wearing an orange sweatshirt speaks while looking off-camera. From 4.9s to 7.6s, the man looks slightly upwards and to his left (viewer's right). His mouth moves continuously as if speaking. Around 6.5s, he raises his right hand towards his face/chest area. Posture: unclear. Visible evidence: Visible lip movements and jaw articulation are present from 00:04 to 00:08, synchronized with facial expressions that indicate active speech.
+Included in silver reference
+
+5.10–5.73 s | A0002 · speech · male speaker | Speech
+Pretty cool,
+Original: Pretty cool,
+Included in silver reference
+
+6.18–6.62 s | A0003 · speech · male speaker | Speech
+huh?
+Original: huh?
+Included in silver reference
+
+6.70–8.14 s | A0004 · speech · male speaker | Speech
+Now I'm back to doing nothing.
+Original: Now I'm back to doing nothing.
+Review: Possible overlapping turns from the same voice
+
+7.00–8.50 s | V0003 · gesture · man with grey hair and beard, wearing an orange sweatshirt | points at ear and up
+The man points at his ear and then gestures upwards. From 7.0s to 8.5s, he raises his right hand, touches his index finger to his ear, and then moves it upward while looking towards the camera.
+Included in silver reference
+
+7.53–8.28 s | A0005 · speech · male speaker | Speech
+See you later.
+Original: See you later.
+Review: Possible overlapping turns from the same voice
+
+8.50–9.60 s | V0004 · motion · man with grey hair and beard, wearing an orange sweatshirt | walks away
+The man turns and walks out of the frame to the right. Starting around 8.5s, he pivots on his feet and exits the view by 9.6s.
+Included in silver reference

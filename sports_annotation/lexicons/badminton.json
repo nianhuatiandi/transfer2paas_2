@@ -1,0 +1,16 @@
+{
+  "sport": "badminton",
+  "policy": "Training feeds, demonstrations and rallies are all possible. No expected repetition count. Screen direction and anatomical side are separate. A rising shuttle alone does not establish a deep lift, clear or final landing.",
+  "terms": [
+    {"label": "approach", "zh": "向来球移动", "definition": "Observable travel toward an interception position; describe actual foot placement when possible."},
+    {"label": "chasse", "zh": "并步", "definition": "Leading foot advances, trailing foot visibly closes toward it, and leading foot opens again without crossing. Require the foot sequence; otherwise approach."},
+    {"label": "lunge", "zh": "弓步", "definition": "A reaching step with visibly loaded lead leg and lowered centre of mass. Do not label any wide stance a lunge."},
+    {"label": "hand_feed", "zh": "手喂球", "definition": "Visible bare-hand shuttle release or a clearly identified cropped delivery. Raised arm alone does not establish racket contact."},
+    {"label": "racket_feed", "zh": "球拍喂球", "definition": "A visibly racket-delivered shuttle in a supported drill context; if context is unclear describe the stroke without assuming a feed."},
+    {"label": "upward_return", "zh": "低手向上回球", "definition": "Low racket action plus observable outgoing upward shuttle trajectory. Contact may remain bracketed/unknown; do not infer landing depth."},
+    {"label": "lift", "zh": "挑球", "definition": "A low forecourt return with evidence supporting a high/deep outgoing trajectory. When forecourt/depth cues are absent use upward_return."},
+    {"label": "overhead_stroke", "zh": "头顶上方击球动作", "definition": "Racket action and preparation above the head. Distinguish from a low underarm return."},
+    {"label": "smash", "zh": "杀球", "definition": "Overhead striking mechanics and an observable steep downward outgoing path; an energetic swing alone is insufficient."},
+    {"label": "recovery", "zh": "回位", "definition": "Visible repositioning from a completed stroke/reach toward a ready position; stop when motion settles."}
+  ]
+}

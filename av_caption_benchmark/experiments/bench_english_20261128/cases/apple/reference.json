@@ -1,0 +1,439 @@
+{
+  "schema": "av-events/1.0",
+  "description_language": "en",
+  "source_sha256": "22988991a4cc3cd3790a8a634b6623dd0c8cd2d5e7a4285feff5ec95e77a9dfe",
+  "protocol_sha256": "c4bb6da9bb60e1539d21160650a83d0b00cac1198471281c69462264f4f18601",
+  "duration_seconds": 17.517491,
+  "actors": [
+    {
+      "id": "P1",
+      "appearance": "A woman with dark hair tied back, wearing a grey v-neck t-shirt and a silver necklace."
+    }
+  ],
+  "clock": "source seconds, half-open intervals",
+  "relation_semantics": "Evidence of temporal co-occurrence only. Speaker identity and acoustic causation are separate claims.",
+  "reference_status": "machine_reviewed_silver",
+  "events": [
+    {
+      "id": "V0001",
+      "kind": "motion",
+      "actor": "A pair of hands, one wearing a ring on the left hand.",
+      "start": 0,
+      "end": 2.5,
+      "sources": [
+        "shot00000/visual/0",
+        "shot00001/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "local_V0001",
+      "activity": "Physical activity",
+      "label": "stirring fruit",
+      "brief": "A pair of hands stirs diced fruit in a light blue bowl with a gold spoon.",
+      "detail": "The right hand holds the spoon and moves it in circular motions through the fruit, while the left hand steadies the bowl initially before moving out of frame.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 0.0s to ~2.5s, a right hand uses a gold spoon to stir diced fruit in a light blue bowl while the left hand steadies it.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "event"
+    },
+    {
+      "id": "A0001",
+      "kind": "speech",
+      "actor": "female narrator",
+      "start": 0.4,
+      "end": 4.32,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "You can stick this over ice cream or yogurt and it's gonna be so delicious.",
+      "transcript_original": "You can stick this over ice cream or yogurt and it's gonna be so delicious.",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        0.4,
+        4.32
+      ]
+    },
+    {
+      "id": "A0002",
+      "kind": "music",
+      "actor": "unidentified source",
+      "start": 0.48,
+      "end": 17.517,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "upbeat instrumental background music",
+      "detail": "Light, cheerful instrumental track with a steady rhythm plays continuously under the speech from 0.48s to 17.517s.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "V0003",
+      "kind": "motion",
+      "actor": "a hand holding a gold spoon",
+      "start": 4.5,
+      "end": 8.5,
+      "sources": [
+        "shot00001/visual/2",
+        "shot00002/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "local_V0003",
+      "activity": "Physical activity",
+      "label": "scooping fruit",
+      "brief": "A hand uses the gold spoon to scoop portions of the mixed fruit from the light blue bowl and place them on top of a bowl of oatmeal.",
+      "detail": "The spoon repeatedly dips into the fruit bowl, lifts a portion, and deposits it onto the center of the oatmeal.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "At 0.85s, a hand holding a gold spoon scoops fruit from the light blue bowl and places it onto the oatmeal in the pink bowl; at 2.36s, another scoop is taken and placed on the oatmeal.",
+      "fact_evidence_clock_origin": 4.15,
+      "actor_scope": "event"
+    },
+    {
+      "id": "A0004",
+      "kind": "speech",
+      "actor": "female narrator",
+      "start": 10.41,
+      "end": 12.45,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "I'm making an individual serving here,",
+      "transcript_original": "I'm making an individual serving here,",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        10.72,
+        12.8
+      ],
+      "word_interval": [
+        10.41,
+        12.45
+      ]
+    },
+    {
+      "id": "V0004",
+      "kind": "visible_speech",
+      "actor": "A woman with dark hair tied back, wearing a grey v-neck t-shirt and a silver necklace.",
+      "start": 10.997,
+      "end": 17.517,
+      "sources": [
+        "shot00002/visual/2",
+        "shot00003/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "speaking",
+      "brief": "A woman speaks directly to the camera while holding and pointing at a white cylindrical container.",
+      "detail": "The woman faces forward throughout the clip, maintaining eye contact with the camera as she speaks. Her mouth moves continuously, indicating active speech. She initially holds her hands open near her sides, then brings a white cylindrical container into view with both hands. She points at the label on the container with her right index finger for several seconds before lowering it slightly and continuing to speak while gesturing with her free hand.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The woman's mouth moves continuously throughout the clip as she looks at the camera.",
+      "fact_evidence_clock_origin": 10.647,
+      "actor_scope": "clip",
+      "posture": "unclear",
+      "visual_evidence": "Continuous articulatory movements including lip parting, closing, and jaw motion synchronized with expressive eyebrow raises and head nods; no pauses long enough to break the turn.",
+      "posture_evidence": "The woman's upper body is visible from the waist up, but her hips and legs are not shown in any frame. There is no visible seat contact or weight-bearing lower body to determine if she is standing or seated."
+    },
+    {
+      "id": "A0005",
+      "kind": "speech",
+      "actor": "female narrator",
+      "start": 12.72,
+      "end": 17.43,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "but this whole can of oatmeal will last you at least like two weeks.",
+      "transcript_original": "but this whole can of oatmeal will last you at least like two weeks.",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        13.12,
+        17.517
+      ],
+      "word_interval": [
+        12.72,
+        17.43
+      ]
+    },
+    {
+      "id": "V0005",
+      "kind": "motion",
+      "actor": "A woman with dark hair tied back, wearing a grey v-neck t-shirt and a silver necklace.",
+      "start": 13.197,
+      "end": 13.597,
+      "sources": [
+        "shot00003/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "lifts container",
+      "brief": "The woman lifts a white cylindrical container up from below the frame.",
+      "detail": "Her hands bring the container upward until it is fully visible in front of her chest.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "At 2.6 seconds, the bottom of a white cylindrical container enters the frame from below, and by 2.9 seconds it is held up in front of her chest.",
+      "fact_evidence_clock_origin": 10.647,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0006",
+      "kind": "gesture",
+      "actor": "A woman with dark hair tied back, wearing a grey v-neck t-shirt and a silver necklace.",
+      "start": 13.757,
+      "end": 15.277,
+      "sources": [
+        "shot00003/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "points at container",
+      "brief": "The woman points her right index finger at the label on the container.",
+      "detail": "While holding the container with her left hand, she extends her right arm and points specifically at the printed graphics on the side of the cylinder.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 3.3 to 4.7 seconds, she holds the container with her left hand and points her right index finger at the printed graphics on its side.",
+      "fact_evidence_clock_origin": 10.647,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0007",
+      "kind": "gesture",
+      "actor": "A woman with dark hair tied back, wearing a grey v-neck t-shirt and a silver necklace.",
+      "start": 15.317,
+      "end": 15.917,
+      "sources": [
+        "shot00003/visual/3"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "gestures",
+      "brief": "The woman makes an open-handed gesture with her right hand.",
+      "detail": "After pointing, she withdraws her right hand and raises it slightly outward with an open palm before lowering it again.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Between 4.9 and 5.4 seconds, after pointing, she withdraws her right hand and raises it outward with an open palm before lowering it again.",
+      "fact_evidence_clock_origin": 10.647,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0008",
+      "kind": "motion",
+      "actor": "A woman with dark hair tied back, wearing a grey v-neck t-shirt and a silver necklace.",
+      "start": 15.997,
+      "end": 16.597,
+      "sources": [
+        "shot00003/visual/4"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "looks at container",
+      "brief": "The woman turns her head to look down at the container she is holding.",
+      "detail": "She shifts her gaze away from the camera, turning her head to her left to focus on the object in her hand.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 5.6 to 6.1 seconds, she turns her head to her left (screen right) and looks down at the container in her hand.",
+      "fact_evidence_clock_origin": 10.647,
+      "actor_scope": "clip"
+    }
+  ],
+  "relations": [
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.4,
+      "end": 2.5,
+      "robust_interval": [
+        0.4,
+        2.5
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 0.48,
+      "end": 2.5,
+      "robust_interval": [
+        0.48,
+        2.5
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 4.5,
+      "end": 8.5,
+      "robust_interval": [
+        4.5,
+        8.5
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 10.997,
+      "end": 17.517,
+      "robust_interval": [
+        10.997,
+        17.517
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0004",
+      "type": "temporal_overlap",
+      "start": 10.997,
+      "end": 12.45,
+      "robust_interval": [
+        10.997,
+        12.45
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 12.72,
+      "end": 17.43,
+      "robust_interval": [
+        12.72,
+        17.43
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0005",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 13.197,
+      "end": 13.597,
+      "robust_interval": [
+        13.197,
+        13.597
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0005",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 13.197,
+      "end": 13.597,
+      "robust_interval": [
+        13.197,
+        13.597
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0006",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 13.757,
+      "end": 15.277,
+      "robust_interval": [
+        13.757,
+        15.277
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0006",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 13.757,
+      "end": 15.277,
+      "robust_interval": [
+        13.757,
+        15.277
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0007",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 15.317,
+      "end": 15.917,
+      "robust_interval": [
+        15.317,
+        15.917
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0007",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 15.317,
+      "end": 15.917,
+      "robust_interval": [
+        15.317,
+        15.917
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0008",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 15.997,
+      "end": 16.597,
+      "robust_interval": [
+        15.997,
+        16.597
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0008",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 15.997,
+      "end": 16.597,
+      "robust_interval": [
+        15.997,
+        16.597
+      ],
+      "review_flags": []
+    }
+  ],
+  "phase_relations": []
+}

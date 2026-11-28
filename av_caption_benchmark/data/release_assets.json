@@ -1,0 +1,210 @@
+[
+  {
+    "name": "baseline400-01-of-04.zip",
+    "bytes": 331894913,
+    "sha256": "587515aec9b0cb68ee0643fe187608970d56ff19cd6bae79d486d5910b6654e0",
+    "files": 1106,
+    "videos": 302,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/baseline400-01-of-04.zip"
+  },
+  {
+    "name": "baseline400-02-of-04.zip",
+    "bytes": 306975099,
+    "sha256": "99c54eb8de7b9b7455356e9b011f0c1d06e8c133797eafde065e781ba17440c8",
+    "files": 63,
+    "videos": 63,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/baseline400-02-of-04.zip"
+  },
+  {
+    "name": "baseline400-03-of-04.zip",
+    "bytes": 326824654,
+    "sha256": "b863d1ae97a49425fe37e334f1b216680e9f3aa9d05493d1ee4a6a9ab238892c",
+    "files": 17,
+    "videos": 17,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/baseline400-03-of-04.zip"
+  },
+  {
+    "name": "baseline400-04-of-04.zip",
+    "bytes": 156262075,
+    "sha256": "d2edd4af5829ea9c7562ba50b5231972da5e886d13f266f7995ebbe020071e14",
+    "files": 18,
+    "videos": 18,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/baseline400-04-of-04.zip"
+  },
+  {
+    "name": "hd400-01-of-15.zip",
+    "bytes": 317341035,
+    "sha256": "9fde60f7880bb8cc73237de8dbf2b22d8002d907a645cbec22c518cc77114629",
+    "files": 838,
+    "videos": 34,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-01-of-15.zip"
+  },
+  {
+    "name": "hd400-02-of-15.zip",
+    "bytes": 332741833,
+    "sha256": "85897bd44b3aad1fe84ce2202528a1b343408b37040f23a1559f611becd70d2a",
+    "files": 52,
+    "videos": 52,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-02-of-15.zip"
+  },
+  {
+    "name": "hd400-03-of-15.zip",
+    "bytes": 331887328,
+    "sha256": "32be9e985fde52081326748f1a62b49cad3998f1c6adb0cf9c02a93db8fc6296",
+    "files": 42,
+    "videos": 42,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-03-of-15.zip"
+  },
+  {
+    "name": "hd400-04-of-15.zip",
+    "bytes": 333629142,
+    "sha256": "7cd1033e3d9e690878a06a6d8a0e60389a4f02daa23950d41842a3b496ea0389",
+    "files": 51,
+    "videos": 51,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-04-of-15.zip"
+  },
+  {
+    "name": "hd400-05-of-15.zip",
+    "bytes": 327618981,
+    "sha256": "c974de8fcb7902b21067d282bac4b9d921dd0c868c7e15ce61a3e79ec55f6214",
+    "files": 49,
+    "videos": 49,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-05-of-15.zip"
+  },
+  {
+    "name": "hd400-06-of-15.zip",
+    "bytes": 252823489,
+    "sha256": "071ae6639f1414aecc93611c1d700046013b72b60f11b4fedc14352b713e487f",
+    "files": 19,
+    "videos": 19,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-06-of-15.zip"
+  },
+  {
+    "name": "hd400-07-of-15.zip",
+    "bytes": 316229534,
+    "sha256": "570aabacaf539af38ee591f9a14c60c5adb803775a85690d0c85cf70a716db9c",
+    "files": 14,
+    "videos": 14,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-07-of-15.zip"
+  },
+  {
+    "name": "hd400-08-of-15.zip",
+    "bytes": 331929606,
+    "sha256": "e59760d9d3b5103cfb535d4c1edeef60c1e3607ca3604ea15f75e9209e08caad",
+    "files": 22,
+    "videos": 22,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-08-of-15.zip"
+  },
+  {
+    "name": "hd400-09-of-15.zip",
+    "bytes": 333889522,
+    "sha256": "67da792fdfc6767f47d39c1d884ccaba520e1e8a9ffbd32d7107ab36dae63f13",
+    "files": 20,
+    "videos": 20,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-09-of-15.zip"
+  },
+  {
+    "name": "hd400-10-of-15.zip",
+    "bytes": 333829762,
+    "sha256": "9e5ee357c753c15733a3bf043e0f2d72078357783def479a55dcf51c64c966c0",
+    "files": 29,
+    "videos": 29,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-10-of-15.zip"
+  },
+  {
+    "name": "hd400-11-of-15.zip",
+    "bytes": 324818358,
+    "sha256": "e31285d96e6ec09007d05edd29802d4ec6fbe8805c33af52d4ccd1b00abe07e7",
+    "files": 19,
+    "videos": 19,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-11-of-15.zip"
+  },
+  {
+    "name": "hd400-12-of-15.zip",
+    "bytes": 266275835,
+    "sha256": "efd942e232550ef6ed7747615f56b815e0215253d68cb604cc7fb814a4bb92ab",
+    "files": 12,
+    "videos": 12,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-12-of-15.zip"
+  },
+  {
+    "name": "hd400-13-of-15.zip",
+    "bytes": 320086374,
+    "sha256": "804aaf808bbb0e109acd94f886af5587a857d030de7b9ae81fc3dde4d6c8808d",
+    "files": 9,
+    "videos": 9,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-13-of-15.zip"
+  },
+  {
+    "name": "hd400-14-of-15.zip",
+    "bytes": 331741181,
+    "sha256": "9abe194ce8c0a0631fa0bda8a2a87f3a2fe289020b9586dd4df400e02fa7b891",
+    "files": 15,
+    "videos": 15,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-14-of-15.zip"
+  },
+  {
+    "name": "hd400-15-of-15.zip",
+    "bytes": 333366585,
+    "sha256": "b6d6b46a58856119e8ed8bbc9c27c3b0b17dd0fbe0c07d2fcbedb60c273cd356",
+    "files": 13,
+    "videos": 13,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/hd400-15-of-15.zip"
+  },
+  {
+    "name": "omnicapbench-01-of-01.zip",
+    "bytes": 260556267,
+    "sha256": "2b61a74d69dfcf3f1bce1a1e240b578a114281fd4f5e9c3b6df0efd701324ee9",
+    "files": 39,
+    "videos": 9,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/omnicapbench-01-of-01.zip"
+  },
+  {
+    "name": "experiment-evidence-01-of-04.zip",
+    "bytes": 324017306,
+    "sha256": "8c7ee1e9fcf2f01d5241b7e20a43259497c3a832ed6b3f45ec21853e47128ffb",
+    "files": 7422,
+    "videos": 113,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/experiment-evidence-01-of-04.zip"
+  },
+  {
+    "name": "experiment-evidence-02-of-04.zip",
+    "bytes": 326131037,
+    "sha256": "9ed9a18b8f6d78a9182dd3154b0fdecbdaa5a5853490ceb2b5b85eb6e0c0a76d",
+    "files": 5285,
+    "videos": 28,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/experiment-evidence-02-of-04.zip"
+  },
+  {
+    "name": "experiment-evidence-03-of-04.zip",
+    "bytes": 330346894,
+    "sha256": "c207bffe5c7248e552cdbb3921ef1be48fd15960e12b73dd415a35a7ac6b6739",
+    "files": 5671,
+    "videos": 20,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/experiment-evidence-03-of-04.zip"
+  },
+  {
+    "name": "experiment-evidence-04-of-04.zip",
+    "bytes": 225860029,
+    "sha256": "665bf1c454aba35216b38c9f5e764fc2157487a2fcaf932ebf0643cd0acd6469",
+    "files": 7501,
+    "videos": 46,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/experiment-evidence-04-of-04.zip"
+  },
+  {
+    "name": "sports-pipeline-runs-01-of-02.zip",
+    "bytes": 327802036,
+    "sha256": "526d19141a21d36a7def641ab7c7d18322e3ef595916aa3ccdbcd8bbea7c852e",
+    "files": 3208,
+    "videos": 0,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/sports-pipeline-runs-01-of-02.zip"
+  },
+  {
+    "name": "sports-pipeline-runs-02-of-02.zip",
+    "bytes": 198908046,
+    "sha256": "95b69516aed798173915c704407af3a1f684d43fa97f50a160b791947b596aa4",
+    "files": 1087,
+    "videos": 0,
+    "url": "https://github.com/nianhuatiandi/transfer2paas_2/releases/download/av-benchmark-2026-11-28/sports-pipeline-runs-02-of-02.zip"
+  }
+]

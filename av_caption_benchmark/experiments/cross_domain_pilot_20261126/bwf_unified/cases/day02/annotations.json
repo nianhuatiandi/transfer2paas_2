@@ -1,0 +1,659 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "day02",
+    "benchmark": "Daily-Omni",
+    "domain": "工作台管件与人物手势",
+    "original_id": "00iiNF4tn4o",
+    "source_url": "https://huggingface.co/datasets/liarliar/Daily-Omni/blob/bf5a6ee4c829510b7a14869e3104efeafc330b07/Videos.tar",
+    "archive_member": "Videos/00iiNF4tn4o/00iiNF4tn4o_video.mp4",
+    "source_window_seconds": [
+      0,
+      9.563194623933834
+    ],
+    "source_duration": 9.563194623933834,
+    "source_media_sha256": "6f597d888a63629e4552613064e0ef646169b2c6fc0d7e19ec86a8d0674a53ca",
+    "clip_sha256": "6f597d888a63629e4552613064e0ef646169b2c6fc0d7e19ec86a8d0674a53ca",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 9.563194623933834,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 9.563194623933834,
+      "first_frame": 0,
+      "end_frame_exclusive": 111
+    }
+  ],
+  "input_frames": {
+    "visual": 96,
+    "review": 103
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一个单镜头，记录了一名男子在室内展示铜管装置并伴随讲解和手势的过程。全程无切镜。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "一名身穿橙色长袖上衣的中老年男子，留有灰白胡须，站在蓝色手推车后方。"
+      }
+    ],
+    "executions": [
+      {
+        "id": "SE01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 8.27,
+        "description": "男子面向前方进行讲解，期间伴有视线转移、手部触碰下巴及举起食指等动作，随后转身离开画面中心。"
+      },
+      {
+        "id": "SE02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 8.27,
+        "end": 9.48,
+        "description": "男子向自身左侧（画面右侧）移动，身体逐渐移出镜头视野。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "SE01",
+        "kind": "held_pose",
+        "label": "站立持物",
+        "start": 0.0,
+        "end": 8.27,
+        "start_range": [
+          0.0,
+          0.086
+        ],
+        "end_range": [
+          8.185,
+          8.357
+        ],
+        "detail": "男子双手位于身前下方，似乎扶着或放置在蓝色手推车的金属支架附近。他保持上半身直立姿态，直到最后阶段才打破此姿态开始走动。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "男子静止站立，双手置于身前蓝色把手内侧的金属结构旁。"
+          },
+          {
+            "time": 4.0,
+            "observation": "男子继续保持站立姿态，位置未发生明显改变。"
+          },
+          {
+            "time": 8.27,
+            "observation": "男子身体出现明显的横向位移模糊，标志着站立姿态的结束。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "手臂"
+        ],
+        "movement_roles": [
+          "支撑",
+          "定位"
+        ],
+        "subphases": [],
+        "brief": "男子站在蓝色手推车后，双手扶于身前金属架处保持静止姿态。"
+      },
+      {
+        "id": "A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "SE01",
+        "kind": "motion",
+        "label": "说话与面部表情变化",
+        "start": 5.24,
+        "end": 8.27,
+        "start_range": [
+          5.169,
+          5.342
+        ],
+        "end_range": [
+          8.185,
+          8.357
+        ],
+        "detail": "男子的嘴部持续开合，配合头部轻微转动，表现出正在讲话的状态。视线主要集中在前方，偶尔向下看手中的物品。",
+        "evidence": [
+          {
+            "time": 5.5,
+            "observation": "抬头直视前方，嘴部动作幅度加大。"
+          },
+          {
+            "time": 8.0,
+            "observation": "仍在说话，随即准备转身。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "嘴部",
+          "头部",
+          "眼睛"
+        ],
+        "movement_roles": [
+          "表达",
+          "交流"
+        ],
+        "subphases": [],
+        "brief": "男子面对镜头方向持续说话，嘴部不断开合并伴随眼神聚焦。"
+      },
+      {
+        "id": "A03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "SE01",
+        "kind": "gesture",
+        "label": "抬手摸下巴",
+        "start": 6.46,
+        "end": 7.06,
+        "start_range": [
+          6.375,
+          6.462
+        ],
+        "end_range": [
+          7.065,
+          7.237
+        ],
+        "detail": "男子抬起右手（画面左侧的手），手指弯曲触碰自己的下巴/胡须区域，停留片刻后放下。这是一个典型的思考或强调性手势。",
+        "evidence": [
+          {
+            "time": 6.46,
+            "observation": "右手开始向上抬起，脱离原本的低位置。"
+          },
+          {
+            "time": 6.72,
+            "observation": "手掌完全覆盖在下巴和嘴部前方，手指清晰可见。"
+          },
+          {
+            "time": 7.06,
+            "observation": "手从下巴处移开，开始下落。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "接触下巴",
+            "time": 6.72,
+            "time_range": [
+              6.634,
+              6.892
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "下巴"
+        ],
+        "movement_roles": [
+          "辅助表达",
+          "触摸"
+        ],
+        "subphases": [
+          {
+            "label": "抬手上举",
+            "start": 6.46,
+            "end": 6.72,
+            "detail": "右臂弯曲将手送至面部高度。",
+            "evidence": [
+              {
+                "time": 6.46,
+                "observation": "手部位置升高至胸口以上。"
+              }
+            ]
+          },
+          {
+            "label": "触须停顿",
+            "start": 6.72,
+            "end": 7.06,
+            "detail": "手指轻触灰白胡须区域并保持短暂静止。",
+            "evidence": [
+              {
+                "time": 6.89,
+                "observation": "指尖抵住下唇下方的胡须。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子抬起右手抚摸下巴处的胡须，做出思考状手势。"
+      },
+      {
+        "id": "A04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "SE01",
+        "kind": "gesture",
+        "label": "竖起食指指点",
+        "start": 7.24,
+        "end": 8.01,
+        "start_range": [
+          7.237,
+          7.323
+        ],
+        "end_range": [
+          7.926,
+          8.099
+        ],
+        "detail": "紧接着摸下巴的动作，男子再次抬起左手（画面右侧的手），伸出食指指向斜上方/侧方，似乎在强调某个观点或指示方向。",
+        "evidence": [
+          {
+            "time": 7.24,
+            "observation": "左臂迅速抬起进入画面右侧区域。"
+          },
+          {
+            "time": 7.58,
+            "observation": "食指明确竖起，其余手指握拳，指向空中。"
+          },
+          {
+            "time": 8.01,
+            "observation": "手势达到最高点并开始回落，随后身体转向侧面。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "食指伸直",
+            "time": 7.58,
+            "time_range": [
+              7.495,
+              7.668
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "食指"
+        ],
+        "movement_roles": [
+          "指示",
+          "强调"
+        ],
+        "subphases": [
+          {
+            "label": "挥动手臂",
+            "start": 7.24,
+            "end": 7.58,
+            "detail": "手臂从低处快速扬起至肩部高度。",
+            "evidence": [
+              {
+                "time": 7.32,
+                "observation": "手部因运动产生模糊轨迹。"
+              }
+            ]
+          },
+          {
+            "label": "定格指认",
+            "start": 7.58,
+            "end": 8.01,
+            "detail": "保持食指竖立姿势约一秒，配合头部微转。",
+            "evidence": [
+              {
+                "time": 7.84,
+                "observation": "手指稳定指向右上方。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子抬起左手竖起食指在空中比划，进行强调性指点。"
+      },
+      {
+        "id": "A05",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "SE02",
+        "kind": "motion",
+        "label": "转身离场",
+        "start": 8.27,
+        "end": 9.48,
+        "start_range": [
+          8.271,
+          8.357
+        ],
+        "end_range": [
+          9.391,
+          9.477
+        ],
+        "detail": "男子结束了之前的讲解姿态，身体向他的左侧（观众视角的右侧）转动并迈步。由于动作较快且相机快门速度限制，身影变得模糊，最终大部分身体移出画框边缘。",
+        "evidence": [
+          {
+            "time": 8.27,
+            "observation": "男子重心偏移，肩膀开始旋转，图像出现拖影。"
+          },
+          {
+            "time": 8.7,
+            "observation": "整个上半身已大幅向右倾斜移动，面部朝向画面右侧外部。"
+          },
+          {
+            "time": 9.48,
+            "observation": "仅余部分橙色衣袖和背影残留在画面极右侧，即将完全消失。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "启动转身",
+            "time": 8.27,
+            "time_range": [
+              8.185,
+              8.357
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身",
+          "腿部",
+          "躯干"
+        ],
+        "movement_roles": [
+          "位移",
+          "退出"
+        ],
+        "subphases": [
+          {
+            "label": "旋体迈步",
+            "start": 8.27,
+            "end": 8.87,
+            "detail": "以脚为轴心扭转身体并向右跨步。",
+            "evidence": [
+              {
+                "time": 8.53,
+                "observation": "胸部正面不再朝向镜头，转为侧面轮廓。"
+              }
+            ]
+          },
+          {
+            "label": "走出景框",
+            "start": 8.87,
+            "end": 9.48,
+            "detail": "继续向右移动直至主体不可见。",
+            "evidence": [
+              {
+                "time": 9.13,
+                "observation": "头部已经有一半离开了画面可视范围。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子突然向画面右侧转身并快步移动，导致身形模糊并最终离开镜头视野。"
+      }
+    ],
+    "uncertainties": []
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "N001",
+        "kind": "other",
+        "layer": "foreground",
+        "start": 0.0,
+        "end": 3.84,
+        "start_range": [
+          0.0,
+          0.2
+        ],
+        "end_range": [
+          3.64,
+          4.04
+        ],
+        "speaker_id": null,
+        "description": "响亮、高频的蒸汽哨声，带有持续的鸣响和颤音",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "尖锐的高频哨声开始响起"
+          },
+          {
+            "time": 2.0,
+            "observation": "哨声持续并伴有明显的颤音"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 5.12,
+        "end": 8.24,
+        "start_range": [
+          4.92,
+          5.32
+        ],
+        "end_range": [
+          8.04,
+          8.44
+        ],
+        "speaker_id": "V001",
+        "description": "男声以随意、略带戏谑的语气说话，语速适中",
+        "evidence": [
+          {
+            "time": 5.5,
+            "observation": "男声说出 'Pretty cool, huh?'"
+          },
+          {
+            "time": 7.0,
+            "observation": "男声继续说 'Now I'm back to doing nothing. See you later.'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Pretty cool, huh? Now I'm back to doing nothing. See you later."
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "A01",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          3.84
+        ],
+        "overlap_s": 3.84
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.12,
+          8.24
+        ],
+        "overlap_s": 3.12
+      },
+      {
+        "action_id": "A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.24,
+          8.24
+        ],
+        "overlap_s": 3.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.46,
+          7.06
+        ],
+        "overlap_s": 0.6
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.24,
+          8.01
+        ],
+        "overlap_s": 0.77
+      },
+      {
+        "action_id": "A05",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A05",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.24,
+          8.24
+        ],
+        "overlap_s": 3.0
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "A01",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          3.84
+        ],
+        "overlap_s": 3.84
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.12,
+          8.24
+        ],
+        "overlap_s": 3.12
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.46,
+          7.06
+        ],
+        "overlap_s": 0.6
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.24,
+          8.01
+        ],
+        "overlap_s": 0.77
+      }
+    ]
+  },
+  "warnings": [
+    "A03　Invalid end uncertainty bracket: A03",
+    "A05　Invalid start uncertainty bracket: A05"
+  ]
+}

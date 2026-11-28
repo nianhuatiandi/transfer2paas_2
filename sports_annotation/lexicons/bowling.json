@@ -1,0 +1,14 @@
+{
+  "sport": "bowling",
+  "policy": "One shared vocabulary for one- and two-handed delivery. Record observed hand support and finishing leg in detail. Do not infer grip fingers, score or spare conversion without visible context. Simultaneous approach, swing and slide are legitimate.",
+  "terms": [
+    {"label": "approach", "zh": "助走", "definition": "Observable travel toward delivery from the first approach step through the approach's end. A parent delivery is not an extra atomic event."},
+    {"label": "backswing", "zh": "后摆", "definition": "The supported ball/arm moves rearward toward its reversal. Describe one/two-hand support only when visible."},
+    {"label": "forward_swing", "zh": "前摆", "definition": "Ball/arm travel forward from rear reversal toward release; may overlap sliding footwork."},
+    {"label": "slide", "zh": "滑步", "definition": "The final supporting foot visibly slides into delivery. A planted foot without visible sliding is not enough."},
+    {"label": "plant", "zh": "支撑脚着地", "definition": "Visible placement/loading of the final supporting foot when sliding is unsupported."},
+    {"label": "release", "zh": "出手", "definition": "Short visible transition from hand-supported ball to independent ball travel. Distinguish release from the ball's later lane impact."},
+    {"label": "follow_through", "zh": "随挥", "definition": "Continuing arm/body movement after release into the finish. Stop when the finish becomes a held pose."},
+    {"label": "recovery", "zh": "收势调整", "definition": "Observable steps/body adjustment after the finish. Do not label a stationary watching pose as motion."}
+  ]
+}

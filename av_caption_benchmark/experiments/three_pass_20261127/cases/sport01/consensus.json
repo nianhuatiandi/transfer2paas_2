@@ -1,0 +1,415 @@
+{
+  "groups": {
+    "visual": [
+      {
+        "members": [
+          "2.0"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 3.8,
+        "representative": "2.0",
+        "example": {
+          "actor": "近端穿黑色短袖的男子",
+          "activity": "具体类型未确定的挥拍／击球",
+          "kind": "motion",
+          "label": "连续挥拍击球",
+          "brief": "近端黑衣男子在场地上连续多次向远端击打羽毛球。",
+          "detail": "右手持拍，身体伴随左右移动，连续完成多次向前上方的挥拍动作将球击过网。",
+          "start": 0.0,
+          "end": 3.8,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V1"
+      },
+      {
+        "members": [
+          "2.1"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 3.8,
+        "representative": "2.1",
+        "example": {
+          "actor": "远端穿粉黑拼接上衣的男子",
+          "activity": "手喂球",
+          "kind": "motion",
+          "label": "抛送羽毛球",
+          "brief": "远端粉衣男子在近端球员每次准备就绪时向其抛出羽毛球。",
+          "detail": "站在场地远端，在对方击完一球后，用手将羽毛球抛向近端男子的击球区域。",
+          "start": 0.0,
+          "end": 3.8,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V2"
+      },
+      {
+        "members": [
+          "1.0",
+          "3.0"
+        ],
+        "votes": 2,
+        "start": 0.2,
+        "end": 1.45,
+        "representative": "1.0",
+        "example": {
+          "actor": "近端穿黑衣灰裤的男子",
+          "activity": "羽毛球练习",
+          "kind": "motion",
+          "label": "反手挑球",
+          "brief": "男子向对方回了一个网前反手挑高球。",
+          "detail": "身体重心降低，右手持拍在身前较低位置由下向上挥动击打羽毛球。",
+          "start": 0.2,
+          "end": 1.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.10000000000000009,
+        "id": "V3"
+      },
+      {
+        "members": [
+          "1.1",
+          "3.1"
+        ],
+        "votes": 2,
+        "start": 1.7,
+        "end": 2.15,
+        "representative": "1.1",
+        "example": {
+          "actor": "远端穿粉衣黑裤的男子",
+          "activity": "羽毛球练习",
+          "kind": "motion",
+          "label": "手喂球",
+          "brief": "男子用手将球抛给近端的同伴。",
+          "detail": "站在网前，单手将羽毛球抛出过网。",
+          "start": 1.7,
+          "end": 2.3,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.2999999999999998,
+        "id": "V4"
+      },
+      {
+        "members": [
+          "1.2",
+          "3.2"
+        ],
+        "votes": 2,
+        "start": 2.3499999999999996,
+        "end": 3.6,
+        "representative": "3.2",
+        "example": {
+          "actor": "近端穿黑衣灰裤的男子",
+          "activity": "反手挑球",
+          "kind": "motion",
+          "label": "第二次反手挑球",
+          "brief": "该男子再次在网前使用反手将球挑起。",
+          "detail": "向画面右侧小碎步移动，右手持拍于身前低位向上挥动击打羽毛球。",
+          "start": 2.3,
+          "end": 3.6,
+          "phases": [
+            {
+              "label": "准备与移动",
+              "start": 2.3,
+              "end": 2.6
+            },
+            {
+              "label": "击球",
+              "start": 2.6,
+              "end": 2.9
+            },
+            {
+              "label": "随挥与回位",
+              "start": 2.9,
+              "end": 3.6
+            }
+          ]
+        },
+        "start_spread": 0.10000000000000009,
+        "end_spread": 0.0,
+        "id": "V5"
+      },
+      {
+        "members": [
+          "2.3"
+        ],
+        "votes": 1,
+        "start": 4.0,
+        "end": 7.6,
+        "representative": "2.3",
+        "example": {
+          "actor": "远端穿黑色短袖的男子",
+          "activity": "具体类型未确定的挥拍／击球",
+          "kind": "motion",
+          "label": "连续挥拍击球",
+          "brief": "远端黑衣男子接住对方抛来的球并连续挥拍回击。",
+          "detail": "右手持拍，根据来球的落点进行小范围步伐调整，随后连续挥拍将球击回近端。",
+          "start": 4.0,
+          "end": 7.6,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V6"
+      },
+      {
+        "members": [
+          "3.3"
+        ],
+        "votes": 1,
+        "start": 5.5,
+        "end": 6.0,
+        "representative": "3.3",
+        "example": {
+          "actor": "近端穿白衣黑短裤的男子",
+          "activity": "手喂球",
+          "kind": "motion",
+          "label": "第三次手抛球",
+          "brief": "视角切换后，该男子用手将羽毛球抛出给对面的练习者。",
+          "detail": "背对镜头站立，单手从高处向前下方抛出羽毛球。",
+          "start": 5.5,
+          "end": 6.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V7"
+      },
+      {
+        "members": [
+          "2.2"
+        ],
+        "votes": 1,
+        "start": 5.6,
+        "end": 7.2,
+        "representative": "2.2",
+        "example": {
+          "actor": "近端穿深色无袖背心的男子",
+          "activity": "手喂球",
+          "kind": "motion",
+          "label": "抛送羽毛球",
+          "brief": "机位切换后，近端背心男子向远端球员抛出羽毛球。",
+          "detail": "手持羽毛球，将其抛向对面的练习者。",
+          "start": 5.6,
+          "end": 7.2,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V8"
+      },
+      {
+        "members": [
+          "3.4"
+        ],
+        "votes": 1,
+        "start": 6.3,
+        "end": 7.4,
+        "representative": "3.4",
+        "example": {
+          "actor": "远端穿黑衣白裤的男子",
+          "activity": "反手挑球",
+          "kind": "motion",
+          "label": "第三次反手挑球",
+          "brief": "该男子在网前使用反手将球挑起。",
+          "detail": "双腿微屈保持重心，右手持拍于身前低位向上挥动击打羽毛球。",
+          "start": 6.3,
+          "end": 7.4,
+          "phases": [
+            {
+              "label": "准备",
+              "start": 6.3,
+              "end": 6.6
+            },
+            {
+              "label": "击球",
+              "start": 6.6,
+              "end": 6.9
+            },
+            {
+              "label": "随挥与回位",
+              "start": 6.9,
+              "end": 7.4
+            }
+          ]
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V9"
+      }
+    ],
+    "audio": [
+      {
+        "members": [
+          "3.1"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 8.0,
+        "representative": "3.1",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "background",
+          "label": "衣物摩擦与轻微脚步移动声",
+          "text": "",
+          "start": 0.0,
+          "end": 8.0
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A1"
+      },
+      {
+        "members": [
+          "3.0"
+        ],
+        "votes": 1,
+        "start": 0.96,
+        "end": 7.84,
+        "representative": "3.0",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "讲解动作要领",
+          "text": "往这边跳。一个，两个。好，你——",
+          "start": 0.96,
+          "end": 7.84
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A2"
+      },
+      {
+        "members": [
+          "1.0",
+          "2.0"
+        ],
+        "votes": 2,
+        "start": 1.12,
+        "end": 1.6400000000000001,
+        "representative": "1.0",
+        "example": {
+          "actor": "男教练",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "指令",
+          "text": "往这边跳。",
+          "start": 1.2,
+          "end": 1.76
+        },
+        "start_spread": 0.15999999999999992,
+        "end_spread": 0.24,
+        "id": "A3"
+      },
+      {
+        "members": [
+          "2.1"
+        ],
+        "votes": 1,
+        "start": 3.08,
+        "end": 7.64,
+        "representative": "2.1",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "background",
+          "label": "脚步落地与衣物摩擦声",
+          "text": "",
+          "start": 3.08,
+          "end": 7.64
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A4"
+      },
+      {
+        "members": [
+          "1.1"
+        ],
+        "votes": 1,
+        "start": 3.52,
+        "end": 4.08,
+        "representative": "1.1",
+        "example": {
+          "actor": "跳绳",
+          "kind": "sound",
+          "layer": "background",
+          "label": "持续的跳绳甩动与落地声",
+          "text": "",
+          "start": 3.52,
+          "end": 4.08
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A5"
+      },
+      {
+        "members": [
+          "1.2",
+          "2.2"
+        ],
+        "votes": 2,
+        "start": 4.9399999999999995,
+        "end": 7.76,
+        "representative": "2.2",
+        "example": {
+          "actor": "男声（教练）",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "计数口令",
+          "text": "一个，两个。好，你——",
+          "start": 4.92,
+          "end": 8.0
+        },
+        "start_spread": 0.040000000000000036,
+        "end_spread": 0.4800000000000004,
+        "id": "A6"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "visual": "V3",
+      "audio": "A3",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        1.12,
+        1.45
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V4",
+      "audio": "A3",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": null,
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": true
+    }
+  ]
+}

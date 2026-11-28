@@ -1,0 +1,1116 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "sal01",
+    "benchmark": "video-SALMONN 2",
+    "domain": "工作垫上的小物件操作",
+    "original_id": "video/213.mp4",
+    "source_url": "https://huggingface.co/datasets/tsinghua-ee/video-SALMONN_2_testset/resolve/bed2d8e6547210d55945b056e9f0f8ab00129392/video/213.mp4",
+    "archive_member": null,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "source_duration": 36.53653653653654,
+    "source_media_sha256": "725b3e580c59adae742d31c275ee3f181f7fe94fdd8253548f1988696da65418",
+    "clip_sha256": "adef36110b7e3327425a55d61a5c78592a529f81f5743fafff12991c0c649d2f",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 12.012012012012013,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.0333667000333667,
+      "first_frame": 0,
+      "end_frame_exclusive": 1
+    },
+    {
+      "id": "S02",
+      "start": 0.0333667000333667,
+      "end": 3.1698365031698366,
+      "first_frame": 1,
+      "end_frame_exclusive": 95
+    },
+    {
+      "id": "S03",
+      "start": 3.1698365031698366,
+      "end": 6.67334000667334,
+      "first_frame": 95,
+      "end_frame_exclusive": 200
+    },
+    {
+      "id": "S04",
+      "start": 6.67334000667334,
+      "end": 9.40940940940941,
+      "first_frame": 200,
+      "end_frame_exclusive": 282
+    },
+    {
+      "id": "S05",
+      "start": 9.40940940940941,
+      "end": 12.012012012012013,
+      "first_frame": 282,
+      "end_frame_exclusive": 360
+    }
+  ],
+  "input_frames": {
+    "visual": 124,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了一个人在蓝色工作台上操作一块黑色手机电池，包括放置、用螺丝刀戳刺和抬起等动作。",
+    "actors": [
+      {
+        "id": "A1",
+        "shot_id": "S02",
+        "description": "操作者，仅露出左手手指"
+      },
+      {
+        "id": "A2",
+        "shot_id": "S03",
+        "description": "操作者，右手握持一把金属螺丝刀"
+      },
+      {
+        "id": "A3",
+        "shot_id": "S04",
+        "description": "操作者，右手握持一把金属螺丝刀"
+      },
+      {
+        "id": "A4",
+        "shot_id": "S05",
+        "description": "操作者，右手握持一把金属螺丝刀"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E1",
+        "actor_id": "A1",
+        "shot_id": "S02",
+        "start": 0.13,
+        "end": 0.33,
+        "description": "将电池放置在桌面上并移开手"
+      },
+      {
+        "id": "E2",
+        "actor_id": "A2",
+        "shot_id": "S03",
+        "start": 3.67,
+        "end": 4.87,
+        "description": "用螺丝刀戳刺电池表面并将电池挑起"
+      },
+      {
+        "id": "E3",
+        "actor_id": "A2",
+        "shot_id": "S03",
+        "start": 4.87,
+        "end": 6.67,
+        "description": "悬空拿着被挑起的电池并用螺丝刀继续戳刺"
+      },
+      {
+        "id": "E4",
+        "actor_id": "A3",
+        "shot_id": "S04",
+        "start": 6.67,
+        "end": 8.17,
+        "description": "用螺丝刀在平放的电池表面持续戳刺"
+      },
+      {
+        "id": "E5",
+        "actor_id": "A4",
+        "shot_id": "S05",
+        "start": 9.41,
+        "end": 10.81,
+        "description": "用螺丝刀在电池上方轻点或悬停"
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT1",
+        "actor_id": "A1",
+        "shot_id": "S02",
+        "execution_id": "E1",
+        "kind": "motion",
+        "label": "放下电池",
+        "start": 0.13,
+        "end": 0.33,
+        "start_range": [
+          0.13,
+          0.23
+        ],
+        "end_range": [
+          0.23,
+          0.33
+        ],
+        "detail": "画面左侧伸入一只左手，捏着一块黑色的长方形电池，将其平放在蓝色的工作台面上，随后手指松开并向左移出画面。",
+        "evidence": [
+          {
+            "time": 0.13,
+            "observation": "左手捏着电池进入画面并开始向下移动"
+          },
+          {
+            "time": 0.23,
+            "observation": "电池已完全平放在蓝色台面上，左手手指仍接触电池边缘"
+          },
+          {
+            "time": 0.33,
+            "observation": "左手完全移出画面，电池静止在台面上"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "电池接触台面",
+            "time": 0.23,
+            "time_range": [
+              0.13,
+              0.33
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手"
+        ],
+        "movement_roles": [
+          "放置物体"
+        ],
+        "subphases": [
+          {
+            "label": "放入电池",
+            "start": 0.13,
+            "end": 0.23,
+            "detail": "左手从画面左侧伸入，将黑色电池平稳地放置在蓝色台面上。",
+            "evidence": [
+              {
+                "time": 0.13,
+                "observation": "左手捏着电池进入画面"
+              },
+              {
+                "time": 0.23,
+                "observation": "电池落在台面上，手指刚离开"
+              }
+            ]
+          },
+          {
+            "label": "手部撤离",
+            "start": 0.23,
+            "end": 0.33,
+            "detail": "放置好电池后，左手手指迅速向左侧移出画面。",
+            "evidence": [
+              {
+                "time": 0.23,
+                "observation": "手指仍在电池边缘"
+              },
+              {
+                "time": 0.33,
+                "observation": "手完全消失，只留下电池"
+              }
+            ]
+          }
+        ],
+        "brief": "一只手把黑色电池放在蓝色桌面上然后拿开"
+      },
+      {
+        "id": "ACT2",
+        "actor_id": "A2",
+        "shot_id": "S03",
+        "execution_id": "E2",
+        "kind": "motion",
+        "label": "戳刺并挑起电池",
+        "start": 3.67,
+        "end": 4.87,
+        "start_range": [
+          3.67,
+          3.97
+        ],
+        "end_range": [
+          4.67,
+          4.87
+        ],
+        "detail": "右手握着一把细长的金属螺丝刀从画面右侧伸入，先用尖端在平放的电池表面戳了几下，接着将螺丝刀插到电池底部边缘，向上发力把整块电池挑离桌面悬在空中。",
+        "evidence": [
+          {
+            "time": 3.67,
+            "observation": "手持螺丝刀进入画面，靠近电池"
+          },
+          {
+            "time": 4.17,
+            "observation": "螺丝刀尖正在戳刺电池表面"
+          },
+          {
+            "time": 4.67,
+            "observation": "螺丝刀插入电池下方，电池开始倾斜翘起"
+          },
+          {
+            "time": 4.87,
+            "observation": "电池已被完全挑离桌面，处于悬空状态"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "首次接触电池",
+            "time": 3.97,
+            "time_range": [
+              3.67,
+              4.17
+            ]
+          },
+          {
+            "name": "电池脱离桌面",
+            "time": 4.87,
+            "time_range": [
+              4.67,
+              4.87
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "螺丝刀"
+        ],
+        "movement_roles": [
+          "工具操作",
+          "撬动"
+        ],
+        "subphases": [
+          {
+            "label": "表面戳刺",
+            "start": 3.67,
+            "end": 4.37,
+            "detail": "右手持螺丝刀，用金属尖端在电池正面的标签区域连续轻点戳刺。",
+            "evidence": [
+              {
+                "time": 3.97,
+                "observation": "螺丝刀尖接触到电池表面"
+              },
+              {
+                "time": 4.37,
+                "observation": "持续在电池表面进行戳刺动作"
+              }
+            ]
+          },
+          {
+            "label": "底部撬起",
+            "start": 4.37,
+            "end": 4.87,
+            "detail": "改变角度，将螺丝刀尖端顺着电池侧边滑到底部缝隙处，向上用力将电池整体挑离桌面。",
+            "evidence": [
+              {
+                "time": 4.67,
+                "observation": "螺丝刀插在电池下缘，电池一端翘起"
+              },
+              {
+                "time": 4.87,
+                "observation": "电池完全悬空，脱离了蓝色台面"
+              }
+            ]
+          }
+        ],
+        "brief": "用螺丝刀先戳电池表面，然后把电池整个挑起来"
+      },
+      {
+        "id": "ACT3",
+        "actor_id": "A2",
+        "shot_id": "S03",
+        "execution_id": "E3",
+        "kind": "motion",
+        "label": "悬空戳刺",
+        "start": 4.87,
+        "end": 6.67,
+        "start_range": [
+          4.87,
+          5.17
+        ],
+        "end_range": [
+          6.37,
+          6.67
+        ],
+        "detail": "电池被螺丝刀顶着悬在半空中，右手调整握姿，继续用螺丝刀的尖端在悬空的电池正面来回戳划，最后手腕一抖，让电池落回桌面。",
+        "evidence": [
+          {
+            "time": 4.87,
+            "observation": "电池悬空，由螺丝刀支撑"
+          },
+          {
+            "time": 5.57,
+            "observation": "螺丝刀尖在悬空的电池表面滑动/戳刺"
+          },
+          {
+            "time": 6.37,
+            "observation": "电池仍在半空被戳刺"
+          },
+          {
+            "time": 6.67,
+            "observation": "电池已经重新平放在桌面上"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "维持悬空姿态",
+            "time": 5.17,
+            "time_range": [
+              4.87,
+              5.57
+            ]
+          },
+          {
+            "name": "电池回落",
+            "time": 6.67,
+            "time_range": [
+              6.37,
+              6.67
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "螺丝刀"
+        ],
+        "movement_roles": [
+          "工具操作",
+          "悬停控制"
+        ],
+        "subphases": [
+          {
+            "label": "悬空把玩",
+            "start": 4.87,
+            "end": 6.37,
+            "detail": "利用螺丝刀作为支点托住电池使其悬浮，同时用另一只手（或同一手的微调）操控螺丝刀尖端在电池表面反复戳弄。",
+            "evidence": [
+              {
+                "time": 4.87,
+                "observation": "电池刚刚离地悬空"
+              },
+              {
+                "time": 5.87,
+                "observation": "清晰看到螺丝刀尖在悬空的电池上施力"
+              },
+              {
+                "time": 6.37,
+                "observation": "继续保持悬空戳刺的状态"
+              }
+            ]
+          },
+          {
+            "label": "释放落下",
+            "start": 6.37,
+            "end": 6.67,
+            "detail": "停止支撑动作，电池受重力作用自然掉落，恢复平放状态。",
+            "evidence": [
+              {
+                "time": 6.37,
+                "observation": "电池还在空中"
+              },
+              {
+                "time": 6.67,
+                "observation": "镜头切换前最后一帧显示电池已回到桌面"
+              }
+            ]
+          }
+        ],
+        "brief": "用螺丝刀顶着电池悬空并在上面戳弄，直到电池掉回桌上"
+      },
+      {
+        "id": "ACT4",
+        "actor_id": "A3",
+        "shot_id": "S04",
+        "execution_id": "E4",
+        "kind": "motion",
+        "label": "按压式戳刺",
+        "start": 6.67,
+        "end": 8.17,
+        "start_range": [
+          6.67,
+          6.97
+        ],
+        "end_range": [
+          7.87,
+          8.17
+        ],
+        "detail": "电池平放在桌面上，右手紧握螺丝刀手柄，以较大的力度垂直向下按压并旋转摩擦电池的塑料外皮，试图破坏其表层。",
+        "evidence": [
+          {
+            "time": 6.67,
+            "observation": "新镜头开始，电池平放，手握螺丝刀准备动作"
+          },
+          {
+            "time": 7.07,
+            "observation": "螺丝刀尖深深压入电池表面的文字区域"
+          },
+          {
+            "time": 7.57,
+            "observation": "持续施加压力并进行小范围的研磨/戳刺"
+          },
+          {
+            "time": 8.17,
+            "observation": "结束了这一轮密集的戳刺，手稍微抬起"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "重压接触",
+            "time": 7.07,
+            "time_range": [
+              6.67,
+              7.37
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "螺丝刀"
+        ],
+        "movement_roles": [
+          "强力破坏",
+          "工具操作"
+        ],
+        "subphases": [
+          {
+            "label": "定位加压",
+            "start": 6.67,
+            "end": 7.17,
+            "detail": "将螺丝刀尖端对准电池中部的警告标识区域，手臂下沉施加明显的垂直压力。",
+            "evidence": [
+              {
+                "time": 6.67,
+                "observation": "螺丝刀接近电池但未接触"
+              },
+              {
+                "time": 7.17,
+                "observation": "尖端已嵌入电池表皮，周围出现凹陷"
+              }
+            ]
+          },
+          {
+            "label": "研磨破坏",
+            "start": 7.17,
+            "end": 8.17,
+            "detail": "保持压力的同时进行小幅度的转动或刮擦，导致电池表面的白色印刷字迹变得模糊破损。",
+            "evidence": [
+              {
+                "time": 7.57,
+                "observation": "可以看到螺丝刀在做细微的搅动动作"
+              },
+              {
+                "time": 8.17,
+                "observation": "电池表面留下了明显的划痕和磨损痕迹"
+              }
+            ]
+          }
+        ],
+        "brief": "用力用螺丝刀头碾压和戳破平放电池的表皮"
+      },
+      {
+        "id": "ACT5",
+        "actor_id": "A4",
+        "shot_id": "S05",
+        "execution_id": "E5",
+        "kind": "gesture",
+        "label": "虚晃指点",
+        "start": 9.41,
+        "end": 10.81,
+        "start_range": [
+          9.41,
+          9.71
+        ],
+        "end_range": [
+          10.51,
+          10.81
+        ],
+        "detail": "右手举着螺丝刀停留在电池上方约几厘米处，刀尖朝下对着电池轻轻点动或悬停示意，并没有真正触碰到电池表面造成新的形变。",
+        "evidence": [
+          {
+            "time": 9.41,
+            "observation": "手带着螺丝刀出现在画面上方"
+          },
+          {
+            "time": 9.81,
+            "observation": "螺丝刀尖几乎垂直指向电池中心，但留有间隙"
+          },
+          {
+            "time": 10.31,
+            "observation": "保持着指点的姿势，位置略有浮动"
+          },
+          {
+            "time": 10.81,
+            "observation": "手依然举在空中，未发生实质性接触"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "瞄准姿态",
+            "time": 9.81,
+            "time_range": [
+              9.41,
+              10.31
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "右手",
+          "螺丝刀"
+        ],
+        "movement_roles": [
+          "指示性手势",
+          "预备动作"
+        ],
+        "subphases": [
+          {
+            "label": "举起工具",
+            "start": 9.41,
+            "end": 9.81,
+            "detail": "将握着螺丝刀的手移至电池正上方，调整好角度使刀尖垂直向下。",
+            "evidence": [
+              {
+                "time": 9.41,
+                "observation": "手部进入取景框上部"
+              },
+              {
+                "time": 9.81,
+                "observation": "确立了垂直向下的指向姿态"
+              }
+            ]
+          },
+          {
+            "label": "空中停顿",
+            "start": 9.81,
+            "end": 10.81,
+            "detail": "在短暂的时间内，螺丝刀尖端在距离电池很近的地方徘徊或轻微上下移动，但没有落下接触。",
+            "evidence": [
+              {
+                "time": 10.31,
+                "observation": "目测仍有微小空隙，无受力变形迹象"
+              },
+              {
+                "time": 10.81,
+                "observation": "动作结束于悬停状态"
+              }
+            ]
+          }
+        ],
+        "brief": "拿着螺丝刀在电池上方比划指点，没有实际戳下去"
+      }
+    ],
+    "uncertainties": [
+      "ACT5中螺丝刀是否偶尔发生了极轻微的物理接触难以完全确认，但从视觉上看主要是悬空指点。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.24,
+        "end": 3.28,
+        "start_range": [
+          0.16,
+          0.32
+        ],
+        "end_range": [
+          3.2,
+          3.36
+        ],
+        "speaker_id": null,
+        "description": "男声以正常语速和音量进行讲解。",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "可清晰听到 'Have you ever wondered...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Have you ever wondered what you're supposed to do if your battery catches on fire?"
+      },
+      {
+        "id": "N001",
+        "kind": "transient",
+        "layer": "foreground",
+        "start": 3.2,
+        "end": 3.52,
+        "start_range": [
+          3.12,
+          3.28
+        ],
+        "end_range": [
+          3.44,
+          3.6
+        ],
+        "speaker_id": null,
+        "description": "一声沉闷的撞击或放置物品的声音。",
+        "evidence": [
+          {
+            "time": 3.3,
+            "observation": "明显的低频撞击声"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 3.52,
+        "end": 4.72,
+        "start_range": [
+          3.44,
+          3.6
+        ],
+        "end_range": [
+          4.64,
+          4.8
+        ],
+        "speaker_id": null,
+        "description": "男声继续讲解，语气平稳。",
+        "evidence": [
+          {
+            "time": 3.8,
+            "observation": "可清晰听到 'Well, first things first'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Well, first things first,"
+      },
+      {
+        "id": "N002",
+        "kind": "transient",
+        "layer": "foreground",
+        "start": 4.96,
+        "end": 5.28,
+        "start_range": [
+          4.88,
+          5.04
+        ],
+        "end_range": [
+          5.2,
+          5.36
+        ],
+        "speaker_id": null,
+        "description": "另一声类似的沉闷撞击声。",
+        "evidence": [
+          {
+            "time": 5.1,
+            "observation": "短促的低频冲击音"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 5.44,
+        "end": 9.68,
+        "start_range": [
+          5.36,
+          5.52
+        ],
+        "end_range": [
+          9.6,
+          9.76
+        ],
+        "speaker_id": null,
+        "description": "男声持续讲解，节奏均匀。",
+        "evidence": [
+          {
+            "time": 6.0,
+            "observation": "可清晰听到 'Don't panic. The battery's gonna smoke...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "don't panic. The battery's gonna smoke, so you definitely want to be in a well-ventilated area."
+      },
+      {
+        "id": "U004",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 9.76,
+        "end": 12.0,
+        "start_range": [
+          9.68,
+          9.84
+        ],
+        "end_range": [
+          11.92,
+          12.01
+        ],
+        "speaker_id": null,
+        "description": "男声说完最后一句，随后音频截断。",
+        "evidence": [
+          {
+            "time": 10.5,
+            "observation": "可清晰听到 'Obviously never stab the battery like I'm doing right now.'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Obviously never stab the battery like I'm doing right now."
+      }
+    ],
+    "uncertainties": [
+      "两次沉闷撞击声（约3.3秒和5.1秒）的具体物理来源无法仅凭听觉确定。"
+    ]
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [
+      {
+        "id": "ACT4",
+        "reason": "Invalid action/shot interval; raw value preserved"
+      }
+    ],
+    "pairs": [
+      {
+        "action_id": "ACT1",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.24,
+          0.33
+        ],
+        "overlap_s": 0.09
+      },
+      {
+        "action_id": "ACT1",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT1",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT1",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT1",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT1",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT2",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT2",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT2",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.67,
+          4.72
+        ],
+        "overlap_s": 1.05
+      },
+      {
+        "action_id": "ACT2",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT2",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT2",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT3",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT3",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT3",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT3",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.96,
+          5.28
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "ACT3",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.44,
+          6.67
+        ],
+        "overlap_s": 1.23
+      },
+      {
+        "action_id": "ACT3",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT5",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT5",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT5",
+        "audio_id": "U002",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT5",
+        "audio_id": "N002",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "ACT5",
+        "audio_id": "U003",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          9.41,
+          9.68
+        ],
+        "overlap_s": 0.27
+      },
+      {
+        "action_id": "ACT5",
+        "audio_id": "U004",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          9.76,
+          10.81
+        ],
+        "overlap_s": 1.05
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "ACT1",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.24,
+          0.33
+        ],
+        "overlap_s": 0.09
+      },
+      {
+        "action_id": "ACT2",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.67,
+          4.72
+        ],
+        "overlap_s": 1.05
+      },
+      {
+        "action_id": "ACT3",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.96,
+          5.28
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "ACT3",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.44,
+          6.67
+        ],
+        "overlap_s": 1.23
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "ACT5",
+        "audio_id": "U003",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          9.41,
+          9.68
+        ],
+        "overlap_s": 0.27
+      },
+      {
+        "action_id": "ACT5",
+        "audio_id": "U004",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          9.76,
+          10.81
+        ],
+        "overlap_s": 1.05
+      }
+    ]
+  },
+  "warnings": [
+    "在 S05 (9.41s-12.01s) 期间，视觉画面显示螺丝刀主要在电池上方悬停指点且未见明显烟雾，但同期音频却包含清晰的穿刺/刮擦声 (N004)，且旁白提及“stabbing”和“smoke”。视听信息在此时间段内存在矛盾，无法确定是画面剪辑遗漏了实际戳刺瞬间，还是音频包含了非同步的背景音效。",
+    "ACT5中螺丝刀是否偶尔发生了极轻微的物理接触难以完全确认，但从视觉上看主要是悬空指点。",
+    {
+      "id": "ACT4",
+      "reason": "Invalid action/shot interval; raw value preserved"
+    }
+  ]
+}

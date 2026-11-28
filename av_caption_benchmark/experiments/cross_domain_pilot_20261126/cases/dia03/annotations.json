@@ -1,0 +1,354 @@
+{
+  "source": {
+    "id": "dia03",
+    "benchmark": "DiaDemBench",
+    "original_id": "128",
+    "source_url": "https://huggingface.co/datasets/DiaDem-Captioner/DiaDemBench/blob/ff6dfcc152ee4cc96e92ec83a0910c187e6ad98b/videos.zip",
+    "archive_member": "videos/128.mp4",
+    "original_file": "dia_128.mp4",
+    "source_media_sha256": "165c6dab34ebfa580187e8dcbc0285c71e3f8f27a225aa2c97d4a930c3053986",
+    "clip_sha256": "165c6dab34ebfa580187e8dcbc0285c71e3f8f27a225aa2c97d4a930c3053986",
+    "source_duration": 9.56,
+    "source_window_seconds": [
+      0,
+      9.56
+    ],
+    "card": "04",
+    "domain": "旁白与人物切镜",
+    "domain_rule": "对话与互动场景：分别追踪每人。对他人或物体的独立可见动作、明确的交流手势可作 L2。持续注视和站坐姿态记状态。仅有嘴动不推断对白内容。切镜后需重新核验人物与对象；跨镜身份不确定记局部 ID。",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "切镜约 5.74 秒。第一句名义终点 5.68，第二句名义起点 5.76，两端的不确定范围均覆盖切镜；无法据此判断哪句跨镜。"
+    ],
+    "disposition": "extra_cut_control"
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 9.578999999999999,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 5.739,
+      "first_frame": 0,
+      "end_frame_exclusive": 143
+    },
+    {
+      "id": "S02",
+      "start": 5.739,
+      "end": 9.578999999999999,
+      "first_frame": 143,
+      "end_frame_exclusive": 239
+    }
+  ],
+  "timestamped_frames": 97,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2"
+  },
+  "visual": {
+    "clip_id": "dia03",
+    "mode": "VISUAL_GT",
+    "clock": {
+      "fps": null,
+      "duration_sec": 9.579
+    },
+    "facts": [
+      {
+        "id": "F1",
+        "kind": "action",
+        "level": "L2",
+        "actor": "男子A",
+        "object": "杯子",
+        "parent_ids": [],
+        "claim": "端起杯子",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          5.419,
+          5.699
+        ],
+        "visible_spans": [
+          [
+            5.419,
+            5.699
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            5.419,
+            5.619
+          ],
+          "end": [
+            5.699,
+            5.739
+          ]
+        },
+        "context_range": null,
+        "evidence": "在镜头S01中，男子A的手部动作显示他拿起了一个带有绿色图案的杯子。"
+      }
+    ],
+    "relations": [],
+    "residual": [
+      {
+        "time_span": [
+          0.0,
+          5.739
+        ],
+        "reason": "镜头S01中男子A的大部分时间处于站立和说话状态（嘴部运动），无其他明显可分离的操作类动作。"
+      },
+      {
+        "time_span": [
+          5.739,
+          9.579
+        ],
+        "reason": "镜头S02中男子B坐在沙发上，主要表现为倾听或说话的静止姿态，无明显肢体操作动作。"
+      }
+    ]
+  },
+  "audio": {
+    "clip_id": "dia03",
+    "clock": "global clip clock; audio zero = clip zero",
+    "coverage": {
+      "start_sec": 0.0,
+      "end_sec": 9.579
+    },
+    "audio_events": [
+      {
+        "id": "spk_01.1",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "约翰先是提出了一个假设：如果有人从旧石器时代一直活到今天，会是个什么样子？",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          0.0,
+          5.68
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            5.44,
+            5.92
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "句首“约翰”发音清晰；句尾“样子”后有明显停顿和语气下降。",
+        "parent_audio_id": "spk_01"
+      },
+      {
+        "id": "spk_01.2",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "作为人类学家的小黑分析，其实远古时代的穴居人……",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          5.76,
+          9.36
+        ],
+        "boundary_ranges": {
+          "start": [
+            5.44,
+            5.92
+          ],
+          "end": [
+            9.2,
+            9.579
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "紧接前一句的停顿开始，“作为”发音清晰；句尾“穴居人”后音频截断，无完整结束音。",
+        "parent_audio_id": "spk_01"
+      },
+      {
+        "id": "sfx_01",
+        "type": "music",
+        "layer": "background",
+        "speaker_id": "",
+        "transcript": null,
+        "claim": "一段轻柔、略带神秘感的背景音乐持续播放。",
+        "instance_range": [
+          0.0,
+          9.579
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            9.579,
+            9.579
+          ]
+        },
+        "evidence_time": [
+          0.0,
+          4.0,
+          8.0,
+          9.579
+        ],
+        "confidence": 0.9
+      }
+    ],
+    "unresolved": []
+  },
+  "original_audio_events": [
+    {
+      "id": "spk_01",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "约翰先是提出了一个假设：如果有人从旧石器时代一直活到今天，会是个什么样子？作为人类学家的小黑分析，其实远古时代的穴居人……",
+      "claim": "女声旁白提出关于旧石器时代人类存活至今的假设并引出分析，语句在结尾处被截断。",
+      "instance_range": [
+        0.0,
+        9.48
+      ],
+      "boundary_ranges": {
+        "start": [
+          0.0,
+          0.0
+        ],
+        "end": [
+          9.48,
+          9.6
+        ]
+      },
+      "evidence_time": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        9.48
+      ],
+      "confidence": 0.95
+    },
+    {
+      "id": "sfx_01",
+      "type": "music",
+      "layer": "background",
+      "speaker_id": "",
+      "transcript": null,
+      "claim": "一段轻柔、略带神秘感的背景音乐持续播放。",
+      "instance_range": [
+        0.0,
+        9.579
+      ],
+      "boundary_ranges": {
+        "start": [
+          0.0,
+          0.0
+        ],
+        "end": [
+          9.579,
+          9.579
+        ]
+      },
+      "evidence_time": [
+        0.0,
+        4.0,
+        8.0,
+        9.579
+      ],
+      "confidence": 0.9
+    }
+  ],
+  "sentence_alignment": {
+    "sentences": [
+      {
+        "id": "spk_01.1",
+        "transcript": "约翰先是提出了一个假设：如果有人从旧石器时代一直活到今天，会是个什么样子？",
+        "instance_range": [
+          0.0,
+          5.68
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            5.44,
+            5.92
+          ]
+        },
+        "evidence": "句首“约翰”发音清晰；句尾“样子”后有明显停顿和语气下降。"
+      },
+      {
+        "id": "spk_01.2",
+        "transcript": "作为人类学家的小黑分析，其实远古时代的穴居人……",
+        "instance_range": [
+          5.76,
+          9.36
+        ],
+        "boundary_ranges": {
+          "start": [
+            5.44,
+            5.92
+          ],
+          "end": [
+            9.2,
+            9.579
+          ]
+        },
+        "evidence": "紧接前一句的停顿开始，“作为”发音清晰；句尾“穴居人”后音频截断，无完整结束音。"
+      }
+    ]
+  },
+  "temporal_edges": [
+    {
+      "visual_id": "F1",
+      "audio_id": "spk_01.1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          5.419,
+          5.68
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "边界待审",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F1",
+      "audio_id": "spk_01.2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [],
+      "peak_in_visible_span": null,
+      "status": "边界待审",
+      "nominal": false,
+      "derived": true
+    },
+    {
+      "visual_id": "F1",
+      "audio_id": "sfx_01",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          5.419,
+          5.699
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "切镜约 5.74 秒。第一句名义终点 5.68，第二句名义起点 5.76，两端的不确定范围均覆盖切镜；无法据此判断哪句跨镜。",
+    "本次未输出 L3 部位运动，需按画面判定是否有漏项。"
+  ]
+}

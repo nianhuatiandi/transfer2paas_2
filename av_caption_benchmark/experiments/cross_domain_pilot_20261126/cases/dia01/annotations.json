@@ -1,0 +1,871 @@
+{
+  "source": {
+    "id": "dia01",
+    "benchmark": "DiaDemBench",
+    "original_id": "847",
+    "source_url": "https://huggingface.co/datasets/DiaDem-Captioner/DiaDemBench/blob/ff6dfcc152ee4cc96e92ec83a0910c187e6ad98b/videos.zip",
+    "archive_member": "videos/847.mp4",
+    "original_file": "dia_847.mp4",
+    "source_media_sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39",
+    "clip_sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39",
+    "source_duration": 7.5,
+    "source_window_seconds": [
+      0,
+      7.5
+    ],
+    "card": "04",
+    "domain": "双人桌边对话",
+    "domain_rule": "对话与互动场景：分别追踪每人。对他人或物体的独立可见动作、明确的交流手势可作 L2。持续注视和站坐姿态记状态。仅有嘴动不推断对白内容。切镜后需重新核验人物与对象；跨镜身份不确定记局部 ID。",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "正式参考对白含“车钥匙给我”，本次盲听的父声段写成“推我出去”；二次定位沿用候选文本，不会纠正误听。无声画面若出现字幕，需要人为核实“钥匙”等名称是否有画面证据。"
+    ]
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 7.5,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 7.5,
+      "first_frame": 0,
+      "end_frame_exclusive": 225
+    }
+  ],
+  "timestamped_frames": 76,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2"
+  },
+  "visual": {
+    "clip_id": "dia01",
+    "mode": "VISUAL_GT",
+    "clock": {
+      "fps": 30,
+      "total_frames": 225,
+      "duration_sec": 7.5
+    },
+    "facts": [
+      {
+        "id": "P1",
+        "kind": "state",
+        "level": null,
+        "actor": "穿黑底白点外套的女子",
+        "object": null,
+        "parent_ids": [],
+        "claim": "女子站立在画面右侧，面向左侧的男子。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.0,
+          7.467
+        ],
+        "visible_spans": [
+          [
+            0.0,
+            7.467
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time_window_sec": [
+              0.0,
+              7.467
+            ],
+            "frame_range": [
+              0,
+              224
+            ],
+            "note": "全程可见"
+          }
+        ]
+      },
+      {
+        "id": "A1",
+        "kind": "action",
+        "level": "L2",
+        "actor": "穿黑底白点外套的女子",
+        "object": "手部",
+        "parent_ids": [],
+        "claim": "女子双手在胸前交握并伴有轻微动作。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.0,
+          1.8
+        ],
+        "visible_spans": [
+          [
+            0.0,
+            1.8
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time_window_sec": [
+              0.0,
+              1.8
+            ],
+            "frame_range": [
+              0,
+              54
+            ],
+            "note": "女子双手在身前活动"
+          }
+        ]
+      },
+      {
+        "id": "M1",
+        "kind": "motion",
+        "level": "L3",
+        "actor": "穿黑底白点外套的女子",
+        "object": "右手",
+        "parent_ids": [
+          "A1"
+        ],
+        "claim": "女子抬起右手指向男子方向。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.5,
+          0.9
+        ],
+        "visible_spans": [
+          [
+            0.5,
+            0.9
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time_window_sec": [
+              0.5,
+              0.9
+            ],
+            "frame_range": [
+              15,
+              27
+            ],
+            "note": "右手抬起指向对方"
+          }
+        ]
+      },
+      {
+        "id": "A2",
+        "kind": "action",
+        "level": "L2",
+        "actor": "穿黑底白点外套的女子",
+        "object": "手掌",
+        "parent_ids": [],
+        "claim": "女子伸出左手掌心向上，做出索要物品的姿势。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          1.8,
+          2.9
+        ],
+        "visible_spans": [
+          [
+            1.8,
+            2.9
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time_window_sec": [
+              1.8,
+              2.9
+            ],
+            "frame_range": [
+              54,
+              87
+            ],
+            "note": "字幕显示'来车钥匙给我'，伴随伸手动作"
+          }
+        ]
+      },
+      {
+        "id": "P2",
+        "kind": "state",
+        "level": null,
+        "actor": "穿绿黑拼色外套的男子",
+        "object": null,
+        "parent_ids": [],
+        "claim": "男子坐在茶桌前，面向右侧的女子。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.0,
+          7.467
+        ],
+        "visible_spans": [
+          [
+            0.0,
+            7.467
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time_window_sec": [
+              0.0,
+              7.467
+            ],
+            "frame_range": [
+              0,
+              224
+            ],
+            "note": "全程可见"
+          }
+        ]
+      },
+      {
+        "id": "A3",
+        "kind": "action",
+        "level": "L2",
+        "actor": "穿绿黑拼色外套的男子",
+        "object": "黑色小物件（疑似车钥匙）",
+        "parent_ids": [],
+        "claim": "男子从手中递出黑色小物件给女子。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          5.4,
+          6.4
+        ],
+        "visible_spans": [
+          [
+            5.4,
+            6.4
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time_window_sec": [
+              5.4,
+              6.4
+            ],
+            "frame_range": [
+              162,
+              192
+            ],
+            "note": "男子手持物品递给女子，女子接住"
+          }
+        ]
+      },
+      {
+        "id": "OC1",
+        "kind": "object_change",
+        "level": null,
+        "actor": "穿绿黑拼色外套的男子",
+        "object": "黑色小物件（疑似车钥匙）",
+        "parent_ids": [
+          "A3"
+        ],
+        "claim": "黑色小物件的所有权或持有者由男子转移至女子。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          6.0,
+          6.4
+        ],
+        "visible_spans": [
+          [
+            6.0,
+            6.4
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time_window_sec": [
+              6.0,
+              6.4
+            ],
+            "frame_range": [
+              180,
+              192
+            ],
+            "note": "交接过程清晰可见"
+          }
+        ]
+      },
+      {
+        "id": "A4",
+        "kind": "action",
+        "level": "L2",
+        "actor": "穿黑底白点外套的女子",
+        "object": "身体",
+        "parent_ids": [],
+        "claim": "女子转身并向画面右侧走去离开镜头。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          6.9,
+          7.467
+        ],
+        "visible_spans": [
+          [
+            6.9,
+            7.467
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time_window_sec": [
+              6.9,
+              7.467
+            ],
+            "frame_range": [
+              207,
+              224
+            ],
+            "note": "女子转身背对镜头并移动"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": "R1",
+        "predicate": "interaction_target",
+        "from_id": "A2",
+        "to_id": "P2",
+        "claim": "女子的索要动作针对男子。",
+        "evidence": [
+          {
+            "time_window_sec": [
+              1.8,
+              2.9
+            ],
+            "frame_range": [
+              54,
+              87
+            ],
+            "note": "手势朝向男子"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R2",
+        "predicate": "response_to",
+        "from_id": "A3",
+        "to_id": "A2",
+        "claim": "男子的递交动作是对女子索要动作的回应。",
+        "evidence": [
+          {
+            "time_window_sec": [
+              5.4,
+              6.4
+            ],
+            "frame_range": [
+              162,
+              192
+            ],
+            "note": "发生在索要动作之后"
+          }
+        ],
+        "certainty": "asserted"
+      }
+    ],
+    "residual": []
+  },
+  "audio": {
+    "clip_id": "dia01",
+    "clock": "global clip clock",
+    "coverage": "0.0–7.5秒有可听内容；全段存在轻快背景音乐。",
+    "audio_events": [
+      {
+        "id": "E1",
+        "type": "music",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "一段轻快的器乐背景音乐持续铺底",
+        "instance_range": [
+          0.0,
+          7.5
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 3.0,
+        "confidence": "high"
+      },
+      {
+        "id": "E2.1",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "不花你的钱，绝对不花你的钱。",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          0.16,
+          1.76
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.16,
+            0.32
+          ],
+          "end": [
+            1.68,
+            1.92
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "句首可辨“不花”；句尾为“的钱”，随后紧接下一句开头。",
+        "parent_audio_id": "E2"
+      },
+      {
+        "id": "E2.2",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "来，推我出去。",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          1.76,
+          2.48
+        ],
+        "boundary_ranges": {
+          "start": [
+            1.68,
+            1.92
+          ],
+          "end": [
+            2.4,
+            2.56
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "句首可辨“来”；句尾为“出去”，随后有短暂停顿并进入下一句。",
+        "parent_audio_id": "E2"
+      },
+      {
+        "id": "E2.3",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "快点！",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          3.36,
+          3.68
+        ],
+        "boundary_ranges": {
+          "start": [
+            3.28,
+            3.44
+          ],
+          "end": [
+            3.6,
+            3.76
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "短促命令语气，清晰听到“快点”。",
+        "parent_audio_id": "E2"
+      },
+      {
+        "id": "E3",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V02",
+        "transcript": "不能乱开啊，我有经验。",
+        "claim": "男声平稳回应一句",
+        "instance_range": [
+          3.68,
+          4.96
+        ],
+        "boundary_ranges": {
+          "start": [
+            3.5,
+            3.8
+          ],
+          "end": [
+            4.8,
+            5.1
+          ]
+        },
+        "evidence_time": 4.3,
+        "confidence": "medium"
+      },
+      {
+        "id": "E4.1",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "不乱开。",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          4.8,
+          5.36
+        ],
+        "boundary_ranges": {
+          "start": [
+            4.72,
+            4.88
+          ],
+          "end": [
+            5.28,
+            5.44
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "在男声说完后，女声快速回应，可辨“不乱开”。",
+        "parent_audio_id": "E4"
+      },
+      {
+        "id": "E4.2",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "来吧。",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          6.4,
+          6.64
+        ],
+        "boundary_ranges": {
+          "start": [
+            6.32,
+            6.48
+          ],
+          "end": [
+            6.56,
+            6.72
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "片段末尾的简短应答，清晰听到“来吧”。",
+        "parent_audio_id": "E4"
+      }
+    ],
+    "unresolved": []
+  },
+  "original_audio_events": [
+    {
+      "id": "E1",
+      "type": "music",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "一段轻快的器乐背景音乐持续铺底",
+      "instance_range": [
+        0.0,
+        7.5
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 3.0,
+      "confidence": "high"
+    },
+    {
+      "id": "E2",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "不花你的钱，绝对不花你的钱。来，推我出去。快点！",
+      "claim": "女声快速连说四句短句，语气急切",
+      "instance_range": [
+        0.16,
+        3.48
+      ],
+      "boundary_ranges": {
+        "start": [
+          0.0,
+          0.3
+        ],
+        "end": [
+          3.3,
+          3.6
+        ]
+      },
+      "evidence_time": 1.5,
+      "confidence": "medium"
+    },
+    {
+      "id": "E3",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V02",
+      "transcript": "不能乱开啊，我有经验。",
+      "claim": "男声平稳回应一句",
+      "instance_range": [
+        3.68,
+        4.96
+      ],
+      "boundary_ranges": {
+        "start": [
+          3.5,
+          3.8
+        ],
+        "end": [
+          4.8,
+          5.1
+        ]
+      },
+      "evidence_time": 4.3,
+      "confidence": "medium"
+    },
+    {
+      "id": "E4",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "不乱开。来吧。",
+      "claim": "女声简短应答后补一句催促",
+      "instance_range": [
+        5.04,
+        6.72
+      ],
+      "boundary_ranges": {
+        "start": [
+          4.9,
+          5.2
+        ],
+        "end": [
+          6.5,
+          6.9
+        ]
+      },
+      "evidence_time": 5.8,
+      "confidence": "medium"
+    }
+  ],
+  "sentence_alignment": {
+    "sentences": [
+      {
+        "id": "E2.1",
+        "transcript": "不花你的钱，绝对不花你的钱。",
+        "instance_range": [
+          0.16,
+          1.76
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.16,
+            0.32
+          ],
+          "end": [
+            1.68,
+            1.92
+          ]
+        },
+        "evidence": "句首可辨“不花”；句尾为“的钱”，随后紧接下一句开头。"
+      },
+      {
+        "id": "E2.2",
+        "transcript": "来，推我出去。",
+        "instance_range": [
+          1.76,
+          2.48
+        ],
+        "boundary_ranges": {
+          "start": [
+            1.68,
+            1.92
+          ],
+          "end": [
+            2.4,
+            2.56
+          ]
+        },
+        "evidence": "句首可辨“来”；句尾为“出去”，随后有短暂停顿并进入下一句。"
+      },
+      {
+        "id": "E2.3",
+        "transcript": "快点！",
+        "instance_range": [
+          3.36,
+          3.68
+        ],
+        "boundary_ranges": {
+          "start": [
+            3.28,
+            3.44
+          ],
+          "end": [
+            3.6,
+            3.76
+          ]
+        },
+        "evidence": "短促命令语气，清晰听到“快点”。"
+      },
+      {
+        "id": "E4.1",
+        "transcript": "不乱开。",
+        "instance_range": [
+          4.8,
+          5.36
+        ],
+        "boundary_ranges": {
+          "start": [
+            4.72,
+            4.88
+          ],
+          "end": [
+            5.28,
+            5.44
+          ]
+        },
+        "evidence": "在男声说完后，女声快速回应，可辨“不乱开”。"
+      },
+      {
+        "id": "E4.2",
+        "transcript": "来吧。",
+        "instance_range": [
+          6.4,
+          6.64
+        ],
+        "boundary_ranges": {
+          "start": [
+            6.32,
+            6.48
+          ],
+          "end": [
+            6.56,
+            6.72
+          ]
+        },
+        "evidence": "片段末尾的简短应答，清晰听到“来吧”。"
+      }
+    ]
+  },
+  "temporal_edges": [
+    {
+      "visual_id": "A1",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          0.0,
+          1.8
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A1",
+      "audio_id": "E2.1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          0.16,
+          1.76
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A1",
+      "audio_id": "E2.2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          1.76,
+          1.8
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A2",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          1.8,
+          2.9
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A2",
+      "audio_id": "E2.2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          1.8,
+          2.48
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A3",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          5.4,
+          6.4
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A4",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          6.9,
+          7.467
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "正式参考对白含“车钥匙给我”，本次盲听的父声段写成“推我出去”；二次定位沿用候选文本，不会纠正误听。无声画面若出现字幕，需要人为核实“钥匙”等名称是否有画面证据。"
+  ]
+}

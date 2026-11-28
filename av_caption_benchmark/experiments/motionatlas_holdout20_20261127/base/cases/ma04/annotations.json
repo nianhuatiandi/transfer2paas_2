@@ -1,0 +1,524 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma04",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "动画角色与门",
+    "main_subject_count": 2,
+    "subject_kind": "动画角色",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      43
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-d5ee6f11-188.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      4.625
+    ],
+    "official_sha256": "7fe3aa97c65dcde449ec4c627c93461ae8f729c548cd33fea0f64cdf00237009",
+    "clip_sha256": "7fe3aa97c65dcde449ec4c627c93461ae8f729c548cd33fea0f64cdf00237009",
+    "audio_source": null
+  },
+  "duration_seconds": 4.625,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 1.625,
+      "first_frame": 0,
+      "end_frame_exclusive": 13
+    },
+    {
+      "id": "S02",
+      "start": 1.625,
+      "end": 4.625,
+      "first_frame": 13,
+      "end_frame_exclusive": 37
+    }
+  ],
+  "input_frames": {
+    "visual": 37
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含两个镜头。第一个镜头中，海绵宝宝在红色调环境中说话并快速离开画面；第二个镜头中，派大星站在绿色调洗手间内，随后门打开，海绵宝宝从门外进入房间并向派大星走去。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "黄色方形角色，穿白衬衫红领带棕裤子"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "体型巨大的紫色角色，仅露出下半身和腹部，腰间别着锅铲"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "粉色海星角色，位于画面右侧前景"
+      },
+      {
+        "id": "S02-P02",
+        "shot_id": "S02",
+        "description": "黄色方形角色，穿白衬衫红领带棕裤子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 0.875,
+        "description": "面部表情变化并伴随手部动作进行表达"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 1.0,
+        "end": 1.125,
+        "description": "身体向左侧快速移动并产生拖影，离开画面"
+      },
+      {
+        "id": "S02-E01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 1.625,
+        "end": 3.5,
+        "description": "保持站立姿态，眼睑半垂"
+      },
+      {
+        "id": "S02-E02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 3.5,
+        "end": 4.5,
+        "description": "眼睛突然睁大，视线朝向左后方门口"
+      },
+      {
+        "id": "S02-E03",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "start": 3.0,
+        "end": 4.5,
+        "description": "推开门并从门外走入洗手间，向画面右前方移动"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "gesture",
+        "label": "说话与做手势",
+        "start": 0.0,
+        "end": 0.875,
+        "start_range": [
+          0.0,
+          0.125
+        ],
+        "end_range": [
+          0.75,
+          0.875
+        ],
+        "detail": "海绵宝宝坐在地上，右手撑地，左手抬起捏指。他的嘴巴不断开合，面部表情在微笑、大笑和抿嘴之间切换，头部有轻微晃动。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "嘴巴微张，左手抬起呈捏指状"
+          },
+          {
+            "time": 0.25,
+            "observation": "嘴巴大张露出牙齿，笑容扩大"
+          },
+          {
+            "time": 0.625,
+            "observation": "嘴巴闭合抿起，脸颊鼓起"
+          },
+          {
+            "time": 0.875,
+            "observation": "嘴巴再次张开，恢复笑容"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "张嘴笑",
+            "time": 0.25,
+            "time_range": null
+          },
+          {
+            "name": "闭嘴鼓腮",
+            "time": 0.625,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "面部",
+          "左手"
+        ],
+        "movement_roles": [
+          "表达",
+          "手势"
+        ],
+        "subphases": [
+          {
+            "label": "张嘴说话",
+            "start": 0.0,
+            "end": 0.5,
+            "detail": "嘴巴由微张变为大张，露出牙齿，呈现笑容。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "嘴巴微张"
+              },
+              {
+                "time": 0.25,
+                "observation": "嘴巴大张露齿"
+              }
+            ]
+          },
+          {
+            "label": "闭嘴鼓腮",
+            "start": 0.5,
+            "end": 0.75,
+            "detail": "嘴巴闭合，嘴角上扬，脸颊明显鼓起。",
+            "evidence": [
+              {
+                "time": 0.625,
+                "observation": "嘴巴闭合抿起，脸颊鼓起"
+              }
+            ]
+          },
+          {
+            "label": "再次开口",
+            "start": 0.75,
+            "end": 0.875,
+            "detail": "嘴巴重新张开，恢复说话状态。",
+            "evidence": [
+              {
+                "time": 0.875,
+                "observation": "嘴巴再次张开"
+              }
+            ]
+          }
+        ],
+        "brief": "海绵宝宝坐在地上说话并变换面部表情"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "快速离场",
+        "start": 1.0,
+        "end": 1.125,
+        "start_range": [
+          1.0,
+          1.0
+        ],
+        "end_range": [
+          1.125,
+          1.25
+        ],
+        "detail": "海绵宝宝身体向画面左侧水平快速移动，产生明显的橙色速度线和残影，随后完全移出画面左侧边缘。",
+        "evidence": [
+          {
+            "time": 1.0,
+            "observation": "身体开始向左倾斜，手臂位置改变"
+          },
+          {
+            "time": 1.125,
+            "observation": "出现强烈的水平速度线，身体大部分已移出画框"
+          },
+          {
+            "time": 1.25,
+            "observation": "海绵宝宝完全消失，留下气泡轨迹"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "启动加速",
+            "time": 1.0,
+            "time_range": null
+          },
+          {
+            "name": "完全出画",
+            "time": 1.25,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "位移"
+        ],
+        "subphases": [
+          {
+            "label": "加速滑行",
+            "start": 1.0,
+            "end": 1.125,
+            "detail": "身体重心降低，向左侧高速平移，伴随视觉特效线条。",
+            "evidence": [
+              {
+                "time": 1.0,
+                "observation": "姿势改变准备移动"
+              },
+              {
+                "time": 1.125,
+                "observation": "速度线覆盖身体"
+              }
+            ]
+          }
+        ],
+        "brief": "海绵宝宝化作一道光影快速滑出画面左侧"
+      },
+      {
+        "id": "S02-A01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E01",
+        "kind": "held_pose",
+        "label": "发呆站立",
+        "start": 1.625,
+        "end": 3.5,
+        "start_range": [
+          1.625,
+          1.75
+        ],
+        "end_range": [
+          3.375,
+          3.5
+        ],
+        "detail": "派大星站在画面右侧前景，身体静止不动，双眼半垂，眉毛下撇，呈现出无聊或疲惫的神态。背景是一扇紧闭的木门。",
+        "evidence": [
+          {
+            "time": 1.625,
+            "observation": "派大星静止站立，眼皮下垂"
+          },
+          {
+            "time": 2.5,
+            "observation": "保持相同姿态，无明显动作"
+          },
+          {
+            "time": 3.375,
+            "observation": "依然维持半睁眼状态"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "眼部",
+          "面部"
+        ],
+        "movement_roles": [
+          "静态展示"
+        ],
+        "subphases": [],
+        "brief": "派大星在洗手间内无精打采地站着"
+      },
+      {
+        "id": "S02-A02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E02",
+        "kind": "gesture",
+        "label": "惊讶转头注视",
+        "start": 3.5,
+        "end": 4.5,
+        "start_range": [
+          3.5,
+          3.625
+        ],
+        "end_range": [
+          4.375,
+          4.5
+        ],
+        "detail": "派大星的双眼突然圆睁，瞳孔缩小，视线紧紧锁定在左后方正在发生的动静上，身体其余部分保持静止。",
+        "evidence": [
+          {
+            "time": 3.5,
+            "observation": "眼睛瞬间瞪大，眼白暴露增多"
+          },
+          {
+            "time": 3.625,
+            "observation": "保持瞪大眼睛的状态看向后方"
+          },
+          {
+            "time": 4.5,
+            "observation": "持续注视着走进来的海绵宝宝"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "眼球突变",
+            "time": 3.5,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "眼部"
+        ],
+        "movement_roles": [
+          "反应",
+          "注视"
+        ],
+        "subphases": [
+          {
+            "label": "睁大眼睛",
+            "start": 3.5,
+            "end": 3.625,
+            "detail": "原本半垂的眼睑迅速抬起，眼球变得浑圆。",
+            "evidence": [
+              {
+                "time": 3.5,
+                "observation": "眼睛形态发生剧烈变化"
+              }
+            ]
+          }
+        ],
+        "brief": "派大星突然瞪大眼睛看向身后的门口"
+      },
+      {
+        "id": "S02-A03",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "execution_id": "S02-E03",
+        "kind": "motion",
+        "label": "进门走动",
+        "start": 3.0,
+        "end": 4.5,
+        "start_range": [
+          3.0,
+          3.125
+        ],
+        "end_range": [
+          4.375,
+          4.5
+        ],
+        "detail": "背景的木门向内打开，海绵宝宝出现在门口，面带怒容，张大嘴巴似乎在喊叫。他迈开双腿，从红色的门外区域跨过门槛，走进绿色的洗手间内部，向派大星的方向逼近。",
+        "evidence": [
+          {
+            "time": 3.0,
+            "observation": "门被推开一条缝，海绵宝宝现身"
+          },
+          {
+            "time": 3.125,
+            "observation": "海绵宝宝站在门口，表情愤怒，嘴巴张开"
+          },
+          {
+            "time": 3.75,
+            "observation": "海绵宝宝一只脚跨入门槛，身体前倾"
+          },
+          {
+            "time": 4.375,
+            "observation": "海绵宝宝完全进入室内，继续向前迈步"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "门开启",
+            "time": 3.0,
+            "time_range": null
+          },
+          {
+            "name": "跨入门槛",
+            "time": 3.75,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "腿部",
+          "面部",
+          "手部"
+        ],
+        "movement_roles": [
+          "位移",
+          "表情表达"
+        ],
+        "subphases": [
+          {
+            "label": "推门现身",
+            "start": 3.0,
+            "end": 3.25,
+            "detail": "手扶门把手将门拉开，身体显露在门框中，表情愤怒。",
+            "evidence": [
+              {
+                "time": 3.0,
+                "observation": "门板移动，人物轮廓出现"
+              },
+              {
+                "time": 3.25,
+                "observation": "清晰看到愤怒的面部特征"
+              }
+            ]
+          },
+          {
+            "label": "步行入室",
+            "start": 3.25,
+            "end": 4.5,
+            "detail": "交替迈出双腿，从背景深处走向中景，伴随说话的口型变化。",
+            "evidence": [
+              {
+                "time": 3.75,
+                "observation": "腿部动作显示正在行走"
+              },
+              {
+                "time": 4.25,
+                "observation": "位置明显比之前更靠近镜头"
+              }
+            ]
+          }
+        ],
+        "brief": "海绵宝宝怒气冲冲地推门而入并走向派大星"
+      }
+    ],
+    "uncertainties": [
+      "S01中巨大紫色角色的具体身份及上半身动作不可见。",
+      "S02中海绵宝宝的具体台词内容无法通过纯视觉确认，仅能观察到其张嘴发声的动作。"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "S01中巨大紫色角色的具体身份及上半身动作不可见。",
+    "S02中海绵宝宝的具体台词内容无法通过纯视觉确认，仅能观察到其张嘴发声的动作。",
+    "S01-A02　关键点超出所属动作区间"
+  ]
+}

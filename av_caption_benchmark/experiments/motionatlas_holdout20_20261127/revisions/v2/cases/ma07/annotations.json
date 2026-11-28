@@ -1,0 +1,728 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma07",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "动画角色在室内互动",
+    "main_subject_count": 3,
+    "subject_kind": "动画角色",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      62
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-9d51a198-198.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      5.375
+    ],
+    "official_sha256": "6047a4dd36be867e76d4f482efbc243806854f6373fb841a5698aa3668a507d1",
+    "clip_sha256": "6047a4dd36be867e76d4f482efbc243806854f6373fb841a5698aa3668a507d1",
+    "audio_source": null
+  },
+  "duration_seconds": 5.375,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 1.625,
+      "first_frame": 0,
+      "end_frame_exclusive": 13
+    },
+    {
+      "id": "S02",
+      "start": 1.625,
+      "end": 5.375,
+      "first_frame": 13,
+      "end_frame_exclusive": 43
+    }
+  ],
+  "input_frames": {
+    "visual": 43
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含两个镜头，主要展示了海绵宝宝走向吧台、派大星吃冰淇淋以及两人互动的场景。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "黄色方形角色，穿着白衬衫红领带和棕色短裤，头戴带有花生装饰的粉色帽子"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "绿色长条形角色，穿着白色制服和红领结，站在吧台后方"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "粉红色海星角色，头戴带有花生装饰的粉色帽子，手里拿着蓝色勺子"
+      },
+      {
+        "id": "S02-P02",
+        "shot_id": "S02",
+        "description": "黄色方形角色，仅露出头部和肩部，头戴带有花生装饰的粉色帽子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "EX-S01-WALK",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 0.5,
+        "description": "双腿交替迈步向画面前方走动"
+      },
+      {
+        "id": "EX-S01-STAND",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.625,
+        "end": 1.5,
+        "description": "停止走动后保持站立姿态"
+      },
+      {
+        "id": "EX-S01-SERVE",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 0.75,
+        "end": 1.375,
+        "description": "端起托盘上的饮料并递给顾客"
+      },
+      {
+        "id": "EX-S02-EAT",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 1.875,
+        "end": 2.125,
+        "description": "将勺子送入口中进食"
+      },
+      {
+        "id": "EX-S02-HOLD_SPOON",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 2.25,
+        "end": 5.25,
+        "description": "手持勺子停留在胸前位置"
+      },
+      {
+        "id": "EX-S02-RISE",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "start": 2.875,
+        "end": 3.125,
+        "description": "从吧台下方升起进入画面"
+      },
+      {
+        "id": "EX-S02-BLINK",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "start": 4.0,
+        "end": 4.125,
+        "description": "双眼闭合后重新睁开"
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-S01-WALK",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "EX-S01-WALK",
+        "kind": "motion",
+        "label": "走动",
+        "start": 0.0,
+        "end": 0.5,
+        "start_range": [
+          0.0,
+          0.125
+        ],
+        "end_range": [
+          0.5,
+          0.625
+        ],
+        "detail": "角色双臂自然下垂，双腿交替向前迈出步伐，身体伴随步伐轻微起伏，直至在吧台前停下脚步。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "左腿在前，右腿在后，处于迈步状态"
+          },
+          {
+            "time": 0.25,
+            "observation": "右腿抬起准备向前迈"
+          },
+          {
+            "time": 0.5,
+            "observation": "左脚落地，右脚在后，即将停步"
+          },
+          {
+            "time": 0.625,
+            "observation": "双脚平行站立，停止移动"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "躯干"
+        ],
+        "movement_roles": [
+          "位移主体"
+        ],
+        "subphases": [],
+        "brief": "黄色方形角色走到吧台前停下。"
+      },
+      {
+        "id": "ACT-S01-STAND",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "EX-S01-STAND",
+        "kind": "held_pose",
+        "label": "站立等待",
+        "start": 0.625,
+        "end": 1.5,
+        "start_range": [
+          0.625,
+          0.75
+        ],
+        "end_range": [
+          1.375,
+          1.5
+        ],
+        "detail": "角色站定后，双臂垂于身体两侧，面部表情由皱眉变为睁大眼睛，保持静止姿态直到镜头切换。",
+        "evidence": [
+          {
+            "time": 0.625,
+            "observation": "站定，眼睛圆睁，嘴巴微张"
+          },
+          {
+            "time": 1.5,
+            "observation": "保持相同站姿和表情"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "姿态维持"
+        ],
+        "subphases": [],
+        "brief": "黄色方形角色在吧台前静止站立。"
+      },
+      {
+        "id": "ACT-S01-SERVE_DRINK",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "EX-S01-SERVE",
+        "kind": "motion",
+        "label": "递送饮料",
+        "start": 0.75,
+        "end": 1.375,
+        "start_range": [
+          0.75,
+          0.875
+        ],
+        "end_range": [
+          1.25,
+          1.375
+        ],
+        "detail": "绿色角色双手端起装有紫色饮料的托盘，将其向右平移放置在柜台上，随后松开手收回手臂。",
+        "evidence": [
+          {
+            "time": 0.75,
+            "observation": "双手接触托盘边缘"
+          },
+          {
+            "time": 1.0,
+            "observation": "托盘被举起并向右移动"
+          },
+          {
+            "time": 1.25,
+            "observation": "托盘放置在水杯旁的台面上"
+          },
+          {
+            "time": 1.375,
+            "observation": "手部离开托盘"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "放下托盘",
+            "time": 1.25,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双手"
+        ],
+        "movement_roles": [
+          "操作工具"
+        ],
+        "subphases": [
+          {
+            "label": "端起托盘",
+            "start": 0.75,
+            "end": 1.0,
+            "detail": "双手握住托盘边缘并将其抬离台面",
+            "evidence": [
+              {
+                "time": 0.75,
+                "observation": "手接触托盘"
+              },
+              {
+                "time": 1.0,
+                "observation": "托盘悬空"
+              }
+            ]
+          },
+          {
+            "label": "递交并放下",
+            "start": 1.0,
+            "end": 1.375,
+            "detail": "将托盘水平移动至目标位置并放下",
+            "evidence": [
+              {
+                "time": 1.25,
+                "observation": "托盘落回台面"
+              }
+            ]
+          }
+        ],
+        "brief": "绿色服务员将饮料托盘放到柜台上。"
+      },
+      {
+        "id": "ACT-S02-EAT_ICE_CREAM",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-EAT",
+        "kind": "motion",
+        "label": "吃冰淇淋",
+        "start": 1.875,
+        "end": 2.125,
+        "start_range": [
+          1.875,
+          2.0
+        ],
+        "end_range": [
+          2.0,
+          2.125
+        ],
+        "detail": "粉红海星右手持蓝色勺子向上送至嘴边，张大嘴巴咬住勺子前端，随后闭嘴咀嚼并将勺子拉出。",
+        "evidence": [
+          {
+            "time": 1.875,
+            "observation": "勺子靠近嘴部，嘴巴张开"
+          },
+          {
+            "time": 2.0,
+            "observation": "勺子完全进入口中，嘴巴闭合"
+          },
+          {
+            "time": 2.125,
+            "observation": "勺子移出嘴部，嘴巴再次张开"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "咬住勺子",
+            "time": 2.0,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "嘴巴"
+        ],
+        "movement_roles": [
+          "操作工具"
+        ],
+        "subphases": [
+          {
+            "label": "送食入口",
+            "start": 1.875,
+            "end": 2.0,
+            "detail": "手臂上举使勺子接触口腔",
+            "evidence": [
+              {
+                "time": 1.875,
+                "observation": "勺子接近嘴唇"
+              }
+            ]
+          },
+          {
+            "label": "咀嚼吞咽",
+            "start": 2.0,
+            "end": 2.125,
+            "detail": "含住勺子并进行咀嚼动作",
+            "evidence": [
+              {
+                "time": 2.0,
+                "observation": "嘴巴包住勺柄前端"
+              }
+            ]
+          }
+        ],
+        "brief": "粉红海星用勺子吃了一大口冰淇淋。"
+      },
+      {
+        "id": "ACT-S02-HOLD_SPOON_POSE",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-HOLD_SPOON",
+        "kind": "held_pose",
+        "label": "持勺停顿",
+        "start": 2.25,
+        "end": 5.25,
+        "start_range": [
+          2.25,
+          2.375
+        ],
+        "end_range": [
+          5.125,
+          5.25
+        ],
+        "detail": "吃完一口后，粉红海星将拿勺子的手停在胸前高度，目光注视前方的香蕉船，期间除了眨眼和表情变化外没有大幅肢体动作。",
+        "evidence": [
+          {
+            "time": 2.25,
+            "observation": "勺子停在半空中，不再移动"
+          },
+          {
+            "time": 3.375,
+            "observation": "转头看向左侧出现的同伴"
+          },
+          {
+            "time": 5.25,
+            "observation": "依然保持持勺姿势看着对方"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "头部"
+        ],
+        "movement_roles": [
+          "姿态维持"
+        ],
+        "subphases": [],
+        "brief": "粉红海星拿着勺子静止不动地看着旁边。"
+      },
+      {
+        "id": "ACT-S02-RISE_FROM_BELOW",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-RISE",
+        "kind": "motion",
+        "label": "探头出现",
+        "start": 2.875,
+        "end": 3.125,
+        "start_range": [
+          2.875,
+          3.0
+        ],
+        "end_range": [
+          3.0,
+          3.125
+        ],
+        "detail": "黄色方块的头部从画面左下角垂直向上移动，越过木质吧台边缘，最终停留在与视线平齐的位置。",
+        "evidence": [
+          {
+            "time": 2.875,
+            "observation": "头顶刚露出吧台边缘"
+          },
+          {
+            "time": 3.0,
+            "observation": "整个头部升入画面"
+          },
+          {
+            "time": 3.125,
+            "observation": "停止上升，稳定在吧台上方"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "越过吧台",
+            "time": 3.0,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "头部",
+          "颈部"
+        ],
+        "movement_roles": [
+          "入画主体"
+        ],
+        "subphases": [],
+        "brief": "黄色方块从吧台下方探出头来。"
+      },
+      {
+        "id": "ACT-S02-BLINK_EYES",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-BLINK",
+        "kind": "gesture",
+        "label": "眨眼示意",
+        "start": 4.0,
+        "end": 4.125,
+        "start_range": [
+          4.0,
+          4.125
+        ],
+        "end_range": [
+          4.125,
+          4.25
+        ],
+        "detail": "黄色方块的眼皮向下闭合遮住眼球，持续约两帧后迅速向上睁开恢复原状。",
+        "evidence": [
+          {
+            "time": 4.0,
+            "observation": "双眼紧闭呈横线状"
+          },
+          {
+            "time": 4.125,
+            "observation": "双眼重新睁开成圆形"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "闭眼",
+            "time": 4.0,
+            "time_range": null
+          },
+          {
+            "name": "睁眼",
+            "time": 4.125,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "眼睑"
+        ],
+        "movement_roles": [
+          "交流信号"
+        ],
+        "subphases": [],
+        "brief": "黄色方块快速眨了一下眼睛。"
+      }
+    ],
+    "uncertainties": [],
+    "motion_tracks": [
+      {
+        "context": "画面前景偏左侧，黄色方形角色（穿白衬衫、红领带和棕色短裤，头戴带花生装饰的粉色帽子）正面向镜头走来。其右后方中景处有一张吧台，吧台前坐着另一名粉色海星状角色，吧台后站着一名绿色皮肤的服务员；地面为紫灰相间的棋盘格图案。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 4,
+            "caption": "该主体从画面左中位置向前景中央迈步走动，双腿交替向前跨步，双臂随步伐轻微摆动。此时他神情沮丧，眉毛呈八字形下垂，嘴角向下撇，视线略微偏向画面右侧。",
+            "start": 0.0,
+            "end": 0.5,
+            "action_ids": [
+              "ACT-S01-WALK"
+            ]
+          },
+          {
+            "from_frame": 5,
+            "to_frame": 12,
+            "caption": "主体停止行走并站在画面正中前景位置，双脚分开站立，双臂自然垂于身体两侧且手指微张。他的表情瞬间转变为惊讶与呆滞：双眼圆睁直视前方，眉毛上扬，嘴巴闭合成一条直线，并在随后的几秒内保持这一静止姿态直到镜头结束。",
+            "start": 0.625,
+            "end": 1.5,
+            "action_ids": [
+              "ACT-S01-STAND"
+            ]
+          }
+        ],
+        "camera": "固定机位的中远景镜头，全程无推拉摇移或变焦，焦点始终保持在前景的主体身上，背景环境清晰可见。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "黄色方形角色，穿着白衬衫红领带和棕色短裤，头戴带有花生装饰的粉色帽子"
+      },
+      {
+        "context": "该主体位于画面右侧的吧台后方，是一个绿色的长条形角色，身穿白色制服并佩戴红色领结。他站在吧台内侧，身体正面朝向镜头前方，处于中景位置，与左侧前景处的海绵宝宝和中间坐在吧台上的粉色海星形成空间上的前后层次关系。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 5,
+            "caption": "在视频的前半段（帧0至帧5），绿色长条角色保持静止站立姿态，双手自然下垂或放在柜台上不可见的位置，面部表情显得疲惫且眼神呆滞，注视着前方。在此期间他没有明显的肢体位移或动作变化。",
+            "start": 0.0,
+            "end": 0.625,
+            "action_ids": []
+          },
+          {
+            "from_frame": 6,
+            "to_frame": 12,
+            "caption": "从第6秒开始（帧6），该角色的视线向下移动，头部随之轻微低垂，目光聚焦于面前的柜台区域。随后他的双臂抬起并在胸前活动，似乎正在整理物品或操作某种设备（具体物体被遮挡或未完全显示）。直到帧12结束，他一直保持着低头忙碌的姿态，专注于手头的工作，不再看向前方。",
+            "start": 0.75,
+            "end": 1.5,
+            "action_ids": [
+              "ACT-S01-SERVE_DRINK"
+            ]
+          }
+        ],
+        "camera": "这是一个固定的全景镜头，机位没有任何推拉摇移等运动。画面构图稳定，清晰地展示了餐厅内部环境以及三个主要角色的相对位置关系。光线均匀地照亮了整个场景，使得所有细节都易于辨认。",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "identity": "绿色长条形角色，穿着白色制服和红领结，站在吧台后方"
+      },
+      {
+        "context": "在镜头开始时，粉红色海星角色位于画面中央偏右的位置，身体正面朝向观众。他头戴一顶印有“GG”字样并插着花生装饰的粉色帽子，右手握着一把蓝色勺子放在面前的木质吧台上。他的左侧（画面右侧）立着一个香蕉船冰淇淋造型的角色，背景是挂着多幅画框的暗色条纹墙壁。",
+        "phases": [
+          {
+            "from_frame": 13,
+            "to_frame": 14,
+            "caption": "粉红色海星角色的头部轻微向画面右侧倾斜，双眼半闭呈眯缝状，嘴角上扬露出微笑。他的视线投向身旁的香蕉船冰淇淋角色，右手握着蓝色勺子在吧台面上保持静止。",
+            "start": 1.625,
+            "end": 1.75,
+            "action_ids": []
+          },
+          {
+            "from_frame": 15,
+            "to_frame": 18,
+            "caption": "该角色将头回正至垂直状态，嘴巴大张呈现出兴奋的笑容，眼睛圆睁直视前方。与此同时，他将原本平放的右手抬起，手持蓝色勺子悬停在胸前位置，手臂弯曲幅度明显增大。",
+            "start": 1.875,
+            "end": 2.25,
+            "action_ids": [
+              "ACT-S02-EAT_ICE_CREAM",
+              "ACT-S02-HOLD_SPOON_POSE"
+            ]
+          },
+          {
+            "from_frame": 19,
+            "to_frame": 22,
+            "caption": "笑容收敛，嘴巴闭合变成一条波浪形的线条，神情转为平静且略带呆滞。他继续举着蓝色勺子停留在半空中，目光依然锁定在画面右侧的冰淇淋角色身上，身体躯干未发生位移。",
+            "start": 2.375,
+            "end": 2.75,
+            "action_ids": [
+              "ACT-S02-HOLD_SPOON_POSE"
+            ]
+          },
+          {
+            "from_frame": 23,
+            "to_frame": 26,
+            "caption": "随着黄色海绵角色从画面左下角入画，粉红色海星角色的表情发生变化，眉毛下压，眼神变得有些困惑或担忧。他维持着手持蓝色勺子的姿势不变，但头部微微转向左下方以注视新出现的同伴。",
+            "start": 2.875,
+            "end": 3.25,
+            "action_ids": [
+              "ACT-S02-HOLD_SPOON_POSE"
+            ]
+          },
+          {
+            "from_frame": 27,
+            "to_frame": 42,
+            "caption": "粉红色海星角色的嘴巴张开成一个小圆形，仿佛正在说话或发出惊讶的声音，眉头紧锁表现出焦虑的神态。在整个片段中，他一直保持着举起蓝色勺子的动作，视线在左侧的海绵角色和右侧的冰淇淋角色之间游移，直到镜头结束。",
+            "start": 3.375,
+            "end": 5.25,
+            "action_ids": [
+              "ACT-S02-HOLD_SPOON_POSE"
+            ]
+          }
+        ],
+        "camera": "这是一个固定的中景镜头，相机机位保持水平视角，没有任何推拉摇移的运动。画面构图稳定，前景是吧台桌面，中景是三个主要角色，背景是挂满相框的墙面，光线均匀地照亮了所有主体。",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "identity": "粉红色海星角色，头戴带有花生装饰的粉色帽子，手里拿着蓝色勺子"
+      },
+      {
+        "context": "该主体（海绵宝宝）在本镜头开始时并未出现在画面中。他是一只黄色的方形角色，身穿红色上衣，头戴一顶印有“GG”字样且顶部带有花生装饰的粉色帽子。",
+        "phases": [
+          {
+            "from_frame": 23,
+            "to_frame": 24,
+            "caption": "主体从画面左下角边缘入画，头部和肩部逐渐升起越过前景的木质吧台。他的视线朝向右侧，面部带着微笑表情。",
+            "start": 2.875,
+            "end": 3.0,
+            "action_ids": [
+              "ACT-S02-RISE_FROM_BELOW"
+            ]
+          },
+          {
+            "from_frame": 25,
+            "to_frame": 31,
+            "caption": "主体停止上升动作，保持在画面左下方的静止姿态。在此期间，他持续注视着右侧的派大星，嘴巴微张进行说话或互动，神态轻松。",
+            "start": 3.125,
+            "end": 3.875,
+            "action_ids": [
+              "ACT-S02-RISE_FROM_BELOW"
+            ]
+          },
+          {
+            "from_frame": 32,
+            "to_frame": 32,
+            "caption": "主体的双眼短暂闭合，呈现出一种享受或回味的表情，随后迅速恢复睁开状态。",
+            "start": 4.0,
+            "end": 4.0,
+            "action_ids": [
+              "ACT-S02-BLINK_EYES"
+            ]
+          },
+          {
+            "from_frame": 33,
+            "to_frame": 42,
+            "caption": "主体继续停留在原位，视线始终锁定在右侧的派大星身上。随着对话的进行，他的嘴部开合幅度变大，并在结尾处展露出明显的牙齿笑容，表现出兴奋的情绪。",
+            "start": 4.125,
+            "end": 5.25,
+            "action_ids": [
+              "ACT-S02-BLINK_EYES"
+            ]
+          }
+        ],
+        "camera": "这是一个固定的平视中景镜头，机位全程保持静止，无推拉摇移。背景为挂满相框的深蓝色条纹墙壁，前景是一道横贯画面的木质吧台。",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "identity": "黄色方形角色，仅露出头部和肩部，头戴带有花生装饰的粉色帽子"
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "dc02208459e2fc667e499979fac1f8849ed2a6e5cc5a181ce25fbaefb95e78d0",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

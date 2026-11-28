@@ -1,0 +1,347 @@
+{
+  "groups": {
+    "visual": [
+      {
+        "members": [
+          "1.0",
+          "2.0",
+          "3.0"
+        ],
+        "votes": 3,
+        "start": 0.0,
+        "end": 1.5,
+        "representative": "2.0",
+        "example": {
+          "actor": "戴蓝色手套的手",
+          "activity": "拆卸部件",
+          "kind": "motion",
+          "label": "取下橡胶塞",
+          "brief": "一只戴着蓝色手套的手从下水口边缘拔出了黑色的橡胶塞。",
+          "detail": "手捏住黑色橡胶塞将其向上拔出，露出内部结构。",
+          "start": 0.0,
+          "end": 1.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.10000000000000009,
+        "id": "V1"
+      },
+      {
+        "members": [
+          "2.1"
+        ],
+        "votes": 1,
+        "start": 4.5,
+        "end": 6.5,
+        "representative": "2.1",
+        "example": {
+          "actor": "金属钳子",
+          "activity": "拧动螺母",
+          "kind": "motion",
+          "label": "转动右侧螺母",
+          "brief": "一把金属钳子夹住内部的右侧螺母并进行了旋转。",
+          "detail": "钳子夹住右侧生锈的六角螺母，顺时针方向施加扭矩使其松动。",
+          "start": 4.5,
+          "end": 6.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V2"
+      },
+      {
+        "members": [
+          "1.1",
+          "3.1"
+        ],
+        "votes": 2,
+        "start": 4.5,
+        "end": 7.55,
+        "representative": "1.1",
+        "example": {
+          "event_id": 1,
+          "actor": "未露出的人物",
+          "activity": "清理食物残渣",
+          "kind": "motion",
+          "label": "夹取碎屑",
+          "brief": "使用金属镊子在垃圾处理器底部的转盘上拨动并夹走附着的食物残渣。",
+          "detail": {
+            "temporal_agreement": "consent"
+          },
+          "start": 4.5,
+          "end": 7.6,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.09999999999999964,
+        "id": "V3"
+      },
+      {
+        "members": [
+          "2.2"
+        ],
+        "votes": 1,
+        "start": 6.5,
+        "end": 7.5,
+        "representative": "2.2",
+        "example": {
+          "actor": "金属钳子",
+          "activity": "拧动螺母",
+          "kind": "motion",
+          "label": "转动左侧螺母",
+          "brief": "同一把金属钳子移动到左侧，夹住另一个螺母并进行旋转。",
+          "detail": "钳子转移位置夹住左侧生锈的六角螺母，逆时针方向施加扭矩使其松动。",
+          "start": 6.5,
+          "end": 7.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V4"
+      }
+    ],
+    "audio": [
+      {
+        "members": [
+          "1.0",
+          "3.0"
+        ],
+        "votes": 2,
+        "start": 0.16,
+        "end": 4.8,
+        "representative": "1.0",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "One of my most asked questions on here is how do I clean my garbage disposal? Well, let's do it.",
+          "start": 0.16,
+          "end": 4.8,
+          "label": "One of my most asked questions on here is how do I clean my garbage disposal? Well, let's do it."
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A1"
+      },
+      {
+        "members": [
+          "2.0"
+        ],
+        "votes": 1,
+        "start": 0.16,
+        "end": 12.0,
+        "representative": "2.0",
+        "example": {
+          "actor": "男声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "One of my most asked questions on here is how do I clean my garbage disposal? Well, let's do it. This one was a little extra gross, so I'm gonna knock these teeth loose with a flathead and hammer, run some water, and then run some dish soap through it.",
+          "start": 0.16,
+          "end": 12.0,
+          "label": "One of my most asked questions on here is how do I clean my garbage disposal? Well, let's do it. This one was a little extra gross, so I'm gonna knock these teeth loose with a flathead and hammer, run some water, and then run some dish soap through it."
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A2"
+      },
+      {
+        "members": [
+          "2.1"
+        ],
+        "votes": 1,
+        "start": 4.56,
+        "end": 12.0,
+        "representative": "2.1",
+        "example": {
+          "actor": "未知声源",
+          "kind": "music",
+          "layer": "background",
+          "text": "轻快的器乐背景音乐",
+          "start": 4.56,
+          "end": 12.0,
+          "label": "轻快的器乐背景音乐"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A3"
+      },
+      {
+        "members": [
+          "1.1",
+          "3.1"
+        ],
+        "votes": 2,
+        "start": 5.2,
+        "end": 9.16,
+        "representative": "1.1",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "This one was a little extra gross, so I'm gonna knock these teeth loose with a flathead and hammer,",
+          "start": 5.2,
+          "end": 9.2,
+          "label": "This one was a little extra gross, so I'm gonna knock these teeth loose with a flathead and hammer,"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.08000000000000007,
+        "id": "A4"
+      },
+      {
+        "members": [
+          "1.2",
+          "3.2"
+        ],
+        "votes": 2,
+        "start": 7.36,
+        "end": 8.88,
+        "representative": "1.2",
+        "example": {
+          "actor": "金属敲击声",
+          "kind": "sound",
+          "layer": "background",
+          "text": "连续的金属敲击声",
+          "start": 7.36,
+          "end": 8.8,
+          "label": "连续的金属敲击声"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.16000000000000014,
+        "id": "A5"
+      },
+      {
+        "members": [
+          "1.3",
+          "3.3"
+        ],
+        "votes": 2,
+        "start": 9.559999999999999,
+        "end": 11.84,
+        "representative": "3.3",
+        "example": {
+          "actor": "男声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "run some water and then run some dish soap through it.",
+          "start": 9.52,
+          "end": 11.84,
+          "label": "run some water and then run some dish soap through it."
+        },
+        "start_spread": 0.08000000000000007,
+        "end_spread": 0.0,
+        "id": "A6"
+      },
+      {
+        "members": [
+          "1.4"
+        ],
+        "votes": 1,
+        "start": 9.68,
+        "end": 11.92,
+        "representative": "1.4",
+        "example": {
+          "actor": "水流声",
+          "kind": "sound",
+          "layer": "background",
+          "text": "持续的水流冲洗声",
+          "start": 9.68,
+          "end": 11.92,
+          "label": "持续的水流冲洗声"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A7"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "visual": "V1",
+      "audio": "A1",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        0.16,
+        1.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V3",
+      "audio": "A1",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        4.5,
+        4.8
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V3",
+      "audio": "A4",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        5.2,
+        7.55
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V3",
+      "audio": "A5",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        7.36,
+        7.55
+      ],
+      "keep": true,
+      "layer_votes": [
+        "background",
+        "background"
+      ],
+      "short": true
+    }
+  ]
+}

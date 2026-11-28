@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "model": "qwen3.8-omni-flash",
+  "reference_type": "machine-reviewed",
+  "prompts": {
+    "actor_check.en": "171f35adc5ce6ca1bff84ce075b679422ac89ed097e4e946f300b52520b553b6",
+    "audio.txt": "ac6e68c54fa356d568dd4920c233017cdf6c8f3c80b918585d019130eab95c99",
+    "cast.txt": "310ea7e49dfc0be4b96093d4ca136826de8f0de7050961f084edb290dbe0f2b6",
+    "core_check.en": "bd23d54001d0c70381256752996070da731c4cc6599d4e19103bbc1164de3d31",
+    "fact_check.en": "a78b87c330ff7feb7ff033a3d1776082f463fd12349b0d232a8a2b938131e560",
+    "inspect.txt": "1eeded71cd4288d7c4364f5cbf119d78c2e6df33ed85e55cb17d6af79fcb8dcb",
+    "phrases.txt": "08d39b3d3e633b2513f511373872d22578b8bb04bffc2f82e7779959aa02cd40",
+    "posture.en": "9d545f818af4617e2f95ff7761d5ff5cb2538c234bdc77e987790532f29e7f3e",
+    "review.txt": "b5f38f84121a8b4990b726e2f6c27a8a9ef1de72ebd54e196fe3671c7d17dacf",
+    "seam.txt": "b8932a864e37200f1287843765e0797a686461fee70f46f33dd0786f4899dc91",
+    "sound_review.en": "29e806cac70f03e8cb61e1ba9cac40bf2d0af43edb9fe8f9d6644047f8243935",
+    "speaker_check.txt": "dbfcbfa9ca168db582c87b41b4fe8182a499c47bb323771aa701e2dd91881544",
+    "visual.txt": "7533ce20f7942c9a3a704b6c7eef55d78cafdf6e810a932b107341015f757bfc"
+  },
+  "implementation": {
+    "bench.py": "5a3ea1d12271ce9c690ebad5445f36e3b5e1542ec51bdace034b4e835040a023",
+    "bench_adjudicate.py": "468aa91b8ce5dbc37a414b03590dbad3182cdb98e08b93e0a8317fa7ce71ec9c",
+    "bench_export.py": "0bcbe51b7a66b5dc694f5438fbe78211c4b989091d03e62b269fa2dd72d1389f",
+    "bench_facts.py": "8ea1e5936b35db3e0ceecd49b73a4972c3910bac98e3b9ffc58d3fc665ac7f24",
+    "bench_reference.py": "760e6099b3514d4c51659f841042ca3dae0fe3b1ef0e1ea13312a1dec92f1afc",
+    "long_clauses.py": "4af778480c5ccea4fd8da2b8e76220b2a7006d42abcec7ee7b2b5a8f8a47fb11",
+    "long_review_page.py": "16562764bbf2c6542c127f13958ba6669faac83af8f714ba93f46e8166a016a5",
+    "long_timeline.py": "37a724f63c2b576629d733e27fdade0930a650fd1d612bfda38ec589fd5a4692",
+    "long_video.py": "83a4e8e0697c5afe084a48ea1c085f9b316bd437792089e1fd6b4d7ab21a388e",
+    "long_words.py": "c79531ee02a46c90cc538b8ae05860b546cd3abd8f469a305bdb1265a51373d2"
+  },
+  "input_manifest": {
+    "schema": "av-events/1.0",
+    "source_sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91",
+    "duration": 7.0,
+    "windows": [
+      {
+        "n": 0,
+        "core": [
+          0,
+          7.0
+        ],
+        "span": [
+          0,
+          7.0
+        ]
+      }
+    ],
+    "model": "qwen3.8-omni-flash",
+    "lexicon_sha256": "94a04254de172604440b897e6f5e8116832d46dc7fdb81c5e14a0a6ddc2d81aa",
+    "draft_prompt_sha256": {
+      "cast": "310ea7e49dfc0be4b96093d4ca136826de8f0de7050961f084edb290dbe0f2b6",
+      "visual": "7533ce20f7942c9a3a704b6c7eef55d78cafdf6e810a932b107341015f757bfc",
+      "review": "b5f38f84121a8b4990b726e2f6c27a8a9ef1de72ebd54e196fe3671c7d17dacf",
+      "audio": "ac6e68c54fa356d568dd4920c233017cdf6c8f3c80b918585d019130eab95c99"
+    }
+  }
+}

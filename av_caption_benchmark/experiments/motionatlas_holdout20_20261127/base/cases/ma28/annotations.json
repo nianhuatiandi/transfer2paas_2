@@ -1,0 +1,610 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma28",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "户外人物与印刷品",
+    "main_subject_count": 3,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      70
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-0b06c029-997.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      6.006
+    ],
+    "official_sha256": "90377c325b7fe4ea433380cfeeebc48881a3fd9f3e0fea67b87236713662a5d7",
+    "clip_sha256": "90377c325b7fe4ea433380cfeeebc48881a3fd9f3e0fea67b87236713662a5d7",
+    "audio_source": null
+  },
+  "duration_seconds": 6.006,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 1.126125,
+      "first_frame": 0,
+      "end_frame_exclusive": 27
+    },
+    {
+      "id": "S02",
+      "start": 1.126125,
+      "end": 2.6693333333333333,
+      "first_frame": 27,
+      "end_frame_exclusive": 64
+    },
+    {
+      "id": "S03",
+      "start": 2.6693333333333333,
+      "end": 3.0447083333333333,
+      "first_frame": 64,
+      "end_frame_exclusive": 73
+    },
+    {
+      "id": "S04",
+      "start": 3.0447083333333333,
+      "end": 3.0864166666666666,
+      "first_frame": 73,
+      "end_frame_exclusive": 74
+    },
+    {
+      "id": "S05",
+      "start": 3.0864166666666666,
+      "end": 5.213541666666667,
+      "first_frame": 74,
+      "end_frame_exclusive": 125
+    },
+    {
+      "id": "S06",
+      "start": 5.213541666666667,
+      "end": 6.006,
+      "first_frame": 125,
+      "end_frame_exclusive": 144
+    }
+  ],
+  "input_frames": {
+    "visual": 65
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了人物在户外的互动与肢体接触，包含面部遮挡特效及抓握动作，符合标注范围。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "长卷棕发女孩，穿米白色针织开衫"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "穿黑色羽绒服和牛仔裤的人，头部被带有照片的方形卡片完全遮挡"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "长卷棕发女孩，背着黑色双肩包，双手抱着几本书"
+      },
+      {
+        "id": "S03-P02",
+        "shot_id": "S03",
+        "description": "穿黑色羽绒服的人，斜挎着黑色小包"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "穿米白色毛衣的手臂（属于卷发女孩）"
+      },
+      {
+        "id": "S04-P02",
+        "shot_id": "S04",
+        "description": "穿黑色外套的手臂（属于黑衣人）"
+      },
+      {
+        "id": "S05-P01",
+        "shot_id": "S05",
+        "description": "长卷棕发女孩，穿米白色针织开衫"
+      },
+      {
+        "id": "S05-P02",
+        "shot_id": "S05",
+        "description": "穿黑色羽绒服的人"
+      },
+      {
+        "id": "S06-P01",
+        "shot_id": "S06",
+        "description": "长卷棕发女孩的侧后方背影"
+      },
+      {
+        "id": "S06-P02",
+        "shot_id": "S06",
+        "description": "穿黑色羽绒服的人，手持一张印有年轻男子照片的卡片挡在脸前"
+      }
+    ],
+    "executions": [
+      {
+        "id": "EX_S01_P01_WALKING",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.126125,
+        "description": "低头行走"
+      },
+      {
+        "id": "EX_S02_P01_WALKING",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 1.126125,
+        "end": 2.669333,
+        "description": "迎面走来"
+      },
+      {
+        "id": "EX_S03_P01_WALKING",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 2.669333,
+        "end": 3.044708,
+        "description": "向右行走"
+      },
+      {
+        "id": "EX_S03_P02_WALKING",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "start": 2.669333,
+        "end": 3.044708,
+        "description": "跟随行走"
+      },
+      {
+        "id": "EX_S04_P02_GRABBING",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "start": 3.044708,
+        "end": 3.086417,
+        "description": "伸手抓住对方手臂"
+      },
+      {
+        "id": "EX_S05_P02_HOLDING",
+        "actor_id": "S05-P02",
+        "shot_id": "S05",
+        "start": 3.086417,
+        "end": 5.213542,
+        "description": "持续抓握对方手臂"
+      },
+      {
+        "id": "EX_S05_P01_STRUGGLING",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "start": 3.086417,
+        "end": 5.213542,
+        "description": "身体扭动挣扎"
+      },
+      {
+        "id": "EX_S06_P02_RAISING_CARD",
+        "actor_id": "S06-P02",
+        "shot_id": "S06",
+        "start": 5.213542,
+        "end": 6.006,
+        "description": "举起新卡片挡住脸部"
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT_S01_P01_WALKING",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "EX_S01_P01_WALKING",
+        "kind": "motion",
+        "label": "低头行走",
+        "start": 0.0,
+        "end": 1.126125,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          1.0,
+          1.126125
+        ],
+        "detail": "画面为近景特写，长卷棕发女孩低着头向前走动，视线向下看着地面或前方低处，嘴唇微张似乎在说话或呼吸，背景模糊显示砖墙结构。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "女孩低头看下方，头发垂落两侧"
+          },
+          {
+            "time": 0.583917,
+            "observation": "保持低头姿态，嘴部有轻微开合动作"
+          },
+          {
+            "time": 1.084417,
+            "observation": "继续低头前行，直到镜头切换"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "头部",
+          "躯干"
+        ],
+        "movement_roles": [
+          "主体位移"
+        ],
+        "subphases": [],
+        "brief": "长卷棕发女孩低头向前行走。"
+      },
+      {
+        "id": "ACT_S02_P01_WALKING",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX_S02_P01_WALKING",
+        "kind": "motion",
+        "label": "迎面走来",
+        "start": 1.126125,
+        "end": 2.669333,
+        "start_range": [
+          1.126125,
+          1.2
+        ],
+        "end_range": [
+          2.6,
+          2.669333
+        ],
+        "detail": "中景镜头，一名身穿黑色羽绒服的人正对镜头走来。其头部位置悬浮着一张方形的数字界面卡片，上面显示女性照片和名字'Carmen Hernandez'，随后变为'Selma Hermanski'。人物双臂自然下垂摆动。",
+        "evidence": [
+          {
+            "time": 1.126125,
+            "observation": "黑衣人出现，头部被'Carmen Hernandez'卡片遮挡"
+          },
+          {
+            "time": 1.918583,
+            "observation": "卡片内容切换为'Selma Hermanski'"
+          },
+          {
+            "time": 2.627625,
+            "observation": "人物持续向镜头方向移动，距离拉近"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "卡片名称切换",
+            "time": 1.918583,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "主体位移"
+        ],
+        "subphases": [],
+        "brief": "黑衣人头戴虚拟身份卡片迎面走来。"
+      },
+      {
+        "id": "ACT_S03_P01_WALKING",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "EX_S03_P01_WALKING",
+        "kind": "motion",
+        "label": "抱书行走",
+        "start": 2.669333,
+        "end": 3.044708,
+        "start_range": [
+          2.669333,
+          2.7
+        ],
+        "end_range": [
+          3.0,
+          3.044708
+        ],
+        "detail": "侧面跟拍视角，卷发女孩背着黑色双肩包，双手怀抱一摞书本从画面左侧向右侧快步走过红砖墙背景。",
+        "evidence": [
+          {
+            "time": 2.669333,
+            "observation": "女孩入画，双手抱书，背书包"
+          },
+          {
+            "time": 3.003,
+            "observation": "女孩即将走出画面右侧，黑衣人紧随其后"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "上半身",
+          "腿部"
+        ],
+        "movement_roles": [
+          "主体位移"
+        ],
+        "subphases": [],
+        "brief": "卷发女孩抱着书本沿墙边走过。"
+      },
+      {
+        "id": "ACT_S03_P02_WALKING",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "execution_id": "EX_S03_P02_WALKING",
+        "kind": "motion",
+        "label": "尾随行走",
+        "start": 2.669333,
+        "end": 3.044708,
+        "start_range": [
+          2.669333,
+          2.7
+        ],
+        "end_range": [
+          3.0,
+          3.044708
+        ],
+        "detail": "黑衣人紧跟在女孩身后，从画面左侧进入并向右移动，距离非常近，几乎贴着女孩的背影。",
+        "evidence": [
+          {
+            "time": 2.75275,
+            "observation": "黑衣人出现在女孩右后方"
+          },
+          {
+            "time": 3.003,
+            "observation": "黑衣人伸出右手试图触碰女孩"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "伸手预备",
+            "time": 3.003,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "手臂"
+        ],
+        "movement_roles": [
+          "伴随运动"
+        ],
+        "subphases": [],
+        "brief": "黑衣人紧贴女孩身后同行并伸出手。"
+      },
+      {
+        "id": "ACT_S04_P02_GRABBING",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "execution_id": "EX_S04_P02_GRABBING",
+        "kind": "motion",
+        "label": "抓臂瞬间",
+        "start": 3.044708,
+        "end": 3.086417,
+        "start_range": [
+          3.044708,
+          3.05
+        ],
+        "end_range": [
+          3.08,
+          3.086417
+        ],
+        "detail": "极短的特写镜头，黑衣人的手迅速抓住了女孩穿着米色毛衣的前臂/手腕部位，手指扣紧衣物表面。",
+        "evidence": [
+          {
+            "time": 3.044708,
+            "observation": "手部接触发生，形成抓握姿态"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "物理接触",
+            "time": 3.044708,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "手",
+          "前臂"
+        ],
+        "movement_roles": [
+          "施力者"
+        ],
+        "subphases": [],
+        "brief": "黑衣人手部快速抓住女孩手臂。"
+      },
+      {
+        "id": "ACT_S05_P02_HOLDING",
+        "actor_id": "S05-P02",
+        "shot_id": "S05",
+        "execution_id": "EX_S05_P02_HOLDING",
+        "kind": "held_pose",
+        "label": "持续抓握",
+        "start": 3.086417,
+        "end": 5.213542,
+        "start_range": [
+          3.086417,
+          3.1
+        ],
+        "end_range": [
+          5.1,
+          5.213542
+        ],
+        "detail": "镜头剧烈晃动且模糊，主要聚焦于两人的纠缠区域。黑衣人的手始终紧紧抓着女孩的白色衣袖/手臂部分，随着女孩的挣扎而被迫移动，但从未松开。",
+        "evidence": [
+          {
+            "time": 3.169833,
+            "observation": "手紧扣在白色织物上"
+          },
+          {
+            "time": 4.004,
+            "observation": "尽管画面因运动模糊不清，仍能辨识出黑色的手覆盖在白色的袖子上"
+          },
+          {
+            "time": 5.171833,
+            "observation": "抓握状态持续到镜头结束"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "手",
+          "手臂"
+        ],
+        "movement_roles": [
+          "约束动作"
+        ],
+        "subphases": [],
+        "brief": "黑衣人持续紧抓女孩手臂不放。"
+      },
+      {
+        "id": "ACT_S05_P01_STRUGGLING",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "execution_id": "EX_S05_P01_STRUGGLING",
+        "kind": "motion",
+        "label": "扭动挣脱",
+        "start": 3.086417,
+        "end": 5.213542,
+        "start_range": [
+          3.086417,
+          3.1
+        ],
+        "end_range": [
+          5.1,
+          5.213542
+        ],
+        "detail": "女孩在被抓住后表现出剧烈的反抗。她的长发在空中飞舞，身体大幅度扭转试图甩开对方的手，嘴巴张开似在大声呼喊或喘息，整个过程中一直处于动态失衡状态。",
+        "evidence": [
+          {
+            "time": 3.5035,
+            "observation": "头发凌乱飞扬，显示头部剧烈转动"
+          },
+          {
+            "time": 4.295958,
+            "observation": "侧脸可见，表情痛苦/惊恐，张嘴发声"
+          },
+          {
+            "time": 4.879875,
+            "observation": "继续扭动身体，试图摆脱控制"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "大声呼喊",
+            "time": 4.295958,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身",
+          "头发",
+          "面部"
+        ],
+        "movement_roles": [
+          "反作用力"
+        ],
+        "subphases": [],
+        "brief": "女孩剧烈扭动身体并呼喊以试图挣脱。"
+      },
+      {
+        "id": "ACT_S06_P02_RAISING_CARD",
+        "actor_id": "S06-P02",
+        "shot_id": "S06",
+        "execution_id": "EX_S06_P02_RAISING_CARD",
+        "kind": "motion",
+        "label": "举牌遮面",
+        "start": 5.213542,
+        "end": 6.006,
+        "start_range": [
+          5.213542,
+          5.3
+        ],
+        "end_range": [
+          5.9,
+          6.006
+        ],
+        "detail": "两人停止激烈拉扯，面对面站立。黑衣人双手举起一张印有年轻男子照片（Ace Bronson）的大卡片挡在自己脸前，随后卡片上的图像闪烁变化为另一名女子（Sophia Nuenez）。",
+        "evidence": [
+          {
+            "time": 5.213542,
+            "observation": "黑衣人开始举起卡片"
+          },
+          {
+            "time": 5.422083,
+            "observation": "卡片完全遮住面部，显示'Ace Bronson'"
+          },
+          {
+            "time": 5.714042,
+            "observation": "卡片图像突变为'Sophia Nuenez'"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "图像变更",
+            "time": 5.714042,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "道具(卡片)"
+        ],
+        "movement_roles": [
+          "操作物体"
+        ],
+        "subphases": [],
+        "brief": "黑衣人举起显示不同人脸的卡片遮挡自己面部。"
+      }
+    ],
+    "uncertainties": [
+      "S05镜头极度晃动且失焦，难以精确分辨具体的肢体分离角度和细微的手指动作，仅能确认持续的抓握和挣扎态势。",
+      "S02中头部卡片的切换机制不明，可能是后期特效叠加，也可能是实体屏幕显示，视觉上表现为数字界面的跳变。"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "S05镜头极度晃动且失焦，难以精确分辨具体的肢体分离角度和细微的手指动作，仅能确认持续的抓握和挣扎态势。",
+    "S02中头部卡片的切换机制不明，可能是后期特效叠加，也可能是实体屏幕显示，视觉上表现为数字界面的跳变。"
+  ]
+}

@@ -1,0 +1,611 @@
+{
+  "source": {
+    "id": "day01",
+    "benchmark": "Daily-Omni",
+    "original_id": "02-0m4RbDUI",
+    "source_url": "https://huggingface.co/datasets/liarliar/Daily-Omni/blob/bf5a6ee4c829510b7a14869e3104efeafc330b07/Videos.tar",
+    "archive_member": "Videos/02-0m4RbDUI/02-0m4RbDUI_video.mp4",
+    "original_file": "day_02-0m4RbDUI_video.mp4",
+    "source_media_sha256": "ad884b7450d1ced362e871a9c757d7ab3be53638d3daaed142ec7f4b44c78016",
+    "clip_sha256": "1436b1822b7104c361bfff78ad3283d46b6c6d8843ecc62325f4e114c92e1a78",
+    "source_duration": 30.03,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "card": "02",
+    "domain": "柜门边缘讲解",
+    "domain_rule": "",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "画面抽查：一只手沿柜门不同位置比画，另一只手持物。“用手机测量缝宽”中的工具及用途未获得独立证据。"
+    ]
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 12.011999999999999,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 12.011999999999999,
+      "first_frame": 0,
+      "end_frame_exclusive": 360
+    }
+  ],
+  "timestamped_frames": 121,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2"
+  },
+  "visual": {
+    "clip_id": "day01",
+    "mode": "VISUAL_GT",
+    "clock": {
+      "source_frames_per_sec": 30.0,
+      "clip_start_source_frame": 0,
+      "clip_end_source_frame": 359,
+      "clip_duration_sec": 12.012
+    },
+    "facts": [
+      {
+        "id": "E1",
+        "kind": "episode",
+        "level": "L1",
+        "actor": "人A",
+        "object": null,
+        "parent_ids": [],
+        "claim": "人A使用手机测量橱柜门板上的缝隙宽度。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.8,
+          9.9
+        ],
+        "visible_spans": [
+          [
+            0.8,
+            9.9
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.7,
+            0.9
+          ],
+          "end": [
+            9.8,
+            10.0
+          ]
+        },
+        "context_range": null,
+        "evidence": "画面显示人A在0.8s至9.9s期间，多次将手机贴靠在柜门上以比对缝隙位置。"
+      },
+      {
+        "id": "A1",
+        "kind": "action",
+        "level": "L2",
+        "actor": "人A",
+        "object": "右侧柜门边缘",
+        "parent_ids": [
+          "E1"
+        ],
+        "claim": "人A用右手触摸右侧柜门的中间部分边缘。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.8,
+          1.4
+        ],
+        "visible_spans": [
+          [
+            0.8,
+            1.4
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.7,
+            0.9
+          ],
+          "end": [
+            1.3,
+            1.5
+          ]
+        },
+        "context_range": null,
+        "evidence": "源帧24-42：人A的右手手掌平贴在右侧柜门的中部接缝处进行滑动和按压。"
+      },
+      {
+        "id": "A2",
+        "kind": "action",
+        "level": "L2",
+        "actor": "人A",
+        "object": "右侧柜门顶部边缘",
+        "parent_ids": [
+          "E1"
+        ],
+        "claim": "人A用右手触摸右侧柜门的顶部边缘。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          1.6,
+          2.9
+        ],
+        "visible_spans": [
+          [
+            1.6,
+            2.9
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            1.5,
+            1.7
+          ],
+          "end": [
+            2.8,
+            3.0
+          ]
+        },
+        "context_range": null,
+        "evidence": "源帧48-87：人A的手向上移动，手指沿着柜门顶部的水平边缘滑动。"
+      },
+      {
+        "id": "A3",
+        "kind": "action",
+        "level": "L2",
+        "actor": "人A",
+        "object": "右侧柜门中部区域",
+        "parent_ids": [
+          "E1"
+        ],
+        "claim": "人A用右手再次触摸右侧柜门的中部区域。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          3.7,
+          4.9
+        ],
+        "visible_spans": [
+          [
+            3.7,
+            4.9
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            3.6,
+            3.8
+          ],
+          "end": [
+            4.8,
+            5.0
+          ]
+        },
+        "context_range": null,
+        "evidence": "源帧111-147：手从上方移回柜门中部的垂直缝隙处停留。"
+      },
+      {
+        "id": "A4",
+        "kind": "action",
+        "level": "L2",
+        "actor": "人A",
+        "object": "右侧柜门底部边缘",
+        "parent_ids": [
+          "E1"
+        ],
+        "claim": "人A用右手触摸右侧柜门的底部边缘。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          9.0,
+          9.9
+        ],
+        "visible_spans": [
+          [
+            9.0,
+            9.9
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            8.9,
+            9.1
+          ],
+          "end": [
+            9.8,
+            10.0
+          ]
+        },
+        "context_range": null,
+        "evidence": "源帧270-297：人A的手向下移动到柜门底部的踢脚线附近进行检查。"
+      }
+    ],
+    "relations": [
+      {
+        "id": "R1",
+        "predicate": "contains",
+        "from_id": "E1",
+        "to_id": "A1",
+        "claim": "测量动作包含了触摸柜门中部边缘的过程。",
+        "evidence": "时间区间包含关系及视觉逻辑。",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R2",
+        "predicate": "contains",
+        "from_id": "E1",
+        "to_id": "A2",
+        "claim": "测量动作包含了触摸柜门顶部边缘的过程。",
+        "evidence": "时间区间包含关系及视觉逻辑。",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R3",
+        "predicate": "contains",
+        "from_id": "E1",
+        "to_id": "A3",
+        "claim": "测量动作包含了再次触摸柜门中部的过程。",
+        "evidence": "时间区间包含关系及视觉逻辑。",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R4",
+        "predicate": "contains",
+        "from_id": "E1",
+        "to_id": "A4",
+        "claim": "测量动作包含了触摸柜门底部边缘的过程。",
+        "evidence": "时间区间包含关系及视觉逻辑。",
+        "certainty": "asserted"
+      }
+    ],
+    "residual": []
+  },
+  "audio": {
+    "clip_id": "day01",
+    "clock": {
+      "source": "original_audio",
+      "offset_sec": 0.0
+    },
+    "coverage": {
+      "total_duration_sec": 12.01,
+      "valid_from_sec": 0.0,
+      "valid_to_sec": 12.0
+    },
+    "audio_events": [
+      {
+        "id": "spk_01.1",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "cup doors fitted.",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          0.0,
+          0.8
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.0,
+            0.2
+          ],
+          "end": [
+            0.64,
+            0.96
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "音频开头清晰听到 'cup doors fitted'，随后有短暂停顿。",
+        "parent_audio_id": "spk_01"
+      },
+      {
+        "id": "spk_01.2",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "So once that hinge wears, could be the kids leaning on the door or just general wear and tear, the door starts dropping as you open it and then it will catch the other doors and cause damage.",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          1.28,
+          11.52
+        ],
+        "boundary_ranges": {
+          "start": [
+            1.12,
+            1.44
+          ],
+          "end": [
+            11.36,
+            11.68
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "从 'So once...' 开始连续讲述至 '...cause damage.'，语流完整，中间无明显长停顿打断句意。",
+        "parent_audio_id": "spk_01"
+      },
+      {
+        "id": "spk_01.3",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "So...",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          11.76,
+          12.0
+        ],
+        "boundary_ranges": {
+          "start": [
+            11.68,
+            12.01
+          ],
+          "end": [
+            11.92,
+            12.01
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "在 'damage' 之后，说话人重新起头说出 'So'，但随即被截断。",
+        "parent_audio_id": "spk_01"
+      },
+      {
+        "id": "amb_01",
+        "type": "ambience",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "持续的低电平房间底噪和轻微混响贯穿整个片段。",
+        "instance_range": [
+          0.0,
+          12.0
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 3.0,
+        "confidence": "high"
+      }
+    ],
+    "unresolved": []
+  },
+  "original_audio_events": [
+    {
+      "id": "spk_01",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "cup doors fitted. So once that hinge wears, could be the kids leaning on the door or just general wear and tear, the door starts dropping as you open it and then it will catch the other doors and cause damage. So...",
+      "claim": "一名男子在室内环境中讲解橱柜门铰链磨损导致的问题。",
+      "instance_range": [
+        0.0,
+        12.0
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 6.5,
+      "confidence": "high"
+    },
+    {
+      "id": "amb_01",
+      "type": "ambience",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "持续的低电平房间底噪和轻微混响贯穿整个片段。",
+      "instance_range": [
+        0.0,
+        12.0
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 3.0,
+      "confidence": "high"
+    }
+  ],
+  "sentence_alignment": {
+    "sentences": [
+      {
+        "id": "spk_01.1",
+        "transcript": "cup doors fitted.",
+        "instance_range": [
+          0.0,
+          0.8
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.0,
+            0.2
+          ],
+          "end": [
+            0.64,
+            0.96
+          ]
+        },
+        "evidence": "音频开头清晰听到 'cup doors fitted'，随后有短暂停顿。"
+      },
+      {
+        "id": "spk_01.2",
+        "transcript": "So once that hinge wears, could be the kids leaning on the door or just general wear and tear, the door starts dropping as you open it and then it will catch the other doors and cause damage.",
+        "instance_range": [
+          1.28,
+          11.52
+        ],
+        "boundary_ranges": {
+          "start": [
+            1.12,
+            1.44
+          ],
+          "end": [
+            11.36,
+            11.68
+          ]
+        },
+        "evidence": "从 'So once...' 开始连续讲述至 '...cause damage.'，语流完整，中间无明显长停顿打断句意。"
+      },
+      {
+        "id": "spk_01.3",
+        "transcript": "So...",
+        "instance_range": [
+          11.76,
+          12.0
+        ],
+        "boundary_ranges": {
+          "start": [
+            11.68,
+            12.01
+          ],
+          "end": [
+            11.92,
+            12.01
+          ]
+        },
+        "evidence": "在 'damage' 之后，说话人重新起头说出 'So'，但随即被截断。"
+      }
+    ]
+  },
+  "temporal_edges": [
+    {
+      "visual_id": "A1",
+      "audio_id": "spk_01.1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [],
+      "peak_in_visible_span": null,
+      "status": "边界待审",
+      "nominal": false,
+      "derived": true
+    },
+    {
+      "visual_id": "A1",
+      "audio_id": "spk_01.2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          1.28,
+          1.4
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "边界待审",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A1",
+      "audio_id": "amb_01",
+      "audio_layer": "background",
+      "audio_type": "ambience",
+      "intersections": [
+        [
+          0.8,
+          1.4
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A2",
+      "audio_id": "spk_01.2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          1.6,
+          2.9
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A2",
+      "audio_id": "amb_01",
+      "audio_layer": "background",
+      "audio_type": "ambience",
+      "intersections": [
+        [
+          1.6,
+          2.9
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A3",
+      "audio_id": "spk_01.2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          3.7,
+          4.9
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A3",
+      "audio_id": "amb_01",
+      "audio_layer": "background",
+      "audio_type": "ambience",
+      "intersections": [
+        [
+          3.7,
+          4.9
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A4",
+      "audio_id": "spk_01.2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          9.0,
+          9.9
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A4",
+      "audio_id": "amb_01",
+      "audio_layer": "background",
+      "audio_type": "ambience",
+      "intersections": [
+        [
+          9.0,
+          9.9
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "画面抽查：一只手沿柜门不同位置比画，另一只手持物。“用手机测量缝宽”中的工具及用途未获得独立证据。",
+    "本次未输出 L3 部位运动，需按画面判定是否有漏项。"
+  ]
+}

@@ -1,0 +1,47 @@
+Provide a detailed visual description of the supplied sports video frames, focusing on the fine-grained actions of its one or two principal participants per shot. This is the visual stage of a caption pipeline. No audio is supplied: do not describe speech, sounds or audio-visual relationships.
+
+Make sure your description covers the following dimensions:
+
+Visual
+- Subjects and characters: distinguish the principal participants by visible appearance, clothing, position and equipment. Use stable shot-local identifiers such as S01-P01 and S01-P02. Do not assume identity continuity across cuts. Report a shot with more than two principal participants instead of omitting someone.
+- Actions and events: describe the observed behavior chronologically and decompose it into independently distinguishable atomic actions. An atomic action is a meaningful phase with a coherent movement pattern, not necessarily a whole sports attempt and not every small joint movement. Use a supported professional term and explain the visible mechanics in ordinary language.
+- Action details: describe how the body and relevant limbs move, how posture and support change, and how equipment or relevant objects move. Describe the progression, not only the final pose. Include contact, release or object flight only when supported by the images.
+- Continuous behavior coverage: for each participant in each shot, account for the visible behavior before, between and after neighboring actions. Do not omit an observable transition simply because its endpoints are labeled. Numerical adjacency alone does not establish completeness. Distinguish motion, maintained posture and explanatory gesture. Simultaneous actions may overlap; do not invent movement to fill stillness, occlusion or cuts.
+- Setting and spatial relations: describe the relevant environment, objects and layout. For left/right claims, explicitly distinguish screen coordinates from the participant's anatomical sides. Compare the same participant across frames; do not infer travel from a single pose or equipment position. Omit unsupported directions and state the uncertainty.
+- Camera and visibility: note cuts, viewpoint changes, camera movement or occlusion when they affect interpretation. Do not mistake camera motion for participant motion.
+- On-screen text is outside this task. Do not transcribe subtitles, titles, logos or UI, or use them as evidence for an action.
+
+Rules:
+- Use a supplied glossary if present. Use only terms supported by visible cues; otherwise use a descriptive movement label. No fixed action sequence, phase count or repeated-instance count is assumed.
+- Keep separate entries for repeated actions. Do not count a whole attempt again as an additional atomic action alongside its phases.
+- Use clip-global timestamps and supplied frame times. Approximate boundaries are acceptable; do not require exact adjacency, impose minimum durations or claim unsupported precision. Keep each action inside its observed shot. Indicate when its start or end is cut off.
+- Check each participant's continuous behavior coverage before answering, even when existing intervals touch or overlap. State unresolved observations rather than inventing a missing phase.
+- Keep each action description to at most two short sentences (about 60 words); keep each uncertainty note to one short sentence. Describe only visible evidence. Never append synonym lists, unrelated vocabulary, repeated adjectives or general knowledge. Limit storyline paragraphs to relevant scene changes; these limits do not limit how many distinct observed actions you may report.
+- Write detailed but relevant English descriptions. Do not use Markdown bold formatting. Return the following sections in natural language; no JSON schema is required. This is a candidate for human review.
+
+Output Format:
+
+## Visual Storyline
+
+Participants and setting:
+<shot-local participant IDs and visible descriptions, with relevant scene context>
+
+<mm:ss.ss> - <mm:ss.ss>
+<A chronological paragraph explaining the visible behavior and how it changes.>
+
+...
+
+## Atomic Actions
+
+<A001> | <mm:ss.ss> - <mm:ss.ss>
+Participant: <S01-P01>
+Type: <motion / held_pose / gesture>
+Technique: <supported professional term or descriptive movement label>
+Description: <Observed progression, body/limb mechanics, relevant object movement and spatial relations.>
+Uncertainty: <material uncertainty or cropped boundary; "none noted" if applicable>
+
+...
+
+## Unresolved Coverage
+
+<Any participant or interval that cannot be reliably described, or "none noted".>

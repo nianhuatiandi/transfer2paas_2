@@ -1,0 +1,24 @@
+{
+  "id": "sport01",
+  "category": "运动与体能",
+  "title": "羽毛球喂球与上网",
+  "source": {
+    "id": "sport01",
+    "benchmark": "自有运动",
+    "domain": "羽毛球",
+    "original_id": "31679122798",
+    "source_url": "用户本地裁片",
+    "archive_member": null,
+    "source_window_seconds": [
+      0,
+      8.0
+    ],
+    "source_duration": 8.0,
+    "source_media_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "clip_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "source_start": 0,
+  "duration": 8.0,
+  "sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2"
+}

@@ -1,0 +1,1122 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "apple",
+    "domain": "烹饪演示 · 糖煮苹果",
+    "clip_sha256": "22988991a4cc3cd3790a8a634b6623dd0c8cd2d5e7a4285feff5ec95e77a9dfe",
+    "people_limit": 3,
+    "audio_source": "same original MP4",
+    "filename": "2VBRpUe8idw.10.mp4"
+  },
+  "duration_seconds": 17.51749058199431,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.3336664872760821,
+      "first_frame": 0,
+      "end_frame_exclusive": 8
+    },
+    {
+      "id": "S02",
+      "start": 0.3336664872760821,
+      "end": 4.254247712770047,
+      "first_frame": 8,
+      "end_frame_exclusive": 102
+    },
+    {
+      "id": "S03",
+      "start": 4.254247712770047,
+      "end": 10.677327592834628,
+      "first_frame": 102,
+      "end_frame_exclusive": 256
+    },
+    {
+      "id": "S04",
+      "start": 10.677327592834628,
+      "end": 17.51749058199431,
+      "first_frame": 256,
+      "end_frame_exclusive": 420
+    }
+  ],
+  "input_frames": {
+    "visual": 178,
+    "review": 178
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "俯拍食物准备片段与厨房讲解片段均在范围内；仅记录画面中可见的手部操作、舀放动作和持罐展示，不推断对白内容。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "未露脸的操作者，只见双手；左手戴戒指扶碗，右手握金色勺子"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "未露脸的操作者，只见一只手握着金色勺子在碗中搅拌"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "未露脸的操作者，只见一只手持金色勺子从浅蓝绿小碗舀取苹果块放到燕麦粥上"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "站在白色瓷砖厨房中的女子，深色头发扎起，穿深灰色V领短袖上衣"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 0.291958,
+        "description": "右手用勺在浅蓝绿碗里翻动苹果块和糖浆，左手扶着碗边稳定位置"
+      },
+      {
+        "id": "S02-E01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 0.333666,
+        "end": 2.419082,
+        "description": "单手持续以画圈方式搅拌碗中的苹果块与深色糖浆"
+      },
+      {
+        "id": "S03-E01",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 4.671331,
+        "end": 8.341662,
+        "description": "用金色勺子分两次把左侧小碗里的苹果块舀到右侧粉色碗的燕麦粥中央"
+      },
+      {
+        "id": "S04-E01",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 13.263243,
+        "end": 17.475782,
+        "description": "拿起并托住白色圆筒包装，随后举高展示给镜头"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "搅拌苹果块",
+        "start": 0.0,
+        "end": 0.291958,
+        "start_range": [
+          0.0,
+          0.083417
+        ],
+        "end_range": [
+          0.208542,
+          0.291958
+        ],
+        "detail": "俯视近景中，浅蓝绿色碗放在白色台面上，碗内是切成块的黄色水果和深色液体。左手从左侧扶住碗沿保持稳定，右手握住金色长柄勺伸入碗中，先让勺头贴着碗底一侧移动，再把果块连同糖浆一起翻搅起来；随着连续拨动，原本较集中的深色液体被带到果块表面，碗内分布变得更均匀。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "左手扶碗、右手持勺已就位，勺头贴近碗内右侧果块"
+          },
+          {
+            "time": 0.083417,
+            "observation": "勺头仍在碗内，果块位置开始变化"
+          },
+          {
+            "time": 0.208542,
+            "observation": "勺头抬起一些，带起部分果块和糖浆"
+          },
+          {
+            "time": 0.291958,
+            "observation": "碗内果块明显被翻动过，深色液体附着更分散"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "勺头贴碗底开始翻动",
+            "time": 0.0,
+            "time_range": [
+              0.0,
+              0.083417
+            ]
+          },
+          {
+            "name": "果块被带离底部",
+            "time": 0.208542,
+            "time_range": [
+              0.208542,
+              0.291958
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手"
+        ],
+        "movement_roles": [
+          "扶稳碗体",
+          "持勺翻搅"
+        ],
+        "subphases": [
+          {
+            "label": "定位并接触食材",
+            "start": 0.0,
+            "end": 0.083417,
+            "detail": "右手将勺头探入碗内，贴着果块和糖浆边缘建立接触，左手同时固定碗身。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "勺头已在碗内靠近果块"
+              },
+              {
+                "time": 0.083417,
+                "observation": "手部姿势基本不变，但碗内内容物已有轻微位移"
+              }
+            ]
+          },
+          {
+            "label": "连续翻搅混合",
+            "start": 0.083417,
+            "end": 0.291958,
+            "detail": "勺头带动果块绕碗内转动，深色液体被抹开并裹到更多果块表面。",
+            "evidence": [
+              {
+                "time": 0.208542,
+                "observation": "勺头抬起并带起部分食材"
+              },
+              {
+                "time": 0.291958,
+                "observation": "碗内整体看起来比开头更混匀"
+              }
+            ]
+          }
+        ],
+        "brief": "S01-P01 用勺搅拌碗里的苹果块和糖浆。"
+      },
+      {
+        "id": "S02-A01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E01",
+        "kind": "motion",
+        "label": "继续搅拌苹果块",
+        "start": 0.333666,
+        "end": 2.419082,
+        "start_range": [
+          0.333666,
+          0.417083
+        ],
+        "end_range": [
+          2.335665,
+          2.419082
+        ],
+        "detail": "切到另一段俯视近景后，只剩一只手从右下方握着金色勺子，在同一个浅蓝绿色碗中持续做圆周式搅拌。勺头反复压过碗底的果块，把它们从堆叠状态拨散，深色糖浆逐渐铺满碗底并在果块之间流动。约在后半段，搅拌幅度略收小，最后手松开并把勺子留在碗内，勺柄斜搭向右侧。",
+        "evidence": [
+          {
+            "time": 0.333666,
+            "observation": "单手持勺重新进入搅拌状态，碗内仍有成团果块"
+          },
+          {
+            "time": 0.75075,
+            "observation": "勺头压在果块上方，周围糖浆分布更广"
+          },
+          {
+            "time": 1.251249,
+            "observation": "果块已被拨得更散，深色液体覆盖大部分碗底"
+          },
+          {
+            "time": 2.043707,
+            "observation": "搅拌接近收尾，勺头停在碗内偏左下区域"
+          },
+          {
+            "time": 2.419082,
+            "observation": "手离开，勺子静置在碗中不再移动"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "恢复持续画圈搅拌",
+            "time": 0.333666,
+            "time_range": [
+              0.333666,
+              0.417083
+            ]
+          },
+          {
+            "name": "停止搅拌留下勺子",
+            "time": 2.419082,
+            "time_range": [
+              2.335665,
+              2.419082
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": true,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "持勺划圈",
+          "拨散果块"
+        ],
+        "subphases": [
+          {
+            "label": "持续翻拌使糖浆铺开",
+            "start": 0.333666,
+            "end": 1.251249,
+            "detail": "勺头沿碗底来回推动，果块彼此分离，深色液体从局部集中变成更大面积覆盖。",
+            "evidence": [
+              {
+                "time": 0.333666,
+                "observation": "碗内仍能看到较明显的果块聚拢"
+              },
+              {
+                "time": 0.75075,
+                "observation": "勺头正压在果块上，糖浆向外扩散"
+              },
+              {
+                "time": 1.251249,
+                "observation": "多数果块已被分开，液面更均匀"
+              }
+            ]
+          },
+          {
+            "label": "收尾停搅",
+            "start": 1.251249,
+            "end": 2.419082,
+            "detail": "手的动作减小，勺头停留在碗内，随后完全松手，只留下静止的成品状态。",
+            "evidence": [
+              {
+                "time": 2.043707,
+                "observation": "勺子位置趋于固定，没有新的明显翻动"
+              },
+              {
+                "time": 2.419082,
+                "observation": "手退出，勺柄斜靠在碗边"
+              }
+            ]
+          }
+        ],
+        "brief": "S02-P01 单手继续搅拌同一碗苹果块，直到放下勺子。"
+      },
+      {
+        "id": "S03-A01",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "S03-E01",
+        "kind": "motion",
+        "label": "舀放苹果配料",
+        "start": 4.671331,
+        "end": 8.341662,
+        "start_range": [
+          4.671331,
+          4.754747
+        ],
+        "end_range": [
+          8.258246,
+          8.341662
+        ],
+        "detail": "俯视构图里，左下角是装着苹果块和深色糖浆的浅蓝绿色小碗，中间偏上是盛着燕麦粥的粉橘色大碗。一只手持金色勺子先从左下小碗舀起一份苹果块，移到粉橘色碗上方，把果块落在燕麦粥中央；接着再次回到左下小碗装第二份，重复同样的转移路径，再倒进燕麦粥中心。完成后，两堆苹果块集中在燕麦粥中部，旁边还能看到少量深色汁液渗出。",
+        "evidence": [
+          {
+            "time": 4.671331,
+            "observation": "勺子从左下小碗抬起，上面载有苹果块"
+          },
+          {
+            "time": 4.963289,
+            "observation": "勺头悬在粉橘色碗上方，正准备倾倒"
+          },
+          {
+            "time": 5.255247,
+            "observation": "第一批苹果块已经落到燕麦粥中央"
+          },
+          {
+            "time": 6.756746,
+            "observation": "勺子第二次从左下小碗舀起新的苹果块"
+          },
+          {
+            "time": 7.048705,
+            "observation": "第二批食材移动到粉橘色碗上方"
+          },
+          {
+            "time": 8.341662,
+            "observation": "两批苹果块都已完成放置，勺子离开主画面"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "第一次舀起苹果块",
+            "time": 4.671331,
+            "time_range": [
+              4.671331,
+              4.754747
+            ]
+          },
+          {
+            "name": "第一次倒入燕麦粥",
+            "time": 5.255247,
+            "time_range": [
+              5.171831,
+              5.338664
+            ]
+          },
+          {
+            "name": "第二次舀起苹果块",
+            "time": 6.756746,
+            "time_range": [
+              6.67333,
+              6.840163
+            ]
+          },
+          {
+            "name": "第二次倒入燕麦粥",
+            "time": 8.341662,
+            "time_range": [
+              8.258246,
+              8.466787
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "舀取配料",
+          "横向转移",
+          "倾倒落料"
+        ],
+        "subphases": [
+          {
+            "label": "第一轮舀取并放入",
+            "start": 4.671331,
+            "end": 5.338664,
+            "detail": "勺子先进入左下小碗装满苹果块，再抬起到粉橘色碗上方，把食材倒在燕麦粥中心。",
+            "evidence": [
+              {
+                "time": 4.671331,
+                "observation": "勺子上方可见一坨苹果块刚被舀起"
+              },
+              {
+                "time": 4.963289,
+                "observation": "勺头位于目标碗上方等待落下"
+              },
+              {
+                "time": 5.255247,
+                "observation": "第一批食材已出现在燕麦粥中央"
+              }
+            ]
+          },
+          {
+            "label": "第二轮舀取并放入",
+            "start": 6.67333,
+            "end": 8.341662,
+            "detail": "手再次回到左下小碗装第二份，然后重复相同的平移和倾倒动作，使中央配料增多。",
+            "evidence": [
+              {
+                "time": 6.756746,
+                "observation": "勺子再次承载一批新苹果块"
+              },
+              {
+                "time": 7.048705,
+                "observation": "勺头重新对准粉橘色碗中心"
+              },
+              {
+                "time": 8.341662,
+                "observation": "燕麦粥中央形成更完整的苹果块堆"
+              }
+            ]
+          }
+        ],
+        "brief": "S03-P01 分两次把小碗里的苹果块舀到燕麦粥上。"
+      },
+      {
+        "id": "S04-A01",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "S04-E01",
+        "kind": "gesture",
+        "label": "举起并指向包装罐",
+        "start": 13.263243,
+        "end": 17.475782,
+        "start_range": [
+          13.263243,
+          13.388368
+        ],
+        "end_range": [
+          17.392366,
+          17.475782
+        ],
+        "detail": "正面中景里，女子站在厨房台面后方，背景可见白色橱柜、灶台和粉色烤面包机。她先低头看向身前，双手把一个白色圆筒状包装拿起来；随后左手托住罐身下部，把它举到胸前偏右的位置，罐身上的图案朝外。之后她用右手食指多次点向罐身正面，像是在强调某个标识或说明，头部偶尔转向罐子查看，又转回面向镜头。整个过程中她的嘴部持续张合，呈现正在讲话的状态，但没有其他大幅肢体动作。",
+        "evidence": [
+          {
+            "time": 13.263243,
+            "observation": "白色圆筒包装开始被她拿到手中"
+          },
+          {
+            "time": 13.388368,
+            "observation": "双手共同托住罐体，视线向下看"
+          },
+          {
+            "time": 13.972284,
+            "observation": "左手单独举起罐子，右手伸出食指点向罐身"
+          },
+          {
+            "time": 15.390367,
+            "observation": "罐子保持在胸前高度，右手仍指向标签区域"
+          },
+          {
+            "time": 16.266241,
+            "observation": "她转头看向手中的罐子，继续维持展示姿势"
+          },
+          {
+            "time": 17.475782,
+            "observation": "左手仍举着罐子，右手收回一些但仍靠近罐身"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "拿起包装罐",
+            "time": 13.263243,
+            "time_range": [
+              13.263243,
+              13.388368
+            ]
+          },
+          {
+            "name": "改为左手单手持罐",
+            "time": 13.972284,
+            "time_range": [
+              13.888868,
+              14.097409
+            ]
+          },
+          {
+            "name": "右手食指指向罐身",
+            "time": 13.972284,
+            "time_range": [
+              13.972284,
+              15.390367
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手",
+          "头部",
+          "嘴部"
+        ],
+        "movement_roles": [
+          "拿取物品",
+          "托举展示",
+          "指点标记",
+          "说话口型"
+        ],
+        "subphases": [
+          {
+            "label": "从下方拿起包装",
+            "start": 13.263243,
+            "end": 13.680326,
+            "detail": "她低头注视前方，双手配合把白色圆筒从较低位置捧起，先完成抓握再抬高。",
+            "evidence": [
+              {
+                "time": 13.263243,
+                "observation": "罐体刚进入双手之间"
+              },
+              {
+                "time": 13.388368,
+                "observation": "双手都已接触罐身"
+              },
+              {
+                "time": 13.680326,
+                "observation": "罐子已被抬到胸前附近"
+              }
+            ]
+          },
+          {
+            "label": "左手持罐展示",
+            "start": 13.680326,
+            "end": 17.475782,
+            "detail": "左手接管重量，把罐子竖直举在身体右侧前方，罐面朝向镜头；右手则转为指示性动作，反复指向罐身。期间她有时侧头看罐，有时面向镜头，嘴部持续开合。",
+            "evidence": [
+              {
+                "time": 13.972284,
+                "observation": "左手独力托住罐子，右手食指明确指向罐面"
+              },
+              {
+                "time": 15.390367,
+                "observation": "展示姿势稳定，罐身图案清晰朝外"
+              },
+              {
+                "time": 16.266241,
+                "observation": "她转头检查手中罐子"
+              },
+              {
+                "time": 17.475782,
+                "observation": "直至片段结束仍保持举罐姿态"
+              }
+            ]
+          }
+        ],
+        "brief": "S04-P01 拿起白色圆筒包装并举起展示，同时用手指向罐身。"
+      }
+    ],
+    "uncertainties": [
+      "S01 与 S02 是否为同一次连续搅拌的不同剪辑不完全确定，只能确认都是对同一类碗装苹果块进行搅拌。",
+      "S03 中每次舀取的准确分量无法精确判断，只能看见至少两轮明显的舀放过程。",
+      "S04 中女子是否在说具体内容不可见，只能确认其嘴部持续张合并伴随展示手势。"
+    ],
+    "motion_tracks": [
+      {
+        "context": "画面为垂直俯视视角，背景是带有大理石纹理的白色台面。操作者仅露出双手：左手位于画面左侧，无名指佩戴一枚银色镶钻戒指，手指自然弯曲扶住浅蓝色碗的边缘以保持稳定；右手位于画面右侧，握着一把金色勺柄的勺子，勺头伸入碗中盛有切块水果和深色糖浆的区域。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 7,
+            "caption": "在左手持续稳固地按住碗沿、保持碗体静止不动的前提下，右手带动金色勺子进行搅拌动作。勺子从接触水果块的初始位置开始，以缓慢且连贯的速度向画面左下方划出一道弧线轨迹，将原本堆叠在表面的黄色果块拨开并推入深红色的液体中。随着勺头的移动，部分果块被翻起浸没，直至视频结束时，勺子停留在碗内偏左下的位置，完成了这一小段的混合过程。",
+            "start": 0.0,
+            "end": 0.29195817636657184,
+            "action_ids": [
+              "S01-A01"
+            ]
+          }
+        ],
+        "camera": "镜头全程保持固定的垂直俯拍特写构图，无任何推拉摇移或变焦，焦点清晰地锁定在碗内的食物与手部操作上，光线均匀明亮。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "未露脸的操作者，只见双手；左手戴戒指扶碗，右手握金色勺子"
+      },
+      {
+        "context": "画面采用垂直俯视视角，背景为带有灰色纹理的白色大理石台面。一只浅蓝色陶瓷碗位于画面正中央，碗内盛有切成小块的黄色水果（疑似苹果）和深褐色液体。操作者的右手从画面右下角入画，握着一把金色勺子伸入碗中。",
+        "phases": [
+          {
+            "from_frame": 8,
+            "to_frame": 56,
+            "caption": "操作者右手握住勺柄，在碗内进行持续的搅拌动作。手腕带动勺头在深色液体中划圈翻动，将底部的液体与表面的黄色果块混合。随着搅拌进行，原本浮在表面的果块逐渐被染上光泽并沉入汤汁中，手部位置主要在碗口范围内小幅移动。",
+            "start": 0.3336664872760821,
+            "end": 2.3356654109325747,
+            "action_ids": [
+              "S02-A01"
+            ]
+          },
+          {
+            "from_frame": 58,
+            "to_frame": 101,
+            "caption": "搅拌动作停止，操作者将金色的勺子静置在碗内的右侧区域，勺头浸没在汤汁中。随后，右手松开勺柄并向右下方移出画面，最终完全离开镜头视野。画面仅保留静止的碗、浸泡在液体中的果块以及搁置其中的勺子。",
+            "start": 2.419082032751595,
+            "end": 4.212539401860536,
+            "action_ids": []
+          }
+        ],
+        "camera": "全程保持固定的垂直俯拍机位，无推拉摇移等运镜变化，焦点清晰地锁定在中央的碗和操作的手部动作上。",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "identity": "未露脸的操作者，只见一只手握着金色勺子在碗中搅拌"
+      },
+      {
+        "context": "画面中央偏右放置一个盛有燕麦粥的粉色大碗，左下角是一个装有切块苹果和深色糖浆的浅蓝绿色小碗。操作者仅露出右手及部分前臂，手持一把金色长柄勺，位于两碗之间的区域准备进行舀取动作。",
+        "phases": [
+          {
+            "from_frame": 102,
+            "to_frame": 116,
+            "caption": "操作者的右手持金色勺子从画面下方进入，伸入左下角的浅蓝绿小碗中。勺子舀起几块裹着糖浆的黄色苹果块后向上提起，向画面中央移动至粉色大碗上方悬停。",
+            "start": 4.254247712770047,
+            "end": 4.83816406550319,
+            "action_ids": [
+              "S03-A01"
+            ]
+          },
+          {
+            "from_frame": 121,
+            "to_frame": 157,
+            "caption": "手腕轻微倾斜带动勺子翻转，将第一份苹果块倾倒在粉色大碗内的燕麦粥表面中心位置。随后勺子迅速移回左下角的小碗处再次舀取新的苹果块，并重复上述轨迹回到大碗上方。",
+            "start": 5.046705620050742,
+            "end": 6.548204812793111,
+            "action_ids": [
+              "S03-A01"
+            ]
+          },
+          {
+            "from_frame": 162,
+            "to_frame": 200,
+            "caption": "操作者持续进行第二轮倾倒动作，手腕控制角度使第二份苹果块滑落在已有的果堆旁。完成投放后，金色的勺子被完全移出画面上方视野，不再出现在镜头中。",
+            "start": 6.7567463673406625,
+            "end": 8.341662181902052,
+            "action_ids": [
+              "S03-A01"
+            ]
+          },
+          {
+            "from_frame": 205,
+            "to_frame": 255,
+            "caption": "随着工具撤离，画面恢复静止状态。粉色大碗中的燕麦粥顶部现在覆盖着一堆湿润的黄色苹果块，周围无其他肢体活动或物体交互。",
+            "start": 8.550203736449603,
+            "end": 10.635619281925118,
+            "action_ids": []
+          }
+        ],
+        "camera": "全程采用垂直俯视视角拍摄，机位保持绝对固定，无任何推拉摇移或变焦操作。光线均匀明亮，清晰呈现食物纹理与金属光泽，构图始终以两个碗为中心展开。",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "identity": "未露脸的操作者，只见一只手持金色勺子从浅蓝绿小碗舀取苹果块放到燕麦粥上"
+      },
+      {
+        "context": "该主体位于画面中央前景，站在白色瓷砖厨房中。她留着深色头发并扎成马尾，身穿深灰色V领短袖上衣，佩戴细项链。背景左侧可见粉色烤面包机，右侧有立式搅拌机及花瓶装饰。",
+        "phases": [
+          {
+            "from_frame": 256,
+            "to_frame": 314,
+            "caption": "女子正面朝向镜头站立，双手自然垂于身体两侧或微张做手势，视线直视前方，嘴部持续开合进行讲解。在此期间，她的头部保持正直，躯干稳定，未发生明显的位移或转身动作。",
+            "start": 10.677327592834628,
+            "end": 13.096409625586222,
+            "action_ids": []
+          },
+          {
+            "from_frame": 318,
+            "to_frame": 376,
+            "caption": "女子从下方拿起一个印有巧克力曲奇图案的白色圆柱形包装罐。她用左手握住罐身将其举至胸前高度，随即伸出右手食指指向罐体表面的图片细节。此时她的目光跟随手指短暂落在产品上，随后又转回看向镜头，面部表情生动。",
+            "start": 13.263242869224264,
+            "end": 15.682324901975859,
+            "action_ids": [
+              "S04-A01"
+            ]
+          },
+          {
+            "from_frame": 383,
+            "to_frame": 419,
+            "caption": "女子收回右手的指点动作，改为张开手掌在身体一侧挥动以辅助表达。与此同时，她将头转向自身的左侧（即画面右侧），视线离开镜头投向旁边的搅拌机区域，似乎在确认环境或稍作停顿，之后继续保持手持产品的姿态面向侧方。",
+            "start": 15.974283078342431,
+            "end": 17.4757822710848,
+            "action_ids": [
+              "S04-A01"
+            ]
+          }
+        ],
+        "camera": "镜头全程保持静止的中景构图，无推拉摇移。焦点始终锁定在人物身上，背景呈现自然的虚化效果，光线均匀明亮。",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "identity": "站在白色瓷砖厨房中的女子，深色头发扎起，穿深灰色V领短袖上衣"
+      }
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.4,
+        "end": 4.2,
+        "start_range": [
+          0.35,
+          0.45
+        ],
+        "end_range": [
+          4.1,
+          4.3
+        ],
+        "speaker_id": null,
+        "description": "女声，语气轻松愉快，语速适中。",
+        "evidence": [
+          {
+            "time": 0.4,
+            "observation": "开始说话 'You can stick this over ice cream...'"
+          },
+          {
+            "time": 4.2,
+            "observation": "结束句子 '...so delicious.'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "You can stick this over ice cream or yogurt and it's gonna be so delicious."
+      },
+      {
+        "id": "N001",
+        "kind": "music",
+        "layer": "background",
+        "start": 0.0,
+        "end": 17.49,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          17.4,
+          17.5
+        ],
+        "speaker_id": null,
+        "description": "轻柔的器乐背景音乐，旋律舒缓，音量较低。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "音乐从音频开头持续播放至结尾"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 4.6,
+        "end": 10.2,
+        "start_range": [
+          4.5,
+          4.7
+        ],
+        "end_range": [
+          10.1,
+          10.3
+        ],
+        "speaker_id": null,
+        "description": "女声，延续之前的讲解风格。",
+        "evidence": [
+          {
+            "time": 4.6,
+            "observation": "开始说话 'But we're just gonna top our oatmeal...'"
+          },
+          {
+            "time": 10.2,
+            "observation": "结束句子 '...apple cinnamon oatmeal.'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "But we're just gonna top our oatmeal with some apples and we have freshly made apple cinnamon oatmeal."
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 10.5,
+        "end": 17.4,
+        "start_range": [
+          10.4,
+          10.6
+        ],
+        "end_range": [
+          17.3,
+          17.5
+        ],
+        "speaker_id": null,
+        "description": "女声，对分量进行说明。",
+        "evidence": [
+          {
+            "time": 10.5,
+            "observation": "开始说话 'I'm making an individual serving here...'"
+          },
+          {
+            "time": 17.4,
+            "observation": "结束句子 '...at least like two weeks.'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "I'm making an individual serving here, but this whole can of oatmeal will last you at least like two weeks."
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          0.291958
+        ],
+        "overlap_s": 0.291958
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.4,
+          2.419082
+        ],
+        "overlap_s": 2.019082
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.333666,
+          2.419082
+        ],
+        "overlap_s": 2.085416
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          4.671331,
+          8.341662
+        ],
+        "overlap_s": 3.670331
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.671331,
+          8.341662
+        ],
+        "overlap_s": 3.670331
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          13.263243,
+          17.475782
+        ],
+        "overlap_s": 4.212539
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U002",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U003",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          13.263243,
+          17.4
+        ],
+        "overlap_s": 4.136757
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.4,
+          2.419082
+        ],
+        "overlap_s": 2.019082
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.671331,
+          8.341662
+        ],
+        "overlap_s": 3.670331
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          0.291958
+        ],
+        "overlap_s": 0.291958
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.333666,
+          2.419082
+        ],
+        "overlap_s": 2.085416
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          4.671331,
+          8.341662
+        ],
+        "overlap_s": 3.670331
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          13.263243,
+          17.475782
+        ],
+        "overlap_s": 4.212539
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U003",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          13.263243,
+          17.4
+        ],
+        "overlap_s": 4.136757
+      }
+    ]
+  },
+  "warnings": [
+    "S01 与 S02 是否为同一次连续搅拌的不同剪辑不完全确定，只能确认都是对同一类碗装苹果块进行搅拌。",
+    "S03 中每次舀取的准确分量无法精确判断，只能看见至少两轮明显的舀放过程。",
+    "S04 中女子是否在说具体内容不可见，只能确认其嘴部持续张合并伴随展示手势。"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "dded506d5ce96d3fbfcc7c7533e040004f75e67190a08c792b6e33e3c7213761",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

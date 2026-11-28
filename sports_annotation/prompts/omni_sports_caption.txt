@@ -1,0 +1,87 @@
+Provide a detailed description of the video, focusing on the fine-grained sports actions of its one or two principal participants and the temporal relationships between those actions and audible events. Produce candidate annotations for human review.
+
+Make sure your description covers the following dimensions:
+
+Visual
+- Subjects and characters: distinguish the principal participants by their visible appearance, clothing, position and equipment. Use stable identifiers within each shot, such as S01-P01 and S01-P02. Do not assume identity continuity across cuts. If a shot contains more than two principal participants, report this instead of omitting someone.
+- Actions and events: describe the observed behavior chronologically and decompose it into independently distinguishable atomic actions. An atomic action is a meaningful phase with a coherent movement pattern, not necessarily a whole sports attempt and not every small joint movement. Use a supported professional term and describe the visible mechanics in ordinary language.
+- Action details: explain how the participant's body and relevant limbs move, how posture and support change, and how equipment or other relevant objects move. Describe the action's progression, not only its final pose. Include contact, release or object flight only when supported by the images.
+- Continuous behavior coverage: for each participant in each shot, the annotations should continuously account for the visible behavior. Inspect the behavior before, between and after neighboring actions so that an observable transition is not omitted simply because its endpoints are labeled. Numerical adjacency alone does not establish completeness. Distinguish motion, maintained posture and explanatory gesture. Simultaneous actions may overlap; do not force them into a serial sequence or invent motion to fill stillness, occlusion or cuts.
+- Setting and spatial relations: include the environment, relevant objects, participant count and spatial layout needed to understand the actions. For any left/right claim, explicitly distinguish screen coordinates from the participant's anatomical sides. Check movement direction across frames; do not infer travel from a single pose or equipment position. Omit an unsupported direction and state the uncertainty.
+- Camera and visibility: note cuts, viewpoint changes, camera movement or occlusion when they affect action interpretation. Do not mistake camera motion for participant motion.
+- On-screen text is outside this task. Do not transcribe subtitles, titles, logos or UI, and do not use them as evidence for an action.
+
+Audio
+- Speech activity: identify when speech is audible and describe its observable acoustic character when useful. Do not transcribe, translate, summarize or interpret the spoken content. Do not infer which visible person is speaking.
+- Non-speech sounds: describe distinguishable transient sounds, sustained sounds, music, ambient/background sounds and non-speech vocalizations using their audible properties. Do not guess a sound's physical source from a plausible sports action.
+- Independent segmentation: estimate each audio event's onset and offset from the audio itself. Allow overlapping sounds. Keep an uninterrupted audio event intact across shot cuts or changes of visual action. Do not split it just to create one audio segment per action. Distinguish foreground events from sustained background sound or music.
+- If no speech or no audio is audible, state that explicitly. Do not invent events for silent intervals. Subtitles and verbatim transcription are handled outside this task.
+
+Audio-visual correspondence
+- Describe temporal overlap between independently identified visual actions and audio events, using their IDs and timestamps.
+- Preserve many-to-many relationships: one audio event may overlap multiple actions, including actions in different shots or by different participants; one action may overlap multiple audio events.
+- Temporal overlap means only that events occur at the same time. It does not establish who speaks, what speech describes, whether a sound is produced by an action, or any causal relationship.
+- Do not adjust either event's boundaries to make audio and motion agree. Preserve separate visual and audio intervals and mark uncertain boundary cases.
+
+It should explicitly include four sections:
+
+1. Storyline: a chronological, natural-language account of the visible behavior and concurrent audible events. Briefly identify the participants and relevant setting. Keep the account consistent with the independently timed events below; a storyline paragraph is not the annotation unit for an atomic action.
+2. Atomic Actions: a separate timestamped entry for each distinguishable action, maintained posture or gesture. Include an event ID, participant ID, type, supported technique term and a detailed description of its mechanics. Separate repeated instances. A whole attempt may organize multiple actions, but must not be counted again as an additional atomic action.
+3. Audio Events: independently timed speech activity, non-speech vocalizations, other foreground sounds, background sound and music, without transcripts or visible-speaker assignments. Give each event a stable ID, category, foreground/background layer and acoustic description.
+4. Temporal Correspondence: for each visual event, list all audio event IDs whose estimated intervals overlap it, with the overlap interval for each pair. Include overlapping background events as background context. Use "none" when there is no overlap; describe uncertain cases instead of forcing a match.
+
+Rules:
+
+- Add enough observable detail to distinguish the atomic actions and their execution, without unrelated commentary or repeated generic descriptions.
+- Use a supplied terminology glossary if available. Otherwise use the most specific conventional term supported by the evidence. If the technique is unclear, give a descriptive movement label and state the uncertainty. No sport-specific sequence, count or mandatory phase is assumed.
+- Use clip-global timestamps, starting from the beginning of the supplied clip; do not restart the clock after a cut. Use supplied frame timestamps when present. Approximate boundaries are acceptable: do not claim greater precision than the evidence supports, require exact timestamp adjacency, or impose a minimum action duration.
+- Keep visual events within their observed shots. An audio event can span shots. For a partially visible event, describe only the observed portion and indicate that its beginning or ending is cut off.
+- Describe visible actions from images and audible events from sound. Do not infer an action from speech, subtitles or sports expectations. Do not infer sound from a visible action.
+- Before answering, check each participant's continuous behavior coverage and the consistency of directions, event IDs and temporal links. Account for visible changes even when the initial draft's intervals already touch or overlap. Report unresolved observations rather than inventing a phase.
+- Carefully inspect the supplied frames and listen to the audio. If a modality is missing, explicitly report that limitation instead of fabricating its events or correspondence.
+- Write descriptions in English. Do not use Markdown bold formatting. Use the section layout below; no JSON schema is required. Repeat entries as needed, not to match the number of placeholders.
+
+Output Format:
+
+## Storyline
+
+Participants and setting:
+<shot-local participant IDs, visible identifying descriptions, and relevant scene context>
+
+<mm:ss.ss> - <mm:ss.ss>
+<A detailed natural-language paragraph describing the visible behavior and simultaneous audible activity, with explicit direction references where relevant.>
+
+...
+
+## Atomic Actions
+
+<A001> | <mm:ss.ss> - <mm:ss.ss>
+Participant: <S01-P01>
+Type: <motion / held_pose / gesture>
+Technique: <supported professional term or descriptive movement label>
+Description: <The observed progression, body and limb mechanics, relevant object movement and spatial relations.>
+Uncertainty: <material uncertainty or cropped boundary; "none noted" if applicable>
+
+...
+
+## Audio Events
+
+<U001 for speech; N001 for non-speech> | <mm:ss.ss> - <mm:ss.ss>
+Category: <speech / non-speech vocalization / transient sound / sustained sound / music / ambient sound>
+Layer: <foreground / background>
+Description: <What is audible, without verbatim words, speech meaning or an assumed visual source.>
+Uncertainty: <material uncertainty; "none noted" if applicable>
+
+...
+
+## Temporal Correspondence
+
+<visual event ID>:
+- <audio event ID> | overlap <mm:ss.ss> - <mm:ss.ss> | <foreground / background context>
+- <another overlapping audio event, if present>
+<If no audio overlaps, write "none". If a boundary makes overlap uncertain, state this.>
+
+...
+
+Unresolved coverage or input limitations:
+<Any participant/interval that cannot be reliably described, or "none noted".>

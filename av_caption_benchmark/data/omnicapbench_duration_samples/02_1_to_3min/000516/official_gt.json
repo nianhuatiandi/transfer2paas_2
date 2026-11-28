@@ -1,0 +1,1902 @@
+{
+  "duration_sec": 72.841,
+  "duration_bucket": "1-3min",
+  "num_shots": 29,
+  "num_events": 6,
+  "num_main_characters": 3,
+  "num_main_scenes": 4,
+  "shots_per_min": 23.89,
+  "events_per_min": 4.94,
+  "persons_per_min": 2.47,
+  "scenes_per_min": 3.29,
+  "category_l1": "Sports",
+  "category_l2": "Martial Arts & Combat",
+  "dataset": "LLaVA-Video-178K",
+  "shot_time": [
+    [
+      0.0,
+      0.96
+    ],
+    [
+      0.96,
+      2.46
+    ],
+    [
+      2.46,
+      5.33
+    ],
+    [
+      5.33,
+      8.17
+    ],
+    [
+      8.17,
+      10.83
+    ],
+    [
+      10.83,
+      12.33
+    ],
+    [
+      12.33,
+      13.33
+    ],
+    [
+      13.33,
+      14.5
+    ],
+    [
+      14.5,
+      17.71
+    ],
+    [
+      17.71,
+      18.42
+    ],
+    [
+      18.42,
+      19.54
+    ],
+    [
+      19.54,
+      21.33
+    ],
+    [
+      21.33,
+      23.46
+    ],
+    [
+      23.46,
+      28.83
+    ],
+    [
+      28.83,
+      30.33
+    ],
+    [
+      30.33,
+      31.46
+    ],
+    [
+      31.46,
+      33.33
+    ],
+    [
+      33.33,
+      36.58
+    ],
+    [
+      36.58,
+      39.0
+    ],
+    [
+      39.0,
+      43.29
+    ],
+    [
+      43.29,
+      44.46
+    ],
+    [
+      44.46,
+      46.33
+    ],
+    [
+      46.33,
+      53.0
+    ],
+    [
+      53.0,
+      56.67
+    ],
+    [
+      56.67,
+      64.17
+    ],
+    [
+      64.17,
+      65.0
+    ],
+    [
+      65.0,
+      68.83
+    ],
+    [
+      68.83,
+      70.92
+    ],
+    [
+      70.92,
+      72.75
+    ]
+  ],
+  "mtss_caption": {
+    "references": [
+      {
+        "ref_id": "PERSON_1_STYLE_1",
+        "type": "person",
+        "semantic_description": "The protagonist, Roy Nelson, is a UFC heavyweight boxer, dressed in casual clothes.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A heavy-set Caucasian male with a prominent bushy brown beard and long brown hair tied back. He has a serious but friendly expression.",
+            "timestamp": "3.5"
+          },
+          "attributes": {
+            "clothing": "Black T-shirt with white lettering",
+            "hairstyle": "Long brown hair tied back, with a thick beard.",
+            "accessories": "Plaid backpack (when walking outdoors)"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_1_STYLE_2",
+        "type": "person",
+        "semantic_description": "The protagonist Roy Nelson is shirtless during sumo training.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A heavy-set Caucasian male with a prominent bushy brown beard and long brown hair tied back. He is shirtless, revealing a large stomach and tattoos on his right arm and right shoulder blade.",
+            "timestamp": "64.5"
+          },
+          "attributes": {
+            "clothing": "Black compression shorts",
+            "hairstyle": "Long brown hair tied back, with a thick beard.",
+            "accessories": "none"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_2",
+        "type": "person",
+        "semantic_description": "A sumo wrestler who instructs Roy Nelson at the wooden pillar.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A tall and muscular man with black hair tied back in a bun looks focused. He is shirtless.",
+            "timestamp": "38.5"
+          },
+          "attributes": {
+            "clothing": "Traditional dark sumo belt (mawashi)",
+            "hairstyle": "Short dark hair tied into a topknot",
+            "accessories": "none"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_3",
+        "type": "person",
+        "semantic_description": "The sumo wrestler who fought against Roy Nelson on the muddy ground.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A large, heavy-set Asian male, likely Japanese. He has his hair tied up in a traditional sumo topknot. He is shirtless.",
+            "timestamp": "53.5"
+          },
+          "attributes": {
+            "clothing": "Traditional dark sumo belt (mawashi)",
+            "hairstyle": "Traditional sumo topknot",
+            "accessories": "none"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_4",
+        "type": "person",
+        "semantic_description": "A senior sumo wrestler giving instructions to the group.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A very large, heavy-set Asian male with a round face. He is shirtless and appears to have authority in the training session.",
+            "timestamp": "48.5"
+          },
+          "attributes": {
+            "clothing": "Dark green sumo belt (mawashi)",
+            "hairstyle": "Short dark hair",
+            "accessories": "White bandage on the left knee"
+          }
+        }
+      },
+      {
+        "ref_id": "OBJECT_1",
+        "type": "object",
+        "semantic_description": "Wooden striking pillar in the sumo stable.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "Vertical, thick cylindrical wooden pillar with visible surface wear and vertical cracks.",
+            "timestamp": "35.5"
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_1",
+        "type": "scene",
+        "semantic_description": "Exterior views of Tokyo, Japan.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "Aerial view of a dense urban landscape with skyscrapers and a hazy sky, followed by a street-level view of traffic on a city road lined with buildings and trees.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_2",
+        "type": "scene",
+        "semantic_description": "Inside a moving car.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "The interior of a car, focusing on the back seat area with beige upholstery, with blurred city streets visible through the windows.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_3",
+        "type": "scene",
+        "semantic_description": "A traditional sumo training facility.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "An indoor space featuring a dirt ring (dohyo) on the floor, surrounded by wooden paneled walls, structural wooden pillars, and a locker area with open shelving.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_4",
+        "type": "scene",
+        "semantic_description": "Formal room in the sumo facility.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "Room with tatami mat flooring, sliding shoji screens, and framed black-and-white portraits near the ceiling.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      }
+    ],
+    "events": [
+      {
+        "event_id": "DIALOGUE_1",
+        "type": "dialogue",
+        "time_range": [
+          0.0,
+          10.4
+        ],
+        "content": {
+          "speaker": "PERSON_1_STYLE_1",
+          "line": "We're down to do, I guess sumo. It's a sumo oheya, I believe it is. To kinda just do some sumo wrestling and to put it in your repertoire to be a better fighter.",
+          "description": "[PERSON_1_STYLE_1] speaks, initially as a voiceover over city scenes, then on-camera while riding in the back seat of a car, and returning to a voiceover. He explains the purpose of his visit in a calm, casual tone."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_2",
+        "type": "dialogue",
+        "time_range": [
+          11.0,
+          12.5
+        ],
+        "content": {
+          "speaker": "an unseen male guide",
+          "line": "This is called mawashi.",
+          "description": "An off-screen male voice identifies the traditional sumo belt that PERSON_1_STYLE_2 is being fitted with by other wrestlers."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_3",
+        "type": "dialogue",
+        "time_range": [
+          14.0,
+          15.5
+        ],
+        "content": {
+          "speaker": "an unseen male guide",
+          "line": "He's keep tight on this.",
+          "description": "An off-camera male voice gives instructions as the wrestler tightly secures the belt around [PERSON_1_STYLE_2]'s waist."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_4",
+        "type": "dialogue",
+        "time_range": [
+          23.5,
+          28.5
+        ],
+        "content": {
+          "speaker": "multiple sumo wrestlers",
+          "line": "Yo! Yo!",
+          "description": "Several sumo wrestlers shout short, rhythmic 'Yo!' vocalizations in unison while performing warm-up stomps and claps in the training ring."
+        }
+      },
+      {
+        "event_id": "SFX_1",
+        "type": "sfx",
+        "time_range": [
+          30.0,
+          31.5
+        ],
+        "content": {
+          "description": "Loud, resonant thuds as PERSON_1_STYLE_2 repeatedly strikes a large wooden pillar with his open palms and forearms during a conditioning drill."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_5",
+        "type": "dialogue",
+        "time_range": [
+          32.0,
+          37.5
+        ],
+        "content": {
+          "speaker": "PERSON_2",
+          "line": "You have to cross your hands like this. And go, from right.",
+          "description": "PERSON_2 demonstrates the correct hand-crossing technique on the wooden pillar and instructs PERSON_1_STYLE_2 on how to alternate strikes, speaking in accented English."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_6",
+        "type": "dialogue",
+        "time_range": [
+          38.5,
+          41.5
+        ],
+        "content": {
+          "speaker": "PERSON_2",
+          "line": "You have to keep tucking your left hand. In, like that.",
+          "description": "PERSON_2 continues to provide detailed instructions, emphasizing that after each strike, PERSON_1_STYLE_2 must pull that prominent arm back close to the body."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_7",
+        "type": "dialogue",
+        "time_range": [
+          42.0,
+          43.5
+        ],
+        "content": {
+          "speaker": "PERSON_1_STYLE_2",
+          "line": "Oh, gotcha.",
+          "description": "[PERSON_1_STYLE_2] responded to [PERSON_2]'s instructions with a brief affirmative reply, indicating that he understood the technique."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_8",
+        "type": "dialogue",
+        "time_range": [
+          48.0,
+          52.0
+        ],
+        "content": {
+          "speaker": "PERSON_4",
+          "line": "You don't have to... you just jump this one. Do like this.",
+          "description": "[PERSON_4] instructs the group of wrestlers, demonstrating a crouching technique while speaking in English with slight hesitation."
+        }
+      },
+      {
+        "event_id": "SFX_2",
+        "type": "sfx",
+        "time_range": [
+          53.0,
+          56.0
+        ],
+        "content": {
+          "description": "The loud noise caused by the collision between [PERSON_1_STYLE_2] and [PERSON_3] is followed by muffled groans, heavy breathing, and the sound of bare feet sliding quickly across muddy ground."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_9",
+        "type": "dialogue",
+        "time_range": [
+          56.0,
+          63.5
+        ],
+        "content": {
+          "speaker": "multiple sumo wrestlers",
+          "line": "Saa! Aite! Ashi! Ashi! Ashi!",
+          "description": "In sumo wrestling matches, the wrestlers surrounding the ring shout encouragement and tactical instructions in Japanese loudly and quickly, including \"Ashi!\" (feet/legs)."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_10",
+        "type": "dialogue",
+        "time_range": [
+          65.5,
+          70.8
+        ],
+        "content": {
+          "speaker": "PERSON_1_STYLE_2",
+          "line": "For myself that was the first time doing sumo, but very interesting. Probably put it in my technique at home. Um, I just gotta find some big guys.",
+          "description": "[PERSON_1_STYLE_2] speaks directly to the camera while panting slightly from exertion. He reflects on his first sumo experience with a casual, somewhat amused tone, expressing interest in incorporating the techniques."
+        }
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "shot_1",
+        "time_range": [
+          0.0,
+          0.96
+        ],
+        "shot_transfer": "Opening shot revealing an aerial view of Tokyo in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              0.0,
+              0.96
+            ],
+            "sub_shot_content": "[SCENE_1] presents a broad aerial view of a dense urban landscape, with dark clouds in the sky and numerous skyscrapers towering above."
+          },
+          {
+            "sub_shot_time": [
+              0.0,
+              0.96
+            ],
+            "sub_shot_content": "In the lower left corner of the screen, there is white text that reads \"TOKYO JAPAN\"."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "high angle",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_2",
+        "time_range": [
+          0.96,
+          2.46
+        ],
+        "shot_transfer": "Hard cut from the aerial view to a street-level road in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              0.96,
+              2.46
+            ],
+            "sub_shot_content": "[SCENE_1], wide shot from inside a moving vehicle traveling down a multi-lane city street lined with tall trees and commercial buildings."
+          },
+          {
+            "sub_shot_time": [
+              0.96,
+              1.7
+            ],
+            "sub_shot_content": "A silver van and a smaller white vehicle drive in the lanes ahead, with a green overhead highway sign visible in the distance."
+          },
+          {
+            "sub_shot_time": [
+              1.7,
+              2.46
+            ],
+            "sub_shot_content": "The camera tracks forward along the street, passing parked cars and green foliage on the sidewalk."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "tracking forward"
+        },
+        "active_events": [
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_3",
+        "time_range": [
+          2.46,
+          5.33
+        ],
+        "shot_transfer": "Hard cut to the interior of a moving car showing [PERSON_1_STYLE_1] in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              2.46,
+              5.33
+            ],
+            "sub_shot_content": "[SCENE_2], a medium shot inside the back of a car with beige upholstery, illuminated by natural daylight."
+          },
+          {
+            "sub_shot_time": [
+              2.46,
+              3.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_1] sits in the back seat, leaning slightly forward, and speaks while maintaining eye contact with the camera. City street scenes pass by outside the window behind him."
+          },
+          {
+            "sub_shot_time": [
+              3.0,
+              5.33
+            ],
+            "sub_shot_content": "White text \"ROY NELSON UFC HEAVYWEIGHT\" appears in the lower left corner, covering part of the image."
+          },
+          {
+            "sub_shot_time": [
+              3.5,
+              5.33
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_1] continues his explanation, nodding slightly while maintaining eye contact with the lens."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_1",
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_4",
+        "time_range": [
+          5.33,
+          8.17
+        ],
+        "shot_transfer": "Hard cut to a view of the street from inside the moving car in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              5.33,
+              8.17
+            ],
+            "sub_shot_content": "[SCENE_1], wide shot from inside a moving vehicle approaching a large city intersection marked with white crosswalk lines."
+          },
+          {
+            "sub_shot_time": [
+              5.33,
+              6.5
+            ],
+            "sub_shot_content": "The vehicle approaches an intersection with a red traffic light, above which a red circular sign prohibiting entry hangs from the crossbeam."
+          },
+          {
+            "sub_shot_time": [
+              6.5,
+              8.17
+            ],
+            "sub_shot_content": "The vehicle crosses the intersection and continues along the tree-lined street, passing by a white car and several multi-story buildings."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "tracking forward"
+        },
+        "active_events": [
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_5",
+        "time_range": [
+          8.17,
+          10.83
+        ],
+        "shot_transfer": "Hard cut to [PERSON_1_STYLE_1] walking on a sidewalk in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              8.17,
+              10.83
+            ],
+            "sub_shot_content": "[SCENE_1], medium wide shot showing a paved city sidewalk alongside a narrow street."
+          },
+          {
+            "sub_shot_time": [
+              8.17,
+              9.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_1] walks briskly from the left side of the frame towards the right, carrying a plaid backpack over his right shoulder and holding a clear water bottle in his left hand."
+          },
+          {
+            "sub_shot_time": [
+              9.5,
+              10.83
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_1] turns to his right, passing a row of parked bicycles, and walks into the dark entrance of a building."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium wide shot",
+          "angle": "eye level",
+          "movement": "pan right"
+        },
+        "active_events": [
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_6",
+        "time_range": [
+          10.83,
+          12.33
+        ],
+        "shot_transfer": "Hard cut to the indoor locker room of [SCENE_3] with [PERSON_1_STYLE_2] and two other men.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              10.83,
+              12.33
+            ],
+            "sub_shot_content": "[SCENE_3], medium wide shot inside a locker room with light pink walls, wooden open shelving holding clothes, and a white electric fan on the floor."
+          },
+          {
+            "sub_shot_time": [
+              10.83,
+              11.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2], wearing black compression shorts, stands in the center of the room while a large sumo wrestler behind him holds a long, folded dark green mawashi."
+          },
+          {
+            "sub_shot_time": [
+              11.5,
+              12.33
+            ],
+            "sub_shot_content": "A second sumo wrestler steps in front of [PERSON_1_STYLE_2], taking the other end of the green mawashi and pulling it around [PERSON_1_STYLE_2]'s waist."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium wide shot",
+          "angle": "eye level",
+          "movement": "handheld"
+        },
+        "active_events": [
+          "DIALOGUE_2"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_7",
+        "time_range": [
+          12.33,
+          13.33
+        ],
+        "shot_transfer": "Hard cut to a slightly closer angle of [PERSON_1_STYLE_2] being wrapped in the belt in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              12.33,
+              13.33
+            ],
+            "sub_shot_content": "[SCENE_3] features a closer medium shot, capturing the interior of a dressing room with a focus on the men's upper bodies."
+          },
+          {
+            "sub_shot_time": [
+              12.33,
+              12.8
+            ],
+            "sub_shot_content": "The sumo wrestler standing behind [PERSON_1_STYLE_2] pulls the dark green fabric tight against [PERSON_1_STYLE_2]'s lower back."
+          },
+          {
+            "sub_shot_time": [
+              12.8,
+              13.33
+            ],
+            "sub_shot_content": "The sumo wrestler in front of [PERSON_1_STYLE_2] leans back, pulling the fabric taut and beginning to wrap it around [PERSON_1_STYLE_2]'s waist."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "handheld"
+        },
+        "active_events": [
+          "DIALOGUE_2"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_8",
+        "time_range": [
+          13.33,
+          14.5
+        ],
+        "shot_transfer": "Hard cut to another angle of the wrestlers tightening the belt on [PERSON_1_STYLE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              13.33,
+              14.5
+            ],
+            "sub_shot_content": "[SCENE_3], medium side-profile shot of [PERSON_1_STYLE_2] standing between the two sumo wrestlers."
+          },
+          {
+            "sub_shot_time": [
+              13.33,
+              14.0
+            ],
+            "sub_shot_content": "The wrestler behind [PERSON_1_STYLE_2] pulls the dark green mawashi firmly, adjusting its placement over [PERSON_1_STYLE_2]'s lower back."
+          },
+          {
+            "sub_shot_time": [
+              14.0,
+              14.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] raises both hands to his chest level, allowing the wrestler in front to pull the fabric under his arms and around his body."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "handheld"
+        },
+        "active_events": [
+          "DIALOGUE_3"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_9",
+        "time_range": [
+          14.5,
+          17.71
+        ],
+        "shot_transfer": "Hard cut to a front angle of [PERSON_1_STYLE_2] holding the fabric in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              14.5,
+              17.71
+            ],
+            "sub_shot_content": "[SCENE_3], medium shot showing [PERSON_1_STYLE_2] from the front, with the two sumo wrestlers wrapping the mawashi."
+          },
+          {
+            "sub_shot_time": [
+              14.5,
+              15.0
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] extends his left hand, takes a folded green belt from the wrestler in front of him, and brings it close to his face."
+          },
+          {
+            "sub_shot_time": [
+              15.0,
+              16.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] bites down on the folded section of the green mawashi, holding it securely in his mouth to keep the tension."
+          },
+          {
+            "sub_shot_time": [
+              16.5,
+              17.71
+            ],
+            "sub_shot_content": "While [PERSON_1_STYLE_2] holds the fabric in his mouth, the two sumo wrestlers pull the ends of the mawashi tightly to secure the wrap around his waist."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "handheld"
+        },
+        "active_events": [
+          "DIALOGUE_3"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_10",
+        "time_range": [
+          17.71,
+          18.42
+        ],
+        "shot_transfer": "Hard cut to a side view of [PERSON_1_STYLE_2] in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              17.71,
+              18.42
+            ],
+            "sub_shot_content": "[SCENE_3], medium wide shot from a side angle, showing [PERSON_1_STYLE_2] and a third sumo wrestler."
+          },
+          {
+            "sub_shot_time": [
+              17.71,
+              18.42
+            ],
+            "sub_shot_content": "A sumo wrestler wearing a black mawashi stands to the right and reaches out, gently patting the newly wrapped green mawashi on [PERSON_1_STYLE_2]'s right hip."
+          },
+          {
+            "sub_shot_time": [
+              17.71,
+              18.42
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] stands upright with his hands resting lightly near his hips, looking towards the wrestler who is patting him."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium wide shot",
+          "angle": "eye level",
+          "movement": "handheld"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_11",
+        "time_range": [
+          18.42,
+          19.54
+        ],
+        "shot_transfer": "Opening shot revealing [PERSON_1_STYLE_2] getting dressed in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              18.42,
+              19.54
+            ],
+            "sub_shot_content": "[SCENE_3] is a static medium-shot depicting an indoor sumo training room. The room is illuminated by bright ceiling lights, and the walls are painted pink."
+          },
+          {
+            "sub_shot_time": [
+              18.42,
+              19.0
+            ],
+            "sub_shot_content": "A shirtless sumo wrestler on the right pulls the long dark green mawashi cloth tightly across the waist of [PERSON_1_STYLE_2]."
+          },
+          {
+            "sub_shot_time": [
+              19.0,
+              19.54
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] stands still, looking downward, holding his stance with his left hand resting steadily on his hip as the cloth is tightened."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_12",
+        "time_range": [
+          19.54,
+          21.33
+        ],
+        "shot_transfer": "The scene suddenly switches to a slightly different angle of viewing the hakama footwear.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              19.54,
+              21.33
+            ],
+            "sub_shot_content": "[SCENE_3], a static medium shot from a slightly shifted angle showing the wrestlers in front of a pink wall and open lockers."
+          },
+          {
+            "sub_shot_time": [
+              19.54,
+              20.5
+            ],
+            "sub_shot_content": "A sumo wrestler on the right firmly pulls the long dark green mawashi cloth one final time to secure it around the waist of [PERSON_1_STYLE_2]."
+          },
+          {
+            "sub_shot_time": [
+              20.5,
+              21.33
+            ],
+            "sub_shot_content": "The sumo wrestler releases the cloth, steps back, and gives a light pat to the right hip of [PERSON_1_STYLE_2], signaling the fitting is complete."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_13",
+        "time_range": [
+          21.33,
+          23.46
+        ],
+        "shot_transfer": "Hard cut to a low angle view of the dirt ring in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              21.33,
+              23.46
+            ],
+            "sub_shot_content": "[SCENE_3], a static low-angle wide shot emphasizing the textured dirt surface of the sumo ring."
+          },
+          {
+            "sub_shot_time": [
+              21.33,
+              22.5
+            ],
+            "sub_shot_content": "Someone sweeps the loose dirt of the training ring from left to right using a traditional long-handled straw broom."
+          },
+          {
+            "sub_shot_time": [
+              22.5,
+              23.46
+            ],
+            "sub_shot_content": "The thick, bare legs and feet of multiple sumo wrestlers shuffle and step across the dirt floor in the background."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "low angle",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_14",
+        "time_range": [
+          23.46,
+          28.83
+        ],
+        "shot_transfer": "Hard cut to a medium shot of sumo wrestlers warming up.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              23.46,
+              28.83
+            ],
+            "sub_shot_content": "[SCENE_3] is a static medium-shot depicting several bare-chested sumo wrestlers doing warm-up exercises in front of a wooden wall."
+          },
+          {
+            "sub_shot_time": [
+              23.46,
+              24.5
+            ],
+            "sub_shot_content": "A heavy-set sumo wrestler in the center foreground squats slightly, claps his hands, and begins to lift his right leg high into the air."
+          },
+          {
+            "sub_shot_time": [
+              24.5,
+              25.5
+            ],
+            "sub_shot_content": "The sumo wrestler forcefully stomps his bare right foot down onto the dirt floor, holding a deep squatting posture."
+          },
+          {
+            "sub_shot_time": [
+              26.5,
+              27.5
+            ],
+            "sub_shot_content": "Maintaining his balance, the sumo wrestler leans to his right and lifts his left leg high up toward his shoulder level."
+          },
+          {
+            "sub_shot_time": [
+              27.5,
+              28.5
+            ],
+            "sub_shot_content": "The sumo wrestler brings his left leg down, forcefully stomping his bare foot into the dirt while keeping his arms bent in front of his chest."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_4"
+        ],
+        "references_in_shot": [
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_15",
+        "time_range": [
+          28.83,
+          30.33
+        ],
+        "shot_transfer": "Hard cut to a low angle close-up of the wrestlers' legs on the dirt floor.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              28.83,
+              30.33
+            ],
+            "sub_shot_content": "[SCENE_3], a static low-angle close-up focused entirely on the uneven, swept dirt surface of the training ring."
+          },
+          {
+            "sub_shot_time": [
+              28.83,
+              29.5
+            ],
+            "sub_shot_content": "A pair of muscular bare legs with taped toes steps forward into the frame from the left side, kicking up small amounts of dirt."
+          },
+          {
+            "sub_shot_time": [
+              29.5,
+              30.33
+            ],
+            "sub_shot_content": "The bare feet of other sumo wrestlers continuously shift and shuffle on the dirt floor in the soft-focused background."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "low angle",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_16",
+        "time_range": [
+          30.33,
+          31.46
+        ],
+        "shot_transfer": "Hard cut to a medium shot of [PERSON_1_STYLE_2] striking [OBJECT_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              30.33,
+              31.46
+            ],
+            "sub_shot_content": "In [SCENE_3], there is a static medium-shot where [PERSON_1_STYLE_2] is vigorously practicing hitting targets with [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              30.33,
+              30.8
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] forcefully strikes the front of [OBJECT_1] with the open palm and forearm of his right hand."
+          },
+          {
+            "sub_shot_time": [
+              30.8,
+              31.46
+            ],
+            "sub_shot_content": "Quickly alternating sides, [PERSON_1_STYLE_2] thrusts forward to strike [OBJECT_1] heavily with his left palm and forearm."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "SFX_1"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "OBJECT_1",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_17",
+        "time_range": [
+          31.46,
+          33.33
+        ],
+        "shot_transfer": "Hard cut to a different angle showing [PERSON_1_STYLE_2] and [PERSON_2] next to [OBJECT_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              31.46,
+              33.33
+            ],
+            "sub_shot_content": "[SCENE_3], a static medium shot capturing [PERSON_1_STYLE_2] and [PERSON_2] standing on opposite sides of [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              31.46,
+              32.5
+            ],
+            "sub_shot_content": "[PERSON_2] speaks instructively while raising his right hand in a fist near his chest to emphasize a technique."
+          },
+          {
+            "sub_shot_time": [
+              31.46,
+              32.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2], positioned on the left, turns his head slightly, keeping his eyes fixed attentively on [PERSON_2]."
+          },
+          {
+            "sub_shot_time": [
+              32.5,
+              33.33
+            ],
+            "sub_shot_content": "[PERSON_2] lowers his hands from his chest and places both open palms flat against the rough surface of [OBJECT_1]."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_5"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_18",
+        "time_range": [
+          33.33,
+          36.58
+        ],
+        "shot_transfer": "Hard cut to a slightly closer view of [PERSON_1_STYLE_2] and [PERSON_2] at [OBJECT_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              33.33,
+              36.58
+            ],
+            "sub_shot_content": "[SCENE_3] is a static medium close-up shot taken from a slightly adjusted angle, highlighting the interaction scenes related to [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              33.33,
+              35.0
+            ],
+            "sub_shot_content": "[PERSON_2] demonstrates a striking technique by pressing his hands alternately against the sides of [OBJECT_1] in rhythmic pushing motions."
+          },
+          {
+            "sub_shot_time": [
+              34.0,
+              35.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] watches closely, his arms relaxed at his sides, and nods his head slightly to acknowledge the instruction."
+          },
+          {
+            "sub_shot_time": [
+              35.0,
+              36.58
+            ],
+            "sub_shot_content": "[PERSON_2] lifts his right hand off [OBJECT_1], adjusts its angle, and places it back firmly onto the wood while continuing to explain the movement."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_5"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_19",
+        "time_range": [
+          36.58,
+          39.0
+        ],
+        "shot_transfer": "Hard cut to another angle showing [PERSON_1_STYLE_2] placing his hands on [OBJECT_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              36.58,
+              39.0
+            ],
+            "sub_shot_content": "[SCENE_3], a static medium shot from a wider angle, showing the entire upper bodies of both men next to [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              36.58,
+              37.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] reaches forward, extending both arms to place his hands flat against the curved surface of [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              37.5,
+              39.0
+            ],
+            "sub_shot_content": "[PERSON_2] leans in slightly, pointing down with his left hand to correct [PERSON_1_STYLE_2]'s arm posture while verbally instructing him."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_5",
+          "DIALOGUE_6"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_20",
+        "time_range": [
+          39.0,
+          43.29
+        ],
+        "shot_transfer": "Hard cut to a wider angle of [PERSON_1_STYLE_2] and [PERSON_2] interacting.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              39.0,
+              43.29
+            ],
+            "sub_shot_content": "[SCENE_3], a static medium shot capturing the ongoing training interaction beside the large wooden pillar."
+          },
+          {
+            "sub_shot_time": [
+              39.0,
+              41.5
+            ],
+            "sub_shot_content": "[PERSON_2] demonstrates the technique by sharply pulling his left arm back, tucking his elbow tightly against his ribs."
+          },
+          {
+            "sub_shot_time": [
+              41.5,
+              43.29
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] mimics the movement, deliberately pulling his own left arm back and tucking his elbow close to his body."
+          },
+          {
+            "sub_shot_time": [
+              42.0,
+              43.0
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] nods to indicate understanding, maintaining eye contact with [PERSON_2] while practicing the pose."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_6",
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_21",
+        "time_range": [
+          43.29,
+          44.46
+        ],
+        "shot_transfer": "There is a sudden switch from the previous medium shot to a low-angle view of the wooden pillar in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              43.29,
+              44.46
+            ],
+            "sub_shot_content": "A low angle view in [SCENE_3] capturing the lower portion of the wooden striking pillar, [OBJECT_1], and the bare legs of sumo wrestlers standing on the dirt floor."
+          },
+          {
+            "sub_shot_time": [
+              43.29,
+              43.8
+            ],
+            "sub_shot_content": "The camera focuses on the bare feet and calves of [PERSON_1_STYLE_2] and [PERSON_2], who are standing next to the base of [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              43.8,
+              44.46
+            ],
+            "sub_shot_content": "The legs of [PERSON_2] pivot as he turns and walks out of the frame towards the right side."
+          }
+        ],
+        "camera": {
+          "shot_type": "low angle shot",
+          "angle": "low angle",
+          "movement": "static with slight pan"
+        },
+        "active_events": [
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_22",
+        "time_range": [
+          44.46,
+          46.33
+        ],
+        "shot_transfer": "Suddenly switching to a medium shot of [PERSON_1_STYLE_2] standing next to a wooden pillar.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              44.46,
+              46.33
+            ],
+            "sub_shot_content": "[SCENE_3], medium shot showing [PERSON_1_STYLE_2] standing next to the large wooden pillar [OBJECT_1], appearing to recover from the exercise."
+          },
+          {
+            "sub_shot_time": [
+              44.46,
+              45.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] leans his left shoulder slightly against [OBJECT_1], catching his breath after the striking drill."
+          },
+          {
+            "sub_shot_time": [
+              45.0,
+              46.33
+            ],
+            "sub_shot_content": "In the background, another sumo wrestler bends forward at the waist, stretching his legs near the edge of the dirt ring."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "OBJECT_1",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_23",
+        "time_range": [
+          46.33,
+          53.0
+        ],
+        "shot_transfer": "Hard cut to a wider view of the wrestlers gathered in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              46.33,
+              53.0
+            ],
+            "sub_shot_content": "A wide shot of [SCENE_3] where several large sumo wrestlers wearing dark mawashis are gathered around the edge of the dirt ring."
+          },
+          {
+            "sub_shot_time": [
+              46.33,
+              47.5
+            ],
+            "sub_shot_content": "[PERSON_4] stands near the center of the group, wiping sweat from his face and neck with a green towel."
+          },
+          {
+            "sub_shot_time": [
+              47.5,
+              48.5
+            ],
+            "sub_shot_content": "[PERSON_4] pulls the green towel away from his face and addresses the group, looking towards the right side of the frame."
+          },
+          {
+            "sub_shot_time": [
+              48.5,
+              50.5
+            ],
+            "sub_shot_content": "[PERSON_4] demonstrates a technique by making a downward motion with both hands, lowering his center of gravity slightly."
+          },
+          {
+            "sub_shot_time": [
+              50.5,
+              52.0
+            ],
+            "sub_shot_content": "[PERSON_4] squats down deeply into a traditional sumo starting stance, placing his fists on the dirt floor to show the proper posture."
+          },
+          {
+            "sub_shot_time": [
+              51.5,
+              53.0
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2], positioned on the right, and [PERSON_3], on the left, both crouch down onto the dirt ring, facing each other in preparation for a sparring bout."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_8"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "PERSON_3",
+          "PERSON_4",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_24",
+        "time_range": [
+          53.0,
+          56.67
+        ],
+        "shot_transfer": "Hard cut to a medium side view of [PERSON_1_STYLE_2] and [PERSON_3] sparring.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              53.0,
+              56.67
+            ],
+            "sub_shot_content": "In [SCENE_3], it is a medium-shot that captures [PERSON_3] on the left and [PERSON_1_STYLE_2] crouching on the right."
+          },
+          {
+            "sub_shot_time": [
+              53.0,
+              53.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] and [PERSON_3] aggressively lunge forward from their low stances, pushing off the dirt floor."
+          },
+          {
+            "sub_shot_time": [
+              53.5,
+              54.0
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] and [PERSON_3] collide face-to-face, their chests pressed together as they extend their arms to try to grasp each other's bodies."
+          },
+          {
+            "sub_shot_time": [
+              54.0,
+              56.67
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] and [PERSON_3] engage in intense grappling, locking their arms around each other and rapidly shuffling their feet, kicking up dirt as they push back and forth."
+          },
+          {
+            "sub_shot_time": [
+              55.0,
+              56.67
+            ],
+            "sub_shot_content": "Other shirtless sumo wrestlers wearing mawashis stand attentively in the background, watching the sparring match closely."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static with slight pan"
+        },
+        "active_events": [
+          "SFX_2",
+          "DIALOGUE_9"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "PERSON_3",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_25",
+        "time_range": [
+          56.67,
+          64.17
+        ],
+        "shot_transfer": "Hard cut to a shaky, low-angle close-up of the grappling wrestlers.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              56.67,
+              64.17
+            ],
+            "sub_shot_content": "A tight, dynamic, low-angle close-up in [SCENE_3] focusing heavily on the physical struggle of the wrestlers."
+          },
+          {
+            "sub_shot_time": [
+              56.67,
+              59.0
+            ],
+            "sub_shot_content": "The camera captures a very tight view of a wrestler's leg stepping forward, quickly panning up to show [PERSON_1_STYLE_2] and [PERSON_3] pushing against each other, bodies pressed tightly together."
+          },
+          {
+            "sub_shot_time": [
+              59.0,
+              61.0
+            ],
+            "sub_shot_content": "The camera angle rapidly shifts, looking up at the tightly locked arms of the wrestlers as they grapple, showing [PERSON_1_STYLE_2]'s right arm hooked under [PERSON_3]'s."
+          },
+          {
+            "sub_shot_time": [
+              61.0,
+              63.0
+            ],
+            "sub_shot_content": "The close-up clearly reveals a wrestler's hands tightly gripping the heavy fabric of the opponent's mawashi, straining with effort."
+          },
+          {
+            "sub_shot_time": [
+              63.0,
+              64.17
+            ],
+            "sub_shot_content": "The camera pans down slightly, showing [PERSON_1_STYLE_2]'s face pressed hard against [PERSON_3]'s chest as they vigorously push against each other for leverage."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "low angle",
+          "movement": "shaky and rapid panning"
+        },
+        "active_events": [
+          "DIALOGUE_9"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "PERSON_3",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_26",
+        "time_range": [
+          64.17,
+          65.0
+        ],
+        "shot_transfer": "The camera suddenly switches to a medium shot, showing that the wrestlers have now separated.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              64.17,
+              65.0
+            ],
+            "sub_shot_content": "A medium shot in [SCENE_3] as the intense grappling match concludes."
+          },
+          {
+            "sub_shot_time": [
+              64.17,
+              64.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] and [PERSON_3] abruptly release their grips on each other and step back, separating."
+          },
+          {
+            "sub_shot_time": [
+              64.5,
+              65.0
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] stands up fully, appearing exhausted, and turns his body to begin walking towards the left side of the screen."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "PERSON_3",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_27",
+        "time_range": [
+          65.0,
+          68.83
+        ],
+        "shot_transfer": "Hard cut to follow [PERSON_1_STYLE_2] walking across the room.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              65.0,
+              68.83
+            ],
+            "sub_shot_content": "A medium shot in [SCENE_3] tracking [PERSON_1_STYLE_2] as he moves through the training area."
+          },
+          {
+            "sub_shot_time": [
+              65.0,
+              66.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] walks slowly from the right side to the left side of the frame, visibly panting and sweaty."
+          },
+          {
+            "sub_shot_time": [
+              66.5,
+              67.5
+            ],
+            "sub_shot_content": "The camera pans smoothly to the left, tracking [PERSON_1_STYLE_2] as his large back is shown passing in front of the lens, partially obscuring the view of the other wrestlers."
+          },
+          {
+            "sub_shot_time": [
+              67.5,
+              68.83
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] continues walking towards the left, passing by another sumo wrestler who is adjusting his hand wraps near the wooden wall."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "panning left"
+        },
+        "active_events": [
+          "DIALOGUE_10"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_28",
+        "time_range": [
+          68.83,
+          70.92
+        ],
+        "shot_transfer": "Hard cut to [PERSON_1_STYLE_2] standing against a concrete wall.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              68.83,
+              70.92
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] is shown in a medium close-up, standing in front of a gray wavy concrete wall in an area that appears to be different within the facility."
+          },
+          {
+            "sub_shot_time": [
+              68.83,
+              70.92
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2], with his long wet hair down, stands facing the camera, speaking directly into the lens while catching his breath."
+          },
+          {
+            "sub_shot_time": [
+              69.0,
+              70.92
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_2] holds a half-full transparent plastic water bottle with a blue cap in his right hand, with the bottle at waist height."
+          },
+          {
+            "sub_shot_time": [
+              68.83,
+              70.92
+            ],
+            "sub_shot_content": "A tall, shirtless sumo wrestler with his hair tied back stands quietly to the left of [PERSON_1_STYLE_2], listening to him speak."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_10"
+        ],
+        "references_in_shot": [
+          "PERSON_1_STYLE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_29",
+        "time_range": [
+          70.92,
+          72.75
+        ],
+        "shot_transfer": "Hard cut to [PERSON_1_STYLE_1] in a formal room in [SCENE_4].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              70.92,
+              72.75
+            ],
+            "sub_shot_content": "A wide shot revealing [SCENE_4], a traditional Japanese room featuring tatami mat flooring, sliding doors, and a row of framed black-and-white portraits hanging near the ceiling."
+          },
+          {
+            "sub_shot_time": [
+              70.92,
+              71.5
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_1], wearing a black t-shirt, grey shorts, and carrying a plaid backpack, stands on the right side of the room, facing three older men."
+          },
+          {
+            "sub_shot_time": [
+              71.5,
+              72.75
+            ],
+            "sub_shot_content": "[PERSON_1_STYLE_1] bows deeply as a gesture of respect towards the elderly man sitting by the central firepit and the two men in white shirts standing beside him."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1_STYLE_1",
+          "SCENE_4"
+        ]
+      }
+    ],
+    "shot_time": [
+      [
+        0.0,
+        0.96
+      ],
+      [
+        0.96,
+        2.46
+      ],
+      [
+        2.46,
+        5.33
+      ],
+      [
+        5.33,
+        8.17
+      ],
+      [
+        8.17,
+        10.83
+      ],
+      [
+        10.83,
+        12.33
+      ],
+      [
+        12.33,
+        13.33
+      ],
+      [
+        13.33,
+        14.5
+      ],
+      [
+        14.5,
+        17.71
+      ],
+      [
+        17.71,
+        18.42
+      ],
+      [
+        18.42,
+        19.54
+      ],
+      [
+        19.54,
+        21.33
+      ],
+      [
+        21.33,
+        23.46
+      ],
+      [
+        23.46,
+        28.83
+      ],
+      [
+        28.83,
+        30.33
+      ],
+      [
+        30.33,
+        31.46
+      ],
+      [
+        31.46,
+        33.33
+      ],
+      [
+        33.33,
+        36.58
+      ],
+      [
+        36.58,
+        39.0
+      ],
+      [
+        39.0,
+        43.29
+      ],
+      [
+        43.29,
+        44.46
+      ],
+      [
+        44.46,
+        46.33
+      ],
+      [
+        46.33,
+        53.0
+      ],
+      [
+        53.0,
+        56.67
+      ],
+      [
+        56.67,
+        64.17
+      ],
+      [
+        64.17,
+        65.0
+      ],
+      [
+        65.0,
+        68.83
+      ],
+      [
+        68.83,
+        70.92
+      ],
+      [
+        70.92,
+        72.75
+      ]
+    ]
+  },
+  "source_video_path": "LLaVA-Video-178K/1_2_m_activitynetqa/ActivityNet-QA/activitynet/train/v1-3/train_val/v_k42CKebiSLA.mp4",
+  "video_path": "test/videos/000516.mp4"
+}

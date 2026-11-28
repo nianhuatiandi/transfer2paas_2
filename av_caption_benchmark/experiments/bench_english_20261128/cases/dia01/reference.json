@@ -1,0 +1,358 @@
+{
+  "schema": "av-events/1.0",
+  "description_language": "en",
+  "source_sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39",
+  "protocol_sha256": "3f32fa0d8eed77ef8c79b4e9976ed02431a01c0aa96ee60011bb2f9a8f72aff1",
+  "duration_seconds": 7.5,
+  "actors": [
+    {
+      "id": "P1",
+      "appearance": "Man with short dark hair wearing a green and black jacket over a red shirt"
+    },
+    {
+      "id": "P2",
+      "appearance": "Woman with long brown hair tied back, wearing a patterned black top"
+    }
+  ],
+  "clock": "source seconds, half-open intervals",
+  "relation_semantics": "Evidence of temporal co-occurrence only. Speaker identity and acoustic causation are separate claims.",
+  "reference_status": "machine_reviewed_silver",
+  "events": [
+    {
+      "id": "V0001",
+      "kind": "visible_speech",
+      "actor": "Woman with long brown hair tied back, wearing a patterned black top",
+      "start": 0,
+      "end": 5.4,
+      "sources": [
+        "shot00000/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "On-camera communication",
+      "label": "speaking",
+      "brief": "A woman stands while speaking and gesturing.",
+      "detail": "She faces forward toward another person, moving her mouth as she speaks. She uses hand gestures to emphasize her points.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 0.0s to 5.4s, the woman's mouth is visibly moving as she faces the man and gestures.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip",
+      "posture": "standing",
+      "visual_evidence": "continuous lip movement and jaw articulation while looking at the other person",
+      "posture_evidence": "The woman's full body is visible, showing her hips and extended legs supporting her weight on the floor."
+    },
+    {
+      "id": "A0001",
+      "kind": "music",
+      "actor": "unidentified source",
+      "start": 0,
+      "end": 7.48,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "music",
+      "detail": "Upbeat instrumental music plays continuously from the beginning of the clip until it fades out at 00:07.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "V0002",
+      "kind": "gesture",
+      "actor": "Woman with long brown hair tied back, wearing a patterned black top",
+      "start": 0.3,
+      "end": 0.6,
+      "sources": [
+        "shot00000/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "On-camera communication",
+      "label": "pointing",
+      "brief": "The woman points at the man.",
+      "detail": "She extends her right index finger towards him.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "At 0.3s-0.6s, the woman raises her right hand and extends her index finger toward the man.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0002",
+      "kind": "speech",
+      "actor": "unidentified voice",
+      "start": 0.32,
+      "end": 2.48,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "I won't spend your money, absolutely won't spend your money, come push my cart.",
+      "transcript_original": "不花你的钱，绝对不花你钱，来推我推车。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        0.32,
+        2.48
+      ]
+    },
+    {
+      "id": "V0003",
+      "kind": "gesture",
+      "actor": "Woman with long brown hair tied back, wearing a patterned black top",
+      "start": 1.9,
+      "end": 2.7,
+      "sources": [
+        "shot00000/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "On-camera communication",
+      "label": "extending hand",
+      "brief": "The woman holds out her hand to ask for something.",
+      "detail": "She extends both hands forward with palms up.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Between 1.9s and 2.7s, the woman holds both hands out in front of her with palms facing upward.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0003",
+      "kind": "speech",
+      "actor": "unidentified voice",
+      "start": 3.52,
+      "end": 5.04,
+      "sources": [
+        "w00000/audio/2"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Hurry up, don't drive recklessly, I have experience.",
+      "transcript_original": "快点不能乱开啊，我有经验的。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        3.52,
+        5.04
+      ]
+    },
+    {
+      "id": "A0004",
+      "kind": "speech",
+      "actor": "unidentified voice",
+      "start": 5.04,
+      "end": 5.6,
+      "sources": [
+        "w00000/audio/3"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Won't drive recklessly.",
+      "transcript_original": "不乱开。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        5.04,
+        5.6
+      ]
+    },
+    {
+      "id": "V0005",
+      "kind": "motion",
+      "actor": "Man with short dark hair wearing a green and black jacket over a red shirt",
+      "start": 5.5,
+      "end": 6.1,
+      "sources": [
+        "shot00000/visual/4"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "passing keys",
+      "brief": "The man gives car keys to the woman.",
+      "detail": "He reaches across the table and places the keys into her extended hand.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "At 5.5s-6.1s, the man reaches across the table and drops a small object (keys) into the woman's waiting hand.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0005",
+      "kind": "speech",
+      "actor": "unidentified voice",
+      "start": 6.4,
+      "end": 6.72,
+      "sources": [
+        "w00000/audio/4"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Come on.",
+      "transcript_original": "来吧。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        6.4,
+        6.72
+      ]
+    },
+    {
+      "id": "V0008",
+      "kind": "motion",
+      "actor": "Woman with long brown hair tied back, wearing a patterned black top",
+      "start": 6.8,
+      "end": 7.5,
+      "sources": [
+        "shot00000/visual/6"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "turning and walking",
+      "brief": "The woman turns around and walks away from the table.",
+      "detail": "She pivots on her feet and takes steps towards the background area.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Starting at 6.8s, the woman turns her body away from the table and begins walking towards the background by 7.5s.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    }
+  ],
+  "relations": [
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0,
+      "end": 5.4,
+      "robust_interval": [
+        0,
+        5.4
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 0.32,
+      "end": 2.48,
+      "robust_interval": [
+        0.32,
+        2.48
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0003",
+      "type": "temporal_overlap",
+      "start": 3.52,
+      "end": 5.04,
+      "robust_interval": [
+        3.52,
+        5.04
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0004",
+      "type": "temporal_overlap",
+      "start": 5.04,
+      "end": 5.4,
+      "robust_interval": [
+        5.04,
+        5.4
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.3,
+      "end": 0.6,
+      "robust_interval": [
+        0.3,
+        0.6
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 0.32,
+      "end": 0.6,
+      "robust_interval": [
+        0.32,
+        0.6
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 1.9,
+      "end": 2.7,
+      "robust_interval": [
+        1.9,
+        2.7
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 1.9,
+      "end": 2.48,
+      "robust_interval": [
+        1.9,
+        2.48
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0005",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 5.5,
+      "end": 6.1,
+      "robust_interval": [
+        5.5,
+        6.1
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0008",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 6.8,
+      "end": 7.48,
+      "robust_interval": [
+        6.8,
+        7.48
+      ],
+      "review_flags": []
+    }
+  ],
+  "phase_relations": []
+}

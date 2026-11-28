@@ -1,0 +1,521 @@
+{
+  "schema": "av-events/1.0",
+  "description_language": "en",
+  "source_sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91",
+  "protocol_sha256": "878876e6aad4552f82c127b1937d067da72ef27445dd42200630dce671407711",
+  "duration_seconds": 7.0,
+  "actors": [
+    {
+      "id": "P1",
+      "appearance": "man wearing a blue sleeveless shirt and black headband"
+    },
+    {
+      "id": "P2",
+      "appearance": "woman with short hair, wearing a dark jacket over a white top"
+    }
+  ],
+  "clock": "source seconds, half-open intervals",
+  "relation_semantics": "Evidence of temporal co-occurrence only. Speaker identity and acoustic causation are separate claims.",
+  "reference_status": "machine_reviewed_silver",
+  "events": [
+    {
+      "id": "V0001",
+      "kind": "visible_speech",
+      "actor": "man wearing a blue sleeveless shirt and black headband",
+      "start": 0,
+      "end": 2.0,
+      "sources": [
+        "shot00000/visual/0",
+        "shot00001/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "speaking to camera",
+      "brief": "A man speaks directly to the camera with animated facial expressions and hand gestures.",
+      "detail": "The subject faces forward, maintaining eye contact with the lens while speaking continuously. His mouth moves clearly as he articulates words, accompanied by slight eyebrow raises for emphasis. He uses both hands to gesture in front of his chest to underscore his points.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The man's mouth opens and closes continuously throughout the clip, indicating speech.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip",
+      "posture": "unclear",
+      "visual_evidence": "Repeated articulatory lip/jaw changes coordinated with facial emphasis while facing forward.",
+      "posture_evidence": "The framing shows the man's head, shoulders, and upper torso. While his posture appears upright, his hips and legs are not visible in these frames, making it impossible to confirm whether he is standing or sitting."
+    },
+    {
+      "id": "V0002",
+      "kind": "motion",
+      "actor": "woman with short hair, wearing a dark jacket over a white top",
+      "start": 0,
+      "end": 2.0,
+      "sources": [
+        "shot00000/visual/1",
+        "shot00001/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "woman walking in background",
+      "brief": "A woman walks along a path behind the main speaker.",
+      "detail": "The woman with short hair, wearing a dark jacket over a white top, is seen moving from right to left across the background path between 0.0s and 2.0s.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "At 0.0s she enters the frame on the far right; by 1.0s she has moved further left past the trees; at 2.0s she continues her trajectory towards the left edge of the screen.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0001",
+      "kind": "speech",
+      "actor": "male voice",
+      "start": 0.06,
+      "end": 2.73,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "How to achieve immediate results within one minute,",
+      "transcript_original": "如何在一分钟之内就立竿见影，",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        0.08,
+        2.56
+      ],
+      "word_interval": [
+        0.06,
+        2.73
+      ],
+      "boundary_ranges": {
+        "start": [
+          0.06,
+          0.06
+        ],
+        "end": [
+          2.56,
+          2.73
+        ]
+      }
+    },
+    {
+      "id": "A0002",
+      "kind": "sound",
+      "actor": "unidentified source",
+      "start": 0.84,
+      "end": 1.2,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "electronic beeps",
+      "detail": "A sequence of short, high-pitched electronic beeps is audible.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "V0003",
+      "kind": "gesture",
+      "actor": "man wearing a blue sleeveless shirt and black headband",
+      "start": 1.8,
+      "end": 2.0,
+      "sources": [
+        "shot00000/visual/2",
+        "shot00001/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "hand gesturing",
+      "brief": "The man raises both hands slightly in front of his chest while speaking.",
+      "detail": "His palms face inward and move up and down gently.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 1.8s onwards, the man raises both hands into the lower part of the frame with palms facing inward/upward while speaking.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0003",
+      "kind": "sound",
+      "actor": "unidentified source",
+      "start": 1.92,
+      "end": 2.32,
+      "sources": [
+        "w00000/audio/2"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "electronic beeps",
+      "detail": "A sequence of short, high-pitched electronic beeps is audible.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "V0004",
+      "kind": "motion",
+      "actor": "man wearing a blue sleeveless shirt and black headband",
+      "start": 2.16,
+      "end": 5.32,
+      "sources": [
+        "shot00000/visual/3",
+        "shot00001/visual/3"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "jumping",
+      "brief": "The man performs a standing long jump sequence on an outdoor track.",
+      "detail": "He swings his arms backward into a deep squat, then explosively extends his legs and swings his arms forward to propel himself through the air before landing in a crouch.",
+      "phases": [
+        {
+          "label": "arm backswing",
+          "start": 2.16,
+          "end": 2.88,
+          "id": "V0004.P01",
+          "fact_evidence": "From 0.35s to 1.07s, the man's arms move from above his head down and behind his body while he begins to bend his knees.",
+          "review_flags": []
+        },
+        {
+          "label": "countermovement",
+          "start": 2.88,
+          "end": 3.88,
+          "id": "V0004.P02",
+          "fact_evidence": "Between 1.07s and 2.07s, the man continues to lower his center of gravity into a deep squat with his arms fully extended backward.",
+          "review_flags": []
+        },
+        {
+          "label": "push off",
+          "start": 3.88,
+          "end": 4.38,
+          "id": "V0004.P03",
+          "fact_evidence": "At 2.07s to 2.57s, the man rapidly extends his hips, knees, and ankles, simultaneously swinging his arms upward and forward to generate propulsion.",
+          "review_flags": []
+        },
+        {
+          "label": "flight",
+          "start": 4.38,
+          "end": 4.88,
+          "id": "V0004.P04",
+          "fact_evidence": "From 2.57s to 3.07s, the man is airborne, traveling horizontally over the red track surface.",
+          "review_flags": []
+        },
+        {
+          "label": "landing preparation",
+          "start": 4.88,
+          "end": 5.08,
+          "id": "V0004.P05",
+          "fact_evidence": "Between 3.07s and 3.27s, the man brings his legs forward and prepares to absorb impact as he descends towards the ground.",
+          "review_flags": []
+        },
+        {
+          "label": "landing",
+          "start": 5.08,
+          "end": 5.32,
+          "id": "V0004.P06",
+          "fact_evidence": "At 3.27s to 3.51s, the man makes contact with the track using both feet and bends his knees deeply to stabilize his landing.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "The man is shown swinging his arms backward into a deep squat, explosively extending his legs to jump forward through the air, and landing in a crouch on an outdoor track.",
+      "fact_evidence_clock_origin": 1.81,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0004",
+      "kind": "speech",
+      "actor": "male voice",
+      "start": 2.56,
+      "end": 4.96,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "improve your standing long jump score as if by cheating?",
+      "transcript_original": "如同作弊一般提升立定跳远的成绩呢？",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        2.56,
+        4.96
+      ],
+      "boundary_ranges": {
+        "start": [
+          2.56,
+          2.73
+        ],
+        "end": [
+          4.96,
+          4.96
+        ]
+      }
+    },
+    {
+      "id": "A0005",
+      "kind": "sound",
+      "actor": "unidentified source",
+      "start": 3.04,
+      "end": 3.44,
+      "sources": [
+        "w00000/audio/3"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "electronic beeps",
+      "detail": "A sequence of short, high-pitched electronic beeps is audible.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "A0006",
+      "kind": "sound",
+      "actor": "unidentified source",
+      "start": 4.16,
+      "end": 4.56,
+      "sources": [
+        "w00000/audio/4"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "electronic beeps",
+      "detail": "A sequence of short, high-pitched electronic beeps is audible.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "A0007",
+      "kind": "sound",
+      "actor": "unidentified source",
+      "start": 5.28,
+      "end": 5.68,
+      "sources": [
+        "w00000/audio/5"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "electronic beeps",
+      "detail": "A sequence of short, high-pitched electronic beeps is audible.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "A0008",
+      "kind": "speech",
+      "actor": "male voice",
+      "start": 5.43,
+      "end": 6.99,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Today I will introduce three methods.",
+      "transcript_original": "今天给大家介绍三个方法。",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        5.04,
+        6.96
+      ],
+      "word_interval": [
+        5.43,
+        6.99
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.06,
+      "end": 2.0,
+      "robust_interval": [
+        0.06,
+        2.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 0.84,
+      "end": 1.2,
+      "robust_interval": [
+        0.84,
+        1.2
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.06,
+      "end": 2.0,
+      "robust_interval": [
+        0.06,
+        2.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 0.84,
+      "end": 1.2,
+      "robust_interval": [
+        0.84,
+        1.2
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 1.8,
+      "end": 2.0,
+      "robust_interval": [
+        1.8,
+        2.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 2.16,
+      "end": 2.73,
+      "robust_interval": [
+        2.16,
+        2.56
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0004",
+      "type": "temporal_overlap",
+      "start": 2.56,
+      "end": 4.96,
+      "robust_interval": [
+        2.73,
+        4.96
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 3.04,
+      "end": 3.44,
+      "robust_interval": [
+        3.04,
+        3.44
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0006",
+      "type": "temporal_overlap",
+      "start": 4.16,
+      "end": 4.56,
+      "robust_interval": [
+        4.16,
+        4.56
+      ],
+      "review_flags": []
+    }
+  ],
+  "phase_relations": [
+    {
+      "visual_id": "V0004.P01",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 2.16,
+      "end": 2.73,
+      "robust_interval": [
+        2.16,
+        2.56
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004.P02",
+      "audio_id": "A0004",
+      "type": "temporal_overlap",
+      "start": 2.88,
+      "end": 3.88,
+      "robust_interval": [
+        2.88,
+        3.88
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004.P02",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 3.04,
+      "end": 3.44,
+      "robust_interval": [
+        3.04,
+        3.44
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004.P03",
+      "audio_id": "A0004",
+      "type": "temporal_overlap",
+      "start": 3.88,
+      "end": 4.38,
+      "robust_interval": [
+        3.88,
+        4.38
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004.P03",
+      "audio_id": "A0006",
+      "type": "temporal_overlap",
+      "start": 4.16,
+      "end": 4.38,
+      "robust_interval": [
+        4.16,
+        4.38
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004.P04",
+      "audio_id": "A0004",
+      "type": "temporal_overlap",
+      "start": 4.38,
+      "end": 4.88,
+      "robust_interval": [
+        4.38,
+        4.88
+      ],
+      "review_flags": []
+    }
+  ]
+}

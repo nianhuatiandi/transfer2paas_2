@@ -1,0 +1,368 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma20",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "林中人物",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      2
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-022d34c7-358.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      5.375
+    ],
+    "official_sha256": "3f94999a8838ad9b1a2df8a12ee1847746ddd82fb2c293b0e24dcf20fd61447f",
+    "clip_sha256": "3f94999a8838ad9b1a2df8a12ee1847746ddd82fb2c293b0e24dcf20fd61447f",
+    "audio_source": null
+  },
+  "duration_seconds": 5.375,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 5.375,
+      "first_frame": 0,
+      "end_frame_exclusive": 43
+    }
+  ],
+  "input_frames": {
+    "visual": 43
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一个连续镜头，记录了一名男子从灌木丛中采摘浆果并放入口中品尝的过程。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "一名留着长发、戴着黑色头巾的男子，身穿棕色皮衣，双手戴着露指手套（左手为迷彩图案，右手为带铆钉的黑色皮革）。"
+      }
+    ],
+    "executions": [
+      {
+        "id": "EX_S01_P01_PICK_BERRY",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.5,
+        "description": "男子用戴着手套的双手在绿叶灌木丛中拨弄，随后左手捏住一颗深色浆果将其摘下并举起。"
+      },
+      {
+        "id": "EX_S01_P01_EAT_BERRY",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 2.375,
+        "end": 3.125,
+        "description": "男子将举着的浆果送到嘴边，张开嘴咬下并咀嚼。"
+      },
+      {
+        "id": "EX_S01_P01_REACT_TASTE",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 3.125,
+        "end": 5.25,
+        "description": "男子咀嚼后，面部表情发生变化，先是抿嘴思考，随后露出微笑并说话。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A_S01_P01_PICKING",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "EX_S01_P01_PICK_BERRY",
+        "kind": "motion",
+        "label": "采摘浆果",
+        "start": 0.0,
+        "end": 1.5,
+        "start_range": [
+          0.0,
+          0.125
+        ],
+        "end_range": [
+          1.375,
+          1.5
+        ],
+        "brief": "男子在灌木丛中寻找并用左手摘下一颗深色浆果。",
+        "detail": "起初画面聚焦于男子的双手和茂密的绿色叶片。他的右手（戴黑色铆钉手套）轻轻拨开枝叶，左手（戴迷彩手套）伸入其中。约0.6秒时，左手指尖捏住一颗深蓝色/黑色的浆果。随后，左手将该浆果从枝头摘下，并向镜头方向抬起展示，直至1.5秒左右手部动作停止，浆果被稳稳捏在指尖。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "双手置于绿叶丛中，开始翻找。"
+          },
+          {
+            "time": 0.625,
+            "observation": "左手拇指和食指清晰捏住一颗深色浆果。"
+          },
+          {
+            "time": 1.25,
+            "observation": "左手将浆果完全摘下并向上举起，脱离植物主体。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "接触浆果",
+            "time": 0.625,
+            "time_range": null
+          },
+          {
+            "name": "成功摘下",
+            "time": 1.25,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手",
+          "手指"
+        ],
+        "movement_roles": [
+          "拨开枝叶",
+          "抓取",
+          "提起"
+        ],
+        "subphases": [
+          {
+            "label": "搜寻与定位",
+            "start": 0.0,
+            "end": 0.625,
+            "detail": "双手在叶片间移动，视线跟随手部动作（虽未见面部），最终锁定目标果实。",
+            "evidence": [
+              {
+                "time": 0.375,
+                "observation": "手指在叶缝中调整位置。"
+              }
+            ]
+          },
+          {
+            "label": "摘取与展示",
+            "start": 0.625,
+            "end": 1.5,
+            "detail": "捏住果实用力拔下，随即手臂上抬，将果实举至胸前高度供观察。",
+            "evidence": [
+              {
+                "time": 1.0,
+                "observation": "果实已离开枝条，悬空于手掌上方。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A_S01_P01_HAND_TO_MOUTH",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "EX_S01_P01_EAT_BERRY",
+        "kind": "motion",
+        "label": "送食入口",
+        "start": 1.5,
+        "end": 2.875,
+        "start_range": [
+          1.5,
+          1.625
+        ],
+        "end_range": [
+          2.75,
+          2.875
+        ],
+        "brief": "男子手持浆果靠近面部，张嘴将其放入口中。",
+        "detail": "镜头视角略微上移或男子抬头，露出下半张脸。男子面带微笑看着手中的浆果。从2.375秒开始，他将拿着浆果的左手向嘴部移动。2.625秒时嘴唇微张准备接纳，2.75秒至2.875秒期间，浆果进入口腔，牙齿闭合咬住果实。",
+        "evidence": [
+          {
+            "time": 1.875,
+            "observation": "男子笑容满面地注视着手中的浆果。"
+          },
+          {
+            "time": 2.625,
+            "observation": "手部接近嘴唇，嘴巴张开。"
+          },
+          {
+            "time": 2.875,
+            "observation": "浆果已被含入口中，手指仍在唇边辅助。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "张口预备",
+            "time": 2.625,
+            "time_range": null
+          },
+          {
+            "name": "果实入口",
+            "time": 2.875,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "嘴部",
+          "头部"
+        ],
+        "movement_roles": [
+          "平移",
+          "进食"
+        ],
+        "subphases": [
+          {
+            "label": "注视与评估",
+            "start": 1.5,
+            "end": 2.375,
+            "detail": "男子保持手持姿势，目光聚焦于浆果，嘴角上扬，似乎在确认是否可食用。",
+            "evidence": [
+              {
+                "time": 2.0,
+                "observation": "清晰的微笑表情，眼神向下看手中之物。"
+              }
+            ]
+          },
+          {
+            "label": "投喂动作",
+            "start": 2.375,
+            "end": 2.875,
+            "detail": "手臂弯曲将食物送至唇边，配合下颌运动完成摄入。",
+            "evidence": [
+              {
+                "time": 2.75,
+                "observation": "舌尖可见，正在包裹浆果。"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "A_S01_P01_CHEWING_AND_SPEAKING",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "EX_S01_P01_REACT_TASTE",
+        "kind": "motion",
+        "label": "咀嚼与评价",
+        "start": 2.875,
+        "end": 5.25,
+        "start_range": [
+          2.875,
+          3.0
+        ],
+        "end_range": [
+          5.125,
+          5.25
+        ],
+        "brief": "男子咀嚼浆果，品味味道后做出满意的表情并开始说话。",
+        "detail": "浆果入口后，男子立即开始咀嚼（3.0s-3.5s）。他的表情经历了一次变化：先是略带思索地抿嘴（3.625s），仿佛在回味滋味；接着眉头舒展，再次露出明显的愉悦笑容（4.0s起），并在随后的几秒内一边继续轻微咀嚼/吞咽，一边开口说话，头部伴随语言节奏有微小的晃动。",
+        "evidence": [
+          {
+            "time": 3.125,
+            "observation": "脸颊鼓动，明显处于咀嚼状态。"
+          },
+          {
+            "time": 3.625,
+            "observation": "嘴唇紧闭，呈现一种‘嗯...’的思考或品味神态。"
+          },
+          {
+            "time": 4.25,
+            "observation": "重新展颜大笑，眼神发亮，显示出对味道的肯定。"
+          },
+          {
+            "time": 4.875,
+            "observation": "嘴巴张开进行言语交流。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "开始咀嚼",
+            "time": 3.0,
+            "time_range": null
+          },
+          {
+            "name": "品味停顿",
+            "time": 3.625,
+            "time_range": null
+          },
+          {
+            "name": "表达赞赏",
+            "time": 4.25,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "下颌",
+          "嘴唇",
+          "面部肌肉",
+          "舌头"
+        ],
+        "movement_roles": [
+          "咀嚼",
+          "表情变化",
+          "发声"
+        ],
+        "subphases": [
+          {
+            "label": "初步咀嚼",
+            "start": 2.875,
+            "end": 3.5,
+            "detail": "牙齿咬合破碎果肉，舌位调整以混合唾液，面部保持放松的微笑残留。",
+            "evidence": [
+              {
+                "time": 3.25,
+                "observation": "可以看到牙齿间的黑色果汁痕迹。"
+              }
+            ]
+          },
+          {
+            "label": "深度品味",
+            "start": 3.5,
+            "end": 4.0,
+            "detail": "咀嚼减缓，转为抿嘴感受余味，眼神游移思考。",
+            "evidence": [
+              {
+                "time": 3.75,
+                "observation": "闭口动作，腮帮子微收。"
+              }
+            ]
+          },
+          {
+            "label": "反馈与交流",
+            "start": 4.0,
+            "end": 5.25,
+            "detail": "确认美味后情绪高涨，恢复笑容并启动声带发音，向他人描述口感。",
+            "evidence": [
+              {
+                "time": 4.5,
+                "observation": "下巴上下运动幅度加大，典型的说话特征。"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "uncertainties": []
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": []
+}

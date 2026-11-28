@@ -1,0 +1,2069 @@
+{
+  "duration_sec": 224.653,
+  "duration_bucket": "3-5min",
+  "num_shots": 28,
+  "num_events": 8,
+  "num_main_characters": 3,
+  "num_main_scenes": 3,
+  "shots_per_min": 7.48,
+  "events_per_min": 2.14,
+  "persons_per_min": 0.8,
+  "scenes_per_min": 0.8,
+  "category_l1": "Sports",
+  "category_l2": "Swimming & Water Sports",
+  "dataset": "Tarsier2-Recap",
+  "shot_time": [
+    [
+      0.0,
+      4.72
+    ],
+    [
+      4.72,
+      6.32
+    ],
+    [
+      6.32,
+      8.2
+    ],
+    [
+      8.2,
+      13.24
+    ],
+    [
+      13.24,
+      17.36
+    ],
+    [
+      17.36,
+      21.36
+    ],
+    [
+      21.36,
+      23.8
+    ],
+    [
+      23.8,
+      25.44
+    ],
+    [
+      25.44,
+      28.04
+    ],
+    [
+      28.04,
+      30.2
+    ],
+    [
+      30.2,
+      34.32
+    ],
+    [
+      34.32,
+      37.44
+    ],
+    [
+      37.44,
+      53.64
+    ],
+    [
+      53.64,
+      59.32
+    ],
+    [
+      59.32,
+      64.68
+    ],
+    [
+      64.68,
+      71.08
+    ],
+    [
+      71.08,
+      105.28
+    ],
+    [
+      105.28,
+      120.96
+    ],
+    [
+      120.96,
+      160.36
+    ],
+    [
+      160.36,
+      175.96
+    ],
+    [
+      175.96,
+      194.48
+    ],
+    [
+      194.48,
+      200.96
+    ],
+    [
+      200.96,
+      203.88
+    ],
+    [
+      203.88,
+      207.48
+    ],
+    [
+      207.48,
+      210.2
+    ],
+    [
+      210.2,
+      213.48
+    ],
+    [
+      213.48,
+      217.04
+    ],
+    [
+      217.04,
+      224.56
+    ]
+  ],
+  "mtss_caption": {
+    "references": [
+      {
+        "ref_id": "PERSON_1",
+        "type": "person",
+        "semantic_description": "The primary female instructor demonstrating the fundamental windsurfing techniques.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A young woman with deep brown curly hair tied back. She wears a white baseball cap, a light blue bikini top with yellow straps, and gray-patterned board shorts.",
+            "timestamp": "24.7"
+          },
+          "attributes": {
+            "clothing": "Light blue bikini top, blue and green patterned shorts",
+            "hairstyle": "Dark curly hair tied back",
+            "accessories": "White cap"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_2",
+        "type": "person",
+        "semantic_description": "The second female windsurfing demonstrator who illustrates steering, tacking, and jibing maneuvers on the water.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A blond woman has her hair tied back, wearing a white-and-green striped bikini top and orange-red shorts that contrast with black.",
+            "timestamp": "141.2"
+          },
+          "attributes": {
+            "clothing": "Red bikini top, dark and red shorts",
+            "hairstyle": "Blonde hair pulled back",
+            "accessories": "none"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_3",
+        "type": "person",
+        "semantic_description": "A male windsurfer featured briefly in the concluding montage demonstrating more advanced riding.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A man with fluffy brown hair is wearing a light blue short-sleeved T-shirt and knee-length board shorts with a complex black-and-white pattern.",
+            "timestamp": "202.5"
+          },
+          "attributes": {
+            "clothing": "Light blue t-shirt, patterned board shorts",
+            "hairstyle": "Shaggy brown hair",
+            "accessories": "none"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_4",
+        "type": "person",
+        "semantic_description": "A female windsurfer featured briefly in the final montage.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A brown-haired woman with braids. She is wearing a green bikini top and a bikini bottom with pink and green patterns.",
+            "timestamp": "206.7"
+          },
+          "attributes": {
+            "clothing": "Pink and green bikini top, pink and blue patterned bikini bottoms",
+            "hairstyle": "Blonde hair in braids",
+            "accessories": "none"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_5",
+        "type": "person",
+        "semantic_description": "A male windsurfer featured in the concluding montage demonstrating a relaxed riding style and making a hand gesture.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A man is wearing a white long-sleeved protective garment with dark blue patterns on the sleeves and sides, blue, green, and black printed shorts, a blue baseball cap, and black sunglasses.",
+            "timestamp": "213.5"
+          },
+          "attributes": {
+            "clothing": "White and blue long-sleeve rash guard, dark patterned board shorts",
+            "hairstyle": "Short dark hair",
+            "accessories": "Blue cap, sunglasses"
+          }
+        }
+      },
+      {
+        "ref_id": "OBJECT_1",
+        "type": "object",
+        "semantic_description": "The primary windsurfing equipment used throughout the instructional demonstrations.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A complete windsurfing setup consisting of a white board with foot straps and 'STARBOARD' branding, paired with a vibrant orange sail featuring a prominent white star graphic, 'STARBOARD' text, and a small black cartoon tiki logo.",
+            "timestamp": "104.5"
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_1",
+        "type": "scene",
+        "semantic_description": "The coastal environment where the windsurfing instructions and water demonstrations take place.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A bright and sunny beach scene, with light yellow sand meeting the tranquil and clear turquoise waters. In the background, there are moored boats, a distant landscape of multiple islands, and a deep blue sky.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      }
+    ],
+    "events": [
+      {
+        "event_id": "DIALOGUE_1",
+        "type": "dialogue",
+        "time_range": [
+          7.0,
+          9.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Before you go windsurfing, see where the wind is coming from.",
+          "description": "An unseen male narrator introduces the first step in a clear, instructional tone, speaking at a measured pace. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_2",
+        "type": "dialogue",
+        "time_range": [
+          13.5,
+          17.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Launch your board into the water by walking with your back and mast facing the wind.",
+          "description": "An unseen male narrator provides practical guidance in a steady, instructive tone, emphasizing the physical positioning. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_3",
+        "type": "dialogue",
+        "time_range": [
+          28.5,
+          31.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Pull the daggerboard out by pulling back on its handle.",
+          "description": "An unseen male narrator delivers a direct, clear instruction on equipment handling in a calm voice. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_4",
+        "type": "dialogue",
+        "time_range": [
+          38.0,
+          46.0
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Place the board 90 degrees to the wind, keep your back to the wind, and the position of the sail so that it's pointing away from you.",
+          "description": "An unseen male narrator explains spatial positioning details with a calm, informative, and precise tone. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_5",
+        "type": "dialogue",
+        "time_range": [
+          53.0,
+          55.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Keep your back straight and use your legs.",
+          "description": "An unseen male narrator provides a brief, straightforward tip on body posture in an encouraging tone. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_6",
+        "type": "dialogue",
+        "time_range": [
+          59.5,
+          64.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Grab the boom with your mast hand, which is your hand closest to the mast.",
+          "description": "An unseen male narrator explains a specific windsurfing term, enunciating clearly to ensure understanding. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_7",
+        "type": "dialogue",
+        "time_range": [
+          65.5,
+          70.0
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "You will need to cross one arm over the other. This is called a crossover grip.",
+          "description": "An unseen male narrator introduces a specific grip technique, speaking calmly and deliberately. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_8",
+        "type": "dialogue",
+        "time_range": [
+          71.5,
+          78.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Grab the boom with your other hand and smoothly pull on this hand to fill the sail with power.",
+          "description": "An unseen male narrator provides step-by-step action guidance in a steady, smooth tone to match the described action. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_9",
+        "type": "dialogue",
+        "time_range": [
+          79.5,
+          81.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "You will start sailing.",
+          "description": "An unseen male narrator states the result of the actions in a positive, encouraging tone. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_10",
+        "type": "dialogue",
+        "time_range": [
+          82.5,
+          89.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "A windsurfer mainly travels 90 degrees to the wind. You can adjust your course by rig steering.",
+          "description": "An unseen male narrator introduces basic sailing principles in an educational and informative tone. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_11",
+        "type": "dialogue",
+        "time_range": [
+          90.5,
+          94.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Tilt your rig backwards to steer into the wind.",
+          "description": "An unseen male narrator delivers a concise, directional instruction on steering techniques. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_12",
+        "type": "dialogue",
+        "time_range": [
+          97.5,
+          101.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Tilt your rig forwards to steer away from the wind.",
+          "description": "An unseen male narrator delivers the opposing directional instruction clearly and calmly. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_13",
+        "type": "dialogue",
+        "time_range": [
+          105.5,
+          109.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Bring the sail back to its neutral tilt to sail in a straight line.",
+          "description": "An unseen male narrator offers guidance on returning to a neutral sailing position in an instructional tone. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_14",
+        "type": "dialogue",
+        "time_range": [
+          121.0,
+          128.0
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "To turn 180 degrees and come back, let go of your back hand to de-power the sail.",
+          "description": "An unseen male narrator begins instructions for a turning maneuver, speaking clearly and steadily. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_15",
+        "type": "dialogue",
+        "time_range": [
+          128.5,
+          132.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Grab the sail by the uphaul and tilt the sail backwards.",
+          "description": "An unseen male narrator continues with the next sequential step of the maneuver in a calm voice. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_16",
+        "type": "dialogue",
+        "time_range": [
+          135.0,
+          143.0
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Use your feet to rotate the board 180 degrees while continuing to tilt the sail in the opposite direction.",
+          "description": "An unseen male narrator explains coordinated body and equipment movements in a continuous, informative flow. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_17",
+        "type": "dialogue",
+        "time_range": [
+          145.0,
+          156.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Once the board is in the desired direction, do a crossover grip, slowly sheet it with the back hand to fill the sail with power, and sail back to shore. You've just made a tack.",
+          "description": "An unseen male narrator details the final steps of the turn, concluding with a supportive and affirming tone upon completion of the maneuver. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_18",
+        "type": "dialogue",
+        "time_range": [
+          160.0,
+          169.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Another way to turn 180 degrees is to jibe. Let go of your back hand to de-power the sail, grab the sail by the uphaul, and tilt the sail forwards.",
+          "description": "An unseen male narrator introduces an alternative turning maneuver, listing steps clearly and evenly. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_19",
+        "type": "dialogue",
+        "time_range": [
+          176.5,
+          184.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Use your feet to rotate the board 180 degrees while continuing to tilt the sail in the opposite direction.",
+          "description": "An unseen male narrator provides specific physical directions for the new maneuver in a steady tone. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_20",
+        "type": "dialogue",
+        "time_range": [
+          186.5,
+          198.0
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Once the board is in the desired direction, do a crossover grip, slowly sheet it with the back hand to fill the sail with power, and sail back to shore. You've just made a jibe.",
+          "description": "An unseen male narrator completes the sequence of instructions, sounding supportive as he confirms the successful execution of the maneuver. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_21",
+        "type": "dialogue",
+        "time_range": [
+          199.5,
+          204.0
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "You've just learned the basics of windsurfing: starting, steering, tacking, and jibing.",
+          "description": "An unseen male narrator summarizes the key lessons covered in the video, speaking in a congratulatory and encouraging tone. English language."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_22",
+        "type": "dialogue",
+        "time_range": [
+          204.0,
+          216.0
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "With practice, passion, and gradually more power, windsurfing quickly becomes a lifelong skill that is fun and exciting. Welcome to windsurfing.",
+          "description": "An unseen male narrator concludes the instructional video with an upbeat, enthusiastic, and welcoming remark. English language."
+        }
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "shot_1",
+        "time_range": [
+          0.0,
+          4.7
+        ],
+        "shot_transfer": "Opening shot revealing a title sequence fading in on a dark blue background.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              0.0,
+              4.7
+            ],
+            "sub_shot_content": "A static dark blue gradient background with a red-and-white stylized logo in the upper left corner."
+          },
+          {
+            "sub_shot_time": [
+              0.5,
+              2.0
+            ],
+            "sub_shot_content": "In the center of the screen, the words \"WINDSURFING\" and \"BASICS\" gradually appear in bold white sans-serif font."
+          },
+          {
+            "sub_shot_time": [
+              2.0,
+              4.7
+            ],
+            "sub_shot_content": "Text gradually shrinks and becomes transparent to reveal the content of the video."
+          }
+        ],
+        "camera": {
+          "shot_type": "other",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": []
+      },
+      {
+        "shot_id": "shot_2",
+        "time_range": [
+          4.7,
+          6.3
+        ],
+        "shot_transfer": "Hard cut from the title sequence to an outdoor beach scene showing [PERSON_1] standing in the water.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              4.7,
+              6.3
+            ],
+            "sub_shot_content": "[SCENE_1], a medium wide shot revealing a sunny beach with clear turquoise water, distant hilly islands, and boats anchored in the background."
+          },
+          {
+            "sub_shot_time": [
+              4.7,
+              5.2
+            ],
+            "sub_shot_content": "[PERSON_1] is wearing a white hat and a swimsuit. He stands in water up to his knees, facing the left side of the frame. He raises his right hand, with his index finger pointing upwards."
+          },
+          {
+            "sub_shot_time": [
+              5.2,
+              6.3
+            ],
+            "sub_shot_content": "[PERSON_1] raises his right arm to one side of his body, gazing out at the open waters."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_3",
+        "time_range": [
+          6.3,
+          8.2
+        ],
+        "shot_transfer": "Suddenly, the shot cuts to a close-up of [PERSON_1]'s back, gazing at the water surface.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              6.3,
+              8.2
+            ],
+            "sub_shot_content": "[SCENE_1] is a close-up shot focusing on the back of [PERSON_1]'s white hat and his bare shoulders against the backdrop of a bright water feature."
+          },
+          {
+            "sub_shot_time": [
+              6.3,
+              7.5
+            ],
+            "sub_shot_content": "From behind, it can be seen that [PERSON_1] is gazing at the emerald-green sea, with a faint ship and a waving flag in the distance."
+          },
+          {
+            "sub_shot_time": [
+              7.5,
+              8.2
+            ],
+            "sub_shot_content": "[PERSON_1] raises his right hand to the left side of the frame, pointing his index finger upward to determine the wind direction."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_4",
+        "time_range": [
+          8.2,
+          13.2
+        ],
+        "shot_transfer": "Hard cut to an extreme close-up of [PERSON_1]'s hand pointing upwards, followed by a transition to a graphic title card.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              8.2,
+              13.2
+            ],
+            "sub_shot_content": "An extreme close-up of [PERSON_1]'s right hand with the index finger extended, set against a heavily blurred background featuring a flag flapping in the wind."
+          },
+          {
+            "sub_shot_time": [
+              8.2,
+              10.0
+            ],
+            "sub_shot_content": "[PERSON_1]'s right hand holds it firmly, measuring the wind direction."
+          },
+          {
+            "sub_shot_time": [
+              10.2,
+              13.2
+            ],
+            "sub_shot_content": "The scene gradually transitions to a pure black-blue background that fills the entire screen."
+          },
+          {
+            "sub_shot_time": [
+              10.0,
+              13.2
+            ],
+            "sub_shot_content": "The white, distressed-font text 'GETTING INTO THE WATER' gradually fades into view in the center of the blue screen."
+          },
+          {
+            "sub_shot_time": [
+              10.0,
+              13.2
+            ],
+            "sub_shot_content": "The title text \"GETTING INTO THE WATER\" is displayed stationary in the center of the screen."
+          }
+        ],
+        "camera": {
+          "shot_type": "extreme close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "PERSON_1"
+        ]
+      },
+      {
+        "shot_id": "shot_5",
+        "time_range": [
+          13.2,
+          17.3
+        ],
+        "shot_transfer": "Hard cut to a wide shot of [PERSON_1] walking out of the shallow water onto the beach to retrieve equipment.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              13.2,
+              17.3
+            ],
+            "sub_shot_content": "[SCENE_1], a wide shot of a curved sandy beach meeting calm, clear water, with people walking in the distance and hilly islands on the horizon."
+          },
+          {
+            "sub_shot_time": [
+              13.2,
+              14.5
+            ],
+            "sub_shot_content": "[PERSON_1] walks out of the shallow water area onto the white beach, then heads towards the right side of the frame."
+          },
+          {
+            "sub_shot_time": [
+              14.5,
+              15.5
+            ],
+            "sub_shot_content": "[PERSON_1] walks over to [OBJECT_1], which lies flat on the beach."
+          },
+          {
+            "sub_shot_time": [
+              15.5,
+              16.5
+            ],
+            "sub_shot_content": "[PERSON_1] bends forward, gripping the black mast of [OBJECT_1] firmly with both hands."
+          },
+          {
+            "sub_shot_time": [
+              16.5,
+              17.3
+            ],
+            "sub_shot_content": "[PERSON_1] lifts the mast slightly off the ground and begins walking backward, dragging [OBJECT_1] toward the water's edge."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "pan"
+        },
+        "active_events": [
+          "DIALOGUE_2"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_6",
+        "time_range": [
+          17.3,
+          21.3
+        ],
+        "shot_transfer": "Hard cut to a slightly closer wide shot of [PERSON_1] dragging [OBJECT_1] into the water.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              17.3,
+              21.3
+            ],
+            "sub_shot_content": "[SCENE_1], a wide shot of the sandy shoreline meeting the clear shallow water under bright sunlight as [PERSON_1] enters the water."
+          },
+          {
+            "sub_shot_time": [
+              17.3,
+              18.5
+            ],
+            "sub_shot_content": "A huge translucent white graphic arrow gradually appears on the water's surface, pointing towards the right side of the screen to indicate the wind direction."
+          },
+          {
+            "sub_shot_time": [
+              17.3,
+              21.3
+            ],
+            "sub_shot_content": "The white text \"• Keep your back and mast facing the wind!\" appears gradually along with the arrow on the left side of the screen."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_2"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_7",
+        "time_range": [
+          21.3,
+          23.8
+        ],
+        "shot_transfer": "Hard cut to another wide angle of [PERSON_1] dragging [OBJECT_1] deeper into the water.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              21.3,
+              23.8
+            ],
+            "sub_shot_content": "[SCENE_1], a wide shot tracking from a slightly different angle on the beach, showing the clear water and distant boats."
+          },
+          {
+            "sub_shot_time": [
+              21.3,
+              23.8
+            ],
+            "sub_shot_content": "[PERSON_1] continues to walk backward in water up to his thighs, holding onto the mast and dragging the moving [OBJECT_1], steadily moving it away from the shore."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_8",
+        "time_range": [
+          23.8,
+          25.4
+        ],
+        "shot_transfer": "Hard cut to a high angle medium close-up of [PERSON_1] holding the sail of [OBJECT_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              23.8,
+              25.4
+            ],
+            "sub_shot_content": "[SCENE_1], a high-angle medium shot focusing closely on [PERSON_1] gripping [OBJECT_1]'s bright orange sail and mast."
+          },
+          {
+            "sub_shot_time": [
+              23.8,
+              24.5
+            ],
+            "sub_shot_content": "[PERSON_1] grasps the mast and the edge of the orange sail of [OBJECT_1], lifting it slightly above the water's surface."
+          },
+          {
+            "sub_shot_time": [
+              24.5,
+              25.4
+            ],
+            "sub_shot_content": "[PERSON_1] stands in the water, holding [OBJECT_1] tightly as they walk backward."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium close-up",
+          "angle": "high angle",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_9",
+        "time_range": [
+          25.4,
+          28.0
+        ],
+        "shot_transfer": "Hard cut to a wide shot of [PERSON_1] rotating [OBJECT_1] in the water.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              25.4,
+              28.0
+            ],
+            "sub_shot_content": "[SCENE_1] shows [PERSON_1] submerged in water, with a small white boat moored in the background."
+          },
+          {
+            "sub_shot_time": [
+              25.4,
+              27.0
+            ],
+            "sub_shot_content": "[PERSON_1] wades forward, using her hands to push the nose of [OBJECT_1] and rotate the board across the water's surface."
+          },
+          {
+            "sub_shot_time": [
+              27.0,
+              28.0
+            ],
+            "sub_shot_content": "[PERSON_1] moves alongside the rotating [OBJECT_1], positioning herself near the center of the board."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_10",
+        "time_range": [
+          28.0,
+          30.2
+        ],
+        "shot_transfer": "Suddenly switching to a medium shot of [PERSON_1] standing next to [OBJECT_1], demonstrating how to use the tripods.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              28.0,
+              30.2
+            ],
+            "sub_shot_content": "[SCENE_1], a shot sequence starting as a medium view of [PERSON_1] waist-deep in water and rapidly cutting to a close-up of her hands."
+          },
+          {
+            "sub_shot_time": [
+              28.0,
+              29.4
+            ],
+            "sub_shot_content": "[PERSON_1] leans slightly forward, looking down as she reaches her right hand toward the center top deck of [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              29.5,
+              30.2
+            ],
+            "sub_shot_content": "The close-up shows that [PERSON_1]'s right hand firmly grips the white handle, pulling it upwards."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_3"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_11",
+        "time_range": [
+          30.2,
+          34.3
+        ],
+        "shot_transfer": "Opening shot of [PERSON_1] in [SCENE_1] handling [OBJECT_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              30.2,
+              34.3
+            ],
+            "sub_shot_content": "[SCENE_1], [PERSON_1] stands in turquoise海水, which reaches up to their waist. Next to them is [OBJECT_1], showing a close-up view."
+          },
+          {
+            "sub_shot_time": [
+              30.2,
+              34.3
+            ],
+            "sub_shot_content": "[PERSON_1] grips the white T-shaped daggerboard handle with her right hand and pulls it backwards towards herself."
+          },
+          {
+            "sub_shot_time": [
+              34.2,
+              34.3
+            ],
+            "sub_shot_content": "The scene transitions with a black wipe effect."
+          }
+        ],
+        "camera": {
+          "shot_type": "close up",
+          "angle": "eye level",
+          "movement": "pan"
+        },
+        "active_events": [
+          "DIALOGUE_3"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_12",
+        "time_range": [
+          34.3,
+          37.4
+        ],
+        "shot_transfer": "Wipe transition to a title card.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              34.3,
+              37.4
+            ],
+            "sub_shot_content": "A title screen with a pure black background."
+          },
+          {
+            "sub_shot_time": [
+              34.3,
+              37.4
+            ],
+            "sub_shot_content": "In the center of the screen, the words \"SAILING BASICS\" are displayed in bold white capital letters."
+          }
+        ],
+        "camera": {
+          "shot_type": "other",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": []
+      },
+      {
+        "shot_id": "shot_13",
+        "time_range": [
+          37.4,
+          53.6
+        ],
+        "shot_transfer": "Fade in from the title card to [PERSON_1] on [OBJECT_1] in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              37.4,
+              53.6
+            ],
+            "sub_shot_content": "[SCENE_1], medium long shot. [PERSON_1] is kneeling on the board of [OBJECT_1] in shallow water."
+          },
+          {
+            "sub_shot_time": [
+              38.0,
+              40.5
+            ],
+            "sub_shot_content": "A large white arrow pattern appears on the water surface, pointing towards the right side of the frame to indicate the wind direction."
+          },
+          {
+            "sub_shot_time": [
+              38.5,
+              41.0
+            ],
+            "sub_shot_content": "[PERSON_1] grabs the uphaul rope with both hands and slowly stands up onto her feet on [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              39.0,
+              45.0
+            ],
+            "sub_shot_content": "Text prompts detailing the navigation location appear sequentially on the right side of the screen."
+          },
+          {
+            "sub_shot_time": [
+              41.0,
+              48.0
+            ],
+            "sub_shot_content": "[PERSON_1] holds the uphaul rope with both hands, keeping the orange sail partially raised out of the water."
+          },
+          {
+            "sub_shot_time": [
+              48.0,
+              53.6
+            ],
+            "sub_shot_content": "[PERSON_1] stands upright on [OBJECT_1], balancing the device while facing sideways away from the camera."
+          }
+        ],
+        "camera": {
+          "shot_type": "long shot",
+          "angle": "profile",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_4",
+          "DIALOGUE_5"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_14",
+        "time_range": [
+          53.6,
+          59.3
+        ],
+        "shot_transfer": "Hard cut to a closer medium shot of [PERSON_1] on [OBJECT_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              53.6,
+              59.3
+            ],
+            "sub_shot_content": "[SCENE_1], medium shot. [PERSON_1] is standing on [OBJECT_1] holding the uphaul rope."
+          },
+          {
+            "sub_shot_time": [
+              54.0,
+              58.0
+            ],
+            "sub_shot_content": "A textual prompt appears on the left: \"Keep your back straight,\" with a white \"X\" symbol above her torso; \"Use your legs,\" with a white checkmark near her knees."
+          },
+          {
+            "sub_shot_time": [
+              53.7,
+              58.0
+            ],
+            "sub_shot_content": "[PERSON_1] demonstrates incorrect posture by leaning forward with a slightly bent back while balancing on the board."
+          }
+        ],
+        "camera": {
+          "shot_type": "long shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_5"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_15",
+        "time_range": [
+          59.3,
+          64.6
+        ],
+        "shot_transfer": "Hard cut to a slightly different angle showing [PERSON_1] on [OBJECT_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              59.3,
+              64.6
+            ],
+            "sub_shot_content": "[SCENE_1], medium shot. [PERSON_1] is standing on [OBJECT_1] preparing to grip the boom."
+          },
+          {
+            "sub_shot_time": [
+              59.5,
+              62.0
+            ],
+            "sub_shot_content": "[PERSON_1] releases the uphaul rope with her right hand and reaches forward towards the mast."
+          },
+          {
+            "sub_shot_time": [
+              61.3,
+              64.0
+            ],
+            "sub_shot_content": "Text overlay appears on the left side of the screen: \"Grab boom with your masthand.\""
+          },
+          {
+            "sub_shot_time": [
+              62.0,
+              64.0
+            ],
+            "sub_shot_content": "[PERSON_1] firmly grabs the mast section of the boom with her right hand, positioning it close to the mast."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_6"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_16",
+        "time_range": [
+          64.6,
+          71.0
+        ],
+        "shot_transfer": "Hard cut to a medium close-up focusing on [PERSON_1]'s upper body and the rig.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              64.6,
+              71.0
+            ],
+            "sub_shot_content": "[SCENE_1], medium close-up of [PERSON_1] and the sail's mast area."
+          },
+          {
+            "sub_shot_time": [
+              66.2,
+              70.0
+            ],
+            "sub_shot_content": "The text \"Cross one arm over the other\" appears, along with a white circular pattern highlighting her hands placed on the microphone."
+          },
+          {
+            "sub_shot_time": [
+              65.5,
+              69.0
+            ],
+            "sub_shot_content": "[PERSON_1] Crosses his left arm over the right to hold [OBJECT_1] more firmly, adopting a crossed-grip posture."
+          },
+          {
+            "sub_shot_time": [
+              69.0,
+              71.0
+            ],
+            "sub_shot_content": "[PERSON_1] holds the crossover grip steadily on the boom, ready to sheet in the sail."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_17",
+        "time_range": [
+          71.0,
+          105.2
+        ],
+        "shot_transfer": "Hard cut to a medium long shot of [PERSON_1], which later cuts directly to [PERSON_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              71.0,
+              105.2
+            ],
+            "sub_shot_content": "The shot begins with a medium long shot of [PERSON_1] on [OBJECT_1] in [SCENE_1], then cuts to [PERSON_2] demonstrating steering."
+          },
+          {
+            "sub_shot_time": [
+              71.5,
+              75.0
+            ],
+            "sub_shot_content": "Text prompts appear on the left screen: \"Grab the boom with your masthand\" and \"Pull smoothly to fill sail with power\"."
+          },
+          {
+            "sub_shot_time": [
+              72.0,
+              75.0
+            ],
+            "sub_shot_content": "[PERSON_1] grabs the boom with her right hand and pulls it towards her chest to catch the wind."
+          },
+          {
+            "sub_shot_time": [
+              75.0,
+              81.5
+            ],
+            "sub_shot_content": "[PERSON_1] begins sailing forward across the frame as the orange sail fills with wind."
+          },
+          {
+            "sub_shot_time": [
+              82.0,
+              82.2
+            ],
+            "sub_shot_content": "The camera performs a hard cut to a long shot of [PERSON_2] sailing on a similar board in [SCENE_1]."
+          },
+          {
+            "sub_shot_time": [
+              83.0,
+              85.0
+            ],
+            "sub_shot_content": "A white arrow pattern pointing towards the right side of the screen appears on the water surface in front of [PERSON_2]'s board, serving as a direction indicator."
+          },
+          {
+            "sub_shot_time": [
+              90.0,
+              94.0
+            ],
+            "sub_shot_content": "Text overlay appears on the right side of the screen: \"Tilt the sail backwards to steer into the wind.\""
+          },
+          {
+            "sub_shot_time": [
+              90.5,
+              94.5
+            ],
+            "sub_shot_content": "[PERSON_2] leans back and tilts the rig backwards towards the tail of the board to turn into the wind."
+          },
+          {
+            "sub_shot_time": [
+              94.0,
+              98.0
+            ],
+            "sub_shot_content": "The text \"Tilt the sail forward to steer away from the wind\" appears, along with a curved white arrow indicating the direction of the turn."
+          },
+          {
+            "sub_shot_time": [
+              97.5,
+              101.5
+            ],
+            "sub_shot_content": "[PERSON_2] pushes the rig forward towards the nose of the board to steer away from the wind."
+          }
+        ],
+        "camera": {
+          "shot_type": "long shot",
+          "angle": "eye level",
+          "movement": "tracking"
+        },
+        "active_events": [
+          "DIALOGUE_8",
+          "DIALOGUE_9",
+          "DIALOGUE_10",
+          "DIALOGUE_11",
+          "DIALOGUE_12"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_18",
+        "time_range": [
+          105.2,
+          120.9
+        ],
+        "shot_transfer": "Hard cut to another angle of [PERSON_2] sailing.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              105.2,
+              120.9
+            ],
+            "sub_shot_content": "[SCENE_1], a long shot tracking [PERSON_2] as she continuously sails [OBJECT_1] across the water."
+          },
+          {
+            "sub_shot_time": [
+              105.5,
+              109.0
+            ],
+            "sub_shot_content": "[PERSON_2] brings the sail of [OBJECT_1] back into an upright, neutral position to stop turning."
+          },
+          {
+            "sub_shot_time": [
+              109.0,
+              117.0
+            ],
+            "sub_shot_content": "[PERSON_2] maintains a steady posture and sails forward in a straight line on [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              117.5,
+              118.5
+            ],
+            "sub_shot_content": "The scene gradually fades out to a solid black screen."
+          },
+          {
+            "sub_shot_time": [
+              118.5,
+              120.9
+            ],
+            "sub_shot_content": "In the center of the black screen appears a title card with white text that reads \"HOW TO TACK\"."
+          }
+        ],
+        "camera": {
+          "shot_type": "long shot",
+          "angle": "eye level",
+          "movement": "tracking"
+        },
+        "active_events": [
+          "DIALOGUE_13"
+        ],
+        "references_in_shot": [
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_19",
+        "time_range": [
+          120.9,
+          160.3
+        ],
+        "shot_transfer": "Fade in from black to [PERSON_2] sailing on [OBJECT_1] in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              120.9,
+              160.3
+            ],
+            "sub_shot_content": "[SCENE_1] A long shot follows [PERSON_2] as they move forward on [OBJECT_1], preparing to perform a turning motion."
+          },
+          {
+            "sub_shot_time": [
+              125.0,
+              128.0
+            ],
+            "sub_shot_content": "[PERSON_2] releases her grip on the boom with her back hand, causing the sail of [OBJECT_1] to open and de-power."
+          },
+          {
+            "sub_shot_time": [
+              128.5,
+              131.0
+            ],
+            "sub_shot_content": "[PERSON_2] grabs the uphaul rope with both hands and tilts the sail backwards."
+          },
+          {
+            "sub_shot_time": [
+              132.0,
+              146.0
+            ],
+            "sub_shot_content": "Text overlay: \"Tilt the sail backwards to steer into the wind.\""
+          },
+          {
+            "sub_shot_time": [
+              135.0,
+              142.0
+            ],
+            "sub_shot_content": "[PERSON_2] takes shuffling steps around the front of the mast, moving to the opposite side of [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              142.0,
+              146.0
+            ],
+            "sub_shot_content": "[PERSON_2] completes her footwork, now standing on the new side of [OBJECT_1]."
+          },
+          {
+            "sub_shot_time": [
+              146.5,
+              148.0
+            ],
+            "sub_shot_content": "[PERSON_2] crosses her arms, reaching over to establish a crossover grip on the boom."
+          },
+          {
+            "sub_shot_time": [
+              149.0,
+              156.5
+            ],
+            "sub_shot_content": "A white circle graphic highlights her crossed hands on the boom as instructional text overlays appear."
+          },
+          {
+            "sub_shot_time": [
+              151.0,
+              156.0
+            ],
+            "sub_shot_content": "[PERSON_2] pulls the sail in with her back hand to catch the wind again, sailing forward on the new tack."
+          },
+          {
+            "sub_shot_time": [
+              157.5,
+              158.5
+            ],
+            "sub_shot_content": "The scene gradually fades out to a solid black screen."
+          },
+          {
+            "sub_shot_time": [
+              158.5,
+              160.3
+            ],
+            "sub_shot_content": "A white subtitle appears on the black screen, reading \"HOW TO JIBE\"."
+          }
+        ],
+        "camera": {
+          "shot_type": "long shot",
+          "angle": "eye level",
+          "movement": "tracking"
+        },
+        "active_events": [
+          "DIALOGUE_14",
+          "DIALOGUE_15",
+          "DIALOGUE_16",
+          "DIALOGUE_17",
+          "DIALOGUE_18"
+        ],
+        "references_in_shot": [
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_20",
+        "time_range": [
+          160.3,
+          175.9
+        ],
+        "shot_transfer": "Fade in from black to [PERSON_2] sailing on [OBJECT_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              160.3,
+              175.9
+            ],
+            "sub_shot_content": "[SCENE_1], long shot. [PERSON_2] is sailing on [OBJECT_1] with the beach in the background."
+          },
+          {
+            "sub_shot_time": [
+              163.0,
+              166.0
+            ],
+            "sub_shot_content": "[PERSON_2] lets go of the boom with her back hand to depower the sail for the maneuver."
+          },
+          {
+            "sub_shot_time": [
+              164.0,
+              175.5
+            ],
+            "sub_shot_content": "Text overlay appears on the right side of the screen: \"Release the backhand to de-power.\""
+          },
+          {
+            "sub_shot_time": [
+              167.5,
+              170.0
+            ],
+            "sub_shot_content": "[PERSON_2] releases the rope at the bottom of the mast."
+          },
+          {
+            "sub_shot_time": [
+              170.0,
+              175.0
+            ],
+            "sub_shot_content": "[PERSON_2] tilts the sail forward, causing the board to begin turning downwind."
+          },
+          {
+            "sub_shot_time": [
+              171.0,
+              175.0
+            ],
+            "sub_shot_content": "Additional instructional text appears on the right side in sequence."
+          }
+        ],
+        "camera": {
+          "shot_type": "long shot",
+          "angle": "eye level",
+          "movement": "tracking"
+        },
+        "active_events": [
+          "DIALOGUE_18"
+        ],
+        "references_in_shot": [
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_21",
+        "time_range": [
+          175.9,
+          194.4
+        ],
+        "shot_transfer": "Opening shot of [PERSON_2] executing a jibe maneuver on the water in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              175.9,
+              194.4
+            ],
+            "sub_shot_content": "[SCENE_1] A wide-angle shot displays the azure ocean, with distant green islands in the background and bright sunshine under the clear sky."
+          },
+          {
+            "sub_shot_time": [
+              176.0,
+              178.0
+            ],
+            "sub_shot_content": "[PERSON_2] stands balanced on [OBJECT_1], holding the front of the orange sail by the uphaul rope, keeping it tilted forward."
+          },
+          {
+            "sub_shot_time": [
+              176.5,
+              185.5
+            ],
+            "sub_shot_content": "The text \"Use feet to rotate the board\" is displayed on the screen in light blue font."
+          },
+          {
+            "sub_shot_time": [
+              177.0,
+              182.0
+            ],
+            "sub_shot_content": "[PERSON_2] shifts her footing, taking small steps on the board to slowly rotate it 180 degrees beneath her on the water."
+          },
+          {
+            "sub_shot_time": [
+              181.0,
+              183.0
+            ],
+            "sub_shot_content": "The text \"Continue tllting the sail\" is displayed on the screen in light blue font."
+          },
+          {
+            "sub_shot_time": [
+              182.0,
+              187.0
+            ],
+            "sub_shot_content": "[PERSON_2] maintains her grip on the uphaul, keeping the sail steadily tilted forward as the board completes its rotation."
+          },
+          {
+            "sub_shot_time": [
+              188.5,
+              194.4
+            ],
+            "sub_shot_content": "On the screen, the words \"Do crossover-grip\" are displayed in light blue font, accompanied by a white circle indicating her hand's position."
+          },
+          {
+            "sub_shot_time": [
+              188.0,
+              190.0
+            ],
+            "sub_shot_content": "[PERSON_2] reaches her right arm over her left to perform a crossover grip on the black boom of the sail."
+          },
+          {
+            "sub_shot_time": [
+              191.0,
+              194.4
+            ],
+            "sub_shot_content": "The text \"Slowly sheet in sail\" is displayed on the screen in light blue font."
+          },
+          {
+            "sub_shot_time": [
+              190.0,
+              194.4
+            ],
+            "sub_shot_content": "[PERSON_2] grasps the boom with her other hand and smoothly pulls the sail toward herself to catch the wind, propelling the board forward."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_19",
+          "DIALOGUE_20"
+        ],
+        "references_in_shot": [
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_22",
+        "time_range": [
+          194.4,
+          200.9
+        ],
+        "shot_transfer": "Continuous shot as [PERSON_2] sails away, gradually transitioning to a black screen.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              194.4,
+              200.9
+            ],
+            "sub_shot_content": "[SCENE_1], a steady wide shot of the calm ocean environment."
+          },
+          {
+            "sub_shot_time": [
+              194.5,
+              198.5
+            ],
+            "sub_shot_content": "[PERSON_2] operates [OBJECT_1] as it sails towards the distant islands. With the bright orange sails filled with wind, she leans back slightly."
+          },
+          {
+            "sub_shot_time": [
+              198.5,
+              200.9
+            ],
+            "sub_shot_content": "The bright ocean scene gradually fades out, transitioning smoothly into a completely black screen."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_20",
+          "DIALOGUE_21"
+        ],
+        "references_in_shot": [
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_23",
+        "time_range": [
+          200.9,
+          203.8
+        ],
+        "shot_transfer": "Hard cut from black to a wide shot of [PERSON_3] windsurfing in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              200.9,
+              203.8
+            ],
+            "sub_shot_content": "[SCENE_1], a wide tracking shot across choppy ocean water under an overcast, cloudy sky."
+          },
+          {
+            "sub_shot_time": [
+              201.0,
+              203.8
+            ],
+            "sub_shot_content": "[PERSON_3] rides a sailboard, gliding quickly from the right side of the frame to the left. He leans back significantly to balance the pull of the sail."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "tracking"
+        },
+        "active_events": [
+          "DIALOGUE_21"
+        ],
+        "references_in_shot": [
+          "PERSON_3",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_24",
+        "time_range": [
+          203.8,
+          207.4
+        ],
+        "shot_transfer": "Hard cut to a low angle shot of [PERSON_4] windsurfing in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              203.8,
+              207.4
+            ],
+            "sub_shot_content": "[SCENE_1], a low angle tracking shot taken close to the water surface, framed against a clear, deep blue sky."
+          },
+          {
+            "sub_shot_time": [
+              203.9,
+              207.4
+            ],
+            "sub_shot_content": "[PERSON_4] looks forward with a wide smile, confidently maneuvering a bright red sail while riding the windsurf board swiftly across the water."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "low angle",
+          "movement": "tracking"
+        },
+        "active_events": [
+          "DIALOGUE_21",
+          "DIALOGUE_22"
+        ],
+        "references_in_shot": [
+          "PERSON_4",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_25",
+        "time_range": [
+          207.4,
+          210.2
+        ],
+        "shot_transfer": "Hard cut to an aerial shot of a windsurfer in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              207.4,
+              210.2
+            ],
+            "sub_shot_content": "[SCENE_1], a high angle aerial view looking directly down at the vivid turquoise ocean surface."
+          },
+          {
+            "sub_shot_time": [
+              207.5,
+              210.2
+            ],
+            "sub_shot_content": "A surfer quickly moves from the left side of the frame to the right. As the surfboard cuts through the water, it leaves a clear trail of white foam behind."
+          }
+        ],
+        "camera": {
+          "shot_type": "far shot",
+          "angle": "high angle",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_22"
+        ],
+        "references_in_shot": [
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_26",
+        "time_range": [
+          210.2,
+          213.4
+        ],
+        "shot_transfer": "Hard cut to a low, splashy shot tracking [PERSON_3] riding through waves in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              210.2,
+              213.4
+            ],
+            "sub_shot_content": "[SCENE_1], a dynamic, low angle tracking shot positioned extremely close to the rushing water."
+          },
+          {
+            "sub_shot_time": [
+              210.2,
+              212.0
+            ],
+            "sub_shot_content": "The camera focuses closely on the nose of a windsurf board splashing through choppy waves, partially obscuring the view with water droplets on the lens and showing only the rider's lower legs."
+          },
+          {
+            "sub_shot_time": [
+              212.0,
+              213.4
+            ],
+            "sub_shot_content": "The camera angle tilts up to reveal [PERSON_3] holding the boom, leaning back and firmly controlling the sail as he rides through the splashy conditions."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium close-up",
+          "angle": "low angle",
+          "movement": "tracking"
+        },
+        "active_events": [
+          "DIALOGUE_22"
+        ],
+        "references_in_shot": [
+          "PERSON_3",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_27",
+        "time_range": [
+          213.4,
+          217.0
+        ],
+        "shot_transfer": "Hard cut to a medium shot of [PERSON_5] windsurfing confidently in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              213.4,
+              217.0
+            ],
+            "sub_shot_content": "[SCENE_1], a medium tracking shot on a bright sunny day, capturing the clear blue water and a distant hilly coastline."
+          },
+          {
+            "sub_shot_time": [
+              213.5,
+              215.0
+            ],
+            "sub_shot_content": "[PERSON_5] rides smoothly and confidently on his board, holding the boom of his blue and green sail with both hands."
+          },
+          {
+            "sub_shot_time": [
+              215.0,
+              217.0
+            ],
+            "sub_shot_content": "[PERSON_5] completely lets go of the microphone, makes a \"six\" gesture with both hands toward the camera, and his face is filled with a cheerful smile."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "low_angle",
+          "movement": "tracking"
+        },
+        "active_events": [
+          "DIALOGUE_22"
+        ],
+        "references_in_shot": [
+          "PERSON_5",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_28",
+        "time_range": [
+          217.0,
+          224.5
+        ],
+        "shot_transfer": "The video cuts to black, followed by the appearance of a logo.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              217.0,
+              218.0
+            ],
+            "sub_shot_content": "A static, completely black screen."
+          },
+          {
+            "sub_shot_time": [
+              218.0,
+              224.5
+            ],
+            "sub_shot_content": "A small, stylized red and white tiki logo fades into the center of the black background."
+          },
+          {
+            "sub_shot_time": [
+              218.0,
+              224.5
+            ],
+            "sub_shot_content": "The website address 'www.star-board.com' appears in plain white text directly beneath the tiki logo."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": []
+      }
+    ],
+    "shot_time": [
+      [
+        0.0,
+        4.72
+      ],
+      [
+        4.72,
+        6.32
+      ],
+      [
+        6.32,
+        8.2
+      ],
+      [
+        8.2,
+        13.24
+      ],
+      [
+        13.24,
+        17.36
+      ],
+      [
+        17.36,
+        21.36
+      ],
+      [
+        21.36,
+        23.8
+      ],
+      [
+        23.8,
+        25.44
+      ],
+      [
+        25.44,
+        28.04
+      ],
+      [
+        28.04,
+        30.2
+      ],
+      [
+        30.2,
+        34.32
+      ],
+      [
+        34.32,
+        37.44
+      ],
+      [
+        37.44,
+        53.64
+      ],
+      [
+        53.64,
+        59.32
+      ],
+      [
+        59.32,
+        64.68
+      ],
+      [
+        64.68,
+        71.08
+      ],
+      [
+        71.08,
+        105.28
+      ],
+      [
+        105.28,
+        120.96
+      ],
+      [
+        120.96,
+        160.36
+      ],
+      [
+        160.36,
+        175.96
+      ],
+      [
+        175.96,
+        194.48
+      ],
+      [
+        194.48,
+        200.96
+      ],
+      [
+        200.96,
+        203.88
+      ],
+      [
+        203.88,
+        207.48
+      ],
+      [
+        207.48,
+        210.2
+      ],
+      [
+        210.2,
+        213.48
+      ],
+      [
+        213.48,
+        217.04
+      ],
+      [
+        217.04,
+        224.56
+      ]
+    ]
+  },
+  "source_video_path": "Tarsier2-Recap/ActivityNet/videos/v_q59X9izcjQc.mp4",
+  "video_path": "test/videos/000719.mp4"
+}

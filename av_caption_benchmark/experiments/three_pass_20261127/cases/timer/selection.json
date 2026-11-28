@@ -1,0 +1,24 @@
+{
+  "id": "timer",
+  "category": "工具、维修与手作",
+  "title": "灌溉定时器拆装",
+  "source": {
+    "id": "timer",
+    "domain": "日常操作 · 灌溉定时器",
+    "clip_sha256": "d1b69bbd7597fbcb92085e0a5f67c35cba26436d7a93a861a4b9543d939b922a",
+    "people_limit": 3,
+    "audio_source": "same original MP4",
+    "filename": "ijF-CYpTrwQ.6.mp4",
+    "media": {
+      "repo": "mhan/shot2story-videos",
+      "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+      "tar_member": "release_134k_videos/ijF-CYpTrwQ.6.mp4",
+      "header_offset": 126769692160,
+      "size": 646520,
+      "eva_revision": "146a0b13c1b8fe93b16fc7b89b949436d1993c76"
+    }
+  },
+  "source_start": 0,
+  "duration": 11.678333,
+  "sha256": "d1b69bbd7597fbcb92085e0a5f67c35cba26436d7a93a861a4b9543d939b922a"
+}

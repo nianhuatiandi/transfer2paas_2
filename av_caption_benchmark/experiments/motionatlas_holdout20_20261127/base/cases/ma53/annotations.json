@@ -1,0 +1,570 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma53",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "户外表演",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      27
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-5b4c3ba4-449.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      15.083333333333334
+    ],
+    "official_sha256": "8065fb0b537d8d74baa20f818223c19c1ca1effb5618b09229323677d17d0ca2",
+    "clip_sha256": "8065fb0b537d8d74baa20f818223c19c1ca1effb5618b09229323677d17d0ca2",
+    "audio_source": null
+  },
+  "duration_seconds": 15.083333333333334,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 15.083333333333334,
+      "first_frame": 0,
+      "end_frame_exclusive": 905
+    }
+  ],
+  "input_frames": {
+    "visual": 152
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了一名男子在街头表演抛接面团的动作，包含多次抛掷、旋转和拉伸面团的连续过程。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿黑色外套内搭白色T恤的男子，戴着透明口罩"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 3.6,
+        "description": "第一次将面团高高抛向空中并等待其落下"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 3.7,
+        "end": 14.1,
+        "description": "第二次抛起面团并在空中进行复杂的旋转、拉伸和单手托举等花式动作"
+      },
+      {
+        "id": "S01-E03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 14.2,
+        "end": 15.08,
+        "description": "第三次将面团用力抛向高空"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "整理面团",
+        "start": 0.0,
+        "end": 0.4,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          0.3,
+          0.4
+        ],
+        "detail": "男子站在圆桌前，双手拿起一块白色的扁平面团，将其在桌面上展开并调整位置。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "男子双手拿着面团放在圆桌上"
+          },
+          {
+            "time": 0.4,
+            "observation": "男子双手抓住面团边缘准备向上提"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "持握",
+          "整理"
+        ],
+        "subphases": [],
+        "brief": "男子在圆桌上整理手中的白色面团"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "抛掷面团",
+        "start": 0.5,
+        "end": 0.9,
+        "start_range": [
+          0.5,
+          0.6
+        ],
+        "end_range": [
+          0.8,
+          0.9
+        ],
+        "detail": "男子双手捏住面团两侧，手臂向上挥动，将面团垂直抛向高处的天空。",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "男子双手举起面团离开桌面"
+          },
+          {
+            "time": 0.9,
+            "observation": "面团飞离男子双手进入半空"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "脱手瞬间",
+            "time": 0.9,
+            "time_range": [
+              0.8,
+              1.0
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双手"
+        ],
+        "movement_roles": [
+          "发力",
+          "抛掷"
+        ],
+        "subphases": [],
+        "brief": "男子双手将面团向上抛出"
+      },
+      {
+        "id": "S01-A03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "held_pose",
+        "label": "仰头注视",
+        "start": 1.0,
+        "end": 3.5,
+        "start_range": [
+          1.0,
+          1.1
+        ],
+        "end_range": [
+          3.4,
+          3.5
+        ],
+        "detail": "面团在空中飞行期间，男子保持头部后仰的姿势，视线一直跟随着空中的面团，身体微微转动以追踪轨迹。",
+        "evidence": [
+          {
+            "time": 1.0,
+            "observation": "男子抬头看向天空中的面团"
+          },
+          {
+            "time": 3.5,
+            "observation": "男子持续仰头看着即将落下的面团"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "头部",
+          "颈部"
+        ],
+        "movement_roles": [
+          "注视",
+          "追踪"
+        ],
+        "subphases": [],
+        "brief": "男子仰头注视空中飘落的面团"
+      },
+      {
+        "id": "S01-A04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "接住面团",
+        "start": 3.6,
+        "end": 3.7,
+        "start_range": [
+          3.6,
+          3.7
+        ],
+        "end_range": [
+          3.7,
+          3.8
+        ],
+        "detail": "当面团下落至胸前高度时，男子伸出右手稳稳地抓住了面团的边缘。",
+        "evidence": [
+          {
+            "time": 3.6,
+            "observation": "面团下落到男子身前"
+          },
+          {
+            "time": 3.7,
+            "observation": "男子右手成功抓住面团"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "接触瞬间",
+            "time": 3.7,
+            "time_range": [
+              3.6,
+              3.8
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "抓取",
+          "承接"
+        ],
+        "subphases": [],
+        "brief": "男子用右手接住下落的面团"
+      },
+      {
+        "id": "S01-A05",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "二次抛掷",
+        "start": 3.8,
+        "end": 4.2,
+        "start_range": [
+          3.8,
+          3.9
+        ],
+        "end_range": [
+          4.1,
+          4.2
+        ],
+        "detail": "男子接住面团后未做停顿，立即利用手腕力量再次将面团向上方抛出。",
+        "evidence": [
+          {
+            "time": 3.8,
+            "observation": "男子手持面团开始向上挥臂"
+          },
+          {
+            "time": 4.2,
+            "observation": "面团再次脱离手掌飞向空中"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "脱手瞬间",
+            "time": 4.2,
+            "time_range": [
+              4.1,
+              4.3
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右臂",
+          "右手"
+        ],
+        "movement_roles": [
+          "发力",
+          "抛掷"
+        ],
+        "subphases": [],
+        "brief": "男子迅速将面团再次抛向空中"
+      },
+      {
+        "id": "S01-A06",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "手部花式操控",
+        "start": 4.3,
+        "end": 13.8,
+        "start_range": [
+          4.3,
+          4.4
+        ],
+        "end_range": [
+          13.7,
+          13.8
+        ],
+        "detail": "男子通过双手交替拍打、手指顶转以及手臂挥舞带动面团在空中持续旋转和起伏，期间还配合了转身和跨步动作来维持面团的平衡与延展。",
+        "evidence": [
+          {
+            "time": 4.3,
+            "observation": "面团落在男子上方的手掌附近"
+          },
+          {
+            "time": 6.0,
+            "observation": "男子双手在头顶上方快速拨弄面团使其翻转"
+          },
+          {
+            "time": 9.0,
+            "observation": "男子侧身并用单手托着旋转的面团"
+          },
+          {
+            "time": 12.0,
+            "observation": "男子双手拉扯面团两端使其变长"
+          },
+          {
+            "time": 13.8,
+            "observation": "男子双手握住被拉长的面团两端"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "指尖顶转",
+            "time": 8.0,
+            "time_range": [
+              7.9,
+              8.1
+            ]
+          },
+          {
+            "name": "双手拉伸",
+            "time": 12.5,
+            "time_range": [
+              12.4,
+              12.6
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "双手",
+          "双臂",
+          "躯干",
+          "双腿"
+        ],
+        "movement_roles": [
+          "拍击",
+          "旋转",
+          "拉伸",
+          "平衡"
+        ],
+        "subphases": [
+          {
+            "label": "初步控球",
+            "start": 4.3,
+            "end": 6.5,
+            "detail": "面团落下后，男子双手在胸前及肩部高度反复轻拍面团底部，使其保持在弹跳状态而不落地。",
+            "evidence": [
+              {
+                "time": 4.3,
+                "observation": "面团刚落入控制范围"
+              },
+              {
+                "time": 6.5,
+                "observation": "面团稳定在双手之间上下浮动"
+              }
+            ]
+          },
+          {
+            "label": "高位旋转与拉伸",
+            "start": 6.6,
+            "end": 11.5,
+            "detail": "男子将面团引至头顶上方，利用手指尖的力量让面团像陀螺一样水平旋转，随后双手分别抓住面团边缘向外拉伸，使面团面积变大变薄。",
+            "evidence": [
+              {
+                "time": 6.6,
+                "observation": "面团升至头顶高度"
+              },
+              {
+                "time": 9.5,
+                "observation": "面团在指尖高速旋转呈圆盘状"
+              },
+              {
+                "time": 11.5,
+                "observation": "面团被横向拉长成椭圆形"
+              }
+            ]
+          },
+          {
+            "label": "收尾整形",
+            "start": 11.6,
+            "end": 13.8,
+            "detail": "男子收回拉伸动作，双手重新聚拢面团，将其折叠并整理好形状，为下一次抛掷做准备。",
+            "evidence": [
+              {
+                "time": 11.6,
+                "observation": "男子停止大幅度的肢体伸展"
+              },
+              {
+                "time": 13.8,
+                "observation": "面团被收拢在双手之中"
+              }
+            ]
+          }
+        ],
+        "brief": "男子运用多种手法让面团在空中持续旋转、拉伸并保持不落地"
+      },
+      {
+        "id": "S01-A07",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "三次抛掷",
+        "start": 13.9,
+        "end": 14.2,
+        "start_range": [
+          13.9,
+          14.0
+        ],
+        "end_range": [
+          14.1,
+          14.2
+        ],
+        "detail": "男子双手高举过头顶，猛力将手中整理好的面团向斜上方的高空抛出。",
+        "evidence": [
+          {
+            "time": 13.9,
+            "observation": "男子双手举着面团蓄力"
+          },
+          {
+            "time": 14.2,
+            "observation": "面团飞出画面顶部视野"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "脱手瞬间",
+            "time": 14.2,
+            "time_range": [
+              14.1,
+              14.3
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双手"
+        ],
+        "movement_roles": [
+          "发力",
+          "抛掷"
+        ],
+        "subphases": [],
+        "brief": "男子将面团最后一次用力抛向高空"
+      },
+      {
+        "id": "S01-A08",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E03",
+        "kind": "held_pose",
+        "label": "目送面团",
+        "start": 14.3,
+        "end": 15.08,
+        "start_range": [
+          14.3,
+          14.4
+        ],
+        "end_range": [
+          15.0,
+          15.08
+        ],
+        "detail": "面团消失在高空后，男子继续保持仰望姿势，目光追随着远处的面团直至视频结束。",
+        "evidence": [
+          {
+            "time": 14.3,
+            "observation": "男子抬头望向天空"
+          },
+          {
+            "time": 15.08,
+            "observation": "男子依然保持着仰视的姿态"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "头部",
+          "颈部"
+        ],
+        "movement_roles": [
+          "注视",
+          "追踪"
+        ],
+        "subphases": [],
+        "brief": "男子仰头目送面团飞向远方"
+      }
+    ],
+    "uncertainties": [
+      "S01-A06 中具体的每一次手部触碰细节因动作过快且存在遮挡难以精确计数，故合并为一个连续的操控动作描述。"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "S01-A06 中具体的每一次手部触碰细节因动作过快且存在遮挡难以精确计数，故合并为一个连续的操控动作描述。"
+  ]
+}

@@ -1,0 +1,702 @@
+{
+  "source": {
+    "id": "sal02",
+    "benchmark": "video-SALMONN 2",
+    "original_id": "video/88.mp4",
+    "source_url": "https://huggingface.co/datasets/tsinghua-ee/video-SALMONN_2_testset/resolve/bed2d8e6547210d55945b056e9f0f8ab00129392/video/88.mp4",
+    "archive_member": null,
+    "original_file": "sal88.mp4",
+    "source_media_sha256": "300a1e8356b649cca5c3c5c7f5d977b4ce819757339b2ffa284da38451ee3191",
+    "clip_sha256": "35d355fe9454214e34100fc3c52f32a73884ca8e498a149bbf27b9fff0ac05f9",
+    "source_duration": 45.2,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "card": "03",
+    "domain": "厨房水槽清洁",
+    "domain_rule": "",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "F4 将机器旋转写为“启动”；优先核对是否看见人操作开关。物体开始运动与人实施启动应分别判断。"
+    ]
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 12.0,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 4.333333333333333,
+      "first_frame": 0,
+      "end_frame_exclusive": 130
+    },
+    {
+      "id": "S02",
+      "start": 4.333333333333333,
+      "end": 6.0,
+      "first_frame": 130,
+      "end_frame_exclusive": 180
+    },
+    {
+      "id": "S03",
+      "start": 6.0,
+      "end": 6.4,
+      "first_frame": 180,
+      "end_frame_exclusive": 192
+    },
+    {
+      "id": "S04",
+      "start": 6.4,
+      "end": 7.033333333333333,
+      "first_frame": 192,
+      "end_frame_exclusive": 211
+    },
+    {
+      "id": "S05",
+      "start": 7.033333333333333,
+      "end": 7.6,
+      "first_frame": 211,
+      "end_frame_exclusive": 228
+    },
+    {
+      "id": "S06",
+      "start": 7.6,
+      "end": 10.0,
+      "first_frame": 228,
+      "end_frame_exclusive": 300
+    },
+    {
+      "id": "S07",
+      "start": 10.0,
+      "end": 12.0,
+      "first_frame": 300,
+      "end_frame_exclusive": 360
+    }
+  ],
+  "timestamped_frames": 127,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2"
+  },
+  "visual": {
+    "clip_id": "sal02",
+    "mode": "VISUAL_GT",
+    "clock": "shot",
+    "facts": [
+      {
+        "id": "F1",
+        "kind": "action",
+        "level": "L2",
+        "actor": "戴蓝色手套的手",
+        "object": "黑色橡胶塞",
+        "parent_ids": [],
+        "claim": "戴蓝色手套的手从垃圾处理器中取出黑色橡胶塞。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": "[0.0, 1.6]",
+        "visible_spans": [
+          "[0.0, 1.6]"
+        ],
+        "boundary_ranges": {
+          "start": "[0.0, 0.2]",
+          "end": "[1.4, 1.6]"
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time": "[0.0, 1.6]",
+            "desc": "手伸入垃圾处理器内部，抓住并向上拔出黑色橡胶塞。"
+          }
+        ]
+      },
+      {
+        "id": "F2",
+        "kind": "action",
+        "level": "L2",
+        "actor": "金属工具",
+        "object": "垃圾处理器底部螺栓",
+        "parent_ids": [],
+        "claim": "使用金属工具拧松垃圾处理器底部的螺栓。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": "[4.333, 7.567]",
+        "visible_spans": [
+          "[4.333, 7.567]"
+        ],
+        "boundary_ranges": {
+          "start": "[4.333, 4.5]",
+          "end": "[7.4, 7.567]"
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time": "[4.333, 7.567]",
+            "desc": "金属工具插入垃圾处理器底部的螺栓槽口并进行旋转操作。"
+          }
+        ]
+      },
+      {
+        "id": "F3",
+        "kind": "action",
+        "level": "L2",
+        "actor": "水流",
+        "object": "垃圾处理器",
+        "parent_ids": [],
+        "claim": "向垃圾处理器内注水冲洗。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": "[7.6, 9.967]",
+        "visible_spans": [
+          "[7.6, 9.967]"
+        ],
+        "boundary_ranges": {
+          "start": "[7.6, 7.8]",
+          "end": "[9.8, 9.967]"
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time": "[7.6, 9.967]",
+            "desc": "画面中出现持续的水流注入垃圾处理器内部进行冲洗。"
+          }
+        ]
+      },
+      {
+        "id": "F4",
+        "kind": "action",
+        "level": "L2",
+        "actor": "垃圾处理器",
+        "object": "水和碎屑",
+        "parent_ids": [],
+        "claim": "启动垃圾处理器高速旋转以清理内部残留物。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": "[10.0, 11.967]",
+        "visible_spans": [
+          "[10.0, 11.967]"
+        ],
+        "boundary_ranges": {
+          "start": "[10.0, 10.2]",
+          "end": [
+            null,
+            null
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time": "[10.0, 11.967]",
+            "desc": "垃圾处理器内部的转盘开始高速旋转，形成漩涡并将水和碎屑甩向四周。"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": "R1",
+        "predicate": "precedes",
+        "from_id": "F1",
+        "to_id": "F2",
+        "claim": "取出橡胶塞的动作发生在拧松螺栓之前。",
+        "evidence": [
+          {
+            "time": "[0.0, 1.6]",
+            "desc": "F1结束于1.6秒左右，而F2开始于4.333秒左右。"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R2",
+        "predicate": "precedes",
+        "from_id": "F2",
+        "to_id": "F3",
+        "claim": "拧松螺栓的动作发生在注水冲洗之前。",
+        "evidence": [
+          {
+            "time": "[4.333, 7.567]",
+            "desc": "F2结束于7.567秒左右，而F3开始于7.6秒左右。"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R3",
+        "predicate": "precedes",
+        "from_id": "F3",
+        "to_id": "F4",
+        "claim": "注水冲洗的动作发生在启动垃圾处理器之前。",
+        "evidence": [
+          {
+            "time": "[7.6, 9.967]",
+            "desc": "F3结束于9.967秒左右，而F4开始于10.0秒左右。"
+          }
+        ],
+        "certainty": "asserted"
+      }
+    ],
+    "residual": []
+  },
+  "audio": {
+    "clip_id": "sal02",
+    "clock": "global_clip_clock",
+    "coverage": "full",
+    "audio_events": [
+      {
+        "id": "E1",
+        "type": "music",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "一段轻快的器乐背景音乐持续播放",
+        "instance_range": [
+          0.0,
+          12.0
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 6.0,
+        "confidence": "high"
+      },
+      {
+        "id": "E2",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "One of my most asked questions on here is how do I clean my garbage disposal?",
+        "claim": "男声提问如何清洁垃圾处理器",
+        "instance_range": [
+          0.16,
+          4.32
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.08,
+            0.24
+          ],
+          "end": [
+            4.24,
+            4.4
+          ]
+        },
+        "evidence_time": 2.5,
+        "confidence": "high"
+      },
+      {
+        "id": "E3",
+        "type": "sfx",
+        "layer": "midground",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "一声金属撞击声",
+        "instance_range": [
+          4.72,
+          5.04
+        ],
+        "boundary_ranges": {
+          "start": [
+            4.64,
+            4.8
+          ],
+          "end": [
+            4.96,
+            5.12
+          ]
+        },
+        "evidence_time": 4.88,
+        "confidence": "medium"
+      },
+      {
+        "id": "E4",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "Well let's do it.",
+        "claim": "男声决定开始操作",
+        "instance_range": [
+          4.4,
+          5.04
+        ],
+        "boundary_ranges": {
+          "start": [
+            4.32,
+            4.48
+          ],
+          "end": [
+            4.96,
+            5.12
+          ]
+        },
+        "evidence_time": 4.72,
+        "confidence": "high"
+      },
+      {
+        "id": "E5",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "This one was a little extra gross so I'm gonna knock these teeth loose with a flathead and a hammer run some water and then run some dish soap through it.",
+        "claim": "男声描述用螺丝刀和锤子敲松牙齿并冲水加洗洁精的过程",
+        "instance_range": [
+          5.44,
+          11.84
+        ],
+        "boundary_ranges": {
+          "start": [
+            5.36,
+            5.52
+          ],
+          "end": [
+            11.76,
+            11.92
+          ]
+        },
+        "evidence_time": 8.5,
+        "confidence": "high"
+      },
+      {
+        "id": "E6",
+        "type": "sfx",
+        "layer": "midground",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "两声连续的金属敲击声",
+        "instance_range": [
+          7.28,
+          8.08
+        ],
+        "boundary_ranges": {
+          "start": [
+            7.2,
+            7.36
+          ],
+          "end": [
+            8.0,
+            8.16
+          ]
+        },
+        "evidence_time": 7.68,
+        "confidence": "medium",
+        "intermittent_envelope_only": true
+      }
+    ],
+    "unresolved": []
+  },
+  "original_audio_events": [
+    {
+      "id": "E1",
+      "type": "music",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "一段轻快的器乐背景音乐持续播放",
+      "instance_range": [
+        0.0,
+        12.0
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 6.0,
+      "confidence": "high"
+    },
+    {
+      "id": "E2",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "One of my most asked questions on here is how do I clean my garbage disposal?",
+      "claim": "男声提问如何清洁垃圾处理器",
+      "instance_range": [
+        0.16,
+        4.32
+      ],
+      "boundary_ranges": {
+        "start": [
+          0.08,
+          0.24
+        ],
+        "end": [
+          4.24,
+          4.4
+        ]
+      },
+      "evidence_time": 2.5,
+      "confidence": "high"
+    },
+    {
+      "id": "E3",
+      "type": "sfx",
+      "layer": "midground",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "一声金属撞击声",
+      "instance_range": [
+        4.72,
+        5.04
+      ],
+      "boundary_ranges": {
+        "start": [
+          4.64,
+          4.8
+        ],
+        "end": [
+          4.96,
+          5.12
+        ]
+      },
+      "evidence_time": 4.88,
+      "confidence": "medium"
+    },
+    {
+      "id": "E4",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "Well let's do it.",
+      "claim": "男声决定开始操作",
+      "instance_range": [
+        4.4,
+        5.04
+      ],
+      "boundary_ranges": {
+        "start": [
+          4.32,
+          4.48
+        ],
+        "end": [
+          4.96,
+          5.12
+        ]
+      },
+      "evidence_time": 4.72,
+      "confidence": "high"
+    },
+    {
+      "id": "E5",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "This one was a little extra gross so I'm gonna knock these teeth loose with a flathead and a hammer run some water and then run some dish soap through it.",
+      "claim": "男声描述用螺丝刀和锤子敲松牙齿并冲水加洗洁精的过程",
+      "instance_range": [
+        5.44,
+        11.84
+      ],
+      "boundary_ranges": {
+        "start": [
+          5.36,
+          5.52
+        ],
+        "end": [
+          11.76,
+          11.92
+        ]
+      },
+      "evidence_time": 8.5,
+      "confidence": "high"
+    },
+    {
+      "id": "E6",
+      "type": "sfx",
+      "layer": "midground",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "两声连续的金属敲击声",
+      "instance_range": [
+        7.28,
+        8.08
+      ],
+      "boundary_ranges": {
+        "start": [
+          7.2,
+          7.36
+        ],
+        "end": [
+          8.0,
+          8.16
+        ]
+      },
+      "evidence_time": 7.68,
+      "confidence": "medium"
+    }
+  ],
+  "sentence_alignment": {},
+  "temporal_edges": [
+    {
+      "visual_id": "F1",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          0.0,
+          1.6
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F1",
+      "audio_id": "E2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          0.16,
+          1.6
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F2",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          4.333,
+          7.567
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F2",
+      "audio_id": "E2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [],
+      "peak_in_visible_span": null,
+      "status": "边界待审",
+      "nominal": false,
+      "derived": true
+    },
+    {
+      "visual_id": "F2",
+      "audio_id": "E3",
+      "audio_layer": "midground",
+      "audio_type": "sfx",
+      "intersections": [
+        [
+          4.72,
+          5.04
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F2",
+      "audio_id": "E4",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          4.4,
+          5.04
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F2",
+      "audio_id": "E5",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          5.44,
+          7.567
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F3",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          7.6,
+          9.967
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F3",
+      "audio_id": "E5",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          7.6,
+          9.967
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F4",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          10.0,
+          11.967
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F4",
+      "audio_id": "E5",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          10.0,
+          11.84
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "E6 将若干短音合成一段，包络内可能有空隙；保留事件，排除该包络产生的边。",
+    "F4 将机器旋转写为“启动”；优先核对是否看见人操作开关。物体开始运动与人实施启动应分别判断。",
+    "本次未输出 L3 部位运动，需按画面判定是否有漏项。"
+  ]
+}

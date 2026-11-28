@@ -1,0 +1,588 @@
+{
+  "schema": "av-events/1.0",
+  "description_language": "en",
+  "source_sha256": "35d355fe9454214e34100fc3c52f32a73884ca8e498a149bbf27b9fff0ac05f9",
+  "protocol_sha256": "ebbec687b8723b898ce292861bf095cabe397bd7c622bc2f98c2d9346bfebdaf",
+  "duration_seconds": 12.0,
+  "actors": [
+    {
+      "id": "P1",
+      "appearance": "A person wearing blue gloves"
+    }
+  ],
+  "clock": "source seconds, half-open intervals",
+  "relation_semantics": "Evidence of temporal co-occurrence only. Speaker identity and acoustic causation are separate claims.",
+  "reference_status": "model_annotations_with_review_flags",
+  "events": [
+    {
+      "id": "V0001",
+      "kind": "motion",
+      "actor": "A person wearing blue gloves",
+      "start": 0,
+      "end": 1.5,
+      "sources": [
+        "shot00000/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "removing",
+      "brief": "A person wearing blue gloves removes the black rubber splash guard from the circular metal sink disposal drain opening.",
+      "detail": "The gloved hand reaches into the dark center of the InSinkErator Pro Disposer flange, grasps the flexible rubber piece covering the grinding chamber, and lifts it away to reveal two hexagonal bolts surrounded by accumulated food debris and rust-colored residue.",
+      "phases": [
+        {
+          "label": "reaching in",
+          "start": 0,
+          "end": 0.8,
+          "id": "V0001.P01",
+          "fact_evidence": "From 0.0s to approximately 0.8s, the gloved fingers are seen extending downward into the hole of the disposal unit.",
+          "review_flags": []
+        },
+        {
+          "label": "grasping",
+          "start": 0.8,
+          "end": 1.2,
+          "id": "V0001.P02",
+          "fact_evidence": "Between roughly 0.9s and 1.2s, the fingers close around the edge of the internal black rubber component.",
+          "review_flags": []
+        },
+        {
+          "label": "lifting out",
+          "start": 1.2,
+          "end": 1.5,
+          "id": "V0001.P03",
+          "fact_evidence": "Starting around 1.3s until the end of the clip, the hand pulls the black rubber piece upwards and completely out of the drain opening.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "The video shows a hand in a blue glove reaching into the disposal drain, grabbing the black rubber splash guard, and lifting it out to reveal the interior components.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0001",
+      "kind": "speech",
+      "actor": "male narrator",
+      "start": 0.12,
+      "end": 4.14,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "One of my most asked questions on here is how do I clean my garbage disposal?",
+      "transcript_original": "One of my most asked questions on here is how do I clean my garbage disposal?",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        0.16,
+        4.08
+      ],
+      "word_interval": [
+        0.12,
+        4.14
+      ]
+    },
+    {
+      "id": "A0002",
+      "kind": "music",
+      "actor": "background music",
+      "start": 0.32,
+      "end": 12.0,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "background music",
+      "detail": "An upbeat instrumental track plays continuously from the beginning of the clip until it ends.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "A0003",
+      "kind": "speech",
+      "actor": "male narrator",
+      "start": 4.17,
+      "end": 4.35,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Well,",
+      "transcript_original": "Well,",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        4.08,
+        4.32
+      ],
+      "word_interval": [
+        4.17,
+        4.35
+      ]
+    },
+    {
+      "id": "A0004",
+      "kind": "speech",
+      "actor": "male narrator",
+      "start": 4.35,
+      "end": 4.89,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "let's do it.",
+      "transcript_original": "let's do it.",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        4.32,
+        4.72
+      ],
+      "word_interval": [
+        4.35,
+        4.89
+      ]
+    },
+    {
+      "id": "V0002",
+      "kind": "motion",
+      "actor": "A person wearing blue gloves",
+      "start": 4.5,
+      "end": 7.5,
+      "sources": [
+        "shot00000/visual/1",
+        "shot00001/visual/0",
+        "shot00002/visual/0",
+        "shot00003/visual/0",
+        "shot00004/visual/0",
+        "shot00005/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Actor identity unresolved",
+        "Uncertain in local audiovisual review"
+      ],
+      "actor_id": "P1",
+      "activity": "working",
+      "label": "loosening bolts with a wrench",
+      "brief": "A person uses a long-handled wrench-like tool to loosen the internal mounting bolts of a garbage disposal unit.",
+      "detail": "The tool engages the heads of the two hexagonal bolts, applying rotational force to unscrew them while water flows over the assembly.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "The tool is used to turn and loosen the two hexagonal bolts on the disposal unit's bottom plate, rather than scraping rust or grime from the metal surfaces.",
+      "fact_evidence_clock_origin": 4.15,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0005",
+      "kind": "speech",
+      "actor": "male narrator",
+      "start": 5.12,
+      "end": 6.56,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "This one was a little extra gross,",
+      "transcript_original": "This one was a little extra gross,",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        5.12,
+        6.56
+      ]
+    },
+    {
+      "id": "A0006",
+      "kind": "speech",
+      "actor": "male narrator",
+      "start": 6.56,
+      "end": 9.12,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "so I'm gonna knock these teeth loose with a flathead and hammer,",
+      "transcript_original": "so I'm gonna knock these teeth loose with a flathead and hammer,",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        6.56,
+        9.12
+      ]
+    },
+    {
+      "id": "V0003",
+      "kind": "state",
+      "actor": "an unseen operator",
+      "start": 7.8,
+      "end": 10.7,
+      "sources": [
+        "shot00005/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Actor identity unresolved",
+        "Truncated by a sampling window"
+      ],
+      "actor_id": "unknown",
+      "activity": "pouring liquid",
+      "label": "pouring water",
+      "brief": "Water is poured into the garbage disposal unit from above.",
+      "detail": "Starting at 0.9s and continuing through the end of the clip, a stream of clear water falls vertically into the center of the disposal unit, splashing against the metal surfaces and accumulating in the basin before draining away when the unit activates.",
+      "phases": [
+        {
+          "label": "pouring water",
+          "start": 7.8,
+          "end": 10.7,
+          "id": "V0003.P01",
+          "fact_evidence": "The action of pouring water is clearly visible as a continuous stream falling into the disposal unit during this phase.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "A continuous stream of clear water is visibly falling vertically into the center of the garbage disposal unit throughout the specified timeframe, splashing against the metal surfaces and accumulating in the basin before draining away when the unit activates.",
+      "fact_evidence_clock_origin": 7.45,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0007",
+      "kind": "speech",
+      "actor": "male narrator",
+      "start": 9.57,
+      "end": 10.38,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "run some water,",
+      "transcript_original": "run some water,",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        9.52,
+        10.32
+      ],
+      "word_interval": [
+        9.57,
+        10.38
+      ]
+    },
+    {
+      "id": "A0008",
+      "kind": "speech",
+      "actor": "male narrator",
+      "start": 10.32,
+      "end": 11.84,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "and then run some dish soap through it.",
+      "transcript_original": "and then run some dish soap through it.",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        10.32,
+        11.84
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.12,
+      "end": 1.5,
+      "robust_interval": [
+        0.12,
+        1.5
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 0.32,
+      "end": 1.5,
+      "robust_interval": [
+        0.32,
+        1.5
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 4.5,
+      "end": 7.5,
+      "robust_interval": [
+        4.5,
+        7.5
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0004",
+      "type": "temporal_overlap",
+      "start": 4.5,
+      "end": 4.89,
+      "robust_interval": [
+        4.5,
+        4.89
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 5.12,
+      "end": 6.56,
+      "robust_interval": [
+        5.12,
+        6.56
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0006",
+      "type": "temporal_overlap",
+      "start": 6.56,
+      "end": 7.5,
+      "robust_interval": [
+        6.56,
+        7.5
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 7.8,
+      "end": 10.7,
+      "robust_interval": [
+        7.8,
+        10.7
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0006",
+      "type": "temporal_overlap",
+      "start": 7.8,
+      "end": 9.12,
+      "robust_interval": [
+        7.8,
+        9.12
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0007",
+      "type": "temporal_overlap",
+      "start": 9.57,
+      "end": 10.38,
+      "robust_interval": [
+        9.57,
+        10.38
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0008",
+      "type": "temporal_overlap",
+      "start": 10.32,
+      "end": 10.7,
+      "robust_interval": [
+        10.32,
+        10.7
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Truncated by a sampling window"
+      ]
+    }
+  ],
+  "phase_relations": [
+    {
+      "visual_id": "V0001.P01",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.12,
+      "end": 0.8,
+      "robust_interval": [
+        0.12,
+        0.8
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001.P01",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 0.32,
+      "end": 0.8,
+      "robust_interval": [
+        0.32,
+        0.8
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001.P02",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.8,
+      "end": 1.2,
+      "robust_interval": [
+        0.8,
+        1.2
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001.P02",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 0.8,
+      "end": 1.2,
+      "robust_interval": [
+        0.8,
+        1.2
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001.P03",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 1.2,
+      "end": 1.5,
+      "robust_interval": [
+        1.2,
+        1.5
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001.P03",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 1.2,
+      "end": 1.5,
+      "robust_interval": [
+        1.2,
+        1.5
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0003.P01",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 7.8,
+      "end": 10.7,
+      "robust_interval": [
+        7.8,
+        10.7
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0003.P01",
+      "audio_id": "A0006",
+      "type": "temporal_overlap",
+      "start": 7.8,
+      "end": 9.12,
+      "robust_interval": [
+        7.8,
+        9.12
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0003.P01",
+      "audio_id": "A0007",
+      "type": "temporal_overlap",
+      "start": 9.57,
+      "end": 10.38,
+      "robust_interval": [
+        9.57,
+        10.38
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0003.P01",
+      "audio_id": "A0008",
+      "type": "temporal_overlap",
+      "start": 10.32,
+      "end": 10.7,
+      "robust_interval": [
+        10.32,
+        10.7
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Truncated by a sampling window"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "groups": {
+    "visual": [
+      {
+        "members": [
+          "1.0",
+          "3.1"
+        ],
+        "votes": 2,
+        "start": 0.0,
+        "end": 11.906,
+        "representative": "1.0",
+        "example": {
+          "actor": "穿绿色短袖的人",
+          "activity": "弹奏吉他",
+          "kind": "motion",
+          "label": "左手按弦换把位",
+          "brief": "穿绿色短袖的人在琴颈上移动左手按压琴弦。",
+          "detail": "以画面为准，位于上方主视图和下方右侧视图中，左手在指板上变换位置并按压琴弦。",
+          "start": 0.0,
+          "end": 11.8,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.21199999999999974,
+        "id": "V1"
+      },
+      {
+        "members": [
+          "1.1",
+          "2.1",
+          "3.0"
+        ],
+        "votes": 3,
+        "start": 0.0,
+        "end": 12.012,
+        "representative": "2.1",
+        "example": {
+          "actor": "吉他手",
+          "activity": "弹奏吉他",
+          "kind": "motion",
+          "label": "拨动琴弦",
+          "brief": "右手在音孔上方反复进行扫弦和勾弦动作。",
+          "detail": "利用拇指与食指/中指配合，有节奏地上下拂过琴弦，产生持续的拨奏动态。",
+          "start": 0.0,
+          "end": 12.012,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.21199999999999974,
+        "id": "V2"
+      },
+      {
+        "members": [
+          "2.0"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 12.012,
+        "representative": "2.0",
+        "example": {
+          "actor": "吉他手",
+          "activity": "弹奏吉他",
+          "kind": "state",
+          "label": "持握琴颈",
+          "brief": "吉他手的左手在指板上持续变换按弦姿势以维持和弦。",
+          "detail": "左手手指按压在不同品丝上，手腕保持弯曲支撑状态，伴随小幅度的换把移动。",
+          "start": 0.0,
+          "end": 12.012,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V3"
+      }
+    ],
+    "audio": [
+      {
+        "members": [
+          "1.1",
+          "2.1"
+        ],
+        "votes": 2,
+        "start": 0.0,
+        "end": 12.006,
+        "representative": "1.1",
+        "example": {
+          "actor": "吉他",
+          "kind": "music",
+          "layer": "background",
+          "text": "原声吉他扫弦伴奏",
+          "start": 0.0,
+          "end": 12.012,
+          "label": "原声吉他扫弦伴奏"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.012000000000000455,
+        "id": "A1"
+      },
+      {
+        "members": [
+          "1.0",
+          "2.0",
+          "3.0"
+        ],
+        "votes": 3,
+        "start": 0.96,
+        "end": 5.72,
+        "representative": "2.0",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "So the only time I really do like, like up and down strokes is between those last two chords.",
+          "start": 0.96,
+          "end": 5.72,
+          "label": "So the only time I really do like, like up and down strokes is between those last two chords."
+        },
+        "start_spread": 0.12,
+        "end_spread": 0.39999999999999947,
+        "id": "A2"
+      },
+      {
+        "members": [
+          "3.1"
+        ],
+        "votes": 1,
+        "start": 2.32,
+        "end": 4.8,
+        "representative": "3.1",
+        "example": {
+          "actor": "原声吉他",
+          "kind": "music",
+          "layer": "background",
+          "text": "拨弦和扫弦演奏一段旋律",
+          "start": 2.32,
+          "end": 4.8,
+          "label": "拨弦和扫弦演奏一段旋律"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A3"
+      },
+      {
+        "members": [
+          "3.2"
+        ],
+        "votes": 1,
+        "start": 5.76,
+        "end": 11.44,
+        "representative": "3.2",
+        "example": {
+          "actor": "原声吉他",
+          "kind": "music",
+          "layer": "background",
+          "text": "拨弦和扫弦演奏一段旋律",
+          "start": 5.76,
+          "end": 11.44,
+          "label": "拨弦和扫弦演奏一段旋律"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A4"
+      },
+      {
+        "members": [
+          "2.2",
+          "3.3"
+        ],
+        "votes": 2,
+        "start": 11.84,
+        "end": 12.0,
+        "representative": "2.2",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "All right?",
+          "start": 11.84,
+          "end": 12.0,
+          "label": "All right?"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A5"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "visual": "V1",
+      "audio": "A1",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        0.0,
+        11.906
+      ],
+      "keep": false,
+      "layer_votes": [
+        "background"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V1",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        0.96,
+        5.72
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V1",
+      "audio": "A5",
+      "common_rounds": [
+        "3"
+      ],
+      "overlap_rounds": [
+        "3"
+      ],
+      "median_intersection": [
+        11.84,
+        11.906
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": true
+    },
+    {
+      "visual": "V2",
+      "audio": "A1",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        0.0,
+        12.006
+      ],
+      "keep": true,
+      "layer_votes": [
+        "background",
+        "background"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V2",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "median_intersection": [
+        0.96,
+        5.72
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V2",
+      "audio": "A5",
+      "common_rounds": [
+        "2",
+        "3"
+      ],
+      "overlap_rounds": [
+        "2",
+        "3"
+      ],
+      "median_intersection": [
+        11.84,
+        12.0
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": true
+    }
+  ]
+}

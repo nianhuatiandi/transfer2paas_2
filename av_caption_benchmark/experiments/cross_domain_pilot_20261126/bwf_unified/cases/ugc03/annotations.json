@@ -1,0 +1,3528 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "ugc03",
+    "benchmark": "UGC-VideoCap",
+    "domain": "三明治烹饪演示",
+    "original_id": "PI-421c3724-35b4-45e1-bfa6-418591fb5502",
+    "source_url": "https://drive.google.com/file/d/1h5qdKFxyGu-oDXsDrO6eL6GS7zjAaOO5/view",
+    "archive_member": null,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "source_duration": 44.002335669002335,
+    "source_media_sha256": "2d488fb1515ae84dc04bb9892f15e848f4227ca3a8d575410281b390d064d328",
+    "clip_sha256": "3fa839a3f45b335f529c6de0c68a3aa030c104cafdc2256f290aefd9350e2349",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 12.012012012012011,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.5839172505839173,
+      "first_frame": 0,
+      "end_frame_exclusive": 14
+    },
+    {
+      "id": "S02",
+      "start": 0.5839172505839173,
+      "end": 1.1261261261261262,
+      "first_frame": 14,
+      "end_frame_exclusive": 27
+    },
+    {
+      "id": "S03",
+      "start": 1.1261261261261262,
+      "end": 1.5849182515849183,
+      "first_frame": 27,
+      "end_frame_exclusive": 38
+    },
+    {
+      "id": "S04",
+      "start": 1.5849182515849183,
+      "end": 2.1688355021688355,
+      "first_frame": 38,
+      "end_frame_exclusive": 52
+    },
+    {
+      "id": "S05",
+      "start": 2.1688355021688355,
+      "end": 2.7110443777110445,
+      "first_frame": 52,
+      "end_frame_exclusive": 65
+    },
+    {
+      "id": "S06",
+      "start": 2.7110443777110445,
+      "end": 3.2532532532532534,
+      "first_frame": 65,
+      "end_frame_exclusive": 78
+    },
+    {
+      "id": "S07",
+      "start": 3.2532532532532534,
+      "end": 3.6286286286286287,
+      "first_frame": 78,
+      "end_frame_exclusive": 87
+    },
+    {
+      "id": "S08",
+      "start": 3.6286286286286287,
+      "end": 3.9622956289622957,
+      "first_frame": 87,
+      "end_frame_exclusive": 95
+    },
+    {
+      "id": "S09",
+      "start": 3.9622956289622957,
+      "end": 4.421087754421087,
+      "first_frame": 95,
+      "end_frame_exclusive": 106
+    },
+    {
+      "id": "S10",
+      "start": 4.421087754421087,
+      "end": 5.13013013013013,
+      "first_frame": 106,
+      "end_frame_exclusive": 123
+    },
+    {
+      "id": "S11",
+      "start": 5.13013013013013,
+      "end": 5.672339005672339,
+      "first_frame": 123,
+      "end_frame_exclusive": 136
+    },
+    {
+      "id": "S12",
+      "start": 5.672339005672339,
+      "end": 6.381381381381382,
+      "first_frame": 136,
+      "end_frame_exclusive": 153
+    },
+    {
+      "id": "S13",
+      "start": 6.381381381381382,
+      "end": 7.882882882882883,
+      "first_frame": 153,
+      "end_frame_exclusive": 189
+    },
+    {
+      "id": "S14",
+      "start": 7.882882882882883,
+      "end": 8.508508508508509,
+      "first_frame": 189,
+      "end_frame_exclusive": 204
+    },
+    {
+      "id": "S15",
+      "start": 8.508508508508509,
+      "end": 9.592926259592927,
+      "first_frame": 204,
+      "end_frame_exclusive": 230
+    },
+    {
+      "id": "S16",
+      "start": 9.592926259592927,
+      "end": 10.301968635301968,
+      "first_frame": 230,
+      "end_frame_exclusive": 247
+    },
+    {
+      "id": "S17",
+      "start": 10.301968635301968,
+      "end": 10.719052385719053,
+      "first_frame": 247,
+      "end_frame_exclusive": 257
+    },
+    {
+      "id": "S18",
+      "start": 10.719052385719053,
+      "end": 11.136136136136136,
+      "first_frame": 257,
+      "end_frame_exclusive": 267
+    },
+    {
+      "id": "S19",
+      "start": 11.136136136136136,
+      "end": 11.720053386720053,
+      "first_frame": 267,
+      "end_frame_exclusive": 281
+    },
+    {
+      "id": "S20",
+      "start": 11.720053386720053,
+      "end": 12.012012012012011,
+      "first_frame": 281,
+      "end_frame_exclusive": 288
+    }
+  ],
+  "input_frames": {
+    "visual": 137,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "覆盖视频中可见的柠檬蒜香鸡肉三明治制作、切开展示，以及蛋黄酱罐开启和舀取动作。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "仅露出双手的人，右手握刀柄，左手扶住肉块"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "仅露出双手的人，右手握刀柄，左手扶住肉块"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "仅露出双手的人，右手握刀柄，左手扶住肉块"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "左前臂有纹身的人，手持玻璃罐和勺子"
+      },
+      {
+        "id": "S05-P01",
+        "shot_id": "S05",
+        "description": "左前臂有纹身的人，用勺子在面包上涂抹酱汁"
+      },
+      {
+        "id": "S06-P01",
+        "shot_id": "S06",
+        "description": "仅露出双手的人，将肉块放到涂好酱汁的面包上"
+      },
+      {
+        "id": "S07-P01",
+        "shot_id": "S07",
+        "description": "仅露出双手的人，用手按压三明治上的肉块"
+      },
+      {
+        "id": "S08-P01",
+        "shot_id": "S08",
+        "description": "仅露出双手的人，用筷子夹取黄瓜丝放到三明治上"
+      },
+      {
+        "id": "S09-P01",
+        "shot_id": "S09",
+        "description": "仅露出双手的人，用筷子继续添加黄瓜片"
+      },
+      {
+        "id": "S10-P01",
+        "shot_id": "S10",
+        "description": "仅露出双手的人，向三明治淋透明液体"
+      },
+      {
+        "id": "S11-P01",
+        "shot_id": "S11",
+        "description": "仅露出双手的人，挤压红色瓶嘴的瓶子挤出橙色酱汁"
+      },
+      {
+        "id": "S12-P01",
+        "shot_id": "S12",
+        "description": "仅露出双手的人，撒绿色香草碎"
+      },
+      {
+        "id": "S13-P01",
+        "shot_id": "S13",
+        "description": "仅露出双手的人，双手持另一片面包盖在三明治上并下压"
+      },
+      {
+        "id": "S14-P01",
+        "shot_id": "S14",
+        "description": "仅露出双手的人，左手按住三明治顶部，右手用刀切开"
+      },
+      {
+        "id": "S15-P01",
+        "shot_id": "S15",
+        "description": "仅露出双手的人，双手举起切开的半个三明治展示截面"
+      },
+      {
+        "id": "S16-P01",
+        "shot_id": "S16",
+        "description": "左前臂有纹身的人，手放在桌面上靠近蛋黄酱罐"
+      },
+      {
+        "id": "S17-P01",
+        "shot_id": "S17",
+        "description": "仅露出双手的人，拧开蛋黄酱罐的黑色盖子"
+      },
+      {
+        "id": "S18-P01",
+        "shot_id": "S18",
+        "description": "仅露出双手的人，用金属勺伸入打开的蛋黄酱罐中"
+      },
+      {
+        "id": "S19-P01",
+        "shot_id": "S19",
+        "description": "仅露出双手的人，用勺子从罐中舀起白色蛋黄酱"
+      },
+      {
+        "id": "S20-P01",
+        "shot_id": "S20",
+        "description": "仅露出双手的人，把盛着蛋黄酱的勺子移向小玻璃碗"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 0.583917,
+        "description": "切肉一次"
+      },
+      {
+        "id": "E02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 0.583917,
+        "end": 1.126126,
+        "description": "切肉一次"
+      },
+      {
+        "id": "E03",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 1.126126,
+        "end": 1.584918,
+        "description": "切肉一次"
+      },
+      {
+        "id": "E04",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 1.584918,
+        "end": 2.168836,
+        "description": "舀取橙色酱汁"
+      },
+      {
+        "id": "E05",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "start": 2.168836,
+        "end": 2.711044,
+        "description": "涂抹酱汁"
+      },
+      {
+        "id": "E06",
+        "actor_id": "S06-P01",
+        "shot_id": "S06",
+        "start": 2.711044,
+        "end": 3.253253,
+        "description": "放置肉块"
+      },
+      {
+        "id": "E07",
+        "actor_id": "S07-P01",
+        "shot_id": "S07",
+        "start": 3.253253,
+        "end": 3.628629,
+        "description": "按压肉块"
+      },
+      {
+        "id": "E08",
+        "actor_id": "S08-P01",
+        "shot_id": "S08",
+        "start": 3.628629,
+        "end": 3.962296,
+        "description": "夹放黄瓜丝"
+      },
+      {
+        "id": "E09",
+        "actor_id": "S09-P01",
+        "shot_id": "S09",
+        "start": 3.962296,
+        "end": 4.421088,
+        "description": "夹放黄瓜片"
+      },
+      {
+        "id": "E10",
+        "actor_id": "S10-P01",
+        "shot_id": "S10",
+        "start": 4.421088,
+        "end": 5.13013,
+        "description": "淋透明液体"
+      },
+      {
+        "id": "E11",
+        "actor_id": "S11-P01",
+        "shot_id": "S11",
+        "start": 5.13013,
+        "end": 5.672339,
+        "description": "挤橙色酱汁"
+      },
+      {
+        "id": "E12",
+        "actor_id": "S12-P01",
+        "shot_id": "S12",
+        "start": 5.672339,
+        "end": 6.381381,
+        "description": "撒香草碎"
+      },
+      {
+        "id": "E13",
+        "actor_id": "S13-P01",
+        "shot_id": "S13",
+        "start": 6.381381,
+        "end": 7.882883,
+        "description": "盖上顶层面包并按压"
+      },
+      {
+        "id": "E14",
+        "actor_id": "S14-P01",
+        "shot_id": "S14",
+        "start": 7.882883,
+        "end": 8.508509,
+        "description": "切开三明治"
+      },
+      {
+        "id": "E15",
+        "actor_id": "S15-P01",
+        "shot_id": "S15",
+        "start": 8.508509,
+        "end": 9.592926,
+        "description": "举起半份三明治展示"
+      },
+      {
+        "id": "E16",
+        "actor_id": "S17-P01",
+        "shot_id": "S17",
+        "start": 10.301969,
+        "end": 10.719052,
+        "description": "拧开蛋黄酱罐盖"
+      },
+      {
+        "id": "E17",
+        "actor_id": "S18-P01",
+        "shot_id": "S18",
+        "start": 10.719052,
+        "end": 11.136136,
+        "description": "将勺子伸入罐内"
+      },
+      {
+        "id": "E18",
+        "actor_id": "S19-P01",
+        "shot_id": "S19",
+        "start": 11.136136,
+        "end": 11.720053,
+        "description": "舀起蛋黄酱"
+      },
+      {
+        "id": "E19",
+        "actor_id": "S20-P01",
+        "shot_id": "S20",
+        "start": 11.720053,
+        "end": 12.012012,
+        "description": "把蛋黄酱移向小玻璃碗"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E01",
+        "kind": "motion",
+        "label": "切肉",
+        "start": 0.0,
+        "end": 0.583917,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          0.542209,
+          0.583917
+        ],
+        "detail": "右手握着带花纹的大厨刀悬在一块深褐色肉上方，刀刃向下切入木质砧板上的肉块。随着下压推进，刀身逐渐贴近砧板，最后停在已分开成两段的肉之间。",
+        "evidence": [
+          {
+            "time": 0.542209,
+            "observation": "刀已落到砧板上，肉被分成两段"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "刀刃接触肉面",
+            "time": 0.208542,
+            "time_range": [
+              0.208542,
+              0.291959
+            ]
+          },
+          {
+            "name": "刀抵近砧板",
+            "time": 0.542209,
+            "time_range": [
+              0.500501,
+              0.583917
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "左手"
+        ],
+        "movement_roles": [
+          "握刀下切",
+          "扶稳肉块"
+        ],
+        "subphases": [
+          {
+            "label": "举刀对准肉块",
+            "start": 0.0,
+            "end": 0.208542,
+            "detail": "右手持刀位于肉块上方，准备下切。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "刀高悬在肉上方"
+              }
+            ]
+          },
+          {
+            "label": "下压切断",
+            "start": 0.208542,
+            "end": 0.583917,
+            "detail": "刀刃持续压入肉块并接近砧板，最终完成一次切割。",
+            "evidence": [
+              {
+                "time": 0.542209,
+                "observation": "刀落在砧板上，肉已断开"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 用刀把砧板上的肉块切开一次。"
+      },
+      {
+        "id": "A02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E02",
+        "kind": "motion",
+        "label": "切肉",
+        "start": 0.583917,
+        "end": 1.126126,
+        "start_range": [
+          0.583917,
+          0.667334
+        ],
+        "end_range": [
+          1.084418,
+          1.126126
+        ],
+        "detail": "画面重新回到同一块肉的近景，右手再次握刀从上方向下压切。左手扶住肉块边缘，刀身一路下沉直到贴近砧板，形成又一次分离切口。",
+        "evidence": [
+          {
+            "time": 1.084418,
+            "observation": "刀已深入肉块接近底部"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "二次落刀",
+            "time": 0.792459,
+            "time_range": [
+              0.792459,
+              0.875876
+            ]
+          },
+          {
+            "name": "切至砧板附近",
+            "time": 1.084418,
+            "time_range": [
+              1.001001,
+              1.126126
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "左手"
+        ],
+        "movement_roles": [
+          "握刀下切",
+          "固定肉块"
+        ],
+        "subphases": [
+          {
+            "label": "抬刀定位",
+            "start": 0.583917,
+            "end": 0.792459,
+            "detail": "右手把刀重新提起并对准肉块表面。",
+            "evidence": [
+              {
+                "time": 0.583917,
+                "observation": "刀处于较高位置"
+              }
+            ]
+          },
+          {
+            "label": "压下切开",
+            "start": 0.792459,
+            "end": 1.126126,
+            "detail": "刀沿竖直方向继续下压，直至接近砧板。",
+            "evidence": [
+              {
+                "time": 1.084418,
+                "observation": "刀身几乎贴到砧板"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 在同一镜头内再次下刀切开肉块。"
+      },
+      {
+        "id": "A03",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "E03",
+        "kind": "motion",
+        "label": "切肉",
+        "start": 1.126126,
+        "end": 1.584918,
+        "start_range": [
+          1.126126,
+          1.209543
+        ],
+        "end_range": [
+          1.54321,
+          1.584918
+        ],
+        "detail": "第三次出现相似的切肉近景，右手握刀压在肉块上并向下滑动到底。左手仍按在肉旁保持稳定，结束时刀面贴着砧板和分开的肉段。",
+        "evidence": [
+          {
+            "time": 1.54321,
+            "observation": "刀滑到砧板处，肉段分开更明显"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "持续下压",
+            "time": 1.334668,
+            "time_range": [
+              1.334668,
+              1.418085
+            ]
+          },
+          {
+            "name": "触底停住",
+            "time": 1.54321,
+            "time_range": [
+              1.54321,
+              1.584918
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "左手"
+        ],
+        "movement_roles": [
+          "握刀下切",
+          "稳住食材"
+        ],
+        "subphases": [
+          {
+            "label": "压入肉块",
+            "start": 1.126126,
+            "end": 1.418085,
+            "detail": "刀从上方压进肉里，逐步接近砧板。",
+            "evidence": [
+              {
+                "time": 1.334668,
+                "observation": "刀身大部分已进入肉块"
+              }
+            ]
+          },
+          {
+            "label": "滑动收尾",
+            "start": 1.418085,
+            "end": 1.584918,
+            "detail": "刀继续沿砧板方向滑到底部并停下。",
+            "evidence": [
+              {
+                "time": 1.54321,
+                "observation": "刀贴近砧板，切口清晰"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 连续完成第三段切肉动作。"
+      },
+      {
+        "id": "A04",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "E04",
+        "kind": "motion",
+        "label": "舀取酱汁",
+        "start": 1.584918,
+        "end": 2.168836,
+        "start_range": [
+          1.584918,
+          1.668335
+        ],
+        "end_range": [
+          2.085419,
+          2.168836
+        ],
+        "detail": "左手扶着装有橙色浓稠酱汁的玻璃罐，右手持金属勺探入罐口。随后勺子向上提起，带出一团挂在勺面上的酱汁，移到前景的一片烤面包上方。",
+        "evidence": [
+          {
+            "time": 2.085419,
+            "observation": "盛满酱汁的勺子离开罐口并悬在面包上方"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "勺离罐口",
+            "time": 1.876877,
+            "time_range": [
+              1.876877,
+              2.002002
+            ]
+          },
+          {
+            "name": "移至面包上方",
+            "time": 2.085419,
+            "time_range": [
+              2.085419,
+              2.168836
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手"
+        ],
+        "movement_roles": [
+          "扶罐",
+          "持勺舀取"
+        ],
+        "subphases": [
+          {
+            "label": "在罐内舀酱",
+            "start": 1.584918,
+            "end": 1.876877,
+            "detail": "右手把勺子插入橙色酱汁中收集一团。",
+            "evidence": [
+              {
+                "time": 1.584918,
+                "observation": "勺头没入罐内酱汁"
+              }
+            ]
+          },
+          {
+            "label": "提勺转移",
+            "start": 1.876877,
+            "end": 2.168836,
+            "detail": "勺子带着酱汁上升并平移到面包上方。",
+            "evidence": [
+              {
+                "time": 2.085419,
+                "observation": "满载酱汁的勺子悬停在面包正上方"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 从玻璃罐中舀起一勺橙色酱汁并移到面包上方。"
+      },
+      {
+        "id": "A05",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "execution_id": "E05",
+        "kind": "motion",
+        "label": "涂抹酱汁",
+        "start": 2.168836,
+        "end": 2.711044,
+        "start_range": [
+          2.168836,
+          2.252252
+        ],
+        "end_range": [
+          2.669336,
+          2.711044
+        ],
+        "detail": "右手控制勺背贴在面包表面来回抹开橙色酱汁，左手轻按面包边防止移动。原本集中的酱团被摊平成一层较均匀的涂层，铺满面包中部。",
+        "evidence": [
+          {
+            "time": 2.669336,
+            "observation": "面包表面已被大面积涂匀"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "开始铺开",
+            "time": 2.252252,
+            "time_range": [
+              2.252252,
+              2.377377
+            ]
+          },
+          {
+            "name": "基本涂满",
+            "time": 2.669336,
+            "time_range": [
+              2.585919,
+              2.711044
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "左手"
+        ],
+        "movement_roles": [
+          "持勺抹酱",
+          "按住面包"
+        ],
+        "subphases": [
+          {
+            "label": "推展酱团",
+            "start": 2.168836,
+            "end": 2.460794,
+            "detail": "勺背把中央的酱团向外推开。",
+            "evidence": [
+              {
+                "time": 2.377377,
+                "observation": "酱汁面积扩大但仍偏厚"
+              }
+            ]
+          },
+          {
+            "label": "抹平收整",
+            "start": 2.460794,
+            "end": 2.711044,
+            "detail": "继续在面包表面往返刮抹，使涂层变薄变均匀。",
+            "evidence": [
+              {
+                "time": 2.669336,
+                "observation": "面包表层呈现平整橙黄色涂层"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 用勺背把橙色酱汁均匀涂在一片烤面包上。"
+      },
+      {
+        "id": "A06",
+        "actor_id": "S06-P01",
+        "shot_id": "S06",
+        "execution_id": "E06",
+        "kind": "motion",
+        "label": "放置肉块",
+        "start": 2.711044,
+        "end": 3.253253,
+        "start_range": [
+          2.711044,
+          2.794461
+        ],
+        "end_range": [
+          3.211545,
+          3.253253
+        ],
+        "detail": "双手托着一块深色熟肉从画面上方进入，缓慢下降到已经涂好橙色酱汁的面包上。肉块落下后贴合面包表面，位置居中略靠前。",
+        "evidence": [
+          {
+            "time": 3.211545,
+            "observation": "肉块已稳稳放在涂酱面包上"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "下降接近面包",
+            "time": 3.003003,
+            "time_range": [
+              3.003003,
+              3.128128
+            ]
+          },
+          {
+            "name": "接触落定",
+            "time": 3.211545,
+            "time_range": [
+              3.211545,
+              3.253253
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "托举肉块",
+          "下放对齐"
+        ],
+        "subphases": [
+          {
+            "label": "悬空搬运",
+            "start": 2.711044,
+            "end": 3.003003,
+            "detail": "双手把肉块移到面包上方并保持水平。",
+            "evidence": [
+              {
+                "time": 2.919586,
+                "observation": "肉块悬浮在面包正上方"
+              }
+            ]
+          },
+          {
+            "label": "放下贴合",
+            "start": 3.003003,
+            "end": 3.253253,
+            "detail": "肉块缓缓下落并与涂酱面包接触。",
+            "evidence": [
+              {
+                "time": 3.211545,
+                "observation": "肉块完全坐在面包上"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 把一块熟肉放到涂好酱汁的面包上。"
+      },
+      {
+        "id": "A07",
+        "actor_id": "S07-P01",
+        "shot_id": "S07",
+        "execution_id": "E07",
+        "kind": "motion",
+        "label": "按压肉块",
+        "start": 3.253253,
+        "end": 3.628629,
+        "start_range": [
+          3.253253,
+          3.33667
+        ],
+        "end_range": [
+          3.58692,
+          3.628629
+        ],
+        "detail": "一只手张开覆在肉块顶部向下施力，另一只手在侧后方辅助稳定。受压后肉块略微塌陷并更紧地贴在面包上，手指保持短促按压姿态。",
+        "evidence": [
+          {
+            "time": 3.58692,
+            "observation": "肉块被压实，厚度看起来更低"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "掌心接触",
+            "time": 3.33667,
+            "time_range": [
+              3.33667,
+              3.461795
+            ]
+          },
+          {
+            "name": "持续下压",
+            "time": 3.58692,
+            "time_range": [
+              3.545212,
+              3.628629
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "单手为主，另一手辅助"
+        ],
+        "movement_roles": [
+          "掌心按压",
+          "侧面扶持"
+        ],
+        "subphases": [
+          {
+            "label": "搭上肉块",
+            "start": 3.253253,
+            "end": 3.461795,
+            "detail": "手掌先覆盖到肉块表面建立接触。",
+            "evidence": [
+              {
+                "time": 3.33667,
+                "observation": "手指展开压在肉上"
+              }
+            ]
+          },
+          {
+            "label": "向下压实",
+            "start": 3.461795,
+            "end": 3.628629,
+            "detail": "保持掌压使肉块与面包贴合更紧。",
+            "evidence": [
+              {
+                "time": 3.58692,
+                "observation": "肉块形态被压扁一些"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 用手掌把三明治上的肉块往下按压固定。"
+      },
+      {
+        "id": "A08",
+        "actor_id": "S08-P01",
+        "shot_id": "S08",
+        "execution_id": "E08",
+        "kind": "motion",
+        "label": "加黄瓜丝",
+        "start": 3.628629,
+        "end": 3.962296,
+        "start_range": [
+          3.628629,
+          3.712045
+        ],
+        "end_range": [
+          3.920587,
+          3.962296
+        ],
+        "detail": "一双木筷从左侧容器区域夹起浅绿白色的细条状配菜，移动到肉块上方后松开。菜丝散落在深色肉面上，形成第一层蔬菜配料。",
+        "evidence": [
+          {
+            "time": 3.920587,
+            "observation": "丝状配菜已落在肉块表面"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "夹起配菜",
+            "time": 3.712045,
+            "time_range": [
+              3.712045,
+              3.837171
+            ]
+          },
+          {
+            "name": "松筷投放",
+            "time": 3.920587,
+            "time_range": [
+              3.920587,
+              3.962296
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "双手持筷"
+        ],
+        "movement_roles": [
+          "夹取",
+          "移送",
+          "释放"
+        ],
+        "subphases": [
+          {
+            "label": "从旁边夹料",
+            "start": 3.628629,
+            "end": 3.837171,
+            "detail": "筷子伸向旁边的容器并夹起浅色丝状配菜。",
+            "evidence": [
+              {
+                "time": 3.712045,
+                "observation": "筷尖带有少量菜丝"
+              }
+            ]
+          },
+          {
+            "label": "放到肉上",
+            "start": 3.837171,
+            "end": 3.962296,
+            "detail": "筷子移到肉块上方后放开，让菜丝散落其上。",
+            "evidence": [
+              {
+                "time": 3.920587,
+                "observation": "肉面出现一层浅色丝状物"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 用筷子把浅色丝状配菜夹到肉块上。"
+      },
+      {
+        "id": "A09",
+        "actor_id": "S09-P01",
+        "shot_id": "S09",
+        "execution_id": "E09",
+        "kind": "motion",
+        "label": "加黄瓜片",
+        "start": 3.962296,
+        "end": 4.421088,
+        "start_range": [
+          3.962296,
+          4.045712
+        ],
+        "end_range": [
+          4.379379,
+          4.421088
+        ],
+        "detail": "筷子再次从左侧取来较大的圆形绿色瓜片，逐片叠放在已有菜丝的三明治顶部。新增的瓜片比先前更宽更厚，覆盖住部分下层配料。",
+        "evidence": [
+          {
+            "time": 4.379379,
+            "observation": "多片圆黄瓜片堆叠在顶部"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "夹起大片",
+            "time": 4.170838,
+            "time_range": [
+              4.170838,
+              4.254254
+            ]
+          },
+          {
+            "name": "叠放完成",
+            "time": 4.379379,
+            "time_range": [
+              4.379379,
+              4.421088
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手持筷"
+        ],
+        "movement_roles": [
+          "夹取较大固体",
+          "层层叠加"
+        ],
+        "subphases": [
+          {
+            "label": "续夹瓜片",
+            "start": 3.962296,
+            "end": 4.254254,
+            "detail": "筷子反复从旁边夹取圆形绿色瓜片。",
+            "evidence": [
+              {
+                "time": 4.170838,
+                "observation": "一片明显的圆黄瓜被夹起"
+              }
+            ]
+          },
+          {
+            "label": "铺顶覆盖",
+            "start": 4.254254,
+            "end": 4.421088,
+            "detail": "瓜片被一片片放到最上层，遮住下方丝状配菜。",
+            "evidence": [
+              {
+                "time": 4.379379,
+                "observation": "顶部堆积多层黄瓜片"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 继续用筷子往三明治上加更大的圆黄瓜片。"
+      },
+      {
+        "id": "A10",
+        "actor_id": "S10-P01",
+        "shot_id": "S10",
+        "execution_id": "E10",
+        "kind": "motion",
+        "label": "淋调味液",
+        "start": 4.421088,
+        "end": 5.13013,
+        "start_range": [
+          4.421088,
+          4.504505
+        ],
+        "end_range": [
+          5.088422,
+          5.13013
+        ],
+        "detail": "一股透明发亮的液体从画面上方倒下，浇在黄瓜片和肉块交界处。液体顺着重力流过蔬菜表面并渗入缝隙，最后在砧板上留下零星湿痕。",
+        "evidence": [
+          {
+            "time": 5.088422,
+            "observation": "蔬菜表面湿润反光，周围有滴落痕迹"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "液体触及顶部",
+            "time": 4.504505,
+            "time_range": [
+              4.504505,
+              4.62963
+            ]
+          },
+          {
+            "name": "流淌扩散",
+            "time": 5.005005,
+            "time_range": [
+              5.005005,
+              5.13013
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "未见完整手部，仅见倾倒结果"
+        ],
+        "movement_roles": [
+          "外部倾倒",
+          "液体流经食材"
+        ],
+        "subphases": [
+          {
+            "label": "初始浇注",
+            "start": 4.421088,
+            "end": 4.713046,
+            "detail": "透明液体首先打在黄瓜片上。",
+            "evidence": [
+              {
+                "time": 4.504505,
+                "observation": "顶部出现连续水线"
+              }
+            ]
+          },
+          {
+            "label": "顺流浸润",
+            "start": 4.713046,
+            "end": 5.13013,
+            "detail": "液体沿着蔬菜和肉面往下流动并扩散。",
+            "evidence": [
+              {
+                "time": 5.088422,
+                "observation": "整体表面变得潮湿发亮"
+              }
+            ]
+          }
+        ],
+        "brief": "有人从上方给做好的半成品三明治淋上一层透明液体。"
+      },
+      {
+        "id": "A11",
+        "actor_id": "S11-P01",
+        "shot_id": "S11",
+        "execution_id": "E11",
+        "kind": "motion",
+        "label": "挤橙色酱汁",
+        "start": 5.13013,
+        "end": 5.672339,
+        "start_range": [
+          5.13013,
+          5.213547
+        ],
+        "end_range": [
+          5.630631,
+          5.672339
+        ],
+        "detail": "一只带红色尖嘴的瓶子出现在画面上方，朝三明治挤出粗条状的橙色酱汁。酱汁以斜向线条覆盖在黄瓜片和肉块上，停留时间较短但分布明显。",
+        "evidence": [
+          {
+            "time": 5.630631,
+            "observation": "多条橙色酱线留在蔬菜表面"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "瓶嘴对准三明治",
+            "time": 5.213547,
+            "time_range": [
+              5.213547,
+              5.338672
+            ]
+          },
+          {
+            "name": "挤出条纹",
+            "time": 5.547214,
+            "time_range": [
+              5.547214,
+              5.672339
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "单手操控瓶身"
+        ],
+        "movement_roles": [
+          "挤压瓶体",
+          "定向出料"
+        ],
+        "subphases": [
+          {
+            "label": "对位准备",
+            "start": 5.13013,
+            "end": 5.338672,
+            "detail": "红色瓶嘴移到三明治上方并对准中心区域。",
+            "evidence": [
+              {
+                "time": 5.213547,
+                "observation": "瓶嘴悬停在顶部之上"
+              }
+            ]
+          },
+          {
+            "label": "划线式挤出",
+            "start": 5.338672,
+            "end": 5.672339,
+            "detail": "橙色酱汁成束流出，在表面拖出数道斜线。",
+            "evidence": [
+              {
+                "time": 5.630631,
+                "observation": "可见清晰的橙色酱条"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 用红嘴瓶把橙色酱汁挤在黄瓜和肉块上。"
+      },
+      {
+        "id": "A12",
+        "actor_id": "S12-P01",
+        "shot_id": "S12",
+        "execution_id": "E12",
+        "kind": "motion",
+        "label": "撒香草碎",
+        "start": 5.672339,
+        "end": 6.381381,
+        "start_range": [
+          5.672339,
+          5.755756
+        ],
+        "end_range": [
+          6.339673,
+          6.381381
+        ],
+        "detail": "细小的深绿色碎片从上方飘落，散布到已经挤过橙色酱汁的三明治表面。手指只在画面边缘短暂出现，主要可见的是碎叶不断落下并附着在湿润配料上。",
+        "evidence": [
+          {
+            "time": 6.339673,
+            "observation": "三明治表面布满零散绿叶碎"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "首次洒落",
+            "time": 5.755756,
+            "time_range": [
+              5.755756,
+              5.880881
+            ]
+          },
+          {
+            "name": "持续覆盖",
+            "time": 6.256256,
+            "time_range": [
+              6.256256,
+              6.381381
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "单手或指尖局部"
+        ],
+        "movement_roles": [
+          "抖撒细小配料"
+        ],
+        "subphases": [
+          {
+            "label": "抛洒起步",
+            "start": 5.672339,
+            "end": 5.964298,
+            "detail": "第一批绿色碎叶从上方落下。",
+            "evidence": [
+              {
+                "time": 5.880881,
+                "observation": "局部可见稀疏绿点"
+              }
+            ]
+          },
+          {
+            "label": "补撒扩展",
+            "start": 5.964298,
+            "end": 6.381381,
+            "detail": "更多碎叶连续落下，覆盖面扩大到整个顶部。",
+            "evidence": [
+              {
+                "time": 6.339673,
+                "observation": "顶部多处都有绿色碎末"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 往三明治上撒了一层绿色香草碎。"
+      },
+      {
+        "id": "A13",
+        "actor_id": "S13-P01",
+        "shot_id": "S13",
+        "execution_id": "E13",
+        "kind": "motion",
+        "label": "合上面包",
+        "start": 6.381381,
+        "end": 7.882883,
+        "start_range": [
+          6.381381,
+          6.464798
+        ],
+        "end_range": [
+          7.841175,
+          7.882883
+        ],
+        "detail": "双手捏住另一片长条面包的两端，把它从上方扣到已装满配料的底层面包上。合拢后十指顺势向下压顶，使上下两层夹紧，夹层里的酱汁和蔬菜被轻微挤出边缘。",
+        "evidence": [
+          {
+            "time": 7.841175,
+            "observation": "双手仍按在封好的三明治顶部"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "顶层接触",
+            "time": 6.67334,
+            "time_range": [
+              6.67334,
+              6.798465
+            ]
+          },
+          {
+            "name": "整体下压",
+            "time": 7.590924,
+            "time_range": [
+              7.590924,
+              7.882883
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "持握顶层面包",
+          "扣合",
+          "掌心加压"
+        ],
+        "subphases": [
+          {
+            "label": "搬运封顶",
+            "start": 6.381381,
+            "end": 6.798465,
+            "detail": "双手把第二片面包移到上方并落下盖住馅料。",
+            "evidence": [
+              {
+                "time": 6.67334,
+                "observation": "顶层面包已与下层对齐"
+              }
+            ]
+          },
+          {
+            "label": "压紧定型",
+            "start": 6.798465,
+            "end": 7.882883,
+            "detail": "手指和手掌持续向下按压，令三明治闭合更紧。",
+            "evidence": [
+              {
+                "time": 7.590924,
+                "observation": "双手仍覆在顶部施压"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 把另一片面包盖上去并用力压合成完整三明治。"
+      },
+      {
+        "id": "A14",
+        "actor_id": "S14-P01",
+        "shot_id": "S14",
+        "execution_id": "E14",
+        "kind": "motion",
+        "label": "切开三明治",
+        "start": 7.882883,
+        "end": 8.508509,
+        "start_range": [
+          7.882883,
+          7.9663
+        ],
+        "end_range": [
+          8.4668,
+          8.508509
+        ],
+        "detail": "左手食指和中指按住面包顶部固定位置，右手持锯齿刀从中部垂直下切。刀穿过酥脆外壳和内馅后继续下行，最终把三明治分成左右两半。",
+        "evidence": [
+          {
+            "time": 8.4668,
+            "observation": "刀深入夹层，断面即将分开"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "破壳下刀",
+            "time": 7.9663,
+            "time_range": [
+              7.9663,
+              8.091425
+            ]
+          },
+          {
+            "name": "贯穿内馅",
+            "time": 8.383383,
+            "time_range": [
+              8.383383,
+              8.508509
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手"
+        ],
+        "movement_roles": [
+          "固定顶部",
+          "锯切分割"
+        ],
+        "subphases": [
+          {
+            "label": "定位起手",
+            "start": 7.882883,
+            "end": 8.091425,
+            "detail": "左手压住面包，右手把刀立在中线位置。",
+            "evidence": [
+              {
+                "time": 7.9663,
+                "observation": "刀尖切入表层面皮"
+              }
+            ]
+          },
+          {
+            "label": "向下剖开",
+            "start": 8.091425,
+            "end": 8.508509,
+            "detail": "刀具连续穿过各层馅料，把整体切成两份。",
+            "evidence": [
+              {
+                "time": 8.4668,
+                "observation": "两侧断面明显分离"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 一手按住三明治，另一手用刀将其纵向切开。"
+      },
+      {
+        "id": "A15",
+        "actor_id": "S15-P01",
+        "shot_id": "S15",
+        "execution_id": "E15",
+        "kind": "held_pose",
+        "label": "展示截面",
+        "start": 8.508509,
+        "end": 9.592926,
+        "start_range": [
+          8.508509,
+          8.591925
+        ],
+        "end_range": [
+          9.551218,
+          9.592926
+        ],
+        "detail": "双手分别托住切开后的一半三明治，把横截面朝向镜头举起。可见面包、肉块、橙色酱汁和绿色配料的分层结构，期间只有轻微调整角度，没有新的加工动作。",
+        "evidence": [
+          {
+            "time": 9.217551,
+            "observation": "三明治层次清楚且位置基本不变"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "稳定托举",
+            "time": 8.800467,
+            "time_range": [
+              8.800467,
+              9.009009
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "托举展示",
+          "微调角度"
+        ],
+        "subphases": [
+          {
+            "label": "举起定格",
+            "start": 8.508509,
+            "end": 9.592926,
+            "detail": "双手持续把截面保持在镜头前方供观看。",
+            "evidence": [
+              {
+                "time": 9.217551,
+                "observation": "三明治层次清楚且位置基本不变"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 双手举起切开的半个三明治，向镜头展示内部截面。"
+      },
+      {
+        "id": "A16",
+        "actor_id": "S17-P01",
+        "shot_id": "S17",
+        "execution_id": "E16",
+        "kind": "motion",
+        "label": "拧开罐盖",
+        "start": 10.301969,
+        "end": 10.719052,
+        "start_range": [
+          10.301969,
+          10.385385
+        ],
+        "end_range": [
+          10.677344,
+          10.719052
+        ],
+        "detail": "一只手握住 Chosen Foods 蛋黄酱罐身，另一只手抓住黑色旋盖逆时针转动。盖子被逐步抬起脱离螺纹，最后完全拿离罐口，露出里面乳白色内容物。",
+        "evidence": [
+          {
+            "time": 10.677344,
+            "observation": "盖子已离开罐口，罐内白色酱体可见"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "解除密封",
+            "time": 10.510511,
+            "time_range": [
+              10.510511,
+              10.593927
+            ]
+          },
+          {
+            "name": "揭盖完成",
+            "time": 10.677344,
+            "time_range": [
+              10.677344,
+              10.719052
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "固定罐身",
+          "旋转开盖"
+        ],
+        "subphases": [
+          {
+            "label": "旋松瓶盖",
+            "start": 10.301969,
+            "end": 10.593927,
+            "detail": "手指绕黑盖转动，使其松动上升。",
+            "evidence": [
+              {
+                "time": 10.510511,
+                "observation": "盖子边缘已开始抬起"
+              }
+            ]
+          },
+          {
+            "label": "取下盖子",
+            "start": 10.593927,
+            "end": 10.719052,
+            "detail": "整只盖子被拿离罐口，暴露内部酱料。",
+            "evidence": [
+              {
+                "time": 10.677344,
+                "observation": "罐口敞开无盖"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 拧开蛋黄酱罐的黑色盖子。"
+      },
+      {
+        "id": "A17",
+        "actor_id": "S18-P01",
+        "shot_id": "S18",
+        "execution_id": "E17",
+        "kind": "motion",
+        "label": "探入勺子",
+        "start": 10.719052,
+        "end": 11.136136,
+        "start_range": [
+          10.719052,
+          10.802469
+        ],
+        "end_range": [
+          11.094428,
+          11.136136
+        ],
+        "detail": "打开后的罐子立在桌上，一只手扶住罐身，另一只手把金属勺从上方送入罐口。勺头沉入乳白色蛋黄酱表面以下，做小幅插入和扰动，为后续舀取做准备。",
+        "evidence": [
+          {
+            "time": 11.094428,
+            "observation": "勺头插进白色酱体内"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "越过罐口",
+            "time": 10.927594,
+            "time_range": [
+              10.927594,
+              11.011011
+            ]
+          },
+          {
+            "name": "埋入酱面",
+            "time": 11.094428,
+            "time_range": [
+              11.094428,
+              11.136136
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手扶罐",
+          "右手持勺"
+        ],
+        "movement_roles": [
+          "稳定容器",
+          "插入取料工具"
+        ],
+        "subphases": [
+          {
+            "label": "对准入口",
+            "start": 10.719052,
+            "end": 10.927594,
+            "detail": "勺子移到敞开的罐口正上方。",
+            "evidence": [
+              {
+                "time": 10.802469,
+                "observation": "勺头悬在罐口上缘"
+              }
+            ]
+          },
+          {
+            "label": "下探入酱",
+            "start": 10.927594,
+            "end": 11.136136,
+            "detail": "勺头没入乳白色蛋黄酱中。",
+            "evidence": [
+              {
+                "time": 11.094428,
+                "observation": "酱面围绕勺头凹陷"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 把金属勺伸进打开的蛋黄酱罐里。"
+      },
+      {
+        "id": "A18",
+        "actor_id": "S19-P01",
+        "shot_id": "S19",
+        "execution_id": "E18",
+        "kind": "motion",
+        "label": "舀起蛋黄酱",
+        "start": 11.136136,
+        "end": 11.720053,
+        "start_range": [
+          11.136136,
+          11.219553
+        ],
+        "end_range": [
+          11.678345,
+          11.720053
+        ],
+        "detail": "近景中勺子从罐内向上提起，带出一大团厚实、光滑的乳白色蛋黄酱。酱体黏附在勺面上并在重力作用下略有拉丝和下垂，罐口边缘还残留一圈白色酱迹。",
+        "evidence": [
+          {
+            "time": 11.678345,
+            "observation": "满满一勺蛋黄酱悬在罐口上方"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "脱离酱池",
+            "time": 11.344678,
+            "time_range": [
+              11.344678,
+              11.428095
+            ]
+          },
+          {
+            "name": "高位停顿",
+            "time": 11.678345,
+            "time_range": [
+              11.678345,
+              11.720053
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "单手控勺"
+        ],
+        "movement_roles": [
+          "垂直提升",
+          "承载黏稠物料"
+        ],
+        "subphases": [
+          {
+            "label": "提出酱团",
+            "start": 11.136136,
+            "end": 11.428095,
+            "detail": "勺子把一大坨蛋黄酱从罐内拉出。",
+            "evidence": [
+              {
+                "time": 11.344678,
+                "observation": "酱体明显高出罐口"
+              }
+            ]
+          },
+          {
+            "label": "悬停沥垂",
+            "start": 11.428095,
+            "end": 11.720053,
+            "detail": "满载的勺子停在上方，酱面微微拉伸下垂。",
+            "evidence": [
+              {
+                "time": 11.678345,
+                "observation": "勺上酱团饱满且有挂丝感"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 用勺子从罐中舀起一大团白色蛋黄酱。"
+      },
+      {
+        "id": "A19",
+        "actor_id": "S20-P01",
+        "shot_id": "S20",
+        "execution_id": "E19",
+        "kind": "motion",
+        "label": "转入小碗",
+        "start": 11.720053,
+        "end": 12.012012,
+        "start_range": [
+          11.720053,
+          11.80347
+        ],
+        "end_range": [
+          11.970304,
+          12.012012
+        ],
+        "detail": "俯视视角下，盛着白色蛋黄酱的勺子从左下方的罐口区域移向右上方的小玻璃碗。手腕带动勺子平移并略微倾斜，酱团随之靠近碗口，视频在正式倒入前结束。",
+        "evidence": [
+          {
+            "time": 11.970304,
+            "observation": "勺头已抵达小玻璃碗上方"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "横向转移",
+            "time": 11.80347,
+            "time_range": [
+              11.80347,
+              11.928595
+            ]
+          },
+          {
+            "name": "就位待倒",
+            "time": 11.970304,
+            "time_range": [
+              11.970304,
+              12.012012
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "单手执勺",
+          "另一手可能扶罐或不在主视野"
+        ],
+        "movement_roles": [
+          "平移输送",
+          "对准接收容器"
+        ],
+        "subphases": [
+          {
+            "label": "离罐运送",
+            "start": 11.720053,
+            "end": 11.928595,
+            "detail": "载酱的勺子从小罐旁移向另一个玻璃碗。",
+            "evidence": [
+              {
+                "time": 11.80347,
+                "observation": "勺与目标碗的距离缩短"
+              }
+            ]
+          },
+          {
+            "label": "悬于碗上",
+            "start": 11.928595,
+            "end": 12.012012,
+            "detail": "勺子停在碗口上方，准备下一步倾倒。",
+            "evidence": [
+              {
+                "time": 11.970304,
+                "observation": "酱团正对小玻璃碗开口"
+              }
+            ]
+          }
+        ],
+        "brief": "P01 把盛满蛋黄酱的勺子移到小玻璃碗上方，尚未完成倒入。"
+      }
+    ],
+    "uncertainties": [
+      "S10 中倾倒透明液体的具体器具和操作者手部大多在画面外，只能确认液体流向和落点。",
+      "S12 撒香草碎时手指仅在边缘短暂出现，无法精确分辨是单手还是双手参与。",
+      "S20 结尾时勺子是否已经开始倾倒尚不可见，片段在小碗上方停止。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.08,
+        "end": 2.96,
+        "start_range": [
+          0.0,
+          0.15
+        ],
+        "end_range": [
+          2.85,
+          3.05
+        ],
+        "speaker_id": "V01",
+        "description": "男声，语气热情、兴奋，语速中等偏快。",
+        "evidence": [
+          {
+            "time": 0.08,
+            "observation": "开始说话 'Lemon garlic chicken...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Lemon garlic chicken is so good, you're gonna love this one."
+      },
+      {
+        "id": "N001",
+        "kind": "transient",
+        "layer": "foreground",
+        "start": 2.96,
+        "end": 3.12,
+        "start_range": [
+          2.85,
+          3.05
+        ],
+        "end_range": [
+          3.0,
+          3.2
+        ],
+        "speaker_id": null,
+        "description": "清脆的拍击或放置物品的声音。",
+        "evidence": [
+          {
+            "time": 3.0,
+            "observation": "明显的短促撞击声"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 3.2,
+        "end": 8.48,
+        "start_range": [
+          3.1,
+          3.3
+        ],
+        "end_range": [
+          8.35,
+          8.6
+        ],
+        "speaker_id": "V01",
+        "description": "男声，继续介绍食物，语气轻松愉快。",
+        "evidence": [
+          {
+            "time": 3.2,
+            "observation": "恢复说话 'And coming in at only...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "And coming in at only 660 calories and 33 grams of protein, I could eat this one every day."
+      },
+      {
+        "id": "N002",
+        "kind": "friction",
+        "layer": "background",
+        "start": 6.4,
+        "end": 7.04,
+        "start_range": [
+          6.3,
+          6.5
+        ],
+        "end_range": [
+          6.9,
+          7.15
+        ],
+        "speaker_id": null,
+        "description": "类似揉搓塑料袋或包装纸的沙沙摩擦声。",
+        "evidence": [
+          {
+            "time": 6.7,
+            "observation": "持续的窸窣声"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "N003",
+        "kind": "friction",
+        "layer": "background",
+        "start": 7.84,
+        "end": 8.48,
+        "start_range": [
+          7.75,
+          7.95
+        ],
+        "end_range": [
+          8.35,
+          8.6
+        ],
+        "speaker_id": null,
+        "description": "再次出现类似的塑料包装摩擦声。",
+        "evidence": [
+          {
+            "time": 8.1,
+            "observation": "短暂的窸窣声"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 8.64,
+        "end": 11.68,
+        "start_range": [
+          8.5,
+          8.75
+        ],
+        "end_range": [
+          11.55,
+          11.8
+        ],
+        "speaker_id": "V01",
+        "description": "男声，宣布体重更新，带有成就感。",
+        "evidence": [
+          {
+            "time": 8.64,
+            "observation": "开始新话题 'Weight update...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Weight update, I finally broke through that 210 wall, man."
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.08,
+          0.583917
+        ],
+        "overlap_s": 0.503917
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.583917,
+          1.126126
+        ],
+        "overlap_s": 0.542209
+      },
+      {
+        "action_id": "A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A02",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A02",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          1.126126,
+          1.584918
+        ],
+        "overlap_s": 0.458792
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          1.584918,
+          2.168836
+        ],
+        "overlap_s": 0.583918
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A05",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.168836,
+          2.711044
+        ],
+        "overlap_s": 0.542208
+      },
+      {
+        "action_id": "A05",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A05",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A05",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A05",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A05",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A06",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.711044,
+          2.96
+        ],
+        "overlap_s": 0.248956
+      },
+      {
+        "action_id": "A06",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.96,
+          3.12
+        ],
+        "overlap_s": 0.16
+      },
+      {
+        "action_id": "A06",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.2,
+          3.253253
+        ],
+        "overlap_s": 0.053253
+      },
+      {
+        "action_id": "A06",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A06",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A06",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A07",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A07",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A07",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.253253,
+          3.628629
+        ],
+        "overlap_s": 0.375376
+      },
+      {
+        "action_id": "A07",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A07",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A07",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A08",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A08",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A08",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.628629,
+          3.962296
+        ],
+        "overlap_s": 0.333667
+      },
+      {
+        "action_id": "A08",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A08",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A08",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A09",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A09",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A09",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.962296,
+          4.421088
+        ],
+        "overlap_s": 0.458792
+      },
+      {
+        "action_id": "A09",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A09",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A09",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A10",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A10",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A10",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.421088,
+          5.13013
+        ],
+        "overlap_s": 0.709042
+      },
+      {
+        "action_id": "A10",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A10",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A10",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A11",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A11",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A11",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.13013,
+          5.672339
+        ],
+        "overlap_s": 0.542209
+      },
+      {
+        "action_id": "A11",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A11",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A11",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A12",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A12",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A12",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.672339,
+          6.381381
+        ],
+        "overlap_s": 0.709042
+      },
+      {
+        "action_id": "A12",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A12",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A12",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A13",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A13",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A13",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.381381,
+          7.882883
+        ],
+        "overlap_s": 1.501502
+      },
+      {
+        "action_id": "A13",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.4,
+          7.04
+        ],
+        "overlap_s": 0.64
+      },
+      {
+        "action_id": "A13",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          7.84,
+          7.882883
+        ],
+        "overlap_s": 0.042883
+      },
+      {
+        "action_id": "A13",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A14",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A14",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A14",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.882883,
+          8.48
+        ],
+        "overlap_s": 0.597117
+      },
+      {
+        "action_id": "A14",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A14",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          7.882883,
+          8.48
+        ],
+        "overlap_s": 0.597117
+      },
+      {
+        "action_id": "A14",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A15",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A15",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A15",
+        "audio_id": "U002",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A15",
+        "audio_id": "N002",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A15",
+        "audio_id": "N003",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A15",
+        "audio_id": "U003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.64,
+          9.592926
+        ],
+        "overlap_s": 0.952926
+      },
+      {
+        "action_id": "A16",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A16",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A16",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A16",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A16",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A16",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.301969,
+          10.719052
+        ],
+        "overlap_s": 0.417083
+      },
+      {
+        "action_id": "A17",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A17",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A17",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A17",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A17",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A17",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.719052,
+          11.136136
+        ],
+        "overlap_s": 0.417084
+      },
+      {
+        "action_id": "A18",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A18",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A18",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A18",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A18",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A18",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          11.136136,
+          11.68
+        ],
+        "overlap_s": 0.543864
+      },
+      {
+        "action_id": "A19",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A19",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A19",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A19",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A19",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A19",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.08,
+          0.583917
+        ],
+        "overlap_s": 0.503917
+      },
+      {
+        "action_id": "A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.583917,
+          1.126126
+        ],
+        "overlap_s": 0.542209
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          1.126126,
+          1.584918
+        ],
+        "overlap_s": 0.458792
+      },
+      {
+        "action_id": "A04",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          1.584918,
+          2.168836
+        ],
+        "overlap_s": 0.583918
+      },
+      {
+        "action_id": "A05",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.168836,
+          2.711044
+        ],
+        "overlap_s": 0.542208
+      },
+      {
+        "action_id": "A06",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.711044,
+          2.96
+        ],
+        "overlap_s": 0.248956
+      },
+      {
+        "action_id": "A06",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.96,
+          3.12
+        ],
+        "overlap_s": 0.16
+      },
+      {
+        "action_id": "A06",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.2,
+          3.253253
+        ],
+        "overlap_s": 0.053253
+      },
+      {
+        "action_id": "A07",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.253253,
+          3.628629
+        ],
+        "overlap_s": 0.375376
+      },
+      {
+        "action_id": "A08",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.628629,
+          3.962296
+        ],
+        "overlap_s": 0.333667
+      },
+      {
+        "action_id": "A09",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.962296,
+          4.421088
+        ],
+        "overlap_s": 0.458792
+      },
+      {
+        "action_id": "A10",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.421088,
+          5.13013
+        ],
+        "overlap_s": 0.709042
+      },
+      {
+        "action_id": "A11",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.13013,
+          5.672339
+        ],
+        "overlap_s": 0.542209
+      },
+      {
+        "action_id": "A12",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.672339,
+          6.381381
+        ],
+        "overlap_s": 0.709042
+      },
+      {
+        "action_id": "A13",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.381381,
+          7.882883
+        ],
+        "overlap_s": 1.501502
+      },
+      {
+        "action_id": "A14",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.882883,
+          8.48
+        ],
+        "overlap_s": 0.597117
+      },
+      {
+        "action_id": "A16",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.301969,
+          10.719052
+        ],
+        "overlap_s": 0.417083
+      },
+      {
+        "action_id": "A17",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.719052,
+          11.136136
+        ],
+        "overlap_s": 0.417084
+      },
+      {
+        "action_id": "A18",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          11.136136,
+          11.68
+        ],
+        "overlap_s": 0.543864
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "A13",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.4,
+          7.04
+        ],
+        "overlap_s": 0.64
+      },
+      {
+        "action_id": "A13",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          7.84,
+          7.882883
+        ],
+        "overlap_s": 0.042883
+      },
+      {
+        "action_id": "A14",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          7.882883,
+          8.48
+        ],
+        "overlap_s": 0.597117
+      },
+      {
+        "action_id": "A15",
+        "audio_id": "U003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.64,
+          9.592926
+        ],
+        "overlap_s": 0.952926
+      }
+    ]
+  },
+  "warnings": [
+    "S10 中倾倒透明液体的具体器具和操作者手部大多在画面外，只能确认液体流向和落点。",
+    "S12 撒香草碎时手指仅在边缘短暂出现，无法精确分辨是单手还是双手参与。",
+    "S20 结尾时勺子是否已经开始倾倒尚不可见，片段在小碗上方停止。"
+  ]
+}

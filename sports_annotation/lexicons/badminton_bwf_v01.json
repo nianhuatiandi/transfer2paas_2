@@ -1,0 +1,108 @@
+{
+  "sport": "badminton",
+  "version": "bwf_grounded_draft_0.1",
+  "created_date": "2026-11-25",
+  "status": "供人工审阅的分层词表草案；已接入独立 hierarchical_experiment 并实际调用 Qwen，首轮为 runs/badminton_bwf_hierarchical_20261125_v01。原扁平 JSON 管线仍保持原接口；试验结果有明显待审问题，不是人工 GT。",
+  "source": {
+    "id": "BWF_L1_2017",
+    "title": "BWF Badminton Coach Education: Coaches' Manual, Level 1",
+    "publisher": "Badminton World Federation",
+    "edition": "Second edition, September 2017",
+    "isbn": "978-967-15281-7-4",
+    "download_url": "https://www.badminton-israel.co.il/newsNdata/General/CoachEducationBWF/BWF_Coach_Manual_Level_1.pdf",
+    "local_pdf": "../references/bwf_coach_level1_2017/BWF_Coaches_Manual_Level1_2017_EN.pdf",
+    "pdf_page_count": 282,
+    "sha256": "f8643a9ea0227a74cc82170f152b166e4481e9ff90b055da9eb0c9360c994bd7",
+    "authority_note": "BWF 官方编写的英文教练教材，下载自以色列羽协网站公开副本；不是 BWF 发布的机器可读原子动作词表。",
+    "translation_note": "中文名称为本项目工作译名，不是已核实的 BWF 官方中文译名；疑难词保留英文。",
+    "scope_note": "本版整理模块 6 的 8 类移动组成、模块 7 的 20 个基本击球技术小节，并补充模块 3 喂球术语；不宣称穷尽羽毛球全部技术。",
+    "page_convention": "printed_page 为书页上印刷页码；pdf_page 为从封面起计、从 1 开始的 PDF 阅读器页序号。"
+  },
+  "annotation_policy": {
+    "origin": "以下标注粒度、时间边界、证据门槛和计数规则由本项目提出，不是 BWF 原文。",
+    "unit": "同一人物在同一镜头中完成的一次可辨识技术运动实例；身体协同部位可共同构成一个单元，步法和击球可各有时间区间并同时发生。",
+    "layers": ["execution", "technique_instance", "subphase", "key_moment", "state_or_attribute"],
+    "primary_count": "主动作层计数使用 technique_instance；execution、movement_role、subphase、key_moment、held_pose 不额外增加这一层的动作数量。部位/子阶段任务另行计分。",
+    "evidence": "仅依据可见运动命名；术语表不是预期事件清单。不可因教材写有该步骤就补出不可见动作，也不可把教学示范中的错误动作强改为标准动作。",
+    "parallelism": "同一人的步法与挥拍分别定时，允许重叠；不同人物分别定时。区间接壤不是完整覆盖的充分条件，连续覆盖也不要求串行切分。",
+    "repetition": "分开记录可分辨的重复实例；若无法辨清周期数，标为待复核的连续片段，不臆造次数。",
+    "composite_deduplication": "一次 split_step 或 hop_pivot 的内含起跳/落地不再作为并列 jump/landing 重复计数；如需记录则置于子层。",
+    "jump_landing_choice": "若采用独立 jump 与 landing，项目操作约定将 jump 的计数区间限于起跳至首次着地之前，landing 从首次着地至缓冲结束；这不是教材对完整跳跃的唯一分解。",
+    "roles": "start/approach/hit/recover 是阶段或作用维度；并步回位记录 technique=chasse 与 role=recover，不重复生成同层 recovery 动作。阶段变化不自动切断一个连续技术实例。",
+    "stroke_scope": "一次击球技术的运动实例覆盖可见动态引拍、向前挥拍及随挥；长时间准备站姿另记状态。触球是关键时刻，不与整个击球并列计数。",
+    "boundaries": "起点取与本次技术有关的可见运动开始，终点取该技术运动结束或切入另一模式；边界由前后证据帧限定，遮挡/剪切处允许不确定或截断。",
+    "direction": "画面左右与人物自身左右分开记录；位移方向需比较前后帧，正反手不由人物处于画面哪一侧决定。",
+    "lift_correction": "挑球不要求必须高弧线；教材包括进攻性与防守性挑球。击球动作、场区和可见出球轨迹共同支持技术分类；是否落到后场单独记录，不能从技术名反推成功落点。仅见向上挥拍不足以确定挑球。"
+  },
+  "movement_roles": [
+    {"label":"start","official_en":"START","zh":"启动阶段","printed_page":51,"pdf_page":75,"count_as_action":false},
+    {"label":"approach","official_en":"APPROACH","zh":"接近击球位置阶段","printed_page":51,"pdf_page":75,"count_as_action":false},
+    {"label":"hit","official_en":"HIT","zh":"击球配合阶段","printed_page":51,"pdf_page":75,"count_as_action":false},
+    {"label":"recover","official_en":"RECOVER","zh":"回位阶段","printed_page":51,"pdf_page":75,"count_as_action":false}
+  ],
+  "movement_terms": [
+    {"label":"split_step","official_en":"Split-step","zh":"分腿启动步","body_group":"lower_body","printed_page":53,"pdf_page":77,"project_cues":"可见短促卸载或小跳、落地调整支撑并转入启动；不要求双脚严格同时着地，不能仅凭静态宽站姿命名。","project_boundary":"从可见启动小跳/卸载开始，至落地后的方向性蹬出转接完成；可见范围不足时标不确定。"},
+    {"label":"running_steps","official_en":"Running steps","zh":"跑步移动","body_group":"lower_body","printed_page":57,"pdf_page":81,"project_cues":"可见双腿交替迈步移动，区分向前、向后及其参考坐标；不能仅凭身体位置改变断定具体步法。","project_boundary":"按可辨识步法实例标注；连续跑动的周期数无法判定时保留为待复核片段。"},
+    {"label":"chasse","official_en":"Chassé","zh":"并步","body_group":"lower_body","printed_page":57,"pdf_page":81,"project_cues":"一脚领先、另一脚跟进而不交叉；需观察脚序，不能仅凭一次重心横移或两脚靠近命名。","project_boundary":"从该次领先脚移动开始，至跟进与再展开的步法转接完成；回位用途由 role 另记。"},
+    {"label":"cross_behind","official_en":"Cross-behind","zh":"后交叉步","body_group":"lower_body","printed_page":57,"pdf_page":81,"project_cues":"可见一腿从另一腿后方交叉通过；教材示范非持拍侧腿从持拍侧腿后经过，解剖侧不清楚时不强填。","project_boundary":"从交叉腿离开原支撑/开始后穿至下一支撑建立。"},
+    {"label":"hop_pivot","official_en":"Hop/pivot","zh":"单脚小跳／结合转体","body_group":"lower_body_and_trunk","printed_page":57,"pdf_page":81,"project_cues":"单脚起跳并同脚着地，可伴身体转向；单纯原地转身不能直接命名为此项。","project_boundary":"从单脚蹬出到同脚落地转接结束；有无转体另记属性。"},
+    {"label":"lunge","official_en":"Lunge","zh":"弓步跨出","body_group":"lower_body","printed_page":61,"pdf_page":85,"project_cues":"可见大步伸出并建立前腿支撑的过程；静态宽站姿不等于弓步动作，也不能假定每次都由持拍侧腿完成。","project_boundary":"从跨出开始至前方支撑与下沉稳定或明显转为回收；随后保持弓步是状态。"},
+    {"label":"jump","official_en":"Jump","zh":"跳跃","body_group":"lower_body_and_trunk","printed_page":61,"pdf_page":85,"project_cues":"可见起跳与腾空证据；不能把已作为整体计数的分腿步或单脚小跳再重复计为 jump。","project_boundary":"本试用协议选择起跳动作开始至首次落地之前；完整跳跃可另有执行父节点。"},
+    {"label":"landing","official_en":"Landing","zh":"落地缓冲","body_group":"lower_body","printed_page":61,"pdf_page":85,"project_cues":"从腾空到接触地面并缓冲；普通跨步接地不直接当作跳跃落地。","project_boundary":"从首次可见着地至缓冲结束或进入下一运动；若属于已计数的复合步法则仅保留子阶段。"}
+  ],
+  "stroke_terms": [
+    {"label":"backhand_flick_serve","official_en":"Backhand Flick Serve","zh":"反手偷后场发球","family":"serve","printed_page":86,"pdf_page":113},
+    {"label":"backhand_low_serve","official_en":"Backhand Low Serve","zh":"反手发网前球","family":"serve","printed_page":88,"pdf_page":115},
+    {"label":"forehand_flick_serve","official_en":"Forehand Flick Serve","zh":"正手偷后场发球","family":"serve","printed_page":90,"pdf_page":117},
+    {"label":"forehand_low_serve","official_en":"Forehand Low Serve","zh":"正手发网前球","family":"serve","printed_page":92,"pdf_page":119},
+    {"label":"forehand_high_serve","official_en":"Forehand High Serve","zh":"正手发高远球","family":"serve","printed_page":94,"pdf_page":121},
+    {"label":"backhand_net_shot","official_en":"Backhand Net Shot","zh":"反手网前放网","family":"forecourt","printed_page":97,"pdf_page":124},
+    {"label":"forehand_net_shot","official_en":"Forehand Net Shot","zh":"正手网前放网","family":"forecourt","printed_page":99,"pdf_page":126},
+    {"label":"backhand_net_lift","official_en":"Backhand Net Lift","zh":"反手挑球","family":"forecourt","printed_page":101,"pdf_page":128,"project_cues":"反手低位击球动作、前场位置与可见出球方向共同支持；不强制高弧线或已观测落点。","project_uncertainty":"仅确认低手向上挥拍时使用 underarm_upward_stroke；正反手不清而挑球类型清楚时使用 net_lift_unspecified_side。"},
+    {"label":"forehand_net_lift","official_en":"Forehand Net Lift","zh":"正手挑球","family":"forecourt","printed_page":103,"pdf_page":130,"project_cues":"正手低位击球动作、前场位置与可见出球方向共同支持；区分较平的进攻性挑球与较高的防守性挑球，无法区分时不强填。","project_uncertainty":"技术类别、触球可见性、实际落点和成功与否分别记录。"},
+    {"label":"backhand_net_kill","official_en":"Backhand Net Kill","zh":"反手网前扑球","family":"forecourt","printed_page":105,"pdf_page":132},
+    {"label":"forehand_net_kill","official_en":"Forehand Net Kill","zh":"正手网前扑球","family":"forecourt","printed_page":107,"pdf_page":134},
+    {"label":"block_off_body","official_en":"Block Off the Body","zh":"身前挡球","family":"midcourt","printed_page":110,"pdf_page":137,"translation_note":"本小节描述反手身前挡球，保留教材小节名称，不扩展成所有防守回球。"},
+    {"label":"backhand_drive","official_en":"Backhand Drive","zh":"反手平抽","family":"midcourt","printed_page":112,"pdf_page":139},
+    {"label":"forehand_drive","official_en":"Forehand Drive","zh":"正手平抽","family":"midcourt","printed_page":114,"pdf_page":141},
+    {"label":"forehand_clear","official_en":"Forehand Clear","zh":"正手后场高远球","family":"rearcourt","printed_page":117,"pdf_page":144},
+    {"label":"forehand_smash","official_en":"Forehand Smash","zh":"正手杀球","family":"rearcourt","printed_page":119,"pdf_page":146},
+    {"label":"forehand_dropshot","official_en":"Forehand Dropshot","zh":"正手吊球","family":"rearcourt","printed_page":121,"pdf_page":148},
+    {"label":"pulled_forehand_dropshot","official_en":"Pulled Forehand Dropshot","zh":"正手被动过渡吊球（暂译）","family":"rearcourt","printed_page":123,"pdf_page":150,"translation_note":"教材描述球已落到身后时使用的过渡处理；不是凭名称认定为劈吊，正式中文术语待教练核对。"},
+    {"label":"backhand_clear","official_en":"Backhand Clear","zh":"反手后场高远球","family":"rearcourt","printed_page":125,"pdf_page":152},
+    {"label":"backhand_pulled_dropshot","official_en":"Backhand Pulled Dropshot","zh":"反手被动过渡吊球（暂译）","family":"rearcourt","printed_page":127,"pdf_page":154,"translation_note":"正式中文术语待教练核对；保留英语标签以免与其他反手吊球变式混淆。"}
+  ],
+  "stroke_subphases": [
+    {"label":"preparation","official_en":"PREPARATION","zh":"准备","printed_page":84,"pdf_page":111,"count_as_primary_action":false,"note":"可能是准备状态或动态准备过程，按可见内容处理。"},
+    {"label":"backswing","official_en":"BACKSWING","zh":"引拍","printed_page":84,"pdf_page":111,"count_as_primary_action":false},
+    {"label":"forward_swing","official_en":"FORWARD SWING","zh":"向前挥拍","printed_page":84,"pdf_page":111,"count_as_primary_action":false},
+    {"label":"follow_through","official_en":"FOLLOW-THROUGH","zh":"随挥","printed_page":84,"pdf_page":111,"count_as_primary_action":false}
+  ],
+  "training_terms": [
+    {"label":"hand_feed","official_en":"Hand feeding","zh":"手喂球","kind":"delivery_family","printed_page":35,"pdf_page":52,"note":"具体投送实例可计数，families 与具体子类型不可重复计数。"},
+    {"label":"underarm_hand_feed","official_en":"Underarm Hand Feed","zh":"低手手喂球","parent":"hand_feed","printed_page":37,"pdf_page":54},
+    {"label":"flat_fast_hand_feed","official_en":"Flat Fast Feed","zh":"平快手喂球","parent":"hand_feed","printed_page":37,"pdf_page":54},
+    {"label":"overarm_hand_feed","official_en":"Overarm Hand Feed","zh":"上手手喂球","parent":"hand_feed","printed_page":38,"pdf_page":55},
+    {"label":"racket_feeding_multifeed","official_en":"Racket Feeding - Multi-feed","zh":"球拍多球喂球","kind":"training_context","printed_page":38,"pdf_page":55,"count_as_action":false},
+    {"label":"racket_feeding_rallying","official_en":"Racket Feeding - Rallying","zh":"球拍单球连续对练喂球","kind":"training_context","printed_page":38,"pdf_page":55,"count_as_action":false}
+  ],
+  "project_extensions": [
+    {"label":"movement_unspecified","zh":"步法未确定的移动","origin":"project","note":"移动可见但不能辨识并步、跑步等；role 可另填，具体步法不强猜。"},
+    {"label":"step_back","zh":"后退步","origin":"project_normalization_of_bwf_example","printed_page":64,"pdf_page":88,"note":"教材移动组合示例中有 Step back；不是第 51 页八类列表中的独立大类。区别于看不清脚序的泛称回位。"},
+    {"label":"net_lift_unspecified_side","zh":"挑球，正反手未确定","origin":"project","note":"合并正反手的退化类别；技术类型需有证据，不因输出格式要求而选择。"},
+    {"label":"underarm_upward_stroke","zh":"低手向上挥拍／回球，具体技术未确定","origin":"project","note":"接触未见时用挥拍描述，不默认已击中；不是 BWF 单列技术。"},
+    {"label":"stroke_unspecified","zh":"具体类型未确定的挥拍／击球","origin":"project","note":"使用可见动作描述与不确定性，不补出不具备证据的技术名称。"},
+    {"label":"held_pose","zh":"保持姿态","origin":"project","count_as_action":false},
+    {"label":"explanatory_gesture","zh":"讲解手势","origin":"project","count_as_action":false,"note":"保留为可见事件，但不计入运动技术动作数量。"}
+  ],
+  "key_moments": [
+    {"label":"shuttle_contact","zh":"触球","origin":"project_temporal_anchor","count_as_action":false,"note":"挂在对应技术实例下，允许时间区间/未知；击球类型已判断不等于触球帧已观测。"},
+    {"label":"shuttle_release","zh":"手释放羽毛球","origin":"project_temporal_anchor","count_as_action":false},
+    {"label":"ground_contact","zh":"脚接触地面","origin":"project_temporal_anchor","count_as_action":false}
+  ],
+  "source_caveats": [
+    "第 101 页（PDF 128）反手挑球技术表的一个表头实际印为 FOREHAND SWING，与第 84 页通用 BACKSWING 框架及正手挑球表不一致。保留原 PDF；本词表的引拍子阶段来源引用第 84 页，不声称已获得官方勘误。",
+    "本文件不能直接覆盖 lexicons/badminton.json：现有管线读取 terms 数组并将其作为扁平 label 枚举，尚无独立技术/阶段/子阶段输出字段。",
+    "除挑球及移动术语外，本版多数击球条目仅完成名称和出处索引，尚未逐项制定视频判别与时间边界规则。"
+  ]
+}

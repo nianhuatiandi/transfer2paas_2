@@ -1,0 +1,14 @@
+{
+  "sport": "standing_jump",
+  "policy": "Standing long-jump practice may contain demonstrations, partial repetitions and slow motion. Do not infer jump distance or success. Arm and leg phases may overlap.",
+  "terms": [
+    {"label": "arm_backswing", "zh": "向后摆臂", "definition": "Arms visibly travel rearward during preparation. Held arms behind the trunk are a pose, not ongoing swing."},
+    {"label": "countermovement", "zh": "下蹲蓄力", "definition": "Observable hip/knee flexion and lowered body before an attempted jump; do not infer muscle force."},
+    {"label": "arm_forward_swing", "zh": "向前摆臂", "definition": "Arms travel forward/upward. Can overlap leg extension and takeoff."},
+    {"label": "push_off", "zh": "蹬伸起跳", "definition": "Visible hip/knee/ankle extension toward ground separation. Include a ground-separation anchor only if visible."},
+    {"label": "flight", "zh": "腾空", "definition": "Feet visibly unsupported by the ground, from takeoff through the approach to landing. Do not infer flight from a camera cut."},
+    {"label": "landing_preparation", "zh": "落地前收腿伸腿", "definition": "Observable lower-limb repositioning preparing landing during flight; specify the actual sequence."},
+    {"label": "landing", "zh": "落地缓冲", "definition": "First visible ground contact and subsequent absorbing flexion; the initial contact may be uncertain."},
+    {"label": "recovery", "zh": "落地后调整", "definition": "Post-landing steps or rebalancing toward stable standing, distinguished from the landing phase."}
+  ]
+}

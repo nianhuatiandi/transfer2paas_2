@@ -1,0 +1,2606 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma23",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "两位动画人物交谈",
+    "main_subject_count": 2,
+    "subject_kind": "动画角色",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      33
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-d9a12270-75.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      8.25
+    ],
+    "official_sha256": "aa515d426d8094b319de446d66f4e0f2cc62b394aac73a125513b452b1f256ed",
+    "clip_sha256": "aa515d426d8094b319de446d66f4e0f2cc62b394aac73a125513b452b1f256ed",
+    "audio_source": null
+  },
+  "duration_seconds": 8.25,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 1.25,
+      "first_frame": 0,
+      "end_frame_exclusive": 10
+    },
+    {
+      "id": "S02",
+      "start": 1.25,
+      "end": 2.0,
+      "first_frame": 10,
+      "end_frame_exclusive": 16
+    },
+    {
+      "id": "S03",
+      "start": 2.0,
+      "end": 8.25,
+      "first_frame": 16,
+      "end_frame_exclusive": 66
+    }
+  ],
+  "input_frames": {
+    "visual": 66
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含三个镜头：S01为戴帽男子面部特写，他正与画外人交谈并变换表情；S02为中景，展示两人下半身及一条发光的粉色尾巴从灰色西装裤后长出并向右摆动；S03为双人中近景，女子靠近男子说话、亲吻其嘴部，导致男子长出猫科动物口鼻，随后男子用手捂住脸离开画面。背景中有其他宾客站立或走动，但非主要动作执行者。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿灰色西装、打亮粉色领带、戴深灰制服帽的男子"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "仅见黑色头发后脑勺和一只戴黑手套的手搭在P01肩上的对话者"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "穿灰色西裤的人（下半身）"
+      },
+      {
+        "id": "S02-P02",
+        "shot_id": "S02",
+        "description": "穿紧身黑裙/连体衣、戴长黑手套的人（下半身）"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "穿灰色西装、打亮粉色领带、戴深灰制服帽的男子"
+      },
+      {
+        "id": "S03-P02",
+        "shot_id": "S03",
+        "description": "短发、红唇、戴耳环、穿无袖深色上衣并戴长黑手套的女子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E-S01-P01-talk",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.125,
+        "description": "男子面对右侧画外对象说话，眉毛、眼睛和嘴型快速变化"
+      },
+      {
+        "id": "E-S01-P02-touch",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.125,
+        "description": "戴黑手套的手搭在男子左肩上"
+      },
+      {
+        "id": "E-S02-tail-grow-swing",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 1.25,
+        "end": 1.875,
+        "description": "发光粉紫尾巴从灰色裤子后方伸出并向右扫过旁边黑衣人腿侧"
+      },
+      {
+        "id": "E-S03-P02-talk-gesture",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "start": 2.0,
+        "end": 4.875,
+        "description": "女子贴近男子说话，右手抬起做手势，头部随语句前后移动"
+      },
+      {
+        "id": "E-S03-P01-listen-smile",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 2.0,
+        "end": 4.875,
+        "description": "男子面向前方偏右听女子讲话，嘴角逐渐上扬露齿微笑"
+      },
+      {
+        "id": "E-S03-P02-kiss-transform",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "start": 5.0,
+        "end": 6.5,
+        "description": "女子闭眼前倾吻住男子嘴部，紫色光效覆盖接触处，男子下脸变成粉红毛茸茸猫科口鼻并出现胡须"
+      },
+      {
+        "id": "E-S03-P01-cover-face-exit",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 6.625,
+        "end": 7.125,
+        "description": "男子抬手捂住变形的口鼻并向左侧移出画面"
+      },
+      {
+        "id": "E-S03-P02-post-kiss-pose",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "start": 7.125,
+        "end": 8.125,
+        "description": "男子离场后女子保持仰头撅嘴姿势，随后睁眼看向左侧"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A-S01-P01-facial-expression-change",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-talk",
+        "kind": "motion",
+        "label": "说话时面部表情连续变化",
+        "start": 0.0,
+        "end": 1.125,
+        "start_range": [
+          0.0,
+          0.125
+        ],
+        "end_range": [
+          1.0,
+          1.125
+        ],
+        "detail": "男子正面朝向右侧画外对象，嘴巴反复开合，眉部和眼睑多次改变位置：起初眉头较平、双眼圆睁，随后一度眯眼下视，接着又瞪大眼并龇牙，最后转为惊讶状张口、眼球上抬。整个过程中他的头部基本保持在同一区域，没有明显转身或大幅位移。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "男子双眼圆睁、嘴微张，像是在开口说话。"
+          },
+          {
+            "time": 0.125,
+            "observation": "他半眯着眼、嘴唇收成小圆形，表情收紧。"
+          },
+          {
+            "time": 0.25,
+            "observation": "他又睁大眼睛并露出牙齿，呈夸张笑容。"
+          },
+          {
+            "time": 0.75,
+            "observation": "他张大嘴、眼睛上翻，显得吃惊。"
+          },
+          {
+            "time": 1.125,
+            "observation": "他抬头向上看，嘴闭合，神情转为错愕。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "眯眼噘嘴",
+            "time": 0.125,
+            "time_range": null
+          },
+          {
+            "name": "龇牙瞪眼",
+            "time": 0.25,
+            "time_range": null
+          },
+          {
+            "name": "惊愕张口",
+            "time": 0.75,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "面部",
+          "嘴",
+          "眼睛",
+          "眉毛"
+        ],
+        "movement_roles": [
+          "说话表情变化",
+          "视线转移"
+        ],
+        "subphases": [
+          {
+            "label": "初始陈述",
+            "start": 0.0,
+            "end": 0.25,
+            "detail": "男子先以较平静的说话姿态开始，随后迅速切换成眯眼噘嘴和龇牙瞪眼的夸张表情。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "双眼圆睁、嘴微张。"
+              },
+              {
+                "time": 0.125,
+                "observation": "半眯眼、嘴唇收成小圆形。"
+              },
+              {
+                "time": 0.25,
+                "observation": "睁大眼睛并露出牙齿。"
+              }
+            ]
+          },
+          {
+            "label": "情绪升级",
+            "start": 0.375,
+            "end": 0.875,
+            "detail": "他继续对着对方说话，嘴形在大张、紧咬和张开之间来回变化，眼部也从瞪大到略微下垂再到上翻。",
+            "evidence": [
+              {
+                "time": 0.375,
+                "observation": "咧嘴露齿笑。"
+              },
+              {
+                "time": 0.5,
+                "observation": "张嘴呈O形。"
+              },
+              {
+                "time": 0.625,
+                "observation": "咬牙皱眉。"
+              },
+              {
+                "time": 0.75,
+                "observation": "大张着嘴、眼睛上翻。"
+              },
+              {
+                "time": 0.875,
+                "observation": "低头抿嘴，神色收敛。"
+              }
+            ]
+          },
+          {
+            "label": "收尾反应",
+            "start": 1.0,
+            "end": 1.125,
+            "detail": "最后他把头稍微抬起，眼睛朝上看，嘴闭上，形成一个停顿后的反应表情。",
+            "evidence": [
+              {
+                "time": 1.0,
+                "observation": "抬头向上看，嘴闭合。"
+              },
+              {
+                "time": 1.125,
+                "observation": "继续保持仰视和闭口状态。"
+              }
+            ]
+          }
+        ],
+        "brief": "戴帽男子对着画外对象说话，期间不断变换眉眼和嘴型。"
+      },
+      {
+        "id": "A-S01-P02-hand-on-shoulder",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P02-touch",
+        "kind": "held_pose",
+        "label": "手搭肩维持接触",
+        "start": 0.0,
+        "end": 1.125,
+        "start_range": [
+          0.0,
+          0.125
+        ],
+        "end_range": [
+          1.0,
+          1.125
+        ],
+        "detail": "画面右侧前景只露出一名对话者的后脑和部分肩膀，其戴着黑色手套的一只手始终放在男子左肩附近，手指贴着布料，未见明显抽离或重新放置的动作。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "黑手套手掌贴在男子左肩上。"
+          },
+          {
+            "time": 0.5,
+            "observation": "手仍停留在原位，没有离开肩部。"
+          },
+          {
+            "time": 1.125,
+            "observation": "直到本镜头结束，手依旧搭在肩上。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "持续搭肩",
+            "time": 0.0,
+            "time_range": [
+              0.0,
+              1.125
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "手",
+          "肩"
+        ],
+        "movement_roles": [
+          "身体接触",
+          "支撑性姿态"
+        ],
+        "subphases": [],
+        "brief": "画外对话者戴黑手套的手一直搭在男子左肩上。"
+      },
+      {
+        "id": "A-S02-tail-emerge-and-sweep",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E-S02-tail-grow-swing",
+        "kind": "motion",
+        "label": "发光尾巴从身后长出并横扫",
+        "start": 1.25,
+        "end": 1.875,
+        "start_range": [
+          1.25,
+          1.375
+        ],
+        "end_range": [
+          1.75,
+          1.875
+        ],
+        "detail": "镜头切到腰部以下后，一条带紫色闪光颗粒的粉红色毛茸茸尾巴先从灰色裤子后方探出，尾尖朝左下方悬着；接着整条尾巴向右甩动，越过旁边穿黑衣者的腿部外侧，最终停在两人身侧，末端膨大成紫色刷状。",
+        "evidence": [
+          {
+            "time": 1.25,
+            "observation": "尾巴刚从灰色裤子后方露出，主体还偏短，周围有紫色粒子。"
+          },
+          {
+            "time": 1.375,
+            "observation": "尾巴拉长并向左上方拱起，仍在主人身后。"
+          },
+          {
+            "time": 1.5,
+            "observation": "尾巴整体转向右侧，已经伸到黑衣人腿旁。"
+          },
+          {
+            "time": 1.625,
+            "observation": "尾巴横在两腿之间，末端接近黑衣人一侧。"
+          },
+          {
+            "time": 1.875,
+            "observation": "尾巴完全成形，弯曲垂在右侧，末端呈紫色蓬松状。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "尾部初现",
+            "time": 1.25,
+            "time_range": null
+          },
+          {
+            "name": "越向右侧",
+            "time": 1.5,
+            "time_range": null
+          },
+          {
+            "name": "停于身侧",
+            "time": 1.875,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "臀部后方",
+          "尾巴"
+        ],
+        "movement_roles": [
+          "生长显现",
+          "横向摆动"
+        ],
+        "subphases": [
+          {
+            "label": "从裤后伸出",
+            "start": 1.25,
+            "end": 1.375,
+            "detail": "尾巴首先从灰色裤子后方冒出来，长度较短，带着明显的紫色闪烁效果。",
+            "evidence": [
+              {
+                "time": 1.25,
+                "observation": "只见一小段粉紫色发光尾巴从臀后探出。"
+              },
+              {
+                "time": 1.375,
+                "observation": "尾巴延长并向上拱起。"
+              }
+            ]
+          },
+          {
+            "label": "向右横扫",
+            "start": 1.5,
+            "end": 1.75,
+            "detail": "随后尾巴由左向右摆过去，穿过两名角色之间的空间，靠近黑衣人腿部。",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "尾巴已转到右侧，指向黑衣人方向。"
+              },
+              {
+                "time": 1.625,
+                "observation": "尾巴横跨在两腿之间。"
+              },
+              {
+                "time": 1.75,
+                "observation": "尾巴进一步贴向黑衣人腿侧。"
+              }
+            ]
+          },
+          {
+            "label": "末端定型",
+            "start": 1.75,
+            "end": 1.875,
+            "detail": "最后尾巴停止大幅摆动，弯成一个弧形垂在身侧，末端形成更粗的紫色毛簇。",
+            "evidence": [
+              {
+                "time": 1.75,
+                "observation": "尾巴弧度稳定下来。"
+              },
+              {
+                "time": 1.875,
+                "observation": "完整尾巴静止悬挂，末端蓬松发亮。"
+              }
+            ]
+          }
+        ],
+        "brief": "灰色裤子后方长出一条发光粉紫尾巴，并向右扫到旁边黑衣人腿侧。"
+      },
+      {
+        "id": "A-S03-P02-speaking-close-to-P01",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "execution_id": "E-S03-P02-talk-gesture",
+        "kind": "gesture",
+        "label": "贴近男子说话并抬手示意",
+        "start": 2.0,
+        "end": 4.875,
+        "start_range": [
+          2.0,
+          2.125
+        ],
+        "end_range": [
+          4.75,
+          4.875
+        ],
+        "detail": "女子站在男子右侧，身体向他倾斜，一边看着他一边连续说话；她的右手戴着黑手套，时而握拳举在胸前，时而张开手指在他肩颈附近比划，头部也随着语气轻微前后点动。男子则大多面朝前方偏右，偶尔把目光移向她。",
+        "evidence": [
+          {
+            "time": 2.0,
+            "observation": "女子张嘴看着男子，右手抬起靠近他肩部。"
+          },
+          {
+            "time": 2.375,
+            "observation": "她闭眼大笑式地说话，右手握拳举在身前。"
+          },
+          {
+            "time": 3.0,
+            "observation": "她继续面向男子讲话，手部姿势放松一些。"
+          },
+          {
+            "time": 4.0,
+            "observation": "她再次闭眼说话，右手张开伸向男子胸口附近。"
+          },
+          {
+            "time": 4.875,
+            "observation": "她凑得更近，准备接吻前的最后一句说完。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "起手比划",
+            "time": 2.0,
+            "time_range": null
+          },
+          {
+            "name": "握拳强调",
+            "time": 2.375,
+            "time_range": null
+          },
+          {
+            "name": "伸手靠近胸口",
+            "time": 4.0,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "嘴",
+          "头",
+          "右手",
+          "上身"
+        ],
+        "movement_roles": [
+          "交流表达",
+          "伴随手势"
+        ],
+        "subphases": [
+          {
+            "label": "开场贴近说明",
+            "start": 2.0,
+            "end": 2.75,
+            "detail": "女子先把身体靠向男子，张嘴对他说话，右手抬到他肩边做第一次示意。",
+            "evidence": [
+              {
+                "time": 2.0,
+                "observation": "她正对男子开口，手已举起。"
+              },
+              {
+                "time": 2.25,
+                "observation": "她闭眼笑着继续说。"
+              },
+              {
+                "time": 2.75,
+                "observation": "她仍面向男子，表情活跃。"
+              }
+            ]
+          },
+          {
+            "label": "持续讲述与点头",
+            "start": 2.875,
+            "end": 4.25,
+            "detail": "接下来她保持近距离交谈，嘴部频繁开合，右手在胸前和男子肩颈间来回变化，头部略有前后晃动。",
+            "evidence": [
+              {
+                "time": 3.125,
+                "observation": "她睁眼看着男子继续讲。"
+              },
+              {
+                "time": 3.5,
+                "observation": "她微微仰头说话。"
+              },
+              {
+                "time": 4.25,
+                "observation": "她闭眼再说一句，手靠近男子胸前。"
+              }
+            ]
+          },
+          {
+            "label": "收束并前倾",
+            "start": 4.375,
+            "end": 4.875,
+            "detail": "临近结束时，她把话说到最贴近的位置，身体进一步前倾，为后面的亲吻做准备。",
+            "evidence": [
+              {
+                "time": 4.5,
+                "observation": "她闭眼笑着凑近。"
+              },
+              {
+                "time": 4.875,
+                "observation": "她已经非常贴近男子的脸。"
+              }
+            ]
+          }
+        ],
+        "brief": "短发女子紧贴着戴帽男子说话，并用戴黑手套的右手不断比划。"
+      },
+      {
+        "id": "A-S03-P01-listening-and-smiling",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "E-S03-P01-listen-smile",
+        "kind": "held_pose",
+        "label": "聆听并渐露微笑",
+        "start": 2.0,
+        "end": 4.875,
+        "start_range": [
+          2.0,
+          2.125
+        ],
+        "end_range": [
+          4.75,
+          4.875
+        ],
+        "detail": "男子大部分时间站着不动，脸朝前方略偏右，听着身旁女子讲话；他的表情从最初略显紧张、嘴微张，慢慢转成明显的露齿微笑，眼神也在女子和他前方之间切换，但没有大的肢体动作。",
+        "evidence": [
+          {
+            "time": 2.0,
+            "observation": "男子嘴微张，神情有些紧绷。"
+          },
+          {
+            "time": 2.625,
+            "observation": "他开始露出牙齿，笑意加深。"
+          },
+          {
+            "time": 3.5,
+            "observation": "他保持咧嘴微笑，眼睛看向前方偏右。"
+          },
+          {
+            "time": 4.75,
+            "observation": "他仍然微笑着承受女子的靠近。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": " initial tense look",
+            "time": 2.0,
+            "time_range": null
+          },
+          {
+            "name": "露齿微笑",
+            "time": 2.625,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "面部",
+          "嘴",
+          "眼睛",
+          "头"
+        ],
+        "movement_roles": [
+          "接收信息",
+          "表情回应"
+        ],
+        "subphases": [
+          {
+            "label": "紧张聆听",
+            "start": 2.0,
+            "end": 2.5,
+            "detail": "男子刚被女子靠近时，嘴微张、眼睛睁大，像是在认真听对方说什么。",
+            "evidence": [
+              {
+                "time": 2.0,
+                "observation": "他面露惊讶，嘴半开。"
+              },
+              {
+                "time": 2.375,
+                "observation": "他仍看着前方偏右，未作大动作。"
+              }
+            ]
+          },
+          {
+            "label": "转为微笑",
+            "start": 2.625,
+            "end": 4.875,
+            "detail": "随后他的嘴角逐步上扬，变成持续的露齿笑，并在女子越来越靠近时维持这一表情。",
+            "evidence": [
+              {
+                "time": 2.625,
+                "observation": "他明显笑起来，露出牙齿。"
+              },
+              {
+                "time": 3.75,
+                "observation": "他继续微笑看着她方向。"
+              },
+              {
+                "time": 4.875,
+                "observation": "他在她贴脸前仍保持笑容。"
+              }
+            ]
+          }
+        ],
+        "brief": "戴帽男子站在原地听女子讲话，脸上从紧张转为露齿微笑。"
+      },
+      {
+        "id": "A-S03-P02-kiss-causing-snout-transformation",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "execution_id": "E-S03-P02-kiss-transform",
+        "kind": "motion",
+        "label": "亲吻触发男子口鼻变形",
+        "start": 5.0,
+        "end": 6.5,
+        "start_range": [
+          5.0,
+          5.125
+        ],
+        "end_range": [
+          6.375,
+          6.5
+        ],
+        "detail": "女子闭上眼睛向前探头，嘴唇贴上男子的嘴；接触瞬间有一团紫色光效罩住两人相接处。紧接着，男子原本的人类下半脸被替换成粉红色、毛茸茸的猫科动物口鼻，鼻头突出，嘴边长出细长胡须，而女子在整个过程中一直保持贴合亲吻的姿势。",
+        "evidence": [
+          {
+            "time": 5.0,
+            "observation": "女子闭眼前倾，即将吻到男子。"
+          },
+          {
+            "time": 5.125,
+            "observation": "紫色光效出现在两人嘴部接触处。"
+          },
+          {
+            "time": 5.25,
+            "observation": "男子下半脸开始变成突出的粉色兽吻形状。"
+          },
+          {
+            "time": 5.5,
+            "observation": "新的口鼻已经完全成形，能看到鼻孔和胡须根部。"
+          },
+          {
+            "time": 6.25,
+            "observation": "男子顶着猫科口鼻继续被她吻着，胡须清晰可见。"
+          },
+          {
+            "time": 6.5,
+            "observation": "变形状态稳定，女子仍未松口。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "唇部接触",
+            "time": 5.125,
+            "time_range": null
+          },
+          {
+            "name": "紫光包裹",
+            "time": 5.125,
+            "time_range": null
+          },
+          {
+            "name": "兽吻成形",
+            "time": 5.5,
+            "time_range": null
+          },
+          {
+            "name": "胡须出现",
+            "time": 5.5,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "嘴",
+          "脸",
+          "鼻子",
+          "胡须"
+        ],
+        "movement_roles": [
+          "主动亲吻",
+          "引发形态变化"
+        ],
+        "subphases": [
+          {
+            "label": "前倾接吻",
+            "start": 5.0,
+            "end": 5.125,
+            "detail": "女子把头往前送，闭眼把自己的嘴贴到男子的嘴上。",
+            "evidence": [
+              {
+                "time": 5.0,
+                "observation": "她已经开始俯身靠近。"
+              },
+              {
+                "time": 5.125,
+                "observation": "两人嘴部接触，出现紫色光晕。"
+              }
+            ]
+          },
+          {
+            "label": "变形展开",
+            "start": 5.25,
+            "end": 5.75,
+            "detail": "接触后，男子的下颌和嘴周迅速变成粉红色毛皮状的动物口鼻，轮廓向外凸出。",
+            "evidence": [
+              {
+                "time": 5.25,
+                "observation": "粉色兽吻结构开始覆盖原有人类嘴部。"
+              },
+              {
+                "time": 5.5,
+                "observation": "口鼻完全成型，带有明显鼻头和唇线。"
+              },
+              {
+                "time": 5.75,
+                "observation": "胡须从口鼻两侧伸出。"
+              }
+            ]
+          },
+          {
+            "label": "维持亲吻",
+            "start": 5.875,
+            "end": 6.5,
+            "detail": "变形完成后，女子依旧闭眼贴着他的新口鼻继续亲，男子则被动承受这一变化。",
+            "evidence": [
+              {
+                "time": 6.0,
+                "observation": "她仍吻着他，没有后退。"
+              },
+              {
+                "time": 6.25,
+                "observation": "男子睁着眼，脸部已是完整猫科口鼻。"
+              },
+              {
+                "time": 6.5,
+                "observation": "亲吻关系保持不变，变形结果稳定。"
+              }
+            ]
+          }
+        ],
+        "brief": "女子吻住男子嘴部，紫光闪过之后他的下半脸变成带胡须的粉色猫科口鼻。"
+      },
+      {
+        "id": "A-S03-P01-cover-mouth-and-leave-frame",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "E-S03-P01-cover-face-exit",
+        "kind": "motion",
+        "label": "捂脸后向左离场",
+        "start": 6.625,
+        "end": 7.125,
+        "start_range": [
+          6.625,
+          6.75
+        ],
+        "end_range": [
+          7.0,
+          7.125
+        ],
+        "detail": "在女子终于松开后，男子立刻抬起一只手盖到自己变形的口鼻上，像是遮挡 newly formed 的兽吻；接着他带着这只手向画面左侧移动，身体很快退出取景范围，只留下女子在原位。",
+        "evidence": [
+          {
+            "time": 6.625,
+            "observation": "男子开始抬手去碰自己的粉色口鼻。"
+          },
+          {
+            "time": 6.875,
+            "observation": "他的手已经按在脸上，身体往左偏。"
+          },
+          {
+            "time": 7.0,
+            "observation": "他大半身子移出画面边缘。"
+          },
+          {
+            "time": 7.125,
+            "observation": "男子已基本离开，只剩极少部分在画框外缘。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抬手遮脸",
+            "time": 6.75,
+            "time_range": null
+          },
+          {
+            "name": "左侧出画",
+            "time": 7.125,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "手",
+          "脸",
+          "上半身"
+        ],
+        "movement_roles": [
+          "自我遮挡",
+          "撤离画面"
+        ],
+        "subphases": [
+          {
+            "label": "抬手遮挡",
+            "start": 6.625,
+            "end": 6.875,
+            "detail": "男子先是把手举起来，放到自己刚形成的猫科口鼻前面进行遮盖。",
+            "evidence": [
+              {
+                "time": 6.625,
+                "observation": "手开始上升接近脸部。"
+              },
+              {
+                "time": 6.875,
+                "observation": "手已贴在变形口鼻上。"
+              }
+            ]
+          },
+          {
+            "label": "向左退场",
+            "start": 7.0,
+            "end": 7.125,
+            "detail": "随后他借着这个遮挡动作向左侧走开，直至几乎完全离开镜头。",
+            "evidence": [
+              {
+                "time": 7.0,
+                "observation": "他的身体明显左移。"
+              },
+              {
+                "time": 7.125,
+                "observation": "他已经不在主画面内。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子抬手捂住变形后的口鼻，然后向左侧走出画面。"
+      },
+      {
+        "id": "A-S03-P02-hold-pursed-lips-after-parting",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "execution_id": "E-S03-P02-post-kiss-pose",
+        "kind": "held_pose",
+        "label": "分开后保持撅嘴再睁眼",
+        "start": 7.125,
+        "end": 8.125,
+        "start_range": [
+          7.125,
+          7.25
+        ],
+        "end_range": [
+          8.0,
+          8.125
+        ],
+        "detail": "男子离场后，女子独自留在画面中央偏右位置，仍旧仰着头、闭着眼、嘴唇撅起，像保持着刚刚亲吻结束的余韵；直到接近片段末尾，她才睁开眼睛并把视线转向左侧。",
+        "evidence": [
+          {
+            "time": 7.125,
+            "observation": "她单独在画面里，头微仰，嘴撅着。"
+          },
+          {
+            "time": 7.5,
+            "observation": "她仍闭眼保持同一姿势。"
+          },
+          {
+            "time": 7.875,
+            "observation": "她开始睁眼。"
+          },
+          {
+            "time": 8.125,
+            "observation": "她睁开眼看向左侧。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "定格撅嘴",
+            "time": 7.25,
+            "time_range": null
+          },
+          {
+            "name": "睁眼回望",
+            "time": 7.875,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "头",
+          "嘴",
+          "眼睛"
+        ],
+        "movement_roles": [
+          "停留姿态",
+          "视线恢复"
+        ],
+        "subphases": [
+          {
+            "label": "延续亲吻余态",
+            "start": 7.125,
+            "end": 7.75,
+            "detail": "男子离开后，她没有马上放下姿势，而是继续仰头闭眼、撅着嘴唇停在原地。",
+            "evidence": [
+              {
+                "time": 7.125,
+                "observation": "她保持撅嘴和仰头。"
+              },
+              {
+                "time": 7.5,
+                "observation": "姿势几乎没有变化。"
+              },
+              {
+                "time": 7.75,
+                "observation": "仍处于闭眼撅嘴状态。"
+              }
+            ]
+          },
+          {
+            "label": "睁眼转向",
+            "start": 7.875,
+            "end": 8.125,
+            "detail": "最后她睁开眼睛，把注意力投向男子离开的左侧方向。",
+            "evidence": [
+              {
+                "time": 7.875,
+                "observation": "她的眼皮抬起，开始看见眼球。"
+              },
+              {
+                "time": 8.125,
+                "observation": "她明确望向左侧。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子走后，女子先保持仰头撅嘴的定格姿势，随后睁眼看向左方。"
+      }
+    ],
+    "uncertainties": [
+      "S01中搭在男子肩上的手属于哪位对话者无法确认，只能确定是画面右侧前景人物的黑手套手。",
+      "S02中灰色裤子者与S03中的戴帽男子是否为同一人，在本片段内缺少直接同框证据，不能仅凭服装推断合并身份。",
+      "S03男子抬手遮脸时，具体是哪只手因角度和遮挡不够清楚，只能确认是一只手从下方抬起并按到变形口鼻上。"
+    ],
+    "motion_tracks": [
+      {
+        "context": "在画面左侧前景，一名身穿灰色西装、打亮粉色领带并戴着深灰制服帽的男子占据主要位置。他身体微侧向右侧，正面对着一名背对镜头的黑发女子（仅露出后脑勺）。男子的左手戴着黑色手套，持续搭在自己的左胸口处。背景为模糊的室内大厅环境。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 1,
+            "caption": "男子起初双眼圆睁，嘴巴微张呈说话状。随后他的眼睑迅速下垂半闭，眉毛紧蹙，嘴唇撅起，面部表情转为一种无奈或怀疑的神态。",
+            "start": 0.0,
+            "end": 0.125,
+            "action_ids": [
+              "A-S01-P01-facial-expression-change"
+            ]
+          },
+          {
+            "from_frame": 2,
+            "to_frame": 4,
+            "caption": "男子的眼睛再次猛地睁大，瞳孔聚焦于对方。紧接着，他的嘴角大幅度向两侧咧开，露出一排整齐的牙齿，呈现出夸张且略显僵硬的笑容；但在第4帧时笑容瞬间消失，嘴巴重新张开成“O”型，恢复惊讶状态。",
+            "start": 0.25,
+            "end": 0.5,
+            "action_ids": [
+              "A-S01-P01-facial-expression-change"
+            ]
+          },
+          {
+            "from_frame": 5,
+            "to_frame": 6,
+            "caption": "男子的眉头皱得更紧，眼神变得犀利，上下牙齿紧紧咬合在一起，表现出明显的紧张或尴尬情绪。在第6帧时，这种紧绷感加剧，他的嘴巴突然大张，仿佛在进行激烈的争辩或发出惊呼。",
+            "start": 0.625,
+            "end": 0.75,
+            "action_ids": [
+              "A-S01-P01-facial-expression-change"
+            ]
+          },
+          {
+            "from_frame": 7,
+            "to_frame": 9,
+            "caption": "男子的头部开始向后仰并向右上方偏转，视线随之从女子的脸部移开投向高处。随着头部的抬起，他的下巴上扬，嘴巴闭合，神情逐渐由激动转为平静甚至带有一丝傲慢，最终定格在仰望的姿态。",
+            "start": 0.875,
+            "end": 1.125,
+            "action_ids": [
+              "A-S01-P01-facial-expression-change"
+            ]
+          }
+        ],
+        "camera": "这是一个过肩特写镜头，摄像机位于黑发女子身后，焦点始终锁定在穿灰西装男子的面部。在整个片段中，机位保持静止，没有明显的推拉摇移，完全依靠人物丰富的面部表情变化和头部动作来推动视觉叙事。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "穿灰色西装、打亮粉色领带、戴深灰制服帽的男子",
+        "inspections": {
+          "pose": [
+            {
+              "from_frame": 0,
+              "to_frame": 1,
+              "description": "戴帽男子的面部表情发生剧烈变化：从双眼圆睁、嘴巴微张的状态，迅速转变为眼睑半垂、眉毛下压呈八字形、嘴唇撅起成小“O”型的无奈神态。",
+              "start": 0.0,
+              "end": 0.125,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 1,
+              "to_frame": 3,
+              "description": "男子的眼睛再次猛地睁大，视线锁定前方；紧接着嘴角大幅度向两侧咧开，露出整齐的上排牙齿，呈现出一个夸张且略显僵硬的笑容，头部伴随轻微的前倾和晃动。",
+              "start": 0.125,
+              "end": 0.375,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 3,
+              "to_frame": 4,
+              "description": "笑容瞬间消失，男子的嘴巴重新张开成较大的椭圆形（类似惊讶状），眼神显得有些空洞或错愕，头部位置基本保持不变。",
+              "start": 0.375,
+              "end": 0.5,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 4,
+              "to_frame": 5,
+              "description": "男子的眉头紧锁，眼神变得犀利且略带不满，上下牙齿紧紧咬合在一起，嘴唇向两侧拉伸，表现出明显的紧张、尴尬或用力的情绪。",
+              "start": 0.5,
+              "end": 0.625,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 5,
+              "to_frame": 6,
+              "description": "紧绷感加剧并转化为震惊，男子的嘴巴突然大张，下巴下沉，眼睛瞪得极大，瞳孔收缩，仿佛在进行激烈的争辩或发出了惊呼。",
+              "start": 0.625,
+              "end": 0.75,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 6,
+              "to_frame": 7,
+              "description": "男子的头部开始向后仰并向右上方偏转，视线随之从对方的脸部移开投向高处；随着头部的抬起，他的下巴上扬，嘴巴闭合，神情逐渐由激动转为平静甚至带有一丝傲慢。",
+              "start": 0.75,
+              "end": 0.875,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 7,
+              "to_frame": 9,
+              "description": "男子继续保持仰视的姿态，头部进一步向右后方倾斜，直到第9帧时几乎完全侧过脸去，只留下侧脸轮廓对着镜头方向，目光始终停留在上方某处，不再看面前的女子。",
+              "start": 0.875,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            }
+          ],
+          "contact": [
+            {
+              "from_frame": 0,
+              "to_frame": 1,
+              "description": "男子面部表情发生剧烈变化。在第0帧，他双眼圆睁，眉毛高挑，嘴巴微张露出下排牙齿；到了第1帧，他的眼睑迅速下垂呈半闭状，眉头紧锁，嘴唇撅起收拢成一个小圆形（O型），神态转为怀疑或无奈。",
+              "start": 0.0,
+              "end": 0.125,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 1,
+              "to_frame": 3,
+              "description": "男子展现出夸张的笑容阶段。从第2帧开始，他的眼睛再次猛地睁大，瞳孔聚焦前方；紧接着嘴角大幅度向两侧咧开，露出整齐的上排和下排牙齿，呈现出一种略显僵硬且用力的笑容，该状态一直持续到第3帧。",
+              "start": 0.125,
+              "end": 0.375,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 3,
+              "to_frame": 4,
+              "description": "笑容瞬间消失并转变为惊讶。在第4帧，男子的嘴部动作突变，原本咧开的嘴角收回，嘴巴重新张开成一个垂直的椭圆形（O型），上下牙齿分开，配合依然圆睁的眼睛，表现出吃惊的状态。",
+              "start": 0.375,
+              "end": 0.5,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 4,
+              "to_frame": 5,
+              "description": "进入咬牙切齿的紧张状态。在第5帧，男子的眼神变得犀利，视线略微向左偏移；同时他的上下牙齿紧紧咬合在一起，嘴唇向一侧歪斜，暴露出牙龈，显示出明显的尴尬或愤怒情绪。",
+              "start": 0.5,
+              "end": 0.625,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 5,
+              "to_frame": 6,
+              "description": "紧绷感加剧导致惊呼。在第6帧，男子的嘴巴突然大张，下巴明显下沉，形成一个巨大的黑色口腔空洞，仿佛正在进行激烈的争辩或发出高声惊呼，此时他的头部位置仍保持相对正直。",
+              "start": 0.625,
+              "end": 0.75,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 6,
+              "to_frame": 7,
+              "description": "情绪收敛与低头动作。在第7帧，男子的大张嘴巴闭合，双唇抿紧向下撇，眉毛呈现八字形下垂，眼神显得有些无辜或沮丧；与此同时，他的头部开始轻微向后仰并向右上方偏转。",
+              "start": 0.75,
+              "end": 0.875,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 7,
+              "to_frame": 9,
+              "description": "持续的仰望姿态。从第8帧延续至第9帧，男子的头部进一步向右上方抬起，下巴上扬幅度增大，视线完全脱离面前的女子投向高处；他的嘴巴保持紧闭状态，神情定格在一种平静甚至略带傲慢的仰望中。",
+              "start": 0.875,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 0,
+              "to_frame": 9,
+              "description": "手部交互保持稳定。在整个片段中，男子戴着黑色手套的左手始终按压在自己的左胸口处（灰色西装翻领下方），手指微微弯曲抓住衣料，未发生移动或分离。",
+              "start": 0.0,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            }
+          ],
+          "camera": [
+            {
+              "from_frame": 0,
+              "to_frame": 1,
+              "description": "画面左侧前景为一名身穿灰色西装、系亮粉色领带、头戴深灰制服帽的男子，其左手戴着黑色手套搭在胸前。在第0帧时，男子双眼圆睁，嘴巴微张露出牙齿；到了第1帧，他的眼睑迅速下垂呈半闭状态，眉毛紧蹙下压，嘴唇撅起收成一个小圆形。",
+              "start": 0.0,
+              "end": 0.125,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 2,
+              "to_frame": 3,
+              "description": "男子的面部表情发生剧烈变化。在第2帧至第3帧期间，他的眼睛再次猛地睁大，瞳孔聚焦于右侧画外的对象，同时嘴角大幅度向两侧咧开，上下两排牙齿完全暴露，呈现出一个夸张且略显僵硬的笑容。",
+              "start": 0.25,
+              "end": 0.375,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 4,
+              "to_frame": 5,
+              "description": "笑容在第4帧瞬间消失，男子的嘴巴重新张开成“O”型，眼神显得有些错愕。紧接着在第5帧，他的眉头皱得更紧，眼神变得犀利，上下牙齿紧紧咬合在一起，嘴唇横向拉伸，表现出明显的紧张或尴尬神态。",
+              "start": 0.5,
+              "end": 0.625,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 6,
+              "to_frame": 7,
+              "description": "紧绷感在第6帧加剧，男子的嘴巴突然大张，仿佛在进行激烈的争辩或发出惊呼，头部随之轻微后仰。到了第7帧，他停止了发声动作，嘴巴闭合抿成一条线，但双眼依然瞪得很大，神情转为一种呆滞的惊讶状。",
+              "start": 0.75,
+              "end": 0.875,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            },
+            {
+              "from_frame": 8,
+              "to_frame": 9,
+              "description": "从第8帧开始，男子的头部明显向后仰并向右上方偏转，视线随之从女子的脸部移开投向高处。随着头部的抬起，他的下巴上扬，嘴巴保持闭合，最终在第9帧定格在一个仰望的姿态，神情显得较为平静甚至带有一丝傲慢。",
+              "start": 1.0,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P01-facial-expression-change"
+              ]
+            }
+          ]
+        },
+        "window_review": [
+          {
+            "start": 0.0,
+            "end": 1.125,
+            "facts": [
+              "在0.00s至1.125s期间，画面主体为一名穿灰色西装、打亮粉色领带、戴深灰制服帽的男子。他位于画面左侧偏中位置，面朝右侧前景处仅露出头部后侧的另一人。",
+              "从0.00s到0.375s（前段），男子的面部表情发生剧烈变化。起初双眼圆睁，随后眉毛下压，眼睛眯起，嘴巴张开呈说话状；接着在0.25s时，他的眼睛再次瞪大，瞳孔缩小，嘴巴咧开露出牙齿，呈现出夸张的惊讶或激动神情。",
+              "在0.50s至0.875s（中段），男子的表情转为困惑和担忧。他的眉头紧锁，眼神游移不定，嘴巴微张且嘴角下垂。特别是在0.75s左右，他似乎倒吸一口气，嘴巴张成“O”型，随后又抿住嘴唇，显得十分紧张。",
+              "从1.00s到1.125s（后段），男子的头部开始向后仰并略微向自己的左上方转动，视线随之离开对面的人，望向斜上方。此时他的嘴巴紧闭，下巴抬起，表情定格在一种无奈或沉思的状态。",
+              "在整个片段中，男子戴着黑色手套的左手一直搭在自己的右肩/胸口附近，位置基本保持不变，作为支撑点或习惯性动作存在。",
+              "背景是模糊的室内场景，有垂直的线条装饰（可能是柱子或墙面纹理）和一些建筑结构轮廓，光线柔和均匀，没有明显的阴影变化指示光源移动。镜头保持静止过肩视角，焦点始终锁定在该男子脸上。"
+            ]
+          }
+        ],
+        "integrated_facts": [
+          "0.000s-1.125s，画面采用过肩镜头构图。前景右侧为一名背对镜头的黑发人物（仅可见头部后侧及右耳佩戴的耳环），占据画面约三分之一；中景左侧为主体男子，身穿灰色西装、系亮粉色领带、头戴深灰制服帽，面部朝向右侧前景人物。",
+          "0.000s-1.125s，主体男子的左手戴着黑色手套，始终按压在自己左胸前的西装翻领处，手指微曲抓住衣料，在整个片段中保持静止，未发生移动或放下。",
+          "0.000s-0.125s，男子处于说话起始状态。起初双眼圆睁、眉毛高挑，嘴巴微张露出下排牙齿；随后迅速转变为眼睑半垂、眉头紧锁呈八字形、嘴唇撅起收成小“O”型的无奈神态。",
+          "0.250s-0.375s，男子表情突变为夸张的笑容阶段。他的眼睛再次猛地睁大，瞳孔聚焦前方；嘴角大幅度向两侧咧开，上下两排牙齿完全暴露，呈现出一种略显僵硬且用力的笑容，该状态持续至0.375s。",
+          "0.500s，笑容瞬间消失并转变为惊讶状。男子的嘴部动作突变，原本咧开的嘴角收回，嘴巴重新张开成一个垂直的椭圆形（类似倒吸一口气），配合依然圆睁的眼睛，表现出吃惊的状态。",
+          "0.625s，进入咬牙切齿的紧张状态。男子的眼神变得犀利，视线略微向左偏移；同时他的上下牙齿紧紧咬合在一起，嘴唇向一侧歪斜，暴露出牙龈，显示出明显的尴尬或愤怒情绪。",
+          "0.750s，紧绷感加剧导致惊呼。男子的嘴巴突然大张，下巴明显下沉，形成一个巨大的黑色口腔空洞，仿佛正在进行激烈的争辩或发出高声惊呼，此时他的头部位置仍保持相对正直。",
+          "0.875s-1.000s，情绪收敛与姿态调整。男子的大张嘴巴闭合，双唇抿紧向下撇，眉毛下垂，眼神显得有些无辜或沮丧；与此同时，他的头部开始轻微向后仰并向右上方偏转。",
+          "1.000s-1.125s，持续的仰望姿态。男子的头部进一步向右上方抬起，下巴上扬幅度增大，视线完全脱离面前的黑发人物投向高处；他的嘴巴保持紧闭状态，神情定格在一种平静甚至略带傲慢的仰望中。"
+        ],
+        "native_facts": [
+          "At 0.0s, the man in a grey suit with bright pink tie and dark grey uniform cap is centered facing slightly right toward the woman; his mouth opens wide showing teeth as he speaks.",
+          "From 0.0s to 1.2s, the man’s head tilts upward while his eyes widen further and his jaw drops open wider; his torso remains mostly still except for slight shoulder movement."
+        ]
+      },
+      {
+        "context": "该对话者位于画面右侧前景，背对镜头。其可见部分包括黑色的后脑勺头发以及一只戴着黑色手套的手。这只手搭在左侧P01的左肩上，在整个片段中保持静止，作为互动的接触点。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 9,
+            "caption": "对话者的头部和手部始终保持静止状态。其戴黑手套的手持续按在P01的肩部，未发生位移或施力变化；后脑勺的位置也未随P01的动作而产生晃动，表明其在互动过程中维持着稳定的姿态。",
+            "start": 0.0,
+            "end": 1.125,
+            "action_ids": [
+              "A-S01-P02-hand-on-shoulder"
+            ]
+          }
+        ],
+        "camera": "这是一个过肩特写镜头（OTS），机位固定在对话者右后方。镜头全程保持静止，焦点清晰地落在背景中的P01面部，而前景的对话者头部处于焦外虚化状态。",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "identity": "仅见黑色头发后脑勺和一只戴黑手套的手搭在P01肩上的对话者",
+        "inspections": {
+          "pose": [
+            {
+              "from_frame": 0,
+              "to_frame": 9,
+              "description": "对话者（P02）位于画面右侧前景，背对镜头。在整个片段中，其头部轮廓和位置保持绝对静止，未发生任何位移或转动。",
+              "start": 0.0,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 0,
+              "to_frame": 9,
+              "description": "P02戴着黑色手套的左手持续搭在左侧男子（P01）的左肩处。手部相对于P01的身体位置固定，手指贴合布料，全程未见抽离、抓握力度变化或重新放置的动作。",
+              "start": 0.0,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            }
+          ],
+          "contact": [
+            {
+              "from_frame": 0,
+              "to_frame": 9,
+              "description": "画面右侧前景中，对话者（P02）背对镜头，其戴着黑色手套的左手始终搭在左侧男子（P01）的左肩处。在整个片段的时间跨度内，该手部动作保持静止，手指贴合布料，未发生任何抽离、移动或施力变化的迹象。",
+              "start": 0.0,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 0,
+              "to_frame": 1,
+              "description": "面对搭在肩上的手，P01最初表现出惊讶反应：双眼圆睁，眉毛高挑，嘴巴微张露出牙齿。随后在第1帧，他的表情迅速转为不屑与怀疑，眼睑半垂遮住瞳孔上方，眉头紧锁，嘴唇撅起呈圆形吹口哨状。",
+              "start": 0.0,
+              "end": 0.125,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 2,
+              "to_frame": 3,
+              "description": "P01的表情再次发生剧烈转折。第2帧时他咧嘴大笑，露出整齐的上排牙齿，眼睛眯成缝；紧接着在第3帧，笑容瞬间变得僵硬且夸张，嘴巴横向咧开至极限，上下齿紧紧咬合，呈现出一种尴尬或用力的假笑状态。",
+              "start": 0.25,
+              "end": 0.375,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 4,
+              "to_frame": 6,
+              "description": "从第4帧开始，P01的嘴部动作进入说话或发声阶段。第4帧和下唇下撇，嘴巴张开呈倒梯形；第5帧牙齿咬合，嘴角下拉显露不满；到了第6帧，他的嘴巴突然张大呈“O”型，配合瞪大的双眼，似乎在发出惊呼或强调某个音节。",
+              "start": 0.5,
+              "end": 0.75,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 7,
+              "to_frame": 8,
+              "description": "P01的神态逐渐平复并转向思考。第7帧他闭着嘴，眼神向斜下方游移，显得有些心虚或正在组织语言；第8帧他微微仰头，视线重新聚焦于前方，嘴唇紧闭，面部肌肉放松，似乎结束了刚才的情绪波动。",
+              "start": 0.875,
+              "end": 1.0,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 9,
+              "to_frame": 9,
+              "description": "在片段的最后一帧，P01做出了明显的头部位移动作。他将下巴高高抬起，颈部伸展，目光越过前方的对话者直视上方，神情显得傲慢或是在审视高处的事物，与此前平视的状态形成对比。",
+              "start": 1.125,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            }
+          ],
+          "camera": [
+            {
+              "from_frame": 0,
+              "to_frame": 9,
+              "description": "画面构图始终保持为过肩特写镜头（OTS）。前景右侧是背对镜头的对话者（P02）的黑色后脑勺，处于焦外虚化状态；中景左侧是面向镜头的男子（P01），面部清晰。背景由模糊的黄绿色垂直条纹墙面和右上角的建筑结构组成，全程无明显的摄像机推拉或摇移运动。",
+              "start": 0.0,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 0,
+              "to_frame": 9,
+              "description": "对话者（P02）戴着黑色手套的左手始终搭在男子（P01）的左肩（即屏幕右侧的肩膀）上。尽管P01的身体有轻微晃动，但这只手相对于P01肩膀的位置保持固定，手指弯曲扣住灰色西装面料，未发生脱离或大幅位移。",
+              "start": 0.0,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 0,
+              "to_frame": 1,
+              "description": "男子（P01）的面部表情从平静转为惊讶。他的双眼圆睁，眉毛上扬，嘴巴张开呈“O”形，头部略微向后仰起，视线直视前方偏右（P02的方向）。",
+              "start": 0.0,
+              "end": 0.125,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 2,
+              "to_frame": 3,
+              "description": "P01的表情转变为尴尬的笑容。他咧开嘴露出上下两排牙齿，嘴角向两侧大幅度拉伸，眼睛依然睁大但眼神略显游离，头部位置基本保持不变。",
+              "start": 0.25,
+              "end": 0.375,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 4,
+              "to_frame": 5,
+              "description": "笑容迅速消失，P01再次表现出震惊。他的嘴巴张得更大，下巴下沉，随后眉头紧锁，眼神变得焦虑不安，似乎在快速说话或对突发状况做出反应。",
+              "start": 0.5,
+              "end": 0.625,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 6,
+              "to_frame": 7,
+              "description": "P01的情绪达到恐慌的高点。他的瞳孔似乎收缩，眼白暴露更多，嘴巴大张仿佛在惊呼或倒吸凉气。此时可以看到他头顶深灰色的帽子随着头部的剧烈震动而微微弹跳。",
+              "start": 0.75,
+              "end": 0.875,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            },
+            {
+              "from_frame": 8,
+              "to_frame": 9,
+              "description": "P01的状态从惊恐转为呆滞或被震慑。他的嘴巴紧紧闭合成一条波浪线，脸颊肌肉紧绷鼓起，头部明显地向后上方扬起，视线向上方偏移，不再直视前方的对话者。",
+              "start": 1.0,
+              "end": 1.125,
+              "action_ids": [
+                "A-S01-P02-hand-on-shoulder"
+              ]
+            }
+          ]
+        },
+        "window_review": [
+          {
+            "start": 0.0,
+            "end": 1.125,
+            "facts": [
+              "在0.00s至1.125s期间，主体P01（戴帽男子）始终位于画面左侧中景，面朝右侧前景的另一名参与者。",
+              "0.00s时，P01双眼圆睁，嘴巴微张露出牙齿，神情略显惊讶；其左肩处可见另一人戴着黑色手套的手搭在其上。",
+              "0.125s至0.375s阶段，P01的面部表情发生剧烈变化：眉毛下压呈倒八字，眼睛眯起，随后咧嘴大笑并露出整齐的上下排牙齿，头部伴随轻微晃动。",
+              "0.500s至0.625s阶段，笑容迅速收敛转为错愕，嘴巴张开成“O”型，眼神再次瞪大，表现出情绪的突然转折。",
+              "0.750s至1.000s阶段，P01的视线开始向上偏移，下巴随之抬起，嘴唇紧闭并向一侧撇去，呈现出一种不屑或怀疑的神态。",
+              "1.125s（最后一帧），P01保持仰头姿态，目光斜视上方，面部肌肉紧绷，与初始平视的状态形成鲜明对比。",
+              "在整个过程中，除了P01的面部表情和头部角度外，其身体躯干及肩部位置基本保持稳定，未见大幅度位移。"
+            ]
+          }
+        ],
+        "integrated_facts": [
+          "画面构图始终保持为过肩特写镜头（OTS）。前景右侧是背对镜头的对话者（P02）的黑色后脑勺，处于焦外虚化状态；中景左侧是面向镜头的男子（P01），面部清晰。",
+          "在0.00s至1.125s期间，主体P01（戴帽男子）始终位于画面左侧中景，面朝右侧前景的另一名参与者。",
+          "P02戴着黑色手套的手持续搭在P01的左肩处（即屏幕右侧的肩膀）。在整个片段的时间跨度内，该手部动作保持静止，手指贴合灰色西装布料，未发生任何抽离、移动或施力变化的迹象。",
+          "0.00s时，P01双眼圆睁，眉毛高挑，嘴巴微张露出牙齿，神情略显惊讶。",
+          "0.125s时，P01的表情迅速转为不屑与怀疑，眼睑半垂遮住瞳孔上方，眉头紧锁，嘴唇撅起呈圆形吹口哨状。",
+          "0.250s时，P01咧嘴大笑，露出整齐的上排牙齿，眼睛眯成缝。",
+          "0.375s时，笑容瞬间变得僵硬且夸张，嘴巴横向咧开至极限，上下齿紧紧咬合，呈现出一种尴尬或用力的假笑状态。",
+          "0.500s时，P01下唇下撇，嘴巴张开呈倒梯形，进入说话或发声阶段。",
+          "0.625s时，P01牙齿咬合，嘴角下拉显露不满。",
+          "0.750s时，P01的嘴巴突然张大呈“O”型，配合瞪大的双眼，似乎在发出惊呼或强调某个音节。",
+          "0.875s时，P01闭着嘴，眼神向斜下方游移，显得有些心虚或正在组织语言。",
+          "1.000s时，P01微微仰头，视线重新聚焦于前方，嘴唇紧闭，面部肌肉放松。",
+          "1.125s（最后一帧），P01做出了明显的头部位移动作。他将下巴高高抬起，颈部伸展，目光越过前方的对话者直视上方，神情显得傲慢或是在审视高处的事物，与此前平视的状态形成对比。"
+        ],
+        "native_facts": [
+          "0.0-1.2s，P03位于画面右侧前景，背对镜头，仅可见其黑色头发后脑勺及搭在P01左肩上的左手（戴黑色手套），与左侧中景的P01相对而立。",
+          "0.0-1.2s，P03保持静止姿态，头部无明显转动或位移，身体无晃动，始终面向P01方向；其左手稳定置于P01肩部，未发生抓握、拍打或移动等动作变化。"
+        ]
+      },
+      {
+        "context": "在画面中央偏左的前景位置，一名身穿灰色西装外套与西裤的人物背对镜头站立。其双手戴着亮粉色露指手套，置于腰前上方。该人物右侧紧邻另一名身穿黑色紧身衣、戴黑手套的人物（仅见躯干侧面）。背景为模糊的宴会厅场景，可见多名手持酒杯的宾客及楼梯结构。",
+        "phases": [
+          {
+            "from_frame": 10,
+            "to_frame": 12,
+            "caption": "一条带有紫色光晕特效的毛茸茸尾巴从灰色西裤后方的衣物缝隙中显现并快速生长。起初它呈短粗状向左侧水平伸出，随即迅速变长并向右下方大幅度甩动，尾尖扫过身后区域，最终延伸至右侧黑衣人的腿部附近。",
+            "start": 1.25,
+            "end": 1.5,
+            "action_ids": [
+              "A-S02-tail-emerge-and-sweep"
+            ]
+          },
+          {
+            "from_frame": 13,
+            "to_frame": 15,
+            "caption": "完全成型的粉紫双色长尾在空中划出一道平滑的弧线，由下至上向右方卷曲摆动。尾巴末端逐渐上扬指向画面右上角，呈现出舒展且富有弹性的动态姿态，伴随有细碎的魔法粒子飘散。",
+            "start": 1.625,
+            "end": 1.875,
+            "action_ids": [
+              "A-S02-tail-emerge-and-sweep"
+            ]
+          }
+        ],
+        "camera": "固定机位的中景镜头，焦点始终锁定在前景人物的臀部及尾巴生成区域。背景保持虚化状态以突出主体动作，无明显的推拉摇移或变焦操作。",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "identity": "穿灰色西裤的人（下半身）",
+        "inspections": {
+          "pose": [
+            {
+              "from_frame": 10,
+              "to_frame": 10,
+              "description": "穿灰色西裤的人物（P01）背对镜头站立，臀部后方出现一团发光的粉紫色毛状物。该物体呈短粗的椭圆球状，悬浮于两腿之间偏上的位置，尚未延伸出明显的长尾形态，周围伴有闪烁的紫色粒子特效。",
+              "start": 1.25,
+              "end": 1.25,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 11,
+              "to_frame": 11,
+              "description": "臀后的发光物体开始发生形变与位移，原本紧凑的团块向左上方拉伸并弯曲，形成一个倒钩状的弧形结构。此时尾巴的主体部分仍紧贴P01的左后侧臀部，并未向右侧大幅度摆动。",
+              "start": 1.375,
+              "end": 1.375,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 12,
+              "to_frame": 12,
+              "description": "尾巴完成了一次显著的伸展动作，从P01身后向右下方甩出。粉色的根部毛发变得修长且清晰，末端连接着一个紫色的刷状尖端，整体横跨在P01与右侧黑衣人之间的空隙中，指向右下方的地面区域。",
+              "start": 1.5,
+              "end": 1.5,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 13,
+              "to_frame": 13,
+              "description": "处于伸展状态的尾巴开始回缩并改变轨迹，粉色根部的毛发依然浓密，但整体弧度变得更加圆润饱满。尾巴主体位于P01的右后腿外侧，末端的紫色刷状物略微上扬，不再像上一帧那样垂直向下。",
+              "start": 1.625,
+              "end": 1.625,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 14,
+              "to_frame": 14,
+              "description": "尾巴继续向上卷曲，呈现出一个清晰的“C”字形或问号形状。粉色的粗壮尾部从P01臀部右侧生出，向下弯曲后再向右上方勾起，紫色的尖端高高翘起，几乎与P01的手部高度齐平。",
+              "start": 1.75,
+              "end": 1.75,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 15,
+              "to_frame": 15,
+              "description": "尾巴维持着大幅度的U型弯曲姿态，并在空中保持相对静止或缓慢漂移。粉色根部紧紧贴合P01的右侧大腿线条，紫色的蓬松尖端水平指向画面右侧边缘，展示了完整的长尾形态。",
+              "start": 1.875,
+              "end": 1.875,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            }
+          ],
+          "contact": [
+            {
+              "from_frame": 10,
+              "to_frame": 10,
+              "description": "穿灰色西裤的人（下半身）身后悬浮着一条粉紫色的毛茸茸尾巴，此时尾巴呈短粗的纺锤状，主体位于画面左侧（即人物左后方），末端膨大且带有紫色光晕。",
+              "start": 1.25,
+              "end": 1.25,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 11,
+              "to_frame": 11,
+              "description": "该粉色尾巴开始发生剧烈形变，根部从臀部位置向左上方拱起弯曲，形成一个倒钩状的弧度，尾端随之向下垂落并指向地面。",
+              "start": 1.375,
+              "end": 1.375,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 12,
+              "to_frame": 12,
+              "description": "尾巴完成了一次大幅度的甩动，整体形态被拉长并向右侧延伸，横跨过两腿之间，紫色的蓬松尾梢此刻正指向画面右侧黑衣人的腿部方向。",
+              "start": 1.5,
+              "end": 1.5,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 13,
+              "to_frame": 13,
+              "description": "尾巴保持在向右伸展的状态，但姿态变得更为舒展，粉色的长条状尾部呈现自然的下垂弧线，末端的紫色毛簇悬停在半空中。",
+              "start": 1.625,
+              "end": 1.625,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 14,
+              "to_frame": 14,
+              "description": "尾巴再次改变轨迹，原本下垂的部分向上挑起，使得整条尾巴在身体右后方形成一个明显的“C”字形或回旋镖状的闭合曲线，紫色尖端指向斜上方。",
+              "start": 1.75,
+              "end": 1.75,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 15,
+              "to_frame": 15,
+              "description": "尾巴维持着向上的卷曲态势，粉色部分紧贴灰色西裤后侧，紫色的尾梢高高翘起并指向画面右上方，周围持续散发着细小的魔法粒子特效。",
+              "start": 1.875,
+              "end": 1.875,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            }
+          ],
+          "camera": [
+            {
+              "from_frame": 10,
+              "to_frame": 10,
+              "description": "镜头保持静止，画面聚焦于前景左侧身穿灰色西裤人物的臀部区域。一条带有强烈紫色辉光的粉色毛茸茸尾巴根部刚刚显现，呈水平状向屏幕左侧伸出，尾端呈现为一团紫色的刷状结构。",
+              "start": 1.25,
+              "end": 1.25,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 11,
+              "to_frame": 11,
+              "description": "尾巴开始大幅度运动，粉色的尾部主体向上拱起并向左后方甩动，在空中划出一道弧线。此时尾巴呈现出半透明的动态模糊感，伴随大量闪烁的紫色粒子特效。",
+              "start": 1.375,
+              "end": 1.375,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 12,
+              "to_frame": 12,
+              "description": "随着挥动动作的延续，尾巴从上方落下并横扫至身体右侧（屏幕右侧）。长长的粉色尾身现在横跨在灰衣人与右侧黑衣人之间，末端的紫色毛簇指向右下方。",
+              "start": 1.5,
+              "end": 1.5,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 13,
+              "to_frame": 13,
+              "description": "尾巴的运动轨迹发生反转，末端开始向上勾起。它紧贴着右侧黑衣人的腿部外侧向上扬起，形成一个巨大的“U”形或钩状曲线，紫色尖端位于高处。",
+              "start": 1.625,
+              "end": 1.625,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 14,
+              "to_frame": 14,
+              "description": "尾巴继续向内收拢，原本扬起的紫色末端向左回旋，靠近灰衣人自身的右大腿位置。整条尾巴在两人之间盘绕成一个紧凑的环形结构。",
+              "start": 1.75,
+              "end": 1.75,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            },
+            {
+              "from_frame": 15,
+              "to_frame": 15,
+              "description": "尾巴最终完成了一次完整的摆动循环，再次向屏幕右侧伸展出去。粉色的尾根连接处清晰可见，紫色的蓬松末端悬停在右侧黑衣人的腰部高度附近，姿态舒展。",
+              "start": 1.875,
+              "end": 1.875,
+              "action_ids": [
+                "A-S02-tail-emerge-and-sweep"
+              ]
+            }
+          ]
+        },
+        "window_review": [
+          {
+            "start": 1.25,
+            "end": 1.875,
+            "facts": [
+              "1.250s (起始)　穿灰色西裤的人　画面仅展示其腰部以下及双手。该人物位于画面左侧，面朝右前方站立。其左手（戴红色露指手套）在腰侧上方握持一团粉紫色发光物质，右手垂于体侧。",
+              "1.375s - 1.500s (释放与下坠)　穿灰色西裤的人　手中的发光物质脱离控制并迅速向下坠落。在1.500s时，该物质已延伸至两腿之间，呈现为一条带有亮粉色毛皮和紫色末端的长尾状形态，处于动态模糊中。",
+              "1.625s - 1.875s (摆动与定格)　穿灰色西裤的人　生成的尾巴以臀部为轴心向右侧大幅度甩动。至1.875s（结束），尾巴完全伸展并在空中形成一道平滑的弧线，紫色的蓬松末端指向画面右侧边缘，动作趋于静止。",
+              "全程 (环境互动)　穿黑色紧身衣的人　作为参照物位于画面右侧前景，背对镜头站立。在整个过程中保持姿态不变，未发生位移或转身。"
+            ]
+          }
+        ],
+        "integrated_facts": [
+          "1.250s-1.375s：画面聚焦于穿灰色西裤人物的腰部以下，其左手戴着红色露指手套，在腰侧上方握持着一团粉紫色的发光物质。",
+          "1.250s-1.375s：该发光物质呈现为短粗的纺锤状或椭圆球状，主体悬浮于人物臀部后方偏左的位置，周围伴有闪烁的紫色粒子特效。",
+          "1.375s：手中的发光物质开始脱离控制并发生形变，原本紧凑的团块向左上方拉伸并弯曲，形成一个倒钩状的弧形结构。",
+          "1.500s：尾巴完成了一次显著的伸展动作，从身后向右下方甩出，粉色的根部毛发变得修长且清晰，整体横跨在灰衣人与右侧黑衣人之间的空隙中。",
+          "1.625s：尾巴处于伸展状态并开始回缩改变轨迹，粉色根部的毛发依然浓密，但整体弧度变得更加圆润饱满，末端的紫色刷状物略微上扬。",
+          "1.750s：尾巴继续向上卷曲，呈现出一个清晰的“C”字形或问号形状，紫色的尖端高高翘起，几乎与手部高度齐平。",
+          "1.875s：尾巴维持着大幅度的U型弯曲姿态，并在空中保持相对静止，粉色根部紧贴灰色西裤后侧，紫色的蓬松尖端水平指向画面右侧边缘。",
+          "全程：背景中有数名模糊的人物站立，身穿黑色紧身衣的人位于画面右侧前景，背对镜头站立，在整个过程中保持姿态不变，未发生位移或转身。"
+        ],
+        "native_facts": [
+          "At 1.25s, the lower half of a person wearing grey trousers is centered in the frame, facing away from the camera.",
+          "From 1.25s to 1.63s, a glowing pink and purple tail emerges from behind the grey trousers, extending outward towards the left side of the screen.",
+          "The tail grows longer and curves downwards as it extends outwards.",
+          "From 1.63s to 1.88s, the fully formed tail swings back towards the right side of the screen, passing close to the black dress of an adjacent figure.",
+          "The tip of the tail follows a smooth arc during this swing.",
+          "By 1.88s, the tail has swung completely across to the right side of the screen."
+        ]
+      },
+      {
+        "context": "该主体位于画面右侧前景，仅可见腰部至大腿部分的躯干与下肢。其身穿黑色紧身连体衣/裙，双手佩戴长款黑色手套。在镜头开始时，主体背对或侧向镜头站立，左手叉腰（手肘弯曲置于髋部），身体姿态挺拔且保持静止，作为旁边灰色西装主体的参照物。",
+        "phases": [
+          {
+            "from_frame": 10,
+            "to_frame": 13,
+            "caption": "主体维持原有的站立姿态，左手持续叉在腰间，未发生位移。在此期间，左侧灰衣主体的一条粉紫色发光尾巴从后方伸出，逐渐靠近并掠过主体的腿部区域，但主体并未因此改变站姿或做出回避动作。",
+            "start": 1.25,
+            "end": 1.625,
+            "action_ids": []
+          },
+          {
+            "from_frame": 14,
+            "to_frame": 15,
+            "caption": "主体的左臂姿态发生变化，原本叉在腰间的手抬起离开身体，变为悬空状态（似握拳或自然下垂）。与此同时，左侧延伸过来的粉色尾巴尖端触碰到了主体的臀部及大腿外侧位置，并在该处停留摆动。",
+            "start": 1.75,
+            "end": 1.875,
+            "action_ids": []
+          }
+        ],
+        "camera": "固定机位的中景镜头，焦点清晰地落在两名主体的下半身躯干上，背景中模糊的宴会人群和楼梯提供了环境深度。镜头全程无推拉摇移，通过浅景深效果将视觉重心锁定在前景人物的互动细节上。",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "identity": "穿紧身黑裙/连体衣、戴长黑手套的人（下半身）",
+        "inspections": {
+          "pose": [
+            {
+              "from_frame": 10,
+              "to_frame": 13,
+              "description": "主体（穿黑色紧身连体衣者）位于画面右侧，呈侧后方视角站立。其左手佩戴长款黑手套，手肘弯曲，手掌稳固地叉在左侧髋部/腰际位置，手指指向下方。",
+              "start": 1.25,
+              "end": 1.625,
+              "action_ids": []
+            },
+            {
+              "from_frame": 10,
+              "to_frame": 13,
+              "description": "在此期间，尽管左侧灰衣主体的粉紫色尾巴逐渐靠近并扫过该主体的腿部区域，该主体的左臂始终保持叉腰姿态，未发生位移或形态改变。",
+              "start": 1.25,
+              "end": 1.625,
+              "action_ids": []
+            },
+            {
+              "from_frame": 14,
+              "to_frame": 15,
+              "description": "主体的左臂动作发生改变：原本叉在腰间的手掌离开身体表面，向上方抬起约一个手掌的距离，变为悬空状态。",
+              "start": 1.75,
+              "end": 1.875,
+              "action_ids": []
+            },
+            {
+              "from_frame": 14,
+              "to_frame": 15,
+              "description": "随着手臂的抬起，手部姿态由平贴转为半握拳状（或自然蜷曲），手腕向外微转，不再接触髋部皮肤。",
+              "start": 1.75,
+              "end": 1.875,
+              "action_ids": []
+            }
+          ],
+          "contact": [
+            {
+              "from_frame": 10,
+              "to_frame": 13,
+              "description": "穿紧身黑裙的主体（位于画面右侧）保持静止站立姿态，其左手（佩戴黑色长手套）持续叉在左侧髋部/腰间位置。在此期间，来自左侧灰衣主体的粉紫色发光尾巴逐渐靠近并掠过该主体的腿部前方区域，但该主体未改变站姿或做出回避动作。",
+              "start": 1.25,
+              "end": 1.625,
+              "action_ids": []
+            },
+            {
+              "from_frame": 14,
+              "to_frame": 15,
+              "description": "穿紧身黑裙的主体改变了手臂姿态，原本叉在腰间的左手抬起离开身体，变为悬空状态（手部呈半握拳状）。与此同时，延伸过来的粉色尾巴尖端接触到了该主体的臀部及大腿外侧位置，并在该处停留摆动。",
+              "start": 1.75,
+              "end": 1.875,
+              "action_ids": []
+            }
+          ],
+          "camera": [
+            {
+              "from_frame": 10,
+              "to_frame": 13,
+              "description": "穿黑色紧身连体衣的主体位于画面右侧前景，身体呈侧后方朝向镜头。其右手（戴长黑手套）持续叉在右髋部，手肘向外弯曲，该姿态在整个时间段内保持稳定，未发生位移。",
+              "start": 1.25,
+              "end": 1.625,
+              "action_ids": []
+            },
+            {
+              "from_frame": 14,
+              "to_frame": 15,
+              "description": "主体的右手动作发生改变：原本叉在腰间的手掌离开髋部，手臂向上抬起并向外旋转，手部变为半握拳状悬停在腰部上方约20厘米处，不再接触身体。",
+              "start": 1.75,
+              "end": 1.875,
+              "action_ids": []
+            },
+            {
+              "from_frame": 10,
+              "to_frame": 15,
+              "description": "一条带有紫色光晕的粉色毛茸茸尾巴从左侧灰色西装主体身后延伸出来，逐渐向右移动。在第10-11帧时，尾巴尖端接近但未接触黑衣主体；第12-13帧时，尾巴中段开始扫过黑衣主体的大腿外侧；至第14-15帧，尾巴末端完全贴合并停留在黑衣主体的臀部与大腿连接处。",
+              "start": 1.25,
+              "end": 1.875,
+              "action_ids": []
+            },
+            {
+              "from_frame": 10,
+              "to_frame": 15,
+              "description": "背景环境保持静止，可见模糊的宴会人群和楼梯结构。镜头为固定机位的中景特写，焦点始终锁定在两名前景主体的下半身躯干上，利用浅景深虚化背景以突出主体互动细节。",
+              "start": 1.25,
+              "end": 1.875,
+              "action_ids": []
+            }
+          ]
+        },
+        "window_review": [
+          {
+            "start": 1.25,
+            "end": 1.875,
+            "facts": [
+              "在 t=1.25s (Source frame 10) 时，画面左侧前景中穿灰色西装的主体仅露出躯干和腿部。其身后正生成一条发光的尾巴状物体，该物体的根部呈亮粉色且较粗大，末端呈紫色并带有明显的发光粒子特效，此时整体形态较短，向画面左下方低垂。",
+              "在 t=1.375s (Source frame 11) 时，灰西装主体身后的粉紫相间尾巴开始快速向上方和右侧甩动，由于运动速度较快，尾部呈现出模糊的动态拖影效果。与此同时，站在画面右侧、身穿紧身黑裙/连体衣并戴着长黑手套的第二位主体保持静止站立姿态，其左手（位于画面偏右位置）自然下垂于大腿外侧附近。",
+              "在 t=1.50s (Source frame 12) 时，灰西装主体的尾巴大幅度向右上方扬起并向外延伸，占据了两位主体之间的较大空间，尾部的毛发质感变得清晰可见。右侧的黑裙主体依然维持原有的站姿，未发生位移或动作改变。",
+              "在 t=1.625s (Source frame 13) 至 t=1.75s (Source frame 14) 期间，灰西装主体的尾巴在空中划出一道弧线后开始回落，紫色的蓬松尾端逐渐靠近右侧黑裙主体的腰臀部区域。在此期间，黑裙主体的手部姿势发生了细微变化：原本微张的手指收拢握成拳状，停留在身体一侧。",
+              "在 t=1.875s (Source frame 15) 即本片段末尾，灰西装主体的尾巴完全舒展并稳定下来，形成一个巨大的半圆形拱桥状结构。粉色的根部连接着灰西装主体的下背部，而紫色的尖端则精准地悬停在右侧黑裙主体的臀部后方极近处，两者几乎接触但未穿透衣物。整个过程中，背景中的其他人物和环境地标均处于失焦状态且无明显移动，镜头视角保持固定。"
+            ]
+          }
+        ],
+        "integrated_facts": [
+          "在 t=1.25s (Source frame 10) 时，画面右侧前景中穿黑色紧身连体衣的主体呈侧后方站立姿态。其左手佩戴长款黑手套，手肘弯曲，手掌稳固地叉在左侧髋部/腰际位置，手指指向下方。",
+          "与此同时（t=1.25s），画面左侧灰西装主体身后正生成一条发光的尾巴状物体，根部呈亮粉色且较粗大，末端呈紫色并带有明显的发光粒子特效，此时整体形态较短，向画面左下方低垂。",
+          "在 t=1.375s (Source frame 11) 时，尽管左侧的粉紫相间尾巴开始快速向上方和右侧甩动（呈现动态拖影），右侧黑衣主体的左臂始终保持叉腰姿态，未发生位移或形态改变。",
+          "在 t=1.50s (Source frame 12) 时，灰西装主体的尾巴大幅度向右上方扬起并向外延伸，占据了两位主体之间的较大空间。在此期间，右侧黑衣主体的左手依然维持原有的叉腰站姿，未因尾巴靠近而做出回避动作。",
+          "在 t=1.625s (Source frame 13) 至 t=1.75s (Source frame 14) 期间，随着尾巴在空中划出弧线并开始回落，紫色的蓬松尾端逐渐靠近右侧黑衣主体的大腿及臀部区域。在此阶段，黑衣主体的手部姿势发生了明显变化：原本平贴于腰间的手掌离开身体表面，向上方抬起约一个手掌的距离，变为悬空状态。",
+          "伴随手臂的抬起（t=1.625s - 1.75s），黑衣主体的手部姿态由平贴转为半握拳状（或自然蜷曲），手腕向外微转，不再接触髋部皮肤。",
+          "在 t=1.875s (Source frame 15) 即本片段末尾，灰西装主体的尾巴完全舒展并稳定下来，形成一个巨大的半圆形拱桥状结构。粉色的根部连接着灰西装主体的下背部，而紫色的尖端则精准地贴合停留在右侧黑衣主体的臀部与大腿外侧位置。",
+          "在整个过程中（t=1.25s - 1.875s），背景环境保持静止，可见模糊的宴会人群和楼梯结构。镜头为固定机位的中景特写，焦点始终锁定在两名前景主体的下半身躯干上，利用浅景深虚化背景以突出主体互动细节。"
+        ],
+        "native_facts": [
+          "At 1.25s, the person in the tight black dress/bodysuit with long black gloves is positioned on the right side of the frame, standing beside another figure whose lower torso and legs are visible on the left; their own upper body remains out of view while blurred party guests stay fixed in the background.",
+          "From 1.25s to about 1.60s, a glowing pink-purple tail-like appendage extends from behind the adjacent figure toward the black-dressed person’s rear hip area, moving inward across the gap between them as purple sparkles trail around it.",
+          "Around 1.60s–1.75s, the tip reaches contact at the black-dressed person’s backside/hip region, where the glow concentrates against the dark fabric before spreading outward along the curve of the appendage.",
+          "By roughly 1.80s–2.00s, the connected form lengthens into a fuller curved shape sweeping down and then up toward screen-right, ending near the black-dressed person’s hand line rather than staying tucked close to the point of contact.",
+          "Throughout this interval, the black-dressed person’s gloved hand shifts subtly upward from resting near the hip/waistline to slightly higher by 2.00s, while the rest of the visible lower-body posture stays largely steady relative to the unchanged background."
+        ]
+      },
+      {
+        "context": "该男子位于画面左侧前景，身穿灰色西装、内搭白衬衫并系着亮粉色领带，头戴深灰制服帽。他身体呈四分之三侧面朝向右方，与右侧穿黑色礼服的女子近距离面对面站立，背景为模糊的室内社交场合及其他宾客。",
+        "phases": [
+          {
+            "from_frame": 16,
+            "to_frame": 21,
+            "caption": "男子起初表情惊讶，双眼圆睁且嘴巴微张。随后他的面部肌肉逐渐放松，嘴角开始上扬，眼神从错愕转为温和的笑意，头部保持相对静止。",
+            "reported_frame_range": [
+              16,
+              20
+            ],
+            "start": 2.0,
+            "end": 2.625,
+            "action_ids": [
+              "A-S03-P01-listening-and-smiling"
+            ]
+          },
+          {
+            "from_frame": 21,
+            "to_frame": 40,
+            "caption": "男子展现出灿烂的笑容，露出整齐的牙齿，目光柔和地注视着面前的女子。在此期间，他的头部有轻微的晃动以配合交流节奏，但整体姿态保持稳定，未发生大幅度位移。",
+            "start": 2.625,
+            "end": 5.0,
+            "action_ids": [
+              "A-S03-P01-listening-and-smiling"
+            ]
+          },
+          {
+            "from_frame": 41,
+            "to_frame": 54,
+            "caption": "当女子亲吻其脸颊时，男子的下半张脸突然发生超现实变形，生长出一个巨大的粉红色老鼠口鼻部及紫色胡须。尽管面部特征剧变，他的眼睛依然睁开并望向斜上方，身体因受惊而略显僵硬，维持原位不动。",
+            "reported_frame_range": [
+              41,
+              53
+            ],
+            "start": 5.125,
+            "end": 6.75,
+            "action_ids": [
+              "A-S03-P01-cover-mouth-and-leave-frame"
+            ]
+          },
+          {
+            "from_frame": 54,
+            "to_frame": 56,
+            "caption": "男子迅速抬起右手捂住自己变形的嘴部区域，试图遮挡这一异常状态。紧接着，他猛地向左后方转身并快速移出画面左侧边缘，动作急促且带有明显的逃避意图。",
+            "start": 6.75,
+            "end": 7.0,
+            "action_ids": [
+              "A-S03-P01-cover-mouth-and-leave-frame"
+            ]
+          }
+        ],
+        "camera": "镜头全程保持固定的中近景构图，焦点始终锁定在两名主要人物身上，无明显推拉或摇移运动。随着男子在最后阶段向左冲出画框，镜头并未跟随，而是继续停留在原地记录女子的反应及空荡的左侧空间。",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "identity": "穿灰色西装、打亮粉色领带、戴深灰制服帽的男子",
+        "inspections": {
+          "pose": [
+            {
+              "from_frame": 16,
+              "to_frame": 20,
+              "description": "穿灰色西装的男子位于画面左侧，身体呈四分之三侧面朝向右方。他双眼圆睁，眉毛上扬，嘴巴微张露出牙齿，呈现出惊讶的表情，头部保持静止。",
+              "start": 2.0,
+              "end": 2.5,
+              "action_ids": [
+                "A-S03-P01-listening-and-smiling"
+              ]
+            },
+            {
+              "from_frame": 22,
+              "to_frame": 39,
+              "description": "男子的面部表情发生转变，嘴角大幅上扬形成露齿微笑，眼神变得柔和并注视着右侧的女子。在此期间，他的头部位置基本保持不变，仅有轻微的角度调整以配合交流。",
+              "start": 2.75,
+              "end": 4.875,
+              "action_ids": [
+                "A-S03-P01-listening-and-smiling"
+              ]
+            },
+            {
+              "from_frame": 42,
+              "to_frame": 48,
+              "description": "当右侧女子亲吻男子脸颊时，男子的下半张脸（鼻子和嘴部区域）突然发生超现实变形，生长出一个巨大的粉红色老鼠状口鼻部及紫色胡须。尽管面部特征剧变，他的眼睛依然睁开并望向斜上方，身体因受惊而略显僵硬，维持原位不动。",
+              "start": 5.25,
+              "end": 6.0,
+              "action_ids": []
+            },
+            {
+              "from_frame": 50,
+              "to_frame": 52,
+              "description": "男子变形的粉色口鼻部张开，仿佛在说话或喘息，随后闭合恢复原状。他的视线略微向下移动，表情显得有些困惑或不适。",
+              "start": 6.25,
+              "end": 6.5,
+              "action_ids": []
+            },
+            {
+              "from_frame": 54,
+              "to_frame": 54,
+              "description": "男子迅速抬起左手（观众视角的右侧），手掌覆盖在自己刚刚变回人形但仍有残留痕迹的口鼻部位，试图遮挡这一异常状态。",
+              "start": 6.75,
+              "end": 6.75,
+              "action_ids": [
+                "A-S03-P01-cover-mouth-and-leave-frame"
+              ]
+            },
+            {
+              "from_frame": 56,
+              "to_frame": 56,
+              "description": "紧接着遮挡动作，男子猛地向左后方转身并快速移出画面左侧边缘，动作急促且带有明显的逃避意图，最终完全离开镜头视野。",
+              "start": 7.0,
+              "end": 7.0,
+              "action_ids": [
+                "A-S03-P01-cover-mouth-and-leave-frame"
+              ]
+            }
+          ],
+          "contact": [
+            {
+              "from_frame": 16,
+              "to_frame": 20,
+              "description": "男子站在画面左侧，身体呈四分之三侧面朝向右方。他双眼圆睁，眉毛高挑，嘴巴微张露出上排牙齿，呈现出惊讶的表情。",
+              "start": 2.0,
+              "end": 2.5,
+              "action_ids": [
+                "A-S03-P01-listening-and-smiling"
+              ]
+            },
+            {
+              "from_frame": 22,
+              "to_frame": 39,
+              "description": "男子的表情发生转变，嘴角大幅度上扬形成明显的露齿笑容。他的视线主要集中在右侧女子的面部，头部保持相对静止，仅有极细微的角度调整以配合交流。",
+              "start": 2.75,
+              "end": 4.875,
+              "action_ids": [
+                "A-S03-P01-listening-and-smiling"
+              ]
+            },
+            {
+              "from_frame": 42,
+              "to_frame": 48,
+              "description": "随着女子闭眼亲吻男子的脸颊，男子的下半张脸（鼻子和嘴部区域）突然发生超现实变形，生长出一个巨大的粉红色老鼠状口鼻部，并伴有紫色的长胡须。此时男子的眼睛依然睁开，瞳孔略微收缩，神情显得僵硬且不知所措。",
+              "start": 5.25,
+              "end": 6.0,
+              "action_ids": []
+            },
+            {
+              "from_frame": 50,
+              "to_frame": 52,
+              "description": "变形的粉色口鼻部张开，露出内部结构。男子继续保持睁眼状态，目光呆滞地望向前方，没有做出躲避动作。",
+              "start": 6.25,
+              "end": 6.5,
+              "action_ids": []
+            },
+            {
+              "from_frame": 54,
+              "to_frame": 54,
+              "description": "男子迅速抬起右手（位于画面前景），手掌覆盖在自己刚刚形成的巨大粉色口鼻部上方，试图将其遮挡住。",
+              "start": 6.75,
+              "end": 6.75,
+              "action_ids": [
+                "A-S03-P01-cover-mouth-and-leave-frame"
+              ]
+            },
+            {
+              "from_frame": 56,
+              "to_frame": 56,
+              "description": "男子利用抬手遮挡的动作顺势向画面左侧转身移动，身体大部分已移出镜头视野，仅余背影和手臂可见。",
+              "start": 7.0,
+              "end": 7.0,
+              "action_ids": [
+                "A-S03-P01-cover-mouth-and-leave-frame"
+              ]
+            }
+          ],
+          "camera": [
+            {
+              "from_frame": 16,
+              "to_frame": 20,
+              "description": "戴帽男子位于画面左侧前景，身体呈四分之三侧面朝向右方。他双眼圆睁，瞳孔收缩，嘴巴微张露出牙齿，神情显得惊讶且有些紧绷，头部保持相对静止。",
+              "start": 2.0,
+              "end": 2.5,
+              "action_ids": [
+                "A-S03-P01-listening-and-smiling"
+              ]
+            },
+            {
+              "from_frame": 22,
+              "to_frame": 39,
+              "description": "男子的面部表情发生显著变化，嘴角大幅上扬形成夸张的露齿笑容，眼神变得柔和并注视着右侧的女子。在此期间，他的身体姿态保持稳定，未发生大幅度位移，持续维持这一微笑状态直到女子靠近。",
+              "start": 2.75,
+              "end": 4.875,
+              "action_ids": [
+                "A-S03-P01-listening-and-smiling"
+              ]
+            },
+            {
+              "from_frame": 42,
+              "to_frame": 52,
+              "description": "当右侧女子闭眼亲吻其脸颊时，男子的下半张脸（鼻子和嘴部区域）突然发生超现实变形，生长出一个巨大的粉红色老鼠状口鼻部及几根紫色胡须。尽管面部特征剧变，他的眼睛依然睁开并望向斜上方，身体因受惊而略显僵硬，维持原位不动。",
+              "start": 5.25,
+              "end": 6.5,
+              "action_ids": []
+            },
+            {
+              "from_frame": 54,
+              "to_frame": 56,
+              "description": "男子迅速抬起右手捂住自己刚刚形成的巨大粉色口鼻部，试图遮挡这一异常状态。紧接着，他借着这个动作猛地向左后方转身，身体快速移出画面左侧边缘，直至完全消失在镜头视野之外。",
+              "start": 6.75,
+              "end": 7.0,
+              "action_ids": [
+                "A-S03-P01-cover-mouth-and-leave-frame"
+              ]
+            }
+          ]
+        },
+        "window_review": [
+          {
+            "start": 2.0,
+            "end": 3.5,
+            "facts": [
+              "在0.0s至1.5s期间，穿灰色西装的男子整体朝向画面右侧，其面部表情保持为双眼圆睁、嘴巴微张的惊讶状态，且该姿态在整个时间段内未见明显变化。",
+              "位于男子右后方的女子是此阶段的主要动态来源。她的右手（戴黑色手套）从抬起靠近男子肩膀的位置开始，经历了一个完整的动作循环：先是握拳并向下收缩至胸前（约0.25s），随后再次张开并向男子的方向伸出（约1.5s）。",
+              "女子的面部表情与手部动作同步变化：她先是闭眼张嘴做出夸张的表情（约0.25s），然后转为眯眼微笑（约0.375s-0.625s），最后恢复为睁大眼睛、嘴巴张开的说话或歌唱状态（约0.75s-1.5s）。",
+              "根据背景中模糊人物的相对位置判断，镜头在此期间有极其轻微的向右平移和向上摇摄的趋势，但主体人物在画面中的构图基本保持稳定。",
+              "在1.5s至3.5s期间，穿灰色西装的男子的核心表情发生显著转变：他从之前的惊讶状态（嘴微张）转变为咧嘴大笑，露出上排牙齿，这一新表情自2.25s左右出现后一直维持到窗口结束。",
+              "与此同时，女子的表演进入新的阶段。她的手部动作变为在胸前小幅度地开合手指（约2.25s-2.875s），配合着她持续变化的口型，似乎在强调某个词语或旋律。",
+              "在约3.0s时，女子的头部有一个明显的向后仰的动作，同时嘴巴张得更大，视线向上看，这是一个强烈的表达性姿态。之后她又恢复到面向男子的正常交流姿态。",
+              "整个后半段（1.5s-3.5s），镜头运动趋于静止，画面框架非常稳定，使得观众注意力完全集中在两位角色生动的面部表情和上半身互动上。"
+            ]
+          },
+          {
+            "start": 3.25,
+            "end": 4.75,
+            "facts": [
+              "在3.250s至4.750s期间，画面右侧的女子向左侧的男子靠近。她的头部逐渐向左下方倾斜，最终停留在男子的左肩处（以男子自身为参照系），呈现出依偎的姿态。",
+              "观察女子的面部表情变化：起始阶段（3.250s-3.625s）她双眼睁开看向男子；随后（3.750s-4.125s）嘴巴张开幅度变大，呈现说话或大笑的口型；最后阶段（4.250s-4.750s）她闭上双眼，嘴角上扬保持微笑状态。",
+              "观察穿灰色西装、打亮粉色领带的男子的反应：在整个过程中，他的身体躯干基本保持静止，但面部肌肉发生细微变化。随着女子靠近和闭眼，他原本露出上排牙齿的笑容变得更加收敛且略显僵硬，眼神始终注视着身旁的女子。",
+              "关于手部动作与接触面：女子戴着黑色手套的左手从画面右下方抬起，手指自然弯曲。在视频后半段（约4.250s起），这只手轻轻搭在了男子的左胸/肩膀位置（以男子自身为参照系），建立了明确的物理接触。",
+              "镜头运动分析：根据背景人物和墙面的位移判断，摄像机在跟随主体进行极其缓慢的微调平移，但在该短窗口内主要表现为相对稳定的中景构图，无明显剧烈推拉或摇摄。"
+            ]
+          },
+          {
+            "start": 4.5,
+            "end": 6.0,
+            "facts": [
+              "在04.50s至04.87s期间，穿灰色西装、打亮粉色领带并戴深灰制服帽的男子位于画面左侧偏中位置，面朝右侧。他双眼圆睁，视线投向右侧的女子，嘴巴张开露出牙齿，呈现出惊讶的表情。",
+              "在同一时间段内，一名身穿黑色无袖上衣的短发女子紧贴男子的右肩站立。她闭着双眼，面带微笑，头部向左侧倾斜靠近男子，其左手戴着黑色手套搭在男子的左胸前。",
+              "从05.00s开始直至片段结束（06.00s），镜头视角相对于背景中的画框和模糊路人发生了明显的向上平移（对应数据中持续的负dy值），导致两名主体的面部在画面中的垂直位置逐渐升高。",
+              "在05.12s时，两人嘴唇接触的位置突然爆发出一团明亮的紫色烟雾状特效，短暂遮挡了男子的下半张脸。",
+              "紧接着在05.25s，随着紫色烟雾消散，一个巨大的粉红色动物口鼻部结构（形似猪鼻）伴随着闪光粒子凭空出现在男子的脸上，覆盖了原本的鼻子和嘴巴区域。",
+              "在05.37s至06.00s的稳定阶段，该粉红色的新器官占据了男子面部的中心区域，两根细长的淡紫色触须从其下方垂落至领带上。此时女子的双唇紧贴在粉色器官的前端保持亲吻姿态，而男子的眼睛依然瞪大看向侧方。"
+            ]
+          },
+          {
+            "start": 5.75,
+            "end": 7.25,
+            "facts": [
+              "在05.75s至06.12s期间，穿灰色西装的男子位于画面左侧，面朝右侧；一名短发女子位于画面右侧，闭着双眼且嘴唇撅起，正凑近男子面部佩戴的一个巨大的亮粉色动物口鼻状道具。",
+              "在06.25s时，男子的头部突然向后仰并向左偏转，眼睛睁大，嘴巴张开露出牙齿，呈现出明显的惊讶表情；此时女子的脸部仍停留在该道具附近。",
+              "从06.37s到06.62s，男子保持头部后仰和惊讶的表情，视线固定在右前方；女子维持闭眼撅嘴的姿态，两人之间几乎没有相对位移。",
+              "在06.75s时，男子抬起右手伸向自己的面部，手指捏住那个亮粉色的道具边缘准备将其移开；与此同时，女子依然保持着闭眼撅嘴的姿势向前探身。",
+              "在06.87s至07.00s期间，男子用力将该亮粉色道具从脸上扯下并迅速向画面左侧移动，身体随之产生向左的运动模糊；由于男子移开，原本被遮挡的背景变得可见。",
+              "在07.12s至07.25s的最后阶段，男子已完全移出画面左侧视野；留在画面中央偏右的女子继续保持着闭眼、撅嘴的静止姿态，其手部动作未发生显著改变。"
+            ]
+          },
+          {
+            "start": 7.0,
+            "end": 8.125,
+            "facts": [
+              "7.000s (frame 56)　穿灰色西装、打亮粉色领带、戴深灰制服帽的男子　该男子位于画面左侧前景，身体朝向右方。他正用双手将一个粉红色的物体（可能是面具或道具）举至面部前方，遮挡了其口鼻区域。他的眼睛睁大，视线投向右前方的女子。由于动作和可能的景深效果，其手部及所持物体呈现动态模糊。",
+              "7.000s - 7.125s (frames 56-57)　穿黑色吊带裙的女子 / 环境　在7.125s时，原先占据左侧前景的男子已完全移出画面或被镜头裁切掉，不再可见。焦点完全集中在中央的女子身上。背景中的其他人物（如左后方穿深色衣服的男士）变得相对清晰一些，表明景深可能发生了变化或主体移动导致了视觉重心的转移。",
+              "7.125s - 7.875s (frames 57-63)　穿黑色吊带裙的女子　女子保持侧脸朝左的姿态，双眼闭合，嘴唇微张呈吹气或歌唱状。她的头部有轻微的上下起伏和前后伸缩的动作，特别是在7.625s到7.75s之间，嘴巴张开幅度增大，似乎在发声。在此期间，她戴着黑色手套的左手在胸前轻微抬起并握拳，随后放下。整个过程中，她的表情显得陶醉或专注。",
+              "7.875s - 8.125s (frames 63-65)　穿黑色吊带裙的女子　女子的眼睛突然睁开，瞳孔向上看，眉毛上扬，嘴巴依然张开但形状略有变化，似乎从之前的状态转变为惊讶或正在说话的状态。她的头部位置基本保持不变，但面部表情的显著改变标志着这一阶段的结束。",
+              "全程 (7.000s - 8.125s)　镜头运动与构图　镜头主要跟随中心的女子进行极其细微的调整。根据提供的位移数据，在7.25s-7.375s期间有轻微的向左下平移趋势(dx: -3.9%, dy: 1.9%)，之后趋于稳定甚至微弱回移(7.875s后dx转正)。整体来看，这是一个中近景固定机位拍摄，主要通过人物的表演而非大幅运镜来推动叙事。背景是一面灰色的墙，右侧挂有一幅带金色边框的画作，画中内容模糊不清。"
+            ]
+          }
+        ],
+        "integrated_facts": [
+          "在2.000s至2.500s期间，穿灰色西装、打亮粉色领带并戴深灰制服帽的男子位于画面左侧前景，身体呈四分之三侧面朝向右方。他双眼圆睁，眉毛上扬，嘴巴微张露出牙齿，呈现出惊讶的表情，头部保持静止。",
+          "从2.750s开始直至4.875s，男子的面部表情发生转变，嘴角大幅上扬形成明显的露齿微笑，眼神变得柔和并注视着右侧的女子。在此期间，他的身体姿态保持稳定，未发生大幅度位移。",
+          "在3.125s至4.375s期间，画面右侧身穿黑色无袖上衣的短发女子向左侧的男子靠近。她的头部逐渐向左下方倾斜，最终停留在男子的左肩处（以男子自身为参照系），呈现出依偎的姿态。",
+          "观察女子的面部表情变化：起始阶段（3.125s-3.625s）她双眼睁开看向男子；随后（3.750s-4.125s）嘴巴张开幅度变大，呈现说话或大笑的口型；最后阶段（4.250s-4.875s）她闭上双眼，嘴角上扬保持微笑状态。",
+          "关于手部动作与接触面：女子戴着黑色手套的左手从画面右下方抬起，手指自然弯曲。在视频后半段（约4.250s起），这只手轻轻搭在了男子的左胸/肩膀位置（以男子自身为参照系），建立了明确的物理接触。",
+          "在5.000s时，两人嘴唇接触的位置突然爆发出一团明亮的紫色烟雾状特效，短暂遮挡了男子的下半张脸。",
+          "紧接着在5.250s，随着紫色烟雾消散，一个巨大的粉红色动物口鼻部结构（形似猪鼻）伴随着闪光粒子凭空出现在男子的脸上，覆盖了原本的鼻子和嘴巴区域。",
+          "在5.375s至6.000s的稳定阶段，该粉红色的新器官占据了男子面部的中心区域，两根细长的淡紫色触须从其下方垂落至领带上。此时女子的双唇紧贴在粉色器官的前端保持亲吻姿态，而男子的眼睛依然瞪大看向侧方。",
+          "在6.250s时，男子的头部突然向后仰并向左偏转，变形的粉色口鼻部张开仿佛在喘息，眼睛睁大，呈现出明显的惊讶表情；此时女子的脸部仍停留在该道具附近。",
+          "在6.750s时，男子迅速抬起右手（位于画面前景），手掌覆盖在自己刚刚形成的巨大粉色口鼻部上方，试图将其遮挡住。",
+          "在6.875s至7.000s期间，男子利用抬手遮挡的动作顺势猛地向左后方转身移动，身体快速移出画面左侧边缘，产生运动模糊，直至完全消失在镜头视野之外。",
+          "在7.125s至7.875s的最后阶段，留在画面中央偏右的女子继续保持着闭眼、撅嘴的静止姿态，其手部动作未发生显著改变，仿佛沉浸在刚才的互动中。"
+        ],
+        "native_facts": [
+          "At 2.0s, the man in the grey suit with a bright pink tie and dark grey uniform cap stands on screen left facing slightly right toward the woman beside him.",
+          "From 2.0s to about 4.5s, his head turns more fully toward her while he keeps eye contact; his mouth opens wide showing teeth, then closes into a broad smile as she leans closer.",
+          "Around 5.0–6.0s, when the woman kisses him, a large magenta-pink snout-like growth erupts across his lower face, covering nose/mouth area with thin purple tendrils hanging down; his eyes widen behind it.",
+          "By ~6.5–7.0s, he raises both gloved hands up near his chest/face level against the protrusion, shoulders lifting slightly as if bracing or pushing away from it.",
+          "Near 7.0–8.25s, after pulling back somewhat, he remains upright but partially exits frame left during this interval, leaving only part of his torso/head visible at times; background figures stay blurred and stationary relative to camera."
+        ]
+      },
+      {
+        "context": "该女子位于画面右侧前景，身体呈四分之三侧面朝向左侧。她留着黑色短发，佩戴水滴状耳环，身穿深蓝色无袖上衣和黑色长手套。背景为模糊的室内聚会场景，有其他宾客站立。",
+        "phases": [
+          {
+            "from_frame": 16,
+            "to_frame": 21,
+            "caption": "女子起初表情惊讶，双眼圆睁，嘴巴微张，左手抬起至胸前高度。随后她闭上双眼，张大嘴巴做出夸张的呼喊或叹息动作，头部微微后仰，左手握拳收拢在肩部附近。",
+            "reported_frame_range": [
+              16,
+              20
+            ],
+            "start": 2.0,
+            "end": 2.625,
+            "action_ids": [
+              "A-S03-P02-speaking-close-to-P01"
+            ]
+          },
+          {
+            "from_frame": 21,
+            "to_frame": 40,
+            "caption": "女子睁开眼看向身旁的男子，嘴角上扬露出微笑，神情变得柔和。随着对话进行，她的笑容逐渐扩大，并在第37帧左右闭上眼睛，头部开始向左侧倾斜靠近男子。",
+            "reported_frame_range": [
+              21,
+              39
+            ],
+            "start": 2.625,
+            "end": 5.0,
+            "action_ids": [
+              "A-S03-P02-speaking-close-to-P01",
+              "A-S03-P02-kiss-causing-snout-transformation"
+            ]
+          },
+          {
+            "from_frame": 40,
+            "to_frame": 54,
+            "caption": "女子将脸凑近男子准备亲吻，此时男子的面部突然发生变形（长出粉色口鼻部）。尽管对方外貌突变，女子仍保持闭眼姿态向前噘起嘴唇，在第43帧接触到变形的鼻子区域，并持续维持亲吻姿势直到第53帧。",
+            "reported_frame_range": [
+              40,
+              53
+            ],
+            "start": 5.0,
+            "end": 6.75,
+            "action_ids": [
+              "A-S03-P02-kiss-causing-snout-transformation"
+            ]
+          },
+          {
+            "from_frame": 54,
+            "to_frame": 65,
+            "caption": "女子结束亲吻并向后退开，恢复直立站姿。她睁开眼睛看着前方，脸上带着满足且略带羞涩的微笑，双手自然垂下或轻放在身前，视线不再聚焦于身旁已离开的男子。",
+            "start": 6.75,
+            "end": 8.125,
+            "action_ids": [
+              "A-S03-P02-hold-pursed-lips-after-parting"
+            ]
+          }
+        ],
+        "camera": "镜头全程保持静止的中景双人构图，焦点始终锁定在两名主要角色身上，背景虚化以突出主体互动。",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "identity": "短发、红唇、戴耳环、穿无袖深色上衣并戴长黑手套的女子",
+        "inspections": {
+          "pose": [
+            {
+              "from_frame": 16,
+              "to_frame": 20,
+              "description": "短发女子位于画面右侧，身体呈四分之三侧面朝向左侧的男子。她双眼圆睁，嘴巴张开似在说话或惊呼，戴着黑色长手套的右手抬起至胸前高度，手指微曲指向男子方向。",
+              "start": 2.0,
+              "end": 2.5,
+              "action_ids": [
+                "A-S03-P02-speaking-close-to-P01"
+              ]
+            },
+            {
+              "from_frame": 22,
+              "to_frame": 31,
+              "description": "女子的表情转为愉悦，嘴角上扬露出牙齿微笑，眼神柔和地注视着男子。她的右手依然保持在胸前位置，随着头部轻微的摆动而自然起伏。",
+              "start": 2.75,
+              "end": 3.875,
+              "action_ids": [
+                "A-S03-P02-speaking-close-to-P01"
+              ]
+            },
+            {
+              "from_frame": 33,
+              "to_frame": 39,
+              "description": "女子闭上双眼，面部肌肉放松，嘴唇撅起并向前探出。她的上半身明显向左侧倾斜，缩短了她与男子之间的物理距离，呈现出准备亲吻的姿态。",
+              "start": 4.125,
+              "end": 4.875,
+              "action_ids": [
+                "A-S03-P02-speaking-close-to-P01"
+              ]
+            },
+            {
+              "from_frame": 42,
+              "to_frame": 52,
+              "description": "女子的嘴唇接触到男子的面部区域（此时伴随特效变为粉色兽吻）。尽管接触点发生变化，她始终保持闭眼、仰头且撅嘴的姿势不动，右手悬停在半空未收回。",
+              "start": 5.25,
+              "end": 6.5,
+              "action_ids": [
+                "A-S03-P02-kiss-causing-snout-transformation"
+              ]
+            },
+            {
+              "from_frame": 54,
+              "to_frame": 56,
+              "description": "男子伸手抓住面部的粉色物体并将其向左上方拉扯移除。在此期间，女子保持原有的仰头撅嘴姿势完全静止，并未因对方的动作而后退或改变重心。",
+              "start": 6.75,
+              "end": 7.0,
+              "action_ids": []
+            },
+            {
+              "from_frame": 59,
+              "to_frame": 61,
+              "description": "男子移出画面后，女子独自停留在原地。她继续保持头部后仰、双眼紧闭、嘴唇撅起的定格状态，仿佛在回味刚才的动作，没有任何肢体位移。",
+              "start": 7.375,
+              "end": 7.625,
+              "action_ids": [
+                "A-S03-P02-hold-pursed-lips-after-parting"
+              ]
+            },
+            {
+              "from_frame": 63,
+              "to_frame": 65,
+              "description": "女子结束了之前的定格姿态，缓缓睁开双眼。她的视线投向画面左侧（即男子离开的方向），眉毛舒展，神情恢复平静。",
+              "start": 7.875,
+              "end": 8.125,
+              "action_ids": [
+                "A-S03-P02-hold-pursed-lips-after-parting"
+              ]
+            }
+          ],
+          "contact": [
+            {
+              "from_frame": 16,
+              "to_frame": 20,
+              "description": "短发女子站在戴帽男子右侧，身体朝向他。她双眼圆睁，嘴巴张开呈O型，神情显得惊讶或正在强调某事；她的右手戴着黑色长手套，手掌张开举在胸前高度，手指指向男子的肩膀方向。",
+              "start": 2.0,
+              "end": 2.5,
+              "action_ids": [
+                "A-S03-P02-speaking-close-to-P01"
+              ]
+            },
+            {
+              "from_frame": 22,
+              "to_frame": 31,
+              "description": "女子的表情转为愉悦和挑逗，嘴角上扬露出牙齿微笑。她继续看着男子说话，头部随节奏轻微摆动，右手依然保持在胸前位置，手势变得更加柔和放松。",
+              "start": 2.75,
+              "end": 3.875,
+              "action_ids": [
+                "A-S03-P02-speaking-close-to-P01"
+              ]
+            },
+            {
+              "from_frame": 33,
+              "to_frame": 39,
+              "description": "女子闭上双眼，张大嘴巴做出夸张的大笑或感叹动作，头部微微后仰。随后她再次睁开眼看向男子，面带笑意，身体进一步向左侧倾斜靠近对方。",
+              "start": 4.125,
+              "end": 4.875,
+              "action_ids": [
+                "A-S03-P02-speaking-close-to-P01"
+              ]
+            },
+            {
+              "from_frame": 42,
+              "to_frame": 48,
+              "description": "就在女子凑近男子嘴部准备亲吻的瞬间，一团紫粉色的光芒特效爆发。光芒散去后，男子的下半张脸（鼻子和嘴巴区域）突变为粉红色的猫科动物口鼻结构，带有明显的鼻孔和胡须根部。尽管发生了这种超自然的变形，女子并未退缩，而是闭着眼睛，撅起嘴唇紧紧贴在变形的粉色口鼻上持续亲吻。",
+              "start": 5.25,
+              "end": 6.0,
+              "action_ids": [
+                "A-S03-P02-kiss-causing-snout-transformation"
+              ]
+            },
+            {
+              "from_frame": 50,
+              "to_frame": 54,
+              "description": "女子结束了亲吻动作，向后撤开一点距离但仍保持面对男子。此时可以看到男子脸上的粉色兽吻更加清晰，甚至伸出了紫色的舌头状物体。女子并没有表现出惊恐，反而抬起右手（未戴手套的那只手似乎去触碰了那个突起物，或者是画面视角导致的视觉重叠，实际上是她自己的左手/右手配合动作），似乎在轻抚或推开那个变形的部分，脸上带着满足的微笑。注：此处主要是她在结束深吻后的余韵状态。",
+              "start": 6.25,
+              "end": 6.75,
+              "action_ids": [
+                "A-S03-P02-kiss-causing-snout-transformation"
+              ]
+            },
+            {
+              "from_frame": 56,
+              "to_frame": 65,
+              "description": "男子转身向左走出画面。女子独自留在原地，保持着刚才亲吻后的姿态：头微微扬起，双眼闭合，嘴唇撅起仿佛在回味。几秒钟后（约第63帧），她慢慢睁开眼睛，视线投向前方偏左的位置，脸上挂着陶醉且满意的微笑，直到片段结束。",
+              "start": 7.0,
+              "end": 8.125,
+              "action_ids": [
+                "A-S03-P02-hold-pursed-lips-after-parting"
+              ]
+            }
+          ],
+          "camera": [
+            {
+              "from_frame": 16,
+              "to_frame": 20,
+              "description": "短发女子位于画面右侧，身体朝向左侧的男子。她起初睁大眼睛、嘴巴微张呈惊讶状，随后闭上双眼张大嘴巴做出夸张的表情，头部略微后仰，戴着黑色长手套的左手在胸前握拳举起。",
+              "start": 2.0,
+              "end": 2.5,
+              "action_ids": [
+                "A-S03-P02-speaking-close-to-P01"
+              ]
+            },
+            {
+              "from_frame": 22,
+              "to_frame": 39,
+              "description": "女子睁开眼注视着男子，面带微笑地进行交谈。随着对话进行，她的表情逐渐变得柔和陶醉，在第37帧左右完全闭上眼睛，头部开始向左侧倾斜并向前探出，嘴唇撅起准备亲吻。",
+              "start": 2.75,
+              "end": 4.875,
+              "action_ids": [
+                "A-S03-P02-speaking-close-to-P01"
+              ]
+            },
+            {
+              "from_frame": 42,
+              "to_frame": 54,
+              "description": "女子的嘴唇接触到男子的面部，接触瞬间爆发出一团紫色的闪光特效。紧接着，男子的下半脸（嘴部和鼻子区域）发生变形，生长出一个巨大的粉红色猫科动物口鼻部，带有明显的鼻孔和细长的胡须。尽管对方外貌突变，女子始终保持闭眼姿态，紧贴着这个变形的粉色口鼻部持续亲吻。",
+              "reported_frame_range": [
+                42,
+                53
+              ],
+              "start": 5.25,
+              "end": 6.75,
+              "action_ids": [
+                "A-S03-P02-kiss-causing-snout-transformation"
+              ]
+            },
+            {
+              "from_frame": 54,
+              "to_frame": 56,
+              "description": "男子抬起右手抓住自己脸上的粉色口鼻部，将其从女子的嘴边强行剥离并向自己的右侧拉扯。随着这一动作，两人的连接断开，男子随即转身向画面左侧快速移动并离开镜头视野。",
+              "start": 6.75,
+              "end": 7.0,
+              "action_ids": []
+            },
+            {
+              "from_frame": 59,
+              "to_frame": 65,
+              "description": "男子离场后，女子独自停留在画面中央偏右的位置。她先是保持着刚才亲吻结束时的定格姿势——头微微上扬、双眼紧闭、嘴唇撅起。直到第63帧，她才重新睁开眼睛，视线投向左前方（即男子离开的方向），脸上带着满足的微笑。",
+              "start": 7.375,
+              "end": 8.125,
+              "action_ids": [
+                "A-S03-P02-hold-pursed-lips-after-parting"
+              ]
+            }
+          ]
+        },
+        "window_review": [
+          {
+            "start": 2.0,
+            "end": 3.5,
+            "facts": [
+              "2.00s (Frame 16)　女子　位于画面右侧，身体朝向左侧男子。双眼圆睁，嘴巴呈'O'型张开，神情惊讶。戴着黑色长手套的右手抬起至胸前高度，手指微曲悬空。",
+              "2.00s - 2.25s (Frames 16-18)　女子　面部表情发生剧烈变化。在2.125s（Frame 17）时眼神短暂向下游离并伴随抿嘴微笑；随即在2.25s（Frame 18）时，头部轻微后仰，双眼紧闭，嘴巴大幅张开呈现大笑或感叹状，右臂弯曲上提，手部靠近肩部位置。",
+              "2.37s - 2.75s (Frames 19-22)　女子　睁开双眼，视线重新聚焦于左侧男子。眉毛上扬，嘴角持续咧开露出牙齿，保持说话或兴奋的状态。右手保持在肩侧附近，手势随语意有细微起伏但未离开该区域。",
+              "2.87s - 3.12s (Frames 23-25)　女子　情绪转为平缓。笑容收敛，嘴唇闭合或微张进行低强度交流。头部姿态回正，不再像之前那样大幅度动作。此时可见其佩戴的水滴形耳环随头部微小晃动而静止。",
+              "3.25s - 3.50s (Frames 26-28)　女子　进入新的表达阶段。右手再次抬起，食指伸出指向斜上方（约45度角），其余手指握拳。这一手势打破了之前的静态对话姿势，强调某种观点。目光始终锁定在男子脸上。",
+              "全时段 (2.00s - 3.50s)　环境/镜头　背景中的灰色墙壁和模糊人影相对于画框边缘基本保持稳定，仅有极微小的位移（dx/dy < 2%），表明镜头处于固定机位拍摄状态，无明显推拉摇移。光线柔和均匀，主要照亮两名主体的面部。"
+            ]
+          },
+          {
+            "start": 3.25,
+            "end": 4.75,
+            "facts": [
+              "在3.250s至4.750s的时间窗内，画面右侧的主体（女子）整体朝向左侧的男子。",
+              "以背景中模糊的灰色墙壁和画框为参照，镜头与主体的相对位置基本保持静止，无明显推拉或平移运动。",
+              "在起始阶段（3.250s-3.625s），女子的左手戴着黑色长手套，悬停在男子胸前偏左的位置，手指呈半弯曲状，未发生接触。",
+              "约在3.750s时，女子的头部开始向自身右肩方向倾斜，视线依然锁定在男子面部。",
+              "在3.875s至4.125s期间，女子的双眼逐渐闭合，眉毛下压，同时其戴手套的左手向上移动并贴合在男子的左胸衣领处。",
+              "从4.250s开始直至结束（4.750s），女子维持闭眼状态，嘴巴张开幅度显著增大，呈现出大笑或用力的表情，头部进一步向右下方倾斜靠近男子肩膀。",
+              "在整个过程中，位于画面左侧的另一主体（男子）始终保持咧嘴露齿的笑容，眼神看向女子，身体姿态未见明显位移。"
+            ]
+          },
+          {
+            "start": 4.5,
+            "end": 6.0,
+            "facts": [
+              "在04.50s至04.87s期间，以右侧墙上的金色画框为参照，穿灰色制服的男子与穿深色无袖上衣的女子整体向画面左侧缓慢平移。",
+              "在04.50s至04.87s期间，女子双眼闭合，嘴巴张开呈大笑状；男子面朝前方，眼睛睁大，露出牙齿微笑。",
+              "在05.00s时，女子的头部进一步向画面左侧倾斜靠近男子，其嘴唇接触到男子的面部下半部分。",
+              "在05.12s时，接触点爆发出一团明亮的紫粉色发光烟雾，完全遮挡了男子的鼻子和嘴部区域。",
+              "在05.25s至05.37s期间，紫粉色烟雾消散，显现出一个巨大的亮粉色动物口鼻部结构（带有紫色胡须），该结构占据了男子原本的面部位置并向画面左侧延伸。",
+              "从05.37s开始直至片段结束，尽管前景人物发生变化，但背景中的其他模糊人影相对于金色画框保持静止不动。",
+              "在05.37s至06.00s期间，随着变形完成，画面主体（包含新出现的粉色口鼻）相对于背景画框持续向画面左侧移动，且垂直方向上有轻微的下沉趋势。",
+              "在05.62s至06.00s的最后阶段，男子闭上了眼睛，表情由之前的惊讶转为平静，而女子始终保持闭眼姿态紧贴着变形的口鼻部。"
+            ]
+          },
+          {
+            "start": 5.75,
+            "end": 7.25,
+            "facts": [
+              "05.75s - 06.125s (起始与接触阶段)　女子　位于画面右侧，面朝左方。她闭着双眼，红唇微张并向前突出，正在亲吻左侧男子的面部。她的右手（戴着黑色长手套）扶在男子的胸前/领带处作为支撑点。",
+              "05.75s - 06.125s (起始与接触阶段)　男子(被互动对象)　位于画面左侧，身穿灰色制服戴帽。他的下半脸覆盖着一个巨大的粉红色动物口鼻面具（带有紫色胡须）。起初他睁大眼睛直视前方，但在06.00s左右因女子的亲吻动作而闭上眼，头部略微后仰。",
+              "06.25s - 06.625s (分离与反应阶段)　女子　身体重心保持不动，但嘴唇离开男子的面具表面。此时可以看到她涂着红色指甲油的左手手指开始向上抬起，伸向男子的额头/帽子区域。",
+              "06.25s - 06.625s (分离与反应阶段)　男子(被互动对象)　随着女子嘴唇的移开，他的眼睛重新睁开且瞳孔放大，嘴巴在面具下张开呈'O'型，表现出惊讶或错愕的神态。",
+              "06.75s - 07.00s (遮挡与撤离阶段)　女子　继续维持闭眼嘟嘴的表情，并未看向男子。她的左手完全按在了男子的粉色面具上方/额头处。与此同时，她的上半身开始向画面右后方移动，逐渐脱离原本的亲密距离。",
+              "06.75s - 07.00s (遮挡与撤离阶段)　男子(被互动对象)　迅速举起自己的右手（未戴手套），手掌张开捂住了自己的粉色面具和脸部，似乎是在阻挡视线或掩饰尴尬。这一动作导致他在画面中的轮廓变得模糊并向左倾斜。",
+              "07.125s - 07.25s (结束状态)　女子　已完全退出双人互动的中心位置，仅保留侧脸在画面极右侧边缘，依然保持着闭眼的表情。",
+              "07.125s - 07.25s (结束状态)　男子(被互动对象)　几乎完全移出画面左侧视野，只剩下灰色的肩膀背影一闪而过，随后消失在画框外。"
+            ]
+          },
+          {
+            "start": 7.0,
+            "end": 8.125,
+            "facts": [
+              "穿制服男子　7.0s - 7.125s (Frame 56-57)　在画面左侧前景，一名戴帽子的男子正快速向观众视角的左方移动。在第56帧中，他占据画面左侧约三分之一的宽度，面部带有明显的动态模糊（Motion Blur），手中拿着一个粉红色的物体贴近脸部；到了第57帧，他的身影已大部分移出画框，仅余右肩和手臂边缘可见，表明其离开速度极快。",
+              "短发女子　7.0s - 7.375s (Frame 56-59)　位于画面中央偏右的主体保持静止站立姿态，身体侧向左方。她的头部微微上扬，双眼紧闭，嘴唇向前嘟起呈吹气状或亲吻状。在此期间，她戴着黑色长手套的双手保持在胸前位置，手指自然弯曲但未发生大幅度位移。",
+              "环境/背景　7.0s - 7.375s (Frame 56-59)　随着前景男子的离去，原本被遮挡的背景变得清晰。可以看到后方有一群处于失焦状态的宾客（包括左侧的一名西装男子和右侧的一名盘发女子）以及墙上的金色边框画作。根据提供的位移数据，此阶段镜头有轻微的向左平移趋势（dx为负值）。",
+              "短发女子　7.5s - 8.125s (Frame 60-65)　女子的面部表情发生显著变化。从第60帧开始，她紧绷的嘟嘴状态放松，嘴角逐渐上扬露出牙齿形成微笑。与此同时，她的眼睑抬起，眼球转动睁开，视线投向画面左上方的虚空处。这一过程伴随着头部的轻微调整，但整体站位未变。"
+            ]
+          }
+        ],
+        "integrated_facts": [
+          "2.00s - 4.875s (Frames 16-39)　女子　位于画面右侧，身体呈四分之三侧面朝向左侧的男子。她双眼圆睁，嘴巴张开似在说话或惊呼，戴着黑色长手套的右手抬起至胸前高度，手指微曲指向男子方向。",
+          "2.00s - 2.75s (Frames 16-22)　女子　面部表情发生剧烈变化。在2.25s（Frame 18）时，头部轻微后仰，双眼紧闭，嘴巴大幅张开呈现大笑或感叹状，右臂弯曲上提，手部靠近肩部位置。随后睁开眼注视男子，面带微笑地进行交谈。",
+          "2.87s - 4.25s (Frames 23-33)　女子　情绪转为平缓，笑容收敛，嘴唇闭合或微张进行低强度交流。约在3.75s时，女子的头部开始向自身右肩方向倾斜，视线依然锁定在男子面部。在3.875s至4.125s期间，女子的双眼逐渐闭合，眉毛下压，同时其戴手套的左手向上移动并贴合在男子的左胸衣领处。",
+          "4.25s - 4.875s (Frames 33-39)　女子　维持闭眼状态，嘴巴张开幅度显著增大，呈现出大笑或用力的表情，头部进一步向右下方倾斜靠近男子肩膀。临近结束时，她把话说到最贴近的位置，身体进一步前倾，为后面的亲吻做准备。",
+          "5.00s - 5.125s (Frames 40-41)　女子　闭上双眼，面部肌肉放松，嘴唇撅起并向前探出。她的上半身明显向左侧倾斜，缩短了她与男子之间的物理距离，呈现出准备亲吻的姿态。",
+          "5.125s - 5.25s (Frames 41-42)　特效/变形　就在女子凑近男子嘴部准备亲吻的瞬间，一团紫粉色的光芒特效爆发。光芒散去后，男子的下半张脸（鼻子和嘴巴区域）突变为粉红色的猫科动物口鼻结构，带有明显的鼻孔和胡须根部。",
+          "5.25s - 6.50s (Frames 42-52)　女子　尽管发生了这种超自然的变形，女子并未退缩，而是闭着眼睛，撅起嘴唇紧紧贴在变形的粉色口鼻上持续亲吻。她的右手悬停在半空未收回，保持原有的仰头撅嘴姿势完全静止。",
+          "6.50s - 7.00s (Frames 52-56)　男子(被互动对象)　男子伸手抓住面部的粉色物体并将其向左上方拉扯移除。在此期间，女子保持原有的仰头撅嘴姿势完全静止，并未因对方的动作而后退或改变重心。",
+          "7.00s - 7.125s (Frames 56-57)　男子　转身向左走出画面。在第56帧中，他占据画面左侧约三分之一的宽度，面部带有明显的动态模糊（Motion Blur），手中拿着一个粉红色的物体贴近脸部；到了第57帧，他的身影已大部分移出画框，仅余右肩和手臂边缘可见，表明其离开速度极快。",
+          "7.125s - 7.75s (Frames 57-60)　女子　独自停留在原地。她继续保持头部后仰、双眼紧闭、嘴唇撅起的定格状态，仿佛在回味刚才的动作，没有任何肢体位移。",
+          "7.875s - 8.125s (Frames 61-65)　女子　结束了之前的定格姿态，缓缓睁开双眼。她的视线投向画面左侧（即男子离开的方向），眉毛舒展，神情恢复平静，脸上挂着陶醉且满意的微笑，直到片段结束。"
+        ],
+        "native_facts": [
+          "At 2.0s, the woman with short hair and red lips stands on the right side of the frame in a medium close-up shot, facing left towards the man wearing a grey suit and cap.",
+          "From 2.0s to 4.5s, the woman speaks animatedly, her mouth opening wide and closing repeatedly while she raises her black-gloved hand near her chest.",
+          "Around 4.6s, the woman leans forward slightly, tilting her head up as she continues speaking with an open-mouthed expression.",
+          "Between 5.1s and 6.9s, the woman puckers her lips and presses them against the man's face; simultaneously, a large pink snout-like shape emerges from his mouth area.",
+          "As the kiss concludes around 7.0s, the woman pulls back smoothly, returning to an upright posture and looking upwards with a satisfied smile.",
+          "By 8.1s, the woman remains stationary on the right side of the frame, gazing upward with closed eyes and a slight smile."
+        ]
+      }
+    ],
+    "caption_detail_policy": "retain_evidence"
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "S01中搭在男子肩上的手属于哪位对话者无法确认，只能确定是画面右侧前景人物的黑手套手。",
+    "S02中灰色裤子者与S03中的戴帽男子是否为同一人，在本片段内缺少直接同框证据，不能仅凭服装推断合并身份。",
+    "S03男子抬手遮脸时，具体是哪只手因角度和遮挡不够清楚，只能确认是一只手从下方抬起并按到变形口鼻上。"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "4f1aa620926b1b988ff6004b9bfeb7662bee51f8059003048aaf1f456036fba0",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32,
+    "inspection_template_sha256": "8b9603319374998053ef9bee118f58c88bc5a51c3d47c344596c189e3cafe363",
+    "window_prompt_sha256": "d25d6f440b6949b699fc58a15f8f0ddfc9d5d90159236c8e81f0cc03600e6c94",
+    "native_prompt_sha256": "abd6dc8763865077c2002c98d6afdb84e825d30f7f1a1e574f4ee45c794d2f63"
+  }
+}

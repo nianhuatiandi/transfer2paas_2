@@ -1,0 +1,696 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma54",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "雪地滑行",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      18
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-0b5d7b4c-520.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      7.3
+    ],
+    "official_sha256": "26f0cce1e8d4259a7a9126e116dde5b13035234043d72e05866df8aa854c2896",
+    "clip_sha256": "26f0cce1e8d4259a7a9126e116dde5b13035234043d72e05866df8aa854c2896",
+    "audio_source": null
+  },
+  "duration_seconds": 7.3,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.5666666666666667,
+      "first_frame": 0,
+      "end_frame_exclusive": 17
+    },
+    {
+      "id": "S02",
+      "start": 0.5666666666666667,
+      "end": 4.6,
+      "first_frame": 17,
+      "end_frame_exclusive": 138
+    },
+    {
+      "id": "S03",
+      "start": 4.6,
+      "end": 4.633333333333334,
+      "first_frame": 138,
+      "end_frame_exclusive": 139
+    },
+    {
+      "id": "S04",
+      "start": 4.633333333333334,
+      "end": 7.3,
+      "first_frame": 139,
+      "end_frame_exclusive": 219
+    }
+  ],
+  "input_frames": {
+    "visual": 77
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一名滑雪者在雪坡上滑行、跳跃并完成道具滑行的连续动作。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "身穿浅灰色连帽卫衣和黑色长裤的滑雪者"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "身穿浅灰色连帽卫衣和黑色长裤的滑雪者"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "身穿浅灰色连帽卫衣和黑色长裤的滑雪者"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "身穿浅灰色连帽卫衣和黑色长裤的滑雪者"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 0.567,
+        "description": "在平缓的雪地上向画面深处滑行"
+      },
+      {
+        "id": "E02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 0.567,
+        "end": 1.067,
+        "description": "沿雪坡向上滑行并起跳腾空"
+      },
+      {
+        "id": "E03",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 1.067,
+        "end": 2.867,
+        "description": "在空中进行翻转，随后落地继续滑行"
+      },
+      {
+        "id": "E04",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 4.6,
+        "end": 4.633,
+        "description": "在雪坡上快速滑行接近道具"
+      },
+      {
+        "id": "E05",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 4.633,
+        "end": 6.333,
+        "description": "跃上黄色铁杆并在其上保持平衡滑行"
+      },
+      {
+        "id": "E06",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 6.333,
+        "end": 7.267,
+        "description": "从铁杆末端跃下，平稳落在下方雪面上继续滑行"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E01",
+        "kind": "motion",
+        "label": "平地滑行",
+        "start": 0.0,
+        "end": 0.567,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          0.5,
+          0.567
+        ],
+        "detail": "滑雪者背对镜头，双脚踩着双板滑雪板，双手握着雪杖向后平举，在平坦的雪面上匀速向前滑行，身后留下一道浅浅的雪痕。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "滑雪者位于画面中央偏下，背对镜头开始向前移动。"
+          },
+          {
+            "time": 0.533,
+            "observation": "滑雪者持续向画面深处滑行，姿态保持稳定。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "双臂",
+          "躯干"
+        ],
+        "movement_roles": [
+          "驱动",
+          "平衡"
+        ],
+        "subphases": [],
+        "brief": "滑雪者在平地上背对镜头匀速向前滑行。"
+      },
+      {
+        "id": "A02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E02",
+        "kind": "motion",
+        "label": "上坡起跳",
+        "start": 0.567,
+        "end": 1.067,
+        "start_range": [
+          0.567,
+          0.6
+        ],
+        "end_range": [
+          1.0,
+          1.1
+        ],
+        "detail": "滑雪者顺着陡峭的雪坡向上滑行，身体重心前倾，双腿弯曲蓄力。到达坡顶边缘时，用力蹬地使身体腾空而起，脱离雪面进入空中。",
+        "evidence": [
+          {
+            "time": 0.567,
+            "observation": "视角切换，滑雪者开始在陡坡上向上滑行。"
+          },
+          {
+            "time": 1.067,
+            "observation": "滑雪者越过坡顶边缘，完全离开地面腾空。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "起跳离地",
+            "time": 1.067,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "躯干"
+        ],
+        "movement_roles": [
+          "发力",
+          "位移"
+        ],
+        "subphases": [
+          {
+            "label": "上坡蓄力",
+            "start": 0.567,
+            "end": 0.967,
+            "detail": "沿斜坡向上快速滑行，准备起跳。",
+            "evidence": [
+              {
+                "time": 0.867,
+                "observation": "滑雪者在斜坡中段，身体压低。"
+              }
+            ]
+          },
+          {
+            "label": "腾空跃起",
+            "start": 0.967,
+            "end": 1.067,
+            "detail": "借助惯性冲过坡顶，身体向上飞起。",
+            "evidence": [
+              {
+                "time": 1.067,
+                "observation": "滑雪者已处于半空中，脚下无雪地接触。"
+              }
+            ]
+          }
+        ],
+        "brief": "滑雪者沿陡坡向上冲刺并在顶端起跳腾空。"
+      },
+      {
+        "id": "A03",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E03",
+        "kind": "motion",
+        "label": "空中翻转与落地",
+        "start": 1.067,
+        "end": 2.867,
+        "start_range": [
+          1.067,
+          1.1
+        ],
+        "end_range": [
+          2.8,
+          2.9
+        ],
+        "detail": "滑雪者在空中完成了一个后空翻动作，身体倒置旋转，滑雪板朝上。随后调整姿态，双脚稳稳落在下方的雪坡上，顺势屈膝缓冲并继续向下滑行。",
+        "evidence": [
+          {
+            "time": 1.467,
+            "observation": "滑雪者在空中呈倒立姿态，正在进行翻转。"
+          },
+          {
+            "time": 2.267,
+            "observation": "滑雪者落回雪面，身体前倾保持平衡。"
+          },
+          {
+            "time": 2.867,
+            "observation": "滑雪者恢复直立滑行姿态，远离镜头。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "最高点倒立",
+            "time": 1.467,
+            "time_range": null
+          },
+          {
+            "name": "触地瞬间",
+            "time": 2.267,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身",
+          "四肢"
+        ],
+        "movement_roles": [
+          "旋转",
+          "缓冲"
+        ],
+        "subphases": [
+          {
+            "label": "空中翻转",
+            "start": 1.067,
+            "end": 2.067,
+            "detail": "身体在空中旋转，头朝下脚朝上。",
+            "evidence": [
+              {
+                "time": 1.667,
+                "observation": "滑雪者完全倒置，背景为蓝天白云。"
+              }
+            ]
+          },
+          {
+            "label": "着陆滑行",
+            "start": 2.067,
+            "end": 2.867,
+            "detail": "接触雪面后迅速调整重心继续下行。",
+            "evidence": [
+              {
+                "time": 2.467,
+                "observation": "滑雪板压在雪面上，激起少量雪花。"
+              }
+            ]
+          }
+        ],
+        "brief": "滑雪者在空中完成后空翻并平稳落地继续滑行。"
+      },
+      {
+        "id": "A04",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "E04",
+        "kind": "motion",
+        "label": "接近道具",
+        "start": 4.6,
+        "end": 4.633,
+        "start_range": [
+          4.6,
+          4.633
+        ],
+        "end_range": [
+          4.633,
+          4.633
+        ],
+        "detail": "极短镜头中，滑雪者侧身面向左前方，手持雪杖，正快速滑向一个黄色的长条形道具（铁杆）。",
+        "evidence": [
+          {
+            "time": 4.6,
+            "observation": "滑雪者出现在画面左侧，正向右侧的黄色物体靠近。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "双腿",
+          "躯干"
+        ],
+        "movement_roles": [
+          "位移"
+        ],
+        "subphases": [],
+        "brief": "滑雪者快速滑向黄色的铁杆道具。"
+      },
+      {
+        "id": "A05",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "E05",
+        "kind": "motion",
+        "label": "铁杆滑行",
+        "start": 4.633,
+        "end": 6.333,
+        "start_range": [
+          4.633,
+          4.7
+        ],
+        "end_range": [
+          6.3,
+          6.4
+        ],
+        "detail": "滑雪者跳上黄色的铁杆，利用滑雪板的底部横刃卡在杆上进行滑行（Grind/Rail slide）。在此过程中，他张开双臂握持雪杖以维持平衡，身体略微扭转，沿着铁杆的长度方向移动直至末端。",
+        "evidence": [
+          {
+            "time": 4.933,
+            "observation": "滑雪者成功站上铁杆，开始横向滑动。"
+          },
+          {
+            "time": 5.533,
+            "observation": "滑雪者在铁杆中段，单腿微曲保持平衡。"
+          },
+          {
+            "time": 6.133,
+            "observation": "滑雪者即将到达铁杆尽头，准备跳出。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "上杆接触",
+            "time": 4.833,
+            "time_range": null
+          },
+          {
+            "name": "下杆分离",
+            "time": 6.333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双脚",
+          "滑雪板",
+          "双臂"
+        ],
+        "movement_roles": [
+          "支撑",
+          "平衡"
+        ],
+        "subphases": [
+          {
+            "label": "登杆稳定",
+            "start": 4.633,
+            "end": 5.033,
+            "detail": "跳上铁杆并找到重心。",
+            "evidence": [
+              {
+                "time": 4.833,
+                "observation": "滑雪板底面贴合铁杆顶部。"
+              }
+            ]
+          },
+          {
+            "label": "杆上巡航",
+            "start": 5.033,
+            "end": 6.133,
+            "detail": "沿铁杆直线滑行。",
+            "evidence": [
+              {
+                "time": 5.633,
+                "observation": "滑雪者相对于铁杆位置发生明显位移。"
+              }
+            ]
+          }
+        ],
+        "brief": "滑雪者跳上黄色铁杆并保持平衡滑行至末端。"
+      },
+      {
+        "id": "A06",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "E06",
+        "kind": "motion",
+        "label": "落地滑出",
+        "start": 6.333,
+        "end": 7.267,
+        "start_range": [
+          6.333,
+          6.4
+        ],
+        "end_range": [
+          7.2,
+          7.267
+        ],
+        "detail": "滑雪者从铁杆末端跃下，双脚着地后立刻屈膝吸收冲击力，随即展开双臂控制方向，顺畅地滑入下方的雪坡，逐渐远离镜头。",
+        "evidence": [
+          {
+            "time": 6.533,
+            "observation": "滑雪者离开铁杆，身体悬空下落。"
+          },
+          {
+            "time": 6.833,
+            "observation": "滑雪者触地，身体前倾缓冲。"
+          },
+          {
+            "time": 7.267,
+            "observation": "滑雪者恢复正常滑行姿态，向远处滑去。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "离杆腾空",
+            "time": 6.333,
+            "time_range": null
+          },
+          {
+            "name": "触地缓冲",
+            "time": 6.833,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "躯干"
+        ],
+        "movement_roles": [
+          "缓冲",
+          "位移"
+        ],
+        "subphases": [
+          {
+            "label": "下落过程",
+            "start": 6.333,
+            "end": 6.733,
+            "detail": "从高处落下接近雪面。",
+            "evidence": [
+              {
+                "time": 6.633,
+                "observation": "滑雪者位于铁杆下方空间，未接触地面。"
+              }
+            ]
+          },
+          {
+            "label": "着陆续滑",
+            "start": 6.733,
+            "end": 7.267,
+            "detail": "接触雪面并加速离开。",
+            "evidence": [
+              {
+                "time": 7.033,
+                "observation": "滑雪板切入雪中，溅起雪雾。"
+              }
+            ]
+          }
+        ],
+        "brief": "滑雪者从铁杆跳下，落地缓冲后继续向山下爬行。"
+      }
+    ],
+    "uncertainties": [],
+    "motion_tracks": [
+      {
+        "context": "在镜头开始时，身穿浅灰色连帽卫衣和黑色长裤的滑雪者位于画面中央偏下位置，背对镜头面向画面上方（即山坡上方）。其身体呈半蹲姿态，双腿弯曲踩在雪板上，双手各握一根滑雪杖向身体两侧斜下方伸出。周围是大面积的白色雪地，表面有明显的滑行痕迹和不平整的雪块。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 16,
+            "caption": "滑雪者持续进行横向滑降动作。从起始状态开始，该主体以中等速度沿对角线轨迹向画面右上方移动。在此过程中，其上半身基本保持稳定，头部始终朝向行进方向；下半身通过调整膝盖弯曲程度和脚踝角度来控制平衡与转向，带动雪板在松软的雪面上划出弧线并激起少量雪花。与此同时，双手持有的滑雪杖随身体惯性轻微摆动但始终保持向外伸展的姿态，未接触地面提供支撑。",
+            "start": 0.0,
+            "end": 0.5333333333333333,
+            "action_ids": [
+              "A01"
+            ]
+          }
+        ],
+        "camera": "摄像机采用跟随拍摄视角，整体保持相对稳定的构图将主体置于中心区域。随着主体的移动，镜头平滑地向右上方摇移（Pan/Tilt）以追踪目标，视野范围涵盖了广阔的山坡背景。光线为均匀的漫射自然光，无明显阴影变化，画面清晰度保持一致直至片段结束。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "身穿浅灰色连帽卫衣和黑色长裤的滑雪者"
+      },
+      {
+        "context": "在S02镜头开始时，身穿浅灰色连帽卫衣和黑色长裤的滑雪者位于画面中央偏下位置，背对镜头，正沿着雪坡向上滑行。其头部戴着深色头盔，双手各持一根滑雪杖，双脚踩着双板滑雪板。背景是蓝天白云和远处的雪山脊线，右侧山坡上有明显的阶梯状防护网结构。",
+        "phases": [
+          {
+            "from_frame": 17,
+            "to_frame": 32,
+            "caption": "滑雪者从画面下方沿直线轨迹向右上方的跳台顶端快速滑行。随着接近边缘，他调整重心准备起跳，身体略微前倾，双腿弯曲蓄力，最终在帧32左右到达跳台最顶端并腾空而起。",
+            "start": 0.5666666666666667,
+            "end": 1.0666666666666667,
+            "action_ids": [
+              "A02"
+            ]
+          },
+          {
+            "from_frame": 35,
+            "to_frame": 68,
+            "caption": "滑雪者在空中完成了一个高难度的翻转动作（看似后空翻接转体）。他的身体先向后倒置，背部朝向地面，随后在空中旋转，四肢舒展以保持平衡。在此过程中，镜头跟随其运动轨迹向右上方平移并抬升，使其始终处于画面中心区域，背景变为开阔的天空和远山。",
+            "start": 1.1666666666666667,
+            "end": 2.2666666666666666,
+            "action_ids": [
+              "A03"
+            ]
+          },
+          {
+            "from_frame": 71,
+            "to_frame": 92,
+            "caption": "滑雪者结束翻转，身体转正并向下俯冲寻找着陆点。他在帧86左右平稳降落在下方的雪坡上，激起少量雪雾。落地瞬间，他屈膝缓冲吸收冲击力，上身保持直立以维持平衡，随即继续向下滑行。",
+            "start": 2.3666666666666667,
+            "end": 3.066666666666667,
+            "action_ids": [
+              "A03"
+            ]
+          },
+          {
+            "from_frame": 95,
+            "to_frame": 137,
+            "caption": "着陆后，滑雪者顺着坡度向画面左下方持续滑行减速。此时镜头视角发生变化，呈现出俯视效果，画面底部出现了拍摄者的影子。滑雪者逐渐放慢速度，身体姿态放松，直至视频结束时仍在缓慢滑行中。",
+            "start": 3.1666666666666665,
+            "end": 4.566666666666666,
+            "action_ids": []
+          }
+        ],
+        "camera": "镜头起始为固定的低角度仰拍，捕捉滑雪者上坡的过程。当滑雪者起跳后，镜头迅速向右上方摇摄（Pan/Tilt）以追踪其在空中的轨迹。在滑雪者落地及后续滑行阶段，镜头转为俯视角度跟拍，画面前景因拍摄者站位而显现出清晰的人影投射在雪面上。",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "identity": "身穿浅灰色连帽卫衣和黑色长裤的滑雪者"
+      },
+      {
+        "context": "身穿浅灰色连帽卫衣和黑色长裤的滑雪者位于画面中央偏下区域，处于一片开阔的雪坡上。背景可见远处的雪山脊线、缆车索道设施以及左侧边缘露出的黄色建筑一角。滑雪者头戴黑色头盔，面部被护目镜遮挡不可见，双手各握一根雪杖，脚踏双板平行滑行。",
+        "phases": [
+          {
+            "from_frame": 138,
+            "to_frame": 138,
+            "caption": "滑雪者在雪面上进行高速滑行，身体重心略微下沉并向其自身的右侧倾斜以维持平衡。其左臂向体侧后方伸展以保持动态稳定，右手持杖置于身侧前方；双腿膝盖弯曲，通过小腿肌肉控制雪板在起伏不平的雪面上平稳行进。",
+            "start": 4.6,
+            "end": 4.6,
+            "action_ids": [
+              "A04"
+            ]
+          }
+        ],
+        "camera": "镜头采用跟随拍摄视角（Tracking Shot），从滑雪者的右后侧方捕捉其运动轨迹。随着主体的快速下滑，摄像机同步向后移动并伴随轻微的向下摇摄，始终将滑雪者保持在画面的核心视觉区域，呈现出第一人称视角的临场感。",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "identity": "身穿浅灰色连帽卫衣和黑色长裤的滑雪者"
+      },
+      {
+        "context": "画面开始时，身穿浅灰色连帽卫衣、黑色长裤并佩戴黑色头盔的滑雪者位于画面中央偏左的雪坡上。他正背对远处的雪山和缆车设施向下滑行，身体重心压低，双手各持一根雪杖以维持平衡，前方不远处横亘着一个带有彩色涂鸦图案的弧形道具箱。",
+        "phases": [
+          {
+            "from_frame": 139,
+            "to_frame": 154,
+            "caption": "滑雪者在雪面上快速滑行接近前方的道具箱，双腿微屈以保持动态平衡。随着距离缩短，他在起跳点发力向上跃起，双臂向外张开带动雪杖辅助升空，准备进行空中转体动作。",
+            "start": 4.633333333333334,
+            "end": 5.133333333333334,
+            "action_ids": [
+              "A05"
+            ]
+          },
+          {
+            "from_frame": 157,
+            "to_frame": 187,
+            "caption": "滑雪者腾空后精准落在道具箱顶部，随即展开一段流畅的滑杆（Grind）表演。在此期间，他的双脚固定在板上沿箱体表面持续向前滑动，上半身配合旋转动作不断调整姿态，手臂大幅度挥舞以控制重心不偏离支撑面。",
+            "start": 5.233333333333333,
+            "end": 6.233333333333333,
+            "action_ids": [
+              "A05"
+            ]
+          },
+          {
+            "from_frame": 190,
+            "to_frame": 218,
+            "caption": "到达道具箱末端时，滑雪者顺势跳出并完成落地缓冲，重新回到平坦的雪面上继续前行。由于落地的冲击力，其上身明显前倾低头查看脚下情况，随后逐渐恢复直立姿态平稳滑离镜头视野中心。",
+            "start": 6.333333333333333,
+            "end": 7.266666666666667,
+            "action_ids": [
+              "A06"
+            ]
+          }
+        ],
+        "camera": "摄像机采用跟随拍摄视角，始终将主体保持在画面核心区域。随着主体的移动轨迹，镜头进行了平滑的水平摇移与轻微的推拉变焦，完整记录了从助跑、跳跃到滑杆及最终落地的全过程。",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "identity": "身穿浅灰色连帽卫衣和黑色长裤的滑雪者"
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "d84a88baf7c68faaea1a112af5626716e7839efd3c9b95911d13648919348f2a",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

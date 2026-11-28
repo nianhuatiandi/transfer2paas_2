@@ -1,0 +1,514 @@
+{
+  "groups": {
+    "visual": [
+      {
+        "members": [
+          "1.0",
+          "2.0",
+          "3.0"
+        ],
+        "votes": 3,
+        "start": 0.0,
+        "end": 2.5,
+        "representative": "1.0",
+        "example": {
+          "actor": "操作者",
+          "activity": "设置灌溉控制器",
+          "kind": "gesture",
+          "label": "按下按钮",
+          "brief": "操作者在墙上控制面板上连续按下了几个不同的按钮以更改显示的数字。",
+          "detail": "右手食指依次按压面板左侧的向上箭头、右侧的向下箭头以及最上方的红色按钮，屏幕上的数字随之改变。",
+          "start": 0.0,
+          "end": 2.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.1299999999999999,
+        "id": "V1"
+      },
+      {
+        "members": [
+          "1.1",
+          "2.1",
+          "3.1"
+        ],
+        "votes": 3,
+        "start": 2.5,
+        "end": 3.96,
+        "representative": "2.1",
+        "example": {
+          "actor": "操作者",
+          "activity": "拔下电源插头",
+          "kind": "motion",
+          "label": "双手拔下黑色适配器",
+          "brief": "操作者用双手从墙上的插座中拔出黑色的电源适配器。",
+          "start": 2.53,
+          "end": 3.96,
+          "phases": [
+            {
+              "label": "握住并施力拔出",
+              "start": 2.53,
+              "end": 3.5
+            },
+            {
+              "label": "完全脱离插座",
+              "start": 3.5,
+              "end": 3.96
+            }
+          ],
+          "detail": ""
+        },
+        "start_spread": 0.029999999999999805,
+        "end_spread": 0.10000000000000009,
+        "id": "V2"
+      },
+      {
+        "members": [
+          "2.2"
+        ],
+        "votes": 1,
+        "start": 4.0,
+        "end": 7.25,
+        "representative": "2.2",
+        "example": {
+          "actor": "操作者",
+          "activity": "标记电线",
+          "kind": "motion",
+          "label": "撕开胶带包裹电线",
+          "brief": "操作者用双手在绿色接线盒处，将米色胶带缠绕在一根红黑双绞线上。",
+          "start": 4.0,
+          "end": 7.25,
+          "phases": [
+            {
+              "label": "展开胶带贴附于线束",
+              "start": 4.0,
+              "end": 5.5
+            },
+            {
+              "label": "环绕拉扯固定",
+              "start": 5.5,
+              "end": 7.25
+            }
+          ],
+          "detail": ""
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V3"
+      },
+      {
+        "members": [
+          "1.2"
+        ],
+        "votes": 1,
+        "start": 4.0,
+        "end": 9.5,
+        "representative": "1.2",
+        "example": {
+          "actor": "操作者",
+          "activity": "标记电线",
+          "kind": "gesture",
+          "label": "贴胶带标签",
+          "brief": "在控制器的接线端子上给多根彩色电线贴上写有编号的小块米色胶带。",
+          "detail": "双手配合，将带有手写数字（如1、3等）的短条胶带缠绕或粘贴在不同颜色的细导线上。",
+          "start": 4.0,
+          "end": 9.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V4"
+      },
+      {
+        "members": [
+          "3.2"
+        ],
+        "votes": 1,
+        "start": 4.1,
+        "end": 7.1,
+        "representative": "3.2",
+        "example": {
+          "actor": "操作者",
+          "activity": "撕开标签纸",
+          "kind": "motion",
+          "label": "剥离胶带",
+          "brief": "操作者双手捏住贴在绿色接线端子排下方的米色纸质标签的两端并向外用力撕裂。",
+          "detail": "左右手拇指和食指分别固定纸张左右侧，沿中间预设的切口向两边拉伸直至纸张断开成两半。",
+          "start": 4.1,
+          "end": 7.1,
+          "phases": [
+            {
+              "label": "定位抓握",
+              "start": 4.1,
+              "end": 4.8
+            },
+            {
+              "label": "持续撕扯",
+              "start": 4.8,
+              "end": 6.5
+            },
+            {
+              "label": "完全断裂",
+              "start": 6.5,
+              "end": 7.1
+            }
+          ]
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V5"
+      },
+      {
+        "members": [
+          "3.3"
+        ],
+        "votes": 1,
+        "start": 7.3,
+        "end": 9.4,
+        "representative": "3.3",
+        "example": {
+          "actor": "操作者",
+          "activity": "解开电线束缚",
+          "kind": "motion",
+          "label": "移除包裹物",
+          "brief": "操作者双手配合将多股彩色细导线从已破损的米色标签纸及外层保护套中抽离出来。",
+          "detail": "左手托住线缆根部，右手逐根拨开红、白、绿等颜色的线芯使其摆脱残存纸片的缠绕限制。",
+          "start": 7.3,
+          "end": 9.4,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V6"
+      },
+      {
+        "members": [
+          "1.3"
+        ],
+        "votes": 1,
+        "start": 9.5,
+        "end": 11.0,
+        "representative": "1.3",
+        "example": {
+          "actor": "操作者",
+          "activity": "紧固螺丝",
+          "kind": "motion",
+          "label": "拧动螺丝刀",
+          "brief": "使用透明柄螺丝刀拧紧底部端子排上的固定螺丝。",
+          "detail": "右手握持螺丝刀手柄进行顺时针旋转施力，左手辅助稳定机身或导线位置。",
+          "start": 9.5,
+          "end": 11.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V7"
+      },
+      {
+        "members": [
+          "2.3"
+        ],
+        "votes": 1,
+        "start": 9.56,
+        "end": 11.678333,
+        "representative": "2.3",
+        "example": {
+          "actor": "操作者",
+          "activity": "拆卸旧设备",
+          "kind": "motion",
+          "label": "拧松螺丝取下盖板",
+          "brief": "操作者使用透明手柄螺丝刀逆时针旋转松开螺丝，随后用手取下一块黄色塑料面板。",
+          "start": 9.56,
+          "end": 11.678333,
+          "phases": [
+            {
+              "label": "握持工具对准卡扣位",
+              "start": 9.56,
+              "end": 10.5
+            },
+            {
+              "label": "持续转动释放紧固件",
+              "start": 10.5,
+              "end": 11.2
+            },
+            {
+              "label": "移除部件露出内部结构",
+              "start": 11.2,
+              "end": 11.68
+            }
+          ],
+          "detail": ""
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V8"
+      },
+      {
+        "members": [
+          "3.4"
+        ],
+        "votes": 1,
+        "start": 9.6,
+        "end": 11.0,
+        "representative": "3.4",
+        "example": {
+          "actor": "操作者",
+          "activity": "旋紧螺丝",
+          "kind": "motion",
+          "label": "拧紧螺钉",
+          "brief": "操作者使用透明手柄的一字螺丝刀顺时针旋转设备面板上的固定螺丝。",
+          "detail": "右手握持螺丝刀柄部施加扭矩，刀头嵌入螺丝槽口进行圆周转动以紧固部件。",
+          "start": 9.6,
+          "end": 11.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V9"
+      },
+      {
+        "members": [
+          "3.5"
+        ],
+        "votes": 1,
+        "start": 11.2,
+        "end": 11.6,
+        "representative": "3.5",
+        "example": {
+          "actor": "操作者",
+          "activity": "安装外壳盖板",
+          "kind": "motion",
+          "label": "扣合盖子",
+          "brief": "操作者双手持黄色塑料外壳对准底座位置并将其推压到位完成组装。",
+          "detail": "两手扶住壳体左右边框向下平移贴合墙面基座，确保卡扣结构咬合紧密。",
+          "start": 11.2,
+          "end": 11.6,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V10"
+      }
+    ],
+    "audio": [
+      {
+        "members": [
+          "1.0",
+          "3.0"
+        ],
+        "votes": 2,
+        "start": 0.0,
+        "end": 2.1399999999999997,
+        "representative": "3.0",
+        "example": {
+          "actor": "男声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "男声旁白讲解操作",
+          "text": "Use these later when you program the new timer.",
+          "start": 0.0,
+          "end": 1.92
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.43999999999999995,
+        "id": "A1"
+      },
+      {
+        "members": [
+          "2.1"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 11.52,
+        "representative": "2.1",
+        "example": {
+          "actor": "背景音乐",
+          "kind": "music",
+          "layer": "background",
+          "label": "轻快的电子背景音乐",
+          "text": "轻快的电子背景音乐",
+          "start": 0.0,
+          "end": 11.52
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A2"
+      },
+      {
+        "members": [
+          "2.0"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 11.6,
+        "representative": "2.0",
+        "example": {
+          "actor": "男声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "男声旁白讲解步骤",
+          "text": "use these later when you program the new timer. Next, unplug the power and label each sprinkler wire with a small piece of tape. Then disconnect the wires. Remove the mounting screws and take the old",
+          "start": 0.0,
+          "end": 11.6
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A3"
+      },
+      {
+        "members": [
+          "1.1"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 11.64,
+        "representative": "1.1",
+        "example": {
+          "actor": "轻快的器乐背景音乐",
+          "kind": "music",
+          "layer": "background",
+          "text": "",
+          "start": 0.0,
+          "end": 11.64,
+          "label": ""
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A4"
+      },
+      {
+        "members": [
+          "3.1"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 11.64,
+        "representative": "3.1",
+        "example": {
+          "actor": "轻快的电子背景音乐",
+          "kind": "music",
+          "layer": "background",
+          "label": "持续的轻快电子背景音乐",
+          "text": "轻快的电子背景音乐",
+          "start": 0.0,
+          "end": 11.64
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A5"
+      },
+      {
+        "members": [
+          "1.2",
+          "3.2"
+        ],
+        "votes": 2,
+        "start": 3.0,
+        "end": 7.52,
+        "representative": "1.2",
+        "example": {
+          "actor": "男声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "Next, unplug the power and label each sprinkler wire with a small piece of tape.",
+          "start": 2.92,
+          "end": 7.52,
+          "label": "Next, unplug the power and label each sprinkler wire with a small piece of tape."
+        },
+        "start_spread": 0.16000000000000014,
+        "end_spread": 0.0,
+        "id": "A6"
+      },
+      {
+        "members": [
+          "1.3",
+          "3.3"
+        ],
+        "votes": 2,
+        "start": 8.14,
+        "end": 9.36,
+        "representative": "3.3",
+        "example": {
+          "actor": "男声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "男声旁白讲解操作",
+          "text": "Then disconnect the wires.",
+          "start": 8.2,
+          "end": 9.44
+        },
+        "start_spread": 0.11999999999999922,
+        "end_spread": 0.16000000000000014,
+        "id": "A7"
+      },
+      {
+        "members": [
+          "1.4",
+          "3.4"
+        ],
+        "votes": 2,
+        "start": 9.98,
+        "end": 11.64,
+        "representative": "1.4",
+        "example": {
+          "actor": "男声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "Remove the mounting screws and take the old",
+          "start": 9.96,
+          "end": 11.64,
+          "label": "Remove the mounting screws and take the old"
+        },
+        "start_spread": 0.03999999999999915,
+        "end_spread": 0.0,
+        "id": "A8"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "visual": "V1",
+      "audio": "A1",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        0.0,
+        2.1399999999999997
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V2",
+      "audio": "A6",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        3.0,
+        3.96
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    }
+  ]
+}

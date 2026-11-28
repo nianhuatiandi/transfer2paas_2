@@ -17,3 +17,7 @@
 | 原有 Humocam M3/S2 素材与结果 | [humocam_m3_s2_contortion](humocam_m3_s2_contortion/) |
 
 归档保留历版 prompt、脚本、模型响应、调研与来源校验清单。模型输出不等于人工 GT，实验计划不等于已完成实验；阅读时以当前方案和结果说明为准。
+
+## Audio-visual benchmark
+
+[Audio-visual benchmark snapshot](av_caption_benchmark/data/README.md)

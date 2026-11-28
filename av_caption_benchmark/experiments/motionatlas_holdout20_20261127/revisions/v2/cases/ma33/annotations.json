@@ -1,0 +1,1164 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma33",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "户外人物与动物",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      15
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-f71ea943-547.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      6.1
+    ],
+    "official_sha256": "e0d9c37f7ea38190d451bf77c4ae46593dac8d658e3af0b9afe720fc1fcd22b4",
+    "clip_sha256": "e0d9c37f7ea38190d451bf77c4ae46593dac8d658e3af0b9afe720fc1fcd22b4",
+    "audio_source": null
+  },
+  "duration_seconds": 6.1,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 6.1,
+      "first_frame": 0,
+      "end_frame_exclusive": 183
+    }
+  ],
+  "input_frames": {
+    "visual": 62
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "单镜头记录一位老人坐在木凳上，右手持锄头，左手与多只小猫互动并抱起其中一只。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "戴黑帽穿蓝衣的老人"
+      },
+      {
+        "id": "S01-A01",
+        "shot_id": "S01",
+        "description": "橘色小猫"
+      },
+      {
+        "id": "S01-A02",
+        "shot_id": "S01",
+        "description": "灰褐色条纹小猫"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 6.07,
+        "description": "老人坐在木凳上，右手握着锄头柄，低头看着脚边的小猫们。"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.4,
+        "description": "老人用左手抚摸地上的橘色小猫，随后将其放下。"
+      },
+      {
+        "id": "S01-E03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 1.4,
+        "end": 2.9,
+        "description": "老人伸出左手将站立的灰褐色条纹小猫抱起。"
+      },
+      {
+        "id": "S01-E04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 2.9,
+        "end": 3.5,
+        "description": "老人将手中的灰褐色条纹小猫放回地面。"
+      },
+      {
+        "id": "S01-E05",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 3.5,
+        "end": 6.07,
+        "description": "老人再次用左手抱起另一只橘色小猫并举起逗弄。"
+      },
+      {
+        "id": "S01-E06",
+        "actor_id": "S01-A01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.4,
+        "description": "橘色小猫在地上被老人抚摸后走动离开。"
+      },
+      {
+        "id": "S01-E07",
+        "actor_id": "S01-A02",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.4,
+        "description": "灰褐色条纹小猫站立在老人腿边向上张望。"
+      },
+      {
+        "id": "S01-E08",
+        "actor_id": "S01-A02",
+        "shot_id": "S01",
+        "start": 1.4,
+        "end": 2.9,
+        "description": "灰褐色条纹小猫被老人抱在半空中挣扎扭动。"
+      },
+      {
+        "id": "S01-E09",
+        "actor_id": "S01-A02",
+        "shot_id": "S01",
+        "start": 2.9,
+        "end": 3.5,
+        "description": "灰褐色条纹小猫落地后向旁边移动。"
+      },
+      {
+        "id": "S01-E10",
+        "actor_id": "S01-A01",
+        "shot_id": "S01",
+        "start": 3.5,
+        "end": 6.07,
+        "description": "橘色小猫站立起来伸出前爪够向老人手中的另一只小猫。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-ACT01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "held_pose",
+        "label": "坐姿持农具",
+        "start": 0.0,
+        "end": 6.07,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          6.0,
+          6.07
+        ],
+        "detail": "老人全程坐在红色木凳上，身体微向前倾，右手始终握着一把长柄锄头的木柄部分，头部低垂注视着下方的小猫。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "老人坐在木凳上，右手握锄头柄，低头看猫。"
+          },
+          {
+            "time": 3.0,
+            "observation": "保持相同坐姿和手部动作。"
+          },
+          {
+            "time": 6.0,
+            "observation": "直到视频结束姿势未变。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "右手"
+        ],
+        "movement_roles": [
+          "支撑",
+          "静止"
+        ],
+        "subphases": [],
+        "brief": "老人坐着拿锄头看猫"
+      },
+      {
+        "id": "S01-ACT02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "抚摸橘猫",
+        "start": 0.0,
+        "end": 1.4,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          1.4,
+          1.5
+        ],
+        "detail": "老人的左手伸向地面，手掌接触并按压橘色小猫的背部进行抚摸，随后手收回，小猫脱离接触。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "左手放在橘猫背上。"
+          },
+          {
+            "time": 0.9,
+            "observation": "手仍在猫身上滑动。"
+          },
+          {
+            "time": 1.4,
+            "observation": "手离开猫背，猫开始走动。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "手离猫",
+            "time": 1.4,
+            "time_range": [
+              1.4,
+              1.5
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手"
+        ],
+        "movement_roles": [
+          "施力",
+          "接触"
+        ],
+        "subphases": [
+          {
+            "label": "按压抚摸",
+            "start": 0.0,
+            "end": 1.4,
+            "detail": "左手持续接触橘猫背部。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "手在猫背上。"
+              },
+              {
+                "time": 1.0,
+                "observation": "手在猫背上。"
+              }
+            ]
+          },
+          {
+            "label": "收手分离",
+            "start": 1.4,
+            "end": 1.5,
+            "detail": "左手抬起，不再接触猫。",
+            "evidence": [
+              {
+                "time": 1.4,
+                "observation": "手刚离开猫身。"
+              }
+            ]
+          }
+        ],
+        "brief": "老人摸了一下地上的橘猫"
+      },
+      {
+        "id": "S01-ACT03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E03",
+        "kind": "motion",
+        "label": "抱起条纹猫",
+        "start": 1.4,
+        "end": 2.9,
+        "start_range": [
+          1.4,
+          1.5
+        ],
+        "end_range": [
+          2.9,
+          3.0
+        ],
+        "detail": "老人左手向下探去，抓住灰褐色条纹小猫的身体两侧，将其从地面提起至半空，期间小猫四肢悬空并扭动。",
+        "evidence": [
+          {
+            "time": 1.5,
+            "observation": "手伸向站立的条纹猫。"
+          },
+          {
+            "time": 2.0,
+            "observation": "猫已被抓在手中离开地面。"
+          },
+          {
+            "time": 2.9,
+            "observation": "猫在空中被老人托着。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抓起瞬间",
+            "time": 1.8,
+            "time_range": [
+              1.7,
+              1.9
+            ]
+          },
+          {
+            "name": "完全离地",
+            "time": 2.0,
+            "time_range": [
+              2.0,
+              2.1
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手"
+        ],
+        "movement_roles": [
+          "抓取",
+          "提升"
+        ],
+        "subphases": [
+          {
+            "label": "伸手抓握",
+            "start": 1.4,
+            "end": 1.8,
+            "detail": "左手靠近并握住条纹猫的腰部/腋下区域。",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "手接近猫。"
+              },
+              {
+                "time": 1.8,
+                "observation": "手握住了猫。"
+              }
+            ]
+          },
+          {
+            "label": "提举悬空",
+            "start": 1.8,
+            "end": 2.9,
+            "detail": "将猫垂直向上提起，使其双脚离地。",
+            "evidence": [
+              {
+                "time": 2.0,
+                "observation": "猫已离地。"
+              },
+              {
+                "time": 2.5,
+                "observation": "猫保持在空中。"
+              }
+            ]
+          }
+        ],
+        "brief": "老人把站着的条纹猫抱了起来"
+      },
+      {
+        "id": "S01-ACT04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E04",
+        "kind": "motion",
+        "label": "放下条纹猫",
+        "start": 2.9,
+        "end": 3.5,
+        "start_range": [
+          2.9,
+          3.0
+        ],
+        "end_range": [
+          3.5,
+          3.6
+        ],
+        "detail": "老人左手带着条纹猫向下移动，直至其四足触地，随后手松开并向右上方撤离去寻找下一目标。",
+        "evidence": [
+          {
+            "time": 2.9,
+            "observation": "手开始下降。"
+          },
+          {
+            "time": 3.2,
+            "observation": "猫脚触地。"
+          },
+          {
+            "time": 3.5,
+            "observation": "手完全放开猫。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "触地",
+            "time": 3.2,
+            "time_range": [
+              3.1,
+              3.3
+            ]
+          },
+          {
+            "name": "松手",
+            "time": 3.5,
+            "time_range": [
+              3.4,
+              3.6
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手"
+        ],
+        "movement_roles": [
+          "下放",
+          "释放"
+        ],
+        "subphases": [
+          {
+            "label": "下移放落",
+            "start": 2.9,
+            "end": 3.2,
+            "detail": "手臂弯曲将猫送至地面高度。",
+            "evidence": [
+              {
+                "time": 2.9,
+                "observation": "猫位置降低。"
+              },
+              {
+                "time": 3.2,
+                "observation": "猫落地。"
+              }
+            ]
+          },
+          {
+            "label": "撤离",
+            "start": 3.2,
+            "end": 3.5,
+            "detail": "手离开猫身转向右侧。",
+            "evidence": [
+              {
+                "time": 3.5,
+                "observation": "手已不在猫身上。"
+              }
+            ]
+          }
+        ],
+        "brief": "老人把条纹猫放回地上"
+      },
+      {
+        "id": "S01-ACT05",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E05",
+        "kind": "motion",
+        "label": "举起橘猫逗弄",
+        "start": 3.5,
+        "end": 6.07,
+        "start_range": [
+          3.5,
+          3.6
+        ],
+        "end_range": [
+          6.0,
+          6.07
+        ],
+        "detail": "老人左手迅速抓起另一只橘色小猫的后颈/背部皮肤，将其高高举起并在胸前晃动，吸引其他小猫注意。",
+        "evidence": [
+          {
+            "time": 3.5,
+            "observation": "手伸向新的橘猫。"
+          },
+          {
+            "time": 4.0,
+            "observation": "新橘猫被抓起离地。"
+          },
+          {
+            "time": 5.0,
+            "observation": "猫被举在老人胸口高度。"
+          },
+          {
+            "time": 6.0,
+            "observation": "依然抓着这只猫。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抓起新猫",
+            "time": 3.8,
+            "time_range": [
+              3.7,
+              3.9
+            ]
+          },
+          {
+            "name": "高举展示",
+            "time": 4.5,
+            "time_range": [
+              4.4,
+              4.6
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手"
+        ],
+        "movement_roles": [
+          "抓取",
+          "悬停"
+        ],
+        "subphases": [
+          {
+            "label": "快速抓取",
+            "start": 3.5,
+            "end": 3.8,
+            "detail": "手准确抓住第二只橘猫的颈部后方。",
+            "evidence": [
+              {
+                "time": 3.5,
+                "observation": "手接近目标。"
+              },
+              {
+                "time": 3.8,
+                "observation": "已抓住。"
+              }
+            ]
+          },
+          {
+            "label": "举高定格",
+            "start": 3.8,
+            "end": 6.07,
+            "detail": "将猫提至视线平行或略低处并保持抓握状态。",
+            "evidence": [
+              {
+                "time": 4.0,
+                "observation": "猫在空中。"
+              },
+              {
+                "time": 6.0,
+                "observation": "猫仍在空中。"
+              }
+            ]
+          }
+        ],
+        "brief": "老人又抱起一只橘猫举起来玩"
+      },
+      {
+        "id": "S01-ACT06",
+        "actor_id": "S01-A01",
+        "shot_id": "S01",
+        "execution_id": "S01-E06",
+        "kind": "motion",
+        "label": "受抚后走开",
+        "start": 0.0,
+        "end": 1.4,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          1.4,
+          1.5
+        ],
+        "detail": "第一只橘猫起初趴伏接受抚摸，当老人的手在约1.4秒移开后，它起身向画面左下方迈步离开中心区域。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "猫趴着被摸。"
+          },
+          {
+            "time": 1.4,
+            "observation": "手离开，猫抬头准备动。"
+          },
+          {
+            "time": 1.5,
+            "observation": "猫已开始向左走。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "起身",
+            "time": 1.4,
+            "time_range": [
+              1.4,
+              1.5
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "四肢",
+          "头部"
+        ],
+        "movement_roles": [
+          "被动承受",
+          "主动位移"
+        ],
+        "subphases": [
+          {
+            "label": "静卧受抚",
+            "start": 0.0,
+            "end": 1.4,
+            "detail": "身体贴地，无明显反抗动作。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "趴在地上。"
+              },
+              {
+                "time": 1.0,
+                "observation": "仍趴着。"
+              }
+            ]
+          },
+          {
+            "label": "转身离场",
+            "start": 1.4,
+            "end": 1.5,
+            "detail": "手脚发力改变姿态并移动方向。",
+            "evidence": [
+              {
+                "time": 1.4,
+                "observation": "刚开始动。"
+              }
+            ]
+          }
+        ],
+        "brief": "第一只橘猫被摸完后走开了"
+      },
+      {
+        "id": "S01-ACT07",
+        "actor_id": "S01-A02",
+        "shot_id": "S01",
+        "execution_id": "S01-E07",
+        "kind": "held_pose",
+        "label": "直立乞食状",
+        "start": 0.0,
+        "end": 1.4,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          1.4,
+          1.5
+        ],
+        "detail": "灰褐色条纹小猫以后肢支撑站立在前爪搭在老人裤腿附近的位置，仰头注视老人面部或手部，保持该姿态直到被抱起。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "猫两脚站立望着人。"
+          },
+          {
+            "time": 1.0,
+            "observation": "维持站立仰望姿势。"
+          },
+          {
+            "time": 1.4,
+            "observation": "即将被手碰到时仍站立。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "后肢",
+          "前肢",
+          "颈部"
+        ],
+        "movement_roles": [
+          "支撑",
+          "伸展"
+        ],
+        "subphases": [],
+        "brief": "条纹猫一直站着看老人"
+      },
+      {
+        "id": "S01-ACT08",
+        "actor_id": "S01-A02",
+        "shot_id": "S01",
+        "execution_id": "S01-E08",
+        "kind": "motion",
+        "label": "空中挣扎",
+        "start": 1.4,
+        "end": 2.9,
+        "start_range": [
+          1.4,
+          1.5
+        ],
+        "end_range": [
+          2.9,
+          3.0
+        ],
+        "detail": "被老人单手拎起后，条纹猫的四肢在空中乱蹬，身体左右扭转试图摆脱控制或寻找落脚点。",
+        "evidence": [
+          {
+            "time": 1.5,
+            "observation": "刚离地就开始扭动。"
+          },
+          {
+            "time": 2.0,
+            "observation": "四肢张开扑腾。"
+          },
+          {
+            "time": 2.5,
+            "observation": "继续扭动身体。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "剧烈扭动",
+            "time": 2.0,
+            "time_range": [
+              1.9,
+              2.1
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "四肢",
+          "躯干"
+        ],
+        "movement_roles": [
+          "抵抗",
+          "失衡"
+        ],
+        "subphases": [
+          {
+            "label": "离地反应",
+            "start": 1.4,
+            "end": 1.8,
+            "detail": "突然失重导致本能挥爪。",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "爪子挥舞。"
+              }
+            ]
+          },
+          {
+            "label": "持续扑腾",
+            "start": 1.8,
+            "end": 2.9,
+            "detail": "在被持有期间不断调整重心失败。",
+            "evidence": [
+              {
+                "time": 2.5,
+                "observation": "还在动。"
+              }
+            ]
+          }
+        ],
+        "brief": "条纹猫被抱起来时在空气中挣扎"
+      },
+      {
+        "id": "S01-ACT09",
+        "actor_id": "S01-A02",
+        "shot_id": "S01",
+        "execution_id": "S01-E09",
+        "kind": "motion",
+        "label": "落地散开",
+        "start": 2.9,
+        "end": 3.5,
+        "start_range": [
+          2.9,
+          3.0
+        ],
+        "end_range": [
+          3.5,
+          3.6
+        ],
+        "detail": "条纹猫被放回地面后，立即恢复四足行走能力，并向画面左侧小跑几步与其他猫汇合或避让。",
+        "evidence": [
+          {
+            "time": 2.9,
+            "observation": "脚快碰到土了。"
+          },
+          {
+            "time": 3.2,
+            "observation": "站稳并开始走。"
+          },
+          {
+            "time": 3.5,
+            "observation": "已经走出一段距离。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "重新承重",
+            "time": 3.2,
+            "time_range": [
+              3.1,
+              3.3
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "四肢"
+        ],
+        "movement_roles": [
+          "缓冲",
+          "逃逸"
+        ],
+        "subphases": [
+          {
+            "label": "触地稳定",
+            "start": 2.9,
+            "end": 3.2,
+            "detail": "膝盖弯曲吸收下落冲击。",
+            "evidence": [
+              {
+                "time": 3.0,
+                "observation": "正在落下。"
+              },
+              {
+                "time": 3.2,
+                "observation": "踩实地面。"
+              }
+            ]
+          },
+          {
+            "label": "快步离开",
+            "start": 3.2,
+            "end": 3.5,
+            "detail": "加速跑向安全地带。",
+            "evidence": [
+              {
+                "time": 3.5,
+                "observation": "远离老人腿部。"
+              }
+            ]
+          }
+        ],
+        "brief": "条纹猫落地后跑开了"
+      },
+      {
+        "id": "S01-ACT10",
+        "actor_id": "S01-A01",
+        "shot_id": "S01",
+        "execution_id": "S01-E10",
+        "kind": "motion",
+        "label": "跃起够同伴",
+        "start": 3.5,
+        "end": 6.07,
+        "start_range": [
+          3.5,
+          3.6
+        ],
+        "end_range": [
+          6.0,
+          6.07
+        ],
+        "detail": "留在地面的橘猫看到同伴被举起，后腿用力蹬地使前身腾空，双爪反复拍打悬挂在空中的那只猫。",
+        "evidence": [
+          {
+            "time": 3.5,
+            "observation": "橘猫注意到空中的动静。"
+          },
+          {
+            "time": 4.0,
+            "observation": "跳起来伸爪子。"
+          },
+          {
+            "time": 5.0,
+            "observation": "多次尝试触碰对方。"
+          },
+          {
+            "time": 6.0,
+            "observation": "仍在跳跃攻击。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "首次起跳",
+            "time": 4.0,
+            "time_range": [
+              3.9,
+              4.1
+            ]
+          },
+          {
+            "name": "连续扑击",
+            "time": 5.0,
+            "time_range": [
+              4.8,
+              5.2
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "后肢",
+          "前肢"
+        ],
+        "movement_roles": [
+          "弹射",
+          "打击"
+        ],
+        "subphases": [
+          {
+            "label": "蓄势观察",
+            "start": 3.5,
+            "end": 3.9,
+            "detail": "压低身子瞄准高处目标。",
+            "evidence": [
+              {
+                "time": 3.5,
+                "observation": "蹲伏状态。"
+              }
+            ]
+          },
+          {
+            "label": "爆发跳跃",
+            "start": 3.9,
+            "end": 6.07,
+            "detail": "利用弹力一次次冲向半空的目标。",
+            "evidence": [
+              {
+                "time": 4.0,
+                "observation": "飞起来了。"
+              },
+              {
+                "time": 5.5,
+                "observation": "还在跳。"
+              }
+            ]
+          }
+        ],
+        "brief": "地上的橘猫跳起来抓被抱起的猫"
+      }
+    ],
+    "uncertainties": [
+      "无法确定老人手中具体是哪几只不同的猫（可能有重复计数），因为花色相似且移动较快。",
+      "小猫的具体品种未知，仅按外观描述颜色花纹。"
+    ],
+    "motion_tracks": [
+      {
+        "context": "老人位于画面中央，坐在一张低矮的木凳上。他头戴黑色帽子，身穿深蓝色长袖上衣和黑色长裤，右手握着一把锄头放在身侧的地面上。他的左腿弯曲踩地，右腿屈膝抬起，几只小猫聚集在他的脚边和腿上。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 42,
+            "caption": "老人低头注视着脚边的橘色小猫，伸出左手将其抓起并轻轻放下。随后，一只灰色条纹小猫站立起来扒住老人的右腿，老人收回左手准备去抓这只小猫。",
+            "start": 0.0,
+            "end": 1.4,
+            "action_ids": [
+              "S01-ACT01",
+              "S01-ACT02",
+              "S01-ACT03"
+            ]
+          },
+          {
+            "from_frame": 48,
+            "to_frame": 90,
+            "caption": "老人用左手将那只灰色条纹小猫抱起，托在胸前端详。在此期间，他的面部表情逐渐舒展，嘴角上扬露出笑容，视线一直跟随着手中的小猫。",
+            "start": 1.6,
+            "end": 3.0,
+            "action_ids": [
+              "S01-ACT01",
+              "S01-ACT03",
+              "S01-ACT04"
+            ]
+          },
+          {
+            "from_frame": 93,
+            "to_frame": 117,
+            "caption": "老人将灰色条纹小猫放回地面。紧接着，另一只橘色小猫跳起试图够向老人，老人顺势伸出左手再次抓住了一只橘色小猫。",
+            "reported_frame_range": [
+              96,
+              117
+            ],
+            "start": 3.1,
+            "end": 3.9,
+            "action_ids": [
+              "S01-ACT01",
+              "S01-ACT04",
+              "S01-ACT05"
+            ]
+          },
+          {
+            "from_frame": 123,
+            "to_frame": 182,
+            "caption": "老人左手提着新抓起的橘色小猫悬在半空，逗弄着下方不断跳跃伸爪的另一只橘色小猫。老人全程面带明显的笑容注视着它们互动，直到视频结束。",
+            "start": 4.1,
+            "end": 6.066666666666666,
+            "action_ids": [
+              "S01-ACT01",
+              "S01-ACT05"
+            ]
+          }
+        ],
+        "camera": "固定机位拍摄，无明显的镜头运动或景别切换。画面始终保持中全景构图，完整记录了老人与多只小猫互动的全过程。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "戴黑帽穿蓝衣的老人"
+      },
+      {
+        "context": "视频开始时，橘色小猫位于画面中下方偏右的位置，处于蹲坐在木凳上的老人身前。它起初被老人的左手握住后颈/背部悬空提起，随后落地并在泥地上活动，周围有其他几只小猫（灰色、浅棕色等）围绕在老人脚边和腿旁。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 18,
+            "caption": "这只橘色小猫最初被老人的左手抓住背部悬在半空，四肢在空中无助地划动。随着老人手臂下放，它的爪子触碰到地面并完全站立起来，此时另一只体型相似的橘猫正从左侧跑过。",
+            "start": 0.0,
+            "end": 0.6,
+            "action_ids": [
+              "S01-ACT06"
+            ]
+          },
+          {
+            "from_frame": 24,
+            "to_frame": 90,
+            "caption": "落地的橘色小猫停留在老人两腿之间的区域，大部分时间背对或侧对镜头低头嗅探泥土。期间有一只浅棕色条纹小猫多次试图攀爬老人的黑裤腿，而这只橘猫则主要在下方徘徊，偶尔抬头张望但并未参与攀爬。",
+            "start": 0.8,
+            "end": 3.0,
+            "action_ids": [
+              "S01-ACT06"
+            ]
+          },
+          {
+            "from_frame": 93,
+            "to_frame": 135,
+            "caption": "当那只浅棕色条纹小猫成功爬上老人的大腿并被手扶住时，地上的橘色小猫表现出明显的兴趣。它以后肢支撑身体直立起来，前爪高高举起伸向老人手中的同伴，呈现出想要加入互动的姿态。",
+            "reported_frame_range": [
+              96,
+              135
+            ],
+            "start": 3.1,
+            "end": 4.5,
+            "action_ids": [
+              "S01-ACT10"
+            ]
+          },
+          {
+            "from_frame": 141,
+            "to_frame": 182,
+            "caption": "老人将原本拿着的浅棕色小猫放下，转而用左手抓住了这只一直仰头期待的橘色小猫的后颈。橘猫随即被提离地面悬在空中，四肢自然下垂微曲，成为此刻老人手中唯一的互动对象。",
+            "start": 4.7,
+            "end": 6.066666666666666,
+            "action_ids": [
+              "S01-ACT10"
+            ]
+          }
+        ],
+        "camera": "采用固定的中景平视机位拍摄，全程无推拉摇移。画面稳定地框取了坐在户外的老人及其腿部周围的空地，清晰记录了小猫在地面与空中的位置转换。",
+        "actor_id": "S01-A01",
+        "shot_id": "S01",
+        "identity": "橘色小猫"
+      },
+      {
+        "context": "视频开始时，灰褐色条纹小猫位于画面中下部偏左的位置，处于蹲坐的老人右腿前方。它背对镜头，头部向上仰起，两只前爪搭在老人的黑色裤腿上，身体呈直立攀爬的姿态。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 42,
+            "caption": "这只灰褐色条纹小猫持续保持直立的攀爬姿态，前爪紧紧扒住老人的右侧大腿裤管，后肢蹬地支撑着整个身体的重量。它的头部一直高高仰起，视线锁定在老人身上，身体随着轻微的扭动而小幅度晃动。",
+            "start": 0.0,
+            "end": 1.4,
+            "action_ids": [
+              "S01-ACT07",
+              "S01-ACT08"
+            ]
+          },
+          {
+            "from_frame": 48,
+            "to_frame": 90,
+            "caption": "老人的左手伸向这只小猫并将其抱起，小猫随之离开地面，被托举在半空中。在被抱起的这段时间里，小猫的四肢在空中自然垂落并伴有轻微的扑腾动作，头部依然保持着朝向老人面部的仰视状态。",
+            "start": 1.6,
+            "end": 3.0,
+            "action_ids": [
+              "S01-ACT08",
+              "S01-ACT09"
+            ]
+          },
+          {
+            "from_frame": 93,
+            "to_frame": 105,
+            "caption": "老人将手中的小猫向下放回地面，小猫的后肢首先触地站稳。落地后，它立刻再次抬起上半身，伸出前爪重新搭在老人的右腿裤管上，恢复了最初的直立仰望姿态。",
+            "start": 3.1,
+            "end": 3.5,
+            "action_ids": [
+              "S01-ACT09"
+            ]
+          },
+          {
+            "from_frame": 111,
+            "to_frame": 182,
+            "caption": "这只灰褐色条纹小猫完全放弃了之前的攀爬动作，四肢平稳地落在泥土上。它将身体转向画面的左侧，不再关注老人或另外两只橘猫的活动，而是低头在地面上缓慢走动探索，直到视频结束。",
+            "start": 3.7,
+            "end": 6.066666666666666,
+            "action_ids": []
+          }
+        ],
+        "camera": "这是一个固定的全景镜头，机位没有任何推拉摇移。画面稳定地记录了老人与几只小猫互动的全过程，背景的乡村环境元素始终保持不变。",
+        "actor_id": "S01-A02",
+        "shot_id": "S01",
+        "identity": "灰褐色条纹小猫"
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "无法确定老人手中具体是哪几只不同的猫（可能有重复计数），因为花色相似且移动较快。",
+    "小猫的具体品种未知，仅按外观描述颜色花纹。",
+    "S01-ACT02　Invalid interval: None",
+    "S01-ACT06　Invalid interval: None"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "f1270448e9aff48414e08a24259bcbe4ca6a0baa89107efcf1a17f54b87c10fc",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

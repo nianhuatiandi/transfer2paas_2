@@ -1,0 +1,618 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma50",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "桌上彩色物件",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      67
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-c5839074-689.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      14.68
+    ],
+    "official_sha256": "966ec1ee2f9db593092d4da916fbc2a67b9ed7dd5927332bb8a79c24cbe9b854",
+    "clip_sha256": "966ec1ee2f9db593092d4da916fbc2a67b9ed7dd5927332bb8a79c24cbe9b854",
+    "audio_source": null
+  },
+  "duration_seconds": 14.68,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 14.68,
+      "first_frame": 0,
+      "end_frame_exclusive": 734
+    }
+  ],
+  "input_frames": {
+    "visual": 148
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了一名女孩在桌面上玩彩色木制积木玩具，背景中有其他模糊的人影。主要动作集中在前景女孩的右手操作积木上。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "前景中的长发女孩，身穿浅色上衣和粉色背带裤，正在桌前玩耍"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 2.3,
+        "description": "女孩用右手拿起红色圆环并套入木柱"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 2.4,
+        "end": 5.2,
+        "description": "女孩用右手拿起绿色圆环并套入木柱"
+      },
+      {
+        "id": "S01-E03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 5.3,
+        "end": 6.7,
+        "description": "女孩用右手拿起蓝色圆环并套入木柱"
+      },
+      {
+        "id": "S01-E04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 6.8,
+        "end": 9.4,
+        "description": "女孩用右手拿起黄色圆环并尝试将其套入木柱"
+      },
+      {
+        "id": "S01-E05",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 9.5,
+        "end": 13.0,
+        "description": "女孩双手扶住积木底座并向右平移调整位置"
+      },
+      {
+        "id": "S01-E06",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 13.1,
+        "end": 14.66,
+        "description": "女孩伸出右手越过积木去抓取右侧的粉色形状块"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "套入红色圆环",
+        "start": 0.0,
+        "end": 2.3,
+        "start_range": [
+          0.0,
+          0.2
+        ],
+        "end_range": [
+          2.1,
+          2.3
+        ],
+        "detail": "女孩右手从桌面右侧捏起一个红色圆环，向左移动至中央的木柱上方，对准孔洞向下放置，使其叠放在已有的蓝黄绿三层积木之上。",
+        "evidence": [
+          {
+            "time": 0.7,
+            "observation": "右手抓起红色圆环并开始向左移动"
+          },
+          {
+            "time": 1.5,
+            "observation": "手持红色圆环悬停在木柱正上方"
+          },
+          {
+            "time": 2.2,
+            "observation": "红色圆环成功套入木柱，手松开"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抓取红环",
+            "time": 0.7,
+            "time_range": [
+              0.6,
+              0.8
+            ]
+          },
+          {
+            "name": "对准木柱",
+            "time": 1.5,
+            "time_range": [
+              1.4,
+              1.6
+            ]
+          },
+          {
+            "name": "放下红环",
+            "time": 2.2,
+            "time_range": [
+              2.1,
+              2.3
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "手臂伸展",
+          "手指抓握"
+        ],
+        "subphases": [
+          {
+            "label": "拿取圆环",
+            "start": 0.0,
+            "end": 0.7,
+            "detail": "右手伸向画面右侧，捏起平放的红色圆环。",
+            "evidence": [
+              {
+                "time": 0.7,
+                "observation": "手中已握住红色圆环"
+              }
+            ]
+          },
+          {
+            "label": "定位与放置",
+            "start": 0.8,
+            "end": 2.3,
+            "detail": "将红色圆环移至木柱上方，垂直向下套入并松手。",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "圆环位于木柱顶端准备下落"
+              },
+              {
+                "time": 2.2,
+                "observation": "圆环平稳落在下层积木上"
+              }
+            ]
+          }
+        ],
+        "brief": "女孩用右手把红色圆环套进积木木柱里。"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "套入绿色圆环",
+        "start": 2.4,
+        "end": 5.2,
+        "start_range": [
+          2.4,
+          2.6
+        ],
+        "end_range": [
+          5.0,
+          5.2
+        ],
+        "detail": "女孩右手再次伸向桌面右侧，拿起一个绿色圆环，移动到木柱上方后向下放置，使其叠在刚放好的红色圆环上面。",
+        "evidence": [
+          {
+            "time": 2.9,
+            "observation": "右手捏着绿色圆环离开桌面"
+          },
+          {
+            "time": 4.5,
+            "observation": "绿色圆环被放置在红色圆环上方"
+          },
+          {
+            "time": 5.2,
+            "observation": "手完全松开绿色圆环"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抓取绿环",
+            "time": 2.9,
+            "time_range": [
+              2.8,
+              3.0
+            ]
+          },
+          {
+            "name": "放下绿环",
+            "time": 4.5,
+            "time_range": [
+              4.4,
+              4.6
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "手臂伸展",
+          "手指抓握"
+        ],
+        "subphases": [
+          {
+            "label": "拿取圆环",
+            "start": 2.4,
+            "end": 3.0,
+            "detail": "右手向右伸出，抓起桌上的绿色圆环。",
+            "evidence": [
+              {
+                "time": 2.9,
+                "observation": "手握绿色圆环抬起"
+              }
+            ]
+          },
+          {
+            "label": "定位与放置",
+            "start": 3.1,
+            "end": 5.2,
+            "detail": "将绿色圆环移至木柱处，小心地套在红色圆环之上。",
+            "evidence": [
+              {
+                "time": 4.5,
+                "observation": "绿环贴合在红环顶部"
+              }
+            ]
+          }
+        ],
+        "brief": "女孩用右手把绿色圆环套进积木木柱里。"
+      },
+      {
+        "id": "S01-A03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E03",
+        "kind": "motion",
+        "label": "套入蓝色圆环",
+        "start": 5.3,
+        "end": 6.7,
+        "start_range": [
+          5.3,
+          5.5
+        ],
+        "end_range": [
+          6.5,
+          6.7
+        ],
+        "detail": "女孩右手迅速从右侧拿起蓝色圆环，直接移到木柱上方并落下，叠放在绿色圆环之上。",
+        "evidence": [
+          {
+            "time": 5.8,
+            "observation": "右手拿着蓝色圆环靠近木柱"
+          },
+          {
+            "time": 6.4,
+            "observation": "蓝色圆环被套入木柱"
+          },
+          {
+            "time": 6.7,
+            "observation": "手离开蓝色圆环"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "放下蓝环",
+            "time": 6.4,
+            "time_range": [
+              6.3,
+              6.5
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "手臂伸展",
+          "手指抓握"
+        ],
+        "subphases": [
+          {
+            "label": "快速放置",
+            "start": 5.3,
+            "end": 6.7,
+            "detail": "连贯地完成抓取蓝色圆环并将其套入木柱的动作。",
+            "evidence": [
+              {
+                "time": 5.8,
+                "observation": "持蓝环移动中"
+              },
+              {
+                "time": 6.4,
+                "observation": "蓝环落位"
+              }
+            ]
+          }
+        ],
+        "brief": "女孩用右手把蓝色圆环套进积木木柱里。"
+      },
+      {
+        "id": "S01-A04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E04",
+        "kind": "motion",
+        "label": "尝试套入黄色圆环",
+        "start": 6.8,
+        "end": 9.4,
+        "start_range": [
+          6.8,
+          7.0
+        ],
+        "end_range": [
+          9.2,
+          9.4
+        ],
+        "detail": "女孩右手拿起最右侧的黄色圆环，移至木柱上方试图向下套入。但在接触瞬间（约7.6秒），黄色圆环未能顺利穿过，而是倾斜卡在下方蓝色圆环的边缘，随后手将其移开。",
+        "evidence": [
+          {
+            "time": 7.2,
+            "observation": "右手抓起黄色圆环"
+          },
+          {
+            "time": 7.6,
+            "observation": "黄色圆环倾斜搭在蓝色圆环上，未完全套入"
+          },
+          {
+            "time": 8.5,
+            "observation": "手带着黄色圆环离开木柱区域"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抓取黄环",
+            "time": 7.2,
+            "time_range": [
+              7.1,
+              7.3
+            ]
+          },
+          {
+            "name": "卡住/失败",
+            "time": 7.6,
+            "time_range": [
+              7.5,
+              7.7
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "手臂伸展",
+          "手指抓握"
+        ],
+        "subphases": [
+          {
+            "label": "拿取与尝试",
+            "start": 6.8,
+            "end": 7.6,
+            "detail": "拿起黄色圆环并试着往木柱上套，但角度不对导致卡住。",
+            "evidence": [
+              {
+                "time": 7.6,
+                "observation": "黄环斜靠在塔顶边缘"
+              }
+            ]
+          },
+          {
+            "label": "撤回",
+            "start": 7.7,
+            "end": 9.4,
+            "detail": "发现没套进去后，手把黄色圆环拿走。",
+            "evidence": [
+              {
+                "time": 8.5,
+                "observation": "手移出画面中心"
+              }
+            ]
+          }
+        ],
+        "brief": "女孩用右手拿黄色圆环尝试套入木柱，但中途卡住未能成功。"
+      },
+      {
+        "id": "S01-A05",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E05",
+        "kind": "motion",
+        "label": "平移积木底座",
+        "start": 9.5,
+        "end": 13.0,
+        "start_range": [
+          9.5,
+          9.7
+        ],
+        "end_range": [
+          12.8,
+          13.0
+        ],
+        "detail": "女孩双手（或单手辅助）按住木质底座的两侧，将整个积木结构沿着桌面向右侧水平滑动了一段距离，改变了其在画面中的位置。",
+        "evidence": [
+          {
+            "time": 10.5,
+            "observation": "手掌覆盖在底座边缘开始发力"
+          },
+          {
+            "time": 12.0,
+            "observation": "底座明显向右发生了位移"
+          },
+          {
+            "time": 13.0,
+            "observation": "手松开底座，停止移动"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "开始推动",
+            "time": 10.5,
+            "time_range": [
+              10.4,
+              10.6
+            ]
+          },
+          {
+            "name": "结束推动",
+            "time": 13.0,
+            "time_range": [
+              12.9,
+              13.1
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "右手"
+        ],
+        "movement_roles": [
+          "推挤物体"
+        ],
+        "subphases": [
+          {
+            "label": "按压与滑动",
+            "start": 9.5,
+            "end": 13.0,
+            "detail": "手部接触底座并持续施加水平推力直到目标位置。",
+            "evidence": [
+              {
+                "time": 11.5,
+                "observation": "底座处于滑动过程中"
+              }
+            ]
+          }
+        ],
+        "brief": "女孩用手推着积木底座在桌面上向右平移。"
+      },
+      {
+        "id": "S01-A06",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E06",
+        "kind": "motion",
+        "label": "抓取粉色形状块",
+        "start": 13.1,
+        "end": 14.66,
+        "start_range": [
+          13.1,
+          13.3
+        ],
+        "end_range": [
+          14.5,
+          14.66
+        ],
+        "detail": "调整完位置后，女孩右手继续向右延伸，越过了刚才移动的积木塔，抓住了更远处的一个粉色长方形/三角形组合块。",
+        "evidence": [
+          {
+            "time": 13.5,
+            "observation": "手臂伸直越过积木塔"
+          },
+          {
+            "time": 14.2,
+            "observation": "手指触碰到粉色块"
+          },
+          {
+            "time": 14.66,
+            "observation": "紧紧握住粉色块"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "触碰新目标",
+            "time": 14.2,
+            "time_range": [
+              14.1,
+              14.3
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "手臂伸展",
+          "手指抓握"
+        ],
+        "subphases": [
+          {
+            "label": "远距离抓取",
+            "start": 13.1,
+            "end": 14.66,
+            "detail": "手臂大幅度伸展以够到较远的玩具部件。",
+            "evidence": [
+              {
+                "time": 14.6,
+                "observation": "手已稳固抓住粉色块"
+              }
+            ]
+          }
+        ],
+        "brief": "女孩伸手越过积木去抓右边的粉色形状块。"
+      }
+    ],
+    "uncertainties": [
+      "S01-A04中黄色圆环的具体后续去向因手部遮挡不完全清晰，仅确认为未成功套入并被移走。"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "S01-A04中黄色圆环的具体后续去向因手部遮挡不完全清晰，仅确认为未成功套入并被移走。"
+  ]
+}

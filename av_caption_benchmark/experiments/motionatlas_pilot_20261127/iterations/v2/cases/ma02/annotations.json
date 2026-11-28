@@ -1,0 +1,462 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma02",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "双人排球练习",
+    "sample_ids": [
+      59
+    ],
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "球网两侧各有一名运动员参与。",
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchQA-21a811b4-297b8ba2-2b78-4fd2-ab7a-098f63d6b2f0_0_3.mp4",
+    "local_original": "MotionBenchQA-21a811b4-297b8ba2-2b78-4fd2-ab7a-098f63d6b2f0_0_3.mp4",
+    "source_window_seconds": [
+      0,
+      3.0
+    ],
+    "official_sha256": "1744525bdb2bfb7d53a417549f2ef8b4b34e0fa62ff0237d163248ee59fe1fc3",
+    "clip_sha256": "1744525bdb2bfb7d53a417549f2ef8b4b34e0fa62ff0237d163248ee59fe1fc3",
+    "audio_source": null,
+    "upstream_video_frames_checked": 90
+  },
+  "duration_seconds": 3.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 3.0,
+      "first_frame": 0,
+      "end_frame_exclusive": 90
+    }
+  ],
+  "input_frames": {
+    "visual": 31
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了两名男子在室内排球场进行排球练习，一人传球，另一人扣球。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿黑色无袖上衣和蓝色短裤的男子"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "穿黄色短袖上衣和黑色短裤的男子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "SE01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 0.6,
+        "description": "黑衣男子双手将球向上托起传给黄衣男子"
+      },
+      {
+        "id": "SE02",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 1.5,
+        "end": 2.4,
+        "description": "黄衣男子起跳并单手将排球扣过网"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "SE01",
+        "kind": "motion",
+        "label": "托球",
+        "start": 0.0,
+        "end": 0.6,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          0.5,
+          0.6
+        ],
+        "detail": "黑衣男子双手举过头顶接触排球，随后手臂向上伸展发力，将球向斜上方托出，直至双手离开排球。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "黑衣男子双手持球于头顶上方准备动作。"
+          },
+          {
+            "time": 0.3,
+            "observation": "黑衣男子手臂完全伸直，排球刚脱离双手。"
+          },
+          {
+            "time": 0.6,
+            "observation": "排球已飞向空中，黑衣男子保持手臂上伸姿势。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "脱手瞬间",
+            "time": 0.3,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双手"
+        ],
+        "movement_roles": [
+          "施力主体"
+        ],
+        "subphases": [],
+        "brief": "黑衣男子双手将球向上托起传出。"
+      },
+      {
+        "id": "A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": null,
+        "kind": "held_pose",
+        "label": "站立观察",
+        "start": 0.6,
+        "end": 3.0,
+        "start_range": [
+          0.6,
+          0.7
+        ],
+        "end_range": [
+          2.9,
+          3.0
+        ],
+        "detail": "黑衣男子双脚着地站立，头部跟随飞行的排球移动，视线始终注视着对面的黄衣男子及其动作。",
+        "evidence": [
+          {
+            "time": 1.0,
+            "observation": "黑衣男子站在原地，抬头看着空中的排球。"
+          },
+          {
+            "time": 2.0,
+            "observation": "黑衣男子保持站立姿势，目光跟随着正在扣球的黄衣男子。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "头部",
+          "双腿"
+        ],
+        "movement_roles": [
+          "支撑身体"
+        ],
+        "subphases": [],
+        "brief": "黑衣男子站立不动，观察对方的扣球动作。"
+      },
+      {
+        "id": "A03",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": null,
+        "kind": "gesture",
+        "label": "举手示意接球",
+        "start": 0.0,
+        "end": 1.5,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          1.4,
+          1.5
+        ],
+        "detail": "黄衣男子双脚离地悬空，双臂高举过头顶，手掌张开朝向传过来的排球，做出准备触球的姿态。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "黄衣男子处于跳跃状态，双手举起准备接球。"
+          },
+          {
+            "time": 1.0,
+            "observation": "黄衣男子在空中调整位置，双手依然保持高举姿势等待排球到达最高点。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双手"
+        ],
+        "movement_roles": [
+          "预备动作"
+        ],
+        "subphases": [],
+        "brief": "黄衣男子在空中举起双手，准备迎接传来的排球。"
+      },
+      {
+        "id": "A04",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "SE02",
+        "kind": "motion",
+        "label": "扣球",
+        "start": 1.5,
+        "end": 2.4,
+        "start_range": [
+          1.5,
+          1.6
+        ],
+        "end_range": [
+          2.3,
+          2.4
+        ],
+        "detail": "黄衣男子在空中达到最高点后，右臂向后弯曲蓄力，随后向前挥动，用手掌击打排球顶部将其向下扣过球网，左臂自然下垂或微张以保持平衡。",
+        "evidence": [
+          {
+            "time": 1.8,
+            "observation": "黄衣男子右臂高高扬起，身体呈反弓形准备发力。"
+          },
+          {
+            "time": 2.1,
+            "observation": "黄衣男子右手即将接触到排球。"
+          },
+          {
+            "time": 2.4,
+            "observation": "排球被击中并开始向下飞行，黄衣男子手臂随惯性下摆。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "击球瞬间",
+            "time": 2.2,
+            "time_range": [
+              2.1,
+              2.3
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右臂",
+          "右手",
+          "躯干"
+        ],
+        "movement_roles": [
+          "施力主体"
+        ],
+        "subphases": [
+          {
+            "label": "引臂蓄力",
+            "start": 1.5,
+            "end": 2.0,
+            "detail": "黄衣男子在空中将右臂向后上方抬起，肘部弯曲，手掌打开准备击球。",
+            "evidence": [
+              {
+                "time": 1.8,
+                "observation": "右臂明显向后拉伸，身体舒展。"
+              }
+            ]
+          },
+          {
+            "label": "挥臂击球",
+            "start": 2.0,
+            "end": 2.4,
+            "detail": "黄衣男子快速向前下方挥动右臂，全掌拍击排球上部。",
+            "evidence": [
+              {
+                "time": 2.2,
+                "observation": "手部与球接触，球体发生位移。"
+              }
+            ]
+          }
+        ],
+        "brief": "黄衣男子跃起并用右手大力将排球扣向对方场地。"
+      },
+      {
+        "id": "A05",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": null,
+        "kind": "motion",
+        "label": "落地缓冲",
+        "start": 2.4,
+        "end": 3.0,
+        "start_range": [
+          2.4,
+          2.5
+        ],
+        "end_range": [
+          2.9,
+          3.0
+        ],
+        "detail": "完成扣球后，黄衣男子身体下落，双脚先后接触地面，膝盖弯曲以吸收冲击力，最终恢复站立姿态。",
+        "evidence": [
+          {
+            "time": 2.7,
+            "observation": "黄衣男子脚部接近地面。"
+          },
+          {
+            "time": 2.9,
+            "observation": "黄衣男子双脚稳稳站在地面上，身体略微前倾。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "触地瞬间",
+            "time": 2.8,
+            "time_range": [
+              2.7,
+              2.9
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "双脚"
+        ],
+        "movement_roles": [
+          "承重与缓冲"
+        ],
+        "subphases": [],
+        "brief": "黄衣男子扣球结束后从空中落下并站稳。"
+      }
+    ],
+    "uncertainties": [],
+    "motion_tracks": [
+      {
+        "context": "画面右侧中景处，一名身穿黑色无袖上衣和蓝色短裤的男子站在排球网后方的场地上。他身体呈侧向站立，面朝画面左侧的篮筐方向，双手高举过头顶托着一个黄蓝相间的排球，处于准备传球的静止姿态。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 9,
+            "caption": "男子双脚稳稳踩在木地板上，保持膝盖微屈的准备姿势。他的双臂完全伸直举高，手掌张开贴合在排球两侧，目光注视着球体，整个上半身维持着稳定的持球状态。",
+            "start": 0.0,
+            "end": 0.3,
+            "action_ids": [
+              "A01"
+            ]
+          },
+          {
+            "from_frame": 12,
+            "to_frame": 24,
+            "caption": "随着动作启动，男子的双腿蹬地发力使身体轻微腾空。与此同时，他的手腕快速向前上方翻转拨动，手指用力将球推离掌心，排球顺着手臂伸展的方向向画面左上方飞出。",
+            "start": 0.4,
+            "end": 0.8,
+            "action_ids": [
+              "A01",
+              "A02"
+            ]
+          },
+          {
+            "from_frame": 27,
+            "to_frame": 89,
+            "caption": "完成击球后，男子的双臂顺势充分向上方和前方延伸，呈现出典型的传球随挥姿态。他在空中短暂滞空后平稳落回地面，随后一直保持着抬头仰望的姿态，视线紧紧跟随着飞出的排球轨迹移动。",
+            "start": 0.9,
+            "end": 2.966666666666667,
+            "action_ids": [
+              "A02"
+            ]
+          }
+        ],
+        "camera": "这是一个固定的全景镜头，机位平视拍摄室内体育馆的一角。画面涵盖了篮球架、排球网以及两名球员的全身活动区域，在整个片段中没有任何推拉摇移或变焦操作。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "穿黑色无袖上衣和蓝色短裤的男子"
+      },
+      {
+        "context": "视频开始时，穿黄色短袖上衣和黑色短裤的男子位于画面左侧中景处。他背对篮球架，面朝右侧球网站立，双脚离地处于滞空状态。他的双臂高举过头顶，双手张开呈准备拦网的姿态，目光注视着右侧的对手。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 15,
+            "caption": "男子保持滞空姿态，双腿微屈并在空中前后分开以维持平衡。随着对手将球传出，他开始缓慢下落，但上半身依然挺直，双臂持续高举在头部上方，视线紧紧跟随球的轨迹。",
+            "start": 0.0,
+            "end": 0.5,
+            "action_ids": [
+              "A03"
+            ]
+          },
+          {
+            "from_frame": 18,
+            "to_frame": 42,
+            "caption": "男子的身体继续下降直至接近地面，但他并未完全落地缓冲，而是利用惯性再次向上跃起。此时他的左腿向后弯曲抬起，右腿向下伸展作为主要发力支撑点，整个身体重心向右侧球网方向倾斜，呈现出明显的进攻性跳跃姿态。",
+            "start": 0.6,
+            "end": 1.4,
+            "action_ids": [
+              "A03"
+            ]
+          },
+          {
+            "from_frame": 45,
+            "to_frame": 63,
+            "caption": "男子在空中达到最高点并开始挥臂击球。他的右手高高扬起并向前下方快速挥动，手掌接触排球将其扣向对方场地；与此同时，左手自然下垂或微微张开以保持身体平衡。他的头部随动作略微低垂，目光锁定在即将被击出的球上。",
+            "start": 1.5,
+            "end": 2.1,
+            "action_ids": [
+              "A03",
+              "A04"
+            ]
+          },
+          {
+            "from_frame": 66,
+            "to_frame": 89,
+            "caption": "完成扣球后，男子的右臂顺势向下摆动至身前，身体开始受重力影响垂直下落。他的双腿在空中调整位置准备着地，最终双脚平稳踩在木地板上，膝盖微曲进行缓冲，上身恢复直立状态，视线跟随着飞过的排球。",
+            "start": 2.2,
+            "end": 2.966666666666667,
+            "action_ids": [
+              "A04",
+              "A05"
+            ]
+          }
+        ],
+        "camera": "镜头全程保持静止的侧面全景视角，无推拉摇移等运动。画面构图稳定，完整记录了该男子从起跳、滞空到扣球落地的全过程，背景中的篮球架和球网提供了清晰的空间参照。",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "identity": "穿黄色短袖上衣和黑色短裤的男子"
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "d8e9d33d8f9db6b0fa544e53a01190869773ac45e56f6e94ec5018b8dad464eb",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "apple",
+    "domain": "烹饪演示 · 糖煮苹果",
+    "clip_sha256": "22988991a4cc3cd3790a8a634b6623dd0c8cd2d5e7a4285feff5ec95e77a9dfe",
+    "people_limit": 3,
+    "audio_source": "same original MP4",
+    "filename": "2VBRpUe8idw.10.mp4"
+  },
+  {
+    "id": "golf",
+    "domain": "体育转播 · 高尔夫",
+    "clip_sha256": "5e12ac26db5560792a267446377b8f02b6fb6007d05ecafb06c46cd67f4ee12f",
+    "people_limit": 3,
+    "audio_source": "same original MP4",
+    "filename": "Dkzp_IJaNpo.22.mp4"
+  },
+  {
+    "id": "timer",
+    "domain": "日常操作 · 灌溉定时器",
+    "clip_sha256": "d1b69bbd7597fbcb92085e0a5f67c35cba26436d7a93a861a4b9543d939b922a",
+    "people_limit": 3,
+    "audio_source": "same original MP4",
+    "filename": "ijF-CYpTrwQ.6.mp4"
+  }
+]

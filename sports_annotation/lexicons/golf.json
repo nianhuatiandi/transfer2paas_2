@@ -1,0 +1,14 @@
+{
+  "sport": "golf",
+  "policy": "Instructional demonstrations and incomplete swings are valid observations. Record elbow posture in the motion detail. A practice swing does not prove a strike, ball flight, shot direction or quality. Do not use on-screen subtitles as motion evidence.",
+  "terms": [
+    {"label": "address_adjustment", "zh": "站位准备调整", "definition": "Visible repositioning of feet, body, hands or club into address. The stationary address is held_pose."},
+    {"label": "backswing", "zh": "上杆", "definition": "Club/arms visibly move away from address toward the top. Do not invent the missing beginning of a cropped swing."},
+    {"label": "downswing", "zh": "下杆", "definition": "Observable return of club/arms from the top toward the potential contact region; can be a slow instructional demonstration."},
+    {"label": "strike", "zh": "击球", "definition": "A visibly supported club-ball interaction or clearly observed ball departure. Club passage alone is insufficient; contact anchor may remain null."},
+    {"label": "follow_through", "zh": "送杆随挥", "definition": "Continuing club/body movement after the bottom of the swing; do not imply actual ball contact."},
+    {"label": "elbow_flexion", "zh": "屈肘", "definition": "A distinct visible decrease in elbow angle. Merely maintaining a bent elbow during another phase is an attribute/pose."},
+    {"label": "elbow_extension", "zh": "伸肘", "definition": "A distinct visible increase in elbow angle. State which arm only when visible."},
+    {"label": "reset", "zh": "复位", "definition": "Visible return from a demonstration/swing to a new starting position."}
+  ]
+}

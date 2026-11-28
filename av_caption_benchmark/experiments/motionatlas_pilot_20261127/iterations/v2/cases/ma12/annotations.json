@@ -1,0 +1,505 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "ma12",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "阳台人物与楼下人群",
+    "sample_ids": [
+      98
+    ],
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "楼上一人持续处于画面中心，开场楼下人群短暂可见。",
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/CameraBench-9ea372e0-5454.1.17.mp4",
+    "local_original": "CameraBench-9ea372e0-5454.1.17.mp4",
+    "source_window_seconds": [
+      0,
+      1.6
+    ],
+    "official_sha256": "e213f5272c2a119f277d919947c9e8dfd7ee6796409039a2fbd6182fd03843e9",
+    "clip_sha256": "e213f5272c2a119f277d919947c9e8dfd7ee6796409039a2fbd6182fd03843e9",
+    "audio_source": "official",
+    "upstream_video_frames_checked": null
+  },
+  "duration_seconds": 1.6,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.04,
+      "first_frame": 0,
+      "end_frame_exclusive": 1
+    },
+    {
+      "id": "S02",
+      "start": 0.04,
+      "end": 1.6,
+      "first_frame": 1,
+      "end_frame_exclusive": 40
+    }
+  ],
+  "input_frames": {
+    "visual": 17,
+    "review": 38
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含两个极短镜头，主要展示一名男子站在公寓楼阳台上的场景。S01为远景模糊画面，S02为逐渐拉近的仰拍画面，男子在阳台上站立并做出手部动作。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "站在二楼阳台上的男子，穿深色外套"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "站在二楼阳台上的男子，穿带有白色图案的深色夹克和黑色手套"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S02-E01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 0.44,
+        "end": 1.56,
+        "description": "男子将右手举至嘴边/麦克风处进行表演或讲话，随后放下手"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S02-A01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E01",
+        "kind": "motion",
+        "label": "举手至嘴边并放下",
+        "start": 0.44,
+        "end": 1.56,
+        "start_range": [
+          0.36,
+          0.44
+        ],
+        "end_range": [
+          1.44,
+          1.6
+        ],
+        "detail": "男子起初双手扶在阳台栏杆上（约0.36s可见）。随后他抬起戴着黑手套的右手，将其靠近嘴部位置（疑似握持麦克风），保持该姿势一段时间，期间头部微动。最后在约1.44s后，他将右手从嘴边移开并向下放落，恢复双手扶栏的姿态。",
+        "evidence": [
+          {
+            "time": 0.36,
+            "observation": "男子双手似乎放在阳台栏杆上"
+          },
+          {
+            "time": 0.44,
+            "observation": "右臂开始向上弯曲移动"
+          },
+          {
+            "time": 0.52,
+            "observation": "右手已到达面部/嘴部附近"
+          },
+          {
+            "time": 1.36,
+            "observation": "右手仍保持在嘴部附近"
+          },
+          {
+            "time": 1.44,
+            "observation": "右手开始离开嘴部向下移动"
+          },
+          {
+            "time": 1.56,
+            "observation": "右手已放回栏杆高度"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "右手抵达嘴边",
+            "time": 0.52,
+            "time_range": [
+              0.44,
+              0.64
+            ]
+          },
+          {
+            "name": "右手离开嘴边",
+            "time": 1.44,
+            "time_range": [
+              1.36,
+              1.56
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "手臂"
+        ],
+        "movement_roles": [
+          "主体肢体运动"
+        ],
+        "subphases": [
+          {
+            "label": "抬手阶段",
+            "start": 0.44,
+            "end": 0.52,
+            "detail": "右臂从栏杆处向上屈肘，手部向面部靠拢。",
+            "evidence": [
+              {
+                "time": 0.44,
+                "observation": "手臂处于中间位置"
+              },
+              {
+                "time": 0.52,
+                "observation": "手部接近面部"
+              }
+            ]
+          },
+          {
+            "label": "持握/表演阶段",
+            "start": 0.52,
+            "end": 1.36,
+            "detail": "右手停留在嘴前，可能持有物品，伴随轻微的身体晃动。",
+            "evidence": [
+              {
+                "time": 0.72,
+                "observation": "手部稳定在面前"
+              },
+              {
+                "time": 1.04,
+                "observation": "手部仍在面前"
+              }
+            ]
+          },
+          {
+            "label": "放手阶段",
+            "start": 1.44,
+            "end": 1.56,
+            "detail": "右手从面部移开，向下回落至栏杆水平。",
+            "evidence": [
+              {
+                "time": 1.44,
+                "observation": "手部明显下移"
+              },
+              {
+                "time": 1.56,
+                "observation": "手部回到下方"
+              }
+            ]
+          }
+        ],
+        "brief": "男子将戴手套的右手举至嘴边停留片刻后放下。"
+      },
+      {
+        "id": "S02-A02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": null,
+        "kind": "held_pose",
+        "label": "倚靠阳台栏杆站立",
+        "start": 0.04,
+        "end": 1.6,
+        "start_range": [
+          0.04,
+          0.16
+        ],
+        "end_range": [
+          1.44,
+          1.6
+        ],
+        "detail": "在整个镜头中，男子始终站在混凝土阳台后方，身体重心略微前倾倚靠在金属栏杆上。除了右手的特定动作外，其躯干和下肢保持相对静止的站立姿态。",
+        "evidence": [
+          {
+            "time": 0.16,
+            "observation": "男子位于阳台中央，身体朝向镜头方向"
+          },
+          {
+            "time": 0.84,
+            "observation": "即使在做手势时，身体依然依托于栏杆结构"
+          },
+          {
+            "time": 1.56,
+            "observation": "动作结束后维持原本站立姿态"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": true,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "双腿"
+        ],
+        "movement_roles": [
+          "支撑性体态"
+        ],
+        "subphases": [],
+        "brief": "男子全程倚靠在阳台栏杆上站立。"
+      }
+    ],
+    "uncertainties": [
+      "S01镜头极短且画面模糊，无法确认是否有独立动作发生，故未在该镜头建立详细动作记录。",
+      "男子手中是否持有麦克风或其他物品因分辨率限制无法确证，仅描述为'手部靠近嘴部'。"
+    ],
+    "motion_tracks": [
+      {
+        "context": "在镜头开始时，目标主体是一名身穿深色外套的男子。他独自站在公寓楼二楼（顶层）阳台的右侧区域，身体大致朝向画面左前方，处于静止站立状态。他与下方一楼阳台上聚集的一群人形成明显的上下层空间分离。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 0,
+            "caption": "在该帧中，该男子静立在二楼阳台栏杆后方，双手似乎自然下垂或扶在栏杆上，未见明显的大幅度肢体动作或位置移动。",
+            "start": 0.0,
+            "end": 0.0,
+            "action_ids": []
+          }
+        ],
+        "camera": "这是一个带有明显圆形暗角（类似窥视孔或鱼眼效果）的主观视角镜头。摄像机位于低处仰拍整栋建筑，画面呈现出轻微的手持晃动感或不稳定的漂移，导致边缘背景相对于中心略有位移。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "站在二楼阳台上的男子，穿深色外套"
+      },
+      {
+        "context": "画面开始时，一名身穿带有白色图案的深色夹克、戴黑色手套的男子站在二楼阳台中央。他身体正面朝向镜头方向，倚靠在深灰色的金属栏杆上。他的下方是一楼阳台，聚集着一群围观的人；上方是灰白色的天空和建筑屋檐。",
+        "phases": [
+          {
+            "from_frame": 1,
+            "to_frame": 6,
+            "caption": "男子保持站立姿态，双手搭在面前的金属栏杆上，目光向下注视一楼的人群。此时由于镜头剧烈晃动且距离较远，人物轮廓略显模糊，但他始终占据画面的视觉中心位置。",
+            "start": 0.04,
+            "end": 0.24,
+            "action_ids": [
+              "S02-A02"
+            ]
+          },
+          {
+            "from_frame": 9,
+            "to_frame": 13,
+            "caption": "随着镜头拉近并趋于稳定，男子的动作发生变化：他将戴着黑手套的右手从栏杆上抬起，手掌张开并在胸前做出手势，随后将手收回至下巴附近。在此期间，他的左手始终保持支撑在栏杆上的状态，头部微微上扬。",
+            "start": 0.36,
+            "end": 0.52,
+            "action_ids": [
+              "S02-A01",
+              "S02-A02"
+            ]
+          },
+          {
+            "from_frame": 16,
+            "to_frame": 26,
+            "caption": "男子继续维持右臂弯曲的姿态，右手握拳或半张着停留在嘴边及胸口高度，似乎正在对着下方说话或表演。他的视线固定在正前方偏下的位置，身体重心依然依靠在栏杆上，没有大幅度的位移。",
+            "start": 0.64,
+            "end": 1.04,
+            "action_ids": [
+              "S02-A01",
+              "S02-A02"
+            ]
+          },
+          {
+            "from_frame": 29,
+            "to_frame": 39,
+            "caption": "男子将右手放下，重新回到栏杆边缘，与左手一同扶住栏杆。他调整了站姿，身体略微前倾，双臂自然垂落或支撑在台面上，面部表情平静地注视着镜头方向，直至片段结束。",
+            "start": 1.16,
+            "end": 1.56,
+            "action_ids": [
+              "S02-A01",
+              "S02-A02"
+            ]
+          }
+        ],
+        "camera": "镜头采用仰视视角拍摄。起始阶段（0.0s-0.2s），画面伴随剧烈的摇晃和鱼眼畸变效果，模拟一种不稳定的主观视野。随后（0.3s起），镜头迅速向主体推进变焦，景别由全景收窄为中近景，焦点清晰地锁定在二楼阳台的男子身上，背景的一楼人群逐渐虚化或被挤出画框底部。后半段镜头保持相对稳定，仅有轻微的手持呼吸感。",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "identity": "站在二楼阳台上的男子，穿带有白色图案的深色夹克和黑色手套"
+      }
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "N001",
+        "kind": "music",
+        "layer": "background",
+        "start": 0.0,
+        "end": 1.6,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          1.5,
+          1.7
+        ],
+        "speaker_id": null,
+        "description": "持续的嘻哈节拍，包含合成器旋律和鼓点",
+        "evidence": [
+          {
+            "time": 0.8,
+            "observation": "可听到稳定的节奏型与电子音色"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.48,
+        "end": 1.52,
+        "start_range": [
+          0.38,
+          0.58
+        ],
+        "end_range": [
+          1.42,
+          1.6
+        ],
+        "speaker_id": "V01",
+        "description": "男声说唱，中低音区，节奏感强，音量中等偏大",
+        "evidence": [
+          {
+            "time": 0.9,
+            "observation": "清晰的人声咬字伴随背景音乐"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": "So tween back"
+      }
+    ],
+    "uncertainties": [
+      "人声歌词的具体拼写存在一定不确定性"
+    ]
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.44,
+          1.56
+        ],
+        "overlap_s": 1.12
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.48,
+          1.52
+        ],
+        "overlap_s": 1.04
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.04,
+          1.6
+        ],
+        "overlap_s": 1.56
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.48,
+          1.52
+        ],
+        "overlap_s": 1.04
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.48,
+          1.52
+        ],
+        "overlap_s": 1.04
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.44,
+          1.56
+        ],
+        "overlap_s": 1.12
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.04,
+          1.6
+        ],
+        "overlap_s": 1.56
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.48,
+          1.52
+        ],
+        "overlap_s": 1.04
+      }
+    ]
+  },
+  "warnings": [
+    "S01镜头极短且画面模糊，无法确认是否有独立动作发生，故未在该镜头建立详细动作记录。",
+    "男子手中是否持有麦克风或其他物品因分辨率限制无法确证，仅描述为'手部靠近嘴部'。",
+    "Invalid end uncertainty bracket: N001"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "1af9aff20cf87b732d00478bfa77e7e109ead8032113e5488d7e4315931f9d65",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

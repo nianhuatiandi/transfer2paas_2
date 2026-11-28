@@ -1,0 +1,21 @@
+Collection scope
+
+This is a local audiovisual clip collection for fine-grained event annotation. The three folders hold 240 files under 30 seconds, 120 files from 30 through 60 seconds inclusive, and 40 files over 60 seconds. The file's demuxed playback duration determines the bucket. Exact seconds are in manifest.jsonl. A nominal source label such as "30s" was not used for classification. The long bucket prioritizes material over 64 seconds to avoid near-boundary codec padding. No clip was trimmed to fill a duration quota during this collection.
+
+People and visual review
+
+The unit of interest is the principal participants visible in a shot. A performer partly in view, including a demonstrator visible through their hands, can be a participant. Background passersby and distant spectators can appear. The same person may appear in multiple shots. The collection does not provide identity tracking or a count of every unique person across a video.
+
+Each candidate was decoded, scanned visually at approximately 0.62-second intervals, and sampled for person detection at visual changes and regular intervals. The regular interval was approximately 1.65 seconds for clips shorter than 31 seconds and 2.8 seconds otherwise. Samples also cover the opening and end. YOLOv8n COCO person detections used a confidence threshold of 0.25 with IoU suppression at 0.45. For screening, a prominent detection had to occupy at least 0.9% of the image and span 11% of its height. A candidate needed a prominent person in at least 60% of samples, with no sample over three prominent detections. More than three detections of any size in over 20% of samples also triggered exclusion.
+
+An additional visual review of chronological thumbnail strips checked the apparent subjects and removed questionable cases, including static graphics, gameplay, crowded scenes, and apparent repeated footage. The strips include evenly spaced samples and the sampled frame with the most detections. This is sampled visual review. A fast cut or an occluded person can still be missed. A thumbnail's number is a detector count, including possible false detections. It is not an identity or a ground-truth headcount.
+
+Audio, integrity, and provenance
+
+Each retained file contains decodable video and audio. The audio waveform passed a non-silence check (overall RMS at least 0.001 and at least 8% of samples in frames with RMS above 0.001). Each selected source file was copied byte for byte, SHA-256 checked, and verified with a full video-and-audio decode. This verifies media integrity and measurable sound. Event captions and action-to-sound alignment have not been annotated in this collection.
+
+The manifest includes the source collection, clip identifier, source URL or local path, and archive member or retrieval URL when applicable. For MSR-VTT it includes the upstream YouTube ID and annotated excerpt bounds. Local sports clips include previously prepared benchmark examples. Source IDs, file hashes, and multi-frame visual fingerprints were used to screen for repetitions. Some collections only expose release-specific IDs, so cross-collection identity matching is approximate. Existing benchmark clips and previous project examples should be considered when designing independent train/test splits.
+
+Files
+
+index.html provides local search, duration filtering, previews and video links. Each JSON line in manifest.jsonl describes one video. summary.json gives counts, measured duration summaries and source coverage. The review folder stores a thumbnail strip and a frame-level JSON record for every included clip. Times are seconds from clip start. Bounding boxes use normalized [left, top, right, bottom, confidence].

@@ -1,0 +1,201 @@
+[
+  {
+    "id": "000134",
+    "bucket": "<1min",
+    "duration_s": 20.062,
+    "category": "Food & Drink / Home Cooking & Recipe",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "references": 7,
+    "shots": 9,
+    "subshots": 32,
+    "audio_events": 8,
+    "audio_types": {
+      "music": 1,
+      "sfx": 6,
+      "dialogue": 1
+    },
+    "file": "01_under_1min/000134/000134.mp4",
+    "ground_truth": "01_under_1min/000134/official_gt.json",
+    "sha256": "2f50ef168b154838c2c60e2ddb96515651a2e87a837120191f609deefff554df",
+    "source": "https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/test/videos/000134.mp4"
+  },
+  {
+    "id": "000282",
+    "bucket": "<1min",
+    "duration_s": 42.191,
+    "category": "Education / Career & Professional Skills",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "references": 5,
+    "shots": 10,
+    "subshots": 30,
+    "audio_events": 8,
+    "audio_types": {
+      "dialogue": 5,
+      "sfx": 3
+    },
+    "file": "01_under_1min/000282/000282.mp4",
+    "ground_truth": "01_under_1min/000282/official_gt.json",
+    "sha256": "b852955789f73013fb9ce9c05b3a2cf9a9ac925cebf5c4cd6ea9affcedc92502",
+    "source": "https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/test/videos/000282.mp4"
+  },
+  {
+    "id": "000428",
+    "bucket": "<1min",
+    "duration_s": 25.026,
+    "category": "Sports / Extreme Sports",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "references": 11,
+    "shots": 6,
+    "subshots": 28,
+    "audio_events": 8,
+    "audio_types": {
+      "sfx": 4,
+      "dialogue": 4
+    },
+    "file": "01_under_1min/000428/000428.mp4",
+    "ground_truth": "01_under_1min/000428/official_gt.json",
+    "sha256": "d526b7cc53a1e38db6593c2f8f4180bed63b602fc6127a50d25241598c6ace57",
+    "source": "https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/test/videos/000428.mp4"
+  },
+  {
+    "id": "000516",
+    "bucket": "1-3min",
+    "duration_s": 72.841,
+    "category": "Sports / Martial Arts & Combat",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "references": 10,
+    "shots": 29,
+    "subshots": 102,
+    "audio_events": 12,
+    "audio_types": {
+      "dialogue": 10,
+      "sfx": 2
+    },
+    "file": "02_1_to_3min/000516/000516.mp4",
+    "ground_truth": "02_1_to_3min/000516/official_gt.json",
+    "sha256": "59dc1b8b5dc0bcc086e67ab46b580f4b3536a3bbfa68a5ca5aa90cb9ac906fec",
+    "source": "https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/test/videos/000516.mp4"
+  },
+  {
+    "id": "000598",
+    "bucket": "1-3min",
+    "duration_s": 88.236,
+    "category": "Entertainment / Talk Show & Interview",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "references": 11,
+    "shots": 15,
+    "subshots": 60,
+    "audio_events": 22,
+    "audio_types": {
+      "dialogue": 17,
+      "sfx": 5
+    },
+    "file": "02_1_to_3min/000598/000598.mp4",
+    "ground_truth": "02_1_to_3min/000598/official_gt.json",
+    "sha256": "b4d22be87edd98453cc80996252b85ead4fba32cbcd378c4521c454509b3b4a7",
+    "source": "https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/test/videos/000598.mp4"
+  },
+  {
+    "id": "000627",
+    "bucket": "1-3min",
+    "duration_s": 86.727,
+    "category": "Science & Technology / Science Experiment",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "references": 9,
+    "shots": 23,
+    "subshots": 64,
+    "audio_events": 10,
+    "audio_types": {
+      "sfx": 1,
+      "dialogue": 9
+    },
+    "file": "02_1_to_3min/000627/000627.mp4",
+    "ground_truth": "02_1_to_3min/000627/official_gt.json",
+    "sha256": "0e6860363c8d18282ade014c10f4b7c8ccb73976e4dd71c61c44f8711f170fcd",
+    "source": "https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/test/videos/000627.mp4"
+  },
+  {
+    "id": "000716",
+    "bucket": "3-5min",
+    "duration_s": 186.503,
+    "category": "Howto & Style / Cleaning & Organization",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "references": 5,
+    "shots": 21,
+    "subshots": 63,
+    "audio_events": 14,
+    "audio_types": {
+      "sfx": 3,
+      "dialogue": 11
+    },
+    "file": "03_3_to_5min/000716/000716.mp4",
+    "ground_truth": "03_3_to_5min/000716/official_gt.json",
+    "sha256": "b366e99744c7f37d53b7608d63cee22d0407b91feef27e3573f69c3ec5c53604",
+    "source": "https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/test/videos/000716.mp4"
+  },
+  {
+    "id": "000719",
+    "bucket": "3-5min",
+    "duration_s": 224.653,
+    "category": "Sports / Swimming & Water Sports",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "references": 7,
+    "shots": 28,
+    "subshots": 115,
+    "audio_events": 22,
+    "audio_types": {
+      "dialogue": 22
+    },
+    "file": "03_3_to_5min/000719/000719.mp4",
+    "ground_truth": "03_3_to_5min/000719/official_gt.json",
+    "sha256": "7a0903c82669366d072b81993eb1e8e559e281d1edf562b2eb38f5f8a7d594d9",
+    "source": "https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/test/videos/000719.mp4"
+  },
+  {
+    "id": "000733",
+    "bucket": "3-5min",
+    "duration_s": 214.576,
+    "category": "Travel & Events / Road Trip",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "references": 9,
+    "shots": 40,
+    "subshots": 140,
+    "audio_events": 33,
+    "audio_types": {
+      "music": 7,
+      "dialogue": 25,
+      "sfx": 1
+    },
+    "file": "03_3_to_5min/000733/000733.mp4",
+    "ground_truth": "03_3_to_5min/000733/official_gt.json",
+    "sha256": "f50b55bebf583bf31037744805cb06193ec58472ca27a3d1a528ec7c00abdad7",
+    "source": "https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/test/videos/000733.mp4"
+  }
+]

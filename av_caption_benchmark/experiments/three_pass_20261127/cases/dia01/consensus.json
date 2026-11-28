@@ -1,0 +1,574 @@
+{
+  "groups": {
+    "visual": [
+      {
+        "members": [
+          "1.0",
+          "3.0"
+        ],
+        "votes": 2,
+        "start": 0.0,
+        "end": 6.85,
+        "representative": "3.0",
+        "example": {
+          "actor": "站立的年轻女子",
+          "activity": "交谈并索要物品",
+          "kind": "state",
+          "label": "站立说话",
+          "brief": "一名穿黑色外套的女子站在桌旁，面向坐着的男子持续说话。",
+          "detail": "身体直立，头部朝向左侧的男子，嘴部持续开合进行对话。",
+          "start": 0.0,
+          "end": 6.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.7000000000000002,
+        "id": "V1"
+      },
+      {
+        "members": [
+          "1.3"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 7.2,
+        "representative": "1.3",
+        "example": {
+          "actor": "坐着的人",
+          "activity": "坐姿状态",
+          "kind": "state",
+          "label": "坐在桌旁",
+          "brief": "一名人员背对镜头坐在茶桌前。",
+          "detail": "身穿浅绿色上衣，头部可见，背部朝向镜头，位于画面左下角。",
+          "start": 0.0,
+          "end": 7.2,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V2"
+      },
+      {
+        "members": [
+          "3.3"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 7.2,
+        "representative": "3.3",
+        "example": {
+          "actor": "坐着的年轻男子",
+          "activity": "聆听与交流",
+          "kind": "state",
+          "label": "静坐注视",
+          "brief": "身穿拼色夹克的男子坐在茶台后，转头看向右侧的女子。",
+          "detail": "保持坐姿，视线锁定在女子身上，偶尔伴有轻微的点头或面部表情变化。",
+          "start": 0.0,
+          "end": 7.2,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V3"
+      },
+      {
+        "members": [
+          "1.1",
+          "3.1"
+        ],
+        "votes": 2,
+        "start": 0.35,
+        "end": 1.35,
+        "representative": "1.1",
+        "example": {
+          "actor": "男子",
+          "activity": "手势交流",
+          "kind": "gesture",
+          "label": "说话手势",
+          "brief": "男子在交谈过程中抬起右手做出指点的手势。",
+          "detail": "右臂弯曲，手部抬至胸前高度，手指指向斜上方并伴随轻微摆动。",
+          "start": 0.3,
+          "end": 1.5,
+          "phases": []
+        },
+        "start_spread": 0.10000000000000003,
+        "end_spread": 0.30000000000000004,
+        "id": "V4"
+      },
+      {
+        "members": [
+          "1.2",
+          "3.2"
+        ],
+        "votes": 2,
+        "start": 1.9500000000000002,
+        "end": 5.35,
+        "representative": "1.2",
+        "example": {
+          "actor": "男子",
+          "activity": "伸手要物",
+          "kind": "motion",
+          "label": "伸手索要物品",
+          "brief": "男子向坐着的男子伸出双手，掌心向上索要物品。",
+          "detail": "双臂向前平伸，手掌摊开朝上，停留在半空中等待对方递出物品。",
+          "start": 1.8,
+          "end": 4.9,
+          "phases": [
+            {
+              "label": "伸出双手",
+              "start": 1.8,
+              "end": 2.6
+            },
+            {
+              "label": "保持姿势等待",
+              "start": 2.6,
+              "end": 4.9
+            }
+          ]
+        },
+        "start_spread": 0.30000000000000004,
+        "end_spread": 0.8999999999999995,
+        "id": "V5"
+      },
+      {
+        "members": [
+          "2.0"
+        ],
+        "votes": 1,
+        "start": 5.0,
+        "end": 6.0,
+        "representative": "2.0",
+        "example": {
+          "actor": "画面左侧穿拼色外套的男子",
+          "activity": "递出物品",
+          "kind": "motion",
+          "label": "伸手并递出物品",
+          "brief": "男子伸出右手将手中的小物件递给对面的女子。",
+          "detail": "右手从身前抬起向右侧伸出，手部捏持一个小物件将其交予对方。",
+          "start": 5.0,
+          "end": 6.0,
+          "phases": [
+            {
+              "label": "抬手准备",
+              "start": 5.0,
+              "end": 5.5
+            },
+            {
+              "label": "向前递交",
+              "start": 5.5,
+              "end": 6.0
+            }
+          ]
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V6"
+      },
+      {
+        "members": [
+          "2.1"
+        ],
+        "votes": 1,
+        "start": 5.5,
+        "end": 6.5,
+        "representative": "2.1",
+        "example": {
+          "actor": "画面右侧站立的女子",
+          "activity": "接收物品",
+          "kind": "motion",
+          "label": "伸手接取物品",
+          "brief": "女子伸出双手从男子手中接过小物件。",
+          "detail": "双臂向前下方伸出，双手合拢接住男子递来的物品。",
+          "start": 5.5,
+          "end": 6.5,
+          "phases": [
+            {
+              "label": "伸手靠近",
+              "start": 5.5,
+              "end": 6.0
+            },
+            {
+              "label": "接触并收回",
+              "start": 6.0,
+              "end": 6.5
+            }
+          ]
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V7"
+      },
+      {
+        "members": [
+          "1.4",
+          "3.4"
+        ],
+        "votes": 2,
+        "start": 5.65,
+        "end": 6.25,
+        "representative": "1.4",
+        "example": {
+          "actor": "坐着的人",
+          "activity": "递交物品",
+          "kind": "motion",
+          "label": "递出钥匙",
+          "brief": "坐着的人从桌面区域伸出手，将一串带有黄色饰物的钥匙递给站立的男子。",
+          "detail": "手臂自左下方向右上方伸出，手中握着黑色长条状物体（疑似车钥匙）及黄色挂件，将其送至站立的男子手中。",
+          "start": 5.4,
+          "end": 6.2,
+          "phases": [
+            {
+              "label": "抬手递出",
+              "start": 5.4,
+              "end": 6.0
+            },
+            {
+              "label": "完成交接",
+              "start": 6.0,
+              "end": 6.2
+            }
+          ]
+        },
+        "start_spread": 0.5,
+        "end_spread": 0.09999999999999964,
+        "id": "V8"
+      },
+      {
+        "members": [
+          "1.5",
+          "3.5"
+        ],
+        "votes": 2,
+        "start": 5.95,
+        "end": 6.55,
+        "representative": "1.5",
+        "example": {
+          "actor": "男子",
+          "activity": "接收物品",
+          "kind": "motion",
+          "label": "接过钥匙",
+          "brief": "男子收回双手，接住坐着的人递来的钥匙。",
+          "detail": "原本摊开的双手向内收拢，手指捏住递过来的黑色钥匙串和黄色挂饰，随后手臂放下。",
+          "start": 5.9,
+          "end": 6.6,
+          "phases": [
+            {
+              "label": "抓取物品",
+              "start": 5.9,
+              "end": 6.2
+            },
+            {
+              "label": "收回手臂",
+              "start": 6.2,
+              "end": 6.6
+            }
+          ]
+        },
+        "start_spread": 0.09999999999999964,
+        "end_spread": 0.09999999999999964,
+        "id": "V9"
+      },
+      {
+        "members": [
+          "2.2"
+        ],
+        "votes": 1,
+        "start": 6.5,
+        "end": 7.5,
+        "representative": "2.2",
+        "example": {
+          "actor": "画面右侧站立的女子",
+          "activity": "转身离开",
+          "kind": "motion",
+          "label": "转身走向后方",
+          "brief": "女子拿到物品后向右后方转身并向背景走去。",
+          "detail": "身体以双脚为轴向右转动，随后迈步向画面右后方的柜子方向移动。",
+          "start": 6.5,
+          "end": 7.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V10"
+      },
+      {
+        "members": [
+          "1.6"
+        ],
+        "votes": 1,
+        "start": 6.6,
+        "end": 7.2,
+        "representative": "1.6",
+        "example": {
+          "actor": "男子",
+          "activity": "转身离开",
+          "kind": "motion",
+          "label": "转身走开",
+          "brief": "男子拿到钥匙后，身体向右转动并向后方走去。",
+          "detail": "上半身顺时针旋转约90度，面部表情变为微笑，脚步移动远离桌子中心区域。",
+          "start": 6.6,
+          "end": 7.2,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V11"
+      }
+    ],
+    "audio": [
+      {
+        "members": [
+          "1.3"
+        ],
+        "votes": 1,
+        "start": 0.0,
+        "end": 7.48,
+        "representative": "1.3",
+        "example": {
+          "actor": "轻快电子背景音乐",
+          "kind": "music",
+          "layer": "background",
+          "text": "轻快电子背景音乐",
+          "start": 0.0,
+          "end": 7.48,
+          "label": "轻快电子背景音乐"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A1"
+      },
+      {
+        "members": [
+          "1.0",
+          "2.0"
+        ],
+        "votes": 2,
+        "start": 0.2,
+        "end": 3.1399999999999997,
+        "representative": "2.0",
+        "example": {
+          "actor": "女声1",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "不花你的钱，绝对不花你钱。来，推我出去。",
+          "start": 0.24,
+          "end": 3.0,
+          "label": "不花你的钱，绝对不花你钱。来，推我出去。"
+        },
+        "start_spread": 0.07999999999999999,
+        "end_spread": 0.2799999999999998,
+        "id": "A2"
+      },
+      {
+        "members": [
+          "3.0"
+        ],
+        "votes": 1,
+        "start": 0.24,
+        "end": 6.56,
+        "representative": "3.0",
+        "example": {
+          "actor": "女声1",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "不花你的钱，绝对不花你钱。来，挑吧哥哥，快点！不乱开，来吧。",
+          "start": 0.24,
+          "end": 6.56,
+          "label": "不花你的钱，绝对不花你钱。来，挑吧哥哥，快点！不乱开，来吧。"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A3"
+      },
+      {
+        "members": [
+          "1.1",
+          "2.1",
+          "3.1"
+        ],
+        "votes": 3,
+        "start": 3.8,
+        "end": 5.08,
+        "representative": "2.1",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "background",
+          "text": "不能乱开啊，我有经验。",
+          "start": 3.8,
+          "end": 5.16,
+          "label": "不能乱开啊，我有经验。"
+        },
+        "start_spread": 0.48,
+        "end_spread": 0.6000000000000005,
+        "id": "A4"
+      },
+      {
+        "members": [
+          "2.2"
+        ],
+        "votes": 1,
+        "start": 4.0,
+        "end": 7.0,
+        "representative": "2.2",
+        "example": {
+          "actor": "女声1",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "快点！不乱开。来吧。",
+          "start": 4.0,
+          "end": 7.0,
+          "label": "快点！不乱开。来吧。"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A5"
+      },
+      {
+        "members": [
+          "1.2"
+        ],
+        "votes": 1,
+        "start": 4.56,
+        "end": 6.56,
+        "representative": "1.2",
+        "example": {
+          "actor": "女声A",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "不乱开。来吧。",
+          "start": 4.56,
+          "end": 6.56,
+          "label": "不乱开。来吧。"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A6"
+      },
+      {
+        "members": [
+          "2.3"
+        ],
+        "votes": 1,
+        "start": 5.92,
+        "end": 7.5,
+        "representative": "2.3",
+        "example": {
+          "actor": "轻快器乐背景音乐",
+          "kind": "music",
+          "layer": "background",
+          "text": "轻快的器乐背景音乐",
+          "start": 5.92,
+          "end": 7.5,
+          "label": "轻快的器乐背景音乐"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A7"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "visual": "V1",
+      "audio": "A2",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        0.2,
+        3.1399999999999997
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V1",
+      "audio": "A4",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        3.8,
+        5.08
+      ],
+      "keep": true,
+      "layer_votes": [
+        "background",
+        "background"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V4",
+      "audio": "A2",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        0.35,
+        1.35
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V5",
+      "audio": "A2",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        1.9500000000000002,
+        3.1399999999999997
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V5",
+      "audio": "A4",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        3.8,
+        5.08
+      ],
+      "keep": true,
+      "layer_votes": [
+        "background",
+        "background"
+      ],
+      "short": false
+    }
+  ]
+}

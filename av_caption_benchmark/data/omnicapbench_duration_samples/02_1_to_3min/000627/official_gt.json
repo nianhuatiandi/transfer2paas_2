@@ -1,0 +1,1493 @@
+{
+  "duration_sec": 86.727,
+  "duration_bucket": "1-3min",
+  "num_shots": 29,
+  "num_events": 16,
+  "num_main_characters": 3,
+  "num_main_scenes": 3,
+  "shots_per_min": 20.06,
+  "events_per_min": 11.07,
+  "persons_per_min": 2.08,
+  "scenes_per_min": 2.08,
+  "category_l1": "Science & Technology",
+  "category_l2": "Science Experiment",
+  "dataset": "LLaVA-Video-178K",
+  "shot_time": [
+    [
+      0.0,
+      3.08
+    ],
+    [
+      3.08,
+      4.88
+    ],
+    [
+      4.88,
+      6.88
+    ],
+    [
+      6.88,
+      8.64
+    ],
+    [
+      8.64,
+      11.56
+    ],
+    [
+      11.56,
+      18.72
+    ],
+    [
+      18.72,
+      21.16
+    ],
+    [
+      21.16,
+      25.0
+    ],
+    [
+      25.0,
+      28.56
+    ],
+    [
+      28.56,
+      31.8
+    ],
+    [
+      31.8,
+      32.72
+    ],
+    [
+      32.72,
+      33.76
+    ],
+    [
+      33.76,
+      39.8
+    ],
+    [
+      39.8,
+      42.28
+    ],
+    [
+      42.28,
+      43.28
+    ],
+    [
+      43.28,
+      44.4
+    ],
+    [
+      44.4,
+      46.48
+    ],
+    [
+      46.48,
+      49.28
+    ],
+    [
+      49.28,
+      57.6
+    ],
+    [
+      57.6,
+      59.68
+    ],
+    [
+      59.68,
+      61.2
+    ],
+    [
+      61.2,
+      63.88
+    ],
+    [
+      63.88,
+      72.24
+    ],
+    [
+      72.24,
+      74.16
+    ],
+    [
+      74.16,
+      75.84
+    ],
+    [
+      75.84,
+      83.48
+    ],
+    [
+      83.48,
+      85.32
+    ],
+    [
+      85.32,
+      86.64
+    ],
+    [
+      86.64,
+      86.68
+    ]
+  ],
+  "mtss_caption": {
+    "references": [
+      {
+        "ref_id": "PERSON_1",
+        "type": "person",
+        "semantic_description": "A fisherman handling a caught fish and extracting a parasite from its mouth.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "Only the hands and forearms are clearly visible, with brownish skin and fine soft hair on the arms. The left hand firmly grips the fish, while the right hand skillfully operates a long metal tool that forces the fish to open its mouth.",
+            "timestamp": "4.5"
+          },
+          "attributes": {
+            "clothing": "none visible",
+            "hairstyle": "none",
+            "accessories": "none"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_2",
+        "type": "person",
+        "semantic_description": "An expert commentator.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A pale-skinned woman wearing a purplish-red long-sleeved top and rectangular glasses with black frames speaks directly to the camera, with a serious expression on her face.",
+            "timestamp": "9.5"
+          },
+          "attributes": {
+            "clothing": "maroon long-sleeved top",
+            "hairstyle": "short dark hair parted to the side",
+            "accessories": "black-rimmed glasses"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_3",
+        "type": "person",
+        "semantic_description": "The second expert commentator is a biologist named CARIN BONDAR.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A woman with fair skin is sitting in a chair with red armrests, wearing a gray-blue sleeveless top. She has short wavy dark brown hair, a silver earring in her right ear, and a black bracelet on her left hand. She uses expressive gestures to vividly explain biological processes.",
+            "timestamp": "29.5"
+          },
+          "attributes": {
+            "clothing": "greyish-blue sleeveless top",
+            "hairstyle": "short wavy dark brown hair",
+            "accessories": "dangling earrings"
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_4",
+        "type": "person",
+        "semantic_description": "An expert commentator.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A man with fair skin and a well-groomed face, wearing short black hair, is seated in a gray armchair. He is dressed in a red polo shirt over a white T-shirt. He speaks enthusiastically, using vivid gestures to emphasize his points.",
+            "timestamp": "44.5"
+          },
+          "attributes": {
+            "clothing": "red polo shirt",
+            "hairstyle": "short dark hair",
+            "accessories": "none"
+          }
+        }
+      },
+      {
+        "ref_id": "ANIMAL_1",
+        "type": "animal",
+        "semantic_description": "A captured fish.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A medium-sized fish, with its mouth opened revealing a huge white parasite where the tongue should be.",
+            "timestamp": "12.5"
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "ANIMAL_2",
+        "type": "animal",
+        "semantic_description": "A pale, segmented crustacean parasite.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A small, pale-white segmented crustacean resembling large decapods in appearance. It has a circular, overlapping shell structure, and multiple short legs can be seen beneath it as it moves.",
+            "timestamp": "26.5"
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "OBJECT_1",
+        "type": "object",
+        "semantic_description": "A metal tool used to interact with the fish and the parasite.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A long, thin silver metal tool resembling surgical forceps, used by fishermen to pry open fish mouths and remove parasites.",
+            "timestamp": "7.5"
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_1",
+        "type": "scene",
+        "semantic_description": "An outdoor fishing environment.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "An outdoor setting characterized by rough, dark, porous volcanic rocks. The ground is scattered with fishing equipment, including coiled black hoses or cables and sections of a bright orange tubular frame.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_2",
+        "type": "scene",
+        "semantic_description": "An indoor studio set designed for expert interviews.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "An indoor studio featuring a backdrop with a white grid pattern, overlaid with black scientific diagrams, molecular structures, charts, and equations. The set includes a stylized, jagged picture frame graphic that displays inset video footage of the fish and parasite.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      }
+    ],
+    "events": [
+      {
+        "event_id": "SFX_1",
+        "type": "sfx",
+        "time_range": [
+          0.0,
+          3.2
+        ],
+        "content": {
+          "description": "Fast-paced, electronic intro music with a driving beat, layered with swooshing sound effects that synchronize with the rapid visual transitions of the title sequence."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_1",
+        "type": "dialogue",
+        "time_range": [
+          3.3,
+          8.6
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Okay, if graphic footage makes you queasy, look away now. Seriously.",
+          "description": "An off-screen male narrator speaks in a cautionary and slightly dramatic tone, delivering a content warning to viewers before the main footage is shown."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_2",
+        "type": "dialogue",
+        "time_range": [
+          8.8,
+          11.8
+        ],
+        "content": {
+          "speaker": "PERSON_2",
+          "line": "This is possibly the grossest thing I have ever seen.",
+          "description": "[PERSON_2] speaks directly to the camera with a serious expression tinged with disgust, reacting to the unsettling footage being displayed beside her."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_3",
+        "type": "dialogue",
+        "time_range": [
+          12.8,
+          18.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Yes, these fishermen in Hawaii got more than they bargained for with their catch of the day.",
+          "description": "An unseen male narrator speaks at a normal pace in a conversational, upbeat documentary style, setting the context for the footage of the fishermen's unexpected catch."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_4",
+        "type": "dialogue",
+        "time_range": [
+          18.8,
+          22.8
+        ],
+        "content": {
+          "speaker": "PERSON_3",
+          "line": "Wow. Just... it's mind-blowingly gross.",
+          "description": "[PERSON_3] reacts with a mixture of awe and revulsion, smiling wryly at the extremity of the biological phenomenon while looking towards the camera."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_5",
+        "type": "dialogue",
+        "time_range": [
+          23.0,
+          28.5
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "But how did a live bug end up inside the fish's mouth? Oh scientists?",
+          "description": "An unseen male narrator poses a rhetorical question at a normal pace with an intriguing, slightly playful tone, serving as a prompt for the scientific experts to explain the bizarre phenomenon."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_6",
+        "type": "dialogue",
+        "time_range": [
+          28.8,
+          43.6
+        ],
+        "content": {
+          "speaker": "PERSON_3",
+          "line": "This parasite is actually a crustacean called Cymothoa. And it starts out its life cycle on the gills, the external gills of the fish. Now all individuals are males to begin with. The first one to reach the gills of those fish becomes the female.",
+          "description": "[PERSON_3] delivers a clear, educational explanation of the parasite's life cycle, using expressive hand gestures to illustrate the concepts of gender transformation and location on the fish."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_7",
+        "type": "dialogue",
+        "time_range": [
+          43.6,
+          72.0
+        ],
+        "content": {
+          "speaker": "PERSON_4",
+          "line": "She then mates with all the males and continues into the fish's mouth. It then sends your kids out of the room, sucks the fish's tongue dry until the tongue shrivels up and is gone, then it substitutes itself for the fish's tongue and keeps the fish alive and continuing to eat, while it stays there as the tongue, feeding off the fish's blood and mucus. Yo.",
+          "description": "[PERSON_4] continues the biological explanation at a normal pace, adopting a highly animated, dramatic, and expressive tone. He incorporates vivid, continuous hand gestures to illustrate the parasite's actions and deliberately pauses for comedic effect before concluding with a colloquial interjection."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_8",
+        "type": "dialogue",
+        "time_range": [
+          72.5,
+          74.0
+        ],
+        "content": {
+          "speaker": "an unseen male narrator",
+          "line": "Yo, indeed.",
+          "description": "An unseen male narrator responds at a normal pace with a brief, emphatic note of agreement, humorously echoing the previous speaker's informal exclamation."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_9",
+        "type": "dialogue",
+        "time_range": [
+          74.5,
+          87.5
+        ],
+        "content": {
+          "speaker": "PERSON_4",
+          "line": "And you look at it and you say this is disgusting. And then you learn about what it was actually doing, and you know that it was worse than you thought. Because it ate the fish's tongue. Who does that?",
+          "description": "[PERSON_4] concludes his commentary at a normal pace, his voice filled with a mix of humorous disbelief and shock. He gestures broadly and leans forward slightly to emphasize the bizarre and gruesome nature of the parasite's behavior."
+        }
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "shot_1",
+        "time_range": [
+          0.0,
+          3.0
+        ],
+        "shot_transfer": "Opening shot revealing a fast-paced title sequence.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              0.0,
+              3.0
+            ],
+            "sub_shot_content": "A dynamic opening sequence displays multiple rapidly changing video clips within a geometric frame with a black border, including images of a Ferris wheel, shattered glass, and groups of various people."
+          },
+          {
+            "sub_shot_time": [
+              0.0,
+              3.0
+            ],
+            "sub_shot_content": "Large, stylized black-and-white text reading \"ACTS OF SCIENCE\" is prominently displayed in the center, overlapping with yellow text that resembles caution tape, reading \"OUTRAGEOUS\"."
+          }
+        ],
+        "camera": {
+          "shot_type": "graphic sequence",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "SFX_1"
+        ],
+        "references_in_shot": []
+      },
+      {
+        "shot_id": "shot_2",
+        "time_range": [
+          3.1,
+          6.8
+        ],
+        "shot_transfer": "Hard cut from the title sequence to an outdoor view of fishing gear in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              3.1,
+              4.9
+            ],
+            "sub_shot_content": "[SCENE_1], close-up shot with bright natural sunlight reflecting off dark, wet surfaces."
+          },
+          {
+            "sub_shot_time": [
+              3.1,
+              4.0
+            ],
+            "sub_shot_content": "The video gradually switches to a black screen."
+          },
+          {
+            "sub_shot_time": [
+              4.0,
+              6.8
+            ],
+            "sub_shot_content": "The video suddenly switches from a black screen to an outdoor scene showing twisted black hoses and parts of [OBJECT_1] scattered on the ground."
+          },
+          {
+            "sub_shot_time": [
+              4.0,
+              6.8
+            ],
+            "sub_shot_content": "[PERSON_1]'s left hand tightly grips the wire that passes through [ANIMAL_1]'s body, while his right hand carefully manipulates the end of [OBJECT_1] to bring it closer to [ANIMAL_1]'s mouth."
+          },
+          {
+            "sub_shot_time": [
+              4.0,
+              6.8
+            ],
+            "sub_shot_content": "In the lower left corner of the screen, the text \"HAWAII, USA\" appears overlaid on a yellow-striped warning tape background."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "high angle",
+          "movement": "handheld and slightly shaky"
+        },
+        "active_events": [
+          "SFX_1",
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "SCENE_1",
+          "OBJECT_1",
+          "PERSON_1",
+          "ANIMAL_1"
+        ]
+      },
+      {
+        "shot_id": "shot_3",
+        "time_range": [
+          6.8,
+          8.6
+        ],
+        "shot_transfer": "Suddenly, the shot cuts to a close-up of [ANIMAL_1]'s mouth in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              6.8,
+              8.6
+            ],
+            "sub_shot_content": "[SCENE_1] A very close close-up shot focuses directly on [ANIMAL_1]'s open mouth."
+          },
+          {
+            "sub_shot_time": [
+              6.8,
+              8.0
+            ],
+            "sub_shot_content": "In the lower left corner of the screen, the text \"HAWAII, USA\" is still overlaid, with a yellow striped warning tape pattern in the background."
+          },
+          {
+            "sub_shot_time": [
+              6.8,
+              8.6
+            ],
+            "sub_shot_content": "[PERSON_1] tightly holds [ANIMAL_1] while using the silver [OBJECT_1] to hold its jaw open."
+          },
+          {
+            "sub_shot_time": [
+              7.0,
+              8.6
+            ],
+            "sub_shot_content": "[ANIMAL_2] is a creature with muted colors and a segmented body. It is clearly visible inside [ANIMAL_1]'s open mouth, in the area where one would expect the tongue to be."
+          }
+        ],
+        "camera": {
+          "shot_type": "extreme close-up",
+          "angle": "high angle",
+          "movement": "handheld and shaky"
+        },
+        "active_events": [
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "SCENE_1",
+          "PERSON_1",
+          "ANIMAL_1",
+          "OBJECT_1",
+          "ANIMAL_2"
+        ]
+      },
+      {
+        "shot_id": "shot_4",
+        "time_range": [
+          8.6,
+          11.6
+        ],
+        "shot_transfer": "The scene transitions directly from the outdoor fishing scene to [PERSON_2] in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              8.6,
+              11.6
+            ],
+            "sub_shot_content": "In [SCENE_2], we see a medium close-up shot with bright lighting inside the studio. In the upper right corner of the frame, there is a stylized zigzag frame pattern displaying an inserted video clip of fish."
+          },
+          {
+            "sub_shot_time": [
+              8.8,
+              11.6
+            ],
+            "sub_shot_content": "[PERSON_2] is wearing a purplish-red shirt and black-rimmed glasses. She speaks to the camera with a calm expression."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_2"
+        ],
+        "references_in_shot": [
+          "SCENE_2",
+          "PERSON_2"
+        ]
+      },
+      {
+        "shot_id": "shot_5",
+        "time_range": [
+          11.6,
+          18.7
+        ],
+        "shot_transfer": "Suddenly switching to a close-up of [PERSON_1] manipulating [ANIMAL_1] in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              11.6,
+              17.0
+            ],
+            "sub_shot_content": "[SCENE_1], close-up shot. In the lower left corner of the screen appears a yellow warning tape pattern with the words \"Catch of the Day\" written on it."
+          },
+          {
+            "sub_shot_time": [
+              11.6,
+              14.0
+            ],
+            "sub_shot_content": "[PERSON_1] repeatedly inserts the tip of [OBJECT_1] into the open mouth of [ANIMAL_1], attempting to remove the parasite."
+          },
+          {
+            "sub_shot_time": [
+              14.0,
+              16.8
+            ],
+            "sub_shot_content": "[PERSON_1] successfully uses [OBJECT_1] to pry [ANIMAL_2] out, removing it completely from [ANIMAL_1]'s mouth."
+          },
+          {
+            "sub_shot_time": [
+              16.8,
+              18.7
+            ],
+            "sub_shot_content": "[PERSON_1] throws the writhing [ANIMAL_2] onto the damp ground below, surrounded by black cables."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "high angle",
+          "movement": "handheld and shaky"
+        },
+        "active_events": [
+          "DIALOGUE_2",
+          "DIALOGUE_3"
+        ],
+        "references_in_shot": [
+          "SCENE_1",
+          "PERSON_1",
+          "ANIMAL_1",
+          "OBJECT_1",
+          "ANIMAL_2"
+        ]
+      },
+      {
+        "shot_id": "shot_6",
+        "time_range": [
+          18.7,
+          21.2
+        ],
+        "shot_transfer": "The scene transitions directly from the outdoor setting to [PERSON_3] sitting in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              18.7,
+              21.2
+            ],
+            "sub_shot_content": "[SCENE_2], medium shot. On the right side of the screen, there is a stylized circular video insert showing parasites on rocks."
+          },
+          {
+            "sub_shot_time": [
+              18.8,
+              21.2
+            ],
+            "sub_shot_content": "[PERSON_3] is sitting in a red armchair, speaking to the camera with a smile. Their hands are resting on their knees, fingers interlaced, while also shaking their head."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_4"
+        ],
+        "references_in_shot": [
+          "SCENE_2",
+          "PERSON_3"
+        ]
+      },
+      {
+        "shot_id": "shot_7",
+        "time_range": [
+          21.2,
+          28.5
+        ],
+        "shot_transfer": "Suddenly, the scene shifts to a blurred image of [ANIMAL_2] on the ground in [SCENE_1], after which the frame size decreases.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              21.2,
+              25.0
+            ],
+            "sub_shot_content": "A close-up shot in [SCENE_1] focuses on the rocky ground, with the image being completely out of focus at the beginning."
+          },
+          {
+            "sub_shot_time": [
+              21.2,
+              23.5
+            ],
+            "sub_shot_content": "[ANIMAL_2] appears as a blurred, bright light-colored silhouette, lying on its back against a striking dark, porous rock. Its numerous tiny legs move constantly, before the frame zooms out."
+          },
+          {
+            "sub_shot_time": [
+              23.5,
+              25.2
+            ],
+            "sub_shot_content": "The silver metal tip of [OBJECT_1] enters from the upper left corner of the frame, gradually approaching [ANIMAL_2] and turning its lying-down body over."
+          },
+          {
+            "sub_shot_time": [
+              25.2,
+              28.5
+            ],
+            "sub_shot_content": "[ANIMAL_2] is crawling on textured dark rocks, its countless tiny legs moving incessantly."
+          }
+        ],
+        "camera": {
+          "shot_type": "macro shot",
+          "angle": "high angle",
+          "movement": "rack focus"
+        },
+        "active_events": [
+          "DIALOGUE_4",
+          "DIALOGUE_5"
+        ],
+        "references_in_shot": [
+          "SCENE_1",
+          "ANIMAL_2",
+          "OBJECT_1"
+        ]
+      },
+      {
+        "shot_id": "shot_8",
+        "time_range": [
+          28.5,
+          31.8
+        ],
+        "shot_transfer": "Suddenly, the scene shifts to a medium close-up of [PERSON_3] speaking in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              28.5,
+              31.8
+            ],
+            "sub_shot_content": "[SCENE_2] shows a medium close-up shot. In the lower left corner of the screen, the text \"CARIN BONDAR, BIOLOGIST\" appears, set against a yellow warning tape background."
+          },
+          {
+            "sub_shot_time": [
+              28.5,
+              31.8
+            ],
+            "sub_shot_content": "[PERSON_3] speaks directly to the camera with a vivid and captivating expression, using head shakes, raising both hands, and spreading fingers outward to emphasize certain points while speaking."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium close-up",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_6"
+        ],
+        "references_in_shot": [
+          "SCENE_2",
+          "PERSON_3"
+        ]
+      },
+      {
+        "shot_id": "shot_9",
+        "time_range": [
+          31.8,
+          33.7
+        ],
+        "shot_transfer": "Suddenly, the scene shifts to a close-up of parasites on the rocks in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              31.8,
+              32.7
+            ],
+            "sub_shot_content": "[SCENE_1], under bright direct sunlight, a high-angle close-up shot focuses on that black porous volcanic rock."
+          },
+          {
+            "sub_shot_time": [
+              31.8,
+              33.7
+            ],
+            "sub_shot_content": "The sharp end of the metal [OBJECT_1] lightly touched and turned over the pale, segmented body of the reclining [ANIMAL_2]."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "high angle",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_6"
+        ],
+        "references_in_shot": [
+          "ANIMAL_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_10",
+        "time_range": [
+          33.8,
+          39.8
+        ],
+        "shot_transfer": "Suddenly switching to [PERSON_3] in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              33.8,
+              39.8
+            ],
+            "sub_shot_content": "[SCENE_2] is a medium-shot where the lighting in the studio is even. In the frame, [PERSON_3] is sitting in a red armchair."
+          },
+          {
+            "sub_shot_time": [
+              33.8,
+              38.0
+            ],
+            "sub_shot_content": "[PERSON_3] raises both hands to shoulder height while speaking, with the palms facing each other, as if enclosing something."
+          },
+          {
+            "sub_shot_time": [
+              38.0,
+              39.8
+            ],
+            "sub_shot_content": "[PERSON_3] folds his fingers together, with the palms facing inward, and slightly shrugs his shoulders at the same time."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_6"
+        ],
+        "references_in_shot": [
+          "PERSON_3",
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_11",
+        "time_range": [
+          39.8,
+          43.2
+        ],
+        "shot_transfer": "The camera suddenly switches to the parasites being examined in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              39.8,
+              43.2
+            ],
+            "sub_shot_content": "[SCENE_1] shows a high-angle close-up of the moment when the sharp tip of the metallic [OBJECT_1] touches and flips [ANIMAL_2]'s body."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "high angle",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_6"
+        ],
+        "references_in_shot": [
+          "ANIMAL_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_12",
+        "time_range": [
+          43.2,
+          44.4
+        ],
+        "shot_transfer": "The camera suddenly cuts to [PERSON_3] continuing her explanation in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              43.2,
+              44.4
+            ],
+            "sub_shot_content": "[SCENE_2] shows a static medium shot of [PERSON_3] during an interview scene."
+          },
+          {
+            "sub_shot_time": [
+              43.3,
+              44.4
+            ],
+            "sub_shot_content": "[PERSON_4] makes an exaggerated expression as he starts speaking, rapidly gesturing downward with both hands to emphasize his points. His eyebrows rise, and his eyes widen significantly."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_6"
+        ],
+        "references_in_shot": [
+          "PERSON_3",
+          "SCENE_2",
+          "PERSON_4"
+        ]
+      },
+      {
+        "shot_id": "shot_13",
+        "time_range": [
+          44.4,
+          46.5
+        ],
+        "shot_transfer": "Suddenly, the scene shifts to a wider medium shot of [PERSON_4] in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              44.4,
+              46.5
+            ],
+            "sub_shot_content": "[SCENE_2] is a medium-shot that allows for a clearer view of [PERSON_4]'s upper body and gestures."
+          },
+          {
+            "sub_shot_time": [
+              44.4,
+              46.5
+            ],
+            "sub_shot_content": "[PERSON_4] speaks intently into the screen, continuously flipping his hands back and forth in a repetitive motion to demonstrate a certain process."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_4",
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_14",
+        "time_range": [
+          46.5,
+          49.3
+        ],
+        "shot_transfer": "Quickly switch to the scene in [SCENE_1] where the fisherman checks the fish's mouth.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              46.5,
+              49.3
+            ],
+            "sub_shot_content": "[SCENE_1] A shaky handheld close-up captures the inspection process under intense sunlight."
+          },
+          {
+            "sub_shot_time": [
+              46.5,
+              49.3
+            ],
+            "sub_shot_content": "[PERSON_1]'s left hand firmly grips the underside of [ANIMAL_1]'s body and its gills."
+          },
+          {
+            "sub_shot_time": [
+              46.5,
+              49.3
+            ],
+            "sub_shot_content": "[PERSON_1]'s right hand uses the metal [OBJECT_1] to pry open [ANIMAL_1]'s mouth, revealing the white parasites inside clearly."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "slightly high angle",
+          "movement": "handheld"
+        },
+        "active_events": [
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "ANIMAL_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_15",
+        "time_range": [
+          49.3,
+          57.6
+        ],
+        "shot_transfer": "Suddenly switching to [PERSON_4] in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              49.3,
+              57.6
+            ],
+            "sub_shot_content": "In [SCENE_2], [PERSON_4] is giving a vivid explanation, with the scene shown in medium close-up."
+          },
+          {
+            "sub_shot_time": [
+              49.3,
+              54.9
+            ],
+            "sub_shot_content": "In the lower left corner of the screen appears a yellow-and-black pattern that reads \"ADAM RUBEN BIOLOGIST\"."
+          },
+          {
+            "sub_shot_time": [
+              49.3,
+              52.0
+            ],
+            "sub_shot_content": "[PERSON_4] looks directly at the camera and points forward with both index fingers to emphasize a specific detail."
+          },
+          {
+            "sub_shot_time": [
+              52.0,
+              55.0
+            ],
+            "sub_shot_content": "[PERSON_4] raises both hands near his face, spreading his fingers to mimic a dramatic or frightening gesture."
+          },
+          {
+            "sub_shot_time": [
+              55.0,
+              57.6
+            ],
+            "sub_shot_content": "[PERSON_4] lowers his hands and makes small, alternating gestures with his palms facing outward, continuing to describe vividly."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_4",
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_16",
+        "time_range": [
+          57.6,
+          59.7
+        ],
+        "shot_transfer": "The camera suddenly switches to the fish being held in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              57.6,
+              59.7
+            ],
+            "sub_shot_content": "[SCENE_1] A close-up handheld shot, focusing on the head of the fish."
+          },
+          {
+            "sub_shot_time": [
+              57.6,
+              59.7
+            ],
+            "sub_shot_content": "[PERSON_1] tightly holds [ANIMAL_1]'s body with his left hand, with black cables in the background."
+          },
+          {
+            "sub_shot_time": [
+              57.6,
+              59.7
+            ],
+            "sub_shot_content": "[PERSON_1] uses his right hand to manipulate the metal [OBJECT_1], causing [ANIMAL_1]'s mouth to open wide, revealing the light-colored parasites inside."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "slightly high angle",
+          "movement": "handheld"
+        },
+        "active_events": [
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "ANIMAL_1",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_17",
+        "time_range": [
+          59.7,
+          61.2
+        ],
+        "shot_transfer": "Suddenly switching to a close-up of [PERSON_1] petting [ANIMAL_1] in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              59.7,
+              61.2
+            ],
+            "sub_shot_content": "[SCENE_1] is a close-up shot taken under bright natural sunlight, with intertwined black cables and red tubular frames visible in the background."
+          },
+          {
+            "sub_shot_time": [
+              59.7,
+              61.2
+            ],
+            "sub_shot_content": "[PERSON_1]'s left hand firmly grasps [ANIMAL_1]'s red scales and gills."
+          },
+          {
+            "sub_shot_time": [
+              59.7,
+              61.2
+            ],
+            "sub_shot_content": "[PERSON_1]'s right hand manipulates the metal [OBJECT_1], lifting the upper jaw of [ANIMAL_1] upward to expose its mouth."
+          },
+          {
+            "sub_shot_time": [
+              59.7,
+              61.2
+            ],
+            "sub_shot_content": "[ANIMAL_2]'s pale, segmented body is firmly stuck in [ANIMAL_1]'s mouth, occupying the space that should normally be occupied by the tongue."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "high angle",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "ANIMAL_1",
+          "ANIMAL_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_18",
+        "time_range": [
+          61.2,
+          63.9
+        ],
+        "shot_transfer": "Suddenly, there's a close-up shot of [PERSON_1] holding [ANIMAL_1] from a slightly different angle.",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              61.2,
+              63.9
+            ],
+            "sub_shot_content": "[SCENE_1], a closer close-up shot focuses directly on [ANIMAL_1]'s open mouth, with blurred black cables in the background."
+          },
+          {
+            "sub_shot_time": [
+              61.2,
+              62.5
+            ],
+            "sub_shot_content": "[PERSON_1]'s left hand firmly grips [ANIMAL_1]'s jaw and lips, while [ANIMAL_2] bends its pale body and clings tightly to [ANIMAL_1]'s mouth."
+          },
+          {
+            "sub_shot_time": [
+              62.5,
+              63.9
+            ],
+            "sub_shot_content": "[PERSON_1] gently rotates the end of [OBJECT_1] with his right hand, with [ANIMAL_1] remaining on top of [OBJECT_1]."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "high angle",
+          "movement": "slightly shaky"
+        },
+        "active_events": [
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "ANIMAL_1",
+          "ANIMAL_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_19",
+        "time_range": [
+          63.9,
+          72.3
+        ],
+        "shot_transfer": "The scene transitions directly from the outdoor setting to [PERSON_4] sitting in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              63.9,
+              72.3
+            ],
+            "sub_shot_content": "In [SCENE_2], [PERSON_4] is sitting in a gray armchair, with stylized scientific charts in the background."
+          },
+          {
+            "sub_shot_time": [
+              63.9,
+              65.5
+            ],
+            "sub_shot_content": "[PERSON_4] raises both hands in front of her chest, repeatedly making pinching motions with her fingers to mimic the action of feeding."
+          },
+          {
+            "sub_shot_time": [
+              65.5,
+              70.0
+            ],
+            "sub_shot_content": "[PERSON_4] points forward with his right hand while keeping his left hand open, beginning to explain."
+          },
+          {
+            "sub_shot_time": [
+              70.0,
+              72.3
+            ],
+            "sub_shot_content": "[PERSON_4] places his hands on the backrest of the gray sofa and nods slightly to emphasize his conclusive statement."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_7"
+        ],
+        "references_in_shot": [
+          "PERSON_4",
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_20",
+        "time_range": [
+          72.3,
+          76.0
+        ],
+        "shot_transfer": "Suddenly, the scene shifts to a close-up of [ANIMAL_2] lying on its back on a rock in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              72.3,
+              76.0
+            ],
+            "sub_shot_content": "[SCENE_1] is a high-angle close-up shot showing the tip of the metallic [OBJECT_1] gently touching and flipping over the body of [ANIMAL_2]."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "high angle",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_8"
+        ],
+        "references_in_shot": [
+          "ANIMAL_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_21",
+        "time_range": [
+          76.0,
+          83.5
+        ],
+        "shot_transfer": "The camera suddenly cuts back to [PERSON_4] sitting in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              76.0,
+              83.5
+            ],
+            "sub_shot_content": "[SCENE_2] is a medium-shot depicting [PERSON_4] sitting slightly forward in an armchair under bright studio lighting."
+          },
+          {
+            "sub_shot_time": [
+              76.0,
+              83.5
+            ],
+            "sub_shot_content": "[PERSON_4] speaks passionately, looking directly at the camera, while his hands move up and down continuously, his fingers opening and closing at times."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_9"
+        ],
+        "references_in_shot": [
+          "PERSON_4",
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_22",
+        "time_range": [
+          83.5,
+          85.3
+        ],
+        "shot_transfer": "Suddenly switching to a close-up of [PERSON_1] manipulating [ANIMAL_1] in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              83.5,
+              85.3
+            ],
+            "sub_shot_content": "[SCENE_1] features a dynamic close-up shot that clearly depicts the hand movements used to force the fish to open its mouth. In the background, black hoses can also be seen."
+          },
+          {
+            "sub_shot_time": [
+              83.5,
+              85.3
+            ],
+            "sub_shot_content": "[PERSON_1]'s left hand tightly grips [ANIMAL_1], while his right hand inserts the metal tip of [OBJECT_1] into [ANIMAL_1]'s mouth, manipulating the white parasites embedded inside."
+          }
+        ],
+        "camera": {
+          "shot_type": "close-up",
+          "angle": "high angle",
+          "movement": "slightly shaky"
+        },
+        "active_events": [
+          "DIALOGUE_9"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "ANIMAL_1",
+          "ANIMAL_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_23",
+        "time_range": [
+          85.3,
+          86.6
+        ],
+        "shot_transfer": "Suddenly, the scene shifts to [PERSON_4]'s reaction in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              85.3,
+              86.6
+            ],
+            "sub_shot_content": "In [SCENE_2], a medium-shot captures [PERSON_4]'s shocked facial expression."
+          },
+          {
+            "sub_shot_time": [
+              85.3,
+              86.6
+            ],
+            "sub_shot_content": "[PERSON_4] stretches his arms outward forcefully, palms facing up, while slightly shrugging to maintain an exaggerated gesture. Then, the image freezes."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [
+          "DIALOGUE_9"
+        ],
+        "references_in_shot": [
+          "PERSON_4",
+          "SCENE_2"
+        ]
+      }
+    ],
+    "shot_time": [
+      [
+        0.0,
+        3.08
+      ],
+      [
+        3.08,
+        4.88
+      ],
+      [
+        4.88,
+        6.88
+      ],
+      [
+        6.88,
+        8.64
+      ],
+      [
+        8.64,
+        11.56
+      ],
+      [
+        11.56,
+        18.72
+      ],
+      [
+        18.72,
+        21.16
+      ],
+      [
+        21.16,
+        25.0
+      ],
+      [
+        25.0,
+        28.56
+      ],
+      [
+        28.56,
+        31.8
+      ],
+      [
+        31.8,
+        32.72
+      ],
+      [
+        32.72,
+        33.76
+      ],
+      [
+        33.76,
+        39.8
+      ],
+      [
+        39.8,
+        42.28
+      ],
+      [
+        42.28,
+        43.28
+      ],
+      [
+        43.28,
+        44.4
+      ],
+      [
+        44.4,
+        46.48
+      ],
+      [
+        46.48,
+        49.28
+      ],
+      [
+        49.28,
+        57.6
+      ],
+      [
+        57.6,
+        59.68
+      ],
+      [
+        59.68,
+        61.2
+      ],
+      [
+        61.2,
+        63.88
+      ],
+      [
+        63.88,
+        72.24
+      ],
+      [
+        72.24,
+        74.16
+      ],
+      [
+        74.16,
+        75.84
+      ],
+      [
+        75.84,
+        83.48
+      ],
+      [
+        83.48,
+        85.32
+      ],
+      [
+        85.32,
+        86.64
+      ],
+      [
+        86.64,
+        86.68
+      ]
+    ]
+  },
+  "source_video_path": "LLaVA-Video-178K/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_9vmmqUVCKl8.mp4",
+  "video_path": "test/videos/000627.mp4"
+}

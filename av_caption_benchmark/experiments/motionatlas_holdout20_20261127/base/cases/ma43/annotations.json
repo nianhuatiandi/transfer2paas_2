@@ -1,0 +1,809 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma43",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "片场人物与道具",
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      73
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchCaption-562e121c-KdF28g9V0BKalHda.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      13.747066666666667
+    ],
+    "official_sha256": "4c80337011ad7caf5d81a05b06f02af7353ecb0bfc3212c19ea3dc76666fa55e",
+    "clip_sha256": "4c80337011ad7caf5d81a05b06f02af7353ecb0bfc3212c19ea3dc76666fa55e",
+    "audio_source": null
+  },
+  "duration_seconds": 13.747066666666665,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.03336666666666667,
+      "first_frame": 0,
+      "end_frame_exclusive": 1
+    },
+    {
+      "id": "S02",
+      "start": 0.03336666666666667,
+      "end": 0.1001,
+      "first_frame": 1,
+      "end_frame_exclusive": 3
+    },
+    {
+      "id": "S03",
+      "start": 0.1001,
+      "end": 0.13346666666666668,
+      "first_frame": 3,
+      "end_frame_exclusive": 4
+    },
+    {
+      "id": "S04",
+      "start": 0.13346666666666668,
+      "end": 13.747066666666665,
+      "first_frame": 4,
+      "end_frame_exclusive": 412
+    }
+  ],
+  "input_frames": {
+    "visual": 141
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含多个极短镜头和一个长镜头。主要聚焦于S04中穿西装男子与盔甲道具的互动，以及打板员的操作。前三个镜头因时间极短且画面模糊/静止，仅记录可见的基础姿态或动作片段。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "站在背景中的男子，穿深色上衣和浅色裤子"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "站在背景中的男子，穿深色上衣和浅色裤子"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "手持场记板的打板员（仅见手臂）"
+      },
+      {
+        "id": "S03-P02",
+        "shot_id": "S03",
+        "description": "蹲在前景的男子，穿灰色西装"
+      },
+      {
+        "id": "S03-P03",
+        "shot_id": "S03",
+        "description": "左侧身穿银色盔甲的人物/道具"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "手持场记板的打板员（仅见手臂）"
+      },
+      {
+        "id": "S04-P02",
+        "shot_id": "S04",
+        "description": "蹲在前景的男子，穿浅灰色西装、白衬衫和暗红色领带"
+      },
+      {
+        "id": "S04-P03",
+        "shot_id": "S04",
+        "description": "左侧身穿银色盔甲和米色裙甲的人物/道具"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E-S01-P01-stand",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 0.03337,
+        "description": "站立并做手势"
+      },
+      {
+        "id": "E-S02-P01-stand",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 0.03337,
+        "end": 0.1001,
+        "description": "站立并做手势"
+      },
+      {
+        "id": "E-S03-P01-clap",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 0.1001,
+        "end": 0.13347,
+        "description": "准备打板"
+      },
+      {
+        "id": "E-S03-P02-crouch",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "start": 0.1001,
+        "end": 0.13347,
+        "description": "蹲姿低头"
+      },
+      {
+        "id": "E-S04-P01-clap",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 0.13347,
+        "end": 2.53587,
+        "description": "合上场记板并移开"
+      },
+      {
+        "id": "E-S04-P02-cover-face",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "start": 2.53587,
+        "end": 6.94027,
+        "description": "用手捂住脸/头部"
+      },
+      {
+        "id": "E-S04-P02-rub-head",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "start": 6.94027,
+        "end": 10.14347,
+        "description": "抚摸额头并抬头看上方"
+      },
+      {
+        "id": "E-S04-P02-grab-sword",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "start": 10.14347,
+        "end": 11.74507,
+        "description": "抓住剑柄并向上举起"
+      },
+      {
+        "id": "E-S04-P02-laugh",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "start": 11.74507,
+        "end": 13.74707,
+        "description": "大笑并放下手"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A-S01-P01-stand",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-stand",
+        "kind": "held_pose",
+        "label": "站立做手势",
+        "start": 0.0,
+        "end": 0.03337,
+        "start_range": [
+          0.0,
+          0.03337
+        ],
+        "end_range": [
+          0.0,
+          0.03337
+        ],
+        "detail": "男子站在昏暗的背景中，双手抬起在胸前做出类似指挥或解释的手势。由于光线不足和画面模糊，具体手指动作难以辨认。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "男子站立，双手在胸前活动"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "low",
+        "body_parts": [
+          "全身",
+          "双手"
+        ],
+        "movement_roles": [
+          "主体"
+        ],
+        "subphases": [],
+        "brief": "男子在背景中站立并做手势"
+      },
+      {
+        "id": "A-S02-P01-stand",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E-S02-P01-stand",
+        "kind": "held_pose",
+        "label": "站立做手势",
+        "start": 0.03337,
+        "end": 0.1001,
+        "start_range": [
+          0.03337,
+          0.06673
+        ],
+        "end_range": [
+          0.06673,
+          0.1001
+        ],
+        "detail": "延续上一镜头的姿态，男子继续站在原地，双手保持在胸前位置进行小幅度的挥动。",
+        "evidence": [
+          {
+            "time": 0.03337,
+            "observation": "男子站立，双手在胸前"
+          },
+          {
+            "time": 0.06673,
+            "observation": "姿势基本未变"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": true,
+          "end": true
+        },
+        "confidence": "low",
+        "body_parts": [
+          "全身",
+          "双手"
+        ],
+        "movement_roles": [
+          "主体"
+        ],
+        "subphases": [],
+        "brief": "男子继续在背景中站立做手势"
+      },
+      {
+        "id": "A-S03-P01-prep-clap",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "E-S03-P01-clap",
+        "kind": "motion",
+        "label": "举开场记板",
+        "start": 0.1001,
+        "end": 0.13347,
+        "start_range": [
+          0.1001,
+          0.13347
+        ],
+        "end_range": [
+          0.1001,
+          0.13347
+        ],
+        "detail": "一只手握着打开状态的场记板伸入画面中央，板上写有'The Haunted Mansion'等字样。这是打板前的准备动作。",
+        "evidence": [
+          {
+            "time": 0.1001,
+            "observation": "场记板处于张开状态被举在镜头前"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "场记板"
+        ],
+        "movement_roles": [
+          "客体操作"
+        ],
+        "subphases": [],
+        "brief": "打板员将张开的场记板举到镜头前"
+      },
+      {
+        "id": "A-S03-P02-crouch-wait",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "execution_id": "E-S03-P02-crouch",
+        "kind": "held_pose",
+        "label": "蹲姿等待",
+        "start": 0.1001,
+        "end": 0.13347,
+        "start_range": [
+          0.1001,
+          0.13347
+        ],
+        "end_range": [
+          0.1001,
+          0.13347
+        ],
+        "detail": "穿灰西装的男子蹲在地上，低着头，左手似乎放在膝盖附近，手腕上戴着金表。他在等待拍摄开始。",
+        "evidence": [
+          {
+            "time": 0.1001,
+            "observation": "男子蹲姿，头低下"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "躯干",
+          "头部",
+          "左手"
+        ],
+        "movement_roles": [
+          "主体"
+        ],
+        "subphases": [],
+        "brief": "西装男子蹲在地上低头等待"
+      },
+      {
+        "id": "A-S04-P01-close-board",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "E-S04-P01-clap",
+        "kind": "motion",
+        "label": "合上场记板",
+        "start": 0.13347,
+        "end": 2.53587,
+        "start_range": [
+          0.13347,
+          0.53387
+        ],
+        "end_range": [
+          2.13547,
+          2.53587
+        ],
+        "detail": "打板员的手指扣住场记板的上沿，将其从张开状态向下压直至闭合（约0.5s处完成），随后手保持握持姿势片刻，最后将场记板移出画面（约2.5s处完全离开）。",
+        "evidence": [
+          {
+            "time": 0.13347,
+            "observation": "场记板仍张开"
+          },
+          {
+            "time": 0.53387,
+            "observation": "场记板已闭合"
+          },
+          {
+            "time": 2.13547,
+            "observation": "场记板开始向上移出"
+          },
+          {
+            "time": 2.53587,
+            "observation": "场记板完全离开画面"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "板闭合",
+            "time": 0.53387,
+            "time_range": [
+              0.43377,
+              0.63397
+            ]
+          },
+          {
+            "name": "板移除",
+            "time": 2.53587,
+            "time_range": [
+              2.13547,
+              2.53587
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "场记板"
+        ],
+        "movement_roles": [
+          "客体操作"
+        ],
+        "subphases": [
+          {
+            "label": "压下拍板",
+            "start": 0.13347,
+            "end": 0.53387,
+            "detail": "手将场记板的活动臂压下直到贴合底板。",
+            "evidence": [
+              {
+                "time": 0.13347,
+                "observation": "板张开"
+              },
+              {
+                "time": 0.53387,
+                "observation": "板闭合"
+              }
+            ]
+          },
+          {
+            "label": "停留与撤出",
+            "start": 0.53387,
+            "end": 2.53587,
+            "detail": "闭合后的场记板在画面中停留约两秒，然后被拿走。",
+            "evidence": [
+              {
+                "time": 1.03437,
+                "observation": "板仍在画面中"
+              },
+              {
+                "time": 2.53587,
+                "observation": "板消失"
+              }
+            ]
+          }
+        ],
+        "brief": "打板员合上场记板并将其移出画面"
+      },
+      {
+        "id": "A-S04-P02-cover-head",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "execution_id": "E-S04-P02-cover-face",
+        "kind": "held_pose",
+        "label": "捂脸/抱头",
+        "start": 2.53587,
+        "end": 6.94027,
+        "start_range": [
+          2.53587,
+          2.93627
+        ],
+        "end_range": [
+          6.53987,
+          6.94027
+        ],
+        "detail": "在场记板移开后，西装男子迅速抬起左手捂住自己的额头和眼睛区域，手掌覆盖大部分面部，呈现出一种痛苦或沮丧的姿态，并保持该姿势数秒。",
+        "evidence": [
+          {
+            "time": 2.53587,
+            "observation": "男子开始抬手"
+          },
+          {
+            "time": 2.93627,
+            "observation": "手完全遮住脸部上半部分"
+          },
+          {
+            "time": 6.53987,
+            "observation": "手依然遮着脸"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "手接触脸",
+            "time": 2.93627,
+            "time_range": [
+              2.53587,
+              3.33667
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "面部",
+          "头部"
+        ],
+        "movement_roles": [
+          "受体",
+          "施体"
+        ],
+        "subphases": [
+          {
+            "label": "抬手遮挡",
+            "start": 2.53587,
+            "end": 2.93627,
+            "detail": "左手从下方抬起盖住眼睛和前额。",
+            "evidence": [
+              {
+                "time": 2.53587,
+                "observation": "手在移动"
+              },
+              {
+                "time": 2.93627,
+                "observation": "手到位"
+              }
+            ]
+          },
+          {
+            "label": "保持遮挡",
+            "start": 2.93627,
+            "end": 6.94027,
+            "detail": "维持手部遮脸的姿势不动。",
+            "evidence": [
+              {
+                "time": 4.03737,
+                "observation": "姿势不变"
+              },
+              {
+                "time": 6.94027,
+                "observation": "姿势即将改变"
+              }
+            ]
+          }
+        ],
+        "brief": "西装男子用左手捂住脸保持了一会儿"
+      },
+      {
+        "id": "A-S04-P02-rub-and-look-up",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "execution_id": "E-S04-P02-rub-head",
+        "kind": "motion",
+        "label": "摸额头抬头",
+        "start": 6.94027,
+        "end": 10.14347,
+        "start_range": [
+          6.94027,
+          7.34067
+        ],
+        "end_range": [
+          9.74307,
+          10.14347
+        ],
+        "detail": "男子将遮眼的手稍微下移至额头处摩擦了一下，随即抬起头向上方看去，嘴巴微张，表情显得惊讶或困惑，视线跟随上方的某个物体（可能是盔甲的一部分）。",
+        "evidence": [
+          {
+            "time": 6.94027,
+            "observation": "手从眼部下移到额头"
+          },
+          {
+            "time": 7.34067,
+            "observation": "头开始上扬"
+          },
+          {
+            "time": 9.74307,
+            "observation": "一直保持着仰视的姿势"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抬头",
+            "time": 7.34067,
+            "time_range": [
+              6.94027,
+              7.74107
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "头部",
+          "颈部"
+        ],
+        "movement_roles": [
+          "施体",
+          "受体"
+        ],
+        "subphases": [
+          {
+            "label": "摩擦额头",
+            "start": 6.94027,
+            "end": 7.34067,
+            "detail": "手掌在额头上轻轻滑动。",
+            "evidence": [
+              {
+                "time": 6.94027,
+                "observation": "手在额头位置"
+              }
+            ]
+          },
+          {
+            "label": "仰视观察",
+            "start": 7.34067,
+            "end": 10.14347,
+            "detail": "头部后仰，目光锁定上方。",
+            "evidence": [
+              {
+                "time": 8.04137,
+                "observation": "明显的仰视角度"
+              },
+              {
+                "time": 10.14347,
+                "observation": "准备进行下一个动作"
+              }
+            ]
+          }
+        ],
+        "brief": "男子摸了摸额头然后抬头向上看"
+      },
+      {
+        "id": "A-S04-P02-grab-lift-sword",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "execution_id": "E-S04-P02-grab-sword",
+        "kind": "motion",
+        "label": "抓剑并举起",
+        "start": 10.14347,
+        "end": 11.74507,
+        "start_range": [
+          10.14347,
+          10.54387
+        ],
+        "end_range": [
+          11.34467,
+          11.74507
+        ],
+        "detail": "男子突然伸出双手抓住面前的一把长剑的剑柄（或是盔甲持有的武器），用力将其向上提拉，身体随之略微挺直，脸上露出笑容。",
+        "evidence": [
+          {
+            "time": 10.14347,
+            "observation": "双手伸向剑柄"
+          },
+          {
+            "time": 10.54387,
+            "observation": "握住剑柄"
+          },
+          {
+            "time": 11.34467,
+            "observation": "剑被举起"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "握手",
+            "time": 10.54387,
+            "time_range": [
+              10.14347,
+              10.94427
+            ]
+          },
+          {
+            "name": "举起",
+            "time": 11.34467,
+            "time_range": [
+              10.94427,
+              11.74507
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "长剑"
+        ],
+        "movement_roles": [
+          "施体",
+          "客体"
+        ],
+        "subphases": [
+          {
+            "label": "抓取",
+            "start": 10.14347,
+            "end": 10.54387,
+            "detail": "双手准确握住剑柄部位。",
+            "evidence": [
+              {
+                "time": 10.14347,
+                "observation": "手靠近"
+              },
+              {
+                "time": 10.54387,
+                "observation": "接触"
+              }
+            ]
+          },
+          {
+            "label": "提拉",
+            "start": 10.54387,
+            "end": 11.74507,
+            "detail": "将剑向上拉动。",
+            "evidence": [
+              {
+                "time": 11.34467,
+                "observation": "剑身升高"
+              }
+            ]
+          }
+        ],
+        "brief": "男子抓住一把剑并将其向上举起"
+      },
+      {
+        "id": "A-S04-P02-laugh-relax",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "execution_id": "E-S04-P02-laugh",
+        "kind": "gesture",
+        "label": "大笑放松",
+        "start": 11.74507,
+        "end": 13.74707,
+        "start_range": [
+          11.74507,
+          12.14547
+        ],
+        "end_range": [
+          13.34667,
+          13.74707
+        ],
+        "detail": "举起剑后，男子松开手（或不再用力），面部表情转为开怀大笑，露出了牙齿，肩膀放松，显然是在笑场或对刚才的动作感到有趣。",
+        "evidence": [
+          {
+            "time": 11.74507,
+            "observation": "表情变为大笑"
+          },
+          {
+            "time": 13.34667,
+            "observation": "持续大笑状态"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "开始大笑",
+            "time": 11.74507,
+            "time_range": [
+              11.34467,
+              12.14547
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "面部",
+          "肩部",
+          "双手"
+        ],
+        "movement_roles": [
+          "主体"
+        ],
+        "subphases": [
+          {
+            "label": "展颜大笑",
+            "start": 11.74507,
+            "end": 13.74707,
+            "detail": "嘴角大幅上扬，发出笑声的视觉特征。",
+            "evidence": [
+              {
+                "time": 12.54587,
+                "observation": "明显的笑容"
+              },
+              {
+                "time": 13.74707,
+                "observation": "视频结束"
+              }
+            ]
+          }
+        ],
+        "brief": "男子松开劲力开怀大笑"
+      }
+    ],
+    "uncertainties": [
+      "S01和S02镜头过短且画质极差，无法确认男子的具体身份是否与后续镜头有关，也无法看清具体手势含义。",
+      "S04中男子抓取的物体虽然像剑，但在混乱的片场环境中也可能是其他道具，且其来源（是否由盔甲人递给他）不完全清晰，只能看到他从前方抓取。"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "S01和S02镜头过短且画质极差，无法确认男子的具体身份是否与后续镜头有关，也无法看清具体手势含义。",
+    "S04中男子抓取的物体虽然像剑，但在混乱的片场环境中也可能是其他道具，且其来源（是否由盔甲人递给他）不完全清晰，只能看到他从前方抓取。"
+  ]
+}

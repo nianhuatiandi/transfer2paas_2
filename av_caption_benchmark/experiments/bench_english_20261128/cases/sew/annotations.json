@@ -1,0 +1,255 @@
+{
+  "schema": "av-events/1.0",
+  "description_language": "en",
+  "source_sha256": "7a914c4ae7fe5f3708c4ccd326888f84808ecc976decabf45a0ff013dbd2f041",
+  "protocol_sha256": "9a1fbb9760600eb2a3707426468a26a483df832540f2bf00864825f3e8034a88",
+  "duration_seconds": 12.971292,
+  "actors": [
+    {
+      "id": "P1",
+      "appearance": "hands with purple nail polish and a black hair tie on the wrist"
+    }
+  ],
+  "clock": "source seconds, half-open intervals",
+  "relation_semantics": "Evidence of temporal co-occurrence only. Speaker identity and acoustic causation are separate claims.",
+  "reference_status": "model_annotations_with_review_flags",
+  "events": [
+    {
+      "id": "V0001",
+      "kind": "motion",
+      "actor": "hands with purple nail polish and a black hair tie on the wrist",
+      "start": 0,
+      "end": 3.6,
+      "sources": [
+        "shot00000/visual/0",
+        "shot00001/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "sew",
+      "brief": "A person sews blue fabric using a sewing machine.",
+      "detail": "The hands guide the blue fabric under the needle of the white sewing machine as it stitches along the edge.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The video shows hands with purple nail polish guiding blue fabric under the needle of a white sewing machine, which is actively stitching.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0001",
+      "kind": "speech",
+      "actor": "female narrator",
+      "start": 0.09,
+      "end": 2.1,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Backstitch at the beginning and the end.",
+      "transcript_original": "Backstitch at the beginning and the end.",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        0.08,
+        2.0
+      ],
+      "word_interval": [
+        0.09,
+        2.1
+      ]
+    },
+    {
+      "id": "A0002",
+      "kind": "music",
+      "actor": "unidentified source",
+      "start": 2.56,
+      "end": 12.971,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "background music",
+      "detail": "An upbeat instrumental track plays continuously from 0.5s to the end of the clip at 10.9s, serving as background audio.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "V0002",
+      "kind": "gesture",
+      "actor": "hands with purple nail polish and a black hair tie on the wrist",
+      "start": 5.28,
+      "end": 5.76,
+      "sources": [
+        "shot00001/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "No measurable movement in this interval",
+        "Muted detail check: contradicted"
+      ],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "point",
+      "brief": "A hand points to the word 'bottom' in the text overlay.",
+      "detail": "An index finger moves into the frame from the left and touches the screen over the word 'bottom'.",
+      "phases": [],
+      "fact_verdict": "contradicted",
+      "fact_evidence": "The video shows a static title card with text 'STEP 7 Hem the bottom' and no hands or pointing gesture are visible.",
+      "fact_evidence_clock_origin": 4.930000000000001,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0003",
+      "kind": "motion",
+      "actor": "hands with purple nail polish and a black hair tie on the wrist",
+      "start": 7.44,
+      "end": 11.133,
+      "sources": [
+        "shot00001/visual/2",
+        "shot00002/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "folding",
+      "brief": "The person folds the bottom edge of the blue fabric inward.",
+      "detail": "Both hands grasp the raw edge of the blue fabric laid flat on a dark surface and fold it upwards towards the inside, creating a double layer.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 0.5s to 4.0s, both hands grasp the bottom edge of the blue fabric and fold it upwards/inwards.",
+      "fact_evidence_clock_origin": 7.090000000000001,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0003",
+      "kind": "speech",
+      "actor": "female narrator",
+      "start": 7.96,
+      "end": 12.24,
+      "sources": [
+        "w00000/audio/2"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Possible compound utterance"
+      ],
+      "label": "Speech",
+      "detail": "Starting at the seam, fold the fabric over one inch twice and pin.",
+      "transcript_original": "Starting at the seam, fold the fabric over one inch twice and pin.",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        7.96,
+        12.24
+      ]
+    },
+    {
+      "id": "V0004",
+      "kind": "motion",
+      "actor": "hands with purple nail polish and a black hair tie on the wrist",
+      "start": 12.653,
+      "end": 12.971,
+      "sources": [
+        "shot00002/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "pinning",
+      "brief": "The person pins the folded hem in place.",
+      "detail": "One hand holds the folded edge steady while the other inserts a pin through the layers to secure them together.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "At 5.6s, the left hand brings a pin into view and inserts it through the folded layers held by the right hand.",
+      "fact_evidence_clock_origin": 7.090000000000001,
+      "actor_scope": "clip"
+    }
+  ],
+  "relations": [
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.09,
+      "end": 2.1,
+      "robust_interval": [
+        0.09,
+        2.1
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 2.56,
+      "end": 3.6,
+      "robust_interval": [
+        2.56,
+        3.6
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 5.28,
+      "end": 5.76,
+      "robust_interval": [
+        5.28,
+        5.76
+      ],
+      "review_flags": [
+        "Muted detail check: contradicted",
+        "No measurable movement in this interval"
+      ]
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 7.44,
+      "end": 11.133,
+      "robust_interval": [
+        7.44,
+        11.133
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0003",
+      "type": "temporal_overlap",
+      "start": 7.96,
+      "end": 11.133,
+      "robust_interval": [
+        7.96,
+        11.133
+      ],
+      "review_flags": [
+        "Possible compound utterance"
+      ]
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 12.653,
+      "end": 12.971,
+      "robust_interval": [
+        12.653,
+        12.971
+      ],
+      "review_flags": []
+    }
+  ],
+  "phase_relations": []
+}

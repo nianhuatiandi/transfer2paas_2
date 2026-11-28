@@ -1,0 +1,1721 @@
+{
+  "source": {
+    "id": "ugc03",
+    "benchmark": "UGC-VideoCap",
+    "original_id": "PI-421c3724-35b4-45e1-bfa6-418591fb5502",
+    "source_url": "https://drive.google.com/file/d/1h5qdKFxyGu-oDXsDrO6eL6GS7zjAaOO5/view",
+    "archive_member": null,
+    "original_file": "PI-421c3724-35b4-45e1-bfa6-418591fb5502.mp4",
+    "source_media_sha256": "2d488fb1515ae84dc04bb9892f15e848f4227ca3a8d575410281b390d064d328",
+    "clip_sha256": "3fa839a3f45b335f529c6de0c68a3aa030c104cafdc2256f290aefd9350e2349",
+    "source_duration": 44.002335669002335,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "card": "01",
+    "domain": "三明治烹饪演示",
+    "domain_rule": "",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "0.29 秒可见持刀，1.79、2.38、3.25 秒已切换到面包上操作。F1 被连续标到 3.7 秒，与后续动作产生可疑重叠。"
+    ]
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 12.012012012012011,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.5839172505839173,
+      "first_frame": 0,
+      "end_frame_exclusive": 14
+    },
+    {
+      "id": "S02",
+      "start": 0.5839172505839173,
+      "end": 1.1261261261261262,
+      "first_frame": 14,
+      "end_frame_exclusive": 27
+    },
+    {
+      "id": "S03",
+      "start": 1.1261261261261262,
+      "end": 1.5849182515849183,
+      "first_frame": 27,
+      "end_frame_exclusive": 38
+    },
+    {
+      "id": "S04",
+      "start": 1.5849182515849183,
+      "end": 2.1688355021688355,
+      "first_frame": 38,
+      "end_frame_exclusive": 52
+    },
+    {
+      "id": "S05",
+      "start": 2.1688355021688355,
+      "end": 2.7110443777110445,
+      "first_frame": 52,
+      "end_frame_exclusive": 65
+    },
+    {
+      "id": "S06",
+      "start": 2.7110443777110445,
+      "end": 3.2532532532532534,
+      "first_frame": 65,
+      "end_frame_exclusive": 78
+    },
+    {
+      "id": "S07",
+      "start": 3.2532532532532534,
+      "end": 3.6286286286286287,
+      "first_frame": 78,
+      "end_frame_exclusive": 87
+    },
+    {
+      "id": "S08",
+      "start": 3.6286286286286287,
+      "end": 3.9622956289622957,
+      "first_frame": 87,
+      "end_frame_exclusive": 95
+    },
+    {
+      "id": "S09",
+      "start": 3.9622956289622957,
+      "end": 4.421087754421087,
+      "first_frame": 95,
+      "end_frame_exclusive": 106
+    },
+    {
+      "id": "S10",
+      "start": 4.421087754421087,
+      "end": 5.13013013013013,
+      "first_frame": 106,
+      "end_frame_exclusive": 123
+    },
+    {
+      "id": "S11",
+      "start": 5.13013013013013,
+      "end": 5.672339005672339,
+      "first_frame": 123,
+      "end_frame_exclusive": 136
+    },
+    {
+      "id": "S12",
+      "start": 5.672339005672339,
+      "end": 6.381381381381382,
+      "first_frame": 136,
+      "end_frame_exclusive": 153
+    },
+    {
+      "id": "S13",
+      "start": 6.381381381381382,
+      "end": 7.882882882882883,
+      "first_frame": 153,
+      "end_frame_exclusive": 189
+    },
+    {
+      "id": "S14",
+      "start": 7.882882882882883,
+      "end": 8.508508508508509,
+      "first_frame": 189,
+      "end_frame_exclusive": 204
+    },
+    {
+      "id": "S15",
+      "start": 8.508508508508509,
+      "end": 9.592926259592927,
+      "first_frame": 204,
+      "end_frame_exclusive": 230
+    },
+    {
+      "id": "S16",
+      "start": 9.592926259592927,
+      "end": 10.301968635301968,
+      "first_frame": 230,
+      "end_frame_exclusive": 247
+    },
+    {
+      "id": "S17",
+      "start": 10.301968635301968,
+      "end": 10.719052385719053,
+      "first_frame": 247,
+      "end_frame_exclusive": 257
+    },
+    {
+      "id": "S18",
+      "start": 10.719052385719053,
+      "end": 11.136136136136136,
+      "first_frame": 257,
+      "end_frame_exclusive": 267
+    },
+    {
+      "id": "S19",
+      "start": 11.136136136136136,
+      "end": 11.720053386720053,
+      "first_frame": 267,
+      "end_frame_exclusive": 281
+    },
+    {
+      "id": "S20",
+      "start": 11.720053386720053,
+      "end": 12.012012012012011,
+      "first_frame": 281,
+      "end_frame_exclusive": 288
+    }
+  ],
+  "timestamped_frames": 137,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2",
+    "action_details": "visual_action_details"
+  },
+  "visual": {
+    "clip_id": "ugc03",
+    "mode": "VISUAL_GT",
+    "clock": {
+      "fps": 24.0,
+      "duration_sec": 12.012012
+    },
+    "facts": [
+      {
+        "id": "F1",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "鸡肉块",
+        "parent_ids": [],
+        "claim": "厨师用刀将鸡肉块切开。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.0,
+          3.7
+        ],
+        "visible_spans": [
+          [
+            0.0,
+            3.7
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            3.6,
+            3.8
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 0.0,
+            "modality": "visual",
+            "note": "厨师手持菜刀准备切肉"
+          },
+          {
+            "time_point": 1.5,
+            "modality": "visual",
+            "note": "刀刃切入鸡肉中"
+          },
+          {
+            "time_point": 3.6,
+            "modality": "visual",
+            "note": "刀完全切断鸡肉"
+          }
+        ],
+        "action_detail": "厨师手持菜刀，自上而下反复切剁案板上的熟鸡肉块，将其切成更小的肉丁。",
+        "detail_frame_indices": [
+          0,
+          2,
+          5,
+          7,
+          10,
+          12,
+          13,
+          14,
+          16,
+          19,
+          21,
+          24,
+          26,
+          27,
+          29,
+          32,
+          34,
+          37
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F2",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "橙色酱料",
+        "parent_ids": [],
+        "claim": "厨师用勺子舀取橙色酱料。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          1.6,
+          2.2
+        ],
+        "visible_spans": [
+          [
+            1.6,
+            2.2
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            1.5,
+            1.7
+          ],
+          "end": [
+            2.1,
+            2.3
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 1.6,
+            "modality": "visual",
+            "note": "厨师拿着装有橙色酱料的罐子，勺子伸入其中"
+          },
+          {
+            "time_point": 2.1,
+            "modality": "visual",
+            "note": "盛满酱料的勺子被提出罐外"
+          }
+        ],
+        "action_detail": "厨师用勺子从玻璃罐中舀出一勺橙色酱料。",
+        "detail_frame_indices": [
+          38,
+          40,
+          43,
+          45,
+          48,
+          50,
+          51
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F3",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "面包片",
+        "parent_ids": [],
+        "claim": "厨师用勺子在面包上涂抹橙色酱料。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          2.2,
+          2.7
+        ],
+        "visible_spans": [
+          [
+            2.2,
+            2.7
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            2.1,
+            2.3
+          ],
+          "end": [
+            2.6,
+            2.8
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 2.2,
+            "modality": "visual",
+            "note": "带有酱料的勺子接触到面包表面并开始抹开"
+          },
+          {
+            "time_point": 2.6,
+            "modality": "visual",
+            "note": "酱料均匀涂在面包上，勺子离开"
+          }
+        ],
+        "action_detail": "厨师用勺背将橙色酱料均匀地涂抹在面包片表面。",
+        "detail_frame_indices": [
+          52,
+          54,
+          57,
+          59,
+          62,
+          64
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F4",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "鸡肉块",
+        "parent_ids": [],
+        "claim": "厨师将切好的鸡肉放到涂有酱料的面包上。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          2.7,
+          3.6
+        ],
+        "visible_spans": [
+          [
+            2.7,
+            3.6
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            2.6,
+            2.8
+          ],
+          "end": [
+            3.5,
+            3.7
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 2.7,
+            "modality": "visual",
+            "note": "厨师用手拿起一块鸡肉悬停在面包上方"
+          },
+          {
+            "time_point": 3.5,
+            "modality": "visual",
+            "note": "鸡肉平稳地放置在面包上"
+          }
+        ],
+        "action_detail": "厨师用刀铲起切好的鸡肉块，放置在涂有酱料的面包上。",
+        "detail_frame_indices": [
+          65,
+          67,
+          70,
+          72,
+          75,
+          77
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F5",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "黄瓜丝",
+        "parent_ids": [],
+        "claim": "厨师用筷子夹取黄瓜丝放在鸡肉上。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          3.7,
+          4.6
+        ],
+        "visible_spans": [
+          [
+            3.7,
+            4.6
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            3.6,
+            3.8
+          ],
+          "end": [
+            4.5,
+            4.7
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 3.7,
+            "modality": "visual",
+            "note": "厨师使用筷子从容器中夹起黄瓜丝"
+          },
+          {
+            "time_point": 4.5,
+            "modality": "visual",
+            "note": "黄瓜丝被铺在三明治的鸡肉层上"
+          }
+        ],
+        "action_detail": "厨师用筷子夹取黄瓜丝，铺在三明治的鸡肉层上方。",
+        "detail_frame_indices": [
+          87,
+          89,
+          92,
+          94,
+          95,
+          97,
+          100,
+          102,
+          105
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F6",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "酱汁",
+        "parent_ids": [],
+        "claim": "厨师将透明液体淋在三明治上。",
+        "polarity": "affirmed",
+        "certainty": "hedged",
+        "instance_range": [
+          4.6,
+          5.1
+        ],
+        "visible_spans": [
+          [
+            4.6,
+            5.1
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            4.5,
+            4.7
+          ],
+          "end": [
+            5.0,
+            5.2
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 4.6,
+            "modality": "visual",
+            "note": "画面中出现倾倒动作，透明液体落在黄瓜丝和鸡肉上"
+          },
+          {
+            "time_point": 5.0,
+            "modality": "visual",
+            "note": "液体顺着食材流下并在案板上形成水渍"
+          }
+        ],
+        "action_detail": "厨师将透明液体淋在三明治的黄瓜丝上。",
+        "detail_frame_indices": [
+          106,
+          108,
+          111,
+          113,
+          116,
+          118,
+          120,
+          122
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F7",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "橙色酱料",
+        "parent_ids": [],
+        "claim": "厨师用挤压瓶将橙色酱料挤在三明治上。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          5.1,
+          5.6
+        ],
+        "visible_spans": [
+          [
+            5.1,
+            5.6
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            5.0,
+            5.2
+          ],
+          "end": [
+            5.5,
+            5.7
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 5.1,
+            "modality": "visual",
+            "note": "厨师手持带红盖的瓶子开始挤出橙色酱料"
+          },
+          {
+            "time_point": 5.5,
+            "modality": "visual",
+            "note": "酱料呈线条状覆盖在蔬菜上，停止挤压"
+          }
+        ],
+        "action_detail": "厨师使用红色挤压瓶，将橙色酱料呈线条状挤在三明治顶部。",
+        "detail_frame_indices": [
+          123,
+          125,
+          128,
+          130,
+          133,
+          135
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F8",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "绿色香草碎",
+        "parent_ids": [],
+        "claim": "厨师撒上绿色香草碎作为点缀。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          5.6,
+          6.3
+        ],
+        "visible_spans": [
+          [
+            5.6,
+            6.3
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            5.5,
+            5.7
+          ],
+          "end": [
+            6.2,
+            6.4
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 5.6,
+            "modality": "visual",
+            "note": "绿色的细小颗粒从画面上方落下"
+          },
+          {
+            "time_point": 6.2,
+            "modality": "visual",
+            "note": "香草碎散落在三明治表面各处"
+          }
+        ],
+        "action_detail": "厨师用手捏取绿色香草碎，撒在三明治的酱料层上。",
+        "detail_frame_indices": [
+          136,
+          138,
+          141,
+          143,
+          146,
+          148,
+          150,
+          152
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F9",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "面包片",
+        "parent_ids": [],
+        "claim": "厨师盖上另一片面包完成三明治组装。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          6.3,
+          7.8
+        ],
+        "visible_spans": [
+          [
+            6.3,
+            7.8
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            6.2,
+            6.4
+          ],
+          "end": [
+            7.7,
+            7.9
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 6.3,
+            "modality": "visual",
+            "note": "厨师双手拿着一片面包靠近已做好的底层"
+          },
+          {
+            "time_point": 7.7,
+            "modality": "visual",
+            "note": "上层面包压实，三明治结构完整"
+          }
+        ],
+        "action_detail": "厨师双手拿起另一片面包，盖在三明治顶部完成组装，并轻轻按压固定。",
+        "detail_frame_indices": [
+          153,
+          155,
+          158,
+          160,
+          163,
+          165,
+          167,
+          170,
+          172,
+          175,
+          177,
+          179,
+          182,
+          184,
+          187,
+          188
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F10",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "三明治",
+        "parent_ids": [],
+        "claim": "厨师用刀将完整的三明治切成两半。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          7.8,
+          8.5
+        ],
+        "visible_spans": [
+          [
+            7.8,
+            8.5
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            7.7,
+            7.9
+          ],
+          "end": [
+            8.4,
+            8.6
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 7.8,
+            "modality": "visual",
+            "note": "厨师按住三明治顶部，刀刃垂直向下切入"
+          },
+          {
+            "time_point": 8.4,
+            "modality": "visual",
+            "note": "三明治被一分为二，露出内部截面"
+          }
+        ],
+        "action_detail": "厨师一手按住三明治，另一手用刀垂直向下切割，将三明治分成两半。",
+        "detail_frame_indices": [
+          189,
+          191,
+          194,
+          196,
+          199,
+          201,
+          203
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F11",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "蛋黄酱罐",
+        "parent_ids": [],
+        "claim": "厨师打开一瓶蛋黄酱的盖子。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          10.3,
+          10.7
+        ],
+        "visible_spans": [
+          [
+            10.3,
+            10.7
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            10.2,
+            10.4
+          ],
+          "end": [
+            10.6,
+            10.8
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 10.3,
+            "modality": "visual",
+            "note": "厨师的手握住黑色瓶盖开始旋转拧动"
+          },
+          {
+            "time_point": 10.6,
+            "modality": "visual",
+            "note": "瓶盖被取下，露出白色的蛋黄酱"
+          }
+        ],
+        "action_detail": "厨师双手握住蛋黄酱罐，逆时针拧开黑色盖子并将其取下。",
+        "detail_frame_indices": [
+          247,
+          249,
+          252,
+          254,
+          256
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F12",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "蛋黄酱",
+        "parent_ids": [],
+        "claim": "厨师用勺子挖取蛋黄酱。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          10.7,
+          11.6
+        ],
+        "visible_spans": [
+          [
+            10.7,
+            11.6
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            10.6,
+            10.8
+          ],
+          "end": [
+            11.5,
+            11.7
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 10.7,
+            "modality": "visual",
+            "note": "金属勺子进入敞开的蛋黄酱罐中"
+          },
+          {
+            "time_point": 11.5,
+            "modality": "visual",
+            "note": "满满一勺浓稠的白色蛋黄酱被提离罐口"
+          }
+        ],
+        "action_detail": "厨师用勺子伸入敞口的蛋黄酱罐中，挖取满满一勺白色蛋黄酱。",
+        "detail_frame_indices": [
+          257,
+          259,
+          262,
+          264,
+          266,
+          267,
+          269,
+          272,
+          274,
+          277,
+          279,
+          280
+        ],
+        "detail_review_note": null
+      },
+      {
+        "id": "F13",
+        "kind": "action",
+        "level": "L2",
+        "actor": "厨师",
+        "object": "蛋黄酱",
+        "parent_ids": [],
+        "claim": "厨师将蛋黄酱转移到另一个玻璃小碗中。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          11.6,
+          12.0
+        ],
+        "visible_spans": [
+          [
+            11.6,
+            12.0
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            11.5,
+            11.7
+          ],
+          "end": [
+            11.9,
+            12.0
+          ]
+        },
+        "context_range": null,
+        "evidence": [
+          {
+            "time_point": 11.6,
+            "modality": "visual",
+            "note": "装满蛋黄酱的勺子移动到一个小玻璃碗上方"
+          },
+          {
+            "time_point": 11.9,
+            "modality": "visual",
+            "note": "蛋黄酱落入玻璃碗中"
+          }
+        ],
+        "action_detail": "厨师将盛满蛋黄酱的勺子移至玻璃小碗上方，把酱料倒入碗中。",
+        "detail_frame_indices": [
+          281,
+          283,
+          286,
+          287
+        ],
+        "detail_review_note": null
+      }
+    ],
+    "relations": [
+      {
+        "id": "R1",
+        "predicate": "precedes",
+        "from_id": "F1",
+        "to_id": "F4",
+        "claim": "切鸡肉的动作发生在将其放入三明治之前。",
+        "evidence": [
+          {
+            "time_point": 3.6,
+            "modality": "visual",
+            "note": "鸡肉被切断"
+          },
+          {
+            "time_point": 2.7,
+            "modality": "visual",
+            "note": "厨师拿起已经切好的鸡肉"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R2",
+        "predicate": "precedes",
+        "from_id": "F2",
+        "to_id": "F3",
+        "claim": "舀取酱料的动作发生在涂抹酱料之前。",
+        "evidence": [
+          {
+            "time_point": 2.1,
+            "modality": "visual",
+            "note": "勺子盛满酱料离开罐子"
+          },
+          {
+            "time_point": 2.2,
+            "modality": "visual",
+            "note": "勺子接触面包开始涂抹"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R3",
+        "predicate": "precedes",
+        "from_id": "F3",
+        "to_id": "F4",
+        "claim": "在面包上涂酱的动作发生在放置鸡肉之前。",
+        "evidence": [
+          {
+            "time_point": 2.6,
+            "modality": "visual",
+            "note": "酱料涂抹完毕"
+          },
+          {
+            "time_point": 2.7,
+            "modality": "visual",
+            "note": "鸡肉被放上面包"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R4",
+        "predicate": "precedes",
+        "from_id": "F4",
+        "to_id": "F5",
+        "claim": "放置鸡肉的动作发生在添加黄瓜丝之前。",
+        "evidence": [
+          {
+            "time_point": 3.5,
+            "modality": "visual",
+            "note": "鸡肉就位"
+          },
+          {
+            "time_point": 3.7,
+            "modality": "visual",
+            "note": "开始往鸡肉上加配菜"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R5",
+        "predicate": "precedes",
+        "from_id": "F5",
+        "to_id": "F6",
+        "claim": "添加黄瓜丝的动作发生在淋透明液体之前。",
+        "evidence": [
+          {
+            "time_point": 4.5,
+            "modality": "visual",
+            "note": "黄瓜丝铺设完成"
+          },
+          {
+            "time_point": 4.6,
+            "modality": "visual",
+            "note": "液体倒在黄瓜丝上"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R6",
+        "predicate": "precedes",
+        "from_id": "F6",
+        "to_id": "F7",
+        "claim": "淋透明液体的动作发生在挤橙色酱料之前。",
+        "evidence": [
+          {
+            "time_point": 5.0,
+            "modality": "visual",
+            "note": "透明液体流动结束"
+          },
+          {
+            "time_point": 5.1,
+            "modality": "visual",
+            "note": "红色瓶子出现并挤出橙色酱料"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R7",
+        "predicate": "precedes",
+        "from_id": "F7",
+        "to_id": "F8",
+        "claim": "挤橙色酱料的动作发生在撒香草碎之前。",
+        "evidence": [
+          {
+            "time_point": 5.5,
+            "modality": "visual",
+            "note": "酱料线条绘制完成"
+          },
+          {
+            "time_point": 5.6,
+            "modality": "visual",
+            "note": "绿色颗粒开始飘落"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R8",
+        "predicate": "precedes",
+        "from_id": "F8",
+        "to_id": "F9",
+        "claim": "撒香草碎的动作发生在盖上顶层面包之前。",
+        "evidence": [
+          {
+            "time_point": 6.2,
+            "modality": "visual",
+            "note": "配料全部加完"
+          },
+          {
+            "time_point": 6.3,
+            "modality": "visual",
+            "note": "厨师拿来最后一片面包"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R9",
+        "predicate": "precedes",
+        "from_id": "F9",
+        "to_id": "F10",
+        "claim": "组装完成的动作发生在切分三明治之前。",
+        "evidence": [
+          {
+            "time_point": 7.7,
+            "modality": "visual",
+            "note": "三明治整体成型"
+          },
+          {
+            "time_point": 7.8,
+            "modality": "visual",
+            "note": "刀具介入进行切割"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R10",
+        "predicate": "precedes",
+        "from_id": "F11",
+        "to_id": "F12",
+        "claim": "打开蛋黄酱罐的动作发生在挖取酱料之前。",
+        "evidence": [
+          {
+            "time_point": 10.6,
+            "modality": "visual",
+            "note": "盖子被移除"
+          },
+          {
+            "time_point": 10.7,
+            "modality": "visual",
+            "note": "勺子探入无盖的罐中"
+          }
+        ],
+        "certainty": "asserted"
+      },
+      {
+        "id": "R11",
+        "predicate": "precedes",
+        "from_id": "F12",
+        "to_id": "F13",
+        "claim": "挖取蛋黄酱的动作发生在转移至新容器之前。",
+        "evidence": [
+          {
+            "time_point": 11.5,
+            "modality": "visual",
+            "note": "满载的勺子离开原罐"
+          },
+          {
+            "time_point": 11.6,
+            "modality": "visual",
+            "note": "勺子移动到新的小碗上方"
+          }
+        ],
+        "certainty": "asserted"
+      }
+    ],
+    "residual": []
+  },
+  "audio": {
+    "clip_id": "ugc03",
+    "clock": "global clip clock; audio zero = clip zero",
+    "coverage": {
+      "total_duration_sec": 12.012,
+      "speech_coverage": [
+        {
+          "speaker_id": "V01",
+          "start_sec": 0.08,
+          "end_sec": 12.0
+        }
+      ],
+      "uncovered_intervals": []
+    },
+    "audio_events": [
+      {
+        "id": "E1",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "Lemon garlic chicken is so good, you're gonna love this one.",
+        "instance_range": [
+          0.08,
+          3.2
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.08,
+            0.16
+          ],
+          "end": [
+            3.12,
+            3.2
+          ]
+        },
+        "evidence_time": 1.5,
+        "confidence": 0.97
+      },
+      {
+        "id": "E2",
+        "type": "sfx",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "instance_range": [
+          3.2,
+          3.44
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 3.32,
+        "confidence": 0.95
+      },
+      {
+        "id": "E3",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "And coming in at only 660 calories and 33 grams of protein, I could eat this one every day.",
+        "instance_range": [
+          3.44,
+          8.88
+        ],
+        "boundary_ranges": {
+          "start": [
+            3.44,
+            3.52
+          ],
+          "end": [
+            8.8,
+            8.88
+          ]
+        },
+        "evidence_time": 6.0,
+        "confidence": 0.97
+      },
+      {
+        "id": "E4",
+        "type": "sfx",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "instance_range": [
+          6.88,
+          8.88
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 7.8,
+        "confidence": 0.95
+      },
+      {
+        "id": "E5",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "Weight update: I finally broke through that 210 wall, man.",
+        "instance_range": [
+          9.12,
+          12.0
+        ],
+        "boundary_ranges": {
+          "start": [
+            9.12,
+            9.2
+          ],
+          "end": [
+            11.92,
+            12.0
+          ]
+        },
+        "evidence_time": 10.5,
+        "confidence": 0.97
+      },
+      {
+        "id": "E6",
+        "type": "sfx",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "instance_range": [
+          9.76,
+          10.4
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 10.08,
+        "confidence": 0.95
+      }
+    ],
+    "unresolved": []
+  },
+  "original_audio_events": [
+    {
+      "id": "E1",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "Lemon garlic chicken is so good, you're gonna love this one.",
+      "instance_range": [
+        0.08,
+        3.2
+      ],
+      "boundary_ranges": {
+        "start": [
+          0.08,
+          0.16
+        ],
+        "end": [
+          3.12,
+          3.2
+        ]
+      },
+      "evidence_time": 1.5,
+      "confidence": 0.97
+    },
+    {
+      "id": "E2",
+      "type": "sfx",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "instance_range": [
+        3.2,
+        3.44
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 3.32,
+      "confidence": 0.95
+    },
+    {
+      "id": "E3",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "And coming in at only 660 calories and 33 grams of protein, I could eat this one every day.",
+      "instance_range": [
+        3.44,
+        8.88
+      ],
+      "boundary_ranges": {
+        "start": [
+          3.44,
+          3.52
+        ],
+        "end": [
+          8.8,
+          8.88
+        ]
+      },
+      "evidence_time": 6.0,
+      "confidence": 0.97
+    },
+    {
+      "id": "E4",
+      "type": "sfx",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "instance_range": [
+        6.88,
+        8.88
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 7.8,
+      "confidence": 0.95
+    },
+    {
+      "id": "E5",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "Weight update: I finally broke through that 210 wall, man.",
+      "instance_range": [
+        9.12,
+        12.0
+      ],
+      "boundary_ranges": {
+        "start": [
+          9.12,
+          9.2
+        ],
+        "end": [
+          11.92,
+          12.0
+        ]
+      },
+      "evidence_time": 10.5,
+      "confidence": 0.97
+    },
+    {
+      "id": "E6",
+      "type": "sfx",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "instance_range": [
+        9.76,
+        10.4
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 10.08,
+      "confidence": 0.95
+    }
+  ],
+  "sentence_alignment": {},
+  "temporal_edges": [
+    {
+      "visual_id": "F1",
+      "audio_id": "E1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          0.08,
+          3.2
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F1",
+      "audio_id": "E2",
+      "audio_layer": "background",
+      "audio_type": "sfx",
+      "intersections": [
+        [
+          3.2,
+          3.44
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F1",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          3.44,
+          3.7
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F2",
+      "audio_id": "E1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          1.6,
+          2.2
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F3",
+      "audio_id": "E1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          2.2,
+          2.7
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F4",
+      "audio_id": "E1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          2.7,
+          3.2
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F4",
+      "audio_id": "E2",
+      "audio_layer": "background",
+      "audio_type": "sfx",
+      "intersections": [
+        [
+          3.2,
+          3.44
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F4",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          3.44,
+          3.6
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "边界待审",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F5",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          3.7,
+          4.6
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F6",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          4.6,
+          5.1
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F7",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          5.1,
+          5.6
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F8",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          5.6,
+          6.3
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F9",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          6.3,
+          7.8
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F9",
+      "audio_id": "E4",
+      "audio_layer": "background",
+      "audio_type": "sfx",
+      "intersections": [
+        [
+          6.88,
+          7.8
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F10",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          7.8,
+          8.5
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F10",
+      "audio_id": "E4",
+      "audio_layer": "background",
+      "audio_type": "sfx",
+      "intersections": [
+        [
+          7.8,
+          8.5
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F11",
+      "audio_id": "E5",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          10.3,
+          10.7
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F11",
+      "audio_id": "E6",
+      "audio_layer": "background",
+      "audio_type": "sfx",
+      "intersections": [
+        [
+          10.3,
+          10.4
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F12",
+      "audio_id": "E5",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          10.7,
+          11.6
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F13",
+      "audio_id": "E5",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          11.6,
+          12.0
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "E2 缺声音听感或描述。",
+    "E4 缺声音听感或描述。",
+    "E6 缺声音听感或描述。",
+    "0.29 秒可见持刀，1.79、2.38、3.25 秒已切换到面包上操作。F1 被连续标到 3.7 秒，与后续动作产生可疑重叠。",
+    "本次未输出 L3 部位运动，需按画面判定是否有漏项。"
+  ]
+}

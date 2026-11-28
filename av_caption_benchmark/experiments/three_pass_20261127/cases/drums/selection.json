@@ -1,0 +1,17 @@
+{
+  "id": "drums",
+  "category": "音乐演奏与节奏表演",
+  "title": "架子鼓与镲片演示",
+  "source": {
+    "repo": "mhan/shot2story-videos",
+    "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+    "member": "release_134k_videos/M1KSdLZYg-c.6.mp4",
+    "offset": 64376304128,
+    "bytes": 758109,
+    "source_sha256": "c573060a95a9b8575ff7e7e5564911a4163d61ea9aec993b8a602e8f2b2f2576",
+    "source_dataset": "EVA-data / Shot2Story"
+  },
+  "source_start": 0,
+  "duration": 9.009,
+  "sha256": "da1a928df1edf9f403917059881a40811e12b718e8256b5b4de1d9f1dc51d19a"
+}

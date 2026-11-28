@@ -1,0 +1,54 @@
+0.00–2.00 s | V0001 · visible_speech · man wearing a blue sleeveless shirt and black headband | speaking to camera
+A man speaks directly to the camera with animated facial expressions and hand gestures. The subject faces forward, maintaining eye contact with the lens while speaking continuously. His mouth moves clearly as he articulates words, accompanied by slight eyebrow raises for emphasis. He uses both hands to gesture in front of his chest to underscore his points. Posture: unclear. Visible evidence: Repeated articulatory lip/jaw changes coordinated with facial emphasis while facing forward.
+Included in silver reference
+
+0.00–2.00 s | V0002 · motion · woman with short hair, wearing a dark jacket over a white top | woman walking in background
+A woman walks along a path behind the main speaker. The woman with short hair, wearing a dark jacket over a white top, is seen moving from right to left across the background path between 0.0s and 2.0s.
+Included in silver reference
+
+0.06–2.73 s | A0001 · speech · male voice | Speech
+How to achieve immediate results within one minute,
+Original: 如何在一分钟之内就立竿见影，
+Included in silver reference
+
+0.84–1.20 s | A0002 · sound · unidentified source | electronic beeps
+A sequence of short, high-pitched electronic beeps is audible.
+Included in silver reference
+
+1.80–2.00 s | V0003 · gesture · man wearing a blue sleeveless shirt and black headband | hand gesturing
+The man raises both hands slightly in front of his chest while speaking. His palms face inward and move up and down gently.
+Included in silver reference
+
+1.92–2.32 s | A0003 · sound · unidentified source | electronic beeps
+A sequence of short, high-pitched electronic beeps is audible.
+Included in silver reference
+
+2.16–5.32 s | V0004 · motion · man wearing a blue sleeveless shirt and black headband | jumping
+The man performs a standing long jump sequence on an outdoor track. He swings his arms backward into a deep squat, then explosively extends his legs and swings his arms forward to propel himself through the air before landing in a crouch.
+Included in silver reference
+
+2.56–4.96 s | A0004 · speech · male voice | Speech
+improve your standing long jump score as if by cheating?
+Original: 如同作弊一般提升立定跳远的成绩呢？
+Included in silver reference
+
+3.04–3.44 s | A0005 · sound · unidentified source | electronic beeps
+A sequence of short, high-pitched electronic beeps is audible.
+Included in silver reference
+
+4.16–4.56 s | A0006 · sound · unidentified source | electronic beeps
+A sequence of short, high-pitched electronic beeps is audible.
+Included in silver reference
+
+5.28–5.68 s | A0007 · sound · unidentified source | electronic beeps
+A sequence of short, high-pitched electronic beeps is audible.
+Included in silver reference
+
+5.43–6.99 s | A0008 · speech · male voice | Speech
+Today I will introduce three methods.
+Original: 今天给大家介绍三个方法。
+Included in silver reference
+
+6.36–6.76 s | A0009 · sound · unidentified source | electronic beep tones
+A sequence of short, high-pitched electronic beeps or notification tones.
+Review: Non-speech sound absent on acoustic replay

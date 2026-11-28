@@ -1,0 +1,353 @@
+{
+  "source": {
+    "id": "dia02",
+    "benchmark": "DiaDemBench",
+    "original_id": "150",
+    "source_url": "https://huggingface.co/datasets/DiaDem-Captioner/DiaDemBench/blob/ff6dfcc152ee4cc96e92ec83a0910c187e6ad98b/videos.zip",
+    "archive_member": "videos/150.mp4",
+    "original_file": "dia_150.mp4",
+    "source_media_sha256": "3877fb5e1add841775b792f3fee581cb15670cdfb872a6c66a7501df4e5664e1",
+    "clip_sha256": "3877fb5e1add841775b792f3fee581cb15670cdfb872a6c66a7501df4e5664e1",
+    "source_duration": 9.4,
+    "source_window_seconds": [
+      0,
+      9.4
+    ],
+    "card": "04",
+    "domain": "车内对话与镜头切换",
+    "domain_rule": "对话与互动场景：分别追踪每人。对他人或物体的独立可见动作、明确的交流手势可作 L2。持续注视和站坐姿态记状态。仅有嘴动不推断对白内容。切镜后需重新核验人物与对象；跨镜身份不确定记局部 ID。",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "第 5.608 秒为镜头切换候选。切换到听者后，姿态或注视可保留为状态。不要为形成跨镜动作关系而把静坐强行升级为 L2。"
+    ],
+    "disposition": "extra_cut_control"
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 9.408,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 5.608,
+      "first_frame": 0,
+      "end_frame_exclusive": 140
+    },
+    {
+      "id": "S02",
+      "start": 5.608,
+      "end": 9.408,
+      "first_frame": 140,
+      "end_frame_exclusive": 235
+    }
+  ],
+  "timestamped_frames": 96,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2"
+  },
+  "visual": {
+    "clip_id": "dia02",
+    "mode": "VISUAL_GT",
+    "clock": "video",
+    "facts": [
+      {
+        "id": "F1",
+        "kind": "state",
+        "level": null,
+        "actor": "戴眼镜的男子",
+        "object": null,
+        "parent_ids": [],
+        "claim": "戴眼镜的男子坐在车内驾驶座上，手握方向盘。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.0,
+          5.6
+        ],
+        "visible_spans": [
+          [
+            0.0,
+            5.6
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time": [
+              0.0,
+              5.6
+            ],
+            "visual": "男子坐在驾驶位，双手放在方向盘上"
+          }
+        ]
+      },
+      {
+        "id": "F2",
+        "kind": "action",
+        "level": "L2",
+        "actor": "戴眼镜的男子",
+        "object": "雨刮器",
+        "parent_ids": [
+          "F1"
+        ],
+        "claim": "戴眼镜的男子操作汽车雨刮器刮拭挡风玻璃上的雨水。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.8,
+          3.6
+        ],
+        "visible_spans": [
+          [
+            0.8,
+            3.6
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": [
+          {
+            "time": [
+              0.8,
+              3.6
+            ],
+            "visual": "画面中可见雨刮器在挡风玻璃上来回摆动"
+          }
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "id": "R1",
+        "predicate": "concurrent_with",
+        "from_id": "F1",
+        "to_id": "F2",
+        "claim": "戴眼镜的男子在保持坐姿的同时操作雨刮器。",
+        "evidence": [
+          {
+            "time": [
+              0.8,
+              3.6
+            ],
+            "visual": "男子坐着且雨刮器在工作"
+          }
+        ],
+        "certainty": "asserted"
+      }
+    ],
+    "residual": []
+  },
+  "audio": {
+    "clip_id": "dia02",
+    "clock": "global",
+    "coverage": [
+      0.0,
+      9.408
+    ],
+    "audio_events": [
+      {
+        "id": "spk_01.1",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "印象中，我在新闻里见过你弟的照片，你们是孪生兄弟。",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          0.0,
+          5.2
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            5.2,
+            5.2
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "句首“印象中”清晰可辨；句尾“孪生兄弟”发音完整，随后有短暂停顿。",
+        "parent_audio_id": "spk_01"
+      },
+      {
+        "id": "spk_01.2",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "那你有没有想过？",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          8.32,
+          9.4
+        ],
+        "boundary_ranges": {
+          "start": [
+            8.32,
+            8.32
+          ],
+          "end": [
+            9.4,
+            9.4
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "句首“那”字起音明确；句尾“想过”后语气上扬并结束于片段末尾。",
+        "parent_audio_id": "spk_01"
+      },
+      {
+        "id": "amb_01",
+        "type": "ambience",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "一段低沉连续的运转轰鸣声贯穿全片。",
+        "instance_range": [
+          0.0,
+          9.408
+        ],
+        "boundary_ranges": null,
+        "evidence_time": [
+          1.0,
+          5.0,
+          8.0
+        ],
+        "confidence": "high"
+      }
+    ],
+    "unresolved": []
+  },
+  "original_audio_events": [
+    {
+      "id": "spk_01",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "印象中，我在新闻里见过你弟的照片，你们是孪生兄弟。那你有没有想过？",
+      "claim": "一名男声在持续的低沉轰鸣背景上说出一段话并提问。",
+      "instance_range": [
+        0.0,
+        9.2
+      ],
+      "boundary_ranges": {
+        "start": [
+          0.0,
+          0.2
+        ],
+        "end": [
+          9.0,
+          9.4
+        ]
+      },
+      "evidence_time": [
+        0.5,
+        3.5,
+        7.5
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "amb_01",
+      "type": "ambience",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "一段低沉连续的运转轰鸣声贯穿全片。",
+      "instance_range": [
+        0.0,
+        9.408
+      ],
+      "boundary_ranges": null,
+      "evidence_time": [
+        1.0,
+        5.0,
+        8.0
+      ],
+      "confidence": "high"
+    }
+  ],
+  "sentence_alignment": {
+    "sentences": [
+      {
+        "id": "spk_01.1",
+        "transcript": "印象中，我在新闻里见过你弟的照片，你们是孪生兄弟。",
+        "instance_range": [
+          0.0,
+          5.2
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            5.2,
+            5.2
+          ]
+        },
+        "evidence": "句首“印象中”清晰可辨；句尾“孪生兄弟”发音完整，随后有短暂停顿。"
+      },
+      {
+        "id": "spk_01.2",
+        "transcript": "那你有没有想过？",
+        "instance_range": [
+          8.32,
+          9.4
+        ],
+        "boundary_ranges": {
+          "start": [
+            8.32,
+            8.32
+          ],
+          "end": [
+            9.4,
+            9.4
+          ]
+        },
+        "evidence": "句首“那”字起音明确；句尾“想过”后语气上扬并结束于片段末尾。"
+      }
+    ]
+  },
+  "temporal_edges": [
+    {
+      "visual_id": "F2",
+      "audio_id": "spk_01.1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          0.8,
+          3.6
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F2",
+      "audio_id": "amb_01",
+      "audio_layer": "background",
+      "audio_type": "ambience",
+      "intersections": [
+        [
+          0.8,
+          3.6
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "第 5.608 秒为镜头切换候选。切换到听者后，姿态或注视可保留为状态。不要为形成跨镜动作关系而把静坐强行升级为 L2。",
+    "本次未输出 L3 部位运动，需按画面判定是否有漏项。"
+  ]
+}

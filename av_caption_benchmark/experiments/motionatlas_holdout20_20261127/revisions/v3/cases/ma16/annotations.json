@@ -1,0 +1,840 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma16",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "室内双人互动",
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      14
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-e6432b52-316.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      5.0
+    ],
+    "official_sha256": "757761ce2597d7be5c733db808cbb7f425ef962463e889d8309825aae7045bf4",
+    "clip_sha256": "757761ce2597d7be5c733db808cbb7f425ef962463e889d8309825aae7045bf4",
+    "audio_source": null
+  },
+  "duration_seconds": 5.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 5.0,
+      "first_frame": 0,
+      "end_frame_exclusive": 40
+    }
+  ],
+  "input_frames": {
+    "visual": 40
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一个连续镜头，记录了一男一女在床上倒酒并饮用的过程。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "短发女子，身穿深色上衣"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "男子，身穿黑色开衫和白色内搭"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E01",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 0.625,
+        "description": "男子右手持酒瓶向木杯中倾倒液体"
+      },
+      {
+        "id": "E02",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 0.75,
+        "end": 2.375,
+        "description": "男子双手拿住酒瓶查看标签并拧开瓶盖"
+      },
+      {
+        "id": "E03",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 2.5,
+        "end": 3.875,
+        "description": "男子双腿抬起并在空中交叉晃动"
+      },
+      {
+        "id": "E04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 3.875,
+        "end": 4.875,
+        "description": "女子端起木杯饮用其中的液体"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A01",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "E01",
+        "kind": "motion",
+        "label": "倒酒",
+        "start": 0.0,
+        "end": 0.625,
+        "start_range": [
+          0.0,
+          0.125
+        ],
+        "end_range": [
+          0.5,
+          0.625
+        ],
+        "detail": "男子俯卧在床上，右手握住深色酒瓶的底部将其倾斜，瓶口对准前方的木制小酒杯进行倾倒。随后他将酒瓶收回 upright 状态。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "男子右手持酒瓶倾斜，瓶口靠近木杯"
+          },
+          {
+            "time": 0.5,
+            "observation": "男子将酒瓶收回至直立状态"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "手臂"
+        ],
+        "movement_roles": [
+          "持物",
+          "倾倒"
+        ],
+        "subphases": [],
+        "brief": "男子用右手持酒瓶向木杯中倒酒"
+      },
+      {
+        "id": "A02",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "E02",
+        "kind": "motion",
+        "label": "查看并开瓶",
+        "start": 0.75,
+        "end": 2.375,
+        "start_range": [
+          0.75,
+          0.875
+        ],
+        "end_range": [
+          2.25,
+          2.375
+        ],
+        "detail": "男子双手拿住酒瓶，视线落在带有日文字符的白色标签上。接着他左手托住瓶身，右手捏住瓶盖用力旋转，最终将瓶盖拧下并放下酒瓶。",
+        "evidence": [
+          {
+            "time": 1.0,
+            "observation": "男子双手持瓶，注视标签"
+          },
+          {
+            "time": 1.5,
+            "observation": "男子右手开始拧动瓶盖"
+          },
+          {
+            "time": 2.25,
+            "observation": "男子完成开瓶动作并将酒瓶移开"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "拧开瓶盖",
+            "time": 1.875,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "头部",
+          "眼睛"
+        ],
+        "movement_roles": [
+          "持物",
+          "旋转",
+          "注视"
+        ],
+        "subphases": [
+          {
+            "label": "查看标签",
+            "start": 0.75,
+            "end": 1.375,
+            "detail": "男子双手持瓶，低头阅读瓶身上的日文标签",
+            "evidence": [
+              {
+                "time": 1.0,
+                "observation": "男子视线集中在酒瓶标签上"
+              }
+            ]
+          },
+          {
+            "label": "拧开瓶盖",
+            "start": 1.5,
+            "end": 2.375,
+            "detail": "男子左手固定瓶身，右手旋转并取下瓶盖",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "男子右手手指扣住瓶盖准备发力"
+              },
+              {
+                "time": 2.25,
+                "observation": "男子手部动作显示瓶盖已分离"
+              }
+            ]
+          }
+        ],
+        "brief": "男子查看酒瓶标签后拧开瓶盖"
+      },
+      {
+        "id": "A03",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "E03",
+        "kind": "motion",
+        "label": "抬腿晃动",
+        "start": 2.5,
+        "end": 3.875,
+        "start_range": [
+          2.5,
+          2.625
+        ],
+        "end_range": [
+          3.75,
+          3.875
+        ],
+        "detail": "男子保持俯卧姿势，双腿膝盖弯曲向上抬起，穿着袜子的双脚在空中交替上下摆动并偶尔交叉。",
+        "evidence": [
+          {
+            "time": 2.75,
+            "observation": "男子左腿抬起，脚部离开床面"
+          },
+          {
+            "time": 3.25,
+            "observation": "男子双腿均抬起并在空中交叉"
+          },
+          {
+            "time": 3.75,
+            "observation": "男子双腿继续在空中轻微晃动"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "双脚"
+        ],
+        "movement_roles": [
+          "抬起",
+          "摆动"
+        ],
+        "subphases": [],
+        "brief": "男子俯卧时将双腿抬起在空中晃动"
+      },
+      {
+        "id": "A04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E04",
+        "kind": "motion",
+        "label": "饮酒",
+        "start": 3.875,
+        "end": 4.875,
+        "start_range": [
+          3.875,
+          4.0
+        ],
+        "end_range": [
+          4.75,
+          4.875
+        ],
+        "detail": "女子侧卧在床上，右手拿起面前的木制小酒杯送至嘴边，嘴唇接触杯沿饮用其中的液体。",
+        "evidence": [
+          {
+            "time": 4.0,
+            "observation": "女子右手持木杯靠近嘴部"
+          },
+          {
+            "time": 4.5,
+            "observation": "女子仰头将杯子贴近嘴唇饮用"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "举杯至唇边",
+            "time": 4.125,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "手臂",
+          "嘴部"
+        ],
+        "movement_roles": [
+          "持物",
+          "送食/饮"
+        ],
+        "subphases": [],
+        "brief": "女子用右手端起木杯饮酒"
+      }
+    ],
+    "uncertainties": [],
+    "motion_tracks": [
+      {
+        "context": "短发女子位于画面左侧前景，身穿深色上衣，趴在床上。她面朝前方偏右，双手在身前托着一个木制小杯，视线起初看向前方偏上位置。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 13,
+            "caption": "女子的头部和上半身保持相对静止的趴卧姿态，双手持续握着木杯停留在胸前下方。她的视线一直投向前方偏上的位置，嘴唇微张，似乎在说话或微笑。",
+            "reported_frame_range": [
+              0,
+              12
+            ],
+            "start": 0.0,
+            "end": 1.625,
+            "action_ids": []
+          },
+          {
+            "from_frame": 13,
+            "to_frame": 39,
+            "caption": "女子的眼神发生明显变化，眼球向右侧转动，视线移向身旁男子的方向并保持注视。随后，她将手中的木杯缓缓举高送至嘴边，头部微微低垂，双眼半闭，做出准备饮用杯中液体的动作。",
+            "start": 1.625,
+            "end": 4.875,
+            "action_ids": [
+              "A04"
+            ]
+          }
+        ],
+        "camera": "固定机位的中景镜头，视角平视略带俯视，全程无运镜。画面光线昏暗，焦点主要集中在前景的女子身上。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "短发女子，身穿深色上衣",
+        "inspections": {
+          "pose": [
+            {
+              "from_frame": 0,
+              "to_frame": 12,
+              "description": "短发女子俯卧在床面上，上身由双肘支撑抬起。她双手握持一个木制方形酒杯置于身前的床单上，头部微抬面向前方偏右上方，嘴唇张开露出牙齿呈微笑状。",
+              "start": 0.0,
+              "end": 1.5,
+              "action_ids": []
+            },
+            {
+              "from_frame": 12,
+              "to_frame": 17,
+              "description": "女子的笑容收敛，闭合嘴巴并将视线转向右侧（即身旁男子的方向）。她的双手开始发力，将原本放在床面上的木杯向上提起，向面部靠近。",
+              "reported_frame_range": [
+                13,
+                16
+              ],
+              "start": 1.5,
+              "end": 2.125,
+              "action_ids": []
+            },
+            {
+              "from_frame": 17,
+              "to_frame": 29,
+              "description": "女子将木杯举至鼻尖高度并停留在嘴边，手指扣住杯壁边缘。在此期间，她保持注视右侧男子，并未进行饮用动作，而是持续观察对方；与此同时，背景中男子的双腿膝盖弯曲，双脚脚底朝上翘起并在空中晃动。",
+              "start": 2.125,
+              "end": 3.625,
+              "action_ids": []
+            },
+            {
+              "from_frame": 29,
+              "to_frame": 36,
+              "description": "随着男子放下双腿停止晃动，女子的视线从右侧收回转向前方。她将手中的木杯进一步凑近口鼻处，头部随之轻微下低，双眼半闭，呈现出嗅闻或准备饮用的姿态。",
+              "reported_frame_range": [
+                30,
+                35
+              ],
+              "start": 3.625,
+              "end": 4.5,
+              "action_ids": [
+                "A04"
+              ]
+            },
+            {
+              "from_frame": 36,
+              "to_frame": 39,
+              "description": "女子维持着低头、手持木杯贴近面部的姿势，直到视频片段结束。",
+              "start": 4.5,
+              "end": 4.875,
+              "action_ids": [
+                "A04"
+              ]
+            }
+          ],
+          "contact": [
+            {
+              "from_frame": 0,
+              "to_frame": 12,
+              "description": "短发女子趴在床上，双手交叠握持一个木制小酒杯停留在床面上。她的视线朝向画面右上方（偏离身旁的男子），嘴唇微张露出牙齿，呈现出说话或微笑的面部状态。",
+              "start": 0.0,
+              "end": 1.5,
+              "action_ids": []
+            },
+            {
+              "from_frame": 12,
+              "to_frame": 17,
+              "description": "女子的眼球向右侧转动，视线从画外移回并聚焦于身旁正在摆弄酒瓶的男子脸上。此时她仍保持双手在床面握杯的姿态，未发生位移。",
+              "reported_frame_range": [
+                13,
+                16
+              ],
+              "start": 1.5,
+              "end": 2.125,
+              "action_ids": []
+            },
+            {
+              "from_frame": 17,
+              "to_frame": 20,
+              "description": "随着男子将酒瓶放下，女子开始执行举杯动作。她将原本置于胸前的木杯抬起，移动至下巴高度，手指紧扣杯壁边缘。",
+              "start": 2.125,
+              "end": 2.5,
+              "action_ids": []
+            },
+            {
+              "from_frame": 20,
+              "to_frame": 29,
+              "description": "女子继续维持注视男子的眼神，同时将手中的木杯进一步上移至紧贴嘴唇的位置。在此期间，她的双腿膝盖弯曲，双脚脚底朝上翘起悬空，身体重心略微调整以保持趴卧时的平衡。",
+              "reported_frame_range": [
+                21,
+                29
+              ],
+              "start": 2.5,
+              "end": 3.625,
+              "action_ids": []
+            },
+            {
+              "from_frame": 29,
+              "to_frame": 34,
+              "description": "当男子转头看向别处时，女子的头部微微低垂，双眼闭合或半闭，嘴唇接触杯沿进行啜饮动作。她的双手稳固地托住木杯底部和侧边。",
+              "reported_frame_range": [
+                30,
+                34
+              ],
+              "start": 3.625,
+              "end": 4.25,
+              "action_ids": [
+                "A04"
+              ]
+            },
+            {
+              "from_frame": 34,
+              "to_frame": 39,
+              "description": "女子结束饮用动作，但并未放下杯子，而是将其保持在嘴边位置。她重新睁开眼，视线向下落在手中的木杯上，面部表情恢复平静。",
+              "reported_frame_range": [
+                35,
+                39
+              ],
+              "start": 4.25,
+              "end": 4.875,
+              "action_ids": [
+                "A04"
+              ]
+            }
+          ],
+          "camera": [
+            {
+              "from_frame": 0,
+              "to_frame": 12,
+              "description": "短发女子位于画面左侧前景，呈俯卧姿态。她双手握持一个方形木制酒杯停留在床面上方，视线朝向画面左上方（偏离镜头），嘴唇微张且伴有轻微开合动作。",
+              "start": 0.0,
+              "end": 1.5,
+              "action_ids": []
+            },
+            {
+              "from_frame": 12,
+              "to_frame": 17,
+              "description": "女子的眼球向自身右侧转动，视线从画外转移至身旁男子的方向并保持注视。在此期间，她的头部位置未发生明显改变，双手仍维持握杯姿势停在原处。",
+              "reported_frame_range": [
+                13,
+                16
+              ],
+              "start": 1.5,
+              "end": 2.125,
+              "action_ids": []
+            },
+            {
+              "from_frame": 17,
+              "to_frame": 24,
+              "description": "女子双手将木杯垂直向上抬起，移动轨迹指向面部。在约第20帧时，杯沿接触其下唇部位，随后她停止手臂抬升动作，保持杯子抵住嘴部的姿态。",
+              "start": 2.125,
+              "end": 3.0,
+              "action_ids": []
+            },
+            {
+              "from_frame": 25,
+              "to_frame": 39,
+              "description": "女子眼睑下垂呈半闭状态，头部伴随极轻微的向下倾斜角度。她持续保持双手持杯贴于嘴唇的动作直至片段结束，期间未见明显的仰头或吞咽幅度变化。",
+              "start": 3.125,
+              "end": 4.875,
+              "action_ids": [
+                "A04"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "context": "男子位于画面右侧中景，俯卧在床上，上半身由双肘支撑抬起。他身穿黑色开衫和白色内搭，面朝画面左侧的女子。床面上放着两个木制小盒，他的右手起初正握着一个深色酒瓶。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 5,
+            "caption": "男子的右臂发力，将手中的深色酒瓶从靠近木盒的位置向上举起。随着酒瓶被举高至半空，他的左手也抬起并在空中张开，准备接住酒瓶。",
+            "start": 0.0,
+            "end": 0.625,
+            "action_ids": [
+              "A01"
+            ]
+          },
+          {
+            "from_frame": 6,
+            "to_frame": 18,
+            "caption": "男子双手共同握住酒瓶的中下部，将其平稳地悬停在胸前位置。在此期间，他的头部微微低垂，视线向下注视着瓶身或下方的区域，身体保持静止的支撑姿态。",
+            "reported_frame_range": [
+              6,
+              17
+            ],
+            "start": 0.75,
+            "end": 2.25,
+            "action_ids": [
+              "A02"
+            ]
+          },
+          {
+            "from_frame": 18,
+            "to_frame": 29,
+            "caption": "男子松开左手，仅用右手单手握住瓶颈处，随后手臂向下伸展，将酒瓶放置到画面右下角边缘外的平面上。与此同时，他的双腿在身后屈膝翘起，双脚在空中晃动。",
+            "start": 2.25,
+            "end": 3.625,
+            "action_ids": [
+              "A02",
+              "A03"
+            ]
+          },
+          {
+            "from_frame": 30,
+            "to_frame": 39,
+            "caption": "放下酒瓶后，男子的右手收回并再次撑在床面上，左臂弯曲置于身前。接着，他将原本低垂的头部抬起，目光转向画面左侧的女子，恢复了稳定的俯卧交谈姿态。",
+            "start": 3.75,
+            "end": 4.875,
+            "action_ids": [
+              "A03"
+            ]
+          }
+        ],
+        "camera": "镜头全程保持固定的中景机位，无明显推拉摇移。画面光线昏暗偏冷调，前景有一块模糊的黑色遮挡物横亘在画面底部，焦点始终锁定在两名人物及其互动的物品上。",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "identity": "男子，身穿黑色开衫和白色内搭",
+        "inspections": {
+          "pose": [
+            {
+              "from_frame": 0,
+              "to_frame": 3,
+              "description": "男子俯卧在床上，上半身由双肘支撑。他的右手握着一只深色酒瓶的底部，将瓶口朝下倾斜悬停在床面上方的一个木制小酒杯上方，随后停止倾倒动作并将酒瓶收回至水平状态。",
+              "start": 0.0,
+              "end": 0.375,
+              "action_ids": [
+                "A01"
+              ]
+            },
+            {
+              "from_frame": 5,
+              "to_frame": 7,
+              "description": "男子双手配合调整酒瓶姿态，左手托住瓶身中部，右手握住瓶颈处，将原本横向的酒瓶完全竖直立起，使其停留在胸前位置。",
+              "start": 0.625,
+              "end": 0.875,
+              "action_ids": [
+                "A01",
+                "A02"
+              ]
+            },
+            {
+              "from_frame": 8,
+              "to_frame": 12,
+              "description": "男子保持双手持瓶的姿势，头部微微低垂，视线聚焦于酒瓶正面的白色标签上。此时他的左手稳固地托着瓶底，右手手指捏住瓶盖顶部准备发力。",
+              "start": 1.0,
+              "end": 1.5,
+              "action_ids": [
+                "A02"
+              ]
+            },
+            {
+              "from_frame": 14,
+              "to_frame": 17,
+              "description": "男子执行开瓶动作：左手继续固定瓶身不动，右手拇指与食指捏住瓶盖进行旋转拧动。在帧17左右，可以看到他右手带着瓶盖向上提起，使瓶盖与瓶口分离。",
+              "start": 1.75,
+              "end": 2.125,
+              "action_ids": [
+                "A02"
+              ]
+            },
+            {
+              "from_frame": 19,
+              "to_frame": 22,
+              "description": "男子松开左手，改为单手持握（右手）已打开的酒瓶。他将手臂向画面右下方伸展，把酒瓶放置在前景的黑色平面边缘外。与此同时，他的双腿膝盖弯曲，小腿向后上方抬起，双脚在空中自然分开。",
+              "start": 2.375,
+              "end": 2.75,
+              "action_ids": [
+                "A02",
+                "A03"
+              ]
+            },
+            {
+              "from_frame": 24,
+              "to_frame": 29,
+              "description": "男子维持俯卧姿态，双腿持续翘起在空中。穿着深色袜子的双脚在小腿抬高的基础上发生轻微的交叉和晃动动作，重心依然保持在手肘支撑的上半身。",
+              "start": 3.0,
+              "end": 3.625,
+              "action_ids": [
+                "A03"
+              ]
+            },
+            {
+              "from_frame": 31,
+              "to_frame": 34,
+              "description": "男子完成放瓶动作后收回双臂，重新将身体重量分配给双肘支撑。他的右手空手握拳置于下巴附近，左臂平放在床上，双腿逐渐放下不再处于高位。",
+              "start": 3.875,
+              "end": 4.25,
+              "action_ids": [
+                "A03"
+              ]
+            },
+            {
+              "from_frame": 36,
+              "to_frame": 39,
+              "description": "男子抬起头颈，改变了此前低头看瓶的姿态。他的面部朝向转为正视前方略偏左（面向女子方向），眼神从下垂转为平视，恢复了交谈时的肢体语言。",
+              "start": 4.5,
+              "end": 4.875,
+              "action_ids": []
+            }
+          ],
+          "contact": [
+            {
+              "from_frame": 0,
+              "to_frame": 3,
+              "description": "男子俯卧在床上，右手握住一个深色酒瓶的底部将其抬起。在frame 2至3期间，他调整了握姿，左手伸向瓶口方向，准备双手持瓶。",
+              "start": 0.0,
+              "end": 0.375,
+              "action_ids": [
+                "A01"
+              ]
+            },
+            {
+              "from_frame": 3,
+              "to_frame": 7,
+              "description": "男子双手共同握住酒瓶的中下部，将其平稳地悬停在胸前位置。他的头部微微低垂，视线向下注视着瓶身或下方的区域，身体保持静止的支撑姿态。",
+              "reported_frame_range": [
+                4,
+                7
+              ],
+              "start": 0.375,
+              "end": 0.875,
+              "action_ids": [
+                "A01",
+                "A02"
+              ]
+            },
+            {
+              "from_frame": 8,
+              "to_frame": 15,
+              "description": "男子开始执行开瓶动作。他的左手稳固地握住瓶身中部，右手移至瓶颈上方捏住瓶盖。在此期间，他持续低头注视手中的物品，右手手指进行细微的调整和发力尝试。",
+              "start": 1.0,
+              "end": 1.875,
+              "action_ids": [
+                "A02"
+              ]
+            },
+            {
+              "from_frame": 15,
+              "to_frame": 19,
+              "description": "男子完成了开瓶操作并放下酒瓶。在frame 16-17，他右手提着瓶盖将酒瓶从画面下方移出（放置于床面）。随后在frame 19，他的右手完全松开瓶子，手掌重新按压在身前的白色床单上以支撑身体。",
+              "reported_frame_range": [
+                16,
+                19
+              ],
+              "start": 1.875,
+              "end": 2.375,
+              "action_ids": [
+                "A02"
+              ]
+            },
+            {
+              "from_frame": 20,
+              "to_frame": 29,
+              "description": "男子维持俯卧姿势，双腿膝盖弯曲向上抬起，穿着袜子的双脚在空中交替上下摆动。此时他的双手均撑在床面上，并未触碰任何物体。",
+              "start": 2.5,
+              "end": 3.625,
+              "action_ids": [
+                "A03"
+              ]
+            },
+            {
+              "from_frame": 29,
+              "to_frame": 34,
+              "description": "男子的腿部动作停止，但他改变了手部姿态。他的左臂弯曲置于身前，左手在半空中虚握成拳状（类似手势），而右手依然平放在床上支撑身体。",
+              "reported_frame_range": [
+                30,
+                33
+              ],
+              "start": 3.625,
+              "end": 4.25,
+              "action_ids": [
+                "A03"
+              ]
+            },
+            {
+              "from_frame": 34,
+              "to_frame": 39,
+              "description": "男子结束了之前的肢体动作，将原本低垂的头部抬起，目光转向画面左侧的女子。他保持着左手微曲、右手撑床的姿态，恢复了稳定的俯卧交谈状态。",
+              "start": 4.25,
+              "end": 4.875,
+              "action_ids": []
+            }
+          ],
+          "camera": [
+            {
+              "from_frame": 0,
+              "to_frame": 3,
+              "description": "男子俯卧在画面右侧的床上，右手握着一只深色酒瓶。他将瓶身向左下方倾斜，把瓶口对准放置在前景黑色台面上的木制小酒杯进行倒酒动作。",
+              "start": 0.0,
+              "end": 0.375,
+              "action_ids": [
+                "A01"
+              ]
+            },
+            {
+              "from_frame": 5,
+              "to_frame": 7,
+              "description": "男子停止倾倒，将酒瓶从水平状态收回并竖直举起至胸前高度。他的左手随之抬起并在空中张开，准备接触酒瓶。",
+              "start": 0.625,
+              "end": 0.875,
+              "action_ids": [
+                "A01",
+                "A02"
+              ]
+            },
+            {
+              "from_frame": 8,
+              "to_frame": 12,
+              "description": "男子双手共同握住酒瓶的中下部，将其平稳地悬停在胸前位置。他头部微微低垂，视线向下聚焦于瓶身上带有日文字符的白色标签，保持静止的阅读姿态。",
+              "start": 1.0,
+              "end": 1.5,
+              "action_ids": [
+                "A02"
+              ]
+            },
+            {
+              "from_frame": 14,
+              "to_frame": 17,
+              "description": "男子调整了持瓶姿势，改为左手托住瓶身底部固定，右手手指捏住瓶颈处的瓶盖用力旋转。随后他将瓶盖拧下，并将酒瓶向画面右下方的台面边缘移动。",
+              "start": 1.75,
+              "end": 2.125,
+              "action_ids": [
+                "A02"
+              ]
+            },
+            {
+              "from_frame": 19,
+              "to_frame": 22,
+              "description": "男子将酒瓶放置到画面右下角边缘外的平面上，随后松开右手。与此同时，他在身后屈起双腿，穿着袜子的双脚抬离床面进入画面上方区域。",
+              "start": 2.375,
+              "end": 2.75,
+              "action_ids": [
+                "A02",
+                "A03"
+              ]
+            },
+            {
+              "from_frame": 24,
+              "to_frame": 29,
+              "description": "男子保持俯卧姿态，双腿膝盖弯曲向上翘起。他的双脚在空中交替上下轻微摆动，偶尔出现交叉的动作，身体重心依然由双肘支撑。",
+              "start": 3.0,
+              "end": 3.625,
+              "action_ids": [
+                "A03"
+              ]
+            },
+            {
+              "from_frame": 31,
+              "to_frame": 34,
+              "description": "男子的双腿放平回到床上。他的右手收回并再次撑在床面上，左臂弯曲置于身前，拳头轻抵胸口附近，呈现出放松的姿态。",
+              "start": 3.875,
+              "end": 4.25,
+              "action_ids": [
+                "A03"
+              ]
+            },
+            {
+              "from_frame": 36,
+              "to_frame": 39,
+              "description": "男子将原本低垂的头部完全抬起，目光转向画面左侧的女子。此时镜头构图稳定，背景昏暗，焦点清晰地落在两名人物及其互动的物品上。",
+              "start": 4.5,
+              "end": 4.875,
+              "action_ids": []
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "69d3dcfbe7dde336b3e66b40c18ce4446564bf25c50b0630d99fd4cf4afe0bd1",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32,
+    "inspection_template_sha256": "8b9603319374998053ef9bee118f58c88bc5a51c3d47c344596c189e3cafe363"
+  }
+}

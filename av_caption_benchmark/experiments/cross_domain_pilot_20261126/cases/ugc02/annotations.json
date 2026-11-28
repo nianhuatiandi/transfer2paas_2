@@ -1,0 +1,264 @@
+{
+  "source": {
+    "id": "ugc02",
+    "benchmark": "UGC-VideoCap",
+    "original_id": "PI-1e1222e2-4be2-4314-a0ba-6c44f3eb22ff",
+    "source_url": "https://drive.google.com/file/d/1HOyeT7-kbbAcyinKJ_IyaejXIBABTgbn/view",
+    "archive_member": null,
+    "original_file": "PI-1e1222e2-4be2-4314-a0ba-6c44f3eb22ff.mp4",
+    "source_media_sha256": "632cc29a2ee2c936cbe4f71ec47ea5eb4b241062dfc1f23b171013ebac62e9ce",
+    "clip_sha256": "f23d6c80e07445b0fe87c3ae6a61fcbff682322062ee061bcd502e1c49913975",
+    "source_duration": 53.86666666666667,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "card": "04",
+    "domain": "头发分缝与梳理",
+    "domain_rule": "梳理同一束头发的连续段作一实例。双方手并行时注明各自作用，固定发束为状态；换束、抓取或重新抓握须有清晰证据。",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "对照两次输出，首轮保留徒手分缝，复跑只留持梳动作。0.8、2.4、5.6 秒可见手指贴近发缝；复核这段是否应独立计数。"
+    ]
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 12.0,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 12.0,
+      "first_frame": 0,
+      "end_frame_exclusive": 360
+    }
+  ],
+  "timestamped_frames": 121,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2"
+  },
+  "visual": {
+    "clip_id": "ugc02",
+    "mode": "VISUAL_GT",
+    "clock": {
+      "origin_ms": 0,
+      "duration_ms": 12000
+    },
+    "facts": [
+      {
+        "id": "F1",
+        "kind": "action",
+        "level": "L2",
+        "actor": "P1",
+        "object": "头发分缝处",
+        "parent_ids": [],
+        "claim": "用梳子梳理头顶的头发分缝处",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          7.3,
+          11.967
+        ],
+        "visible_spans": [
+          [
+            7.3,
+            11.967
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            7.3,
+            7.4
+          ],
+          "end": null
+        },
+        "context_range": null,
+        "evidence": "从第219帧(7.3s)开始，人物右手持黑色梳子在头顶发际线附近进行梳理动作，直至视频结束。"
+      }
+    ],
+    "relations": [],
+    "residual": []
+  },
+  "audio": {
+    "clip_id": "ugc02",
+    "clock": {
+      "source": "original_audio",
+      "offset_ms": 0
+    },
+    "coverage": [
+      [
+        0.0,
+        12.0
+      ]
+    ],
+    "audio_events": [
+      {
+        "id": "ev1",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "I'm literally gonna regret this so much 'cause it's like right in my part, but I need to see if I can get it off my head.",
+        "claim": "一名女性以耳语说出完整长句，中间有轻微停顿。",
+        "instance_range": [
+          0.48,
+          7.96
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 3.5,
+        "confidence": "high"
+      },
+      {
+        "id": "ev2",
+        "type": "sfx",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "持续的细碎摩擦声和梳理声贯穿整段音频。",
+        "instance_range": [
+          0.0,
+          12.0
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 6.0,
+        "confidence": "high"
+      },
+      {
+        "id": "ev3",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "This is the only comb I...",
+        "claim": "同一名女性继续耳语，句子在结尾处被截断。",
+        "instance_range": [
+          10.72,
+          12.0
+        ],
+        "boundary_ranges": {
+          "start": [
+            10.5,
+            10.9
+          ],
+          "end": [
+            11.8,
+            12.0
+          ]
+        },
+        "evidence_time": 11.2,
+        "confidence": "high"
+      }
+    ],
+    "unresolved": []
+  },
+  "original_audio_events": [
+    {
+      "id": "ev1",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "I'm literally gonna regret this so much 'cause it's like right in my part, but I need to see if I can get it off my head.",
+      "claim": "一名女性以耳语说出完整长句，中间有轻微停顿。",
+      "instance_range": [
+        0.48,
+        7.96
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 3.5,
+      "confidence": "high"
+    },
+    {
+      "id": "ev2",
+      "type": "sfx",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "持续的细碎摩擦声和梳理声贯穿整段音频。",
+      "instance_range": [
+        0.0,
+        12.0
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 6.0,
+      "confidence": "high"
+    },
+    {
+      "id": "ev3",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "This is the only comb I...",
+      "claim": "同一名女性继续耳语，句子在结尾处被截断。",
+      "instance_range": [
+        10.72,
+        12.0
+      ],
+      "boundary_ranges": {
+        "start": [
+          10.5,
+          10.9
+        ],
+        "end": [
+          11.8,
+          12.0
+        ]
+      },
+      "evidence_time": 11.2,
+      "confidence": "high"
+    }
+  ],
+  "sentence_alignment": {},
+  "temporal_edges": [
+    {
+      "visual_id": "F1",
+      "audio_id": "ev1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          7.3,
+          7.96
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F1",
+      "audio_id": "ev2",
+      "audio_layer": "background",
+      "audio_type": "sfx",
+      "intersections": [
+        [
+          7.3,
+          11.967
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F1",
+      "audio_id": "ev3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          10.72,
+          11.967
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "对照两次输出，首轮保留徒手分缝，复跑只留持梳动作。0.8、2.4、5.6 秒可见手指贴近发缝；复核这段是否应独立计数。",
+    "本次未输出 L3 部位运动，需按画面判定是否有漏项。"
+  ]
+}

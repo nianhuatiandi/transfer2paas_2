@@ -1,0 +1,64 @@
+{
+  "total": 400,
+  "sport": 80,
+  "at_least_1080p": 330,
+  "duration_bands": {
+    "short": {
+      "count": 240,
+      "sport": 48
+    },
+    "medium": {
+      "count": 120,
+      "sport": 24
+    },
+    "long": {
+      "count": 40,
+      "sport": 8
+    }
+  },
+  "sources": {
+    "Local sports": 3,
+    "Internet Archive": 376,
+    "Local sports archive": 1,
+    "NASA Image and Video Library": 2,
+    "Wikimedia Commons": 3,
+    "video-SALMONN 2": 5,
+    "Local performance videos": 10
+  },
+  "sports_terms": {
+    "Standing long jump": 1,
+    "Badminton": 2,
+    "yoga with": 6,
+    "golf clinic": 1,
+    "swim lesson": 1,
+    "fitness class": 2,
+    "skateboarding": 3,
+    "zumba workout": 5,
+    "tai chi": 8,
+    "fitness with": 6,
+    "golf tips": 8,
+    "gymnastics": 1,
+    "pilates": 2,
+    "strength training": 4,
+    "workout": 4,
+    "basketball drills": 2,
+    "bodyweight workout": 2,
+    "basketball skills": 1,
+    "cardio workout": 1,
+    "home workout": 2,
+    "yoga class": 3,
+    "exercise class": 1,
+    "core workout": 2,
+    "circuit training": 2,
+    "yoga flow": 1,
+    "jump rope": 2,
+    "balance exercises": 1,
+    "badminton": 1,
+    "volleyball drills": 1,
+    "windsurfing": 1,
+    "Golf instruction": 1,
+    "bouldering": 1,
+    "beginner workout": 1
+  },
+  "confirmed_youtube_origin": 5
+}

@@ -1,0 +1,372 @@
+{
+  "cases": {
+    "apple": {
+      "set": "transfer",
+      "events": 11,
+      "counts": {
+        "motion": 4,
+        "speech": 3,
+        "music": 1,
+        "visible_speech": 1,
+        "gesture": 2
+      },
+      "scored_temporal_relations": 14,
+      "phases": 0,
+      "scored_phase_relations": 0,
+      "withheld_event_count": 2,
+      "checks": [
+        {
+          "second": 11.3,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 2.5,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        },
+        {
+          "second": 7,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        }
+      ]
+    },
+    "badminton": {
+      "set": "development",
+      "events": 62,
+      "counts": {
+        "motion": 28,
+        "sound": 2,
+        "speech": 23,
+        "visible_speech": 6,
+        "gesture": 3
+      },
+      "scored_temporal_relations": 42,
+      "phases": 24,
+      "scored_phase_relations": 22,
+      "withheld_event_count": 17,
+      "checks": [
+        {
+          "second": 9.8,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 23.4,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 32.6,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 39.4,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 49.25,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 58.5,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 16.95,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        },
+        {
+          "second": 27.9,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        },
+        {
+          "second": 35,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        },
+        {
+          "second": 44.6,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        },
+        {
+          "second": 53.4,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        }
+      ]
+    },
+    "day01": {
+      "set": "final_checks",
+      "events": 6,
+      "counts": {
+        "speech": 4,
+        "ambience": 1,
+        "gesture": 1
+      },
+      "scored_temporal_relations": 3,
+      "phases": 0,
+      "scored_phase_relations": 0,
+      "withheld_event_count": 1,
+      "checks": [
+        {
+          "second": 2.5,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        },
+        {
+          "second": 7.5,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        }
+      ]
+    },
+    "day02": {
+      "set": "final_checks",
+      "events": 7,
+      "counts": {
+        "sound": 1,
+        "state": 1,
+        "visible_speech": 1,
+        "speech": 2,
+        "gesture": 1,
+        "motion": 1
+      },
+      "scored_temporal_relations": 5,
+      "phases": 0,
+      "scored_phase_relations": 0,
+      "withheld_event_count": 2,
+      "checks": [
+        {
+          "second": 5.17,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 6.63,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        }
+      ]
+    },
+    "dia01": {
+      "set": "exploratory",
+      "events": 10,
+      "counts": {
+        "visible_speech": 1,
+        "music": 1,
+        "gesture": 2,
+        "speech": 4,
+        "motion": 2
+      },
+      "scored_temporal_relations": 10,
+      "phases": 0,
+      "scored_phase_relations": 0,
+      "withheld_event_count": 3,
+      "checks": []
+    },
+    "drums": {
+      "set": "transfer",
+      "events": 6,
+      "counts": {
+        "visible_speech": 1,
+        "music": 2,
+        "speech": 1,
+        "motion": 1,
+        "sound": 1
+      },
+      "scored_temporal_relations": 4,
+      "phases": 1,
+      "scored_phase_relations": 2,
+      "withheld_event_count": 0,
+      "checks": [
+        {
+          "second": 1,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 3.9,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        },
+        {
+          "second": 5.4,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        }
+      ]
+    },
+    "sal02": {
+      "set": "transfer",
+      "events": 9,
+      "counts": {
+        "motion": 1,
+        "speech": 7,
+        "music": 1
+      },
+      "scored_temporal_relations": 2,
+      "phases": 3,
+      "scored_phase_relations": 6,
+      "withheld_event_count": 2,
+      "checks": [
+        {
+          "second": 1.4,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        },
+        {
+          "second": 8.5,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        }
+      ]
+    },
+    "sew": {
+      "set": "development",
+      "events": 5,
+      "counts": {
+        "motion": 3,
+        "speech": 1,
+        "music": 1
+      },
+      "scored_temporal_relations": 4,
+      "phases": 0,
+      "scored_phase_relations": 0,
+      "withheld_event_count": 2,
+      "checks": [
+        {
+          "second": 1.4,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        },
+        {
+          "second": 9.1,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        }
+      ]
+    },
+    "sport02": {
+      "set": "transfer",
+      "events": 12,
+      "counts": {
+        "visible_speech": 1,
+        "motion": 2,
+        "speech": 3,
+        "sound": 5,
+        "gesture": 1
+      },
+      "scored_temporal_relations": 9,
+      "phases": 6,
+      "scored_phase_relations": 6,
+      "withheld_event_count": 1,
+      "checks": [
+        {
+          "second": 1,
+          "expected": true,
+          "draft": true,
+          "reference": true
+        },
+        {
+          "second": 3.9,
+          "expected": false,
+          "draft": false,
+          "reference": false
+        }
+      ]
+    }
+  },
+  "presence_probes": {
+    "development": {
+      "draft": {
+        "tp": 6,
+        "fn": 0,
+        "tn": 7,
+        "fp": 0
+      },
+      "reference": {
+        "tp": 6,
+        "fn": 0,
+        "tn": 7,
+        "fp": 0
+      }
+    },
+    "transfer": {
+      "draft": {
+        "tp": 3,
+        "fn": 0,
+        "tn": 7,
+        "fp": 0
+      },
+      "reference": {
+        "tp": 3,
+        "fn": 0,
+        "tn": 7,
+        "fp": 0
+      }
+    },
+    "final_checks": {
+      "draft": {
+        "tp": 2,
+        "fn": 0,
+        "tn": 2,
+        "fp": 0
+      },
+      "reference": {
+        "tp": 2,
+        "fn": 0,
+        "tn": 2,
+        "fp": 0
+      }
+    },
+    "all": {
+      "draft": {
+        "tp": 11,
+        "fn": 0,
+        "tn": 16,
+        "fp": 0
+      },
+      "reference": {
+        "tp": 11,
+        "fn": 0,
+        "tn": 16,
+        "fp": 0
+      }
+    }
+  },
+  "definition": "Interior source-clock probes, selected by inspecting frames before running the English pipeline. Positive means a visible person articulates, negative means no visible speaking cue at that instant. These are developer spot checks, not independently annotated gold intervals."
+}

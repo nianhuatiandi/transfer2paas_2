@@ -1,0 +1,1066 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "dia01",
+    "benchmark": "DiaDemBench",
+    "domain": "双人桌边对话",
+    "original_id": "847",
+    "source_url": "https://huggingface.co/datasets/DiaDem-Captioner/DiaDemBench/blob/ff6dfcc152ee4cc96e92ec83a0910c187e6ad98b/videos.zip",
+    "archive_member": "videos/847.mp4",
+    "source_window_seconds": [
+      0,
+      7.5
+    ],
+    "source_duration": 7.5,
+    "source_media_sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39",
+    "clip_sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 7.5,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 7.5,
+      "first_frame": 0,
+      "end_frame_exclusive": 225
+    }
+  ],
+  "input_frames": {
+    "visual": 76,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一个连续镜头，记录了室内两人围绕茶桌进行交谈并传递物品的过程。",
+    "actors": [
+      {
+        "id": "A1",
+        "shot_id": "S01",
+        "description": "穿绿黑拼色外套的男子，坐在茶桌左侧。"
+      },
+      {
+        "id": "A2",
+        "shot_id": "S01",
+        "description": "穿黑色亮片外套的女子，站在茶桌右侧。"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E1",
+        "actor_id": "A2",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 5.4,
+        "description": "女子站立说话并做手势，随后伸手向男子索要物品。"
+      },
+      {
+        "id": "E2",
+        "actor_id": "A1",
+        "shot_id": "S01",
+        "start": 3.0,
+        "end": 6.4,
+        "description": "男子坐着回应，并从手中拿出一个小物件递给女子。"
+      },
+      {
+        "id": "E3",
+        "actor_id": "A2",
+        "shot_id": "S01",
+        "start": 5.8,
+        "end": 7.466667,
+        "description": "女子接过物品后转身离开画面。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "K1",
+        "actor_id": "A2",
+        "shot_id": "S01",
+        "execution_id": "E1",
+        "kind": "gesture",
+        "label": "说话与比划",
+        "start": 0.0,
+        "end": 5.4,
+        "start_range": [
+          0.0,
+          0.2
+        ],
+        "end_range": [
+          5.2,
+          5.4
+        ],
+        "detail": "女子站在茶桌旁面向男子说话，期间双手在胸前不断做出解释和强调的手势，包括摊开手掌、指点等动作。",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "女子右手抬起指向斜上方。"
+          },
+          {
+            "time": 2.0,
+            "observation": "女子双手摊开向两侧挥动。"
+          },
+          {
+            "time": 4.5,
+            "observation": "女子继续说话并伴有手部小幅度动作。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "手",
+          "手臂",
+          "头部"
+        ],
+        "movement_roles": [
+          "交流示意"
+        ],
+        "subphases": [],
+        "brief": "女子站着对男子说话并频繁使用手势。"
+      },
+      {
+        "id": "K2",
+        "actor_id": "A2",
+        "shot_id": "S01",
+        "execution_id": "E1",
+        "kind": "motion",
+        "label": "伸手索要",
+        "start": 5.4,
+        "end": 6.0,
+        "start_range": [
+          5.4,
+          5.6
+        ],
+        "end_range": [
+          5.8,
+          6.0
+        ],
+        "detail": "女子停止原有手势，将右手向前伸出，掌心向上，朝向男子的方向做出明确的索要姿态。",
+        "evidence": [
+          {
+            "time": 5.6,
+            "observation": "女子右手开始向前平伸。"
+          },
+          {
+            "time": 5.9,
+            "observation": "女子右手完全伸出并保持等待状态。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "手完全伸出",
+            "time": 5.9,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右臂",
+          "右手"
+        ],
+        "movement_roles": [
+          "获取物品准备"
+        ],
+        "subphases": [],
+        "brief": "女子向右前方伸出手掌向男子要东西。"
+      },
+      {
+        "id": "K3",
+        "actor_id": "A1",
+        "shot_id": "S01",
+        "execution_id": "E2",
+        "kind": "held_pose",
+        "label": "坐姿倾听",
+        "start": 0.0,
+        "end": 3.0,
+        "start_range": [
+          0.0,
+          0.2
+        ],
+        "end_range": [
+          2.8,
+          3.0
+        ],
+        "detail": "男子坐在椅子上，身体微侧向右边，目光注视着正在说话的女子，双手自然放在身前或桌面上，保持静止的倾听姿态。",
+        "evidence": [
+          {
+            "time": 1.0,
+            "observation": "男子安静地坐着看女子。"
+          },
+          {
+            "time": 2.5,
+            "observation": "男子维持原姿势未变。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "头部"
+        ],
+        "movement_roles": [
+          "接收信息"
+        ],
+        "subphases": [],
+        "brief": "男子坐在桌边看着女子听她讲话。"
+      },
+      {
+        "id": "K4",
+        "actor_id": "A1",
+        "shot_id": "S01",
+        "execution_id": "E2",
+        "kind": "motion",
+        "label": "递出物品",
+        "start": 3.0,
+        "end": 6.4,
+        "start_range": [
+          3.0,
+          3.2
+        ],
+        "end_range": [
+          6.2,
+          6.4
+        ],
+        "detail": "男子开口回应后，右手从下方拿起一个深色的小长条状物体（疑似车钥匙），将其举起并向右侧的女子递过去，直到女子接手。",
+        "evidence": [
+          {
+            "time": 3.1,
+            "observation": "男子右手握着一个黑色小物件。"
+          },
+          {
+            "time": 5.0,
+            "observation": "男子手持物件悬在半空。"
+          },
+          {
+            "time": 6.0,
+            "observation": "男子将物件递到女子手边。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "物品交接",
+            "time": 6.3,
+            "time_range": [
+              6.2,
+              6.4
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "右臂"
+        ],
+        "movement_roles": [
+          "给予物品"
+        ],
+        "subphases": [
+          {
+            "label": "持物展示",
+            "start": 3.0,
+            "end": 5.4,
+            "detail": "男子右手拿着黑色小物件在空中停顿并伴随言语交流。",
+            "evidence": [
+              {
+                "time": 4.0,
+                "observation": "男子举着物件说话。"
+              }
+            ]
+          },
+          {
+            "label": "递交动作",
+            "start": 5.4,
+            "end": 6.4,
+            "detail": "男子顺着女子伸手的方向，将手中的物件送过去。",
+            "evidence": [
+              {
+                "time": 5.8,
+                "observation": "男子手臂前伸靠近女子的手。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子拿出一个小物件递给对面的女子。"
+      },
+      {
+        "id": "K5",
+        "actor_id": "A2",
+        "shot_id": "S01",
+        "execution_id": "E3",
+        "kind": "motion",
+        "label": "接物转身",
+        "start": 6.0,
+        "end": 7.466667,
+        "start_range": [
+          6.0,
+          6.2
+        ],
+        "end_range": [
+          7.3,
+          7.466667
+        ],
+        "detail": "女子用右手从男子手中接过那个黄色/金色的小物件，随即身体向右转动，迈步走出画面右侧。",
+        "evidence": [
+          {
+            "time": 6.2,
+            "observation": "女子手指触碰到男子递来的物件。"
+          },
+          {
+            "time": 6.5,
+            "observation": "女子拿到物件并开始转身。"
+          },
+          {
+            "time": 7.0,
+            "observation": "女子背对镜头走向柜子方向。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "完成接取",
+            "time": 6.4,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "全身"
+        ],
+        "movement_roles": [
+          "接受物品",
+          "离场移动"
+        ],
+        "subphases": [
+          {
+            "label": "抓取物品",
+            "start": 6.0,
+            "end": 6.4,
+            "detail": "女子右手准确抓住男子递过来的物体。",
+            "evidence": [
+              {
+                "time": 6.3,
+                "observation": "两手接触，物品易主。"
+              }
+            ]
+          },
+          {
+            "label": "转身离开",
+            "start": 6.4,
+            "end": 7.466667,
+            "detail": "女子拿着物品迅速向右后方转体并走动。",
+            "evidence": [
+              {
+                "time": 6.8,
+                "observation": "女子侧身准备离开。"
+              }
+            ]
+          }
+        ],
+        "brief": "女子接过东西后转身走出了房间。"
+      }
+    ],
+    "uncertainties": []
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.0,
+        "end": 2.48,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          2.38,
+          2.58
+        ],
+        "speaker_id": "V01",
+        "description": "女声，语速快，语气轻快且带有安抚感。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "女声开始说话"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "不花你的钱，绝对不花你钱，来挑吧帅哥。"
+      },
+      {
+        "id": "N001",
+        "kind": "music",
+        "layer": "background",
+        "start": 0.0,
+        "end": 7.44,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          7.34,
+          7.44
+        ],
+        "speaker_id": null,
+        "description": "节奏明快的流行背景音乐，贯穿整个音频片段。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "音乐从开头响起并持续播放"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 3.2,
+        "end": 3.6,
+        "start_range": [
+          3.1,
+          3.3
+        ],
+        "end_range": [
+          3.5,
+          3.7
+        ],
+        "speaker_id": "V01",
+        "description": "女声，简短催促。",
+        "evidence": [
+          {
+            "time": 3.2,
+            "observation": "女声说出短句"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "快点啊。"
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 3.6,
+        "end": 4.8,
+        "start_range": [
+          3.5,
+          3.7
+        ],
+        "end_range": [
+          4.7,
+          4.9
+        ],
+        "speaker_id": "V02",
+        "description": "男声，语气略带犹豫和试探。",
+        "evidence": [
+          {
+            "time": 3.6,
+            "observation": "男声介入对话"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "不能乱开啊，我有经验的。"
+      },
+      {
+        "id": "U004",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 4.8,
+        "end": 5.44,
+        "start_range": [
+          4.7,
+          4.9
+        ],
+        "end_range": [
+          5.34,
+          5.54
+        ],
+        "speaker_id": "V01",
+        "description": "女声，果断回应。",
+        "evidence": [
+          {
+            "time": 4.8,
+            "observation": "女声快速接话"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "不乱开。"
+      },
+      {
+        "id": "U005",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 6.32,
+        "end": 6.72,
+        "start_range": [
+          6.22,
+          6.42
+        ],
+        "end_range": [
+          6.62,
+          6.82
+        ],
+        "speaker_id": "V01",
+        "description": "女声，轻声引导。",
+        "evidence": [
+          {
+            "time": 6.32,
+            "observation": "女声发出指令"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": "来吧。"
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "K1",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          2.48
+        ],
+        "overlap_s": 2.48
+      },
+      {
+        "action_id": "K1",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          5.4
+        ],
+        "overlap_s": 5.4
+      },
+      {
+        "action_id": "K1",
+        "audio_id": "U002",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.2,
+          3.6
+        ],
+        "overlap_s": 0.4
+      },
+      {
+        "action_id": "K1",
+        "audio_id": "U003",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.6,
+          4.8
+        ],
+        "overlap_s": 1.2
+      },
+      {
+        "action_id": "K1",
+        "audio_id": "U004",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.8,
+          5.4
+        ],
+        "overlap_s": 0.6
+      },
+      {
+        "action_id": "K1",
+        "audio_id": "U005",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K2",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K2",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.4,
+          6.0
+        ],
+        "overlap_s": 0.6
+      },
+      {
+        "action_id": "K2",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K2",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K2",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.4,
+          5.44
+        ],
+        "overlap_s": 0.04
+      },
+      {
+        "action_id": "K2",
+        "audio_id": "U005",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K3",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          2.48
+        ],
+        "overlap_s": 2.48
+      },
+      {
+        "action_id": "K3",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          3.0
+        ],
+        "overlap_s": 3.0
+      },
+      {
+        "action_id": "K3",
+        "audio_id": "U002",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K3",
+        "audio_id": "U003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K3",
+        "audio_id": "U004",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K3",
+        "audio_id": "U005",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.0,
+          6.4
+        ],
+        "overlap_s": 3.4
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.2,
+          3.6
+        ],
+        "overlap_s": 0.4
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.6,
+          4.8
+        ],
+        "overlap_s": 1.2
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.8,
+          5.44
+        ],
+        "overlap_s": 0.64
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "U005",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.32,
+          6.4
+        ],
+        "overlap_s": 0.08
+      },
+      {
+        "action_id": "K5",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K5",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.0,
+          7.44
+        ],
+        "overlap_s": 1.44
+      },
+      {
+        "action_id": "K5",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K5",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K5",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "K5",
+        "audio_id": "U005",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.32,
+          6.72
+        ],
+        "overlap_s": 0.4
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "K2",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.4,
+          5.44
+        ],
+        "overlap_s": 0.04
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.2,
+          3.6
+        ],
+        "overlap_s": 0.4
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.6,
+          4.8
+        ],
+        "overlap_s": 1.2
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.8,
+          5.44
+        ],
+        "overlap_s": 0.64
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "U005",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.32,
+          6.4
+        ],
+        "overlap_s": 0.08
+      },
+      {
+        "action_id": "K5",
+        "audio_id": "U005",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.32,
+          6.72
+        ],
+        "overlap_s": 0.4
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "K1",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          2.48
+        ],
+        "overlap_s": 2.48
+      },
+      {
+        "action_id": "K1",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          5.4
+        ],
+        "overlap_s": 5.4
+      },
+      {
+        "action_id": "K1",
+        "audio_id": "U002",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.2,
+          3.6
+        ],
+        "overlap_s": 0.4
+      },
+      {
+        "action_id": "K1",
+        "audio_id": "U003",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.6,
+          4.8
+        ],
+        "overlap_s": 1.2
+      },
+      {
+        "action_id": "K1",
+        "audio_id": "U004",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.8,
+          5.4
+        ],
+        "overlap_s": 0.6
+      },
+      {
+        "action_id": "K2",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.4,
+          6.0
+        ],
+        "overlap_s": 0.6
+      },
+      {
+        "action_id": "K3",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          2.48
+        ],
+        "overlap_s": 2.48
+      },
+      {
+        "action_id": "K3",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          3.0
+        ],
+        "overlap_s": 3.0
+      },
+      {
+        "action_id": "K4",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.0,
+          6.4
+        ],
+        "overlap_s": 3.4
+      },
+      {
+        "action_id": "K5",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.0,
+          7.44
+        ],
+        "overlap_s": 1.44
+      }
+    ]
+  },
+  "warnings": []
+}

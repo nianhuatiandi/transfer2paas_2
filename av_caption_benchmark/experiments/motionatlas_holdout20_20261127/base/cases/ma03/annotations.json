@@ -1,0 +1,265 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma03",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "床边与灯",
+    "main_subject_count": 1,
+    "subject_kind": "动画角色",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      61
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-8b26473f-101.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      3.125
+    ],
+    "official_sha256": "861ed3fc6afbb478467c68167fb2e2f10a4193d2c12116289e172ae7551a7e52",
+    "clip_sha256": "861ed3fc6afbb478467c68167fb2e2f10a4193d2c12116289e172ae7551a7e52",
+    "audio_source": null
+  },
+  "duration_seconds": 3.125,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 3.125,
+      "first_frame": 0,
+      "end_frame_exclusive": 25
+    }
+  ],
+  "input_frames": {
+    "visual": 25
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一个连续镜头，记录了一名男子在行军床上调暗煤油灯并躺下睡觉的过程。画面右下角始终有一只动物（疑似狮子）的背影作为旁观者，未参与主要动作执行。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "身穿白色背心和绿色裤子的年轻男子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.375,
+        "end": 1.625,
+        "description": "男子伸手调节左侧床头柜上的煤油灯旋钮，使灯光变暗直至熄灭。"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 1.875,
+        "end": 3.0,
+        "description": "男子收回手臂，身体向后平躺在行军床上，双手交叠放在腹部，闭上眼睛入睡。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "调暗煤油灯",
+        "start": 0.375,
+        "end": 1.625,
+        "start_range": [
+          0.25,
+          0.5
+        ],
+        "end_range": [
+          1.5,
+          1.75
+        ],
+        "detail": "男子原本侧卧在床上，随后伸出右手越过床沿，触碰并转动左侧木箱上的煤油灯旋钮。随着他的操作，煤油灯的火焰逐渐变小，房间内的光线由暖黄色变为昏暗，最后几乎完全黑暗。",
+        "evidence": [
+          {
+            "time": 0.375,
+            "observation": "男子开始移动右臂向左侧伸展。"
+          },
+          {
+            "time": 0.875,
+            "observation": "男子的手接触到煤油灯底部区域。"
+          },
+          {
+            "time": 1.25,
+            "observation": "煤油灯火焰明显减小，环境光变暗。"
+          },
+          {
+            "time": 1.625,
+            "observation": "煤油灯基本熄灭，男子手离开灯具准备收回。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "手部接触灯具",
+            "time": 0.875,
+            "time_range": null
+          },
+          {
+            "name": "灯光显著变暗",
+            "time": 1.25,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右臂",
+          "右手"
+        ],
+        "movement_roles": [
+          "施力者",
+          "交互对象"
+        ],
+        "subphases": [
+          {
+            "label": "伸臂够灯",
+            "start": 0.375,
+            "end": 0.875,
+            "detail": "上半身微微前倾，右臂伸直探向床头柜。",
+            "evidence": [
+              {
+                "time": 0.375,
+                "observation": "手臂开始位移。"
+              },
+              {
+                "time": 0.75,
+                "observation": "手臂接近灯具。"
+              }
+            ]
+          },
+          {
+            "label": "旋转旋钮熄灯",
+            "start": 0.875,
+            "end": 1.625,
+            "detail": "手指在灯座处操作，伴随光线减弱过程。",
+            "evidence": [
+              {
+                "time": 1.0,
+                "observation": "手在灯座上停留操作。"
+              },
+              {
+                "time": 1.5,
+                "observation": "光线变得非常微弱。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子侧卧伸手将旁边的煤油灯调至熄灭。"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "躺下睡觉",
+        "start": 1.875,
+        "end": 3.0,
+        "start_range": [
+          1.75,
+          2.0
+        ],
+        "end_range": [
+          2.875,
+          3.125
+        ],
+        "detail": "男子收回右手后，头部和背部顺势向后倒在枕头上。双腿自然弯曲放松，双手交叠放置在腹部位置。最终保持静止的仰卧姿态，双眼闭合。",
+        "evidence": [
+          {
+            "time": 1.875,
+            "observation": "男子张嘴打哈欠或叹气，身体开始向后仰。"
+          },
+          {
+            "time": 2.25,
+            "observation": "背部接触床面，头部枕好。"
+          },
+          {
+            "time": 2.625,
+            "observation": "双手调整到腹部交叠姿势。"
+          },
+          {
+            "time": 3.0,
+            "observation": "完全静止，呈现睡眠状态。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "身体后倒",
+            "time": 2.0,
+            "time_range": null
+          },
+          {
+            "name": "进入静止睡姿",
+            "time": 2.75,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "头部",
+          "双臂",
+          "双腿"
+        ],
+        "movement_roles": [
+          "主体位移"
+        ],
+        "subphases": [
+          {
+            "label": "收臂后仰",
+            "start": 1.875,
+            "end": 2.375,
+            "detail": "从侧撑姿态转变为仰卧，重心后移。",
+            "evidence": [
+              {
+                "time": 2.0,
+                "observation": "肩膀离地，背部下沉。"
+              }
+            ]
+          },
+          {
+            "label": "安顿四肢",
+            "start": 2.375,
+            "end": 3.0,
+            "detail": "手臂摆放至腹部，腿部肌肉放松。",
+            "evidence": [
+              {
+                "time": 2.5,
+                "observation": "手部在腹部附近微调。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子关灯后平躺在床上，双手放于腹部闭眼休息。"
+      }
+    ],
+    "uncertainties": []
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": []
+}

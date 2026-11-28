@@ -1,0 +1,595 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>EVA 与我们的音视频标注对照</title><style>body{max-width:1450px;margin:28px auto;padding:0 3%;font:16px/1.65 system-ui;color:#1c3436}article{border-top:2px solid #749290;margin:30px 0;padding:15px 0}video{width:min(100%,700px);max-height:42vh;background:#182323}.cols{display:grid;grid-template-columns:1fr 1fr;gap:2rem}section{min-width:0}.caption{line-height:1.65}button{cursor:pointer;padding:3px 7px;font:inherit;font-size:.84em}details{padding:5px 0;border-bottom:1px solid #d3dedd}summary{cursor:pointer}.yes{color:#05644b;font-weight:600}a{color:#006b79}pre{white-space:pre-wrap;overflow-wrap:anywhere}small{color:#526566}@media(max-width:850px){.cols{grid-template-columns:1fr}}</style><h1>EVA 与我们的音视频标注对照</h1><p>三段来自 Shot2Story 的完整原片。EVA 一侧展示 SFT 训练用英文 caption 和 GRPO 训练用事件与同期查询。这三条公开记录的事件没有数值起止字段。我们的 Qwen 标注仅以原媒体为输入。动作与声音区间求交，极短重叠及模型时间边界均需要复核。两边均为模型候选。</p><p>这三条定向选出的片段有 12 条音到画训练查询，其中 6 条选中多项，各含一项 action 和镜头或环境。完整 GRPO Stage 2 的 20,782 条训练查询中，有 1,452 条同时选中至少两个 action（7.0%）。该标签还可指物体动作。<a href="official_query_counts.json">两阶段全量计数和文件哈希</a> · <a href="audit_queries.py">计数代码</a></p><p>观察以原片抽帧与两套文本为依据，此次未逐句进行独立听写。视觉 v6 的复核文本与动作表分别保留，操作方向、物体身份或时间边界可能互相矛盾。</p><nav><a href="#case-apple">烹饪演示 · 糖煮苹果</a>　<a href="#case-golf">体育转播 · 高尔夫</a>　<a href="#case-timer">日常操作 · 灌溉定时器</a></nav><article id="case-apple"><h2>烹饪演示 · 糖煮苹果</h2><p>2VBRpUe8idw.10.mp4 · 17.52 秒</p><video id="apple" controls preload="metadata" src="cases/apple/clip.mp4"></video><details><summary>查看带原片时间戳的核对帧</summary><a href="cases/apple/evidence.jpg"><img style="max-width:100%" src="cases/apple/evidence.jpg" alt="原片抽帧与时间戳"></a></details><h3>复核观察</h3><ul><li>EVA 的 caption 连贯地叙述搅苹果、把苹果放到燕麦上、出镜讲解及举罐。最后一条训练查询把介绍整罐用量的话对应到举起燕麦罐。</li><li>我们的动作表给出两次舀放，并将 13.26–17.48 秒写为举罐并用手指向罐身。原片 14.389 秒能同时看到一只手持罐、另一只手用食指指向罐身。若要分别查询举罐与指罐的起点，目前它们仍合在一个动作实例内。</li><li>EVA 将单人份和一罐能吃两周拆为两条语音线索，分别选出对镜说话、举罐。我们的 U003 把两部分合在 10.50–17.40 秒。只用这条区间无法判定指罐究竟对应哪一小句。</li></ul><div class="cols"><section><h3>EVA 公开标注</h3><p class="caption">In a close-up, top-down shot, a pair of hands uses a gold-colored spoon to stir chunks of cooked apple in a dark, syrupy liquid inside a light blue bowl, set against a white marble surface. Simultaneously, an off-screen female narrator with a friendly and enthusiastic tone says, &quot;You can stick this over ice cream or yogurt and it&#x27;s going to be so delicious,&quot; while a light, upbeat instrumental track plays softly in the background and a small, black bee logo is visible in the bottom left corner. The camera angle remains a top-down view, now showing the blue bowl of apple mixture on the left and a peach-colored bowl of oatmeal on a pink and white patterned napkin to the right. As the gold spoon scoops the apple mixture from the blue bowl and places it on top of the oatmeal, the narrator&#x27;s tone becomes slightly more instructional, explaining, &quot;But we&#x27;re just going to top our oatmeal with some apples and we have freshly made apple cinnamon oatmeal.&quot; The shot then changes to a medium close-up of the woman, now visible in her kitchen, who has dark hair pulled back and is wearing a black V-neck t-shirt. Standing in front of white cabinets, a tiled backsplash, and various appliances including a pink toaster and a stand mixer, she speaks directly to the camera with a clear and confident voice, explaining, &quot;I&#x27;m making an individual serving here,&quot; before holding up a cylindrical container of oatmeal and continuing, &quot;but this whole can of oatmeal will last you at least like two weeks.&quot;</p><p>强化学习记录有 7 个视觉事件，其中 4 个标为 action，另有 5 个音频事件。</p><details><summary>视觉事件清单</summary><ol><li>[action] A pair of hands uses a gold-colored spoon to stir chunks of cooked apple in a dark, syrupy liquid inside a light blue bowl.</li><li>[environment] A small, black bee logo is visible in the bottom left corner.</li><li>[camera] The camera angle remains a top-down view, now showing the blue bowl of apple mixture on the left and a peach-colored bowl of oatmeal on a pink and white patterned napkin to the right.</li><li>[action] The gold spoon scoops the apple mixture from the blue bowl and places it on top of the oatmeal.</li><li>[camera] The shot changes to a medium close-up of the woman standing in her kitchen.</li><li>[action] The woman speaks directly to the camera.</li><li>[action] The woman holds up a cylindrical container of oatmeal.</li></ol></details><details><summary>声音事件清单</summary><ol><li>[sound] A light, upbeat instrumental track plays softly in the background.</li><li>[asr] You can stick this over ice cream or yogurt and it&#x27;s going to be so delicious.</li><li>[asr] But we&#x27;re just going to top our oatmeal with some apples and we have freshly made apple cinnamon oatmeal.</li><li>[asr] I&#x27;m making an individual serving here.</li><li>[asr] But this whole can of oatmeal will last you at least like two weeks.</li></ol></details><h4>GRPO 训练用音到画同期查询</h4><p>✓ 表示计算同步奖励时使用的参考选项，编号取自 selected_visual_indices_new。</p><details><summary>A light, upbeat instrumental track plays softly in the background. <small>（选中 2 项）</small></summary><ol><li class="yes">✓ [environment] A small, black bee logo is visible in the bottom left corner.</li><li class="">[camera] The shot changes to a medium close-up of the woman standing in her kitchen.</li><li class="">[camera] The camera angle remains a top-down view, now showing the blue bowl of apple mixture on the left and a peach-colored bowl of oatmeal on a pink and white patterned napkin to the right.</li><li class="yes">✓ [action] A pair of hands uses a gold-colored spoon to stir chunks of cooked apple in a dark, syrupy liquid inside a light blue bowl.</li><li class="">[action] The gold spoon scoops the apple mixture from the blue bowl and places it on top of the oatmeal.</li></ol></details><details><summary>I&#x27;m making an individual serving here. <small>（选中 1 项）</small></summary><ol><li class="">[camera] The shot changes to a medium close-up of the woman standing in her kitchen.</li><li class="">[action] The woman holds up a cylindrical container of oatmeal.</li><li class="">[camera] The camera angle remains a top-down view, now showing the blue bowl of apple mixture on the left and a peach-colored bowl of oatmeal on a pink and white patterned napkin to the right.</li><li class="">[action] The gold spoon scoops the apple mixture from the blue bowl and places it on top of the oatmeal.</li><li class="yes">✓ [action] The woman speaks directly to the camera.</li></ol></details><details><summary>But this whole can of oatmeal will last you at least like two weeks. <small>（选中 1 项）</small></summary><ol><li class="yes">✓ [action] The woman holds up a cylindrical container of oatmeal.</li><li class="">[camera] The camera angle remains a top-down view, now showing the blue bowl of apple mixture on the left and a peach-colored bowl of oatmeal on a pink and white patterned napkin to the right.</li><li class="">[camera] The shot changes to a medium close-up of the woman standing in her kitchen.</li><li class="">[action] The woman speaks directly to the camera.</li><li class="">[action] The gold spoon scoops the apple mixture from the blue bowl and places it on top of the oatmeal.</li></ol></details><p><a href="cases/apple/shot2story_caption_sft.json">SFT 原文</a> · <a href="cases/apple/stage2_caption_rl.json">官方事件与全部选项</a> · <a href="cases/apple/source.json">视频来源和定位</a></p></section><section><h3>我们的管道输出</h3><p>motion 3，gesture 1；语音 3 条、其他声音 1 条。点击时间回看。</p><h4>动作与状态</h4><details><summary><button data-clip="apple" data-time="0.0000">0.00–0.29 s</button> S01-P01 用勺搅拌碗里的苹果块和糖浆。</summary><p>S01-A01 · motion · 俯视近景中，浅蓝绿色碗放在白色台面上，碗内是切成块的黄色水果和深色液体。左手从左侧扶住碗沿保持稳定，右手握住金色长柄勺伸入碗中，先让勺头贴着碗底一侧移动，再把果块连同糖浆一起翻搅起来；随着连续拨动，原本较集中的深色液体被带到果块表面，碗内分布变得更均匀。</p></details><details><summary><button data-clip="apple" data-time="0.3337">0.33–2.42 s</button> S02-P01 单手继续搅拌同一碗苹果块，直到放下勺子。</summary><p>S02-A01 · motion · 切到另一段俯视近景后，只剩一只手从右下方握着金色勺子，在同一个浅蓝绿色碗中持续做圆周式搅拌。勺头反复压过碗底的果块，把它们从堆叠状态拨散，深色糖浆逐渐铺满碗底并在果块之间流动。约在后半段，搅拌幅度略收小，最后手松开并把勺子留在碗内，勺柄斜搭向右侧。</p></details><details><summary><button data-clip="apple" data-time="4.6713">4.67–8.34 s</button> S03-P01 分两次把小碗里的苹果块舀到燕麦粥上。</summary><p>S03-A01 · motion · 俯视构图里，左下角是装着苹果块和深色糖浆的浅蓝绿色小碗，中间偏上是盛着燕麦粥的粉橘色大碗。一只手持金色勺子先从左下小碗舀起一份苹果块，移到粉橘色碗上方，把果块落在燕麦粥中央；接着再次回到左下小碗装第二份，重复同样的转移路径，再倒进燕麦粥中心。完成后，两堆苹果块集中在燕麦粥中部，旁边还能看到少量深色汁液渗出。</p></details><details><summary><button data-clip="apple" data-time="13.2632">13.26–17.48 s</button> S04-P01 拿起白色圆筒包装并举起展示，同时用手指向罐身。</summary><p>S04-A01 · gesture · 正面中景里，女子站在厨房台面后方，背景可见白色橱柜、灶台和粉色烤面包机。她先低头看向身前，双手把一个白色圆筒状包装拿起来；随后左手托住罐身下部，把它举到胸前偏右的位置，罐身上的图案朝外。之后她用右手食指多次点向罐身正面，像是在强调某个标识或说明，头部偶尔转向罐子查看，又转回面向镜头。整个过程中她的嘴部持续张合，呈现正在讲话的状态，但没有其他大幅肢体动作。</p></details><h4>语音、声音与同期动作</h4><details><summary><button data-clip="apple" data-time="0.0000">0.00–17.49 s</button> 轻柔的器乐背景音乐，旋律舒缓，音量较低。</summary><p>N001 · music · background</p><p>与动作区间的名义交集（秒） <button data-clip="apple" data-time="0.0000">S01-A01 0.00–0.29</button> <button data-clip="apple" data-time="0.3337">S02-A01 0.33–2.42</button> <button data-clip="apple" data-time="4.6713">S03-A01 4.67–8.34</button> <button data-clip="apple" data-time="13.2632">S04-A01 13.26–17.48</button></p></details><details><summary><button data-clip="apple" data-time="0.4000">0.40–4.20 s</button> You can stick this over ice cream or yogurt and it&#x27;s gonna be so delicious.</summary><p>U001 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="apple" data-time="0.4000">S02-A01 0.40–2.42</button></p></details><details><summary><button data-clip="apple" data-time="4.6000">4.60–10.20 s</button> But we&#x27;re just gonna top our oatmeal with some apples and we have freshly made apple cinnamon oatmeal.</summary><p>U002 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="apple" data-time="4.6713">S03-A01 4.67–8.34</button></p></details><details><summary><button data-clip="apple" data-time="10.5000">10.50–17.40 s</button> I&#x27;m making an individual serving here, but this whole can of oatmeal will last you at least like two weeks.</summary><p>U003 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="apple" data-time="13.2632">S04-A01 13.26–17.40</button></p></details><details><summary>v6 视觉复核全文</summary><pre>S01　S01-P01　未露脸的操作者，只见双手；左手戴戒指扶碗，右手握金色勺子
+连续原视频观察
+At 0.0s, the operator’s left hand rests on the rim of a light blue bowl containing diced yellow fruit pieces submerged in dark liquid; the right hand holds a gold spoon inside the bowl.
+0–0.291958 秒　操作者的左手（无名指佩戴银色镶钻戒指）始终位于画面左侧，拇指和食指稳固地捏住浅蓝绿色碗的左右边缘，在整个过程中保持静止以固定碗体。
+0–0.0834166 秒　右手握持金色长柄勺伸入碗中，勺头接触并压在碗内右侧的一块黄色水果上；随着手腕轻微向左施力，勺头推动该果块向碗底中心区域滑动，使其稍微浸入深红色的液体中。
+0.0834166–0.208542 秒　右手继续操控勺子进行搅拌，勺头在碗内中央区域划过一道弧线，将原本浮在表面的几块水果拨开并向左下方推挤，导致深色糖浆在果块间隙中流动得更明显。
+0.208542–0.291958 秒　右手执行舀取动作，勺头深入到底部果块下方，随后向上抬起并向右上方翻转，成功铲起一大块沾满深色糖浆的水果悬停在半空，展示了食材的粘稠度。
+0–0.291958 秒　左手（佩戴银色戒指）持续握住浅蓝色碗的左侧边缘，在整个过程中保持碗体位置固定不动。
+0–0.0834166 秒　右手握持金色勺子处于初始接触状态，勺头浸入碗内右侧的深红色糖浆中，紧贴着黄色的苹果块堆叠处。
+0.0834166–0.208542 秒　右手开始执行搅拌动作，将勺头从碗内右侧向中心及左下方推动，带动周围的液体和果块发生位移。
+0.208542–0.291958 秒　随着搅拌继续，右手控制勺头深入至碗底中央区域，将原本浮在表面的几块黄色苹果块向下按压并翻动，使其完全浸没在深色糖浆中。
+0–0.291958 秒　画面始终保持垂直俯视的特写镜头，背景为带有灰色纹理的白色大理石台面。一只浅青色的陶瓷碗位于画面正中央，碗内盛有切成不规则块状的淡黄色水果（疑似苹果或梨）以及深红褐色的浓稠糖浆液体。
+0–0.291958 秒　操作者的左手位于画面左侧，无名指上佩戴着一枚银色镶钻戒指。在整个片段中，左手的手指始终紧扣在碗的左侧边缘，保持静止姿态以固定碗身，未发生位移。
+0–0.0834166 秒　操作者的右手位于画面右侧，握持一把金色的金属长柄勺。起始状态下，勺头已浸入碗内的食材中，位于果块的右侧区域，处于准备搅拌的位置。
+0.0834166–0.208542 秒　右手开始驱动勺子进行搅拌动作。勺柄相对于手腕的角度发生变化，带动勺头在碗内向左下方移动，穿过果块之间的缝隙，将底部的深色液体向上翻起。
+0.208542–0.291958 秒　随着搅拌动作的持续，勺头舀起了一部分深红色的糖浆液体和少许果肉碎屑，将其带离碗底表面并推向碗的中心位置。此时可以看到原本覆盖在水果表面的液体分布变得更加均匀，且勺子最终停留在碗内偏左下的位置。
+短时间窗的局部观察
+0–0.291958 秒　在0.000s至0.292s期间，画面保持俯视视角的静止构图。背景为带有细微纹理的白色平面，左下角始终可见一个蜜蜂图案的标志。
+0–0.291958 秒　操作者的左手位于画面左侧，无名指上佩戴着一枚银色戒指。在整个时间窗内，左手的食指和拇指持续捏住浅蓝色碗的左右边缘以提供支撑，手部姿态保持稳定无位移。
+0–0.291958 秒　操作者的右手位于画面右侧，握持一把金色的勺子。勺柄向画面右方延伸出画外，勺头部分浸没在碗内的食物中。
+0–0.291958 秒　碗中盛有切成块状的黄色水果（疑似苹果）以及深红褐色的液体酱汁。
+0–0.291958 秒　从0.000s到0.167s（中间帧），右手带动勺子在碗内进行搅拌动作。勺头首先压入液体深处，随后向上翻起，将底部的深色酱汁带出并覆盖在水果块表面，此时可见明显的液体流动痕迹。
+0–0.291958 秒　到了0.292s（最后一帧），搅拌动作停止。勺头停留在碗中央偏下的位置，周围的水果块已被深色酱汁充分包裹，呈现出湿润的光泽感。
+全片复核后的动作顺序
+在0.000s至0.292s期间，画面保持垂直俯视的特写镜头。背景为带有细微灰色纹理的白色大理石台面，左下角始终可见一个蜜蜂图案的标志。
+画面中央放置一只浅蓝绿色的陶瓷碗，碗内盛有切成不规则块状的淡黄色水果（疑似苹果）以及深红褐色的浓稠糖浆液体。
+操作者的左手位于画面左侧，无名指上佩戴着一枚银色镶钻戒指。在整个片段中，左手的拇指和食指持续捏住碗的左右边缘以固定碗身，手部姿态保持稳定无位移。
+从0.083s开始，右手驱动勺子进行搅拌动作。勺柄相对于手腕的角度发生变化，带动勺头在碗内向左下方移动，穿过果块之间的缝隙，将底部的深色液体向上翻起。
+随着搅拌动作的持续（约0.208s），勺头舀起了一部分深红色的糖浆液体和少许果肉碎屑，将其带离碗底表面并推向碗的中心位置。此时可以看到原本覆盖在水果表面的液体分布变得更加均匀。
+到了0.292s（最后一帧），搅拌动作停止。勺头停留在碗内偏左下的位置，周围的水果块已被深色酱汁充分包裹，呈现出湿润的光泽感。
+
+S02　S02-P01　未露脸的操作者，只见一只手握着金色勺子在碗中搅拌
+连续原视频观察
+At 0.3s, the right hand holds a gold spoon inside a light blue bowl centered on a white marble-patterned surface.
+From 0.3s to about 2.5s, the right hand moves the spoon in continuous circular stirring motions through diced yellow fruit pieces and dark brown liquid.
+During this stirring phase, the left hand remains stationary near the lower-left edge of the frame, not contacting the bowl or spoon.
+Around 2.5s, the spoon stops moving and rests diagonally across the bowl with its handle pointing toward the upper-right corner.
+The right hand releases the spoon and withdraws downward out of the frame by approximately 3.0s.
+After withdrawal, both hands remain absent from view while the bowl stays fixed at center screen until 4.2s.
+0.333666–0.834166 秒　操作者右手握持金色勺柄，在浅蓝色碗中进行连续的搅拌动作。手腕带动勺头在深褐色液体与黄色果块间划圈翻动，将原本聚集的果块打散并使其裹上汤汁。
+1.04271–1.54321 秒　搅拌动作持续进行但节奏发生变化。在第25-27帧，手部快速搅动导致画面出现动态模糊；随后在第32-37帧，手调整抓握姿势（手指张开），勺头沿碗壁边缘刮擦并推挤果块，使深色糖浆更均匀地分布在碗底。
+1.75175–2.04371 秒　搅拌进入收尾阶段。第42-44帧显示最后一次明显的翻拌动作，紧接着在第49帧，勺子的运动轨迹停止，勺头平稳地停留在碗内右侧的果块堆旁，不再进行圆周运动。
+2.25225–2.54421 秒　操作者执行放勺与撤手的连贯动作。第54-56帧中，右手仍轻扶静止的勺柄以保持其位置；到了第61帧，五指完全松开勺柄，手掌向右下方移动脱离接触面，勺子依靠自身惯性留在碗中。
+2.75275–4.21254 秒　画面转为静态展示。右手已完全移出镜头视野，金色勺子独自静置在碗中，勺柄斜搭向画面右侧边缘，勺头浸没在汤汁里，周围是混合均匀的苹果块。
+0.333666–0.834166 秒　操作者的右手握持一把金色长柄勺，在浅蓝色碗中进行圆周搅拌。勺头深入碗底，推动黄色的块状水果（疑似苹果或梨）与深褐色的糖浆混合。随着搅拌动作，原本聚集的果块被分散开来，深色液体逐渐包裹住每一块果肉表面。
+1.04271–1.54321 秒　搅拌动作持续进行，但幅度略有变化。手部调整了握勺的角度，使勺背更多地接触果块侧面。可以看到碗内的液体变得更加均匀，部分气泡随搅动产生并破裂。右下方的放大视图显示手指紧扣勺柄末端以控制力度。
+1.75175–2.04371 秒　搅拌接近尾声。手部的动作减缓，勺子在碗中做了一个最后的翻动后停止移动。此时，所有可见的果块都已充分浸润在深色糖浆中，呈现出油亮的光泽。勺子静止悬浮在碗中央偏下的位置。
+2.25225–2.54421 秒　操作者松开紧握的手指，手掌从勺柄上撤离并向画面右下方移出。金色的勺子失去支撑，自然地斜靠在碗壁上，勺柄指向右侧约3点钟方向，勺头沉入底部的糖浆中。
+2.75275–4.21254 秒　画面进入完全静止状态。操作者的手已彻底离开镜头视野。碗中只剩下浸泡在深褐色液体里的黄色果块和那把静置的金色勺子。光线反射在湿润的果块表面和金属勺头上，没有任何进一步的物理交互发生。
+0.333666–0.834166 秒　画面采用垂直俯视视角，背景为带有灰色纹理的白色大理石台面。一只浅蓝色陶瓷碗位于画面正中央，碗内盛有切成小块的黄色水果和深褐色液体。操作者的右手从画面右下角入画，握着一把金色勺子伸入碗中，勺头正在果块堆中进行搅拌动作。
+1.04271–2.04371 秒　操作者持续进行圆周式搅拌，手腕带动勺头在深色液体中划圈翻动。随着搅拌的进行，原本聚拢的果块被逐渐拨散，深色糖浆铺满碗底并在果块之间流动，使所有果块表面都染上了光泽。手部位置主要在碗口范围内小幅移动。
+2.25225–2.54421 秒　搅拌动作进入收尾阶段，勺子在碗内右侧区域短暂停留后停止运动。操作者的右手松开勺柄，向右下方移出画面，直至完全离开镜头视野。此时金色的勺子静置在碗内，勺头浸没在汤汁中，勺柄斜搭向右侧边缘。
+2.75275–4.21254 秒　画面恢复静止状态，仅保留放置在台面上的浅蓝色碗、浸泡在液体中的黄色果块以及搁置其中的金色勺子。全程保持固定的垂直俯拍机位，无推拉摇移等运镜变化，焦点清晰地锁定在中央的物体上。
+短时间窗的局部观察
+0.333666–1.54321 秒　在0.33秒至1.54秒的连续画面中，镜头保持静止俯视视角。背景为带有灰色裂纹纹理的白色大理石台面，左下角始终可见一个黑色的蜜蜂图标水印。
+0.333666–1.54321 秒　画面中央放置着一个浅蓝绿色的圆形陶瓷碗，碗内盛有切成小方块的淡黄色水果（疑似苹果）以及深褐色的浓稠液体酱汁。
+0.333666–1.54321 秒　操作者仅露出一只右手及部分手腕，未见面部或其他肢体。手部握持一把金色的金属勺子伸入碗中。
+0.333666–1.54321 秒　在0.33秒至0.62秒期间（相位一），手部的发力点位于勺柄末端，勺头浸没在深色液体中，以中等速度进行顺时针方向的圆周搅拌动作，带动果块向右侧和下方移动。
+0.333666–1.54321 秒　在0.75秒至1.04秒期间（相位二），搅拌轨迹发生逆转或延续，勺头转向左侧并向上刮动，将沉在底部的果块翻起，此时手部位置略微下移靠近画面底边边缘。
+0.333666–1.54321 秒　在1.12秒至1.25秒期间（相位三），搅拌动作出现短暂的停顿与调整，勺头停留在碗的右上方区域，手指微调抓握姿势，随后再次启动小幅度的搅动。
+0.333666–1.54321 秒　在1.33秒至1.54秒期间（相位四），勺子被抬起至液面之上，勺凹面朝上，兜住了几块沾满酱汁的水果，悬停在碗口上方约两厘米处展示混合状态，最后又缓缓落下接触液面。
+1.33467–2.54421 秒　在1.33秒至1.42秒期间，画面中央放置着一个浅蓝色碗，碗内盛有切成块状的黄色水果和深褐色液体。操作者的右手从画面右下方伸入，握着一把金色的勺子正在碗中搅拌。
+1.33467–2.54421 秒　在1.54秒至1.92秒期间，手部的动作发生明显变化，手腕向下压并带动勺柄向左侧倾斜，使金色勺头深入碗底右侧的深色液体中翻动果块。此时背景大理石纹理保持静止，未见镜头移动。
+1.33467–2.54421 秒　在2.04秒至2.42秒期间，手部停止搅拌并将勺子向上抬起，随后水平放置在碗口上方。勺柄指向画面右侧边缘，勺头停留在碗内液体的表面，不再接触果块。
+1.33467–2.54421 秒　在2.54秒的最终状态下，操作者的右手手指完全松开勺柄并向右下方移出画面，留下金色勺子独自静置在碗内的液体上，整体呈现无人操作的静止状态。
+2.33567–3.54521 秒　02.335s - 02.419s (帧 56-58)　操作者的右手位于画面右侧，手指捏住一把金色长柄勺的末端。勺子向左下方延伸，其头部浸没在中央浅蓝色碗内的深褐色液体中。　手部保持静止抓握姿态，未见明显的搅拌动作或位移，处于悬停状态。
+2.33567–3.54521 秒　02.419s - 02.544s (帧 58-61)　手与勺子的相对位置保持不变，但作为一个整体开始向画面右下方移动。　这是运动变化最明显的阶段。右手迅速向右下撤出，导致原本稳定的构图发生偏移。随着手的离开，勺柄随之拖动，打破了之前的静止状态。
+2.33567–3.54521 秒　02.544s - 02.627s (帧 61-63)　操作者的右手大部分已移出画面右下角边缘，仅余极小部分可见（随后完全消失）。金色勺子脱离人手控制，静置在碗中。　撤离动作完成，速度由快转停。此时勺子依靠自身重力和碗壁支撑停留在原位，不再受外力操纵。
+2.33567–3.54521 秒　02.627s - 03.545s (帧 63-85)　画面中无人物肢体出现。视觉中心仅为盛有黄色块状食物和深色酱汁的浅蓝碗，以及斜插在其中的金色勺子。　完全静止。背景的大理石纹理与碗的位置关系固定不变，无任何运镜或物体位移迹象。
+3.33666–4.21254 秒　在帧80至101的整个时间窗内，俯视视角下的画面始终保持静止。参照系以白色大理石纹理桌面为背景，一个浅蓝色圆碗位于画面正中央，左下角始终可见一个黑色的蜜蜂图标水印。
+3.33666–4.21254 秒　根据提供的主体外观线索及全图位移数据（dx/dy均为0.0），操作者的手部并未进入画面视野。画面中仅有一把金色的勺子静置于碗中，其勺柄向右侧水平延伸出碗外，在整个时间段内未发生任何位置移动或搅拌动作。
+3.33666–4.21254 秒　碗内盛有深褐色的液体和切成小方块的淡黄色固体食材。从第一帧（80）到最后一帧（101），这些方块状食材在液体中的分布状态、相互堆叠的位置以及漂浮的高度均保持完全一致，没有任何因水流扰动而产生的位移迹象。
+3.33666–4.21254 秒　尽管存在关于“手握勺子搅拌”的先验描述，但实际视觉证据显示该场景处于完全的静态终态：金色勺子与深色液体、黄色方块之间没有接触面的相对滑动，也没有产生涟漪或液面波动，所有物体均维持着固定的空间几何关系直至视频结束。
+全片复核后的动作顺序
+在0.33秒至2.41秒期间，画面采用垂直俯视视角，背景为带有灰色裂纹纹理的白色大理石台面。左下角始终可见一个黑色的蜜蜂图标水印。
+在0.33秒至1.54秒的持续搅拌阶段，勺头沿碗底进行圆周式翻动，将原本聚拢的果块拨散，深色糖浆逐渐铺满碗底并在果块之间流动。
+约在1.54秒至2.04秒期间，搅拌动作进入收尾，手调整抓握姿势，勺头沿碗壁边缘刮擦并推挤果块，使所有果块表面均匀裹上光泽。
+在2.04秒至2.41秒期间，手部停止大幅搅动，勺子在碗内做了一个最后的定位后静止，此时勺头停留在碗内偏右侧区域。
+在2.41秒至2.62秒期间，操作者执行放勺与撤手的连贯动作：右手手指完全松开勺柄，手掌向右下方移动脱离接触面，直至移出镜头视野。
+随着手的离开，金色勺子依靠自身重力和碗壁支撑自然斜靠在碗边，勺柄指向画面右侧约3点钟方向，勺头沉入底部的糖浆中。
+从2.62秒直至视频结束（4.21秒），画面转为静态展示。操作者的手已彻底离开镜头视野，全程无进一步物理交互发生。
+在最终的静止状态下，碗中只剩下浸泡在深褐色液体里的黄色果块和那把静置的金色勺子，光线反射在湿润的果块表面和金属勺头上。
+
+S03　S03-P01　未露脸的操作者，只见一只手持金色勺子从浅蓝绿小碗舀取苹果块放到燕麦粥上
+连续原视频观察
+At 4.25s, the right hand holds a gold spoon over the light blue-green bowl on the left side of the frame.
+From 4.25s to 8.34s, the right hand lifts apples with the spoon and moves it toward the oatmeal bowl in the center-right area.
+The spoon deposits apple pieces onto the oatmeal surface during this movement.
+By around 8.34s, the spoon has moved out of view after placing the apples.
+4.25425–4.54621 秒　画面初始状态，中央偏上放置一个盛有燕麦粥的粉橘色大碗，左下角是一个装有切块苹果和深色糖浆的浅蓝绿色小碗。此时画面中无手部或工具介入。
+4.83816–5.04671 秒　一只手持金色长柄勺从画面下方进入，勺头承载着第一批裹着糖浆的黄色苹果块，移动至粉橘色大碗上方悬停。
+5.33866–5.96429 秒　手腕向下倾斜带动勺子翻转，将第一份苹果块倾倒在燕麦粥表面的中心位置。随后勺子保持在该区域附近停留片刻。
+6.46479–6.75675 秒　操作者再次调整动作，手持金色勺子（此时勺内已装满第二批新的苹果块）重新出现在粉橘色大碗上方，准备进行第二次投放。
+7.0487–7.34066 秒　手腕控制角度使勺子翻转，第二份苹果块顺着勺壁滑落，堆积在已有的果堆旁，增加了碗中配料的体积。
+7.5492–8.17483 秒　倾倒完成后，金色的空勺子在碗上方短暂停留并轻微晃动，似乎在沥干残留的糖浆，随后开始向画面下方回撤。
+8.46679–10.6356 秒　勺子完全移出镜头视野。画面恢复静止状态，仅展示最终成品：粉橘色大碗内的燕麦粥顶部覆盖着一堆湿润的黄色苹果块，周围伴有少量渗出的深色汁液。
+4.25425–4.54621 秒　画面初始状态，中央放置一碗燕麦粥，左下角有一碗浸泡在深色糖浆中的苹果块。
+4.83816–5.04671 秒　操作者手持金色勺子从左侧小碗中舀起第一份苹果块，将其移至中央燕麦粥碗的上方。
+5.33866–5.96429 秒　手腕向下倾斜，将勺子里的第一批苹果块倾倒在燕麦粥表面中心位置。
+6.17283–6.46479 秒　第一批投放结束，勺子暂时停留在燕麦粥上方整理落下的果块，随后准备移开。
+6.75675–7.0487 秒　操作者再次用勺子从左侧小碗舀起第二份较大的苹果块，并将其搬运至中央大碗上方。
+7.34066–7.84116 秒　执行第二轮倾倒动作，金色的勺子翻转，使第二批苹果块滑落在已有的果堆之上。
+8.17483–8.46679 秒　随着最后一块苹果落下，勺子完全清空并移出画面右侧，不再出现在镜头中。
+8.75875–10.6356 秒　画面恢复静止，展示最终成品：燕麦粥顶部覆盖着两层湿润的黄色苹果块，周围伴有少许渗出的糖浆。
+4.25425–4.54621 秒　画面呈现垂直俯视视角的静物场景，背景为白色大理石纹理台面。左下角放置一个浅蓝绿色小碗，内盛黄色苹果块和深褐色糖浆；中间偏右上方为一个粉橘色大碗，盛满燕麦粥。左侧铺有一块粉色几何图案餐巾。此时画面中无手部或工具出现。
+4.83816–5.04671 秒　一只手持金色长柄勺从画面底部中央进入视野。勺头已盛满裹着深色糖浆的黄色苹果块（第一份），正平稳地向上移动至粉橘色大碗的正上方悬停。
+5.33866–6.17283 秒　操作者手腕轻微转动倾斜勺柄，将勺内的第一份苹果块倾倒在燕麦粥表面的中心位置。随后勺子保持在空中短暂停留，似乎在沥干残留的糖浆。
+6.46479–6.75675 秒　金色的勺子迅速向下移出画面中心区域，返回左下角的浅蓝绿小碗方向进行第二次舀取。紧接着，满载第二份苹果块的勺子再次从下方升起，回到粉橘色大碗上方。
+7.0487–8.17483 秒　操作者重复倾倒动作，通过调整勺子角度将第二份苹果块滑落在燕麦粥上，使其紧挨着第一份堆放。在此过程中，可以看到明显的深色糖浆随果块一同流下并渗入燕麦中。
+8.46679–10.6356 秒　完成投放后，手持金勺完全退出画面。镜头保持静止，特写展示最终成品：粉橘色大碗中央堆积着两摞湿润的黄色苹果块，周围伴有少量渗出的深色汁液，左下角的小碗依然可见但未被触碰。
+短时间窗的局部观察
+4.25425–5.46379 秒　在4.25秒至4.67秒期间，画面呈俯视视角且保持静止。中央偏右放置着一碗燕麦粥，左下角有一碗带汁水的苹果块，两者之间垫着粉色几何图案餐巾。此时未见任何手部活动或物体位移。
+4.25425–5.46379 秒　约4.75秒起，一把盛有数块黄色苹果的金色勺子从画面左下方切入。勺柄斜向右上方延伸，以平稳的速度越过两碗之间的空隙，向中央的燕麦粥靠近。
+4.25425–5.46379 秒　在4.96秒至5.17秒阶段，金勺移动至燕麦粥正上方并悬停。随后手腕向下发力，使勺头倾斜贴入燕麦表面，将苹果块顺势推倒在粥上。
+4.25425–5.46379 秒　到了5.33秒至5.46秒的最终状态，苹果块已完全脱离勺体留在粥面上。金勺停止倾倒动作，平贴在燕麦粥表层并保持静止，画面中仅露出持握勺柄的手指局部。
+5.25525–6.46479 秒　在5.255秒至6.465秒的连续画面中，镜头保持静止俯视视角。画面中央是一个装有燕麦粥的粉色大碗，左下角边缘可见一个盛有苹果块的浅蓝绿色小碗的一部分。
+5.25525–6.46479 秒　操作者仅露出一只手，握着一把金色的勺子悬停在粉色大碗上方。勺内最初已装载着几块黄色的苹果块和少许糖浆（见帧126-131）。
+5.25525–6.46479 秒　从5.547秒开始，手腕轻微调整角度使勺柄向下倾斜，利用重力让勺内的苹果块滑落进下方的燕麦粥里。这一倾倒动作持续了约一秒，直到6.048秒左右，大部分固体果块已脱离勺面落入碗中。
+5.25525–6.46479 秒　随着果块落下，剩余的深色糖浆顺着勺尖流出并滴入燕麦粥中心（见帧145-150）。此时勺子在垂直方向上略微下沉以贴合落点。
+5.25525–6.46479 秒　在最后阶段（6.340秒至6.465秒），倒空内容的金色勺子向左侧水平移出画面中心区域，最终停留在粉色大碗的左下侧边缘附近，结束了本次添加配料的动作。
+6.25625–7.46579 秒　06.25s (Frame 150)　操作者的手（仅可见局部）持一把金色勺子悬停在画面中央的粉色碗上方。勺内盛有几块黄褐色的苹果块和少许糖浆，正位于燕麦粥表面的中心位置。　手腕处于倾斜状态，准备将勺中物体倒出。此时粉色碗内的燕麦粥表面已有少量此前放置的苹果块。
+6.25625–7.46579 秒　06.34s - 06.46s (Frames 152-155)　随着手腕进一步向下翻转，勺子角度变陡。　重力作用下，勺中的苹果块顺着勺壁滑落至燕麦粥上。在Frame 155时，大部分固体食物已脱离勺子落入碗中，仅剩极少量的液体残留。
+6.25625–7.46579 秒　06.55s - 06.67s (Frames 157-160)　清空后的金色勺子开始向画面左下方移动，轨迹指向左下角的浅蓝绿色小碗。　这是一个明显的回缩动作阶段。勺子逐渐移出粉色碗的范围，最终在Frame 160时完全进入左下角的小碗内部，没入深色的苹果糖浆液中。
+6.25625–7.46579 秒　06.76s - 06.97s (Frames 162-167)　勺子从小碗中重新舀起满满一勺新的苹果块，并向右上方移动回到粉色碗的正上方。　这是第二次投放的开始。由于装载了新食物，勺子在移动过程中保持相对平稳以防溢出，直到到达目标区域上方才再次调整角度。
+6.25625–7.46579 秒　07.05s - 07.26s (Frames 169-174)　手腕再次执行向下翻转的动作，将第二勺苹果块倒在刚刚落下的第一堆苹果之上。　可以看到新加入的苹果块堆积在旧有的苹果块上面，增加了粉色碗中央食物的体积。
+6.25625–7.46579 秒　07.34s - 07.47s (Frames 176-179)　倾倒动作结束，勺子变为近乎垂直的角度停留在空中或轻微晃动以沥干残留物。　此时画面定格在勺子悬于粉色碗上方的状态，碗内中央已形成一座明显高出液面的苹果块小山。背景中的大理石纹理桌面和左侧的粉橙色格纹餐巾全程保持静止，证实了位移完全由手部操作产生。
+7.25725–8.46679 秒　在7.26秒至8.34秒期间，画面保持静止俯视视角。中央是一个装有燕麦粥的粉色大碗，左下角边缘可见一个盛有深色糖浆和苹果块的浅蓝绿色小碗，左侧铺有一块粉白相间的几何图案餐布。
+7.25725–8.46679 秒　从7.26秒开始，一把金色的勺子出现在画面中，勺内盛着几块裹满糖浆的黄色苹果块，悬停在粉色大碗的正上方中心位置。
+7.25725–8.46679 秒　在7.26秒至7.55秒之间（如源帧174-181），金色勺子保持在半空中基本静止的状态，仅有极微小的晃动，勺内的苹果块未发生位移，也未接触下方的燕麦粥。
+7.25725–8.46679 秒　约在7.67秒（源帧184）时，勺子开始向下倾斜并轻微下压，其底部边缘首次接触到粉色碗中燕麦粥的表面，位于之前已放置好的苹果堆旁边。
+7.25725–8.46679 秒　在7.67秒至8.05秒期间（源帧184-193），勺子持续保持倾斜姿态，利用重力将勺内的苹果块滑落到燕麦粥上。随着动作进行，勺身逐渐变空。
+7.25725–8.46679 秒　到了8.17秒至8.34秒（源帧196-200），勺内的苹果块已基本全部倒出，此时可以看到金色的勺底完全显露出来，且紧贴着新落下的苹果块表面。
+7.25725–8.46679 秒　在8.47秒（源帧203）的画面中，金色勺子已经完全移出镜头视野。粉色大碗中央新增了一堆湿润的苹果块，与原有的配料混合在一起，操作者的手部及工具不再出现。
+8.25825–9.46779 秒　在8.258s至8.341s期间，操作者仅露出一只手，手持金色勺子位于画面中央偏右的粉色大碗上方。勺内盛有数块黄色苹果块和深色糖浆，悬停在燕麦粥表面正上方，处于静止或极缓慢的下放状态。
+8.25825–9.46779 秒　在8.341s至8.466s之间发生明显的动作变化：手腕向下倾斜并伴随轻微的向上提拉动作，导致勺内的苹果块与糖浆脱离金属勺面，落入下方的燕麦粥中。随着勺子移出画面，左下角原本被遮挡的部分浅蓝绿色小碗边缘显露出来。
+8.25825–9.46779 秒　从8.466s直至9.467s结束，画面进入完全静止状态。新加入的约五块黄色苹果块堆叠在粉色大碗中央的燕麦粥上，周围伴有深褐色的液体痕迹。此时画面中不再出现任何手部或工具，构图保持固定不变。
+9.25925–10.4688 秒　在9.25秒至10.46秒的整个时间窗内，画面处于完全静止状态。根据固定背景参照（左侧粉色几何纹理餐巾、右侧白色大理石纹台面），位于画面中央偏上的浅橘色碗及其内部盛放的燕麦粥和顶部的金黄色苹果块，其空间位置与形态未发生任何位移或改变。
+9.25925–10.4688 秒　尽管提供的主体外观线索提及了“手持金色勺子舀取”的动作，但在该特定时间段的所有可见帧中，并未出现操作者的手部、手臂或金色勺子。画面仅展示了食物添加动作完成后的静态结果：数块切好的苹果整齐堆叠在燕麦粥表面，且无液体滴落或扩散的迹象。
+9.25925–10.4688 秒　镜头保持固定的垂直俯视视角（Top-down view），光线均匀明亮，无明显阴影变化。由于缺乏动态视觉证据，无法观察到加速、减速或关节发力的过程，画面呈现为一张静物特写。
+10.2602–10.6356 秒　全时段 (10.26s - 10.64s)　画面整体处于静止状态。俯视视角下，一个粉色圆碗位于画面中央偏右，碗内盛有燕麦粥，表面已堆放着若干块黄色的苹果丁并淋有深色糖浆。左侧铺有一块粉白相间的几何图案餐巾，右侧为白色大理石纹理桌面。　根据提供的位移估计数据（dx/dy均为0.0）及连续帧对比，背景地标与主体位置无任何像素级移动。
+10.2602–10.6356 秒　全时段 (10.26s - 10.64s)　在画面底部边缘正中央，仅露出一小截绿色的植物茎叶（疑似芹菜或装饰草），其顶端切入画面下方边界，未发生任何晃动或位移。　观察所有源帧的底部边缘，该绿色物体相对于画框底边的距离保持不变。
+全片复核后的动作顺序
+在4.25秒至4.67秒期间，画面呈垂直俯视视角且保持静止。中央偏右放置着一个盛有燕麦粥的粉橘色大碗，左下角有一个装有切块苹果和深色糖浆的浅蓝绿色小碗，两者之间垫着一块粉色几何图案餐巾。此时画面中未见任何手部活动或工具介入。
+约4.75秒起，一只手持金色长柄勺从画面左下方切入视野。勺头承载着第一批裹着糖浆的黄色苹果块，以平稳的速度越过两碗之间的空隙，向中央的粉橘色大碗靠近。
+在4.96秒至5.17秒阶段，金勺移动至燕麦粥正上方并悬停。随后手腕向下发力倾斜勺柄，使勺头贴入燕麦表面，将第一份苹果块顺势推倒在粥的中心位置。
+到了5.33秒至5.46秒的最终状态，第一批苹果块已完全脱离勺体留在粥面上。金勺停止倾倒动作，平贴在燕麦粥表层并保持短暂静止，画面中仅露出持握勺柄的手指局部。
+从5.547秒开始，操作者再次调整动作，手持金色勺子（此时勺内已装满第二批新的苹果块）重新出现在粉橘色大碗上方。
+在6.048秒左右，大部分固体果块已脱离勺面落入碗中。随着果块落下，剩余的深色糖浆顺着勺尖流出并滴入燕麦粥中心。此时勺子在垂直方向上略微下沉以贴合落点。
+06.25s (Frame 150) 操作者的手（仅可见局部）持一把金色勺子悬停在画面中央的粉色碗上方。勺内盛有几块黄褐色的苹果块和少许糖浆，正位于燕麦粥表面的中心位置。手腕处于倾斜状态，准备将勺中物体倒出。此时粉色碗内的燕麦粥表面已有少量此前放置的苹果块。
+06.34s - 06.46s (Frames 152-155) 随着手腕进一步向下翻转，勺子角度变陡。重力作用下，勺中的苹果块顺着勺壁滑落至燕麦粥上。在Frame 155时，大部分固体食物已脱离勺子落入碗中，仅剩极少量的液体残留。
+06.55s - 06.67s (Frames 157-160) 清空后的金色勺子开始向画面左下方移动，轨迹指向左下角的浅蓝绿色小碗。这是一个明显的回缩动作阶段。勺子逐渐移出粉色碗的范围，最终在Frame 160时完全进入左下角的小碗内部，没入深色的苹果糖浆液中。
+06.76s - 06.97s (Frames 162-167) 勺子从小碗中重新舀起满满一勺新的苹果块，并向右上方移动回到粉色碗的正上方。这是第二次投放的开始。由于装载了新食物，勺子在移动过程中保持相对平稳以防溢出，直到到达目标区域上方才再次调整角度。
+07.05s - 07.26s (Frames 169-174) 手腕再次执行向下翻转的动作，将第二勺苹果块倒在刚刚落下的第一堆苹果之上。可以看到新加入的苹果块堆积在旧有的苹果块上面，增加了粉色碗中央食物的体积。
+07.34s - 07.47s (Frames 176-179) 倾倒动作结束，勺子变为近乎垂直的角度停留在空中或轻微晃动以沥干残留物。此时画面定格在勺子悬于粉色碗上方的状态，碗内中央已形成一座明显高出液面的苹果块小山。背景中的大理石纹理桌面和左侧的粉橙色格纹餐巾全程保持静止，证实了位移完全由手部操作产生。
+全时段 (10.26s - 10.64s) 画面整体处于静止状态。俯视视角下，一个粉色圆碗位于画面中央偏右，碗内盛有燕麦粥，表面已堆放着若干块黄色的苹果丁并淋有深色糖浆。左侧铺有一块粉白相间的几何图案餐巾，右侧为白色大理石纹理桌面。根据提供的位移估计数据（dx/dy均为0.0）及连续帧对比，背景地标与主体位置无任何像素级移动。
+全时段 (10.26s - 10.64s) 在画面底部边缘正中央，仅露出一小截绿色的植物茎叶（疑似芹菜或装饰草），其顶端切入画面下方边界，未发生任何晃动或位移。观察所有源帧的底部边缘，该绿色物体相对于画框底边的距离保持不变。
+
+S04　S04-P01　站在白色瓷砖厨房中的女子，深色头发扎起，穿深灰色V领短袖上衣
+连续原视频观察
+[10.68s - 12.59s] The woman stands centered in the kitchen, facing forward toward the camera with her mouth moving continuously.
+[13.43s - 17.52s] She raises a white cylindrical container into view from below the frame using both hands, then holds it up on the right side of the screen while gesturing with her left hand.
+10.6773–13.0964 秒　女子正面朝向镜头站立，双手位于腰部两侧高度，掌心向上摊开做出解释性的手势。她的视线主要直视前方镜头，嘴部持续张合进行讲解，头部保持正直，躯干无明显位移。
+13.3884–13.6803 秒　女子的视线向下转移，双手从画面下方捧起一个白色的圆柱形包装罐（印有巧克力曲奇图案）。她将罐子举至胸口正前方，双手手指环绕握住罐身两侧，正在进行抓握调整。
+13.9723–15.0567 秒　女子将白色圆筒罐移至其左肩前方（观众视角右侧），由左手单手托举固定。她抬起右手，伸出食指反复点指罐身上的图片区域，目光在镜头与手中的产品之间切换，嘴部动作显示正在介绍该产品。
+15.3904–15.6823 秒　女子停止指点动作，收回右手并将其张开，手掌向外在身体右侧（观众视角左侧）挥动以辅助表达语气。此时她面带笑容，左手依然稳固地举着圆筒罐。
+15.9743–16.2662 秒　女子的头部向其左侧（观众视角右侧）转动，视线离开镜头投向旁边的搅拌机或台面区域。她的嘴巴微张，似乎在对侧面的物体说话或确认，左手持罐姿势保持不变。
+16.5582–17.4758 秒　女子将头转回正中位置，重新面向镜头。她继续用左手举着白色圆筒罐展示，右手自然下垂或处于低位不再做明显手势，直到片段结束。
+10.6773–13.0964 秒　女子正面朝向镜头站立，双手在腰部两侧自然张开做解释性手势，视线直视前方，嘴部持续开合进行讲解。
+13.3884–13.6803 秒　女子低头注视下方，双手将一个印有巧克力曲奇图案的白色圆柱形包装罐从画面底部捧起；起初右手握住罐身侧面，左手托住罐底辅助将其抬升至胸前高度。
+13.9723–15.0567 秒　女子将白色圆筒罐移至身体左侧（观众视角右侧）并由左手单手握持展示，同时抬起右手食指，反复点向罐身正面的曲奇图案区域，目光主要投向镜头。
+15.3904–15.6823 秒　女子停止指点动作，右手手掌张开并在空中做出一次向外挥动的强调手势，随后手部回落至胸侧位置，面部表情生动。
+15.9743–16.2662 秒　女子头部转向自身的左侧（即画面右侧），视线离开镜头投向旁边的搅拌机区域，嘴巴微张似在说话或停顿，左手继续稳固地举着白色圆筒罐。
+16.5582–17.4758 秒　女子头部转回正对镜头方向，恢复眼神交流，左手保持举起圆筒罐的姿态直至片段结束，右手垂于身侧不再接触物体。
+10.6773–13.0964 秒　画面为固定的中景镜头，一名身穿深灰色V领短袖上衣的女子站在白色瓷砖厨房背景前。她正面朝向镜头，双手在腰部两侧自然张开做手势，嘴部持续开合进行讲解，视线主要直视前方。
+13.3884–13.6803 秒　女子低头注视身前，双手将一个白色的圆柱形包装罐从下方捧起。随着动作进行，她将罐子向上抬起至胸口高度，此时罐身图案尚未完全转正。
+13.9723–15.0567 秒　女子调整持物姿势，改为左手单手握持罐身将其竖直举起，右手腾出并伸出食指反复点向罐体正面的巧克力曲奇图案。在此期间，她的头部偶尔转向手中的产品查看，随后又转回面向镜头继续说话。
+15.3904–15.6823 秒　女子停止了手指指向产品的动作，将右手收回并在身体右侧（观众视角左侧）张开手掌挥动，做出辅助表达的手势。左手依然保持高举展示白色圆筒罐的姿态。
+15.9743–16.5582 秒　女子的头颈明显向其自身左侧转动（即观众视角的右侧），视线离开镜头投向旁边的立式搅拌机区域。尽管头部转向侧面，她的左手仍稳稳举着产品罐停留在原位。
+16.8919–17.4758 秒　女子将头转回正前方，重新面对镜头。她保持着左手举罐、右手在身侧摊开的姿态，直到视频片段结束。
+短时间窗的局部观察
+10.6773–11.8869 秒　10.677s (起始相位)　女子　位于画面中央，正面朝向镜头。双臂向身体两侧下方张开，双手手掌摊开向上，处于明显的说话手势中。嘴巴微张露出牙齿，视线直视前方。
+10.6773–11.8869 秒　10.969s - 11.094s (动作变化最明显阶段)　女子　头部位置发生细微调整，面部表情随发音发生变化（如嘴唇闭合程度改变）。虽然手臂保持展开姿态，但手部相对于身体的角度有轻微转动，配合语气的强调。
+10.6773–11.8869 秒　11.887s (结束相位)　女子　维持站立姿态，双臂依然保持在身体两侧低位展开的状态，未收回。嘴部继续开合进行表达，眼神始终锁定镜头方向。
+10.6773–11.8869 秒　全程 (环境参照)　背景与主体关系　以固定背景为参照（左侧粉色烤面包机、右侧厨师机及花卉），主体在水平方向上无位移。根据光流数据分析，画面存在极微小的垂直抖动（dy波动范围约-0.3至+1.0 pct/s）和轻微的缩放震荡（scale接近1.0），表明摄像机处于手持或轻微震动状态，而非完全静止的三脚架拍摄，且无明显推拉运镜意图。
+11.6783–12.8879 秒　在0-1秒内（帧280至290），女子位于画面中央，正面朝向镜头。她的头部保持正直，视线直视前方，嘴巴持续张合进行说话动作。双肩处于水平状态，躯干未见明显倾斜或位移。
+11.6783–12.8879 秒　在约1.5秒时（帧294）至2.5秒期间（帧297至302），女子的上半身姿态发生显著改变：她以腰部为轴心向自身的右侧（即观众视角的左侧）倾斜并扭转躯干。伴随这一动作，其头部也同步向自身右下方偏转，导致面部不再正对镜头而是呈现斜侧面角度，且视线随头部转向偏离了镜头方向。
+11.6783–12.8879 秒　在上述身体向右倾斜的过程中（帧297至306），尽管背景中的白色橱柜和粉色烤面包机位置固定不变，但女子在画面中的整体投影面积逐渐变大（scale_per_pair &lt; 1.0），表明她在倾斜的同时身体重心前移，拉近了与摄像头的物理距离。
+11.6783–12.8879 秒　在整个观察窗口期（0-3秒）内，虽然女子的手臂大部分位于画框下边缘之外不可见，但在帧280及后续几帧中，可见其左手手掌在画面右下角短暂露出并保持摊开姿势，该手部相对于地面的空间位置未随躯干的剧烈倾斜而发生大幅度的挥舞或移动。
+12.6793–13.8889 秒　在12.68s至13.09s期间，主体位于画面中央，背景为白色瓷砖墙、左侧粉色烤面包机及右侧厨师机。她面朝镜头，视线略微向下，双手处于画面下边缘之外不可见，躯干保持静止站立姿态。
+12.6793–13.8889 秒　约13.18s时（帧316），主体的右手（位于观众视角左侧）开始向上抬起进入视野，此时嘴部微张，头部位置保持不变。
+12.6793–13.8889 秒　在13.26s至13.47s之间（帧318-323），一个带有图案的白色圆柱形容器被带入画面中心。起初物体因运动略显模糊，随后左手托住容器底部将其稳固持于胸前高度，右手手指接触并握住容器的侧壁。
+12.6793–13.8889 秒　从13.59s到13.68s（帧326-328），主体维持双手持物的状态，容器垂直立于胸腹前。她的嘴唇持续开合进行说话动作，目光主要集中在手中的物品上。
+12.6793–13.8889 秒　在13.76s至13.89s的最后阶段（帧330-333），主体将容器移向身体左侧（观众视角右侧）。与此同时，她的右手离开容器，食指伸出指向该物体表面，面部表情转变为嘴巴大张呈“O”型，眼神直视前方镜头。
+13.6803–14.8899 秒　13.680s (Frame 328)　在白色瓷砖厨房背景下，一名身穿深灰色V领短袖的女子位于画面中央。她的左手（观众视角右侧）握持一个带有食物图案的白色圆柱形容器，将其置于胸前偏右位置；右手（观众视角左侧）处于抬起状态但未接触容器。　女子面朝镜头，嘴巴呈圆形张开（O型），视线直视前方。此时容器侧面朝向镜头，尚未展示正面标签细节。
+13.6803–14.8899 秒　13.764s - 13.972s (Frames 330-335)　女子的右手食指伸出，指向左手中的白色容器表面。随着动作进行，容器被调整角度，使其印有巧克力甜点图片的一面正对镜头。　从Frame 330到335，右手完成了从悬空到明确指点的手势变化。嘴部保持圆张状，似乎在强调说明。背景中的粉色烤面包机与立式搅拌机位置固定，无相对位移。
+13.6803–14.8899 秒　14.097s - 14.890s (Frames 338-357)　姿态进入稳定维持期。女子继续保持左手托举容器、右手食指指点的姿势。指尖持续停留在容器下半部分的边缘附近，未发生大幅移动。　在此期间，虽然手部整体位置相对静止，但女子的面部表情发生变化：嘴唇由之前的圆张（O型）逐渐转变为横向咧开露出牙齿的微笑（如Frame 345及之后所示）。视线始终锁定镜头方向。
+14.6813–15.8909 秒　起始状态 (约14.68s - 15.26s)　女子　位于画面中央，面朝镜头。左手在身体左侧（观众视角右侧）持有一个印有食物图案的白色圆柱形包装罐。右手抬起至胸前高度，食指伸出指向该包装罐的中下部。在此期间，右臂保持相对静止的指示姿态，嘴部持续开合说话。
+14.6813–15.8909 秒　动作转折与撤回 (约15.39s - 15.47s)　女子的右手　原本指向包装罐的右手开始发生显著位移。手部脱离接触目标物体，向身体外侧（观众视角左侧）和下方快速挥动并收回。此时手掌张开，不再维持指点的手势，而是转变为一种辅助表达的摊手或挥手姿态。
+14.6813–15.8909 秒　结束状态 (约15.55s - 15.89s)　女子　右手完全停止在身体右侧（观众视角左侧）较低的位置，手心向上或向前微张，呈现出一种开放的解释性手势。左手依然稳固地举着白色包装罐，位置未变。面部表情生动，嘴巴张大，视线直视前方镜头。
+15.6823–16.8919 秒　在起始阶段（约15.6s-15.9s），女子正面朝向镜头，嘴巴张开呈说话状。她的左手握持一个印有食物图案的白色圆柱形包装罐举至肩部高度，右手抬起位于画面左侧下方，手掌摊开向上做手势。
+15.6823–16.8919 秒　进入中段（约16.0s-16.4s），女子的头部向自身右侧偏转，视线随之离开镜头投向手中的白色包装罐。与此同时，原本张开的右手五指逐渐收拢并向下放低，直至移出主要视野或停止动作，呈现出一种审视物体的姿态。
+15.6823–16.8919 秒　在末段（约16.5s-16.9s），女子的头部回转重新面向正前方镜头，嘴唇微抿随后继续说话。此时她左臂依然保持举起包装罐的姿势不变，但手部抓握位置似乎略微调整以配合展示角度，整体重心回归稳定站立状态。
+16.6833–17.4758 秒　在源帧400至419的整个时间窗内，画面背景中的白色橱柜、粉色烤面包机及右侧的花瓶保持静止不动，表明摄像机处于固定机位，无推拉摇移等运镜动作。
+16.6833–17.4758 秒　主体（女子）在整个序列中始终位于画面中央前景，身体正面朝向镜头，双脚未入画但躯干高度保持一致，说明其下半身支撑稳定，未见明显的位移或重心大幅转移。
+16.6833–17.4758 秒　主体的左手（观众视角右侧）持续握持一个白色的圆柱形包装罐，将其举在左肩前方的高度；右手（观众视角左侧）自然下垂于体侧，未在画面中进行任何操作或交互。
+16.6833–17.4758 秒　从源帧400到405，主体的头部有轻微的向自身右侧（观众视角左侧）倾斜的动作，随后在407至419期间回正并保持相对稳定的直视前方的姿态。
+16.6833–17.4758 秒　主体的面部表情在整个序列中呈现动态变化：嘴唇不断开合进行说话动作，眉眼间有神采，视线主要聚焦于镜头方向，偶尔伴随眨眼和轻微的眼球转动。
+16.6833–17.4758 秒　被手持的白色包装罐表面印有图案，随着手部的微小晃动，罐体相对于背景的透视角度发生细微改变，但始终保持在画面右上象限的稳定区域内。
+全片复核后的动作顺序
+在10.677s至12.470s期间，女子位于画面中央，正面朝向镜头站立。她双臂向身体两侧下方张开，双手手掌摊开向上做出解释性手势，视线直视前方，嘴部持续张合进行讲解。
+约12.762s起，女子的上半身姿态发生显著改变：她以腰部为轴心向自身的右侧（即观众视角的左侧）倾斜并扭转躯干，头部同步向自身右下方偏转，面部不再正对镜头而是呈现斜侧面角度，视线随头部转向偏离了镜头方向。在此过程中，尽管背景中的白色橱柜和粉色烤面包机位置固定不变，但女子在画面中的整体投影面积逐渐变大，表明她在倾斜的同时身体重心前移，拉近了与摄像头的物理距离。
+约13.263s至13.680s，女子低头注视身前，双手将一个印有巧克力曲奇图案的白色圆柱形包装罐从画面底部捧起。起初右手握住罐身侧面，左手托住罐底辅助将其抬升至胸前高度，此时罐身图案尚未完全转正。
+约13.972s，女子调整持物姿势，将白色圆筒罐移至其左肩前方（观众视角右侧），由左手单手托举固定。同时她抬起右手，伸出食指反复点指罐身上的图片区域，目光在镜头与手中的产品之间切换，嘴部动作显示正在介绍该产品。
+约15.390s至15.682s，女子停止指点动作，收回右手并将其张开，手掌向外在身体右侧（观众视角左侧）挥动以辅助表达语气。此时她面带笑容，左手依然稳固地举着圆筒罐。
+约16.266s至16.558s，女子的头部向其自身左侧（观众视角右侧）转动，视线离开镜头投向旁边的搅拌机或台面区域。她的嘴巴微张，似乎在对侧面的物体说话或确认，左手持罐姿势保持不变。
+约16.891s至17.475s，女子将头转回正中位置，重新面向镜头。她继续用左手举着白色圆筒罐展示，右手自然下垂或处于低位不再做明显手势，直到片段结束。</pre></details><p><a href="revisions/v6/cases/apple/审阅.html">完整中文审阅与原始响应</a> · <a href="revisions/v6/cases/apple/annotations.json">最终 JSON</a></p></section></div></article><article id="case-golf"><h2>体育转播 · 高尔夫</h2><p>Dkzp_IJaNpo.22.mp4 · 19.35 秒</p><video id="golf" controls preload="metadata" src="cases/golf/clip.mp4"></video><details><summary>查看带原片时间戳的核对帧</summary><a href="cases/golf/evidence.jpg"><img style="max-width:100%" src="cases/golf/evidence.jpg" alt="原片抽帧与时间戳"></a></details><h3>复核观察</h3><ul><li>EVA 已写出挥杆、清脆的击球声与球的后续轨迹。五条训练查询中有三条涉及多个视觉事件，候选包含跟拍、计分图和人物动作。</li><li>我们的动作表把 9.40–11.80 秒的挥杆细分为后摆、下杆击球、随挥。独立听标将撞击声放在 10.08–10.40 秒。正式关系表连到整次挥杆；与下杆子阶段的交集可由已有边界推导。这些是模型估计。</li><li>动作表将 11.90–13.10 秒写成保持收杆注视。原片 12.446 秒已经放低球杆，13.013 秒球员已弯腰，v6 连续视频复核也写到了弯腰。镜头后半的球还被写进人物列表，做人物动作统计前应排除物体轨迹。</li></ul><div class="cols"><section><h3>EVA 公开标注</h3><p class="caption">The audio captures the atmosphere of a live golf tournament, beginning with the sound of a large, appreciative crowd applauding, while a male narrator, speaking in a clear and informative tone, provides a score update, saying, &quot;With Dustin Johnson turns 3 under par. He&#x27;s 12 under for the tournament and one back of Brian Harman.&quot; Simultaneously, a male golfer, Dustin Johnson, is shown from the waist up, walking across a manicured green golf course wearing a white polo shirt with an Adidas logo, grey trousers, and a white cap. As he walks, the camera follows him, and a graphic titled &quot;SENTRY TOURNAMENT OF CHAMPIONS&quot; appears on the right side of the screen, showing a leaderboard for the 3rd round where Johnson is ranked 2nd with a total of -12. In the background, a large crowd of spectators watches from behind a white fence, and a white banner with the FedExCup logo is visible. The camera angle then changes to a wide shot of Johnson on a tee box, set against a vast blue ocean, while a second male narrator, in an excited and anticipatory tone, says, &quot;Fasten your seatbelt, Dustin Johnson on the tee.&quot; He is in his stance preparing to swing, with a sign for the &quot;Sentry Tournament of Champions&quot; and a person raising a white board visible in the background, as a graphic at the top of the screen identifies him as &quot;D. JOHNSON&quot; with a score of -12. As Johnson swings, the distinct, sharp &quot;thwack&quot; of a golf club striking a ball cuts through the air, while a third, different narrator exclaims in a high-pitched voice, &quot;Oh!&quot; The camera follows the white golf ball soaring against the blue sky as this same narrator continues with an analytical and enthusiastic tone, &quot;And this is a low bullet and should really take off when it hits.&quot; The camera then pans down, tracking the ball as it descends, lands on the green, and rolls across the grass, while the second narrator concludes with a slightly surprised and impressed tone, &quot;It ricocheted forward,&quot; as the crowd&#x27;s applause continues.</p><p>强化学习记录有 10 个视觉事件，其中 4 个标为 action，另有 8 个音频事件。</p><details><summary>视觉事件清单</summary><ol><li>[action] Dustin Johnson walks across a manicured green golf course wearing a white polo shirt, grey trousers, and a white cap.</li><li>[camera] The camera follows Dustin Johnson as he walks.</li><li>[environment] A graphic titled SENTRY TOURNAMENT OF CHAMPIONS appears on the right side of the screen showing a leaderboard.</li><li>[camera] The camera angle changes to a wide shot of Johnson on a tee box set against a vast blue ocean.</li><li>[action] Dustin Johnson stands in his stance preparing to swing.</li><li>[environment] A graphic at the top of the screen identifies the player as D. JOHNSON with a score of -12.</li><li>[action] Dustin Johnson swings the golf club.</li><li>[camera] The camera follows the white golf ball soaring against the blue sky.</li><li>[camera] The camera pans down to track the ball as it descends.</li><li>[action] The golf ball lands on the green and rolls across the grass.</li></ol></details><details><summary>声音事件清单</summary><ol><li>[sound] A large crowd applauds enthusiastically.</li><li>[asr] With Dustin Johnson turns 3 under par. He&#x27;s 12 under for the tournament and one back of Brian Harman.</li><li>[asr] Fasten your seatbelt, Dustin Johnson on the tee.</li><li>[sound] A sharp thwack sound is heard as a golf club strikes a ball.</li><li>[asr] Oh!</li><li>[asr] And this is a low bullet and should really take off when it hits.</li><li>[asr] It ricocheted forward.</li><li>[sound] The crowd continues to applaud.</li></ol></details><h4>GRPO 训练用音到画同期查询</h4><p>✓ 表示计算同步奖励时使用的参考选项，编号取自 selected_visual_indices_new。</p><details><summary>A large crowd applauds enthusiastically. <small>（选中 3 项）</small></summary><ol><li class="yes">✓ [camera] The camera follows Dustin Johnson as he walks.</li><li class="yes">✓ [environment] A graphic titled SENTRY TOURNAMENT OF CHAMPIONS appears on the right side of the screen showing a leaderboard.</li><li class="yes">✓ [action] Dustin Johnson walks across a manicured green golf course wearing a white polo shirt, grey trousers, and a white cap.</li><li class="">[camera] The camera angle changes to a wide shot of Johnson on a tee box set against a vast blue ocean.</li><li class="">[action] Dustin Johnson stands in his stance preparing to swing.</li></ol></details><details><summary>With Dustin Johnson turns 3 under par. He&#x27;s 12 under for the tournament and one back of Brian Harman. <small>（选中 3 项）</small></summary><ol><li class="yes">✓ [action] Dustin Johnson walks across a manicured green golf course wearing a white polo shirt, grey trousers, and a white cap.</li><li class="">[camera] The camera angle changes to a wide shot of Johnson on a tee box set against a vast blue ocean.</li><li class="yes">✓ [environment] A graphic titled SENTRY TOURNAMENT OF CHAMPIONS appears on the right side of the screen showing a leaderboard.</li><li class="">[action] Dustin Johnson stands in his stance preparing to swing.</li><li class="yes">✓ [camera] The camera follows Dustin Johnson as he walks.</li></ol></details><details><summary>Fasten your seatbelt, Dustin Johnson on the tee. <small>（选中 3 项）</small></summary><ol><li class="yes">✓ [environment] A graphic at the top of the screen identifies the player as D. JOHNSON with a score of -12.</li><li class="">[action] Dustin Johnson swings the golf club.</li><li class="yes">✓ [action] Dustin Johnson stands in his stance preparing to swing.</li><li class="yes">✓ [camera] The camera angle changes to a wide shot of Johnson on a tee box set against a vast blue ocean.</li><li class="">[environment] A graphic titled SENTRY TOURNAMENT OF CHAMPIONS appears on the right side of the screen showing a leaderboard.</li></ol></details><details><summary>And this is a low bullet and should really take off when it hits. <small>（选中 1 项）</small></summary><ol><li class="">[camera] The camera pans down to track the ball as it descends.</li><li class="">[environment] A graphic at the top of the screen identifies the player as D. JOHNSON with a score of -12.</li><li class="">[action] Dustin Johnson swings the golf club.</li><li class="yes">✓ [camera] The camera follows the white golf ball soaring against the blue sky.</li><li class="">[action] The golf ball lands on the green and rolls across the grass.</li></ol></details><details><summary>It ricocheted forward. <small>（选中 1 项）</small></summary><ol><li class="">[camera] The camera follows the white golf ball soaring against the blue sky.</li><li class="">[action] Dustin Johnson swings the golf club.</li><li class="">[environment] A graphic at the top of the screen identifies the player as D. JOHNSON with a score of -12.</li><li class="yes">✓ [action] The golf ball lands on the green and rolls across the grass.</li><li class="">[camera] The camera pans down to track the ball as it descends.</li></ol></details><p><a href="cases/golf/shot2story_caption_sft.json">SFT 原文</a> · <a href="cases/golf/stage2_caption_rl.json">官方事件与全部选项</a> · <a href="cases/golf/source.json">视频来源和定位</a></p></section><section><h3>我们的管道输出</h3><p>motion 3，gesture 1，held_pose 2；语音 4 条、其他声音 4 条。点击时间回看。</p><h4>动作与状态</h4><details><summary><button data-clip="golf" data-time="0.0000">0.00–7.50 s</button> 白衣球员手持球杆和球，从看台前走到发球台准备开球。</summary><p>A-S01-P01-walk · motion · 白衣球员起初位于看台栏杆前的草地上，身体朝向画面右侧缓慢前行；他右手握着长杆向下垂放，左手在约1.5秒后可见捏着一个小白色球状物。随着镜头平移，他从较近景位置一路走到发球区边缘，步伐连续，没有停顿或转身。</p></details><details><summary><button data-clip="golf" data-time="7.6000">7.60–8.20 s</button> 白衣球员把球放到发球点后起身握杆。</summary><p>A-S01-P01-gesture-placeball · gesture · 到达发球位后，白衣球员俯身把先前拿在手里的白色小球放到地面发球点上；随后直起上身，双手改去握住杆头附近的球杆，进入击球准备。</p></details><details><summary><button data-clip="golf" data-time="8.2000">8.20–9.30 s</button> 白衣球员在发球台前站稳并对准球做开球准备。</summary><p>A-S01-P01-held-setup · held_pose · 白衣球员在球后方站定，双脚分开与肩同宽，双膝微屈，上身前倾，双手上下握住一号木杆，杆头放在球旁地面上，视线朝目标方向保持稳定。</p></details><details><summary><button data-clip="golf" data-time="9.4000">9.40–11.80 s</button> 白衣球员完成一次开球挥杆，将发球台上的球击向远处。</summary><p>A-S01-P01-drive · motion · 白衣球员从准备姿势开始后摆，球杆沿弧线抬到身后高处；接着向前下挥，杆头在约10.3秒处接触地面附近的白球，球随即离开原位飞向前方；之后他顺势转到高位收杆，身体重心移到前腿，球杆绕到肩背侧。</p></details><details><summary><button data-clip="golf" data-time="11.9000">11.90–13.10 s</button> 白衣球员在击球后保持收杆姿势，目送球飞向远处。</summary><p>A-S01-P01-hold-followthrough · held_pose · 击球结束后，白衣球员保持高位收杆姿态不动，球杆横在肩背侧，头部抬起朝球的飞行方向持续观望，直到本镜头末尾仍未放下球杆。</p></details><details><summary><button data-clip="golf" data-time="13.2000">13.20–19.30 s</button> 被击出的高尔夫球在远景中划过天空并降落到果岭方向的坡地上。</summary><p>A-S02-BALL-fly · motion · 切到远景后，小白球以清晰可见的小亮点形式悬在蓝天背景中，整体沿斜向下的抛物线继续前进；它先后越过海面和岸边建筑上空，最后落到绿色坡地一带并从画面中变得难以分辨。</p></details><h4>语音、声音与同期动作</h4><details><summary><button data-clip="golf" data-time="0.0000">0.00–6.80 s</button> 持续的观众掌声，音量逐渐减弱。</summary><p>N001 · background · background</p><p>与动作区间的名义交集（秒） <button data-clip="golf" data-time="0.0000">A-S01-P01-walk 0.00–6.80</button></p></details><details><summary><button data-clip="golf" data-time="0.0000">0.00–19.34 s</button> 持续的户外环境底噪，包含微弱的风声和远处人群的低频嗡嗡声。</summary><p>N002 · background · background</p><p>与动作区间的名义交集（秒） <button data-clip="golf" data-time="0.0000">A-S01-P01-walk 0.00–7.50</button> <button data-clip="golf" data-time="7.6000">A-S01-P01-gesture-placeball 7.60–8.20</button> <button data-clip="golf" data-time="8.2000">A-S01-P01-held-setup 8.20–9.30</button> <button data-clip="golf" data-time="9.4000">A-S01-P01-drive 9.40–11.80</button> <button data-clip="golf" data-time="11.9000">A-S01-P01-hold-followthrough 11.90–13.10</button> <button data-clip="golf" data-time="13.2000">A-S02-BALL-fly 13.20–19.30</button></p></details><details><summary><button data-clip="golf" data-time="0.4800">0.48–6.56 s</button> So Dustin Johnson turns three under par. He&#x27;s twelve under for the tournament and one back of Brian Harmon.</summary><p>U001 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="golf" data-time="0.4800">A-S01-P01-walk 0.48–6.56</button></p></details><details><summary><button data-clip="golf" data-time="8.4800">8.48–11.76 s</button> Fasten your seat belt, Dustin Johnson on the tee.</summary><p>U002 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="golf" data-time="8.4800">A-S01-P01-held-setup 8.48–9.30</button> <button data-clip="golf" data-time="9.4000">A-S01-P01-drive 9.40–11.76</button></p></details><details><summary><button data-clip="golf" data-time="10.0800">10.08–10.40 s</button> 清脆的高尔夫球杆击球声（金属撞击脆响）。</summary><p>N003 · transient · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="golf" data-time="10.0800">A-S01-P01-drive 10.08–10.40</button></p></details><details><summary><button data-clip="golf" data-time="13.0400">13.04–16.72 s</button> And this is a low bullet and should really take off when it hits.</summary><p>U003 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="golf" data-time="13.0400">A-S01-P01-hold-followthrough 13.04–13.10</button> <button data-clip="golf" data-time="13.2000">A-S02-BALL-fly 13.20–16.72</button></p></details><details><summary><button data-clip="golf" data-time="16.4800">16.48–19.34 s</button> 低沉的合成器氛围音效/音乐垫乐逐渐进入并持续。</summary><p>N004 · music · background</p><p>与动作区间的名义交集（秒） <button data-clip="golf" data-time="16.4800">A-S02-BALL-fly 16.48–19.30</button></p></details><details><summary><button data-clip="golf" data-time="17.8400">17.84–19.34 s</button> It ricocheted forward.</summary><p>U004 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="golf" data-time="17.8400">A-S02-BALL-fly 17.84–19.30</button></p></details><details><summary>v6 视觉复核全文</summary><pre>S01　S01-P01　穿白色polo衫、灰色长裤、戴白色帽子的男性高尔夫球员，手持一号木杆，是本场开球的主体。
+连续原视频观察
+At 0.0–7.5 s, the male golfer in a white polo shirt, grey trousers and white cap walks forward across the green tee area holding a driver in his left hand while spectators sit behind him.
+From about 4.9 s onward, he slows near the edge of the tee box as broadcast graphics appear on screen showing tournament standings and then D. Johnson’s score information.
+At around 7.5–8.0 s, there is a cut to a wider elevated view of the coastal tee box with ocean in the background; the same golfer stands over the ball facing away from camera toward the fairway.
+At approximately 8.0–13.2 s, he begins addressing the ball, makes a full swing with the driver, follows through high, watches the shot, then bends down to pick up the tees after impact.
+0–0.6006 秒　白衣球员位于画面中景，起初处于弯腰姿态，右手握着一支一号木杆向下垂放。随后他直起身子，开始向画面左侧行走，此时一名身穿紫色上衣的人员从前景经过并短暂遮挡了视线。
+1.1011–1.7017 秒　白衣球员继续向画面左侧行进，身体朝向左前方。他的左手捏着一个白色小球状物（高尔夫球），右手持杆自然下垂于身体右侧，步伐平稳连贯。
+2.3023–4.004 秒　随着镜头向左平移跟拍，白衣球员穿过观众席前的通道走向发球台方向。背景中出现“FedExCup”等赛事标识，他始终保持匀速步行状态，目光平视前方。
+5.2052–5.7057 秒　屏幕右下方浮现出包含球员姓名和成绩的记分牌图形。白衣球员走到开阔的发球区边缘后放慢脚步并最终停下，身体转向背对镜头的方向准备击球。
+6.3063–6.9069 秒　白衣球员在发球位站定，调整站姿并将双手移至球杆上。他低头看向地面，似乎在进行最后的瞄准确认，周围有工作人员举着指示牌。
+8.008–8.6086 秒　画面切换为远景固定机位，展示广阔的海面背景和远处的山峦。白衣球员双脚分开站立，上身前倾俯向地面的小白球，双手紧握一号木杆柄端进行瞄准，保持预备姿势数秒。
+9.2092–9.8098 秒　白衣球员启动开球挥杆动作。他将球杆向后上方大幅度引杆至顶点，随即迅速向下发力。在约第294帧时，杆头接触地面附近的白球，球被打离原位飞向前方海面方向。
+10.3103–10.9109 秒　击球瞬间，白衣球员的躯干猛烈旋转，双腿蹬地支撑身体重心转移。球杆顺势向前上方延伸完成收杆动作，他的头部抬起，目光紧随笔迹飞向远方。
+11.5115–12.1121 秒　白衣球员维持高位收杆姿势不动，球杆横在肩背侧。他单脚着地维持平衡，身体完全转向目标方向，持续注视球的飞行轨迹直到本镜头末尾仍未放下球杆。
+12.6126–13.1465 秒　完成开球观察后，白衣球员放下高举的球杆恢复常规站立姿态。他在原地短暂停留后转身面向镜头方向走回，弯腰伸手去拾取留在草地上的球座配件或整理装备。
+0–0.6006 秒　白衣球员位于画面左侧前景，身体呈弯腰姿态。他的右手握着一支一号木杆的杆身中部，左手向下伸向草地。随后他直起上身，双手持杆自然垂于身前，开始向画面右侧迈步。
+1.1011–1.7017 秒　白衣球员继续向画面右侧行走。此时可见他的左手捏着一个白色高尔夫球，右手单手握住一号木杆的握把末端，球杆垂直拖在身体右侧。
+2.3023–4.004 秒　白衣球员保持匀速步行穿过观众席前的通道。背景中出现了带有“Sentry Tournament of Champions”字样的记分板图形。他目光平视前方，左手始终拿着球，右手持杆随行。
+5.2052–5.7057 秒　白衣球员走到发球台区域附近减速并停下脚步。在第171帧，他将左臂向身体左侧水平伸出，手掌摊开展示手中的白色高尔夫球，似乎在确认或示意，随后收回手臂。
+8.008–8.6086 秒　镜头切换至远景视角，显示海边发球台全貌。白衣球员站在发球垫上，双脚分开与肩同宽，身体面向画面左侧的目标方向。他俯身将球放置在地面（动作发生在切镜前），此刻正双手紧握一号木杆柄端，杆头置于球后方地面进行瞄准。
+9.2092–9.8098 秒　白衣球员完成预备姿势的调整，启动挥杆动作。他从第276帧开始向后上方引杆，双臂伸展带动球杆沿弧线上升；在第294帧，球杆到达顶点位置，身体充分扭转蓄力。
+10.3103–10.9109 秒　白衣球员进入下杆击球阶段。球杆快速向前下方摆动，在第309帧左右杆头接触白色高尔夫球并将其击出。随后惯性带动身体回转，他在第327帧处于随挥过程中，重心转移至左脚。
+11.5115–12.1121 秒　白衣球员完成收杆动作并保持定格姿态。在第345帧，他的身体完全转向目标方向，一号木杆绕过背部停在左肩后方，右脚脚尖点地维持平衡。他抬头目送飞出的球体轨迹，直到第363帧仍保持该高位收杆姿势未变。
+0–0.6006 秒　画面起始于中景镜头，白衣球员位于画面中央偏右区域，正弯腰低头查看地面。随后他直起身子，右手握着一支一号木杆自然下垂，身体朝向画面左侧开始迈步走动。
+1.1011–1.7017 秒　随着镜头向左平移跟拍，白衣球员持续向画面左侧行走。在约第33帧时，他抬起左手做出一个轻微的挥手致意动作，手中似乎捏着一个白色小物体（高尔夫球），随后手臂放下继续前行。
+2.3023–4.004 秒　白衣球员保持匀速步行穿过观众席前的通道，背景中的白色栏杆和广告牌随之向右移动。他的视线主要投向前方或略微低头，双手交替调整握杆姿势，最终走向画面左侧边缘。
+4.6046–5.7057 秒　此时屏幕右下角浮现出包含“D. JOHNSON”姓名及成绩的记分牌图形。白衣球员走到开阔的发球区附近放慢脚步并停下，身体转向背对镜头的方向，准备进入击球站位。
+6.3063–7.5075 秒　白衣球员站在发球位上，俯身将手中的小白球放置在地面的发球点上。完成放球后，他直起上身，双手重新握住一号木杆的柄端，双脚分开与肩同宽，建立起标准的开球预备姿势。
+8.008–9.2092 秒　镜头切换为远景固定机位，展现出广阔的海面背景和远处的山峦。白衣球员位于画面下方的发球台上，上身前倾，杆头贴近地面的白球，视线锁定目标方向，进行最后的瞄准微调。
+9.8098–10.3103 秒　白衣球员启动挥杆动作，手臂带动球杆向后上方大幅度引杆至顶点，躯干随之扭转蓄力。紧接着他迅速向下发力，杆头在约第309帧处接触地面附近的白球，将球击飞。
+10.9109–11.5115 秒　击球完成后，白衣球员顺势转入随挥阶段，球杆绕过身体划过高弧线，最终停在肩背后方。他的重心完全转移到前脚，头部抬起，目光紧紧追随着飞向远方海面的球体轨迹。
+12.1121–13.1465 秒　白衣球员保持高位收杆姿势数秒以维持平衡并观察落点。确认飞行路线后，他放下高举的球杆恢复常规站立姿态，并在原地短暂停留，随后转身面向镜头方向走回，弯腰伸手去拾取留在草地上的球座配件。
+短时间窗的局部观察
+0–1.2012 秒　在0.000s至0.200s期间，穿白色polo衫的主体处于弯腰姿态，其右手握持球杆底部靠近地面位置，左手扶于大腿前侧；与此同时，一名身穿灰紫色上衣的前景人物从画面右侧切入并向左横穿，逐渐遮挡住主体的上半身及头部区域。
+0–1.2012 秒　在0.300s至0.600s期间，随着前景人物持续向左移动并占据画面右半部主要视野，原本被遮挡的白衣主体开始直起腰身，其躯干由弯曲转为直立，视线随之抬起越过栏杆看向远方看台。
+0–1.2012 秒　在0.700s至1.201s期间，白衣主体完全站定并保持直立姿态，其右臂向身体右侧水平伸出，手掌张开指向远处的观众席方向进行示意；此时前景人物的背影已移至画面左侧边缘，不再阻挡对主体动作的观察。
+1.001–2.2022 秒　在01:00至01:30期间，画面左侧前景有一名身穿紫色上衣的人员躯干局部遮挡视线。中景处，穿白色Polo衫的主体面向观众席站立，其右臂向身体右侧水平伸出，手掌张开指向后方围栏方向；左手握着一支一号木杆的握把，球杆垂直立于身侧地面。
+1.001–2.2022 秒　从01:30开始，主体收回原本伸出的右手，手臂沿身体一侧向下垂落。与此同时，主体的头部转向正前方（镜头方向），视线随之改变，不再看向侧面。
+1.001–2.2022 秒　在01:40至02:00之间，主体保持正面朝向镜头的姿态，双手均握住球杆握把置于身前腹部位置。此时可见主体面部表情平静，嘴部微张，并未进行大幅度的挥杆动作，而是处于持杆静止状态。
+1.001–2.2022 秒　观察背景环境，主体身后是一排白色的金属护栏，护栏上印有PGA巡回赛标志及赞助商文字。护栏后方密集的观众席人群在整个时间段内保持相对静止的观看姿态，未见明显的群体性移动或欢呼动作。
+1.001–2.2022 秒　直至02:20片段结束，主体始终维持正面持杆站立的姿势，双脚着地支撑身体重心，未发生位移。画面构图稳定，除主体早期的手部动作外，无其他显著的动态变化。
+2.002–3.2032 秒　在帧60至96期间，画面主体为一名身穿白色Polo衫、灰色长裤并戴着白色帽子的男性高尔夫球员。
+2.002–3.2032 秒　以固定背景（观众席和带有“ExCup”标志的白色挡板）作为参照系，该球员在画面中持续向右侧移动。
+2.002–3.2032 秒　根据位移数据估算，球员的横向移动速度呈现明显的加速趋势：从初期的约 -1.6% 宽度/秒（相对向左），迅速转变为后期的正向高速移动，最终达到约 +15.4% 宽度/秒（向右）。
+2.002–3.2032 秒　在垂直方向上，球员相对于背景有轻微的向下位移（dy值均为正，范围在0.5%至5.7%高度/秒之间），表明其重心随步伐起伏或摄像机视角的微小变化。
+2.002–3.2032 秒　球员右手握持一支球杆（一号木），球杆头朝下指向地面，随着身体的移动自然摆动。
+2.002–3.2032 秒　在整个序列中，球员的面部表情保持平静，视线主要投向前方或略微偏右，没有明显的情绪波动或剧烈的头部转动。
+2.002–3.2032 秒　尽管存在显著的背景位移差，但画面主体的缩放比例（scale_per_pair）始终维持在1.002-1.003左右，说明球员与摄像机的距离基本保持不变，主要是横向平移运动。
+3.003–4.2042 秒　在3.00秒至4.20秒期间，穿白色polo衫、灰色长裤和戴白色帽子的男性高尔夫球员位于画面中央偏右的前景位置。他面朝前方，视线略微向下，右手自然下垂且手指微曲，左手握着一根带有黑色杆身的高尔夫球杆（一号木杆）的握把处。
+3.003–4.2042 秒　从3.10秒开始，该球员的左臂逐渐弯曲，带动手中的高尔夫球杆向上抬起；到3.50秒时，球杆头部已升至其胸口高度并靠近左侧衣领，随后他在接下来的时间里保持这一持杆姿态继续向前迈步走动。
+3.003–4.2042 秒　在整个片段中，背景里的观众席人群以及印有“FedExCup”标志的白色挡板相对于画面持续向右侧平移，同时画面最左侧边缘依次滑入了带有蓝色字体的“Sentry TOURNAMENT OF CHAMPIONS”广告牌局部，这表明摄像机正在跟随主体进行向左的摇摄跟拍。
+4.004–5.2052 秒　在4.00s至5.20s期间，镜头持续跟随主体向右平移。根据背景中固定的“Sentry”广告牌和观众席栏杆的相对位移，主体的实际移动速度逐渐加快（dx_pct_width_per_s从37.6升至50.5），且画面景别保持稳定（scale接近1.0）。
+4.004–5.2052 秒　起始阶段（约4.00s-4.20s）：主体位于画面中央偏左，身体朝向右前方。他右手握持一号木杆的握把处，球杆垂直悬于身侧地面附近；左手自然下垂。此时面部表情平静，视线投向右侧行进方向。
+4.004–5.2052 秒　中间过渡阶段（约4.30s-4.80s）：随着步伐迈动，主体双手位置发生变化。左手向后摆动并握住球杆的中段杆身，右手仍保持在上方握把处，形成双手持杆姿态。球杆随之略微抬起离开地面，随身体重心前移而向前方倾斜。
+4.004–5.2052 秒　结束阶段（约4.90s-5.20s）：主体继续向画面右侧行走。此时一个半透明的记分板图形界面（显示HARMAN, D. JOHNSON等名字及分数）从画面右下角切入并向左扩展，最终覆盖了主体腿部及部分球杆区域。主体保持双手持杆姿势，目光依然注视右前方，未受前景遮挡影响改变步态。
+5.005–6.2062 秒　在 t=5.0s 阶段，主语（穿白色polo衫、灰色长裤、戴白帽的男子）位于画面中央偏右，面朝左侧，处于静止站立状态；其右手自然下垂于身侧，握着一根深色一号木杆的下端，左手不可见。
+5.005–6.2062 秒　从 t=5.1s 至 t=5.4s 阶段，男子保持原地站立且视线持续看向左前方；在此期间，他原本下垂的右臂开始缓慢抬起，手部动作将一号木杆向上提离地面。
+5.005–6.2062 秒　在 t=5.5s 至 t=5.7s 阶段，男子的右臂向右侧水平伸展，手掌张开，此时手中已无球杆；与此同时，一个白色小圆球出现在其张开的右手掌心上方，随后该球脱离手掌向左下方掉落并移出画面底部边缘。
+5.005–6.2062 秒　在 t=5.8s 至 t=6.2s 阶段，完成抛球动作后，男子的右臂重新向下垂落恢复至身体一侧；此时他双手均未持有任何物品，继续站在原地面向左侧。
+5.005–6.2062 秒　在整个时间段内，画面右下角始终叠加显示着带有“SENTRY TOURNAMENT OF CHAMPIONS”字样的半透明黑色记分牌图形界面；背景中可见模糊的树木、看台栏杆以及零星的观众。
+6.006–7.2072 秒　在06.0s至07.2s期间，画面右侧始终固定显示着带有“SENTRY TOURNAMENT OF CHAMPIONS”字样及球员名单的记分牌图形。
+6.006–7.2072 秒　以左侧背景的金属脚手架和远处的树木为参照物，主体人物（穿白色polo衫、戴白帽的男子）相对于背景持续向画面右侧移动，且其面部朝向保持侧向右方。
+6.006–7.2072 秒　结合提供的位移数据与背景参照物的相对位置变化可知，摄像机正在向左平移跟拍该男子，导致他在画面中的水平位置从左半部逐渐移至中央偏右区域。
+6.006–7.2072 秒　在整个片段中，男子的双臂自然下垂于身体两侧，未见明显的关节屈伸或发力动作；他手中并未握持任何球杆等物体。
+6.006–7.2072 秒　约从06.5s开始，画面左下角边缘出现一名戴着深色帽子的人员头部局部，随后该遮挡物面积扩大，并在最后几帧部分遮蔽了主体的下半身及左下侧视野。
+7.007–8.2082 秒　在7.007s至7.507s期间，画面呈现一名身穿白色polo衫、戴白色帽子的男性的近景。他位于画面中央偏右，头部低垂，视线向下，处于静止站立状态。
+7.007–8.2082 秒　约7.107s起，一个戴着深色棒球帽和墨镜的人头轮廓作为前景从画面左侧边缘切入。该前景人物持续向右侧平移，逐渐遮挡住后方白衣男子的下半张脸及躯干左侧。
+7.007–8.2082 秒　从7.607s开始，画面发生叠化转场（Dissolve）。原本占据全屏的近景男子影像变得半透明并淡出，同时叠加显现出一个开阔的高尔夫球场远景。
+7.007–8.2082 秒　随着转场完成（约7.807s），画面变为稳定的全景构图。此时可见该名穿白衣灰裤的主体站在发球台上，双手握持一号木杆，身体前倾呈准备击球姿态。
+7.007–8.2082 秒　在全景画面中，主体位于草坪中央。其左后方站着数名观众和球童，其中一人高举双臂；正前方远处立着白色的“10”号界桩标志牌；背景是深蓝色的海洋和天空。
+7.007–8.2082 秒　根据位移数据与视觉观察，在7.807s之后的时间段内，镜头保持固定，未见明显的推拉或摇移，主体与环境地标之间的相对位置保持不变。
+8.008–9.2092 秒　在08.00s至09.21s期间，画面右上角持续显示带有“D. JOHNSON”、“-12”及“TODAY&#x27;S ROUND: -3”字样的静态图形界面。
+8.008–9.2092 秒　主体（穿白色polo衫、灰色长裤的男子）位于画面中央偏右的球道上，双脚分开站立于地面，身体朝向画面左侧前方，处于静止的准备击球姿态。
+8.008–9.2092 秒　主体的双手握持一根深色长杆（一号木），杆头接触草地并停留在一个白色小方块标记旁，该位置在整个时间段内未发生位移。
+8.008–9.2092 秒　在画面左侧中景处，一名身穿浅蓝色上衣的人员背对镜头高举双臂，手中持有白色长方形板状物，保持该姿势直至片段结束。
+8.008–9.2092 秒　背景右侧远处的观众群和树木轮廓清晰且相对固定，未见明显的整体平移或缩放，表明摄像机机位在此时段内保持静止。
+9.009–10.2102 秒　9.00s - 9.20s (帧 270-276)　穿白色polo衫、灰色长裤的主体　主体位于画面中央偏右，面朝左侧站立。他双手握持一号木杆置于身前草地上方，头部低垂注视地面球位，处于静止的准备姿势。
+9.009–10.2102 秒　9.30s - 9.50s (帧 279-285)　穿白色polo衫、灰色长裤的主体　主体开始挥杆动作。双臂带动球杆向后方（画面右侧）抬起，上半身随之扭转，重心逐渐向后脚转移，视线依然锁定在脚下的球上。
+9.009–10.2102 秒　9.60s - 9.70s (帧 288-291)　穿白色polo衫、灰色长裤的主体　挥杆到达顶点。主体的手臂高举过头顶，球杆指向身后上方，身体完全背对目标方向蓄力，随后迅速启动下挥动作。
+9.009–10.2102 秒　9.80s - 9.90s (帧 294-297)　穿白色polo衫、灰色长裤的主体　击球瞬间及随挥初期。球杆快速扫过草地接触小球，主体躯干猛烈转向左侧（面向观众席），髋部展开，双臂顺势向前推送。
+9.009–10.2102 秒　10.00s - 10.21s (帧 300-306)　穿白色polo衫、灰色长裤的主体　收杆姿态。主体双脚稳固踩地，身体完全转向左侧，球杆绕过肩颈停在背部上方。此时他抬起头，目光追随飞向远方海面的球。
+9.009–10.2102 秒　全程可见 (9.00s - 10.21s)　举旗员（背景中穿浅蓝衬衫者）　位于主体左后方的沙坑边缘处。该人物全程保持站立不动的姿势，单手垂直高举白色旗帜作为标记物，未参与主体的动态交互。
+10.01–11.2112 秒　在10.0s至10.2s期间，穿白色polo衫的主体处于击球瞬间及随挥初期。他背对镜头面向远处的深蓝色海面，双手紧握一号木杆柄部，手臂向前下方伸展，身体重心开始由右脚向左侧转移。
+10.01–11.2112 秒　从10.3s到10.6s，主体进入随挥上升阶段。他的双臂带动球杆向上方和后方（画面右侧）运动，躯干随之旋转，此时左脚踩实地面成为主要支撑点，右脚跟逐渐抬起离地。
+10.01–11.2112 秒　在10.7s至11.0s之间，主体的动作达到顶点并开始回落定格。球杆高举过肩位于背部上方，身体完全转向目标方向，右手单手握杆位置较高，头部保持仰起状态注视空中。
+10.01–11.2112 秒　直至11.2s的最后几帧，主体维持着收杆后的静止姿态。他双脚站立（右脚仅脚尖着地），目光持续追踪远方海平面上方的飞行轨迹，未再进行大幅度肢体摆动。
+10.01–11.2112 秒　背景中站在广告牌前的另一名穿浅青色上衣的男子，在整个片段（10.0s-11.2s）中始终保持双臂高举呈V字形的欢呼姿势，其站位相对于固定的海边护栏没有发生位移。
+11.011–12.2122 秒　在0.0秒至1.2秒的窗口内，画面背景（海洋、树林、广告牌）相对于画框持续向左平移，表明摄像机正在进行向右摇摄（Pan right）。
+11.011–12.2122 秒　起始帧（frame 330），穿白色polo衫的主体处于击球后的随挥最高点：身体面向画面右侧，双臂高举过头顶位于头部左侧，一号木杆水平横于脑后。
+11.011–12.2122 秒　中段帧（如frame 345），主体的双臂开始向下、向身前回收，木杆从脑后位置落下并指向画面右前方；同时主体右脚离地，仅以左脚支撑。
+11.011–12.2122 秒　结束帧（frame 366），主体完成收杆动作：双脚落地恢复站立姿态，双手持握木杆自然垂放于大腿前侧，视线保持望向画面右侧远方。
+12.012–13.1465 秒　[12.0s-12.4s] 画面中央偏右的主体（穿白色polo衫、灰色长裤的男子）处于预备站位，双脚分开踩在发球区的草地上，双手握持球杆置于身前地面附近。
+12.012–13.1465 秒　[12.0s-12.4s] 主体左侧后方有一名身穿浅蓝色上衣的球童高举带有数字的白色长方形标牌；更左侧有多名背着印有“Sentry”字样球包的人员站立不动。
+12.012–13.1465 秒　[12.5s-12.8s] 主体开始向后上方挥动双臂与球杆，躯干随之向自身右侧扭转，头部保持朝向地面的白色小球位置。
+12.012–13.1465 秒　[12.9s-13.1s] 主体的上半身大幅度前倾弯腰，双腿膝盖微屈以支撑重心下移，右手单手握杆向下探伸至草地表面。
+12.012–13.1465 秒　[13.1s-13.1s] 主体维持深度弯腰姿态，手部接触区域位于两脚连线中点稍偏前的地面上，视线锁定在该处物体上。
+全片复核后的动作顺序
+在0.000s至1.201s期间，穿白色polo衫的主体起初处于弯腰姿态，右手握持球杆底部靠近地面位置；随后他直起腰身，右臂向身体右侧水平伸出，手掌张开指向远处的观众席方向进行示意。在此期间，一名身穿灰紫色上衣的前景人物从画面右侧切入并向左横穿，短暂遮挡了主体的上半身及头部区域。
+在1.201s至3.403s期间，主体收回原本伸出的右手，手臂沿身体一侧向下垂落，左手捏着一个白色小球状物（高尔夫球），右手单手握住一号木杆的握把末端，球杆垂直拖在身体右侧。他保持匀速步行穿过观众席前的通道，目光平视前方或略微低头。
+在3.403s至5.705s期间，随着镜头向左平移跟拍，背景中的白色栏杆和广告牌随之向右移动。屏幕右下角浮现出包含“SENTRY TOURNAMENT OF CHAMPIONS”字样及球员名单的半透明黑色记分牌图形界面。主体走到开阔的发球区边缘后放慢脚步并最终停下，身体转向背对镜头的方向准备击球。
+在5.705s至6.906s期间，主体站在发球位上，俯身将手中的小白球放置在地面的发球点上。完成放球后，他直起上身，双手重新握住一号木杆的柄端，双脚分开与肩同宽，建立起标准的开球预备姿势。此时画面左下角出现一名戴着深色帽子的人员头部局部作为前景遮挡。
+在6.906s至8.008s期间，画面发生叠化转场（Dissolve）。原本占据全屏的近景男子影像变得半透明并淡出，同时叠加显现出一个开阔的高尔夫球场远景。转场完成后，画面变为稳定的全景构图，展现出广阔的海面背景和远处的山峦。
+在8.008s至9.809s期间，在全景画面中，主体位于草坪中央偏右的发球台上，上身前倾，杆头贴近地面的白球，视线锁定目标方向，进行最后的瞄准微调。其左后方站着数名观众和球童，其中一人高举双臂手中持有白色长方形板状物；正前方远处立着白色的“10”号界桩标志牌。画面右上角持续显示带有“D. JOHNSON”、“-12”及“TODAY&#x27;S ROUND: -3”字样的静态图形界面。
+在9.809s至10.310s期间，主体启动挥杆动作。他将球杆向后上方大幅度引杆至顶点，躯干随之扭转蓄力。紧接着他迅速向下发力，杆头在约第10.3秒处接触地面附近的白球，将球击飞。
+在10.310s至11.511s期间，击球完成后，主体顺势转入随挥阶段，球杆绕过身体划过高弧线，最终停在肩背后方。他的重心完全转移到前脚，右脚仅脚尖着地维持平衡，头部抬起，目光紧紧追随着飞向远方海面的球体轨迹。
+在11.511s至13.146s期间，主体保持高位收杆姿势数秒以确认飞行路线后，放下高举的球杆恢复常规站立姿态。他在原地短暂停留后转身面向镜头方向走回，弯腰伸手去拾取留在草地上的球座配件或整理装备。
+
+S02　S02-BALL　被击出后在空中飞行的高尔夫球，在远景中呈小白点。
+连续原视频观察
+At 13.18s, the golf ball appears as a small white dot high against the blue sky over distant ocean and hills.
+From 13.18s to 15.00s, the camera pans downward and rightward while tracking the descending ball; the ball moves diagonally down-right across the frame toward green terrain below.
+By around 14.98s, the ball reaches the upper edge of the grassy slope near trees and spectators standing along the ridge line.
+From approximately 15.00s onward, after landing on the fairway/green area, the ball rolls forward (downhill) away from the impact point, gradually slowing but remaining visible as it travels across the manicured lawn until at least 19.32s.
+13.1798–13.6803 秒　画面处于高空远景阶段，背景为灰蓝色的天空与模糊的海平面。高尔夫球呈现为一个极小的白色亮点，位于画面上半部分中央偏右的位置，正沿着平缓的抛物线轨迹向画面左下方移动。
+13.9806–14.2809 秒　随着镜头向下摇摄追踪，白点的高度进一步降低。此时背景中出现了清晰的海岸线、深蓝色海面以及岸边的房屋建筑群。白点持续向左下方坠落，位置逐渐接近画面左侧边缘的建筑上方。
+14.4811–14.7814 秒　白点穿过中景区域，进入前景茂密的绿色树冠层上方。在帧443中，可以看到右侧放大视图显示白点正在快速掠过树叶背景，其垂直下落速度明显加快，即将触地。
+15.0817–15.382 秒　高尔夫球接触地面（果岭）。在帧452中，白点出现在画面左下角的绿色草地上；随后几秒内（至帧461），它在草皮上向前方轻微滚动并减速，最终停留在靠近观众席围栏前的草坪区域，视觉上不再有明显的位移。
+15.5822–19.3193 秒　镜头保持静止或微调构图，展示落点周围的静态环境。画面主体变为宽阔的绿色果岭斜坡，远处有一排站立观看的观众和树木。此前的高尔夫球已完全融入草地背景或因距离过远而无法分辨，不再有独立的运动特征。
+13.1798–13.6803 秒　高尔夫球在远景中呈现为一个清晰的微小白色亮点，处于高空飞行状态。背景主要是灰蓝色的天空和远处模糊的海面地平线，小球位置相对画面中心略偏上。
+13.9806–14.2809 秒　随着镜头向下摇摄追踪，小白点继续向画面右下方移动并降低高度。此时背景出现了带有房屋建筑的海岸山坡以及深色的树木轮廓，球体依然清晰可见。
+14.4811–14.7814 秒　高尔夫球快速下降穿过前景的绿色树梢区域。由于距离拉近且背景变为复杂的树叶纹理，白点在画面中变得稍难辨认，但能看到其轨迹指向下方的开阔地带。
+15.0817–15.382 秒　球体落入果岭区域的视野中，此时可以看到远处的观众群站在坡顶边缘。小白点在绿色的草皮背景下再次显现，位置极低，接近地面。
+15.5822–15.8825 秒　高尔夫球接触草地表面并开始在地面上滚动。作为一个微小的白点，它在修剪整齐的绿色草坪上向前滑行，速度逐渐减慢。
+16.1828–16.383 秒　球体继续在草地上缓慢滚动，最终停在画面左侧靠近观众视线前方的位置。此时它已不再是一个空中的飞行物，而是静止在地面上的一个微小白点。
+13.1798–13.6803 秒　画面起幅于灰蓝色的远景天空，一个极小的白色圆点（高尔夫球）位于画面上半部分偏右的位置。镜头开始缓慢向下摇摄并伴随轻微的向右平移，背景中隐约显现出深色的海平面与朦胧的陆地轮廓。
+13.9806–14.2809 秒　随着镜头持续下摇，白点在空中的位置相对下降。背景由海面过渡为带有密集房屋建筑的海岸山坡，随后前景中出现模糊的绿色树冠，表明视点正在从高空向地面植被层移动。
+14.4811–14.7814 秒　镜头进一步压低，视野被大片绿色的树木枝叶占据，远处的建筑退居背景上方。白点此时已降至树梢高度附近，并在画面右侧区域继续向下运动，即将进入下方的开阔地带。
+15.0817–15.382 秒　前景的树木移出画面底部，展现出一片修剪整齐的绿色果岭草坪。白点落入这片绿色区域的中部，其轨迹明显变缓，最终在草地上停止运动，成为一个静止的微小白点。
+15.5822–16.383 秒　镜头停止追踪球的运动，转为展示果岭全景。画面上方边缘出现一排站在坡顶围栏后的观众，他们身穿各色服装。那颗静止的高尔夫球位于画面中央偏下的草坡上，与上方的观众群形成明显的垂直距离。
+16.6833–17.7844 秒　画面保持稳定的广角构图，主要展示倾斜的果岭表面。左侧和上方的观众群体清晰可见，有人站立观看，有人坐在草地上。高尔夫球依然停留在原来的位置，没有任何位移迹象。
+18.0847–19.3193 秒　直到片段结束，镜头未再进行推拉或摇移。画面定格在果岭场景，那颗作为视觉焦点的白色小球静静地躺在绿色草皮上，周围是起伏的地形纹理和远处围观的人群，构成了最终的落点状态。
+短时间窗的局部观察
+13.1798–14.381 秒　高尔夫球　在初始阶段[13.18s]，画面呈现大面积的蓝色天空与远处的模糊地平线。此时主体为一个极小的白点，位于画面右上方区域（约水平65%，垂直30%处），处于高空飞行状态。
+13.1798–14.381 秒　镜头与背景　随着时间推移至中段[13.98s-14.28s]，摄像机视角发生显著变化，开始向下摇摄并伴随向右的水平移动。这一运镜导致原本空旷的天空下方逐渐显露出地面的细节：一排带有深色屋顶的低矮建筑群和绿色的植被树冠从画面底部升起并向左掠过。
+13.1798–14.381 秒　高尔夫球　尽管背景和镜头剧烈变动，主体的相对位置保持极其稳定。在整个序列中（直至[14.38s]结束），该白点始终锚定在画面的右侧偏上区域（水平坐标维持在70%-75%之间，垂直坐标缓慢下移至40%-45%区间）。这表明摄像机正在紧密追踪一个以恒定速度向远方飞行的物体，而非拍摄静止的背景地标。
+14.1808–15.382 秒　在14.18秒至14.68秒期间，画面呈现明显的动态模糊。一个白色小点（高尔夫球）位于画面右侧中部的半空中，相对于远处的海岸线和建筑群背景保持微小的位移。
+14.1808–15.382 秒　从14.78秒开始，随着镜头向下摇摄追踪，前景的绿色草坡和树木逐渐占据画面下半部。此时白点在垂直方向上明显下降，靠近树冠层。
+14.1808–15.382 秒　在15.08秒左右，白点落在绿色草坡的中下部区域，并在随后的几帧中不再表现为空中的悬浮点，而是融入草地表面或停止运动。
+14.1808–15.382 秒　伴随球的落地过程，镜头持续向左平移并下摇。这一运镜使得原本位于画面上方的远处建筑移出视野，同时让画面左侧边缘的观众群像依次进入视野中心。
+15.1818–16.383 秒　在00:15.182至00:16.383的整个片段中，画面呈现为一个远景视角。镜头以极快的速度向左平移（dx_pct_width_per_s数值极大），导致右侧背景的树木和左侧的人群迅速向画面右方掠过。
+15.1818–16.383 秒　在00:15.182（起始帧）时，视野主要被大片倾斜的绿色草坪占据。画面右上角边缘处站立着两名观众（一人穿浅蓝色上衣，一人穿深蓝色上衣配红色帽子），他们处于静止状态，面朝左前方注视。
+15.1818–16.383 秒　约在00:15.482左右，随着镜头的快速左移，一群身穿各色休闲服装（红、蓝、白等）的观众开始从画面左侧边缘进入视野。这群人沿着坡顶排成一列横队，大多背对或侧对镜头，头部统一转向左下方，似乎在追踪某个落点。
+15.1818–16.383 秒　在00:15.782至00:16.082期间，镜头持续向左扫过这排观众。可以看到人群中有几人正举起手臂或拿着相机进行拍摄。此时，一个微小的白色圆点（高尔夫球）出现在画面下方的绿色草皮上，位于观众群的前方远处。
+15.1818–16.383 秒　在00:16.182左右，那个小白点在草地上清晰可见，它相对于周围草地的纹理几乎静止或仅有极微小的位移，表明球已经落地并停止滚动。此时镜头仍在移动，使得球在画面中的位置不断向右偏移。
+15.1818–16.383 秒　到了00:16.383（结束帧），镜头即将完成这次横扫。那排观众的大部分身体已移出画面左侧，只剩下最右边的一两人还在视野内。小白点依然停留在草地中央偏下的位置，作为静态参照物存在，而背景中的树林继续快速向右流动。
+16.1828–17.384 秒　在逻辑镜头 S02 (16.18s - 17.38s) 期间，画面展示了一个高尔夫球场的大远景。前景是大片修剪整齐的绿色草坪，中景和背景处有一群观众站在草坡上观看比赛，右侧有树木。
+16.1828–17.384 秒　关于被击出的高尔夫球（小白点）：在整个提供的帧序列（485-521）及对应的时间段内，画面中没有出现任何白色小点在空中的轨迹。由于缺乏视觉证据，无法描述球的飞行路径、速度或落点。
+16.1828–17.384 秒　关于运镜与视角变化：根据位移估计数据并结合画面观察，摄像机在起始阶段（约 16.18s - 16.48s，帧 485-494）进行了快速的向右摇摄（Pan Right），随后伴随轻微的向下调整。这导致左侧边缘的站立观众逐渐移出画面中心，视野向右侧开阔地带移动。
+16.1828–17.384 秒　在中后段（约 16.58s - 17.38s，帧 497-521），摄像机的水平移动速度显著减缓并趋于静止（dx_pct_width_per_s 接近 0 甚至微负），画面构图变得稳定。此时主要展示了远处山坡上的观众群体以及大面积的空旷草地，未见明显的主体运动。
+17.1838–18.385 秒　在17.18s至17.48s期间，画面呈现一片开阔的绿色草坪。多名观众聚集在画面上方的远端边缘，背景是茂密的树林。此时镜头处于相对静止状态，未见明显的位移或缩放。
+17.1838–18.385 秒　从17.58s开始直至视频结束（18.39s），摄像机执行了持续且平滑的向左摇摄动作。这一运镜导致固定的背景元素（如右侧的树丛和人群）不断向画面右侧平移并逐渐移出视野，同时左侧新的草地被纳入画面。
+17.1838–18.385 秒　在整个时间段内，站在上方远处的观众们保持站立姿态观看前方，并未发生显著的肢体移动或位置改变；他们在画面中的横向位移完全是由摄像机的左摇造成的视差效果。
+17.1838–18.385 秒　尽管提供了关于“高尔夫球”的主体线索，但在该时间窗的所有可见帧中，受限于远景分辨率及绿色草地的背景对比度，未能观察到任何呈小白点状的高尔夫球实体或其飞行轨迹。
+18.1848–19.3193 秒　【整体环境与运镜】在18.18s至19.32s期间，画面展示了一个高尔夫球场果岭。前景为大面积绿色草坪，背景有一排茂密的树木和沿边缘站立的观众群。镜头以较快的速度向左平移（追踪），随后逐渐减速直至接近静止。
+18.1848–19.3193 秒　【主体入画与轨迹-右侧球员】在18.28s左右，一名身穿浅蓝色上衣、白色短裤的球员从画面最右侧边缘进入视野。他处于站立姿态，双手握持球杆置于身前，并未进行挥杆动作，而是作为被追踪的目标向左侧缓慢走动。
+18.1848–19.3193 秒　【主体入画与轨迹-空中白点】约在18.48s，一个极小的白色斑点（推测为飞行中的高尔夫球）出现在画面右上方的树丛前方区域。该白点在随后的几秒内持续向画面左下方移动，其位移速度与镜头的左移速度形成视差，最终在19.00s前后消失在左侧背景的树林遮挡处或落地不可见。
+18.1848–19.3193 秒　【背景人物动态】随着镜头向左平移扫过背景人群，可以看到多名观众穿着各色休闲服装（红、绿、黑等）。他们大多面向画面右方或正前方注视，部分人举起手机拍摄。在18.68s至19.32s期间，由于镜头减速，这些观众的相对位置趋于稳定，未见明显的剧烈肢体动作。
+18.1848–19.3193 秒　【光影与构图】全程光线充足，为日间自然光。草坪呈现出清晰的修剪纹理。右上角始终显示半透明的“PGA TOUR”标志水印。
+全片复核后的动作顺序
+在13.18s至14.28s的初始阶段，画面呈现大面积灰蓝色的天空与远处模糊的海平面。一个极小的白色圆点（高尔夫球）位于画面上半部分偏右的位置，处于高空飞行状态。
+从14.28s开始，摄像机视角发生显著变化，开始向下摇摄并伴随向右的水平移动。随着运镜，原本空旷的天空下方逐渐显露出地面的细节：一排带有深色屋顶的低矮建筑群和绿色的植被树冠从画面底部升起并向左掠过。
+在14.28s至15.08s期间，尽管背景和镜头剧烈变动，白点的相对位置保持极其稳定，始终锚定在画面的右侧偏上区域（水平坐标维持在70%-75%之间，垂直坐标缓慢下移至40%-45%区间），表明摄像机正在紧密追踪该物体。
+约在15.08s左右，白点落入绿色草坡的中下部区域，并在随后的几帧中不再表现为空中的悬浮点，视觉上融入草地表面或停止运动。
+在15.18s至16.38s的片段中，镜头以极快的速度向左平移，导致右侧背景的树木和左侧的人群迅速向画面右方掠过。
+在15.18s时，视野主要被大片倾斜的绿色草坪占据。画面右上角边缘处站立着两名观众（一人穿浅蓝色上衣，一人穿深蓝色上衣配红色帽子），他们处于静止状态，面朝左前方注视。
+约在15.48s左右，随着镜头的快速左移，一群身穿各色休闲服装（红、蓝、白等）的观众开始从画面左侧边缘进入视野。这群人沿着坡顶排成一列横队，大多背对或侧对镜头，头部统一转向左下方，似乎在追踪某个落点。
+在15.78s至16.08s期间，可以看到人群中有几人正举起手臂或拿着相机进行拍摄。此时，一个微小的白色圆点（高尔夫球）出现在画面下方的绿色草皮上，位于观众群的前方远处。
+在16.18s左右，那个小白点在草地上清晰可见，它相对于周围草地的纹理几乎静止或仅有极微小的位移，表明球已经落地并停止滚动。此时镜头仍在移动，使得球在画面中的位置不断向右偏移。
+到了16.38s，那排观众的大部分身体已移出画面左侧，只剩下最右边的一两人还在视野内。小白点依然停留在草地中央偏下的位置，作为静态参照物存在，而背景中的树林继续快速向右流动。
+在16.38s至17.38s期间，摄像机的水平移动速度显著减缓并趋于静止，画面构图变得稳定。此时主要展示了远处山坡上的观众群体以及大面积的空旷草地。
+在17.18s至17.48s期间，画面呈现一片开阔的绿色草坪。多名观众聚集在画面上方的远端边缘，背景是茂密的树林。受限于远景分辨率及绿色草地的背景对比度，未能观察到任何呈小白点状的高尔夫球实体或其飞行轨迹。
+从17.58s开始直至视频结束（19.32s），摄像机执行了持续且平滑的向左摇摄动作。这一运镜导致固定的背景元素（如右侧的树丛和人群）不断向画面右侧平移并逐渐移出视野，同时左侧新的草地被纳入画面。
+在18.28s左右，一名身穿浅蓝色上衣、白色短裤的球员从画面最右侧边缘进入视野。他处于站立姿态，双手握持球杆置于身前，并未进行挥杆动作，而是作为被追踪的目标向左侧缓慢走动。</pre></details><p><a href="revisions/v6/cases/golf/审阅.html">完整中文审阅与原始响应</a> · <a href="revisions/v6/cases/golf/annotations.json">最终 JSON</a></p></section></div></article><article id="case-timer"><h2>日常操作 · 灌溉定时器</h2><p>ijF-CYpTrwQ.6.mp4 · 11.68 秒</p><video id="timer" controls preload="metadata" src="cases/timer/clip.mp4"></video><details><summary>查看带原片时间戳的核对帧</summary><a href="cases/timer/evidence.jpg"><img style="max-width:100%" src="cases/timer/evidence.jpg" alt="原片抽帧与时间戳"></a></details><h3>复核观察</h3><ul><li>EVA 分开两条指令，分别把拔电源对应到拔插头和切到电源盒，把贴标签对应到手部贴标和接线端子的特写。</li><li>我们的 U002 把两条指令合在 3.04–7.52 秒，区间求交连到四项动作。如果要回答单条指令响起时手在做什么，这个合并已经造成信息损失。</li><li>我们的动作表将 2.42–3.34 秒标成插上适配器，随后再标拔下。回看 2.461、2.794、3.253 秒，插头一直在插座处，3.587 秒已离开。v6 连续视频复核也写的是拔出，但该修正未回写动作表，错误的插入事件仍参与同期求交。</li><li>结尾还有方向分歧。EVA 写拧松螺丝并取下设备，我们的动作表写拧紧螺丝并合上外壳。最后一帧只清楚显示双手握着外壳，无法据此确认完整拆下或扣紧。</li></ul><div class="cols"><section><h3>EVA 公开标注</h3><p class="caption">In a close-up shot, a person&#x27;s hand presses buttons on a white irrigation timer, labeled &quot;SST-600i,&quot; which is mounted on a white wall with a piece of paper detailing handwritten notes on &quot;RUN TIME&quot; and &quot;DAYS&quot; visible to the left. Simultaneously, a calm and instructional male narrator speaks over a light, upbeat instrumental track, saying, &quot;You&#x27;ll use these later when you program the new timer.&quot; As the narrator continues, &quot;Next, unplug the power,&quot; the camera angle shifts to a metal electrical box, and a hand unplugs a black cord from a socket. The narrator then says, &quot;and label each sprinkler wire with a small piece of tape,&quot; while a tight close-up shows a pair of hands applying small pieces of masking tape to the wire ends inside the timer&#x27;s open compartment, revealing blue plastic connectors. The person works with the newly labeled wires as the narrator says, &quot;Then, disconnect the wires.&quot; Following the instruction, &quot;Remove the mounting screws,&quot; the person uses a screwdriver to loosen a screw from the open timer, which has its internal circuitry exposed. Finally, as the narrator says, &quot;and take the old...&quot; before the audio cuts off, the person carefully pulls the entire unit away from the wall, revealing the mounting bracket and wires behind it.</p><p>强化学习记录有 8 个视觉事件，其中 6 个标为 action，另有 7 个音频事件。</p><details><summary>视觉事件清单</summary><ol><li>[action] The hand presses buttons on a white irrigation timer labeled SST-600i.</li><li>[camera] The camera angle shifts to a metal electrical box.</li><li>[action] A hand unplugs a black cord from a socket.</li><li>[camera] A tight close-up shows the inside of the timer&#x27;s open compartment.</li><li>[action] The hands apply small pieces of masking tape to the wire ends.</li><li>[action] The person works with the newly labeled wires.</li><li>[action] The person uses a screwdriver to loosen a screw from the open timer.</li><li>[action] The person carefully pulls the entire unit away from the wall.</li></ol></details><details><summary>声音事件清单</summary><ol><li>[sound] A light, upbeat instrumental track plays in the background.</li><li>[asr] You&#x27;ll use these later when you program the new timer.</li><li>[asr] Next, unplug the power.</li><li>[asr] and label each sprinkler wire with a small piece of tape.</li><li>[asr] Then, disconnect the wires.</li><li>[asr] Remove the mounting screws.</li><li>[asr] and take the old...</li></ol></details><h4>GRPO 训练用音到画同期查询</h4><p>✓ 表示计算同步奖励时使用的参考选项，编号取自 selected_visual_indices_new。</p><details><summary>Next, unplug the power. <small>（选中 2 项）</small></summary><ol><li class="">[camera] A tight close-up shows the inside of the timer&#x27;s open compartment.</li><li class="">[action] The hands apply small pieces of masking tape to the wire ends.</li><li class="yes">✓ [action] A hand unplugs a black cord from a socket.</li><li class="">[action] The hand presses buttons on a white irrigation timer labeled SST-600i.</li><li class="yes">✓ [camera] The camera angle shifts to a metal electrical box.</li></ol></details><details><summary>and label each sprinkler wire with a small piece of tape. <small>（选中 2 项）</small></summary><ol><li class="">[camera] The camera angle shifts to a metal electrical box.</li><li class="yes">✓ [action] The hands apply small pieces of masking tape to the wire ends.</li><li class="">[action] A hand unplugs a black cord from a socket.</li><li class="">[action] The person works with the newly labeled wires.</li><li class="yes">✓ [camera] A tight close-up shows the inside of the timer&#x27;s open compartment.</li></ol></details><details><summary>Then, disconnect the wires. <small>（选中 1 项）</small></summary><ol><li class="">[action] The hands apply small pieces of masking tape to the wire ends.</li><li class="">[camera] A tight close-up shows the inside of the timer&#x27;s open compartment.</li><li class="">[action] The person uses a screwdriver to loosen a screw from the open timer.</li><li class="yes">✓ [action] The person works with the newly labeled wires.</li><li class="">[action] The person carefully pulls the entire unit away from the wall.</li></ol></details><details><summary>and take the old... <small>（选中 1 项）</small></summary><ol><li class="">[action] The person uses a screwdriver to loosen a screw from the open timer.</li><li class="">[action] The hands apply small pieces of masking tape to the wire ends.</li><li class="">[camera] A tight close-up shows the inside of the timer&#x27;s open compartment.</li><li class="yes">✓ [action] The person carefully pulls the entire unit away from the wall.</li><li class="">[action] The person works with the newly labeled wires.</li></ol></details><p><a href="cases/timer/shot2story_caption_sft.json">SFT 原文</a> · <a href="cases/timer/stage2_caption_rl.json">官方事件与全部选项</a> · <a href="cases/timer/source.json">视频来源和定位</a></p></section><section><h3>我们的管道输出</h3><p>motion 8；语音 4 条、其他声音 1 条。点击时间回看。</p><h4>动作与状态</h4><details><summary><button data-clip="timer" data-time="0.0000">0.00–1.29 s</button> 右手食指在控制器左列箭头键上连续按压，把时间调到7:00。</summary><p>S01-A01 · motion · 画面开始时，右手食指已贴在控制器左列上方箭头键上；随后手指持续在该按键区域反复下压，液晶显示先见“7:15”，之后变为“7:00”。到本段末尾，食指离开左列按键并向右移动，准备去按另一组按钮。</p></details><details><summary><button data-clip="timer" data-time="1.2900">1.29–2.38 s</button> 右手食指改按控制器右列箭头键，使天数从7增加到8。</summary><p>S01-A02 · motion · 食指移到右侧一列上下箭头键后继续点按，屏幕右侧数字先为7，后面变成8。镜头切走前，手指仍停在右列按键附近，没有看到完整收手过程。</p></details><details><summary><button data-clip="timer" data-time="2.4200">2.42–3.34 s</button> 双手把黑色电源适配器推入墙面插座。</summary><p>S02-A01 · motion · 两只手共同握持一个黑色长方体适配器，对准墙盒下方插座的孔位向前推送；随着两手同步用力，适配器逐渐没入插座，最后基本贴合面板。</p></details><details><summary><button data-clip="timer" data-time="3.3400">3.34–3.92 s</button> 双手把刚插入的黑色适配器从墙面插座中拔出。</summary><p>S02-A02 · motion · 接着上一动作，双手重新抓住适配器外缘向后拉；适配器的金属插脚先从插座中退出，整个机身被抽离墙面，最后移出画面左下区域，只留下空插座。</p></details><details><summary><button data-clip="timer" data-time="4.0900">4.09–7.17 s</button> 双手把写有标记的米色胶带从线缆上慢慢撕下来。</summary><p>S03-A01 · motion · 两只手的拇指和食指捏住一小块米色胶带标签的两端，标签上有手写数字痕迹；随后两手朝相反方向缓慢拉开，胶带从一束线缆表面一点点揭起，越往后卷曲越明显，最终形成半脱落状态。</p></details><details><summary><button data-clip="timer" data-time="7.1700">7.17–9.47 s</button> 双手把缠在一起的红、绿、蓝等多根细导线逐一分开整理。</summary><p>S03-A02 · motion · 胶带掀开后，双手转到线缆末端，把原本聚在一起的几根红、绿、蓝等颜色的细导线逐根拨开；手指在线束间穿插、捻动和下拉，使各线彼此分离，末端裸出的小线头越来越清楚。</p></details><details><summary><button data-clip="timer" data-time="9.5100">9.51–11.14 s</button> 操作者用螺丝刀拧紧控制器端子排上的螺丝。</summary><p>S04-A01 · motion · 左手扶住螺丝刀的深色杆部和前端，把刀头抵在控制器底部端子排的螺丝上；右手握住透明手柄做旋转动作，手腕来回带动手柄转动，螺丝随旋紧而嵌入端子位置。切镜前螺丝刀仍顶在端子上。</p></details><details><summary><button data-clip="timer" data-time="11.1800">11.18–11.64 s</button> 双手把黄色控制器外壳扣回底座并压实。</summary><p>S05-A01 · motion · 双手分别托住黄色控制器外壳的左右边，把它从前方罩到已装好的底座上；随着两手向内、向后压，壳体边缘逐渐贴齐底座，底部蓝色端子排被遮住一部分，最后外壳基本就位但仍能看到双手扶着边框。</p></details><h4>语音、声音与同期动作</h4><details><summary><button data-clip="timer" data-time="0.0000">0.00–2.16 s</button> Use these later when you program the new timer.</summary><p>U001 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="timer" data-time="0.0000">S01-A01 0.00–1.29</button> <button data-clip="timer" data-time="1.2900">S01-A02 1.29–2.16</button></p></details><details><summary><button data-clip="timer" data-time="0.0000">0.00–11.65 s</button> 轻快的器乐背景音乐，包含拨弦和打击乐元素，持续播放于整个片段。</summary><p>N001 · music · background</p><p>与动作区间的名义交集（秒） <button data-clip="timer" data-time="0.0000">S01-A01 0.00–1.29</button> <button data-clip="timer" data-time="1.2900">S01-A02 1.29–2.38</button> <button data-clip="timer" data-time="2.4200">S02-A01 2.42–3.34</button> <button data-clip="timer" data-time="3.3400">S02-A02 3.34–3.92</button> <button data-clip="timer" data-time="4.0900">S03-A01 4.09–7.17</button> <button data-clip="timer" data-time="7.1700">S03-A02 7.17–9.47</button> <button data-clip="timer" data-time="9.5100">S04-A01 9.51–11.14</button> <button data-clip="timer" data-time="11.1800">S05-A01 11.18–11.64</button></p></details><details><summary><button data-clip="timer" data-time="3.0400">3.04–7.52 s</button> Next, unplug the power and label each sprinkler wire with a small piece of tape.</summary><p>U002 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="timer" data-time="3.0400">S02-A01 3.04–3.34</button> <button data-clip="timer" data-time="3.3400">S02-A02 3.34–3.92</button> <button data-clip="timer" data-time="4.0900">S03-A01 4.09–7.17</button> <button data-clip="timer" data-time="7.1700">S03-A02 7.17–7.52</button></p></details><details><summary><button data-clip="timer" data-time="8.0800">8.08–9.28 s</button> Then disconnect the wires.</summary><p>U003 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="timer" data-time="8.0800">S03-A02 8.08–9.28</button></p></details><details><summary><button data-clip="timer" data-time="10.0000">10.00–11.65 s</button> Remove the mounting screws and take the old</summary><p>U004 · speech · foreground</p><p>与动作区间的名义交集（秒） <button data-clip="timer" data-time="10.0000">S04-A01 10.00–11.14</button> <button data-clip="timer" data-time="11.1800">S05-A01 11.18–11.64</button></p></details><details><summary>v6 视觉复核全文</summary><pre>S01　S01-P01　仅可见右手及部分前臂的操作者
+连续原视频观察
+From 0.0s to about 2.4s, the right hand and part of the forearm enter from the lower-right foreground toward a wall-mounted sprinkler timer centered on the white wall.
+The index finger presses repeatedly on the left arrow button, then shifts slightly upward and inward to press the right arrow button.
+0–0.5005 秒　操作者伸出右手食指，持续按压灌溉控制器面板左侧按键组的【上半部分（向上箭头）】。随着手指的反复点按动作，液晶屏幕上的时间数值从初始的“7:15 AM”开始变动，最终在第12帧时定格为“7:00 AM”。
+0.583917–0.917583 秒　在时间设定完成后，操作者的右手食指继续停留在左侧按键组的【上半部分（向上箭头）】上，保持按压姿态但不再触发数值变化，直到第22帧手指才松开该区域。
+1.001–1.08442 秒　操作者的右手食指向下移动，按压左侧按键组的【下半部分（向下箭头）】。此时屏幕显示的时间仍维持在“7:00 AM”，未见明显数值跳动。
+1.29296–1.91858 秒　操作者的右手食指横向平移至右侧相邻的第二组按键，并精准按压在该组的【上半部分（向上箭头）】上。在此阶段内，手指进行连续点击，但屏幕显示的数值暂时保持不变。
+2.002–2.37737 秒　随着右手食指继续在右侧第二组按键的【上半部分（向上箭头）】上进行按压操作，屏幕右上角代表浇水次数的数字由“7”增加变为“8”。直至视频结束，手指一直保持在该位置按压。
+0–0.5005 秒　操作者右手食指持续按压在控制器面板左侧的向上箭头键上，屏幕左上角的时间读数从“7:15 AM”开始变动。
+0.583917–0.792458 秒　随着食指的连续按压动作，屏幕上的时间读数最终稳定显示为“7:00 AM”。
+0.917583–1.08442 秒　食指停止按压并离开左侧按键区域，向右侧水平移动，准备切换控制目标。
+1.29296–1.58492 秒　食指准确定位并按压在控制器面板右侧的向上箭头键上（位于屏幕右下方），此时屏幕右上角的数字显示为“7”。
+1.71004–1.91858 秒　食指保持对右侧向上箭头键的按压状态，屏幕右上角的数字仍维持在“7”。
+2.002–2.37737 秒　受食指按压影响，屏幕右上角的数字由“7”跳变为“8”，直至视频结束，食指一直保持在右侧按键上的按压姿态。
+0–0.5005 秒　画面右侧前景中，操作者伸出右手食指按压在控制器面板中央左侧的“向上”箭头键上。随着手指的动作，液晶显示屏上的时间数值从初始的“7:15”开始变动，最终在第14帧前稳定为“7:00”。
+0.583917–1.08442 秒　屏幕显示的时间已确认为“7:00”，此时右侧数字仍为“7”。操作者的食指继续停留在左侧“向上”箭头键区域，并未移动，似乎在确认设置或等待指令。
+1.29296–1.41808 秒　操作者的食指离开左侧按键区，向画面右侧水平移动约两厘米，跨越两个按键之间的间隙，精准定位到相邻的右侧“向下”箭头键上方。手腕随手指的移动轨迹轻微向右偏转。
+1.5015–1.91858 秒　食指指尖接触并按压在右侧的“向下”箭头键上。在此阶段内，尽管手指正在执行按压动作，但屏幕上的各项数值（时间7:00，天数7）暂时保持不变。
+2.002–2.37737 秒　受食指持续按压右侧“向下”键的影响，屏幕右上角的天数数值发生跳变，由“7”变为“8”。直至镜头结束，操作者的食指一直保持在该按键上的按压状态，未发生位移。
+短时间窗的局部观察
+0–1.20954 秒　在0.00秒至约0.58秒期间，操作者的右手食指持续按压在喷灌控制器面板中央偏左的向上箭头按钮上。此时控制器的液晶屏幕显示数字“7:15”。
+0–1.20954 秒　从约0.58秒开始直至视频结束（1.21秒），控制器屏幕上的数字由“7:15”变为了“7:00”，在此期间及之后，右手的食指依然保持按压在该向上箭头按钮上，未见抬起动作。
+1.001–2.21054 秒　在01.00s至01.29s期间，操作者的右手食指按压在控制面板左侧的“向下”箭头按钮上；随后手部向右侧平移，食指离开该按钮并悬停在两个方向键之间的空白处。
+1.001–2.21054 秒　在01.42s时，右手的食指移动到了面板右侧的“向上”箭头按钮上方并开始施加压力；此时屏幕上的数字仍显示为7。
+1.001–2.21054 秒　在01.58s至01.92s期间，食指持续按压着“向上”箭头按钮，手背和手腕保持相对静止的姿态以维持按压力度。
+1.001–2.21054 秒　约在02.00s时，随着食指的持续按压动作，液晶显示屏右侧的数字由“7 AM”跳变为了“8 AM”。
+1.001–2.21054 秒　在02.09s至02.21s的最后阶段，尽管屏幕数值已经更新，但操作者的右手食指依然保持在“向上”箭头按钮上的按压状态，并未抬起或移开。
+2.002–2.37737 秒　2.00s - 2.08s (起始阶段)　画面右侧伸入一只右手及部分前臂，食指指腹正按压在白色Rain Bird灌溉控制器中央的“向上”箭头按键上。　手指保持静止按压状态，无明显位移；背景及左侧边缘的黑色头发轮廓均固定不动。
+2.002–2.37737 秒　2.08s - 2.21s (持续按压阶段)　右手食指继续维持在同一位置（屏幕下方的向上箭头键），手部肌肉未见明显放松迹象。　处于停顿/静止状态。尽管运动估计数据在此区间有微小波动，但视觉上手指与面板的接触点未发生任何改变。
+2.002–2.37737 秒　2.21s - 2.37s (结束阶段)　直至窗口结束，右手食指依然按在向上箭头键上，未抬起也未移动到其他按钮。　动作延续为静态保持。虽然最后几帧的运动矢量显示有向右下的趋势，但这更像是手持拍摄造成的轻微晃动或透视变化，而非主体主动的手指移动，因为指尖相对于按键边框的位置始终锁定。
+全片复核后的动作顺序
+在0.00秒至约1.29秒期间，画面右侧前景中操作者伸出右手食指，持续按压在白色Rain Bird灌溉控制器面板中央偏左的“向上”箭头按键上。
+随着食指的连续点按动作，液晶屏幕左侧的时间读数从初始的“7:15 AM”开始变动，并在第14帧（约0.58秒）时定格为“7:00 AM”。
+在第14帧至第26帧（约0.58秒至1.08秒）期间，屏幕时间稳定显示为“7:00 AM”，此时右侧数字仍为“7”，操作者的食指继续停留在左侧“向上”箭头键区域保持按压姿态。
+约在第26帧至第31帧（1.08秒至1.29秒）之间，食指停止按压并离开左侧按键区域，向画面右侧水平移动，跨越两个按键之间的间隙，准备切换控制目标。
+在第31帧至第34帧（约1.29秒至1.42秒）期间，食指准确定位并按压在控制器面板右侧相邻的第二组按键中的“向下”箭头键上。
+在第34帧至第46帧（1.42秒至1.92秒）期间，尽管手指正在执行按压动作，但屏幕上的各项数值（时间7:00，天数7）暂时保持不变，手背和手腕保持相对静止的姿态以维持按压力度。
+约在第48帧（2.00秒）时，受食指持续按压右侧“向下”键的影响，屏幕右上角代表浇水次数的数字由“7”跳变为了“8”。
+在第48帧直至视频结束（2.00秒至2.38秒），操作者的右手食指一直保持在该右侧“向下”按键上的按压状态，未发生位移或抬起，屏幕持续显示“7:00 AM”与数字“8”。
+
+S02　S02-P01　双手及前臂可见的操作者
+连续原视频观察
+At 2.419 seconds, the operator&#x27;s hands and forearms enter from the left side of the frame, gripping a black power adapter plugged into the lower socket of a silver electrical outlet box mounted on a white wall.
+Between 2.419 seconds and 3.420 seconds, both hands pull horizontally to the left, extracting the black adapter completely out of the socket.
+By 3.628 seconds, the adapter is fully detached and held in the hands as they continue moving toward the bottom-left edge of the screen.
+From 3.920 seconds onward, the hands carrying the adapter exit the frame entirely at the bottom-left corner, leaving only the empty outlet box visible against the static background.
+2.41908–2.5025 秒　操作者位于画面左侧前景，双手及前臂可见。他正面对右侧墙壁上的一个金属接线盒（内含插座）。初始状态下，他的双手握持着一个黑色的电源适配器插头，将其对准并抵在下方插座的插孔处，准备进行插入动作。
+2.62763–3.21154 秒　操作者的双手持续握住黑色插头，手指紧扣其侧面以保持稳定。在此期间，尽管手部有细微的调整动作，但插头相对于墙面插座的位置基本保持不变，始终处于接触但未完全推入的状态。
+3.33667–3.83717 秒　操作者开始执行拔除动作。双手向后（即向画面左方）施力，带动黑色插头平稳地从插座中脱出。随着手臂的回缩，插头与墙面的距离逐渐拉大，直至完全脱离接触并向画面左下角移出视野。
+2.41908–3.21154 秒　操作者的双手（左手在上，右手在下）共同握持一个黑色的长方体电源适配器，将其紧贴在墙面金属接线盒下方的插座上。在此时间段内，适配器保持插入状态，位置相对固定，未见明显的推入或拔出位移。
+3.33667–3.5035 秒　操作者开始执行拔除动作。双手向后（即向画面左侧）施力拉动黑色适配器，适配器主体逐渐脱离墙面插座的接触面，与墙壁之间的距离明显拉大。
+3.62862–3.83717 秒　随着手臂继续向左回缩，黑色适配器完全移出镜头视野范围。此时可以看到墙面上原本被遮挡的下方双孔插座已恢复空置状态，露出米白色的面板。
+3.92058–4.04571 秒　操作者的双手及适配器彻底离开画面。镜头中仅剩下固定在白色墙面上的金属接线盒及其上下两个空置的插座，画面处于静止状态。
+2.41908–2.5025 秒　画面左侧前景中，操作者的双手握持着一个黑色长方体电源适配器，将其抵在右侧墙壁金属接线盒下方的插座面板上。
+2.62763–3.003 秒　操作者持续用力将黑色适配器向墙面方向推压，适配器的主体部分逐渐没入插座孔位，直至外壳与白色插座面板几乎齐平。
+3.12812–3.21154 秒　适配器已完全插入到位，紧贴墙面插座面板，操作者的双手仍保持抓握姿势停留在适配器表面，未立即松开。
+3.33667–3.5035 秒　动作发生转折，操作者开始反向施力，双手紧握适配器边缘将其从插座中向外拔出，适配器底部脱离面板并露出金属插脚。
+3.62862–3.83717 秒　随着手臂向左后方回缩，黑色适配器迅速远离墙面，整体移出画面左下角视野，不再占据主要构图区域。
+3.92058–4.04571 秒　操作者及适配器完全离开画面，镜头内仅剩下固定在墙上的金属接线盒及其空置的白色双孔插座面板。
+短时间窗的局部观察
+2.41908–3.62862 秒　在02:41至03:12期间（源帧58-75），操作者的双手握持一个黑色长方体设备，将其紧贴在墙壁右侧金属接线盒的下半部分插座上。
+2.41908–3.62862 秒　在上述贴靠阶段中，操作者左手扶住设备左侧边缘，右手托住设备底部及右下侧，两手手指弯曲形成稳固的抓握姿态，设备与墙面保持平行且无明显位移。
+2.41908–3.62862 秒　从03:21开始（源帧77之后），操作者双手将黑色设备从墙上的接线盒处移开，向画面左下方移动。
+2.41908–3.62862 秒　随着设备的移除，原本被遮挡的金属接线盒下半部分的第二个双孔插座完全显露出来，此时可见该接线盒上下各有一个插座面板。
+2.41908–3.62862 秒　在整个视频片段结束前（直至03:62，源帧87），操作者双手持续握着已脱离墙面的黑色设备停留在画面左下角区域，未再进行插拔动作。
+3.42008–4.04571 秒　在3.420秒至3.503秒期间，操作者的双手及前臂位于画面左侧中下部。其左手托住一个深色矩形物体的底部边缘，右手手指捏合在该物体的顶部与侧面交界处。该物体整体保持静止，悬停在右侧墙壁上已安装的金属接线盒左下方约一拳的距离处。
+3.42008–4.04571 秒　从3.628秒开始，操作者改变了受力方向。左手手掌平贴于深色物体的底面并向上推举，右手则握持物体的侧边。随着动作的进行，双手协同将该物体向画面的右上方平移，使其逐渐靠近墙上的金属接线盒。
+3.42008–4.04571 秒　在3.712秒时，运动发生逆转或停止前的最后阶段。操作者的双手连同深色物体迅速向画面的左下角回撤。此时可见左手仍承托物体底部，但两者之间的距离正在拉大，脱离了之前的接近状态。
+3.42008–4.04571 秒　到了3.837秒，操作者的手部大部分已经移出画面可视范围。仅在画面极左下角的边缘处，残留着少许模糊的手指轮廓和深色物体的一角，显示出主体正在快速撤离镜头视野。
+3.42008–4.04571 秒　自3.920秒起直至4.045秒结束，画面中不再出现任何人体部位或被操纵的深色物体。视觉焦点完全固定在背景环境上：白色的墙面、嵌入式的银色金属接线盒（带有两个圆形插孔和一个开关拨杆），以及连接在盒子上下两端的黑色线缆。此后的姿态为无人操作的静态终态。
+全片复核后的动作顺序
+在2.419秒至3.337秒期间，操作者双手握持一个黑色长方体电源适配器，将其紧贴在墙壁右侧金属接线盒的下半部分插座上。
+从3.337秒开始（源帧80），操作者执行拔除动作，双手向后（即向画面左方）施力，带动黑色插头平稳地从插座中脱出。
+随着手臂的回缩，插头与墙面的距离逐渐拉大，直至完全脱离接触并向画面左下角移出视野。
+在3.628秒左右，随着设备的移除，原本被遮挡的金属接线盒下半部分的第二个双孔插座完全显露出来，此时可见该接线盒上下各有一个插座面板。
+在3.837秒时，操作者的手部大部分已经移出画面可视范围，仅在画面极左下角的边缘处残留着少许模糊的手指轮廓和深色物体的一角。
+自3.920秒起直至4.045秒结束，画面中不再出现任何人体部位或被操纵的黑色适配器。
+视频结尾处于无人操作的静态终态，视觉焦点固定在背景环境上：白色的墙面、嵌入式的银色金属接线盒（带有两个圆形插孔和一个开关拨杆），以及连接在盒子上下两端的黑色线缆。
+
+S03　S03-P01　双手可见的操作者
+连续原视频观察
+At 4.09s, the operator&#x27;s hands are positioned in front of a wall-mounted control panel with blue terminal blocks visible behind them.
+The left hand holds a small piece of beige masking tape steady while the right thumb and index finger manipulate it near the center of the frame.
+From 4.09s to 7.17s, both hands remain relatively stationary as they work together to peel back a section of the tape covering wires connected to the terminals.
+Around 7.17s, there is a slight shift in camera angle or focus, but the primary action continues uninterrupted.
+By 8.01s, the fingers have successfully peeled away more of the tape, revealing additional colored wire ends underneath.
+Throughout this interval (4.09–9.51s), no significant movement occurs outside of the precise manipulation performed by the hands on the tape; all other elements like the background wall and equipment stay static.
+4.08742–6.88187 秒　操作者双手持握一张写有数字“1”的米色胶带标签，将其包裹在一束黑色线缆的外皮上。左手拇指与食指捏住标签左侧边缘，右手拇指与食指捏住右侧边缘，两手持续向左右两侧施加张力并微调角度，使标签紧贴圆柱形线束表面进行缠绕固定。
+7.17383–7.17383 秒　画面出现叠化转场效果，上一阶段缠绕标签的动作影像逐渐淡出，新的动作影像浮现。此时可见双手正在处理另一张标有数字“3”的标签，且该标签已部分贴合在线缆上。
+7.38237–8.09142 秒　操作者继续对线缆进行标记作业。左手握住带有数字“3”的标签及下方的红色导线根部，右手手指配合在上方将标签纸环绕并压紧在线束外皮上，完成第二张标签的粘贴过程。
+8.29996–8.96729 秒　随着标签贴好，操作重点转移至内部导线的整理。左手拇指和食指捏住从线束中分出的几根细导线（包括红色、绿色等），轻轻向外拉扯以理顺线序；右手则稳固地抓握主黑色线缆护套，防止其随拉力移动。
+9.30096–9.46779 秒　操作者完成了所有可见线缆的标记与梳理工作。双手松开对具体单根导线的精细控制，转而分别握住已经贴好标签（可见数字“3”和“4”）的整体线束分支，将其提起并向镜头方向展示最终的接线状态。
+4.08742–6.88187 秒　操作者双手捏住一张印有数字“1”的米色胶带标签，左手拇指与食指捏住标签左侧边缘，右手拇指与食指捏住右侧边缘，将其贴附于蓝色端子排下方的线缆束上。
+7.17383–7.38237 秒　画面发生转场过渡，随后显示操作者正在处理另一张印有数字“3”的米色胶带标签，此时该标签已初步包裹在一根黑色线缆上。
+7.38237–8.09142 秒　操作者双手配合将印有数字“3”的胶带缠绕在黑色线缆颈部，左手手指在下托举并引导线头，右手拇指与食指在线缆上方用力按压胶带表面以固定位置。
+8.09142–8.59192 秒　操作者继续整理印有数字“3”的胶带，右手手指捏住胶带末端向下拉扯使其紧贴线缆，左手辅助扶稳线缆根部，确保胶带完全包覆。
+8.59192–8.96729 秒　操作者完成数字“3”胶带的粘贴后，双手短暂调整姿态，准备处理旁边的其他线缆，此时可见多根不同颜色的细导线散开。
+8.96729–9.30096 秒　操作者双手拿起另外两张分别印有数字“2”和“4”的米色胶带标签，左手持握标有“2”的标签靠近绿色/白色线缆，右手持握标有“4”的标签靠近红色线缆。
+9.30096–9.46779 秒　操作者将四根线缆（对应数字1、2、3、4）全部整理完毕，双手松开所有线缆并向两侧张开摊平，展示最终排列整齐且贴好标签的线束状态。
+4.08742–5.005 秒　画面为近景特写，背景是一台固定在白色墙面上的米黄色电气控制盒，下方露出蓝色接线端子排。操作者双手持有一张带有手写数字“1”的米色纸质标签，位于线缆束前方。左手拇指和食指捏住标签左侧边缘，右手拇指和食指捏住右侧边缘，保持标签平整且相对静止。
+5.29696–6.88187 秒　双手继续维持对标签纸的捏持状态，位置未发生显著改变。随着手指轻微调整施力点，标签纸中部开始出现轻微的拱起变形，但整体仍保持在镜头前的展示位置，并未贴合到后方物体上。
+7.17383–7.38237 秒　双手动作发生改变，将标签纸向后方线缆束移动。此时可见标签纸上除了“1”之外还有另一个字符（似为“3”）。右手手指引导标签纸包裹住黑色的线缆外皮，左手配合托举底部，开始进行缠绕动作。
+7.59092–8.09142 秒　右手拇指用力按压标签纸的前端，将其紧贴在圆柱形线缆表面以固定形状；左手手指在下方辅助支撑并微调标签角度。标签纸已完全覆盖在线缆的一段表面上。
+8.29996–8.96729 秒　双手协同完成最后的粘贴步骤。右手食指沿标签边缘抚平以确保粘合牢固，随后松开接触面。左手随之撤去支撑，双手逐渐从紧贴的状态分离，准备离开操作区域。
+9.30096–9.46779 秒　双手完全撤离线缆区域，分别向画面左右两侧张开摊开，呈现出一种展示最终结果的姿态。此时可以清晰看到贴好的标签纸稳固地附着在线缆上，上面的手写数字朝向镜头方向。
+短时间窗的局部观察
+4.08742–5.29696 秒　04.08s - 04.29s (初始阶段)　操作者的双手　在画面中央偏下位置，左手拇指与食指捏住一张米黄色小标签纸的左侧边缘，右手拇指与食指捏住该纸张的右侧。此时纸张呈现较为平展的状态，中间隐约可见一个黑色的手写标记（类似数字“1”）。背景中上方是一个带有绿色边框和蓝色接线端子的电气控制盒，端子下方露出红、绿等颜色的电线。
+4.08742–5.29696 秒　04.37s - 04.67s (动作变化期)　操作者的双手及标签纸　双手开始向两侧施力拉扯。随着动作进行，原本平整的标签纸中部开始出现明显的纵向撕裂痕迹。左手略微向左下方移动以提供支撑力，右手则保持向右的拉力，导致纸张中间的裂口逐渐扩大，露出了内部较暗的颜色或阴影。
+4.08742–5.29696 秒　04.79s - 05.08s (持续撕开过程)　操作者的双手及标签纸　撕裂动作继续深入。标签纸被进一步分为左右两部分，但底部似乎仍有少量连接未完全断开，或者是因为手指遮挡看起来相连。右手的拇指紧紧按压在纸张右半部分的表面以防打滑，左手的食指指腹抵住左半部分的内侧。黑色标记位于两半纸张交界处的裂缝旁。
+4.08742–5.29696 秒　05.17s - 05.29s (结束/稳定状态)　操作者的双手及标签纸　双手维持着最终的张力姿态。标签纸已被显著撕开成两个主要部分，中间的缝隙清晰可见。手部相对于背景的电气盒子位置基本固定，不再有大幅度的位移，表明撕扯这一特定动作已完成或处于暂停展示结果的状态。光线均匀照射在手背和纸张上，无明显阴影变动。
+5.08842–6.29796 秒　在05.08秒至06.30秒的整个时间窗内，画面背景中固定着一台米黄色外壳的设备，设备下方带有四个蓝色的接线端子及数字标识“1 2 3 4”，左侧墙面呈现白色粗糙纹理。
+5.08842–6.29796 秒　以05.08秒（第122帧）为起始状态，操作者的双手位于画面右下方的近景处，左手拇指与食指捏住一块浅褐色纸质标签的左半侧，右手手指捏住其右半侧，该标签表面已有一道明显的垂直撕裂口，此时双手处于静止准备发力的姿态。
+5.08842–6.29796 秒　从05.08秒到05.79秒期间，双手保持原有的相对位置，仅发生微小的空间位移；随后在05.79秒（第139帧），整体手部动作出现显著的向上抬升趋势，双手连同被捏住的纸标签一起向画面上方移动，靠近蓝色接线端子的下边缘。
+5.08842–6.29796 秒　在05.79秒至06.08秒的运动过程中，左右手的手指持续向内挤压并轻微向外拉扯纸标签的两翼，使得中间的撕裂缝隙进一步张开，暴露出纸张内部的纤维结构，但标签并未完全断开分离。
+5.08842–6.29796 秒　至06.30秒（第151帧）结束状态时，双手依然紧握纸标签的两端悬停在半空中，紧贴着后方设备的黑色线缆区域，维持着正在撕扯但未完成的受力姿态，未见物体掉落或松开的迹象。
+6.08942–7.29896 秒　在源帧146至153期间，操作者的双手位于画面中央偏下位置。左手拇指和食指捏住一小块米色胶带的左端，右手手指捏住胶带右端并向右侧轻微拉伸，使胶带保持紧绷状态。
+6.08942–7.29896 秒　从源帧156开始，操作者双手协同动作，将原本水平拉直的米色胶带向下弯折成倒“V”字形（或三角形），随后双手向下方移动，试图将该折叠后的胶带套入背景中接线端子排下方的黑色线缆上。
+6.08942–7.29896 秒　在源帧160至168之间，随着手部向下施力，胶带逐渐包裹住黑色线缆的上部。此时可以清晰看到胶带表面印有黑色的数字“3”。
+6.08942–7.29896 秒　观察源帧170至172，画面呈现出明显的叠化（Dissolve）转场效果。除了正在给线缆贴标签的双手外，画面上方叠加了另一个半透明的影像层，显示一只手正拿着一个较大的长方形物体（疑似设备外壳或说明书）覆盖在控制面板上方。
+7.09042–8.29996 秒　在7.09秒至7.17秒的初始阶段，操作者的双手位于画面中下方。左手捏住一段带有黑色手写标记“3”的米色胶带边缘，右手拇指与食指捏住一根深色细线，正将其向左侧的胶带方向拉拽。
+7.09042–8.29996 秒　从7.29秒开始，操作者改变了动作轨迹。左手不再仅捏住胶带，而是将贴有胶带的细线整体向上方抬起；右手的指尖随之移动，按压并固定在胶带表面以包裹住下方的细线。
+7.09042–8.29996 秒　在7.38秒至7.67秒期间，双手持续保持向上的抬升姿态。此时可以清晰看到，被胶带缠绕固定的细线末端连接着一个微小的金属环状结构（类似针头或接头），该结构悬空停留在背景蓝色接线端子的前方。
+7.09042–8.29996 秒　观察7.79秒至8.00秒的画面中段，双手的动作幅度显著减小，进入相对静止的微调状态。左手手指维持着对胶带根部的支撑，右手手指轻触胶带表层，两者共同夹持着那个金属环状物，使其稳定地悬浮在半空中。
+7.09042–8.29996 秒　在8.09秒至8.30秒的最后阶段，双手继续保持这种悬停姿态。虽然手部肌肉可能有细微发力以对抗重力，但在视觉上，金属环状物相对于背景的蓝色端子位置几乎没有发生位移，呈现出一种精细操作后的定格状态。
+8.09142–9.30096 秒　在8.09秒至8.47秒期间（帧194-203），操作者的右手位于画面右上方，其拇指和食指捏住一根带有米黄色标签的黑色线缆；左手位于左下方，手指正接触并处理该黑色线缆的另一端。
+8.09142–9.30096 秒　从8.59秒开始（帧206），操作者左手除了原有的黑色线缆外，还捏住了一根较细的红白相间导线，此时可见三根不同的线头集中在两手之间。
+8.09142–9.30096 秒　在8.80秒至9.09秒期间（帧211-218），操作者双手持续进行精细的拨弄动作，将红白相间的导线与黑色线缆分离开来，且随着手部动作，原本被遮挡的更多线缆细节逐渐显露。
+8.09142–9.30096 秒　到9.30秒时（帧223），操作者双手的动作幅度变大并向两侧拉开，清晰地展示出四根独立的电线：两根红色、一根绿色和一根白色，它们从一个共同的根部散开。
+8.09142–9.30096 秒　在整个片段中（8.09s - 9.30s），背景中的配电箱保持静止不动，箱体上有蓝色的开关组件和一个白色的翻盖门处于打开状态，为前景的手部操作提供了固定的空间参照。
+9.09242–9.46779 秒　在9.09秒至9.17秒期间，操作者的右手位于画面右上方，其拇指和食指捏住一根带有米黄色标签的黑色线缆末端；左手位于画面左下方，手指捏住一束包含红色、绿色等颜色的裸露细导线。
+9.09242–9.46779 秒　从9.30秒开始，操作者双手的动作发生显著变化：原本由左手握持的彩色细导线束被释放并向下垂落散开，同时左手向上移动去接应右手递来的物品。
+9.09242–9.46779 秒　在9.30秒至9.46秒之间，操作者的右手将两根分别贴有写着数字“4”和“2”的米黄色标签的线缆向左侧移交，随后两手共同悬停在墙面安装的灰白色设备盒正下方整理这些线缆。
+9.09242–9.46779 秒　在整个观察窗口内（9.09秒-9.46秒），背景中固定在墙上的设备盒保持静止不动，该设备盒下部有一排蓝色的接线端子，上部面板隐约可见蓝色线条图案。
+全片复核后的动作顺序
+【04.09s - 05.30s】双手持握一张米色胶带标签，左手拇指与食指捏住标签左侧边缘，右手拇指与食指捏住右侧边缘。此时标签平整贴附于黑色线缆束表面，中间隐约可见一个黑色的手写标记（似为数字“1”）。
+【05.30s - 07.17s】双手持续向相反方向施力拉扯，原本平整的标签纸中部出现明显的纵向撕裂痕迹。随着动作进行，标签被撕开成左右两部分，露出内部较暗的颜色或阴影，直至接近完全分离。
+【07.17s - 07.29s】画面出现叠化转场效果，上一阶段撕扯标签的动作影像逐渐淡出，新的动作影像浮现。此时可见双手正在处理另一张标有数字“3”的标签，且该标签已部分贴合在线缆上。
+【07.29s - 08.60s】操作者继续对线缆进行标记作业。左手握住带有数字“3”的标签及下方的红色导线根部，右手手指配合在上方将标签纸环绕并压紧在线束外皮上，完成第二张标签的粘贴过程。
+【08.60s - 09.30s】随着标签贴好，操作重点转移至内部导线的整理。左手拇指和食指捏住从线束中分出的几根细导线（包括红色、绿色等），轻轻向外拉扯以理顺线序；右手则稳固地抓握主黑色线缆护套，防止其随拉力移动。
+【09.30s - 09.47s】操作者完成了所有可见线缆的标记与梳理工作。双手松开对具体单根导线的精细控制，转而分别握住已经贴好标签（可见数字“3”和“4”）的整体线束分支，将其提起并向镜头方向展示最终的接线状态。
+
+S04　S04-P01　双手可见的操作者
+连续原视频观察
+At 9.509s, the operator&#x27;s left hand holds a black wire steady against the terminal block while their right hand grips a screwdriver.
+From 9.509s to 11.136s, the operator&#x27;s right hand repeatedly turns the screwdriver clockwise in short increments to tighten a screw on the terminal block.
+The camera remains static throughout this action.
+9.5095–9.59292 秒　操作者双手持握一把透明手柄螺丝刀，左手拇指与食指捏住深蓝色杆部连接处进行固定，右手握住透明手柄末端。此时螺丝刀水平悬停在控制箱面板前方，并未接触任何设备接口，处于预备姿态。
+9.71804–9.80146 秒　右手开始对手柄施加旋转动作，手指围绕圆柱形手柄转动。与此同时，左手保持对深蓝色杆部的稳固抓握以限制其晃动，螺丝刀整体位置保持在半空中未发生位移。
+9.92658–10.0934 秒　右手的旋转动作持续且连贯，手掌在手柄上不断变换抓握角度以维持扭矩输出。左手始终作为支点固定在螺丝刀颈部，确保工具轴线稳定，画面中未见螺丝刀尖端接触端子排。
+10.2185–10.4271 秒　操作者继续保持原有的双手分工：右手主导透明手柄的往复旋转，左手辅助锁定深蓝色杆部。整个过程中，螺丝刀相对于背景中的白色电气控制箱保持静止距离，仅工具本身在自转。
+10.5105–10.719 秒　右手的手指再次调整握姿并继续搓转手柄，显示出持续的机械运动状态。左手依然紧握螺丝刀前段，防止其在旋转时产生轴向偏移，螺丝刀并未向前推进插入任何孔位。
+10.9276–11.1361 秒　直至片段结束，操作者的双手仍维持着“左手定杆、右手拧柄”的姿态。螺丝刀一直处于悬空展示或预紧状态，未与下方的接线端子产生物理接触，也未见明显的空间位移。
+9.5095–9.59292 秒　操作者双手持握一把带有透明塑料手柄和深蓝色颈部的螺丝刀。左手位于画面左侧，拇指与食指稳固地捏住螺丝刀的金属杆部靠近颈部的位置；右手位于画面右侧，手掌包裹住透明手柄末端。此时螺丝刀尖端已抵在背景中米白色控制箱底部的接线端子排上，处于起始拧紧状态。
+9.59292–9.80146 秒　右手开始执行旋转动作，手腕向内翻转带动透明手柄转动，手指在手柄表面施压并调整抓握角度以获取扭矩。与此同时，左手保持静止姿态，持续固定金属杆身以防止其在受力时晃动或滑脱，确保刀头准确咬合端子螺丝。
+9.80146–10.01 秒　右手完成一次顺时针（从观察者视角看）的拧转行程后，迅速松开部分指力并将手柄回摆复位至初始角度，准备下一次发力。在此过程中，左手始终未离开金属杆，维持着对工具的轴向支撑。
+10.01–10.2185 秒　右手再次抓紧透明手柄并进行新一轮的旋转施力，动作连贯且幅度明显。可以看到右手手指随着手柄的转动而发生相对位移，显示出持续的扭力输出。左手依旧紧握深色连接处附近的杆身，作为稳定的支点。
+10.2185–10.4271 秒　操作进入重复循环阶段。右手在完成一圈或多圈旋转后再次进行复位调整，随后继续施加压力。螺丝刀的金属杆身在两手之间保持水平直线状态，表明工具并未发生弯曲或偏移，正有效地作用于端子内部。
+10.4271–10.719 秒　右手的旋转动作变得更加细碎和高频，似乎在处理较紧的阻力或进行最后的微调。左手的手指位置略有微调但功能不变，依然牢牢锁住杆部。透明手柄内的结构因光线折射和手部阴影产生视觉变化，但不影响对其运动状态的判断。
+10.5939–10.9276 秒　右手持续握住手柄末端进行往复式的拧动操作。每一次转动都伴随着手腕的灵活摆动。左手稳定地托举着螺丝刀的前半部分，两者配合默契，共同完成了对控制箱端子的紧固过程。
+10.8025–11.1361 秒　直至片段结束，操作者的双手始终保持接触工具的状态。右手仍在进行最后的旋转确认动作，左手也未撤出。整个过程中，除了手部和螺丝刀的机械运动外，背景中的电气控制箱及其他环境元素均保持静止，无其他干扰因素。
+9.5095–11.1361 秒　镜头保持静止特写视角，焦点清晰锁定在画面中央偏右的双手与螺丝刀交互区域，背景为白色墙面及带有蓝色标识的电气控制箱面板，全程无推拉或摇移运动。
+9.5095–9.80146 秒　操作者左手拇指与食指捏住螺丝刀金属杆下部靠近黑色绝缘环的位置以辅助导向并保持稳定，右手握住透明手柄末端准备施力，此时螺丝刀尖端已抵入控制箱下方的接线孔位。
+9.92658–10.2185 秒　右手开始执行拧转动作，手腕带动手指反复旋转透明手柄，左手始终固定在杆部防止滑脱，随着持续的转动，螺丝刀尖端深入接线孔位。
+10.302–10.5939 秒　右手继续以腕部为主进行连贯的旋转操作，手柄处于明显的转动姿态中，左手配合导向保持稳定支撑，未见松手迹象。
+10.719–11.1361 秒　直至片段结束，双手始终保持接触工具的状态，右手持续完成最后的拧紧动作，螺丝刀尖端稳固地压在端子排处，动作未出现中断。
+短时间窗的局部观察
+9.5095–10.719 秒　在9.50s至10.72s的整个片段中，画面左侧始终固定着一个打开的米白色电气控制箱，箱体内部可见蓝色的接线端子排和绿色的电路板结构，作为操作动作的空间参照物。
+9.5095–10.719 秒　操作者的左手在整个过程中保持相对静止的姿态，其拇指、食指和中指捏住一根黑色的扁平带状线缆，将其水平拉直并悬停在控制箱开口处的下方位置。
+9.5095–10.719 秒　操作者的右手握持一把带有深蓝色手柄和透明尾部的螺丝刀，金属杆身呈水平状态指向画面左侧。
+9.5095–10.719 秒　从9.50s开始，右手的虎口与手指包裹住螺丝刀柄部进行反复搓动；观察发现，这种旋转动作并非匀速，而是呈现出“快速转动-短暂停顿调整-再次转动”的节奏性变化（例如在9.80s处手部姿态有明显重置）。
+9.5095–10.719 秒　随着右手持续对螺丝刀施加扭转力，原本被左手固定的黑色带状线缆末端逐渐发生螺旋状卷曲和收紧，显示出材料正在被物理扭绞的状态。
+9.5095–10.719 秒　直至10.72s片段结束，双手依然维持着上述配合姿势：左手稳固牵拉线缆根部，右手继续通过螺丝刀对手中的黑色带状物进行精细的扭转加工。
+10.5105–11.1361 秒　[10.51s-10.72s] 操作者左手握住螺丝刀的黑色手柄前端作为支点，右手捏住透明尾部。随着右手手指的反复捻动，螺丝刀金属杆在配电箱下方的蓝色端子排处进行微调，此时整体动作幅度较小且处于匀速试探状态。
+10.5105–11.1361 秒　[10.80s-11.01s] 右手的发力节奏发生逆转并加速，从之前的轻捻变为明显的旋转施力。由于手部转动速度的加快，透明尾部的握持形态变得模糊，带动螺丝刀杆部产生高频扭转，而左侧米黄色面板与绿色底座的相对位置保持静止。
+10.5105–11.1361 秒　[11.09s-11.14s] 旋转动作达到峰值后迅速减速并停止。右手重新稳固地抓握住透明柄端，不再进行大幅度转动，仅维持对螺丝刀的轴向按压，画面最终定格在这一稳定的操作姿态上。
+全片复核后的动作顺序
+[9.51s-11.14s] 画面左侧始终固定着一个打开的米白色电气控制箱，箱体内部可见蓝色的接线端子排和绿色的电路板结构。
+[9.51s-11.14s] 操作者双手持握一把带有透明塑料手柄和深蓝色颈部的螺丝刀，左手拇指与食指稳固地捏住金属杆部靠近颈部的位置以辅助导向并保持稳定；右手握住透明手柄末端进行施力。
+[9.51s-11.14s] 螺丝刀尖端已抵在背景中米白色控制箱底部的接线端子排上（或深入接线孔位），处于起始拧紧状态，而非悬空预备姿态。
+[9.51s-10.72s] 随着右手持续对螺丝刀施加扭转力，原本被左手固定的黑色带状线缆末端逐渐发生螺旋状卷曲和收紧，显示出材料正在被物理扭绞的状态。
+[9.80s-11.14s] 右手开始执行旋转动作，手腕向内翻转带动透明手柄转动，手指在手柄表面施压并调整抓握角度以获取扭矩。
+[10.09s-10.51s] 右手完成一次顺时针（从观察者视角看）的拧转行程后，迅速松开部分指力并将手柄回摆复位至初始角度，准备下一次发力。在此过程中，左手始终未离开金属杆，维持着对工具的轴向支撑。
+[10.51s-10.72s] 整体动作幅度较小且处于匀速试探状态，右手手指反复捻动透明尾部，带动螺丝刀金属杆在配电箱下方的蓝色端子排处进行微调。
+[10.80s-11.01s] 右手的发力节奏发生逆转并加速，从之前的轻捻变为明显的旋转施力。由于手部转动速度的加快，透明尾部的握持形态变得模糊，带动螺丝刀杆部产生高频扭转。
+
+S05　S05-P01　双手及头部后侧局部可见的操作者
+连续原视频观察
+The operator&#x27;s hands hold the yellow plastic cover against the wall-mounted unit, with fingers gripping its left and right edges.
+The back of the operator&#x27;s head is visible on the lower-left side of the frame.
+11.1778–11.2613 秒　操作者双手分别握住米黄色外壳的左右两侧边缘，将其悬停在墙面底座前方。此时外壳处于未闭合状态，外壳底边与底座之间留有明显的水平间隙，清晰露出了下方排列整齐的蓝色和橙色接线端子排。
+11.2613–11.3864 秒　操作者的双臂协同发力，带动双手将外壳沿垂直方向向下推移。随着外壳位置下降，原本完全可见的底部接线端子排开始被外壳下缘遮挡，露出的端子数量逐渐减少。
+11.3864–11.4698 秒　外壳继续向下滑动直至接近底座平面。在此阶段，外壳底边几乎贴合到底座边缘，下方的接线端子排大部分已被遮蔽，仅在缝隙处隐约可见少量颜色。
+11.4698–11.6366 秒　外壳已推至最底端并处于闭合位置。操作者保持双手抓握外壳两侧的姿势不变，手指持续施力按压以确认卡扣锁紧，画面中不再看到裸露的接线端子，整体维持稳定的安装姿态直到镜头结束。
+11.1778–11.2613 秒　操作者双手分别握住米黄色“WaterMaster”控制器外壳的左右两侧边缘，将其悬停在墙面底座前方；此时外壳并未完全扣合，底部明显露出一排蓝色和橙色的接线端子。
+11.3864–11.4698 秒　操作者的双手协同向内、向下施力，推动外壳沿垂直方向移动；随着外壳位置下沉，原本露出的底部接线端子区域逐渐被遮挡，外壳边缘开始与底座轮廓贴合。
+11.5949–11.6366 秒　外壳已推至最底端并处于闭合状态，紧贴墙面底座；操作者保持双手抓握姿势不变，手指持续按压在设备侧边以确认卡扣锁紧，直至镜头结束。
+11.1778–11.2613 秒　画面呈现一个过肩视角的特写镜头，前景左下角可见操作者深褐色的头发后侧轮廓。在白色纹理墙面上安装着一个米黄色的方形设备底座，其下半部分暴露出一排蓝色和橙色的接线端子。操作者的双手分别握住该米黄色外壳的左右两侧边缘（左手在屏幕左侧，右手在屏幕右侧），拇指按压正面面板，食指及其他手指扣住侧面卡槽，正将这块带有“WaterMaster”标识的面板向下推合。
+11.2613–11.3864 秒　随着操作者双手持续施加向下的推力，米黄色外壳沿垂直方向下滑。在此过程中，外壳底部边缘逐渐逼近并覆盖下方的接线端子区域，原本清晰可见的蓝色端子排被遮挡的范围不断扩大，显示出闭合动作正在进行中。
+11.3864–11.4698 秒　操作者的双手保持抓握姿势，继续微调并按压外壳两侧。此时外壳已推至接近最底端的位置，底部的接线端子几乎完全被遮蔽，仅在缝隙处隐约可见少许颜色，表明外壳与底座的贴合度正在增加。
+11.4698–11.6366 秒　米黄色外壳最终到达闭合位置，紧贴墙面底座。操作者的双手依然停留在设备两侧的边框上，维持着按压姿态以确认卡扣锁紧或检查平整度。直至片段结束，手部没有明显的撤离动作，而是保持在原位进行最后的稳固检查。
+短时间窗的局部观察
+11.1778–11.6366 秒　在源帧268至279期间，画面左下角持续露出操作者的深褐色头发后脑勺局部以及双手。
+11.1778–11.6366 秒　从源帧268到273，操作者双手握住淡黄色“WaterMaster”设备外壳的左右两侧边缘，将其向上抬起并推入墙面底座；此过程中设备的LCD屏幕和右侧圆形按钮逐渐升高，最终在源帧273时，设备顶部已越过画面上边缘，导致其上半部分移出视野。
+11.1778–11.6366 秒　在源帧275至279期间，该淡黄色设备保持完全静止的安装状态，其下半部分占据画面中央偏上区域，底部暴露出一排带有蓝色和橙色卡扣的内部接线端子。
+11.1778–11.6366 秒　在整个观察窗口内，操作者的左手拇指按在设备左侧边框的中下部，右手手指抓握在设备右侧边框及后方，双手维持着固定的支撑姿态，未见明显的发力位移或撤销动作。
+全片复核后的动作顺序</pre></details><p><a href="revisions/v6/cases/timer/审阅.html">完整中文审阅与原始响应</a> · <a href="revisions/v6/cases/timer/annotations.json">最终 JSON</a></p></section></div></article><script>document.addEventListener('click',e=>{let b=e.target.closest('button[data-time]');if(!b)return;e.preventDefault();let v=document.getElementById(b.dataset.clip);v.currentTime=Number(b.dataset.time);v.play()})</script></html>

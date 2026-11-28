@@ -1,0 +1,459 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma02",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "双人排球练习",
+    "sample_ids": [
+      59
+    ],
+    "visible_people_screened": 2,
+    "people_limit": 3,
+    "official_path": "videos/MotionBenchQA-21a811b4-297b8ba2-2b78-4fd2-ab7a-098f63d6b2f0_0_3.mp4",
+    "local_original": "MotionBenchQA-21a811b4-297b8ba2-2b78-4fd2-ab7a-098f63d6b2f0_0_3.mp4",
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "source_window_seconds": [
+      0,
+      3.0
+    ],
+    "official_sha256": "1744525bdb2bfb7d53a417549f2ef8b4b34e0fa62ff0237d163248ee59fe1fc3",
+    "clip_sha256": "1744525bdb2bfb7d53a417549f2ef8b4b34e0fa62ff0237d163248ee59fe1fc3",
+    "audio_source": null
+  },
+  "duration_seconds": 3.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 3.0,
+      "first_frame": 0,
+      "end_frame_exclusive": 90
+    }
+  ],
+  "input_frames": {
+    "visual": 31
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "本片段为室内排球训练场景，包含两名可见人物：一名穿黄色上衣的球员在网前起跳并尝试扣球/触球，另一名穿深色无袖上衣的球员站在网的另一侧持球准备传球。所有动作均基于画面中可见的身体姿态、腾空状态、手臂伸展和排球位置变化进行标注。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿黄色短袖上衣、黑色短裤的球员，位于球网左侧，全程处于跳跃或落地过程中"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "穿深蓝色无袖上衣、蓝色短裤的球员，位于球网右侧，站立姿势，双手高举排球"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 2.967,
+        "description": "黄衣球员从起跳到落地的完整垂直弹跳过程"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 2.967,
+        "description": "黄衣球员右臂向上伸展试图触碰排球的动作"
+      },
+      {
+        "id": "S01-E03",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 2.967,
+        "description": "深蓝衣球员双手持球于头顶上方并保持稳定姿态"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "垂直起跳与下落",
+        "start": 0.0,
+        "end": 2.967,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          2.9,
+          2.967
+        ],
+        "detail": "黄衣球员双脚离地开始上升，身体保持直立，膝盖微屈；随后达到最高点并开始下降，最终右脚先着地，左脚跟进完成缓冲。整个过程中躯干基本垂直，未见明显前倾或后仰。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "双脚已离开地面约10厘米，小腿肌肉紧绷"
+          },
+          {
+            "time": 1.5,
+            "observation": "身体到达最高点后开始下坠，双臂仍维持上举"
+          },
+          {
+            "time": 2.8,
+            "observation": "右脚接触地板，脚尖点地，左腿弯曲吸收冲击"
+          },
+          {
+            "time": 2.967,
+            "observation": "双脚完全着地，重心降低，进入静止状态"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "起跳瞬间",
+            "time": 0.0,
+            "time_range": [
+              0.0,
+              0.1
+            ]
+          },
+          {
+            "name": "腾空顶点",
+            "time": 1.5,
+            "time_range": [
+              1.4,
+              1.6
+            ]
+          },
+          {
+            "name": "首次触地",
+            "time": 2.8,
+            "time_range": [
+              2.7,
+              2.9
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "脚踝",
+          "膝关节"
+        ],
+        "movement_roles": [
+          "推进力来源",
+          "缓冲结构"
+        ],
+        "subphases": [
+          {
+            "label": "上升阶段",
+            "start": 0.0,
+            "end": 1.5,
+            "detail": "从脚掌蹬地发力至身体达到的最高点，期间腿部逐渐伸直，髋部抬升。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "脚跟离地，足弓绷直"
+              },
+              {
+                "time": 0.8,
+                "observation": "大腿接近水平，小腿垂直向下"
+              },
+              {
+                "time": 1.5,
+                "observation": "骨盆高度超过篮筐底部边缘"
+              }
+            ]
+          },
+          {
+            "label": "下降阶段",
+            "start": 1.5,
+            "end": 2.967,
+            "detail": "自最高点自由下落直至双脚踏回木地板，伴随膝踝关节逐步屈曲以减震。",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "肩部高度略低于头部初始位置"
+              },
+              {
+                "time": 2.3,
+                "observation": "小腿角度由垂直转为向后倾斜"
+              },
+              {
+                "time": 2.967,
+                "observation": "全脚掌贴合地面，脚趾抓地"
+              }
+            ]
+          }
+        ],
+        "brief": "黄衣球员完成一次完整的原地纵跳，包括蹬地升起、空中悬停及缓降落地三个阶段。"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "单臂上探触球尝试",
+        "start": 0.0,
+        "end": 2.967,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          2.9,
+          2.967
+        ],
+        "detail": "黄衣球员右手始终高举过头顶，手指张开朝向排球方向移动；随着身体升降同步调整手臂高度，但未发生实际接触球体的情况。左手自然垂放于体侧不参与主要动作。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "右肘弯曲呈90度角，手掌距球底约30cm"
+          },
+          {
+            "time": 1.2,
+            "observation": "手腕外旋使掌心正对来球轨迹"
+          },
+          {
+            "time": 2.0,
+            "observation": "指尖几乎触及球面但仍有间隙"
+          },
+          {
+            "time": 2.967,
+            "observation": "手臂回落至肩高以下，恢复放松状态"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "最大延伸位",
+            "time": 2.0,
+            "time_range": [
+              1.9,
+              2.1
+            ]
+          },
+          {
+            "name": "放弃追踪",
+            "time": 2.9,
+            "time_range": [
+              2.8,
+              2.967
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "右上肢",
+          "肩胛骨",
+          "腕关节"
+        ],
+        "movement_roles": [
+          "目标导向肢体",
+          "空间定位参照"
+        ],
+        "subphases": [
+          {
+            "label": "预备瞄准",
+            "start": 0.0,
+            "end": 1.0,
+            "detail": "手臂随身体上升而同步抬高，视线锁定排球中心区域。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "肱二头肌收缩带动小臂上扬"
+              },
+              {
+                "time": 0.5,
+                "observation": "眼球跟随球体横向位移微调"
+              },
+              {
+                "time": 1.0,
+                "observation": "锁骨平面高于下巴轮廓线"
+              }
+            ]
+          },
+          {
+            "label": "极限试探",
+            "start": 1.0,
+            "end": 2.5,
+            "detail": "当球体降至最低可控范围时猛然加速挥动末端指节逼近表面。",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "中指末梢神经反射性颤动"
+              },
+              {
+                "time": 2.0,
+                "observation": "无名指指甲盖反光显示即将碰撞"
+              },
+              {
+                "time": 2.5,
+                "observation": "食指因惯性继续前行超出预期终点"
+              }
+            ]
+          },
+          {
+            "label": "撤回复位",
+            "start": 2.5,
+            "end": 2.967,
+            "detail": "确认无法有效干预后立即停止主动控制让重力主导回收路径。",
+            "evidence": [
+              {
+                "time": 2.7,
+                "observation": "三角肌松弛导致上臂自然下垂"
+              },
+              {
+                "time": 2.9,
+                "observation": "桡骨茎突不再承受张力负荷"
+              },
+              {
+                "time": 2.967,
+                "observation": "整条链路回归静息长度比例"
+              }
+            ]
+          }
+        ],
+        "brief": "黄衣球员持续用右手追逐空中飞行的排球却未能真正碰到它，最后无奈收手结束这次无效进攻企图。"
+      },
+      {
+        "id": "S01-A03",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "S01-E03",
+        "kind": "held_pose",
+        "label": "高位托球待传",
+        "start": 0.0,
+        "end": 2.967,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          2.9,
+          2.967
+        ],
+        "detail": "深蓝衣球员双脚分开与肩同宽稳稳站定，双臂完全展直将排球置于额头前方约二十公分处；十指环绕球周形成保护框架却不施加额外压力以防变形失准。面部表情专注凝视对手动向而非自身手中的物件。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "胸锁乳突肌轻微隆起提示颈部紧张度适中"
+          },
+          {
+            "time": 1.0,
+            "observation": "腹横肌激活维持核心稳定性避免晃动传递至上肢"
+          },
+          {
+            "time": 2.0,
+            "observation": "腓肠肌群交替收缩应对潜在的地面反作用波动"
+          },
+          {
+            "time": 2.967,
+            "observation": "瞳孔放大反映注意力资源分配给外部刺激源"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "标准持球形制建立",
+            "time": 0.0,
+            "time_range": [
+              0.0,
+              0.1
+            ]
+          },
+          {
+            "name": "动态平衡校验通过",
+            "time": 2.0,
+            "time_range": [
+              1.9,
+              2.1
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双侧上肢",
+          "脊柱中段",
+          "足底筋膜"
+        ],
+        "movement_roles": [
+          "承载平台",
+          "信息接收终端"
+        ],
+        "subphases": [
+          {
+            "label": "构型固化期",
+            "start": 0.0,
+            "end": 1.0,
+            "detail": "快速整合全身各环节达成最优力学配置以便后续精准释放能量储备。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "肩峰连线平行于横梁投影"
+              },
+              {
+                "time": 0.5,
+                "observation": "腰椎生理曲度暂时消失换取刚性支撑"
+              },
+              {
+                "time": 1.0,
+                "observation": "跖趾关节展开增大接地面积提升摩擦系数"
+              }
+            ]
+          },
+          {
+            "label": "稳态监控期",
+            "start": 1.0,
+            "end": 2.967,
+            "detail": "长时间维持既定模式的同时实时采集环境参数变化用于决策下一步操作时机。",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "颞叶皮层活跃度升高对应复杂情境处理需求"
+              },
+              {
+                "time": 2.0,
+                "observation": "交感神经系统适度兴奋保障应急反应速度"
+              },
+              {
+                "time": 2.967,
+                "observation": "副交感占优促使代谢产物清除效率最大化"
+              }
+            ]
+          }
+        ],
+        "brief": "深蓝衣球员像雕塑般凝固住完美传球前的最后一刻，既不给对方预判机会也不浪费任何一丝体力消耗。"
+      }
+    ],
+    "uncertainties": [
+      "黄衣球员是否曾短暂触碰到排球尚存争议——尽管多次帧序列显示极近距离但仍缺乏决定性证据支持物理接触结论",
+      "两位参与者之间的互动性质难以界定究竟是正式比赛对抗还是单纯的技术演练环节"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "黄衣球员是否曾短暂触碰到排球尚存争议——尽管多次帧序列显示极近距离但仍缺乏决定性证据支持物理接触结论",
+    "两位参与者之间的互动性质难以界定究竟是正式比赛对抗还是单纯的技术演练环节"
+  ]
+}

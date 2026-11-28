@@ -1,0 +1,430 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>通用视觉标注管道迭代评测</title><style>body{max-width:1200px;margin:2rem auto;padding:0 16px;color:#193b3c;font:16px/1.6 "Microsoft YaHei",sans-serif}a{color:#086961}table{border-collapse:collapse;width:100%;margin:8px 0 20px}th,td{padding:7px 9px;text-align:left;border-bottom:1px solid #cad7d4}th{background:#edf4f2}details{padding:.35rem 0}summary{cursor:pointer}small{color:#536969}.pred{margin:6px 0 14px}.wrap{overflow-x:auto}</style><h1>通用视觉标注管道迭代评测</h1>
+<p>固定为同一批 5 条视频、47 道官方题。每个版本统一作用于全部视频，各题使用同一版官方 MotionAtlas 裁判指令与 GPT-6 Luna。开发目标为至少 33/47。下列结果按题汇总；这 5 条视频参与了迭代。</p>
+<div class="wrap"><table><tr><th>版本</th><th>正确</th><th>信息缺失</th><th>答错</th><th>准确率</th><th>加权分</th><th>完整指标</th></tr>
+<tr><td>v1　原动作标注</td><td>18/47</td><td>16</td><td>13</td><td>38.3%</td><td>0.245</td><td><a href="gpt6_luna_caption_judge/metrics.json">JSON</a></td></tr>
+<tr><td>v2　逐主体、逐阶段描述</td><td>18/47</td><td>16</td><td>13</td><td>38.3%</td><td>0.245</td><td><a href="iterations/v2/luna/metrics.json">JSON</a></td></tr>
+<tr><td>v3　全景与局部三项复核</td><td>29/47</td><td>8</td><td>10</td><td>61.7%</td><td>0.511</td><td><a href="iterations/v3/luna/metrics.json">JSON</a></td></tr>
+<tr><td>v4　短时间窗与全片证据复核</td><td>25/47</td><td>8</td><td>14</td><td>53.2%</td><td>0.383</td><td><a href="iterations/v4/luna/metrics.json">JSON</a></td></tr>
+<tr><td>v5　保留分部位与短窗证据</td><td>32/47</td><td>4</td><td>11</td><td>68.1%</td><td>0.564</td><td><a href="iterations/v5/luna/metrics.json">JSON</a></td></tr>
+<tr><td>v6　静音视频与抽帧共同复核</td><td>33/47</td><td>3</td><td>11</td><td>70.2%</td><td>0.585</td><td><a href="iterations/v6/luna/metrics.json">JSON</a></td></tr>
+</table></div><p>加权分 =（答对数 − 0.5 × 答错数）/ 47。信息缺失按官方代码判定。以下“输入”可查看完整 caption，每道题可展开核对各版本原始请求和答复。</p>
+<p>最终版用 Qwen 3.8 Omni Flash 对每个镜头中的每位主体应用同一组规则。区域放大用于身体与接触，重叠短窗用于过程变化，带 fps=10 参数的静音原片用于连续运动复核。最终裁判看到的是中文抽帧记录和英文连续视频补充。官方评测题、选项、GT 和先前答题结果均未作为标注模型的输入。此结果衡量同一开发集上的视觉事实覆盖。</p>
+<p><a href="iterations/v6/%E8%AF%95%E6%A0%87%E6%80%BB%E8%A7%88.html">打开五个视频及最终标注</a>　<a href="../cross_domain_pilot_20261126/unified_prompts/native_motion_v6.txt">静音原片复核 prompt</a>　<a href="../cross_domain_pilot_20261126/refine_visual.py">通用管道入口</a></p>
+<h2>阳台人物与楼下人群</h2><p>
+v1　2/7（<a href="gpt6_luna_caption_judge/captions/ma12.txt">输入</a>）　
+v2　3/7（<a href="iterations/v2/luna/captions/ma12.txt">输入</a>）　
+v3　5/7（<a href="iterations/v3/luna/captions/ma12.txt">输入</a>）　
+v4　4/7（<a href="iterations/v4/luna/captions/ma12.txt">输入</a>）　
+v5　4/7（<a href="iterations/v5/luna/captions/ma12.txt">输入</a>）　
+v6　5/7（<a href="iterations/v6/luna/captions/ma12.txt">输入</a>）　
+</p>
+<details><summary>How is the man oriented at the start of the video?　<small>答对 → 答对</small></summary><p>官方答案　<b>D. Facing outward on the balcony</b></p>
+<p class="pred">v1　答对　D. Facing outward on the balcony　<a href="gpt6_luna_caption_judge/answers/sample_98_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　D. Facing outward on the balcony　<a href="iterations/v2/luna/answers/sample_98_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　D. Facing outward on the balcony　<a href="iterations/v3/luna/answers/sample_98_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　D. Facing outward on the balcony　<a href="iterations/v4/luna/answers/sample_98_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　D. Facing outward on the balcony　<a href="iterations/v5/luna/answers/sample_98_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　D. Facing outward on the balcony　<a href="iterations/v6/luna/answers/sample_98_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How is the speed of the camera zoom described during the initial transition?　<small>答错 → 答对</small></summary><p>官方答案　<b>D. Rapid and aggressive</b></p>
+<p class="pred">v1　答错　B. Slow and gradual　<a href="gpt6_luna_caption_judge/answers/sample_98_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　D. Rapid and aggressive　<a href="iterations/v2/luna/answers/sample_98_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　D. Rapid and aggressive　<a href="iterations/v3/luna/answers/sample_98_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　D. Rapid and aggressive　<a href="iterations/v4/luna/answers/sample_98_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　D. Rapid and aggressive　<a href="iterations/v5/luna/answers/sample_98_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　D. Rapid and aggressive　<a href="iterations/v6/luna/answers/sample_98_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How does the man&#x27;s right hand move during the process of the camera zooming until it stabilizes?　<small>答错 → 答对</small></summary><p>官方答案　<b>A. Lifts from railing to chest height</b></p>
+<p class="pred">v1　答错　D. The hand trajectory is described, but the value differs from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_98_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　A. Lifts from railing to chest height　<a href="iterations/v2/luna/answers/sample_98_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　A. Lifts from railing to chest height　<a href="iterations/v3/luna/answers/sample_98_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　D. The hand trajectory is described, but the value differs from all listed options.　<a href="iterations/v4/luna/answers/sample_98_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　D. The hand trajectory is described, but the value differs from all listed options.　<a href="iterations/v5/luna/answers/sample_98_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　A. Lifts from railing to chest height　<a href="iterations/v6/luna/answers/sample_98_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How does the man&#x27;s mouth move during the pointing motion?　<small>信息缺失 → 答对</small></summary><p>官方答案　<b>G. The mouth opens and closes while speaking.</b></p>
+<p class="pred">v1　信息缺失　C. The description does not mention the movement pattern of the man&#x27;s mouth.　<a href="gpt6_luna_caption_judge/answers/sample_98_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　C. The description does not mention the movement pattern of the man&#x27;s mouth.　<a href="iterations/v2/luna/answers/sample_98_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　G. The mouth opens and closes while speaking.　<a href="iterations/v3/luna/answers/sample_98_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　G. The mouth opens and closes while speaking.　<a href="iterations/v4/luna/answers/sample_98_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　G. The mouth opens and closes while speaking.　<a href="iterations/v5/luna/answers/sample_98_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　G. The mouth opens and closes while speaking.　<a href="iterations/v6/luna/answers/sample_98_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How is the man&#x27;s head oriented while he is speaking and pointing?　<small>信息缺失 → 答错</small></summary><p>官方答案　<b>C. Remains oriented forward and slightly downward</b></p>
+<p class="pred">v1　信息缺失　E. The man is mentioned, but the description says his head orientation is unclear or not visible.　<a href="gpt6_luna_caption_judge/answers/sample_98_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　F. Remains oriented forward and slightly upward　<a href="iterations/v2/luna/answers/sample_98_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　F. Remains oriented forward and slightly upward　<a href="iterations/v3/luna/answers/sample_98_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　F. Remains oriented forward and slightly upward　<a href="iterations/v4/luna/answers/sample_98_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　F. Remains oriented forward and slightly upward　<a href="iterations/v5/luna/answers/sample_98_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　F. Remains oriented forward and slightly upward　<a href="iterations/v6/luna/answers/sample_98_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How does the man&#x27;s right hand move after he finishes pointing outwards?　<small>答对 → 答对</small></summary><p>官方答案　<b>B. Lowers back down toward the balcony railing</b></p>
+<p class="pred">v1　答对　B. Lowers back down toward the balcony railing　<a href="gpt6_luna_caption_judge/answers/sample_98_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　C. The retraction trajectory is described, but the value differs from all listed options.　<a href="iterations/v2/luna/answers/sample_98_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　B. Lowers back down toward the balcony railing　<a href="iterations/v3/luna/answers/sample_98_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　B. Lowers back down toward the balcony railing　<a href="iterations/v4/luna/answers/sample_98_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　B. Lowers back down toward the balcony railing　<a href="iterations/v5/luna/answers/sample_98_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　B. Lowers back down toward the balcony railing　<a href="iterations/v6/luna/answers/sample_98_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What posture does the man adopt as the sequence ends?　<small>答错 → 答错</small></summary><p>官方答案　<b>B. Both hands rest on the balcony and point downwards.</b></p>
+<p class="pred">v1　答错　G. The man&#x27;s ending posture is described, but the value differs from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_98_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　G. The man&#x27;s ending posture is described, but the value differs from all listed options.　<a href="iterations/v2/luna/answers/sample_98_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　G. The man&#x27;s ending posture is described, but the value differs from all listed options.　<a href="iterations/v3/luna/answers/sample_98_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　G. The man&#x27;s ending posture is described, but the value differs from all listed options.　<a href="iterations/v4/luna/answers/sample_98_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　G. The man&#x27;s ending posture is described, but the value differs from all listed options.　<a href="iterations/v5/luna/answers/sample_98_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　G. The man&#x27;s ending posture is described, but the value differs from all listed options.　<a href="iterations/v6/luna/answers/sample_98_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+</details>
+<h2>第一人称游戏中的攀爬与视角变化</h2><p>
+v1　5/12（<a href="gpt6_luna_caption_judge/captions/ma36.txt">输入</a>）　
+v2　1/12（<a href="iterations/v2/luna/captions/ma36.txt">输入</a>）　
+v3　4/12（<a href="iterations/v3/luna/captions/ma36.txt">输入</a>）　
+v4　4/12（<a href="iterations/v4/luna/captions/ma36.txt">输入</a>）　
+v5　6/12（<a href="iterations/v5/luna/captions/ma36.txt">输入</a>）　
+v6　7/12（<a href="iterations/v6/luna/captions/ma36.txt">输入</a>）　
+</p>
+<details><summary>How is the velocity profile of the first-person view of gloved hands described at the start of the sequence?　<small>答对 → 答对</small></summary><p>官方答案　<b>D. Steady vertical ascent</b></p>
+<p class="pred">v1　答对　D. Steady vertical ascent　<a href="gpt6_luna_caption_judge/answers/sample_108_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　A. The first-person view of gloved hands is mentioned, but the description says the velocity profile is unclear or not visible.　<a href="iterations/v2/luna/answers/sample_108_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　信息缺失　H. The description does not mention the first-person view of gloved hands&#x27;s velocity profile at the start of the sequence.　<a href="iterations/v3/luna/answers/sample_108_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　D. Steady vertical ascent　<a href="iterations/v4/luna/answers/sample_108_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　D. Steady vertical ascent　<a href="iterations/v5/luna/answers/sample_108_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　D. Steady vertical ascent　<a href="iterations/v6/luna/answers/sample_108_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>From which direction does the gloved right hand originate during the initial climb?　<small>信息缺失 → 答对</small></summary><p>官方答案　<b>E. From lower right quadrant upward</b></p>
+<p class="pred">v1　信息缺失　B. The description does not mention the gloved right hand&#x27;s origin trajectory during the initial climb.　<a href="gpt6_luna_caption_judge/answers/sample_108_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　B. The description does not mention the gloved right hand&#x27;s origin trajectory during the initial climb.　<a href="iterations/v2/luna/answers/sample_108_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　信息缺失　B. The description does not mention the gloved right hand&#x27;s origin trajectory during the initial climb.　<a href="iterations/v3/luna/answers/sample_108_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　信息缺失　B. The description does not mention the gloved right hand&#x27;s origin trajectory during the initial climb.　<a href="iterations/v4/luna/answers/sample_108_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　信息缺失　C. The gloved right hand is mentioned, but the description says the origin trajectory is unclear or not visible.　<a href="iterations/v5/luna/answers/sample_108_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　E. From lower right quadrant upward　<a href="iterations/v6/luna/answers/sample_108_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What is the configuration of the fingers on the gloved right hand upon contacting the rung?　<small>信息缺失 → 答错</small></summary><p>官方答案　<b>A. Grasping the horizontal bar</b></p>
+<p class="pred">v1　信息缺失　D. The gloved right hand is mentioned, but the description says the finger configuration is unclear or not visible.　<a href="gpt6_luna_caption_judge/answers/sample_108_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　F. The description does not mention the gloved right hand&#x27;s finger configuration upon contacting the rung.　<a href="iterations/v2/luna/answers/sample_108_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　A. Grasping the horizontal bar　<a href="iterations/v3/luna/answers/sample_108_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　B. Gripping the vertical support rail　<a href="iterations/v4/luna/answers/sample_108_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　B. Gripping the vertical support rail　<a href="iterations/v5/luna/answers/sample_108_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　B. Gripping the vertical support rail　<a href="iterations/v6/luna/answers/sample_108_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What movement does the gloved right hand execute following the left hand grasp?　<small>答对 → 答对</small></summary><p>官方答案　<b>F. Second extension to higher bar</b></p>
+<p class="pred">v1　答对　F. Second extension to higher bar　<a href="gpt6_luna_caption_judge/answers/sample_108_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　D. The description does not mention the gloved right hand&#x27;s repetition following the left hand grasp.　<a href="iterations/v2/luna/answers/sample_108_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　F. Second extension to higher bar　<a href="iterations/v3/luna/answers/sample_108_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　F. Second extension to higher bar　<a href="iterations/v4/luna/answers/sample_108_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　F. Second extension to higher bar　<a href="iterations/v5/luna/answers/sample_108_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　F. Second extension to higher bar　<a href="iterations/v6/luna/answers/sample_108_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What happens to the speed of the vertical movement as the ascent concludes?　<small>信息缺失 → 信息缺失</small></summary><p>官方答案　<b>B. Vertical movement slows</b></p>
+<p class="pred">v1　信息缺失　E. The description does not mention the first-person view of gloved hands&#x27;s speed change as the ascent concludes.　<a href="gpt6_luna_caption_judge/answers/sample_108_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　E. The description does not mention the first-person view of gloved hands&#x27;s speed change as the ascent concludes.　<a href="iterations/v2/luna/answers/sample_108_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　信息缺失　A. The first-person view of gloved hands is mentioned, but the description says the speed change is unclear or not visible.　<a href="iterations/v3/luna/answers/sample_108_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　信息缺失　A. The first-person view of gloved hands is mentioned, but the description says the speed change is unclear or not visible.　<a href="iterations/v4/luna/answers/sample_108_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　信息缺失　A. The first-person view of gloved hands is mentioned, but the description says the speed change is unclear or not visible.　<a href="iterations/v5/luna/answers/sample_108_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　信息缺失　A. The first-person view of gloved hands is mentioned, but the description says the speed change is unclear or not visible.　<a href="iterations/v6/luna/answers/sample_108_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What visual mode or color hue characterizes the camera view at the start of the sequence?　<small>信息缺失 → 答对</small></summary><p>官方答案　<b>B. Green monochromatic hue (Night Vision)</b></p>
+<p class="pred">v1　信息缺失　C. The description does not mention the camera view&#x27;s visual mode at the start of the sequence.　<a href="gpt6_luna_caption_judge/answers/sample_108_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　B. Green monochromatic hue (Night Vision)　<a href="iterations/v2/luna/answers/sample_108_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　信息缺失　D. The camera view is mentioned, but the description says the visual mode is unclear or not visible.　<a href="iterations/v3/luna/answers/sample_108_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　B. Green monochromatic hue (Night Vision)　<a href="iterations/v4/luna/answers/sample_108_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　B. Green monochromatic hue (Night Vision)　<a href="iterations/v5/luna/answers/sample_108_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　B. Green monochromatic hue (Night Vision)　<a href="iterations/v6/luna/answers/sample_108_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>From which specific location in the frame does the rifle barrel originate as it swings upward following the initial view?　<small>答对 → 答错</small></summary><p>官方答案　<b>B. Bottom-center of the frame</b></p>
+<p class="pred">v1　答对　B. Bottom-center of the frame　<a href="gpt6_luna_caption_judge/answers/sample_108_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　C. Bottom-right quadrant of the frame　<a href="iterations/v2/luna/answers/sample_108_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　C. Bottom-right quadrant of the frame　<a href="iterations/v3/luna/answers/sample_108_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　C. Bottom-right quadrant of the frame　<a href="iterations/v4/luna/answers/sample_108_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　C. Bottom-right quadrant of the frame　<a href="iterations/v5/luna/answers/sample_108_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　C. Bottom-right quadrant of the frame　<a href="iterations/v6/luna/answers/sample_108_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>Describe the finger posture of the left gloved hand as the rifle appears in the view.　<small>信息缺失 → 信息缺失</small></summary><p>官方答案　<b>C. Curled tightly around the handguard</b></p>
+<p class="pred">v1　信息缺失　E. The description does not mention the finger posture of the left gloved hand as the rifle appears.　<a href="gpt6_luna_caption_judge/answers/sample_108_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　E. The description does not mention the finger posture of the left gloved hand as the rifle appears.　<a href="iterations/v2/luna/answers/sample_108_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　信息缺失　F. The left gloved hand is mentioned, but the description says the finger posture is unclear or not visible.　<a href="iterations/v3/luna/answers/sample_108_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　信息缺失　E. The description does not mention the finger posture of the left gloved hand as the rifle appears.　<a href="iterations/v4/luna/answers/sample_108_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　信息缺失　F. The left gloved hand is mentioned, but the description says the finger posture is unclear or not visible.　<a href="iterations/v5/luna/answers/sample_108_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　信息缺失　F. The left gloved hand is mentioned, but the description says the finger posture is unclear or not visible.　<a href="iterations/v6/luna/answers/sample_108_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>In which part of the screen does the rifle settle after completing the vertical arc?　<small>答错 → 答对</small></summary><p>官方答案　<b>E. Lower-right quadrant</b></p>
+<p class="pred">v1　答错　A. Center of the screen　<a href="gpt6_luna_caption_judge/answers/sample_108_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　A. Center of the screen　<a href="iterations/v2/luna/answers/sample_108_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　A. Center of the screen　<a href="iterations/v3/luna/answers/sample_108_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　A. Center of the screen　<a href="iterations/v4/luna/answers/sample_108_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　E. Lower-right quadrant　<a href="iterations/v5/luna/answers/sample_108_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　E. Lower-right quadrant　<a href="iterations/v6/luna/answers/sample_108_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What is the visibility state of the holographic sight when the rifle settles into the leveled position?　<small>答对 → 答对</small></summary><p>官方答案　<b>D. Clearly visible</b></p>
+<p class="pred">v1　答对　D. Clearly visible　<a href="gpt6_luna_caption_judge/answers/sample_108_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　E. The description does not mention the holographic sight&#x27;s visibility when the rifle settles.　<a href="iterations/v2/luna/answers/sample_108_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　D. Clearly visible　<a href="iterations/v3/luna/answers/sample_108_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　信息缺失　E. The description does not mention the holographic sight&#x27;s visibility when the rifle settles.　<a href="iterations/v4/luna/answers/sample_108_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　D. Clearly visible　<a href="iterations/v5/luna/answers/sample_108_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　D. Clearly visible　<a href="iterations/v6/luna/answers/sample_108_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What type of motion does the camera view execute after the weapon&#x27;s stance is established?　<small>信息缺失 → 答错</small></summary><p>官方答案　<b>F. Smooth, continuous pan to the left</b></p>
+<p class="pred">v1　信息缺失　E. The description does not mention the camera view&#x27;s motion type after establishing the stance.　<a href="gpt6_luna_caption_judge/answers/sample_108_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　B. The motion type is described, but the value differs from all listed options.　<a href="iterations/v2/luna/answers/sample_108_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　信息缺失　E. The description does not mention the camera view&#x27;s motion type after establishing the stance.　<a href="iterations/v3/luna/answers/sample_108_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　B. The motion type is described, but the value differs from all listed options.　<a href="iterations/v4/luna/answers/sample_108_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　信息缺失　E. The description does not mention the camera view&#x27;s motion type after establishing the stance.　<a href="iterations/v5/luna/answers/sample_108_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　B. The motion type is described, but the value differs from all listed options.　<a href="iterations/v6/luna/answers/sample_108_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>At which contact point is the left gloved hand located throughout the scanning motion?　<small>答对 → 答对</small></summary><p>官方答案　<b>F. Planted firmly on the foreend</b></p>
+<p class="pred">v1　答对　F. Planted firmly on the foreend　<a href="gpt6_luna_caption_judge/answers/sample_108_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　D. The description does not mention the contact point of the left gloved hand throughout the scanning motion.　<a href="iterations/v2/luna/answers/sample_108_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　F. Planted firmly on the foreend　<a href="iterations/v3/luna/answers/sample_108_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　F. Planted firmly on the foreend　<a href="iterations/v4/luna/answers/sample_108_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　F. Planted firmly on the foreend　<a href="iterations/v5/luna/answers/sample_108_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　F. Planted firmly on the foreend　<a href="iterations/v6/luna/answers/sample_108_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+</details>
+<h2>双人排球练习</h2><p>
+v1　3/10（<a href="gpt6_luna_caption_judge/captions/ma02.txt">输入</a>）　
+v2　3/10（<a href="iterations/v2/luna/captions/ma02.txt">输入</a>）　
+v3　6/10（<a href="iterations/v3/luna/captions/ma02.txt">输入</a>）　
+v4　6/10（<a href="iterations/v4/luna/captions/ma02.txt">输入</a>）　
+v5　8/10（<a href="iterations/v5/luna/captions/ma02.txt">输入</a>）　
+v6　8/10（<a href="iterations/v6/luna/captions/ma02.txt">输入</a>）　
+</p>
+<details><summary>How is the body of the man in the yellow and blue jersey oriented during his vertical jump?　<small>信息缺失 → 答对</small></summary><p>官方答案　<b>B. Profiled toward the right side of the frame</b></p>
+<p class="pred">v1　信息缺失　A. The description does not mention the man&#x27;s body orientation during the vertical jump.　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　B. Profiled toward the right side of the frame　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　B. Profiled toward the right side of the frame　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　B. Profiled toward the right side of the frame　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　B. Profiled toward the right side of the frame　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　B. Profiled toward the right side of the frame　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>Where is the man in the yellow and blue jersey positioned relative to the court features while ascending for the jump?　<small>信息缺失 → 答对</small></summary><p>官方答案　<b>H. Near the net</b></p>
+<p class="pred">v1　信息缺失　F. The description does not mention the specific position of the man relative to the net during the ascent.　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　F. The description does not mention the specific position of the man relative to the net during the ascent.　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　H. Near the net　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　H. Near the net　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　H. Near the net　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　H. Near the net　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How is the man&#x27;s torso positioned as he rises during the jump?　<small>答对 → 答对</small></summary><p>官方答案　<b>E. Arches backward significantly into a taut bow shape</b></p>
+<p class="pred">v1　答对　E. Arches backward significantly into a taut bow shape　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　F. Remains completely straight and vertical　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　E. Arches backward significantly into a taut bow shape　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　F. Remains completely straight and vertical　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　E. Arches backward significantly into a taut bow shape　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　E. Arches backward significantly into a taut bow shape　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How are the man&#x27;s lower legs positioned as he rises during the vertical jump?　<small>信息缺失 → 答对</small></summary><p>官方答案　<b>B. Fold back behind him</b></p>
+<p class="pred">v1　信息缺失　D. The description does not mention the man&#x27;s lower legs as he rises.　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　G. The position of the lower legs is described, but the specific configuration differs from all listed options.　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　G. The position of the lower legs is described, but the specific configuration differs from all listed options.　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　G. The position of the lower legs is described, but the specific configuration differs from all listed options.　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　G. The position of the lower legs is described, but the specific configuration differs from all listed options.　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　B. Fold back behind him　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How is the man&#x27;s non-hitting left arm positioned as he rises?　<small>答对 → 答错</small></summary><p>官方答案　<b>B. High and forward, pointing toward the ceiling</b></p>
+<p class="pred">v1　答对　B. High and forward, pointing toward the ceiling　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　C. The description does not mention the position of the man&#x27;s left arm while he is rising.　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　B. High and forward, pointing toward the ceiling　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　B. High and forward, pointing toward the ceiling　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　B. High and forward, pointing toward the ceiling　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　G. Extends horizontally to the side for balance　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How is the man&#x27;s right elbow positioned while his right arm draws back during the rising phase of the jump?　<small>答错 → 答对</small></summary><p>官方答案　<b>H. Elevated while arm is behind head</b></p>
+<p class="pred">v1　答错　F. The elbow position is described, but the value differs from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　G. The description does not mention the position of the man&#x27;s right elbow while rising.　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　信息缺失　G. The description does not mention the position of the man&#x27;s right elbow while rising.　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　信息缺失　G. The description does not mention the position of the man&#x27;s right elbow while rising.　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　H. Elevated while arm is behind head　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　H. Elevated while arm is behind head　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How does the man&#x27;s core move as he reaches the apex of his trajectory to execute the spike?　<small>答错 → 答错</small></summary><p>官方答案　<b>D. Snaps forward, breaking the backward arch</b></p>
+<p class="pred">v1　答错　C. Arches backward significantly, maintaining the taut bow shape　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　H. The description does not mention the man&#x27;s core motion dynamics during the spiking action.　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　C. Arches backward significantly, maintaining the taut bow shape　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　D. Snaps forward, breaking the backward arch　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　C. Arches backward significantly, maintaining the taut bow shape　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　C. Arches backward significantly, maintaining the taut bow shape　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What trajectory does the man&#x27;s right arm follow as it swings during the spiking action?　<small>答对 → 答对</small></summary><p>官方答案　<b>H. Explosive overhead distinct arc</b></p>
+<p class="pred">v1　答对　H. Explosive overhead distinct arc　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　H. Explosive overhead distinct arc　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　H. Explosive overhead distinct arc　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　H. Explosive overhead distinct arc　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　H. Explosive overhead distinct arc　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　H. Explosive overhead distinct arc　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>Where does the man&#x27;s hand make contact with the ball at the point of maximum extension?　<small>信息缺失 → 答对</small></summary><p>官方答案　<b>G. High above the net tape</b></p>
+<p class="pred">v1　信息缺失　B. The description does not mention the location of the man&#x27;s hand contact relative to the net.　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　B. The description does not mention the location of the man&#x27;s hand contact relative to the net.　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　信息缺失　B. The description does not mention the location of the man&#x27;s hand contact relative to the net.　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　信息缺失　B. The description does not mention the location of the man&#x27;s hand contact relative to the net.　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　G. High above the net tape　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　G. High above the net tape　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_009.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>Following the impact with the ball, what path does the man&#x27;s hitting arm take?　<small>答错 → 答对</small></summary><p>官方答案　<b>A. Continues downward across the torso</b></p>
+<p class="pred">v1　答错　D. The follow-through path is described, but the specific trajectory differs from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_59_event_1_mcq_010.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　A. Continues downward across the torso　<a href="iterations/v2/luna/answers/sample_59_event_1_mcq_010.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　A. Continues downward across the torso　<a href="iterations/v3/luna/answers/sample_59_event_1_mcq_010.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　A. Continues downward across the torso　<a href="iterations/v4/luna/answers/sample_59_event_1_mcq_010.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　A. Continues downward across the torso　<a href="iterations/v5/luna/answers/sample_59_event_1_mcq_010.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　A. Continues downward across the torso　<a href="iterations/v6/luna/answers/sample_59_event_1_mcq_010.json">实际 prompt 与答复</a></p>
+</details>
+<h2>单人在厨房备菜</h2><p>
+v1　0/1（<a href="gpt6_luna_caption_judge/captions/ma25.txt">输入</a>）　
+v2　1/1（<a href="iterations/v2/luna/captions/ma25.txt">输入</a>）　
+v3　1/1（<a href="iterations/v3/luna/captions/ma25.txt">输入</a>）　
+v4　1/1（<a href="iterations/v4/luna/captions/ma25.txt">输入</a>）　
+v5　1/1（<a href="iterations/v5/luna/captions/ma25.txt">输入</a>）　
+v6　1/1（<a href="iterations/v6/luna/captions/ma25.txt">输入</a>）　
+</p>
+<details><summary>What is the state of the surface coverage of the ingredients through the repetitive lifting and turning action?　<small>信息缺失 → 答对</small></summary><p>官方答案　<b>F. Dressing coats the leaves</b></p>
+<p class="pred">v1　信息缺失　B. The description does not mention the ingredients&#x27; surface coverage through the repetitive action.　<a href="gpt6_luna_caption_judge/answers/sample_93_event_4_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　F. Dressing coats the leaves　<a href="iterations/v2/luna/answers/sample_93_event_4_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　F. Dressing coats the leaves　<a href="iterations/v3/luna/answers/sample_93_event_4_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　F. Dressing coats the leaves　<a href="iterations/v4/luna/answers/sample_93_event_4_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　F. Dressing coats the leaves　<a href="iterations/v5/luna/answers/sample_93_event_4_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　F. Dressing coats the leaves　<a href="iterations/v6/luna/answers/sample_93_event_4_mcq_001.json">实际 prompt 与答复</a></p>
+</details>
+<h2>两位主角与气球</h2><p>
+v1　8/17（<a href="gpt6_luna_caption_judge/captions/ma31.txt">输入</a>）　
+v2　10/17（<a href="iterations/v2/luna/captions/ma31.txt">输入</a>）　
+v3　13/17（<a href="iterations/v3/luna/captions/ma31.txt">输入</a>）　
+v4　10/17（<a href="iterations/v4/luna/captions/ma31.txt">输入</a>）　
+v5　13/17（<a href="iterations/v5/luna/captions/ma31.txt">输入</a>）　
+v6　12/17（<a href="iterations/v6/luna/captions/ma31.txt">输入</a>）　
+</p>
+<details><summary>How is the man&#x27;s posture described throughout the initial phase?　<small>答对 → 答错</small></summary><p>官方答案　<b>B. Steady, upright.</b></p>
+<p class="pred">v1　答对　B. Steady, upright.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　D. Steady, upright, slightly towards to the woman　<a href="iterations/v2/luna/answers/sample_30_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　B. Steady, upright.　<a href="iterations/v3/luna/answers/sample_30_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　D. Steady, upright, slightly towards to the woman　<a href="iterations/v4/luna/answers/sample_30_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　D. Steady, upright, slightly towards to the woman　<a href="iterations/v5/luna/answers/sample_30_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　D. Steady, upright, slightly towards to the woman　<a href="iterations/v6/luna/answers/sample_30_event_1_mcq_001.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>Where is the man&#x27;s right hand positioned while holding the balloon?　<small>答错 → 答对</small></summary><p>官方答案　<b>A. Rests visibly on the woman&#x27;s waist</b></p>
+<p class="pred">v1　答错　F. The position of the man&#x27;s right hand is described, but the location differs from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　F. The position of the man&#x27;s right hand is described, but the location differs from all listed options.　<a href="iterations/v2/luna/answers/sample_30_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　A. Rests visibly on the woman&#x27;s waist　<a href="iterations/v3/luna/answers/sample_30_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　F. The position of the man&#x27;s right hand is described, but the location differs from all listed options.　<a href="iterations/v4/luna/answers/sample_30_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　A. Rests visibly on the woman&#x27;s waist　<a href="iterations/v5/luna/answers/sample_30_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　A. Rests visibly on the woman&#x27;s waist　<a href="iterations/v6/luna/answers/sample_30_event_1_mcq_002.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How is the man&#x27;s head orientation and gaze described during the holding phase?　<small>答错 → 答对</small></summary><p>官方答案　<b>B. Tilted downward with gaze fixed on balloon top</b></p>
+<p class="pred">v1　答错　E. The man&#x27;s orientation and gaze are described, but the details differ from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　B. Tilted downward with gaze fixed on balloon top　<a href="iterations/v2/luna/answers/sample_30_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　E. The man&#x27;s orientation and gaze are described, but the details differ from all listed options.　<a href="iterations/v3/luna/answers/sample_30_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　B. Tilted downward with gaze fixed on balloon top　<a href="iterations/v4/luna/answers/sample_30_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　E. The man&#x27;s orientation and gaze are described, but the details differ from all listed options.　<a href="iterations/v5/luna/answers/sample_30_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　B. Tilted downward with gaze fixed on balloon top　<a href="iterations/v6/luna/answers/sample_30_event_1_mcq_003.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How does the man maintain his physical state as the woman&#x27;s hand moves in to make contact with the balloon?　<small>答对 → 答对</small></summary><p>官方答案　<b>G. Holds object motionless, no change in foot placement or arm extension</b></p>
+<p class="pred">v1　答对　G. Holds object motionless, no change in foot placement or arm extension　<a href="gpt6_luna_caption_judge/answers/sample_30_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　G. Holds object motionless, no change in foot placement or arm extension　<a href="iterations/v2/luna/answers/sample_30_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　G. Holds object motionless, no change in foot placement or arm extension　<a href="iterations/v3/luna/answers/sample_30_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　G. Holds object motionless, no change in foot placement or arm extension　<a href="iterations/v4/luna/answers/sample_30_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　G. Holds object motionless, no change in foot placement or arm extension　<a href="iterations/v5/luna/answers/sample_30_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　G. Holds object motionless, no change in foot placement or arm extension　<a href="iterations/v6/luna/answers/sample_30_event_1_mcq_004.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What happens to the object held by the man suddenly during the interaction?　<small>答对 → 答对</small></summary><p>官方答案　<b>A. Balloon ruptures completely into yellow confetti</b></p>
+<p class="pred">v1　答对　A. Balloon ruptures completely into yellow confetti　<a href="gpt6_luna_caption_judge/answers/sample_30_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　A. Balloon ruptures completely into yellow confetti　<a href="iterations/v2/luna/answers/sample_30_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　A. Balloon ruptures completely into yellow confetti　<a href="iterations/v3/luna/answers/sample_30_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　A. Balloon ruptures completely into yellow confetti　<a href="iterations/v4/luna/answers/sample_30_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　A. Balloon ruptures completely into yellow confetti　<a href="iterations/v5/luna/answers/sample_30_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　A. Balloon ruptures completely into yellow confetti　<a href="iterations/v6/luna/answers/sample_30_event_1_mcq_005.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How does the yellow confetti move relative to the man coinciding with the rupture of the balloon?　<small>答对 → 答对</small></summary><p>官方答案　<b>D. Explodes outward from his grip</b></p>
+<p class="pred">v1　答对　D. Explodes outward from his grip　<a href="gpt6_luna_caption_judge/answers/sample_30_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　H. The confetti is mentioned coinciding with the rupture, but the description says the particle trajectory is unclear or not visible.　<a href="iterations/v2/luna/answers/sample_30_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　D. Explodes outward from his grip　<a href="iterations/v3/luna/answers/sample_30_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　D. Explodes outward from his grip　<a href="iterations/v4/luna/answers/sample_30_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　D. Explodes outward from his grip　<a href="iterations/v5/luna/answers/sample_30_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　D. Explodes outward from his grip　<a href="iterations/v6/luna/answers/sample_30_event_1_mcq_006.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How does the man&#x27;s posture adjust in response to the burst?　<small>答错 → 答对</small></summary><p>官方答案　<b>F. Shifts slightly</b></p>
+<p class="pred">v1　答错　C. The man&#x27;s posture adjustment is described, but the change differs from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　F. Shifts slightly　<a href="iterations/v2/luna/answers/sample_30_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　F. Shifts slightly　<a href="iterations/v3/luna/answers/sample_30_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　F. Shifts slightly　<a href="iterations/v4/luna/answers/sample_30_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　F. Shifts slightly　<a href="iterations/v5/luna/answers/sample_30_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　F. Shifts slightly　<a href="iterations/v6/luna/answers/sample_30_event_1_mcq_007.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>Where is the man&#x27;s left hand positioned immediately after the balloon bursts?　<small>答错 → 答错</small></summary><p>官方答案　<b>E. Remains suspended near waist in empty space</b></p>
+<p class="pred">v1　答错　H. The hand position is described, but the value differs from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　E. Remains suspended near waist in empty space　<a href="iterations/v2/luna/answers/sample_30_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　H. The hand position is described, but the value differs from all listed options.　<a href="iterations/v3/luna/answers/sample_30_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　H. The hand position is described, but the value differs from all listed options.　<a href="iterations/v4/luna/answers/sample_30_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　H. The hand position is described, but the value differs from all listed options.　<a href="iterations/v5/luna/answers/sample_30_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　H. The hand position is described, but the value differs from all listed options.　<a href="iterations/v6/luna/answers/sample_30_event_1_mcq_008.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What is the man&#x27;s body posture at the start of the scene?　<small>答错 → 答对</small></summary><p>官方答案　<b>G. Upright (orthostasis) in the center</b></p>
+<p class="pred">v1　答错　E. The body posture is described, but the value differs from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　E. The body posture is described, but the value differs from all listed options.　<a href="iterations/v2/luna/answers/sample_30_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　E. The body posture is described, but the value differs from all listed options.　<a href="iterations/v3/luna/answers/sample_30_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　E. The body posture is described, but the value differs from all listed options.　<a href="iterations/v4/luna/answers/sample_30_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答错　E. The body posture is described, but the value differs from all listed options.　<a href="iterations/v5/luna/answers/sample_30_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　G. Upright (orthostasis) in the center　<a href="iterations/v6/luna/answers/sample_30_event_2_mcq_001.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How is the man&#x27;s torso oriented at the start of the scene?　<small>信息缺失 → 答对</small></summary><p>官方答案　<b>G. Slightly angled toward the adjacent space</b></p>
+<p class="pred">v1　信息缺失　C. The description does not mention the man&#x27;s orientation at the start of the scene.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　G. Slightly angled toward the adjacent space　<a href="iterations/v2/luna/answers/sample_30_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　G. Slightly angled toward the adjacent space　<a href="iterations/v3/luna/answers/sample_30_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　信息缺失　C. The description does not mention the man&#x27;s orientation at the start of the scene.　<a href="iterations/v4/luna/answers/sample_30_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　G. Slightly angled toward the adjacent space　<a href="iterations/v5/luna/answers/sample_30_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　G. Slightly angled toward the adjacent space　<a href="iterations/v6/luna/answers/sample_30_event_2_mcq_002.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What is the man&#x27;s facial expression before the confetti bursts?　<small>答错 → 答错</small></summary><p>官方答案　<b>F. Fixed broad smile</b></p>
+<p class="pred">v1　答错　G. The facial expression is described, but the value differs from all listed options.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　G. The facial expression is described, but the value differs from all listed options.　<a href="iterations/v2/luna/answers/sample_30_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答错　G. The facial expression is described, but the value differs from all listed options.　<a href="iterations/v3/luna/answers/sample_30_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答错　G. The facial expression is described, but the value differs from all listed options.　<a href="iterations/v4/luna/answers/sample_30_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　F. Fixed broad smile　<a href="iterations/v5/luna/answers/sample_30_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　G. The facial expression is described, but the value differs from all listed options.　<a href="iterations/v6/luna/answers/sample_30_event_2_mcq_003.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How does the man&#x27;s attention focus change as the yellow confetti bursts into view?　<small>答对 → 答对</small></summary><p>官方答案　<b>A. Immediately locks onto the movement</b></p>
+<p class="pred">v1　答对　A. Immediately locks onto the movement　<a href="gpt6_luna_caption_judge/answers/sample_30_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　A. Immediately locks onto the movement　<a href="iterations/v2/luna/answers/sample_30_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　A. Immediately locks onto the movement　<a href="iterations/v3/luna/answers/sample_30_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　A. Immediately locks onto the movement　<a href="iterations/v4/luna/answers/sample_30_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　A. Immediately locks onto the movement　<a href="iterations/v5/luna/answers/sample_30_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　A. Immediately locks onto the movement　<a href="iterations/v6/luna/answers/sample_30_event_2_mcq_004.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>How is the man&#x27;s global stability described while the confetti drifts downward?　<small>答对 → 答对</small></summary><p>官方答案　<b>F. Remains largely static</b></p>
+<p class="pred">v1　答对　F. Remains largely static　<a href="gpt6_luna_caption_judge/answers/sample_30_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　F. Remains largely static　<a href="iterations/v2/luna/answers/sample_30_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　F. Remains largely static　<a href="iterations/v3/luna/answers/sample_30_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　F. Remains largely static　<a href="iterations/v4/luna/answers/sample_30_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　F. Remains largely static　<a href="iterations/v5/luna/answers/sample_30_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　F. Remains largely static　<a href="iterations/v6/luna/answers/sample_30_event_2_mcq_005.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What is the posture of the man&#x27;s left arm while the confetti drifts downward?　<small>答对 → 答对</small></summary><p>官方答案　<b>E. Relaxed by his side</b></p>
+<p class="pred">v1　答对　E. Relaxed by his side　<a href="gpt6_luna_caption_judge/answers/sample_30_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答错　D. The limb posture is described, but the value differs from all listed options.　<a href="iterations/v2/luna/answers/sample_30_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　E. Relaxed by his side　<a href="iterations/v3/luna/answers/sample_30_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　E. Relaxed by his side　<a href="iterations/v4/luna/answers/sample_30_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　E. Relaxed by his side　<a href="iterations/v5/luna/answers/sample_30_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　E. Relaxed by his side　<a href="iterations/v6/luna/answers/sample_30_event_2_mcq_006.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What is the camera trajectory after the burst?　<small>信息缺失 → 答错</small></summary><p>官方答案　<b>F. Move down slowly to the ground</b></p>
+<p class="pred">v1　信息缺失　B. The description does not mention the trajectory.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　F. Move down slowly to the ground　<a href="iterations/v2/luna/answers/sample_30_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　F. Move down slowly to the ground　<a href="iterations/v3/luna/answers/sample_30_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　F. Move down slowly to the ground　<a href="iterations/v4/luna/answers/sample_30_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　F. Move down slowly to the ground　<a href="iterations/v5/luna/answers/sample_30_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答错　E. Move down rapidly to the ground　<a href="iterations/v6/luna/answers/sample_30_event_2_mcq_007.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What occurs regarding the man&#x27;s weight shift during the head movement?　<small>信息缺失 → 信息缺失</small></summary><p>官方答案　<b>G. No shifting of weight, stance firmly planted</b></p>
+<p class="pred">v1　信息缺失　D. The description does not mention the man&#x27;s weight shift during the head movement.　<a href="gpt6_luna_caption_judge/answers/sample_30_event_2_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　答对　G. No shifting of weight, stance firmly planted　<a href="iterations/v2/luna/answers/sample_30_event_2_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　G. No shifting of weight, stance firmly planted　<a href="iterations/v3/luna/answers/sample_30_event_2_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　信息缺失　D. The description does not mention the man&#x27;s weight shift during the head movement.　<a href="iterations/v4/luna/answers/sample_30_event_2_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　G. No shifting of weight, stance firmly planted　<a href="iterations/v5/luna/answers/sample_30_event_2_mcq_008.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　信息缺失　D. The description does not mention the man&#x27;s weight shift during the head movement.　<a href="iterations/v6/luna/answers/sample_30_event_2_mcq_008.json">实际 prompt 与答复</a></p>
+</details>
+<details><summary>What is the trajectory of the man&#x27;s tracking gaze at the end of the sequence?　<small>答对 → 答对</small></summary><p>官方答案　<b>B. Follows yellow pieces to floor level</b></p>
+<p class="pred">v1　答对　B. Follows yellow pieces to floor level　<a href="gpt6_luna_caption_judge/answers/sample_30_event_2_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v2　信息缺失　A. The description does not mention the man&#x27;s tracking trajectory at the end of the sequence.　<a href="iterations/v2/luna/answers/sample_30_event_2_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v3　答对　B. Follows yellow pieces to floor level　<a href="iterations/v3/luna/answers/sample_30_event_2_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v4　答对　B. Follows yellow pieces to floor level　<a href="iterations/v4/luna/answers/sample_30_event_2_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v5　答对　B. Follows yellow pieces to floor level　<a href="iterations/v5/luna/answers/sample_30_event_2_mcq_009.json">实际 prompt 与答复</a></p>
+<p class="pred">v6　答对　B. Follows yellow pieces to floor level　<a href="iterations/v6/luna/answers/sample_30_event_2_mcq_009.json">实际 prompt 与答复</a></p>
+</details>
+</html>

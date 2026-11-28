@@ -1,0 +1,155 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma01",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "足球场控球",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      13
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchQA-1745c3e8-6375a415-44cc-486f-9fe3-17e36e75c4bc_0_3.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      3.0
+    ],
+    "official_sha256": "2739a35f361c7683bca6f07f4527233a992eb5437578b859b214dc2de7014576",
+    "clip_sha256": "2739a35f361c7683bca6f07f4527233a992eb5437578b859b214dc2de7014576",
+    "audio_source": null
+  },
+  "duration_seconds": 3.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 3.0,
+      "first_frame": 0,
+      "end_frame_exclusive": 90
+    }
+  ],
+  "input_frames": {
+    "visual": 31
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "画面为足球比赛场景，主要记录一名球员带球跑动的过程。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "身穿黑白球衣、白色短裤和长袜的球员"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 2.966667,
+        "description": "球员在草地上带球向前奔跑"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "带球跑动",
+        "start": 0.0,
+        "end": 2.966667,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          2.9,
+          2.966667
+        ],
+        "detail": "球员双腿交替迈步向前奔跑，右脚多次触推前方的黄紫色足球使其沿草地滚动，身体随步伐起伏并逐渐远离镜头。",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "球员右脚正接触足球，处于奔跑姿态"
+          },
+          {
+            "time": 2.0,
+            "observation": "球员右脚再次触球，足球位于其右前方地面"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "右脚首次触球推进",
+            "time": 0.5,
+            "time_range": null
+          },
+          {
+            "name": "右脚二次触球推进",
+            "time": 2.0,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "右脚"
+        ],
+        "movement_roles": [
+          "支撑移动",
+          "触球推进"
+        ],
+        "subphases": [
+          {
+            "label": "初始触球推进",
+            "start": 0.0,
+            "end": 1.0,
+            "detail": "球员右脚向前伸出触碰足球，将其推向右侧草地，同时左腿在后蹬地。",
+            "evidence": [
+              {
+                "time": 0.5,
+                "observation": "右脚与足球接触，足球开始向右移动"
+              }
+            ]
+          },
+          {
+            "label": "持续带球奔跑",
+            "start": 1.0,
+            "end": 2.966667,
+            "detail": "球员继续迈开双腿奔跑，期间右脚再次轻推足球保持控球，整体向画面深处移动。",
+            "evidence": [
+              {
+                "time": 2.0,
+                "observation": "右脚再次接触足球，球员身体较之前更远离镜头"
+              }
+            ]
+          }
+        ],
+        "brief": "球员在草地上带球向前奔跑"
+      }
+    ],
+    "uncertainties": [
+      "无法确认球员面部特征及具体身份"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "无法确认球员面部特征及具体身份"
+  ]
+}

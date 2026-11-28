@@ -1,0 +1,32 @@
+0.00–0.80 s | A0001 · speech · male speaker | Speech
+a couple of doors fitted.
+Original: couple of doors fitted.
+Included in silver reference
+
+0.00–12.00 s | A0002 · ambience · background noise | background hiss
+A continuous low-level background hiss is present throughout the segment, underlying the speech.
+Included in silver reference
+
+1.28–3.04 s | A0003 · speech · male speaker | Speech
+So once that hinge wears,
+Original: So once that hinge wears,
+Included in silver reference
+
+3.36–6.24 s | A0004 · speech · male speaker | Speech
+could be the kids leaning on the door or just general wear and tear,
+Original: could be the kids leaning on the door or just general wear and tear,
+Included in silver reference
+
+3.72–10.31 s | V0001 · gesture · person wearing a dark short-sleeved shirt and a watch on their left wrist, holding a smartphone | gesturing
+A person gestures towards the cabinet. The person raises their right hand and moves it horizontally along the top edge of the light wood-grain kitchen cabinets, then lowers it back down to hold a smartphone with both hands.
+Included in silver reference
+
+6.63–11.34 s | A0005 · speech · male speaker | Speech
+the door starts dropping as you open it and then it will catch the other doors and cause damage.
+Original: the door starts dropping as you open it and then it will catch the other doors and cause damage.
+Included in silver reference
+
+11.68–12.00 s | A0006 · speech · male speaker | Speech
+So...
+Original: So...
+Review: Short utterance lacks independent word timing

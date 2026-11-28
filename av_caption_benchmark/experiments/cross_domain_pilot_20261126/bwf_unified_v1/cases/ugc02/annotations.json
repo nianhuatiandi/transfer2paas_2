@@ -1,0 +1,450 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "ugc02",
+    "benchmark": "UGC-VideoCap",
+    "domain": "头发分缝与梳理",
+    "original_id": "PI-1e1222e2-4be2-4314-a0ba-6c44f3eb22ff",
+    "source_url": "https://drive.google.com/file/d/1HOyeT7-kbbAcyinKJ_IyaejXIBABTgbn/view",
+    "archive_member": null,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "source_duration": 53.86666666666667,
+    "source_media_sha256": "632cc29a2ee2c936cbe4f71ec47ea5eb4b241062dfc1f23b171013ebac62e9ce",
+    "clip_sha256": "f23d6c80e07445b0fe87c3ae6a61fcbff682322062ee061bcd502e1c49913975",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 12.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 12.0,
+      "first_frame": 0,
+      "end_frame_exclusive": 360
+    }
+  ],
+  "input_frames": {
+    "visual": 121,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一个连续镜头，记录了戴眼镜女子整理头发并使用梳子梳理头顶头发的过程。",
+    "actors": [
+      {
+        "id": "A1",
+        "shot_id": "S01",
+        "description": "一名戴着棕色边框眼镜、留着深色长发的女子，身穿灰色短袖T恤，双手留有长美甲且带有纹身。"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E1",
+        "actor_id": "A1",
+        "shot_id": "S01",
+        "start": 0.5,
+        "end": 12.0,
+        "description": "女子抬起双手拨弄额前和头顶的头发，随后拿起一把黑色梳子持续梳理头顶发丝。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "act_1",
+        "actor_id": "A1",
+        "shot_id": "S01",
+        "execution_id": "E1",
+        "kind": "motion",
+        "label": "拨弄头发",
+        "start": 0.5,
+        "end": 6.4,
+        "start_range": [
+          0.4,
+          0.6
+        ],
+        "end_range": [
+          6.3,
+          6.5
+        ],
+        "detail": "女子从画面下方抬起双手至额头上方，用手指反复拨动、分开并整理额前及头顶的头发。在动作后半段，她微微低头，视线向下看着自己正在整理的头发区域。",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "双手开始进入画面上方，靠近头部。"
+          },
+          {
+            "time": 1.8,
+            "observation": "手指在头顶处明显地分开和拨弄发丝。"
+          },
+          {
+            "time": 4.9,
+            "observation": "女子低下头，眼睛看向下方，双手继续在头顶操作。"
+          },
+          {
+            "time": 6.4,
+            "observation": "右手拿着黑色梳子出现在画面右侧边缘，准备开始新的动作。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "头部"
+        ],
+        "movement_roles": [
+          "施力者",
+          "受动部位"
+        ],
+        "subphases": [],
+        "brief": "女子用双手反复拨弄和整理额前及头顶的头发。"
+      },
+      {
+        "id": "act_2",
+        "actor_id": "A1",
+        "shot_id": "S01",
+        "execution_id": "E1",
+        "kind": "motion",
+        "label": "梳理头发",
+        "start": 6.4,
+        "end": 12.0,
+        "start_range": [
+          6.3,
+          6.5
+        ],
+        "end_range": [
+          11.9,
+          12.0
+        ],
+        "detail": "女子右手持一把黑色梳子，将其贴着头皮放入头顶的发缝中，并顺着发根向后/向侧边进行梳理。左手的手指停留在梳子附近的头皮上辅助固定或感受。该动作一直持续到视频结束。",
+        "evidence": [
+          {
+            "time": 6.4,
+            "observation": "右手握着黑色梳子进入画面。"
+          },
+          {
+            "time": 7.4,
+            "observation": "梳齿清晰可见，正贴着女子的头顶皮肤进行梳理。"
+          },
+          {
+            "time": 11.9,
+            "observation": "梳子仍在头顶位置，动作未停止直至片段结束。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "左手",
+          "头部"
+        ],
+        "movement_roles": [
+          "施力者",
+          "工具使用者",
+          "受动部位"
+        ],
+        "subphases": [],
+        "brief": "女子使用黑色梳子梳理头顶的头发。"
+      }
+    ],
+    "uncertainties": []
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.4,
+        "end": 5.36,
+        "start_range": [
+          0.2,
+          0.6
+        ],
+        "end_range": [
+          5.16,
+          5.56
+        ],
+        "speaker_id": "V01",
+        "description": "女声耳语，语气犹豫且带有担忧感。",
+        "evidence": [
+          {
+            "time": 0.4,
+            "observation": "开始听到清晰的耳语音节 'I'm literally gonna regret this...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "I'm literally gonna regret this so much because it's like right in my part but"
+      },
+      {
+        "id": "N001",
+        "kind": "friction",
+        "layer": "background",
+        "start": 5.72,
+        "end": 8.92,
+        "start_range": [
+          5.52,
+          5.92
+        ],
+        "end_range": [
+          8.72,
+          9.12
+        ],
+        "speaker_id": null,
+        "description": "持续的轻微刮擦和梳理声，类似梳子划过头发或塑料摩擦的声音。",
+        "evidence": [
+          {
+            "time": 6.5,
+            "observation": "在说话停顿期间可清楚听到连续的沙沙刮擦声"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 6.28,
+        "end": 8.64,
+        "start_range": [
+          6.08,
+          6.48
+        ],
+        "end_range": [
+          8.44,
+          8.84
+        ],
+        "speaker_id": "V01",
+        "description": "女声耳语，音量极低，气息声明显。",
+        "evidence": [
+          {
+            "time": 6.5,
+            "observation": "在背景刮擦声中听到微弱的耳语 'I need to see if I can get it off my head'"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": "I need to see if I can get it off my head."
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 10.84,
+        "end": 12.0,
+        "start_range": [
+          10.64,
+          11.04
+        ],
+        "end_range": [
+          11.8,
+          12.2
+        ],
+        "speaker_id": "V01",
+        "description": "女声耳语，句子未说完即被截断。",
+        "evidence": [
+          {
+            "time": 11.0,
+            "observation": "再次出现清晰的耳语音节 'This is the only comb I...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "This is the only comb I"
+      }
+    ],
+    "uncertainties": [
+      "U002 的耳语与 N001 的摩擦声重叠，导致部分音节辨识度降低。"
+    ]
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "act_1",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.5,
+          5.36
+        ],
+        "overlap_s": 4.86
+      },
+      {
+        "action_id": "act_1",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.72,
+          6.4
+        ],
+        "overlap_s": 0.68
+      },
+      {
+        "action_id": "act_1",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.28,
+          6.4
+        ],
+        "overlap_s": 0.12
+      },
+      {
+        "action_id": "act_1",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "act_2",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "act_2",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.4,
+          8.92
+        ],
+        "overlap_s": 2.52
+      },
+      {
+        "action_id": "act_2",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.4,
+          8.64
+        ],
+        "overlap_s": 2.24
+      },
+      {
+        "action_id": "act_2",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.84,
+          12.0
+        ],
+        "overlap_s": 1.16
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "act_1",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.5,
+          5.36
+        ],
+        "overlap_s": 4.86
+      },
+      {
+        "action_id": "act_1",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.28,
+          6.4
+        ],
+        "overlap_s": 0.12
+      },
+      {
+        "action_id": "act_2",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.4,
+          8.64
+        ],
+        "overlap_s": 2.24
+      },
+      {
+        "action_id": "act_2",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.84,
+          12.0
+        ],
+        "overlap_s": 1.16
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "act_1",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.72,
+          6.4
+        ],
+        "overlap_s": 0.68
+      },
+      {
+        "action_id": "act_2",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.4,
+          8.92
+        ],
+        "overlap_s": 2.52
+      }
+    ]
+  },
+  "warnings": [
+    "Invalid end uncertainty bracket: U003"
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma19",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "海边双人活动",
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      55
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-40ab6b58-298.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      6.625
+    ],
+    "official_sha256": "49c9849000efafb7c0179c3c7dbaf517aec702acdf3f37791086b402b5ca640c",
+    "clip_sha256": "49c9849000efafb7c0179c3c7dbaf517aec702acdf3f37791086b402b5ca640c",
+    "audio_source": null
+  },
+  "duration_seconds": 6.625,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 1.625,
+      "first_frame": 0,
+      "end_frame_exclusive": 13
+    },
+    {
+      "id": "S02",
+      "start": 1.625,
+      "end": 6.625,
+      "first_frame": 13,
+      "end_frame_exclusive": 53
+    }
+  ],
+  "input_frames": {
+    "visual": 53
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含两个镜头，展示了日落海滩上的人物剪影。第一个镜头为远景，两人站立；第二个镜头为近景特写，一人背对镜头，肩上有一只鹅的头部轮廓。所有动作均基于可见画面提取。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "左侧人物剪影，手持拐杖"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "右侧人物剪影"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "近景人物背影剪影"
+      },
+      {
+        "id": "S02-O01",
+        "shot_id": "S02",
+        "description": "搭在人物左肩上的鹅的头部和颈部轮廓"
+      }
+    ],
+    "executions": [
+      {
+        "id": "EX-S01-P01-WALK",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.5,
+        "description": "拄着拐杖缓慢行走并停下"
+      },
+      {
+        "id": "EX-S01-P02-STAND",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.5,
+        "description": "静立观看"
+      },
+      {
+        "id": "EX-S02-P01-STAND",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 1.625,
+        "end": 6.5,
+        "description": "背对镜头静立"
+      },
+      {
+        "id": "EX-S02-O01-MOVE",
+        "actor_id": "S02-O01",
+        "shot_id": "S02",
+        "start": 3.875,
+        "end": 6.5,
+        "description": "在人物肩上移动头部"
+      }
+    ],
+    "actions": [
+      {
+        "id": "ACT-S01-P01-WALK",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "EX-S01-P01-WALK",
+        "kind": "motion",
+        "label": "拄拐行走",
+        "start": 0.0,
+        "end": 1.5,
+        "start_range": [
+          0.0,
+          0.125
+        ],
+        "end_range": [
+          1.375,
+          1.5
+        ],
+        "detail": "人物呈剪影状态，左手持一根细长的拐杖支撑在地面上。从0.0秒开始，右腿向前迈出，随后左腿跟上，身体重心随步伐前移。约1.0秒时停止迈步，双腿前后分开站立，拐杖继续支撑地面直至镜头结束。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "人物侧身站立，左手持拐杖触地"
+          },
+          {
+            "time": 0.375,
+            "observation": "右腿明显向前跨出一步"
+          },
+          {
+            "time": 0.625,
+            "observation": "左腿跟进，双脚位置改变"
+          },
+          {
+            "time": 1.0,
+            "observation": "停止走动，保持双腿分开的静止姿态"
+          },
+          {
+            "time": 1.5,
+            "observation": "维持站立姿势直到切镜"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "起步",
+            "time": 0.375,
+            "time_range": null
+          },
+          {
+            "name": "停步",
+            "time": 1.0,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "腿部",
+          "手臂"
+        ],
+        "movement_roles": [
+          "支撑",
+          "位移"
+        ],
+        "subphases": [
+          {
+            "label": "迈步前行",
+            "start": 0.0,
+            "end": 1.0,
+            "detail": "交替迈动双腿，利用拐杖辅助平衡，向画面左侧缓慢移动。",
+            "evidence": [
+              {
+                "time": 0.375,
+                "observation": "右腿前伸"
+              },
+              {
+                "time": 0.625,
+                "observation": "左腿跟进"
+              }
+            ]
+          },
+          {
+            "label": "驻足停留",
+            "start": 1.0,
+            "end": 1.5,
+            "detail": "双脚站定不再移动，仅保持拄拐的静态姿势。",
+            "evidence": [
+              {
+                "time": 1.25,
+                "observation": "肢体无大幅度位移"
+              }
+            ]
+          }
+        ],
+        "brief": "左侧剪影人物拄着拐杖缓慢走了几步后停下。"
+      },
+      {
+        "id": "ACT-S01-P02-STAND",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "EX-S01-P02-STAND",
+        "kind": "held_pose",
+        "label": "静立旁观",
+        "start": 0.0,
+        "end": 1.5,
+        "start_range": [
+          0.0,
+          0.125
+        ],
+        "end_range": [
+          1.375,
+          1.5
+        ],
+        "detail": "人物位于画面右侧，面向左侧的另一人站立。在整个镜头期间，除了极细微的身体晃动外，没有明显的位移或肢体动作，始终保持双手似乎插在口袋里的放松站姿。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "人物直立面对左侧同伴"
+          },
+          {
+            "time": 0.75,
+            "observation": "姿态未发生改变"
+          },
+          {
+            "time": 1.5,
+            "observation": "依然保持原位站立"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "静止"
+        ],
+        "subphases": [],
+        "brief": "右侧剪影人物全程静立看着对方。"
+      },
+      {
+        "id": "ACT-S02-P01-STAND",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-P01-STAND",
+        "kind": "held_pose",
+        "label": "背影伫立",
+        "start": 1.625,
+        "end": 6.5,
+        "start_range": [
+          1.625,
+          1.75
+        ],
+        "end_range": [
+          6.375,
+          6.5
+        ],
+        "detail": "镜头切换为近景，人物以黑色剪影形式占据画面左侧大部分区域，背对镜头面向大海。头发略显凌乱，随风轻微飘动。除头部有极其微小的转动调整外，躯干和四肢基本保持静止不动的状态。",
+        "evidence": [
+          {
+            "time": 1.625,
+            "observation": "切入近景，人物背部朝向观众"
+          },
+          {
+            "time": 3.0,
+            "observation": "发丝因风吹起而抖动"
+          },
+          {
+            "time": 6.5,
+            "observation": "直至片段结束仍保持该背影姿态"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "头部",
+          "肩部",
+          "背部"
+        ],
+        "movement_roles": [
+          "静止"
+        ],
+        "subphases": [],
+        "brief": "近景中的人物背对镜头静静伫立在海边。"
+      },
+      {
+        "id": "ACT-S02-O01-MOVE",
+        "actor_id": "S02-O01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-O01-MOVE",
+        "kind": "motion",
+        "label": "鹅头探出与缩回",
+        "start": 3.875,
+        "end": 6.5,
+        "start_range": [
+          3.75,
+          4.0
+        ],
+        "end_range": [
+          6.375,
+          6.5
+        ],
+        "detail": "起初（1.625s-3.75s）只能看到人物肩膀上方有一个尖状突起。从3.875秒开始，一个清晰的长颈鸟类（疑似鹅）的头部和颈部轮廓从人物左肩后方伸出，喙部指向左侧。随后这只鸟的头部在肩头附近小幅度上下起伏、左右摆动，偶尔贴近人物耳侧，最后又稍微向后收缩但仍露出部分脖颈。",
+        "evidence": [
+          {
+            "time": 3.875,
+            "observation": "鹅的完整头颈轮廓首次清晰显现于左肩处"
+          },
+          {
+            "time": 4.25,
+            "observation": "鹅嘴微张或闭合的动作导致轮廓变化"
+          },
+          {
+            "time": 4.75,
+            "observation": "鹅头向上抬起靠近人物脸颊"
+          },
+          {
+            "time": 5.5,
+            "observation": "鹅头再次向下低垂"
+          },
+          {
+            "time": 6.5,
+            "observation": "鹅头略微后撤但仍在视野内"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "显露全貌",
+            "time": 3.875,
+            "time_range": null
+          },
+          {
+            "name": "抬头亲昵",
+            "time": 4.75,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "头部",
+          "颈部"
+        ],
+        "movement_roles": [
+          "伸展",
+          "摆动"
+        ],
+        "subphases": [
+          {
+            "label": "探头展示",
+            "start": 3.875,
+            "end": 4.5,
+            "detail": "长长的脖颈完全伸直，将头部清晰地暴露在逆光背景中。",
+            "evidence": [
+              {
+                "time": 4.0,
+                "observation": "颈部线条拉长"
+              }
+            ]
+          },
+          {
+            "label": "局部活动",
+            "start": 4.5,
+            "end": 6.5,
+            "detail": "头部围绕肩部进行小幅度的点头、转头动作。",
+            "evidence": [
+              {
+                "time": 5.0,
+                "observation": "头部高度发生变化"
+              }
+            ]
+          }
+        ],
+        "brief": "一只鹅的头颈从人物左肩后探出并在其耳边活动。"
+      }
+    ],
+    "uncertainties": [
+      "由于强烈的逆光效果，人物的具体衣着细节、面部表情以及肤色完全不可见，均为纯黑剪影。",
+      "第二镜头中肩上的动物虽具备长颈特征极似家鹅，但因缺乏色彩纹理信息，无法百分之百确证物种，暂按视觉形态描述为“鹅”。",
+      "第一镜头中左侧人物手中的细长物体推测为拐杖，但也可能是其他类似的支撑杆具。"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "由于强烈的逆光效果，人物的具体衣着细节、面部表情以及肤色完全不可见，均为纯黑剪影。",
+    "第二镜头中肩上的动物虽具备长颈特征极似家鹅，但因缺乏色彩纹理信息，无法百分之百确证物种，暂按视觉形态描述为“鹅”。",
+    "第一镜头中左侧人物手中的细长物体推测为拐杖，但也可能是其他类似的支撑杆具。"
+  ]
+}

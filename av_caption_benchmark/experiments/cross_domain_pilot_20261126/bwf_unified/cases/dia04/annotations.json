@@ -1,0 +1,825 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "dia04",
+    "benchmark": "DiaDemBench",
+    "domain": "双人驾车与跨镜台词",
+    "original_id": "559",
+    "source_url": "https://huggingface.co/datasets/DiaDem-Captioner/DiaDemBench/blob/ff6dfcc152ee4cc96e92ec83a0910c187e6ad98b/videos.zip",
+    "archive_member": "videos/559.mp4",
+    "source_window_seconds": [
+      0,
+      10.8441875
+    ],
+    "source_duration": 10.8441875,
+    "source_media_sha256": "bdfe4354deb687665556c766395013f18f9354a62a8ad25294dd1b62026482fe",
+    "clip_sha256": "bdfe4354deb687665556c766395013f18f9354a62a8ad25294dd1b62026482fe",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 10.8501875,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 3.884875,
+      "first_frame": 0,
+      "end_frame_exclusive": 93
+    },
+    {
+      "id": "S02",
+      "start": 3.884875,
+      "end": 8.3059375,
+      "first_frame": 93,
+      "end_frame_exclusive": 199
+    },
+    {
+      "id": "S03",
+      "start": 8.3059375,
+      "end": 8.3476875,
+      "first_frame": 199,
+      "end_frame_exclusive": 200
+    },
+    {
+      "id": "S04",
+      "start": 8.3476875,
+      "end": 10.8501875,
+      "first_frame": 200,
+      "end_frame_exclusive": 260
+    }
+  ],
+  "input_frames": {
+    "visual": 112,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含四个镜头，主要展示一辆红色敞篷老爷车在乡间土路和草地上行驶的过程。S01为远景跟拍车辆驶过石桥；S02为极远景拍摄车辆在草地中穿行并扬起尘土；S03为短暂的树冠空镜过渡；S04为中景正面跟拍车辆驶入林荫道，车内可见驾驶员和乘客。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "红色敞篷老爷车的驾驶员"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "红色敞篷老爷车的乘客"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "红色敞篷老爷车的驾驶员"
+      },
+      {
+        "id": "S02-P02",
+        "shot_id": "S02",
+        "description": "红色敞篷老爷车的乘客"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "红色敞篷老爷车的驾驶员"
+      },
+      {
+        "id": "S04-P02",
+        "shot_id": "S04",
+        "description": "红色敞篷老爷车的乘客"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 3.884875,
+        "description": "驾驶红色敞篷车沿土路行驶"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 3.884875,
+        "description": "坐在副驾驶位随车行驶"
+      },
+      {
+        "id": "S02-E01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 3.884875,
+        "end": 8.3059375,
+        "description": "驾驶红色敞篷车穿越草地"
+      },
+      {
+        "id": "S02-E02",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "start": 3.884875,
+        "end": 8.3059375,
+        "description": "坐在副驾驶位随车穿越草地"
+      },
+      {
+        "id": "S04-E01",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 8.3476875,
+        "end": 10.8501875,
+        "description": "驾驶红色敞篷车驶入林荫道"
+      },
+      {
+        "id": "S04-E02",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "start": 8.3476875,
+        "end": 10.8501875,
+        "description": "坐在副驾驶位随车驶入林荫道"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "驾车行驶",
+        "start": 0.0,
+        "end": 3.884875,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          3.884875,
+          3.884875
+        ],
+        "detail": "驾驶员操控红色敞篷车在碎石土路上向前行驶，车辆从画面左侧的石桥下穿过，逐渐向右侧移动并最终驶出画面。由于距离较远且处于运动状态，驾驶员的具体肢体动作不可见，仅能观察到车辆的持续位移。",
+        "evidence": [
+          {
+            "time": 0.006,
+            "observation": "车辆位于石桥下方偏左位置"
+          },
+          {
+            "time": 1.5075,
+            "observation": "车辆已驶过石桥拱门，位于道路中段"
+          },
+          {
+            "time": 2.8004375,
+            "observation": "车辆即将驶出画面右侧边缘"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "车辆进入画面",
+            "time": 0.0,
+            "time_range": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "name": "车辆驶出画面",
+            "time": 3.884875,
+            "time_range": [
+              3.884875,
+              3.884875
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "手部（推测）"
+        ],
+        "movement_roles": [
+          "驱动"
+        ],
+        "subphases": [],
+        "brief": "驾驶员驾驶红色敞篷车沿土路从左向右行驶并离开画面。"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "held_pose",
+        "label": "乘坐车辆",
+        "start": 0.0,
+        "end": 3.884875,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          3.884875,
+          3.884875
+        ],
+        "detail": "乘客坐在红色敞篷车的副驾驶座位上，身体随车辆一起在土路上移动。由于距离极远，无法看清乘客的面部表情或具体姿态细节，仅表现为静止的坐姿伴随整体位移。",
+        "evidence": [
+          {
+            "time": 0.006,
+            "observation": "隐约可见车内有两个黑色人影"
+          },
+          {
+            "time": 2.008,
+            "observation": "车辆靠近镜头，仍可辨认两人轮廓"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "躯干"
+        ],
+        "movement_roles": [
+          "承载"
+        ],
+        "subphases": [],
+        "brief": "乘客静坐于副驾驶位随车前行。"
+      },
+      {
+        "id": "S02-A01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E01",
+        "kind": "motion",
+        "label": "越野行驶",
+        "start": 3.884875,
+        "end": 8.3059375,
+        "start_range": [
+          3.884875,
+          3.884875
+        ],
+        "end_range": [
+          8.3059375,
+          8.3059375
+        ],
+        "detail": "驾驶员操控红色敞篷车在非铺装的草地上横向穿行，车轮卷起明显的黄色尘土尾迹。车辆从画面右侧中部向左下方移动，最终消失在左侧树木后方。受限于极远景别，驾驶员的具体操作动作不可见。",
+        "evidence": [
+          {
+            "time": 4.0934375,
+            "observation": "车辆出现在草地右侧，开始留下尘土轨迹"
+          },
+          {
+            "time": 6.0954375,
+            "observation": "车辆行至草地中央，尘土飞扬明显"
+          },
+          {
+            "time": 7.8054375,
+            "observation": "车辆接近左侧树林边缘"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "扬起尘土",
+            "time": 4.0934375,
+            "time_range": [
+              4.0934375,
+              4.0934375
+            ]
+          },
+          {
+            "name": "隐入树林",
+            "time": 8.3059375,
+            "time_range": [
+              8.3059375,
+              8.3059375
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "手部（推测）"
+        ],
+        "movement_roles": [
+          "驱动"
+        ],
+        "subphases": [],
+        "brief": "驾驶员开车横穿草地，身后扬起大量尘土。"
+      },
+      {
+        "id": "S02-A02",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "execution_id": "S02-E02",
+        "kind": "held_pose",
+        "label": "乘坐车辆",
+        "start": 3.884875,
+        "end": 8.3059375,
+        "start_range": [
+          3.884875,
+          3.884875
+        ],
+        "end_range": [
+          8.3059375,
+          8.3059375
+        ],
+        "detail": "乘客坐在副驾驶位上，随车辆在崎岖的草地上颠簸前行。因距离过远，只能看到车顶上方露出的头部轮廓，无法分辨具体的身体姿态或互动行为。",
+        "evidence": [
+          {
+            "time": 5.0944375,
+            "observation": "车辆顶部可见微小的人影凸起"
+          },
+          {
+            "time": 7.0964375,
+            "observation": "人影随车辆移动至左侧树丛旁"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "low",
+        "body_parts": [
+          "头部"
+        ],
+        "movement_roles": [
+          "承载"
+        ],
+        "subphases": [],
+        "brief": "乘客随车在草地上行进，仅可见头部轮廓。"
+      },
+      {
+        "id": "S04-A01",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "S04-E01",
+        "kind": "motion",
+        "label": "迎面驾驶",
+        "start": 8.3476875,
+        "end": 10.8501875,
+        "start_range": [
+          8.3476875,
+          8.3476875
+        ],
+        "end_range": [
+          10.8501875,
+          10.8501875
+        ],
+        "detail": "驾驶员双手握住方向盘（被挡风玻璃框架部分遮挡），驾驶红色敞篷车沿着林间小路正对镜头方向平稳驶来。随着车辆逼近，可以清晰看到驾驶员戴着帽子，目光注视前方路况，身体保持端正的驾驶坐姿直至视频结束。",
+        "evidence": [
+          {
+            "time": 9.0566875,
+            "observation": "车辆车头完整显现，驾驶员轮廓清晰"
+          },
+          {
+            "time": 10.0576875,
+            "observation": "驾驶员面部特征及帽子细节可见，双手置于方向盘区域"
+          },
+          {
+            "time": 10.8084375,
+            "observation": "车辆占据大部分画面，仍在继续前进"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "车辆正面出现",
+            "time": 8.9315625,
+            "time_range": [
+              8.9315625,
+              8.9315625
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "手臂",
+          "躯干",
+          "头部"
+        ],
+        "movement_roles": [
+          "控制",
+          "支撑"
+        ],
+        "subphases": [
+          {
+            "label": "握持方向",
+            "start": 8.3476875,
+            "end": 10.8501875,
+            "detail": "驾驶员双臂前伸，手部固定在方向盘上进行转向微调。",
+            "evidence": [
+              {
+                "time": 9.5571875,
+                "observation": "透过挡风玻璃框架可见手臂线条指向车头中心"
+              }
+            ]
+          }
+        ],
+        "brief": "驾驶员戴帽目视前方，驾车迎面驶向镜头。"
+      },
+      {
+        "id": "S04-A02",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "execution_id": "S04-E02",
+        "kind": "gesture",
+        "label": "抬手整理帽子",
+        "start": 10.141125,
+        "end": 10.3496875,
+        "start_range": [
+          10.0994375,
+          10.1828125
+        ],
+        "end_range": [
+          10.3079375,
+          10.391375
+        ],
+        "detail": "乘客坐在副驾驶位上，头戴宽檐遮阳帽。在车辆行驶过程中，乘客抬起右手靠近头部，手指触碰帽檐附近进行短暂调整，随后放下手臂恢复放松坐姿面向前方。",
+        "evidence": [
+          {
+            "time": 10.141125,
+            "observation": "乘客手部有轻微抬起动作，触碰帽檐附近"
+          },
+          {
+            "time": 10.3496875,
+            "observation": "乘客转回视线看向前方，姿态稳定"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "调整仪容",
+            "time": 10.141125,
+            "time_range": [
+              10.141125,
+              10.141125
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "手臂",
+          "头部"
+        ],
+        "movement_roles": [
+          "修饰"
+        ],
+        "subphases": [],
+        "brief": "乘客在乘车时短暂抬手整理自己的遮阳帽。"
+      }
+    ],
+    "uncertainties": [
+      "S01和S02中由于景别过大，人物的具体肢体动作（如手脚细节）完全不可见，仅能通过车辆运动推断其在执行驾驶或乘坐任务。",
+      "S04结尾处车辆尚未完全停下或发生其他交互，动作描述截止于视频最后一帧。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "N001",
+        "kind": "music",
+        "layer": "background",
+        "start": 0.0,
+        "end": 10.85,
+        "start_range": [
+          0.0,
+          0.2
+        ],
+        "end_range": [
+          10.6,
+          10.85
+        ],
+        "speaker_id": null,
+        "description": "持续的管弦乐配乐，带有戏剧性和紧张感",
+        "evidence": [
+          {
+            "time": 3.0,
+            "observation": "可听到明显的弦乐和打击乐元素"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 7.4,
+        "end": 10.8,
+        "start_range": [
+          7.2,
+          7.6
+        ],
+        "end_range": [
+          10.6,
+          11.0
+        ],
+        "speaker_id": "V01",
+        "description": "女声以中等语速说话，语气略带沮丧或解释性",
+        "evidence": [
+          {
+            "time": 7.4,
+            "observation": "语音开始于'in the town'"
+          },
+          {
+            "time": 9.5,
+            "observation": "短语'soldiers but it didn't work'清晰可辨"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "In the town I tried to use my powers on the soldiers, but it didn't work."
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          3.884875
+        ],
+        "overlap_s": 3.884875
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          3.884875
+        ],
+        "overlap_s": 3.884875
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.884875,
+          8.3059375
+        ],
+        "overlap_s": 4.421063
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.4,
+          8.3059375
+        ],
+        "overlap_s": 0.905938
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.884875,
+          8.3059375
+        ],
+        "overlap_s": 4.421063
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.4,
+          8.3059375
+        ],
+        "overlap_s": 0.905938
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.3476875,
+          10.85
+        ],
+        "overlap_s": 2.502313
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.3476875,
+          10.8
+        ],
+        "overlap_s": 2.452313
+      },
+      {
+        "action_id": "S04-A02",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          10.141125,
+          10.3496875
+        ],
+        "overlap_s": 0.208562
+      },
+      {
+        "action_id": "S04-A02",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.141125,
+          10.3496875
+        ],
+        "overlap_s": 0.208562
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.4,
+          8.3059375
+        ],
+        "overlap_s": 0.905938
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.3476875,
+          10.8
+        ],
+        "overlap_s": 2.452313
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          3.884875
+        ],
+        "overlap_s": 3.884875
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          3.884875
+        ],
+        "overlap_s": 3.884875
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.884875,
+          8.3059375
+        ],
+        "overlap_s": 4.421063
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.884875,
+          8.3059375
+        ],
+        "overlap_s": 4.421063
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.4,
+          8.3059375
+        ],
+        "overlap_s": 0.905938
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.3476875,
+          10.85
+        ],
+        "overlap_s": 2.502313
+      },
+      {
+        "action_id": "S04-A02",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          10.141125,
+          10.3496875
+        ],
+        "overlap_s": 0.208562
+      },
+      {
+        "action_id": "S04-A02",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.141125,
+          10.3496875
+        ],
+        "overlap_s": 0.208562
+      }
+    ]
+  },
+  "warnings": [
+    "S01和S02中由于景别过大，人物的具体肢体动作（如手脚细节）完全不可见，仅能通过车辆运动推断其在执行驾驶或乘坐任务。",
+    "S04结尾处车辆尚未完全停下或发生其他交互，动作描述截止于视频最后一帧。",
+    "U001: Invalid end uncertainty bracket: U001",
+    "Invalid end uncertainty bracket: U001"
+  ]
+}

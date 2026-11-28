@@ -1,0 +1,17 @@
+{
+  "id": "sew",
+  "category": "工具、维修与手作",
+  "title": "缝纫机送料与折边",
+  "source": {
+    "repo": "mhan/shot2story-videos",
+    "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+    "member": "release_134k_videos/-bfX4SxO9h0.24.mp4",
+    "offset": 580929024,
+    "bytes": 741494,
+    "source_sha256": "7a914c4ae7fe5f3708c4ccd326888f84808ecc976decabf45a0ff013dbd2f041",
+    "source_dataset": "EVA-data / Shot2Story"
+  },
+  "source_start": 0,
+  "duration": 12.971292,
+  "sha256": "7a914c4ae7fe5f3708c4ccd326888f84808ecc976decabf45a0ff013dbd2f041"
+}

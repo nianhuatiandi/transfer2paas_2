@@ -1,0 +1,662 @@
+{
+  "duration_sec": 25.026,
+  "duration_bucket": "<1min",
+  "num_shots": 6,
+  "num_events": 6,
+  "num_main_characters": 3,
+  "num_main_scenes": 3,
+  "shots_per_min": 14.39,
+  "events_per_min": 14.39,
+  "persons_per_min": 7.19,
+  "scenes_per_min": 7.19,
+  "category_l1": "Sports",
+  "category_l2": "Extreme Sports",
+  "dataset": "Tarsier2-Recap",
+  "shot_time": [
+    [
+      0.0,
+      6.84
+    ],
+    [
+      6.84,
+      8.68
+    ],
+    [
+      8.68,
+      17.52
+    ],
+    [
+      17.52,
+      19.25
+    ],
+    [
+      19.25,
+      20.29
+    ],
+    [
+      20.29,
+      25.03
+    ]
+  ],
+  "mtss_caption": {
+    "references": [
+      {
+        "ref_id": "PERSON_1",
+        "type": "person",
+        "semantic_description": "A man loses his balance and falls backward from a balance bike.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A man wearing a white t-shirt, light blue denim shorts, black shoes, and a black helmet with white accents.",
+            "timestamp": "2.0"
+          },
+          "attributes": {
+            "clothing": "White T-shirt, light blue shorts, black shoes.",
+            "hairstyle": "Hidden by the helmet.",
+            "accessories": "Black helmet."
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_2",
+        "type": "person",
+        "semantic_description": "A man wearing a yellow T-shirt steps forward to help the fallen [PERSON_1] stand up.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A man wearing a bright yellow T-shirt, blue jeans, and green sneakers.",
+            "timestamp": "3.5"
+          },
+          "attributes": {
+            "clothing": "Bright yellow T-shirt, blue jeans, green sneakers.",
+            "hairstyle": "Hidden by the helmet.",
+            "accessories": "Black safety helmet."
+          }
+        }
+      },
+      {
+        "ref_id": "OBJECT_1",
+        "type": "object",
+        "semantic_description": "The fallen man was operating a unicycle.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A black unicycle with two large wheels and a tall steering handle.",
+            "timestamp": "0.5"
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_1",
+        "type": "scene",
+        "semantic_description": "An open-air square covered with tile flooring.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "An outdoor urban area featuring light-colored mosaic-style tiles on the ground, surrounded by a building with light-colored stone exterior walls and steps. The doors of the building are dark green.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "PERSON_3",
+        "type": "person",
+        "semantic_description": "A man riding a dirt bike along a trail who eventually crashes.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A person wearing a black-and-white striped short-sleeved shirt, blue jeans, and a black helmet.",
+            "timestamp": "10.0"
+          },
+          "attributes": {
+            "clothing": "Black and white floral-patterned short-sleeved shirt, dark pants.",
+            "hairstyle": "Hidden by a full-face helmet.",
+            "accessories": "Black full-face helmet."
+          }
+        }
+      },
+      {
+        "ref_id": "PERSON_4",
+        "type": "person",
+        "semantic_description": "The cameraperson filming the dirt bike ride from a first-person perspective.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "Only their hands and forearms are visible; he is wearing a long-sleeved black shirt and gray and black protective gloves.",
+            "timestamp": "16.2"
+          },
+          "attributes": {
+            "clothing": "Long black sleeves.",
+            "hairstyle": "Not visible.",
+            "accessories": "Grey, black, and white riding gloves."
+          }
+        }
+      },
+      {
+        "ref_id": "OBJECT_2",
+        "type": "object",
+        "semantic_description": "The dirt bike ridden by the man who crashes.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "An electric off-road motorcycle, equipped with a red front fender, white and red side panels, and black off-road tires with raised patterns.",
+            "timestamp": "8.5"
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_2",
+        "type": "scene",
+        "semantic_description": "A dry dirt trail winding through a wooded area.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A narrow, dusty dirt path running through a dry, wooded environment, with green trees forming a canopy that casts scattered shadows across the ground.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "PERSON_5",
+        "type": "person",
+        "semantic_description": "A young man riding a mountain bike who loses control and plunges into a river.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A young man with short brown hair is wearing a black T-shirt, black shorts, and white sneakers.",
+            "timestamp": "19.5"
+          },
+          "attributes": {
+            "clothing": "Black T-shirt, dark athletic shorts, white sneakers.",
+            "hairstyle": "Short brown hair.",
+            "accessories": "none"
+          }
+        }
+      },
+      {
+        "ref_id": "OBJECT_3",
+        "type": "object",
+        "semantic_description": "The mountain bike ridden down the grassy hill.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A black mountain bike equipped with front suspension and thick, textured off-road tires.",
+            "timestamp": "19.5"
+          },
+          "attributes": {}
+        }
+      },
+      {
+        "ref_id": "SCENE_3",
+        "type": "scene",
+        "semantic_description": "A steep grassy bank sloping down to a river or pond.",
+        "appearance_anchor": {
+          "id_features": {
+            "detail_description": "A steep, green grassy hill sloping downwards toward a dark body of water, bordered by large trees, with a smoking fire and scattered belongings resting on the bank.",
+            "timestamp": ""
+          },
+          "attributes": {}
+        }
+      }
+    ],
+    "events": [
+      {
+        "event_id": "SFX_1",
+        "type": "sfx",
+        "time_range": [
+          0.0,
+          4.5
+        ],
+        "content": {
+          "description": "A loud, boisterous burst of overlapping laughter from several men."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_1",
+        "type": "dialogue",
+        "time_range": [
+          5.0,
+          6.5
+        ],
+        "content": {
+          "speaker": "an unseen male",
+          "line": "Caught on camera.",
+          "description": "An unseen man speaks amidst fading laughter in a casual, amused tone at a normal pace."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_2",
+        "type": "dialogue",
+        "time_range": [
+          7.0,
+          8.5
+        ],
+        "content": {
+          "speaker": "PERSON_4",
+          "line": "You gotta bounce it.",
+          "description": "The photographer gives instructions loudly in a relaxed and encouraging tone so that [PERSON_3] can hear them over the idle sound of the off-road motorcycle engine."
+        }
+      },
+      {
+        "event_id": "SFX_2",
+        "type": "sfx",
+        "time_range": [
+          8.5,
+          14.5
+        ],
+        "content": {
+          "description": "The loud, buzzing sound of a dirt bike engine revving and accelerating rapidly, followed by the scraping sound of tires skidding on dirt and a dull thud upon crashing."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_3",
+        "type": "dialogue",
+        "time_range": [
+          15.5,
+          16.5
+        ],
+        "content": {
+          "speaker": "PERSON_3",
+          "line": "Ow.",
+          "description": "The fallen rider utters a brief, sharp groan of pain from a distance."
+        }
+      },
+      {
+        "event_id": "DIALOGUE_4",
+        "type": "dialogue",
+        "time_range": [
+          16.5,
+          17.5
+        ],
+        "content": {
+          "speaker": "PERSON_4",
+          "line": "You alright?",
+          "description": "The cameraperson asks a follow-up question in a calm, slightly concerned tone."
+        }
+      },
+      {
+        "event_id": "SFX_3",
+        "type": "sfx",
+        "time_range": [
+          22.0,
+          23.5
+        ],
+        "content": {
+          "description": "A prominent, heavy splash sound as the bicycle and rider plunge into the water."
+        }
+      },
+      {
+        "event_id": "SFX_4",
+        "type": "sfx",
+        "time_range": [
+          22.5,
+          25.0
+        ],
+        "content": {
+          "description": "An immediate burst of loud, overlapping, and uproarious laughter from several unseen onlookers."
+        }
+      }
+    ],
+    "shots": [
+      {
+        "shot_id": "shot_1",
+        "time_range": [
+          0.0,
+          6.8
+        ],
+        "shot_transfer": "The opening shot shows a group of people riding unicycles on a paved outdoor square in [SCENE_1].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              0.0,
+              6.8
+            ],
+            "sub_shot_content": "[SCENE_1] A wide-angle shot of an outdoor square bathed in sunlight, with several unicycles parked in the square."
+          },
+          {
+            "sub_shot_time": [
+              0.0,
+              0.5
+            ],
+            "sub_shot_content": "[PERSON_1] loses balance on [OBJECT_1] and stumbles to the ground."
+          },
+          {
+            "sub_shot_time": [
+              0.5,
+              1.5
+            ],
+            "sub_shot_content": "[PERSON_1] is sitting sideways on [OBJECT_1], with his right leg straight out and rubbing against the ground."
+          },
+          {
+            "sub_shot_time": [
+              1.5,
+              3.0
+            ],
+            "sub_shot_content": "[PERSON_2] quickly enters the frame from the right side, approaching [PERSON_1] to offer assistance."
+          },
+          {
+            "sub_shot_time": [
+              3.0,
+              4.0
+            ],
+            "sub_shot_content": "[PERSON_2] grabs the steering handle of [OBJECT_1] to help [PERSON_1] stand up."
+          },
+          {
+            "sub_shot_time": [
+              4.0,
+              5.0
+            ],
+            "sub_shot_content": "[PERSON_1] stands up completely and uses his right hand to dust off his shorts."
+          },
+          {
+            "sub_shot_time": [
+              4.0,
+              5.5
+            ],
+            "sub_shot_content": "[PERSON_2] grasps the steering handlebar of [OBJECT_1] with both hands, stabilizing it upright."
+          },
+          {
+            "sub_shot_time": [
+              5.5,
+              6.8
+            ],
+            "sub_shot_content": "[PERSON_1] stands near [OBJECT_1], while [PERSON_2] continues to hold the handle of the machine."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static with minor shakes"
+        },
+        "active_events": [
+          "SFX_1",
+          "DIALOGUE_1"
+        ],
+        "references_in_shot": [
+          "PERSON_1",
+          "PERSON_2",
+          "OBJECT_1",
+          "SCENE_1"
+        ]
+      },
+      {
+        "shot_id": "shot_2",
+        "time_range": [
+          6.8,
+          8.6
+        ],
+        "shot_transfer": "The scene suddenly shifts from the outdoor square to a first-person perspective of a dirt road in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              6.8,
+              8.6
+            ],
+            "sub_shot_content": "[SCENE_2] A narrow dirt road is viewed from a first-person perspective, with scattered shadows cast on the ground by the canopies of green trees."
+          },
+          {
+            "sub_shot_time": [
+              6.9,
+              8.6
+            ],
+            "sub_shot_content": "[PERSON_3] is sitting on [OBJECT_2] located in front of the path, motionless, facing the camera. They are controlling [OBJECT_2] to move closer to the camera."
+          }
+        ],
+        "camera": {
+          "shot_type": "medium shot",
+          "angle": "eye level",
+          "movement": "first-person point-of-view, stationary"
+        },
+        "active_events": [
+          "DIALOGUE_2",
+          "SFX_2"
+        ],
+        "references_in_shot": [
+          "PERSON_3",
+          "OBJECT_2",
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_3",
+        "time_range": [
+          8.6,
+          17.5
+        ],
+        "shot_transfer": "Continuous shot with the camera moving forward to follow [PERSON_3] as he accelerates in [SCENE_2].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              8.6,
+              17.5
+            ],
+            "sub_shot_content": "[SCENE_2], continuous first-person point-of-view moving rapidly forward along the trail."
+          },
+          {
+            "sub_shot_time": [
+              8.7,
+              11.5
+            ],
+            "sub_shot_content": "[PERSON_3] accelerates, riding [OBJECT_2] rapidly down the winding dirt path, kicking up dust."
+          },
+          {
+            "sub_shot_time": [
+              11.5,
+              12.0
+            ],
+            "sub_shot_content": "[PERSON_3] hit a protruding object with [OBJECT_2], causing [OBJECT_2] to fly into the air, clearly out of control."
+          },
+          {
+            "sub_shot_time": [
+              12.0,
+              13.5
+            ],
+            "sub_shot_content": "[PERSON_3] and [OBJECT_2] crash heavily onto the dirt trail, sliding forward amidst a cloud of dust."
+          },
+          {
+            "sub_shot_time": [
+              13.5,
+              16.0
+            ],
+            "sub_shot_content": "The camera advances steadily through a thick cloud of dust raised by the recent impact."
+          },
+          {
+            "sub_shot_time": [
+              16.0,
+              17.5
+            ],
+            "sub_shot_content": "[PERSON_3] is seen sitting upright on the trail facing the camera, with the overturned [OBJECT_2] lying nearby."
+          },
+          {
+            "sub_shot_time": [
+              16.2,
+              17.5
+            ],
+            "sub_shot_content": "[PERSON_4] raises both gloved hands into the foreground, making a clear double thumbs-up gesture toward [PERSON_3]."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "first-person point-of-view, moving forward continuously"
+        },
+        "active_events": [
+          "SFX_2",
+          "DIALOGUE_3",
+          "DIALOGUE_4"
+        ],
+        "references_in_shot": [
+          "PERSON_3",
+          "PERSON_4",
+          "OBJECT_2",
+          "SCENE_2"
+        ]
+      },
+      {
+        "shot_id": "shot_4",
+        "time_range": [
+          17.5,
+          19.2
+        ],
+        "shot_transfer": "Hard cut to a steep grassy bank with a narrow dirt path in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              17.5,
+              19.2
+            ],
+            "sub_shot_content": "[SCENE_3], a wide shot looking up a steep, foliage-lined grassy path."
+          },
+          {
+            "sub_shot_time": [
+              17.6,
+              18.0
+            ],
+            "sub_shot_content": "[PERSON_5] rides [OBJECT_3] down a steep grassy slope at high speed, moving in the direction directly ahead of [PERSON_5]."
+          },
+          {
+            "sub_shot_time": [
+              18.5,
+              19.2
+            ],
+            "sub_shot_content": "[PERSON_5] stands on [OBJECT_3], trying to maintain balance on the uneven grassy slope."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "low angle",
+          "movement": "panning slightly to follow subject"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_5",
+          "OBJECT_3",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_5",
+        "time_range": [
+          19.2,
+          20.2
+        ],
+        "shot_transfer": "Hard cut to a slightly lower angle on the grassy bank in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              19.2,
+              20.2
+            ],
+            "sub_shot_content": "[SCENE_3], wide shot from a side angle showing a small drop-off on the trail."
+          },
+          {
+            "sub_shot_time": [
+              19.1,
+              19.7
+            ],
+            "sub_shot_content": "[PERSON_5] rides [OBJECT_3] off a small grassy ledge, becoming momentarily airborne."
+          },
+          {
+            "sub_shot_time": [
+              19.8,
+              20.2
+            ],
+            "sub_shot_content": "[PERSON_5] lands heavily with [OBJECT_3] on a flatter section of the ground, continuing forward."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "static"
+        },
+        "active_events": [],
+        "references_in_shot": [
+          "PERSON_5",
+          "OBJECT_3",
+          "SCENE_3"
+        ]
+      },
+      {
+        "shot_id": "shot_6",
+        "time_range": [
+          20.2,
+          25.0
+        ],
+        "shot_transfer": "Hard cut to a wider view of the riverbank in [SCENE_3].",
+        "visual_description": [
+          {
+            "sub_shot_time": [
+              20.2,
+              25.0
+            ],
+            "sub_shot_content": "[SCENE_3] shows a grassy riverbank, with a burning fire on the right side of the frame."
+          },
+          {
+            "sub_shot_time": [
+              20.3,
+              21.0
+            ],
+            "sub_shot_content": "[PERSON_5] steers [OBJECT_3] swiftly past the smoking fire, clearly losing control."
+          },
+          {
+            "sub_shot_time": [
+              21.0,
+              22.5
+            ],
+            "sub_shot_content": "[PERSON_5] rides [OBJECT_3] straight across the steep edge of the riverbank."
+          },
+          {
+            "sub_shot_time": [
+              22.5,
+              23.5
+            ],
+            "sub_shot_content": "[PERSON_5] and [OBJECT_3] plunge downward, crashing into the dark water and creating a massive white splash."
+          },
+          {
+            "sub_shot_time": [
+              23.5,
+              25.0
+            ],
+            "sub_shot_content": "As the splashes spread outward, [PERSON_5] quickly appears in the murky water near the grassy riverbank."
+          }
+        ],
+        "camera": {
+          "shot_type": "wide shot",
+          "angle": "eye level",
+          "movement": "panning right"
+        },
+        "active_events": [
+          "SFX_3",
+          "SFX_4"
+        ],
+        "references_in_shot": [
+          "PERSON_5",
+          "OBJECT_3",
+          "SCENE_3"
+        ]
+      }
+    ],
+    "shot_time": [
+      [
+        0.0,
+        6.84
+      ],
+      [
+        6.84,
+        8.68
+      ],
+      [
+        8.68,
+        17.52
+      ],
+      [
+        17.52,
+        19.25
+      ],
+      [
+        19.25,
+        20.29
+      ],
+      [
+        20.29,
+        25.03
+      ]
+    ]
+  },
+  "source_video_path": "Tarsier2-Recap/Oops/videos/Two-Wheel Motorcycle & Cycling Fails _ By FailArmy 201641.mp4",
+  "video_path": "test/videos/000428.mp4"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "greet",
+  "category": "人际互动与情景表演",
+  "title": "两名球员赛后致意",
+  "source": {
+    "repo": "mhan/shot2story-videos",
+    "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+    "member": "release_134k_videos/JSQWkIvK7qs.6.mp4",
+    "offset": 55746326528,
+    "bytes": 634128,
+    "source_sha256": "076e9dee5b19365ce8351c81876e5af42fc96f7ef1cc5e6d1f9ee2048d47711c",
+    "source_dataset": "EVA-data / Shot2Story"
+  },
+  "source_start": 0,
+  "duration": 7.007,
+  "sha256": "ec49d39822c61ce4817d431ff2eb8f85d984564ae836524d6095180d125bce2e"
+}

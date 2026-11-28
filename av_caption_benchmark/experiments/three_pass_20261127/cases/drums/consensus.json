@@ -1,0 +1,281 @@
+{
+  "groups": {
+    "visual": [
+      {
+        "members": [
+          "1.0",
+          "2.0",
+          "3.0"
+        ],
+        "votes": 3,
+        "start": 0.0,
+        "end": 1.5,
+        "representative": "1.0",
+        "example": {
+          "actor": "金发男子",
+          "activity": "说话与手势交流",
+          "kind": "gesture",
+          "label": "做手势并说话",
+          "brief": "一名身穿灰色T恤的金发男子面向镜头一边说话一边双手做手势。",
+          "detail": "他抬起双臂，手掌张开，随着讲话的节奏上下挥动。",
+          "start": 0.0,
+          "end": 1.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.25,
+        "id": "V1"
+      },
+      {
+        "members": [
+          "1.1",
+          "2.1",
+          "3.1"
+        ],
+        "votes": 3,
+        "start": 2.17,
+        "end": 6.5,
+        "representative": "1.1",
+        "example": {
+          "actor": "格子衬衫鼓手",
+          "activity": "打鼓",
+          "kind": "motion",
+          "label": "敲击架子鼓",
+          "brief": "一名穿格子衬衫的人坐在架子鼓前，手持两根木质鼓棒连续敲击军鼓和镲片。",
+          "detail": "右手持续上下移动击打右侧的镲片，左手在下方军鼓上进行敲击。",
+          "start": 2.0,
+          "end": 6.5,
+          "phases": [
+            {
+              "label": "敲击军鼓",
+              "start": 2.0,
+              "end": 4.5
+            },
+            {
+              "label": "敲击镲片",
+              "start": 4.5,
+              "end": 6.5
+            }
+          ]
+        },
+        "start_spread": 0.375,
+        "end_spread": 1.955,
+        "id": "V2"
+      }
+    ],
+    "audio": [
+      {
+        "members": [
+          "1.0",
+          "2.0",
+          "3.0"
+        ],
+        "votes": 3,
+        "start": 0.0,
+        "end": 5.28,
+        "representative": "2.0",
+        "example": {
+          "actor": "男声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "and confidently spend time behind your drum set, knowing that you're using lessons that work.",
+          "start": 0.0,
+          "end": 5.28,
+          "label": "and confidently spend time behind your drum set, knowing that you're using lessons that work."
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.08000000000000007,
+        "id": "A1"
+      },
+      {
+        "members": [
+          "1.1",
+          "2.1",
+          "3.1"
+        ],
+        "votes": 3,
+        "start": 0.0,
+        "end": 7.16,
+        "representative": "1.1",
+        "example": {
+          "actor": "未知",
+          "kind": "music",
+          "layer": "background",
+          "text": "轻快的器乐背景音乐",
+          "start": 0.0,
+          "end": 7.16,
+          "label": "轻快的器乐背景音乐"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.20000000000000018,
+        "id": "A2"
+      },
+      {
+        "members": [
+          "3.2"
+        ],
+        "votes": 1,
+        "start": 7.16,
+        "end": 8.04,
+        "representative": "3.2",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "foreground",
+          "label": "短促的转场嗖嗖音效",
+          "text": "",
+          "start": 7.16,
+          "end": 8.04
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A3"
+      },
+      {
+        "members": [
+          "3.3"
+        ],
+        "votes": 1,
+        "start": 8.04,
+        "end": 9.0,
+        "representative": "3.3",
+        "example": {
+          "actor": "未知",
+          "kind": "music",
+          "layer": "foreground",
+          "label": "架子鼓击打节奏",
+          "text": "",
+          "start": 8.04,
+          "end": 9.0
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A4"
+      },
+      {
+        "members": [
+          "1.2",
+          "2.2"
+        ],
+        "votes": 2,
+        "start": 8.1,
+        "end": 9.0045,
+        "representative": "1.2",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "foreground",
+          "text": "响亮的镲片敲击声",
+          "start": 8.04,
+          "end": 9.0,
+          "label": "响亮的镲片敲击声"
+        },
+        "start_spread": 0.120000000000001,
+        "end_spread": 0.009000000000000341,
+        "id": "A5"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "visual": "V1",
+      "audio": "A1",
+      "common_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "median_intersection": [
+        0.0,
+        1.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V1",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "median_intersection": [
+        0.0,
+        1.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "background",
+        "background",
+        "background"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V2",
+      "audio": "A1",
+      "common_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "median_intersection": [
+        2.17,
+        5.28
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V2",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "median_intersection": [
+        2.17,
+        6.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "background",
+        "background",
+        "background"
+      ],
+      "short": false
+    }
+  ]
+}

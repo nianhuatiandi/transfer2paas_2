@@ -1,0 +1,275 @@
+[
+  {
+    "id": "day01",
+    "benchmark": "Daily-Omni",
+    "domain": "柜门边缘讲解",
+    "window": [
+      0,
+      12
+    ],
+    "duration": 12.011999999999999,
+    "T": 121,
+    "first_L2": 4,
+    "L2": 4,
+    "L3": 0,
+    "audio": 4,
+    "edges": 8,
+    "foreground": 4,
+    "bounded": 3,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  },
+  {
+    "id": "day02",
+    "benchmark": "Daily-Omni",
+    "domain": "工作台管件与人物手势",
+    "window": [
+      0,
+      9.563194623933834
+    ],
+    "duration": 9.563194623933834,
+    "T": 96,
+    "first_L2": 0,
+    "L2": 3,
+    "L3": 3,
+    "audio": 4,
+    "edges": 4,
+    "foreground": 4,
+    "bounded": 4,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  },
+  {
+    "id": "dia01",
+    "benchmark": "DiaDemBench",
+    "domain": "双人桌边对话",
+    "window": [
+      0,
+      7.5
+    ],
+    "duration": 7.5,
+    "T": 76,
+    "first_L2": 2,
+    "L2": 4,
+    "L3": 1,
+    "audio": 7,
+    "edges": 7,
+    "foreground": 3,
+    "bounded": 0,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  },
+  {
+    "id": "dia02",
+    "benchmark": "DiaDemBench",
+    "domain": "车内对话与镜头切换",
+    "window": [
+      0,
+      9.4
+    ],
+    "duration": 9.408,
+    "T": 96,
+    "first_L2": 1,
+    "L2": 1,
+    "L3": 0,
+    "audio": 3,
+    "edges": 2,
+    "foreground": 1,
+    "bounded": 0,
+    "complete": true,
+    "extra": true,
+    "supplement": "extra_cut_control"
+  },
+  {
+    "id": "dia03",
+    "benchmark": "DiaDemBench",
+    "domain": "旁白与人物切镜",
+    "window": [
+      0,
+      9.56
+    ],
+    "duration": 9.578999999999999,
+    "T": 97,
+    "first_L2": 1,
+    "L2": 1,
+    "L3": 0,
+    "audio": 3,
+    "edges": 2,
+    "foreground": 1,
+    "bounded": 1,
+    "complete": true,
+    "extra": true,
+    "supplement": "extra_cut_control"
+  },
+  {
+    "id": "dia04",
+    "benchmark": "DiaDemBench",
+    "domain": "双人驾车与跨镜台词",
+    "window": [
+      0,
+      10.8441875
+    ],
+    "duration": 10.8501875,
+    "T": 112,
+    "first_L2": 1,
+    "L2": 3,
+    "L3": 0,
+    "audio": 3,
+    "edges": 5,
+    "foreground": 2,
+    "bounded": 0,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  },
+  {
+    "id": "sal01",
+    "benchmark": "video-SALMONN 2",
+    "domain": "工作垫上的小物件操作",
+    "window": [
+      0,
+      12
+    ],
+    "duration": 12.012012012012013,
+    "T": 124,
+    "first_L2": 3,
+    "L2": 3,
+    "L3": 1,
+    "audio": 6,
+    "edges": 2,
+    "foreground": 2,
+    "bounded": 0,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  },
+  {
+    "id": "sal02",
+    "benchmark": "video-SALMONN 2",
+    "domain": "厨房水槽清洁",
+    "window": [
+      0,
+      12
+    ],
+    "duration": 12.0,
+    "T": 127,
+    "first_L2": 2,
+    "L2": 4,
+    "L3": 0,
+    "audio": 6,
+    "edges": 10,
+    "foreground": 5,
+    "bounded": 5,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  },
+  {
+    "id": "sport01",
+    "benchmark": "自有运动",
+    "domain": "羽毛球",
+    "window": [
+      0,
+      8.0
+    ],
+    "duration": 8.0,
+    "T": 84,
+    "first_L2": 5,
+    "L2": 4,
+    "L3": 1,
+    "audio": 9,
+    "edges": 6,
+    "foreground": 2,
+    "bounded": 0,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  },
+  {
+    "id": "sport02",
+    "benchmark": "自有运动",
+    "domain": "立定跳远",
+    "window": [
+      0,
+      7.0
+    ],
+    "duration": 7.0,
+    "T": 72,
+    "first_L2": 1,
+    "L2": 2,
+    "L3": 1,
+    "audio": 4,
+    "edges": 4,
+    "foreground": 2,
+    "bounded": 4,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  },
+  {
+    "id": "ugc01",
+    "benchmark": "UGC-VideoCap",
+    "domain": "厨房早餐制作",
+    "window": [
+      10,
+      22
+    ],
+    "duration": 12.0,
+    "T": 127,
+    "first_L2": 0,
+    "L2": 0,
+    "L3": 0,
+    "audio": 0,
+    "edges": 0,
+    "foreground": 0,
+    "bounded": 0,
+    "complete": false,
+    "extra": true,
+    "supplement": "extra_rejected_audio"
+  },
+  {
+    "id": "ugc02",
+    "benchmark": "UGC-VideoCap",
+    "domain": "头发分缝与梳理",
+    "window": [
+      0,
+      12
+    ],
+    "duration": 12.0,
+    "T": 121,
+    "first_L2": 2,
+    "L2": 1,
+    "L3": 0,
+    "audio": 3,
+    "edges": 3,
+    "foreground": 2,
+    "bounded": 0,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  },
+  {
+    "id": "ugc03",
+    "benchmark": "UGC-VideoCap",
+    "domain": "三明治烹饪演示",
+    "window": [
+      0,
+      12
+    ],
+    "duration": 12.012012012012011,
+    "T": 137,
+    "first_L2": 11,
+    "L2": 13,
+    "L3": 0,
+    "audio": 6,
+    "edges": 20,
+    "foreground": 15,
+    "bounded": 14,
+    "complete": true,
+    "extra": false,
+    "supplement": null
+  }
+]

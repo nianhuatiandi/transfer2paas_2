@@ -1,0 +1,46 @@
+{
+  "flagged_events": [
+    "V0004",
+    "V0006",
+    "V0007"
+  ],
+  "unlocalized_transcript_candidates": [
+    {
+      "probe": "A0002.2",
+      "candidate": "绝对不花你钱，",
+      "parent_sources": [
+        "w00000/audio/1"
+      ],
+      "search_span": [
+        0,
+        7.5
+      ],
+      "reason": "Merged into A0002.1 as part of the same continuous utterance."
+    },
+    {
+      "probe": "A0002.3",
+      "candidate": "来推我推车。",
+      "parent_sources": [
+        "w00000/audio/1"
+      ],
+      "search_span": [
+        0,
+        7.5
+      ],
+      "reason": "Merged into A0002.1 as part of the same continuous utterance."
+    },
+    {
+      "probe": "A0003.2",
+      "candidate": "我有经验的。",
+      "parent_sources": [
+        "w00000/audio/2"
+      ],
+      "search_span": [
+        0,
+        7.5
+      ],
+      "reason": "Merged into A0003.1 as part of the same continuous utterance."
+    }
+  ],
+  "uncertain_visible_intervals": []
+}

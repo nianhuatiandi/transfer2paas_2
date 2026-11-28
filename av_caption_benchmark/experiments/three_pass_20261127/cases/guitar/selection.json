@@ -1,0 +1,17 @@
+{
+  "id": "guitar",
+  "category": "音乐演奏与节奏表演",
+  "title": "分屏吉他节奏教学",
+  "source": {
+    "repo": "mhan/shot2story-videos",
+    "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+    "member": "release_134k_videos/gI8lfbTYqwQ.15.mp4",
+    "offset": 119651185664,
+    "bytes": 1755318,
+    "source_sha256": "6e7eb7c776dd4fa90e0edcf1b011fc344b4e9517f7ad860db523aeba7f23c6c8",
+    "source_dataset": "EVA-data / Shot2Story"
+  },
+  "source_start": 0,
+  "duration": 12.012,
+  "sha256": "4ac0e337a3587c29d1073da618ea546ab5eb9e654c11c5bb4d30b2199d56fafa"
+}

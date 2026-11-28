@@ -1,0 +1,976 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma34",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "三人围坐游戏",
+    "main_subject_count": 3,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      31
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-52a35415-722.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      7.666666666666667
+    ],
+    "official_sha256": "2c7ad47413e492e33f5e3e37ea021e018fcf726382072594ad26463cf81be06e",
+    "clip_sha256": "2c7ad47413e492e33f5e3e37ea021e018fcf726382072594ad26463cf81be06e",
+    "audio_source": null
+  },
+  "duration_seconds": 7.666666666666667,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 7.666666666666667,
+      "first_frame": 0,
+      "end_frame_exclusive": 460
+    }
+  ],
+  "input_frames": {
+    "visual": 78
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "画面中有三名主要人物围坐在绿色桌前玩牌，中间男子进行发牌、收筹码并与左侧男子击掌庆祝，右侧女子托腮观看并鼓掌。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "位于画面中间的男子，身穿米色开衫和棕色裤子"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "位于画面左侧的男子，身穿浅色卫衣和蓝色牛仔裤"
+      },
+      {
+        "id": "S01-P03",
+        "shot_id": "S01",
+        "description": "位于画面右侧的女子，留着卷发，身穿绿色毛衣"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.9,
+        "description": "拿起扑克牌并将其发给对面的人"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 2.6,
+        "end": 5.4,
+        "description": "将桌上的筹码拨拢到自己面前"
+      },
+      {
+        "id": "S01-E03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 6.2,
+        "end": 7.0,
+        "description": "举起右手与左侧男子击掌"
+      },
+      {
+        "id": "S01-E04",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 3.4,
+        "end": 7.0,
+        "description": "举起双手鼓掌后放下右手与中间男子击掌"
+      },
+      {
+        "id": "S01-E05",
+        "actor_id": "S01-P03",
+        "shot_id": "S01",
+        "start": 3.2,
+        "end": 7.65,
+        "description": "举起双手持续鼓掌"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "发牌",
+        "start": 0.0,
+        "end": 1.9,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          1.8,
+          2.0
+        ],
+        "detail": "起始时中间男子双手交叠放在桌上，随后他伸出左手从桌面拿起一叠扑克牌，将其举至头部高度，接着向前下方挥动手臂，将牌发向对面的区域。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "双手交叠放在桌面上"
+          },
+          {
+            "time": 0.8,
+            "observation": "左手拿起一叠扑克牌"
+          },
+          {
+            "time": 1.6,
+            "observation": "将扑克牌举至头部高度"
+          },
+          {
+            "time": 1.9,
+            "observation": "手臂向前下方挥动，完成发牌动作"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "拿起扑克牌",
+            "time": 0.8,
+            "time_range": [
+              0.7,
+              0.9
+            ]
+          },
+          {
+            "name": "举高扑克牌",
+            "time": 1.6,
+            "time_range": [
+              1.5,
+              1.7
+            ]
+          },
+          {
+            "name": "向下发牌",
+            "time": 1.9,
+            "time_range": [
+              1.8,
+              2.0
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左臂",
+          "手"
+        ],
+        "movement_roles": [
+          "主体移动",
+          "客体操作"
+        ],
+        "subphases": [
+          {
+            "label": "拿牌并举起",
+            "start": 0.0,
+            "end": 1.6,
+            "detail": "从桌面拿起扑克牌并举至头部高度。",
+            "evidence": [
+              {
+                "time": 0.8,
+                "observation": "左手拿起扑克牌"
+              },
+              {
+                "time": 1.6,
+                "observation": "扑克牌被举至头部高度"
+              }
+            ]
+          },
+          {
+            "label": "发牌",
+            "start": 1.6,
+            "end": 1.9,
+            "detail": "手臂向前下方挥动，将牌发出。",
+            "evidence": [
+              {
+                "time": 1.9,
+                "observation": "手臂快速向前下方挥动"
+              }
+            ]
+          }
+        ],
+        "brief": "中间男子拿起扑克牌并将其发给对面的人"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "收拢筹码",
+        "start": 2.6,
+        "end": 5.4,
+        "start_range": [
+          2.5,
+          2.7
+        ],
+        "end_range": [
+          5.3,
+          5.5
+        ],
+        "detail": "中间男子身体前倾，伸出双臂越过桌面，双手张开呈抓取状，将散落在桌子中央的彩色筹码向自己身前拨拢，最后双手按压在聚拢的筹码堆上。",
+        "evidence": [
+          {
+            "time": 2.6,
+            "observation": "身体开始明显前倾"
+          },
+          {
+            "time": 3.0,
+            "observation": "双臂完全伸展越过桌面，双手张开"
+          },
+          {
+            "time": 4.0,
+            "observation": "双手接触并开始向内拨拢筹码"
+          },
+          {
+            "time": 5.4,
+            "observation": "双手按压在聚拢的筹码堆上"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "伸手准备抓取",
+            "time": 3.0,
+            "time_range": [
+              2.8,
+              3.2
+            ]
+          },
+          {
+            "name": "拨拢筹码",
+            "time": 4.0,
+            "time_range": [
+              3.5,
+              4.5
+            ]
+          },
+          {
+            "name": "按住筹码",
+            "time": 5.4,
+            "time_range": [
+              5.2,
+              5.6
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "双臂",
+          "手"
+        ],
+        "movement_roles": [
+          "主体移动",
+          "客体操作"
+        ],
+        "subphases": [
+          {
+            "label": "前倾伸手",
+            "start": 2.6,
+            "end": 3.4,
+            "detail": "身体前倾，双臂伸过桌面，双手张开准备抓取。",
+            "evidence": [
+              {
+                "time": 2.6,
+                "observation": "身体前倾"
+              },
+              {
+                "time": 3.0,
+                "observation": "双臂伸展，双手张开"
+              }
+            ]
+          },
+          {
+            "label": "拨拢筹码",
+            "start": 3.4,
+            "end": 5.0,
+            "detail": "双手接触筹码并向内推拨，将其聚拢在自己面前。",
+            "evidence": [
+              {
+                "time": 4.0,
+                "observation": "双手在筹码堆中向内拨动"
+              },
+              {
+                "time": 5.0,
+                "observation": "筹码基本聚拢完毕"
+              }
+            ]
+          },
+          {
+            "label": "按住筹码",
+            "start": 5.0,
+            "end": 5.4,
+            "detail": "双手平放并按压在聚拢的筹码堆上。",
+            "evidence": [
+              {
+                "time": 5.4,
+                "observation": "双手按压在筹码堆上"
+              }
+            ]
+          }
+        ],
+        "brief": "中间男子将桌上的筹码拨拢到自己面前"
+      },
+      {
+        "id": "S01-A03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E03",
+        "kind": "motion",
+        "label": "击掌",
+        "start": 6.2,
+        "end": 7.0,
+        "start_range": [
+          6.1,
+          6.3
+        ],
+        "end_range": [
+          6.9,
+          7.1
+        ],
+        "detail": "中间男子收回按在筹码上的手，抬起右臂向左侧伸出，手掌张开，与左侧男子的右手在空中相碰，随后手臂回落。",
+        "evidence": [
+          {
+            "time": 6.2,
+            "observation": "右手离开桌面开始抬起"
+          },
+          {
+            "time": 6.6,
+            "observation": "右臂向左侧伸出，手掌张开"
+          },
+          {
+            "time": 6.8,
+            "observation": "与左侧男子的手掌在空中相碰"
+          },
+          {
+            "time": 7.0,
+            "observation": "手臂回落"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抬手准备",
+            "time": 6.2,
+            "time_range": [
+              6.1,
+              6.3
+            ]
+          },
+          {
+            "name": "空中相碰",
+            "time": 6.8,
+            "time_range": [
+              6.7,
+              6.9
+            ]
+          },
+          {
+            "name": "手臂回落",
+            "time": 7.0,
+            "time_range": [
+              6.9,
+              7.1
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右臂",
+          "手"
+        ],
+        "movement_roles": [
+          "交互对象"
+        ],
+        "subphases": [
+          {
+            "label": "抬手外伸",
+            "start": 6.2,
+            "end": 6.6,
+            "detail": "右手离开桌面，向右上方抬起并向左侧伸出。",
+            "evidence": [
+              {
+                "time": 6.2,
+                "observation": "右手开始抬起"
+              },
+              {
+                "time": 6.6,
+                "observation": "手臂向左伸出"
+              }
+            ]
+          },
+          {
+            "label": "击掌",
+            "start": 6.6,
+            "end": 6.9,
+            "detail": "手掌与左侧男子的手掌在空中相碰。",
+            "evidence": [
+              {
+                "time": 6.8,
+                "observation": "两手在空中接触"
+              }
+            ]
+          },
+          {
+            "label": "回落",
+            "start": 6.9,
+            "end": 7.0,
+            "detail": "击掌后手臂自然回落。",
+            "evidence": [
+              {
+                "time": 7.0,
+                "observation": "手臂下落"
+              }
+            ]
+          }
+        ],
+        "brief": "中间男子举起右手与左侧男子击掌"
+      },
+      {
+        "id": "S01-A04",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "S01-E04",
+        "kind": "motion",
+        "label": "鼓掌",
+        "start": 3.4,
+        "end": 5.8,
+        "start_range": [
+          3.3,
+          3.5
+        ],
+        "end_range": [
+          5.7,
+          5.9
+        ],
+        "detail": "左侧男子原本双手放在腿上，随后抬起双手在胸前合拢并反复分开，做出鼓掌的动作，面带微笑。",
+        "evidence": [
+          {
+            "time": 3.4,
+            "observation": "双手离开腿部开始抬起"
+          },
+          {
+            "time": 4.0,
+            "observation": "双手在胸前合拢"
+          },
+          {
+            "time": 5.0,
+            "observation": "双手再次合拢"
+          },
+          {
+            "time": 5.8,
+            "observation": "停止鼓掌，右手开始向外伸出"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抬手",
+            "time": 3.4,
+            "time_range": [
+              3.3,
+              3.5
+            ]
+          },
+          {
+            "name": "首次合拢",
+            "time": 4.0,
+            "time_range": [
+              3.9,
+              4.1
+            ]
+          },
+          {
+            "name": "结束鼓掌",
+            "time": 5.8,
+            "time_range": [
+              5.7,
+              5.9
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "手"
+        ],
+        "movement_roles": [
+          "交互对象"
+        ],
+        "subphases": [
+          {
+            "label": "抬手准备",
+            "start": 3.4,
+            "end": 3.8,
+            "detail": "双手从腿上抬起至胸前位置。",
+            "evidence": [
+              {
+                "time": 3.4,
+                "observation": "双手开始抬起"
+              }
+            ]
+          },
+          {
+            "label": "连续鼓掌",
+            "start": 3.8,
+            "end": 5.8,
+            "detail": "双手在胸前反复合拢与分开。",
+            "evidence": [
+              {
+                "time": 4.0,
+                "observation": "双手合拢"
+              },
+              {
+                "time": 5.0,
+                "observation": "双手再次合拢"
+              }
+            ]
+          }
+        ],
+        "brief": "左侧男子抬起双手在胸前鼓掌"
+      },
+      {
+        "id": "S01-A05",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "S01-E04",
+        "kind": "motion",
+        "label": "击掌",
+        "start": 5.8,
+        "end": 7.0,
+        "start_range": [
+          5.7,
+          5.9
+        ],
+        "end_range": [
+          6.9,
+          7.1
+        ],
+        "detail": "左侧男子停止鼓掌后，保持左手在胸前微抬，同时抬起右臂向右侧伸出，手掌张开，与中间男子的右手在空中相碰，随后右手回落。",
+        "evidence": [
+          {
+            "time": 5.8,
+            "observation": "右手开始向右侧伸出"
+          },
+          {
+            "time": 6.6,
+            "observation": "右臂完全伸直，手掌张开"
+          },
+          {
+            "time": 6.8,
+            "observation": "与中间男子的手掌相碰"
+          },
+          {
+            "time": 7.0,
+            "observation": "右手回落"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "右手外伸",
+            "time": 5.8,
+            "time_range": [
+              5.7,
+              5.9
+            ]
+          },
+          {
+            "name": "空中相碰",
+            "time": 6.8,
+            "time_range": [
+              6.7,
+              6.9
+            ]
+          },
+          {
+            "name": "右手回落",
+            "time": 7.0,
+            "time_range": [
+              6.9,
+              7.1
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右臂",
+          "手"
+        ],
+        "movement_roles": [
+          "交互对象"
+        ],
+        "subphases": [
+          {
+            "label": "右手外伸",
+            "start": 5.8,
+            "end": 6.6,
+            "detail": "右手脱离鼓掌状态，向右侧伸出准备击掌。",
+            "evidence": [
+              {
+                "time": 5.8,
+                "observation": "右手开始向外伸出"
+              },
+              {
+                "time": 6.6,
+                "observation": "手臂伸直"
+              }
+            ]
+          },
+          {
+            "label": "击掌",
+            "start": 6.6,
+            "end": 6.9,
+            "detail": "手掌与中间男子的手掌在空中相碰。",
+            "evidence": [
+              {
+                "time": 6.8,
+                "observation": "两手接触"
+              }
+            ]
+          },
+          {
+            "label": "回落",
+            "start": 6.9,
+            "end": 7.0,
+            "detail": "击掌后右手自然回落。",
+            "evidence": [
+              {
+                "time": 7.0,
+                "observation": "右手下落"
+              }
+            ]
+          }
+        ],
+        "brief": "左侧男子抬起右手与中间男子击掌"
+      },
+      {
+        "id": "S01-A06",
+        "actor_id": "S01-P03",
+        "shot_id": "S01",
+        "execution_id": "S01-E05",
+        "kind": "motion",
+        "label": "鼓掌",
+        "start": 3.2,
+        "end": 7.65,
+        "start_range": [
+          3.1,
+          3.3
+        ],
+        "end_range": [
+          7.6,
+          7.666
+        ],
+        "detail": "右侧女子原本双手托着脸颊，随后将双手移开并在脸侧前方合拢，反复进行鼓掌动作，直到镜头结束。",
+        "evidence": [
+          {
+            "time": 3.2,
+            "observation": "双手离开脸颊开始合拢"
+          },
+          {
+            "time": 4.0,
+            "observation": "双手在脸侧前方合拢"
+          },
+          {
+            "time": 5.0,
+            "observation": "双手再次合拢"
+          },
+          {
+            "time": 6.0,
+            "observation": "双手持续合拢"
+          },
+          {
+            "time": 7.65,
+            "observation": "双手仍在做鼓掌动作"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "双手离脸",
+            "time": 3.2,
+            "time_range": [
+              3.1,
+              3.3
+            ]
+          },
+          {
+            "name": "首次合拢",
+            "time": 4.0,
+            "time_range": [
+              3.9,
+              4.1
+            ]
+          },
+          {
+            "name": "持续鼓掌",
+            "time": 6.0,
+            "time_range": [
+              5.0,
+              7.0
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "手"
+        ],
+        "movement_roles": [
+          "交互对象"
+        ],
+        "subphases": [
+          {
+            "label": "双手离脸准备",
+            "start": 3.2,
+            "end": 3.6,
+            "detail": "双手从脸颊处移开，调整至适合鼓掌的位置。",
+            "evidence": [
+              {
+                "time": 3.2,
+                "observation": "双手离开脸颊"
+              }
+            ]
+          },
+          {
+            "label": "连续鼓掌",
+            "start": 3.6,
+            "end": 7.65,
+            "detail": "双手在脸侧前方反复合拢与分开，动作连贯直至视频结束。",
+            "evidence": [
+              {
+                "time": 4.0,
+                "observation": "双手合拢"
+              },
+              {
+                "time": 5.0,
+                "observation": "双手再次合拢"
+              },
+              {
+                "time": 6.0,
+                "observation": "双手持续合拢"
+              },
+              {
+                "time": 7.65,
+                "observation": "双手仍在鼓掌"
+              }
+            ]
+          }
+        ],
+        "brief": "右侧女子将双手移开并在脸侧前方持续鼓掌"
+      }
+    ],
+    "uncertainties": [
+      "由于帧率限制，无法精确判断每次鼓掌的具体次数和微小的手部停顿时间。"
+    ],
+    "motion_tracks": [
+      {
+        "context": "该男子盘腿坐在绿色赌桌后方，位于画面中央。他身穿米色针织开衫和棕色长裤，处于两名同伴之间：左侧是一名穿浅色卫衣的男子，右侧是一名卷发、双手托腮的女子。桌上散落着扑克牌和筹码堆。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 42,
+            "caption": "男子身体前倾，低头注视桌面，双手交叠放在膝盖附近的桌面上方。随后他松开双手，右手向画面前方伸出，手指触碰并整理面前的一小摞红色筹码。",
+            "start": 0.0,
+            "end": 0.7,
+            "action_ids": [
+              "S01-A01"
+            ]
+          },
+          {
+            "from_frame": 60,
+            "to_frame": 120,
+            "caption": "男子收回右手，从身前的牌堆中拿起一张扑克牌举至眼前查看。看完后，他将这张牌面朝下放置在桌子中央的公共区域。",
+            "start": 1.0,
+            "end": 2.0,
+            "action_ids": [
+              "S01-A01"
+            ]
+          },
+          {
+            "from_frame": 150,
+            "to_frame": 180,
+            "caption": "放置好卡牌后，男子的视线转向桌上的大堆彩色筹码。他的表情逐渐变得兴奋，嘴角上扬露出笑容，双臂开始向前伸展准备抓取筹码。",
+            "start": 2.5,
+            "end": 3.0,
+            "action_ids": [
+              "S01-A02"
+            ]
+          },
+          {
+            "from_frame": 192,
+            "to_frame": 330,
+            "caption": "男子大幅度俯身向前，张开双臂将桌子中央的一大堆混合颜色筹码全部揽入怀中。此时旁边的女子开始鼓掌庆祝，男子一边收拢筹码一边抬头微笑看向同伴。",
+            "start": 3.2,
+            "end": 5.5,
+            "action_ids": [
+              "S01-A02"
+            ]
+          },
+          {
+            "from_frame": 360,
+            "to_frame": 420,
+            "caption": "男子停止整理筹码，抬起左手与左侧男子的右手进行击掌互动。击掌完成后，他放下手臂重新坐直身体。",
+            "start": 6.0,
+            "end": 7.0,
+            "action_ids": [
+              "S01-A03"
+            ]
+          },
+          {
+            "from_frame": 432,
+            "to_frame": 459,
+            "caption": "男子恢复放松坐姿，双手自然交握放在腿上，面带满足的微笑注视着前方的筹码堆和同伴，直到镜头结束。",
+            "start": 7.2,
+            "end": 7.65,
+            "action_ids": []
+          }
+        ],
+        "camera": "固定机位的中景镜头，视角略微俯视桌面，完整记录了三人围坐打牌及赢钱后的庆祝过程。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "位于画面中间的男子，身穿米色开衫和棕色裤子"
+      },
+      {
+        "context": "该男子位于画面左侧前景，坐在绿色绒面赌桌旁。他身穿米白色圆领长袖卫衣和蓝色牛仔裤，左手腕佩戴黑色手表，双腿盘坐或屈膝着地。初始状态下，他身体微向右侧倾斜，双手交叠置于大腿上方靠近桌面处，视线向下聚焦于桌面中央的筹码堆与卡牌区域，面部表情平静且专注。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 150,
+            "caption": "男子保持静坐姿态，双手自然搭在腿部或桌沿附近，未发生大幅度位移。他的头部微微低垂，目光持续锁定在桌子中央正在进行的牌局上，随着中间男子的动作（如发牌、整理筹码），他的眼神有细微的跟随移动，但躯干和四肢基本维持静止的观察状态。",
+            "start": 0.0,
+            "end": 2.5,
+            "action_ids": []
+          },
+          {
+            "from_frame": 162,
+            "to_frame": 270,
+            "caption": "当中间的男子开始兴奋地伸手抓取桌上的筹码时，左侧男子的嘴角上扬露出笑容，神情变得轻松愉悦。约在帧210左右，他开始抬起双手至胸前高度，手掌相对，做出鼓掌的动作以庆祝这一时刻，双臂随节奏轻微开合，视线始终跟随着赢钱的同伴。",
+            "start": 2.7,
+            "end": 4.5,
+            "action_ids": [
+              "S01-A04"
+            ]
+          },
+          {
+            "from_frame": 282,
+            "to_frame": 342,
+            "caption": "男子继续保持着微笑并鼓掌的姿态，身体略微前倾以示投入。随后他逐渐停止拍手，将双手放下回到大腿附近的休息位置，但上半身依然面向桌子中心，注视着中间男子整理战利品并与右侧女子互动。",
+            "start": 4.7,
+            "end": 5.7,
+            "action_ids": [
+              "S01-A04"
+            ]
+          },
+          {
+            "from_frame": 360,
+            "to_frame": 420,
+            "caption": "为了回应中间男子的示好，左侧男子主动举起右手（画面中靠内侧的手）伸向对方。他在帧402左右与中间男子完成了一次清脆的高五击掌动作，手臂伸直，脸上带着明显的笑意，这是本片段中他最显著的肢体交互行为。",
+            "start": 6.0,
+            "end": 7.0,
+            "action_ids": [
+              "S01-A05"
+            ]
+          },
+          {
+            "from_frame": 432,
+            "to_frame": 459,
+            "caption": "击掌结束后，男子收回右手重新放置于腿上，恢复了最初的坐姿基线。他转头看向右侧的女子，似乎在等待下一轮游戏的开始或聆听对话，表情回归平和，双手再次交叠或自然摆放，处于被动参与的状态。",
+            "start": 7.2,
+            "end": 7.65,
+            "action_ids": []
+          }
+        ],
+        "camera": "镜头采用固定的中景平视视角，机位稳定无推拉摇移。画面构图均衡，三人围绕赌桌呈三角形分布，焦点清晰地覆盖了所有人物及桌面的筹码细节，光线柔和偏暖，营造出夜晚室内聚会的氛围。",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "identity": "位于画面左侧的男子，身穿浅色卫衣和蓝色牛仔裤"
+      },
+      {
+        "context": "该女子位于画面右侧前景，身体朝向左前方，坐在铺着绿色绒布的牌桌旁。她留着蓬松的卷发，身穿宽松的绿色毛衣和蓝色牛仔裤。起初她双手托腮，手肘撑在膝盖上，神情显得无聊且疲惫，视线低垂看着桌面。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 210,
+            "caption": "在视频的前半段，该女子始终保持双手托腮的姿势，手肘支撑在大腿上，目光一直低垂注视着牌桌上的筹码和纸牌，身体几乎没有移动，呈现出一种百无聊赖的状态。",
+            "start": 0.0,
+            "end": 3.5,
+            "action_ids": [
+              "S01-A06"
+            ]
+          },
+          {
+            "from_frame": 210,
+            "to_frame": 390,
+            "caption": "当中间的男子开始激动地收拢筹码时，女子的注意力被吸引。她放下原本托腮的双手，抬起至胸前高度，开始有节奏地鼓掌。她的视线紧紧跟随着中间男子的动作，表情从之前的无聊转变为专注和赞赏。",
+            "start": 3.5,
+            "end": 6.5,
+            "action_ids": [
+              "S01-A06"
+            ]
+          },
+          {
+            "from_frame": 390,
+            "to_frame": 459,
+            "caption": "随着庆祝气氛的高涨，女子的鼓掌声变得更加热烈，双手举得更高。最后几帧中，她停止了大幅度的拍手，将双手重新合拢并轻轻抵在下巴处，面带微笑地注视着左侧的男子与中间男子的击掌互动，神态轻松愉悦。",
+            "start": 6.5,
+            "end": 7.65,
+            "action_ids": [
+              "S01-A06"
+            ]
+          }
+        ],
+        "camera": "镜头采用固定的中景平视视角，构图稳定，焦点清晰地落在三位人物身上。背景是夜晚模糊的城市灯光，营造出室内聚会的氛围。整个过程中摄像机没有进行任何推拉摇移或变焦操作。",
+        "actor_id": "S01-P03",
+        "shot_id": "S01",
+        "identity": "位于画面右侧的女子，留着卷发，身穿绿色毛衣"
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "由于帧率限制，无法精确判断每次鼓掌的具体次数和微小的手部停顿时间。"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "b7817b23fcbad3079c9cc31e0810f7ac08dfbd64e8ecdab29683888e8af20039",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

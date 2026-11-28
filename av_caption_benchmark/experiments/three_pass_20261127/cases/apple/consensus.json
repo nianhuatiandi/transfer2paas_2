@@ -1,0 +1,397 @@
+{
+  "groups": {
+    "visual": [
+      {
+        "members": [
+          "1.0",
+          "2.0",
+          "3.0"
+        ],
+        "votes": 3,
+        "start": 0.0,
+        "end": 2.5,
+        "representative": "1.0",
+        "example": {
+          "actor": "右手",
+          "activity": "搅拌食物",
+          "kind": "motion",
+          "label": "搅拌苹果块",
+          "brief": "一只手拿着金色勺子在浅蓝色碗中持续搅拌切好的苹果块和深色酱汁。",
+          "detail": "手腕带动勺子进行圆周运动，使碗中的食材混合均匀。",
+          "start": 0.0,
+          "end": 2.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 1.7000000000000002,
+        "id": "V1"
+      },
+      {
+        "members": [
+          "1.1",
+          "2.1",
+          "3.1"
+        ],
+        "votes": 3,
+        "start": 4.5,
+        "end": 8.3,
+        "representative": "1.1",
+        "example": {
+          "actor": "左手无名指戴戒指的手",
+          "activity": "盛放食物",
+          "kind": "motion",
+          "label": "舀取并添加配料",
+          "brief": "用金色勺子从左侧小碗中舀出拌好酱汁的苹果块，移动到右侧大碗上方倒入燕麦粥中，重复两次。",
+          "detail": "手部控制勺子平稳移动，将苹果块放置在粉色碗内的燕麦表面中央位置。",
+          "start": 4.5,
+          "end": 8.3,
+          "phases": [
+            {
+              "label": "第一次舀取与倾倒",
+              "start": 4.5,
+              "end": 6.5
+            },
+            {
+              "label": "第二次舀取与倾倒",
+              "start": 6.8,
+              "end": 8.3
+            }
+          ]
+        },
+        "start_spread": 0.2999999999999998,
+        "end_spread": 0.1999999999999993,
+        "id": "V2"
+      },
+      {
+        "members": [
+          "3.2"
+        ],
+        "votes": 1,
+        "start": 13.5,
+        "end": 17.5,
+        "representative": "3.2",
+        "example": {
+          "actor": "黑衣女子",
+          "activity": "产品推介",
+          "kind": "gesture",
+          "label": "展示罐装商品",
+          "brief": "她举起一个印有图案的白色圆柱形纸筒包装向镜头示意讲解。",
+          "detail": "双手托举白色圆筒置于胸前高度，视线注视前方配合口型变化进行说明。",
+          "start": 13.5,
+          "end": 17.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V3"
+      },
+      {
+        "members": [
+          "1.2",
+          "2.2"
+        ],
+        "votes": 2,
+        "start": 13.850000000000001,
+        "end": 15.25,
+        "representative": "2.2",
+        "example": {
+          "actor": "黑衣女子",
+          "activity": "展示物品",
+          "kind": "gesture",
+          "label": "指向罐子标签",
+          "brief": "女子举起白色罐子并用手指指向其上的图案。",
+          "detail": "左手握住圆柱形白罐中部，右手食指伸出点向罐身下方的圆形图案区域。",
+          "start": 13.9,
+          "end": 15.3,
+          "phases": []
+        },
+        "start_spread": 0.09999999999999964,
+        "end_spread": 0.10000000000000142,
+        "id": "V4"
+      }
+    ],
+    "audio": [
+      {
+        "members": [
+          "2.0"
+        ],
+        "votes": 1,
+        "start": 0.48,
+        "end": 10.64,
+        "representative": "2.0",
+        "example": {
+          "actor": "女声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "女声旁白介绍燕麦粥的吃法",
+          "text": "You can stick this over ice cream or yogurt and it's gonna be so delicious. But we're just gonna top our oatmeal with some apples, and we have freshly made apple cinnamon oatmeal.",
+          "start": 0.48,
+          "end": 10.64
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A1"
+      },
+      {
+        "members": [
+          "1.0",
+          "3.0"
+        ],
+        "votes": 2,
+        "start": 0.48,
+        "end": 17.517491,
+        "representative": "1.0",
+        "example": {
+          "actor": "女声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "女声旁白讲解燕麦片的吃法",
+          "text": "You can stick this over ice cream or yogurt and it's gonna be so delicious, but we're just gonna top our oatmeal with some apples and we have freshly made apple cinnamon oatmeal. I'm making an individual serving here, but this whole can of oatmeal will last you at least like two weeks.",
+          "start": 0.48,
+          "end": 17.517491
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A2"
+      },
+      {
+        "members": [
+          "1.1",
+          "2.1"
+        ],
+        "votes": 2,
+        "start": 0.5800000000000001,
+        "end": 3.96,
+        "representative": "1.1",
+        "example": {
+          "actor": "轻快器乐背景音乐",
+          "kind": "music",
+          "layer": "background",
+          "label": "轻快器乐背景音乐",
+          "text": "",
+          "start": 0.64,
+          "end": 3.96
+        },
+        "start_spread": 0.12,
+        "end_spread": 0.0,
+        "id": "A3"
+      },
+      {
+        "members": [
+          "3.1"
+        ],
+        "votes": 1,
+        "start": 0.64,
+        "end": 17.36,
+        "representative": "3.1",
+        "example": {
+          "actor": "轻快器乐背景音乐",
+          "kind": "music",
+          "layer": "background",
+          "text": "轻柔的原声器乐背景音乐",
+          "start": 0.64,
+          "end": 17.36,
+          "label": "轻柔的原声器乐背景音乐"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A4"
+      },
+      {
+        "members": [
+          "2.2"
+        ],
+        "votes": 1,
+        "start": 4.2,
+        "end": 7.0,
+        "representative": "2.2",
+        "example": {
+          "actor": "轻快的原声器乐背景音乐",
+          "kind": "music",
+          "layer": "background",
+          "label": "轻快的原声器乐背景音乐",
+          "text": "",
+          "start": 4.2,
+          "end": 7.0
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A5"
+      },
+      {
+        "members": [
+          "1.2",
+          "2.3"
+        ],
+        "votes": 2,
+        "start": 5.720000000000001,
+        "end": 17.4987455,
+        "representative": "2.3",
+        "example": {
+          "actor": "轻快的原声器乐背景音乐",
+          "kind": "music",
+          "layer": "background",
+          "label": "轻快的原声器乐背景音乐",
+          "text": "",
+          "start": 7.24,
+          "end": 17.48
+        },
+        "start_spread": 3.04,
+        "end_spread": 0.037490999999999275,
+        "id": "A6"
+      },
+      {
+        "members": [
+          "2.4"
+        ],
+        "votes": 1,
+        "start": 10.88,
+        "end": 17.44,
+        "representative": "2.4",
+        "example": {
+          "actor": "女声旁白",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "女声旁白说明分量与保存时间",
+          "text": "I'm making an individual serving here, but this whole can of oatmeal will last you at least like two weeks.",
+          "start": 10.88,
+          "end": 17.44
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A7"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "visual": "V1",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        0.48,
+        2.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V1",
+      "audio": "A3",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        0.5800000000000001,
+        2.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "background",
+        "background"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V2",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        4.5,
+        8.3
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V2",
+      "audio": "A6",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        5.720000000000001,
+        8.3
+      ],
+      "keep": true,
+      "layer_votes": [
+        "background",
+        "background"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V4",
+      "audio": "A2",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        13.850000000000001,
+        15.25
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V4",
+      "audio": "A6",
+      "common_rounds": [
+        "1",
+        "2"
+      ],
+      "overlap_rounds": [
+        "1",
+        "2"
+      ],
+      "median_intersection": [
+        13.850000000000001,
+        15.25
+      ],
+      "keep": true,
+      "layer_votes": [
+        "background",
+        "background"
+      ],
+      "short": false
+    }
+  ]
+}

@@ -1,0 +1,1002 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "day01",
+    "benchmark": "Daily-Omni",
+    "domain": "柜门边缘讲解",
+    "original_id": "02-0m4RbDUI",
+    "source_url": "https://huggingface.co/datasets/liarliar/Daily-Omni/blob/bf5a6ee4c829510b7a14869e3104efeafc330b07/Videos.tar",
+    "archive_member": "Videos/02-0m4RbDUI/02-0m4RbDUI_video.mp4",
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "source_duration": 30.03,
+    "source_media_sha256": "ad884b7450d1ced362e871a9c757d7ab3be53638d3daaed142ec7f4b44c78016",
+    "clip_sha256": "1436b1822b7104c361bfff78ad3283d46b6c6d8843ecc62325f4e114c92e1a78",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 12.011999999999999,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 12.011999999999999,
+      "first_frame": 0,
+      "end_frame_exclusive": 360
+    }
+  ],
+  "input_frames": {
+    "visual": 121,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一个连续镜头，画面中一名男子蹲在橱柜前操作手中的设备并用手触摸柜门。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿深色短袖上衣的男子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 0.7,
+        "description": "双手持握设备进行操作"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.8,
+        "end": 4.9,
+        "description": "右手抬起触碰右侧橱柜门"
+      },
+      {
+        "id": "S01-E03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 5.0,
+        "end": 6.5,
+        "description": "收回右手继续操作设备"
+      },
+      {
+        "id": "S01-E04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 6.6,
+        "end": 8.4,
+        "description": "再次抬手触碰右侧橱柜门"
+      },
+      {
+        "id": "S01-E05",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 8.5,
+        "end": 11.98,
+        "description": "收回右手持续操作设备"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "操作手持设备",
+        "start": 0.0,
+        "end": 0.7,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          0.7,
+          0.7
+        ],
+        "detail": "男子双手捧着一个银色长方形设备，左手托住底部，右手手指在设备表面进行点击或滑动操作。随后他停止操作并将右手移开。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "男子双手持握设备，低头注视屏幕"
+          },
+          {
+            "time": 0.6,
+            "observation": "右手仍在设备上进行操作"
+          },
+          {
+            "time": 0.7,
+            "observation": "右手离开设备向右侧移动"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "开始操作",
+            "time": 0.0,
+            "time_range": null
+          },
+          {
+            "name": "手部离开设备",
+            "time": 0.7,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "支撑",
+          "精细操作"
+        ],
+        "subphases": [
+          {
+            "label": "双手持握与操作",
+            "start": 0.0,
+            "end": 0.6,
+            "detail": "左手稳定托举设备，右手手指在设备屏幕上活动。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "双手位于胸前位置持握设备"
+              },
+              {
+                "time": 0.6,
+                "observation": "右手手指接触设备边缘"
+              }
+            ]
+          },
+          {
+            "label": "转移注意力",
+            "start": 0.7,
+            "end": 0.7,
+            "detail": "右手从设备上抬起，准备伸向旁边的物体。",
+            "evidence": [
+              {
+                "time": 0.7,
+                "observation": "右手脱离设备并向右前方伸出"
+              }
+            ]
+          }
+        ],
+        "brief": "男子双手拿着一个类似手机的设备进行初步操作后放下右手。"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "gesture",
+        "label": "手势比划",
+        "start": 0.8,
+        "end": 1.0,
+        "start_range": [
+          0.8,
+          0.8
+        ],
+        "end_range": [
+          1.0,
+          1.0
+        ],
+        "detail": "男子的右手悬停在米色橱柜门前上方，手掌张开朝向柜门，在空中做了一个短暂的挥动或指示动作，尚未发生物理接触。",
+        "evidence": [
+          {
+            "time": 0.8,
+            "observation": "右手张开悬浮于柜门前"
+          },
+          {
+            "time": 0.9,
+            "observation": "手部保持张开姿态靠近柜门"
+          },
+          {
+            "time": 1.0,
+            "observation": "手掌即将贴向柜门表面"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "手部悬停",
+            "time": 0.9,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "空间定位"
+        ],
+        "subphases": [
+          {
+            "label": "空中比划",
+            "start": 0.8,
+            "end": 1.0,
+            "detail": "手臂伸直，手腕佩戴手表清晰可见，五指张开对着柜门做非接触性手势。",
+            "evidence": [
+              {
+                "time": 0.8,
+                "observation": "手影投射在柜门上，未接触实体"
+              },
+              {
+                "time": 1.0,
+                "observation": "指尖距离柜门极近"
+              }
+            ]
+          }
+        ],
+        "brief": "男子用张开的右手在橱柜门前做了个短暂的手势。"
+      },
+      {
+        "id": "S01-A03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "抚摸柜门",
+        "start": 1.0,
+        "end": 4.9,
+        "start_range": [
+          1.0,
+          1.0
+        ],
+        "end_range": [
+          4.9,
+          4.9
+        ],
+        "detail": "男子的右手掌完全贴合在右侧橱柜门的木质表面上，并在该区域进行了小范围的上下左右滑动和按压测试，最后将手收回。",
+        "evidence": [
+          {
+            "time": 1.0,
+            "observation": "手掌首次平贴在柜门上"
+          },
+          {
+            "time": 2.0,
+            "observation": "手在柜门中部停留并按压"
+          },
+          {
+            "time": 3.0,
+            "observation": "手部在柜门表面轻微调整位置"
+          },
+          {
+            "time": 4.9,
+            "observation": "右手迅速撤离柜门表面"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "建立接触",
+            "time": 1.0,
+            "time_range": null
+          },
+          {
+            "name": "结束接触",
+            "time": 4.9,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "触觉探索"
+        ],
+        "subphases": [
+          {
+            "label": "贴附与感知",
+            "start": 1.0,
+            "end": 2.5,
+            "detail": "整个手掌覆盖在柜门面板上，似乎在感受材质或平整度。",
+            "evidence": [
+              {
+                "time": 1.0,
+                "observation": "掌心完全接触柜门"
+              },
+              {
+                "time": 2.0,
+                "observation": "手指微曲紧贴门面"
+              }
+            ]
+          },
+          {
+            "label": "局部滑动检查",
+            "start": 2.5,
+            "end": 4.5,
+            "detail": "手在柜门特定区域内小幅移动，像是在敲击或摩擦某个特定点。",
+            "evidence": [
+              {
+                "time": 3.0,
+                "observation": "手部位置略有变动但仍在此区域"
+              },
+              {
+                "time": 4.0,
+                "observation": "持续保持接触状态"
+              }
+            ]
+          },
+          {
+            "label": "撤手",
+            "start": 4.5,
+            "end": 4.9,
+            "detail": "完成检查后将手抽离柜门。",
+            "evidence": [
+              {
+                "time": 4.8,
+                "observation": "手部开始向后拉回"
+              },
+              {
+                "time": 4.9,
+                "observation": "手已完全离开柜门平面"
+              }
+            ]
+          }
+        ],
+        "brief": "男子长时间用手掌抚摸并检查右侧橱柜门的表面状况。"
+      },
+      {
+        "id": "S01-A04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E03",
+        "kind": "motion",
+        "label": "操作手持设备",
+        "start": 5.0,
+        "end": 6.5,
+        "start_range": [
+          5.0,
+          5.0
+        ],
+        "end_range": [
+          6.5,
+          6.5
+        ],
+        "detail": "男子将右手收回到身前，重新握住那个银色设备，视线向下聚焦于屏幕，双手配合进行调整或记录数据。",
+        "evidence": [
+          {
+            "time": 5.0,
+            "observation": "右手回到设备旁"
+          },
+          {
+            "time": 5.5,
+            "observation": "双手共同持握设备"
+          },
+          {
+            "time": 6.4,
+            "observation": "专注查看设备内容"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "恢复持握",
+            "time": 5.5,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "信息处理"
+        ],
+        "subphases": [
+          {
+            "label": "双手复位",
+            "start": 5.0,
+            "end": 5.5,
+            "detail": "右手归位，与左手一起稳固地拿住设备。",
+            "evidence": [
+              {
+                "time": 5.0,
+                "observation": "右手接近设备"
+              },
+              {
+                "time": 5.5,
+                "observation": "形成标准的双手持机姿势"
+              }
+            ]
+          },
+          {
+            "label": "中间检视",
+            "start": 5.5,
+            "end": 6.5,
+            "detail": "盯着设备屏幕看，可能有轻微的按键动作。",
+            "evidence": [
+              {
+                "time": 6.0,
+                "observation": "头部低垂看向手中物品"
+              },
+              {
+                "time": 6.5,
+                "observation": "右手再次准备抬起"
+              }
+            ]
+          }
+        ],
+        "brief": "男子收回右手后再次低头摆弄手中的电子设备。"
+      },
+      {
+        "id": "S01-A05",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E04",
+        "kind": "motion",
+        "label": "拍打柜门",
+        "start": 6.6,
+        "end": 8.4,
+        "start_range": [
+          6.6,
+          6.6
+        ],
+        "end_range": [
+          8.4,
+          8.4
+        ],
+        "detail": "男子第二次伸出右手触碰同一块橱柜门板，这次的动作幅度较大，包含了快速的拍击感和随后的手掌抚过，最后在柜门下部停留片刻后收回。",
+        "evidence": [
+          {
+            "time": 6.6,
+            "observation": "右手快速伸向柜门"
+          },
+          {
+            "time": 7.0,
+            "observation": "手掌用力按在柜门上"
+          },
+          {
+            "time": 8.0,
+            "observation": "手在柜门下沿附近摸索"
+          },
+          {
+            "time": 8.4,
+            "observation": "手彻底离开柜门"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "二次接触",
+            "time": 6.6,
+            "time_range": null
+          },
+          {
+            "name": "下探检查",
+            "time": 8.0,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "力度测试",
+          "边界确认"
+        ],
+        "subphases": [
+          {
+            "label": "上部拍击/按压",
+            "start": 6.6,
+            "end": 7.5,
+            "detail": "手先落在柜门上半部分，有明显的施力动作。",
+            "evidence": [
+              {
+                "time": 6.8,
+                "observation": "手部模糊显示快速运动轨迹"
+              },
+              {
+                "time": 7.2,
+                "observation": "手掌平铺在上半部"
+              }
+            ]
+          },
+          {
+            "label": "下滑至底部",
+            "start": 7.5,
+            "end": 8.4,
+            "detail": "顺着柜门表面向下滑动直到接近台面下方边缘处才停下并收回。",
+            "evidence": [
+              {
+                "time": 8.0,
+                "observation": "手的位置明显低于之前"
+              },
+              {
+                "time": 8.4,
+                "observation": "完成最后一次接触并撤回"
+              }
+            ]
+          }
+        ],
+        "brief": "男子再次伸手对橱柜门进行了更大幅度的拍打和下滑式检查。"
+      },
+      {
+        "id": "S01-A06",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E05",
+        "kind": "held_pose",
+        "label": "持握设备待机",
+        "start": 8.5,
+        "end": 11.98,
+        "start_range": [
+          8.5,
+          8.5
+        ],
+        "end_range": [
+          11.98,
+          11.98
+        ],
+        "detail": "在完成所有柜门检查后，男子将右手完全收回，双手一直保持着捧着设备的姿势直到视频结束，期间没有明显的肢体大幅度位移，仅有细微的手指调整。",
+        "evidence": [
+          {
+            "time": 8.5,
+            "observation": "右手回归身体中线"
+          },
+          {
+            "time": 10.0,
+            "observation": "维持静止的持物姿态"
+          },
+          {
+            "time": 11.9,
+            "observation": "直至最后一帧仍保持此状"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "最终定格",
+            "time": 11.98,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "休息/总结"
+        ],
+        "subphases": [
+          {
+            "label": "回收与稳定",
+            "start": 8.5,
+            "end": 9.5,
+            "detail": "右手从外侧折返，重新加入左手的怀抱中固定设备。",
+            "evidence": [
+              {
+                "time": 8.5,
+                "observation": "手臂内收路径清晰"
+              },
+              {
+                "time": 9.5,
+                "observation": "双手机械结构锁定"
+              }
+            ]
+          },
+          {
+            "label": "持续观察",
+            "start": 9.5,
+            "end": 11.98,
+            "detail": "长时间注视着手中的仪器读数或界面。",
+            "evidence": [
+              {
+                "time": 11.0,
+                "observation": "除了呼吸起伏外无明显动作"
+              },
+              {
+                "time": 11.98,
+                "observation": "视频结束时依然如此"
+              }
+            ]
+          }
+        ],
+        "brief": "男子结束了对外界物体的交互，专心致志地看着手里的工具直至片段完结。"
+      }
+    ],
+    "uncertainties": [
+      "由于光线较暗且人物处于背光阴影中，无法确切辨认手中设备的具体型号（可能是智能手机、激光测距仪或其他检测仪表）。",
+      "第一次手势比划（A02）是否算作独立意图还是仅仅是抚摸前的预备动作存在一定解释空间，此处将其拆分为两个阶段描述。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.0,
+        "end": 12.0,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          12.0,
+          12.0
+        ],
+        "speaker_id": null,
+        "description": "男声，英式口音，中音区，语速适中，语气自然且具有解释性。",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "语音清晰可辨"
+          },
+          {
+            "time": 6.0,
+            "observation": "持续的自然说话节奏"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "cupboard doors fitted. So once that hinge wears, could be the kids leaning on the door or just general wear and tear, the door starts dropping as you open it and then it will catch the other doors and cause damage. So"
+      },
+      {
+        "id": "N001",
+        "kind": "background",
+        "layer": "background",
+        "start": 0.0,
+        "end": 12.0,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          12.0,
+          12.0
+        ],
+        "speaker_id": null,
+        "description": "微弱的低频房间底噪或嗡嗡声。",
+        "evidence": [
+          {
+            "time": 3.0,
+            "observation": "在语音停顿期间可听到稳定的低电平环境噪音"
+          },
+          {
+            "time": 9.0,
+            "observation": "背景嗡鸣声在整个片段中保持一致"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          0.7
+        ],
+        "overlap_s": 0.7
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          0.7
+        ],
+        "overlap_s": 0.7
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.8,
+          1.0
+        ],
+        "overlap_s": 0.2
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.8,
+          1.0
+        ],
+        "overlap_s": 0.2
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          1.0,
+          4.9
+        ],
+        "overlap_s": 3.9
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          1.0,
+          4.9
+        ],
+        "overlap_s": 3.9
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.0,
+          6.5
+        ],
+        "overlap_s": 1.5
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.0,
+          6.5
+        ],
+        "overlap_s": 1.5
+      },
+      {
+        "action_id": "S01-A05",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.6,
+          8.4
+        ],
+        "overlap_s": 1.8
+      },
+      {
+        "action_id": "S01-A05",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.6,
+          8.4
+        ],
+        "overlap_s": 1.8
+      },
+      {
+        "action_id": "S01-A06",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.5,
+          11.98
+        ],
+        "overlap_s": 3.48
+      },
+      {
+        "action_id": "S01-A06",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.5,
+          11.98
+        ],
+        "overlap_s": 3.48
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          0.7
+        ],
+        "overlap_s": 0.7
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          1.0,
+          4.9
+        ],
+        "overlap_s": 3.9
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.0,
+          6.5
+        ],
+        "overlap_s": 1.5
+      },
+      {
+        "action_id": "S01-A05",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.6,
+          8.4
+        ],
+        "overlap_s": 1.8
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          0.7
+        ],
+        "overlap_s": 0.7
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.8,
+          1.0
+        ],
+        "overlap_s": 0.2
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.8,
+          1.0
+        ],
+        "overlap_s": 0.2
+      },
+      {
+        "action_id": "S01-A03",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          1.0,
+          4.9
+        ],
+        "overlap_s": 3.9
+      },
+      {
+        "action_id": "S01-A04",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.0,
+          6.5
+        ],
+        "overlap_s": 1.5
+      },
+      {
+        "action_id": "S01-A05",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.6,
+          8.4
+        ],
+        "overlap_s": 1.8
+      },
+      {
+        "action_id": "S01-A06",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.5,
+          11.98
+        ],
+        "overlap_s": 3.48
+      },
+      {
+        "action_id": "S01-A06",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.5,
+          11.98
+        ],
+        "overlap_s": 3.48
+      }
+    ]
+  },
+  "warnings": [
+    "由于光线较暗且人物处于背光阴影中，无法确切辨认手中设备的具体型号（可能是智能手机、激光测距仪或其他检测仪表）。",
+    "第一次手势比划（A02）是否算作独立意图还是仅仅是抚摸前的预备动作存在一定解释空间，此处将其拆分为两个阶段描述。",
+    "S01-A01　Invalid interval: None"
+  ]
+}

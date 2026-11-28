@@ -1,0 +1,557 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "ugc02",
+    "benchmark": "UGC-VideoCap",
+    "domain": "头发分缝与梳理",
+    "original_id": "PI-1e1222e2-4be2-4314-a0ba-6c44f3eb22ff",
+    "source_url": "https://drive.google.com/file/d/1HOyeT7-kbbAcyinKJ_IyaejXIBABTgbn/view",
+    "archive_member": null,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "source_duration": 53.86666666666667,
+    "source_media_sha256": "632cc29a2ee2c936cbe4f71ec47ea5eb4b241062dfc1f23b171013ebac62e9ce",
+    "clip_sha256": "f23d6c80e07445b0fe87c3ae6a61fcbff682322062ee061bcd502e1c49913975",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 12.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 12.0,
+      "first_frame": 0,
+      "end_frame_exclusive": 360
+    }
+  ],
+  "input_frames": {
+    "visual": 121,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一个连续镜头，记录了一名戴眼镜的女子整理头发并用梳子梳理头顶头发的过程。所有动作均基于画面可见内容标注。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "一名戴着玳瑁色圆框眼镜、鼻环，身穿灰色T恤的年轻女子，留着深棕色长发，双手有纹身且指甲较长。"
+      }
+    ],
+    "executions": [
+      {
+        "id": "EX-S01-01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.5,
+        "end": 6.2,
+        "description": "女子抬起双手，用手指拨弄并整理额头和头顶的头发，随后放下右手。"
+      },
+      {
+        "id": "EX-S01-02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 6.3,
+        "end": 11.97,
+        "description": "女子拿起一把黑色梳子，将其贴在头顶发缝处进行梳理，左手同时按住旁边的头发。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "AC-S01-01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "EX-S01-01",
+        "kind": "motion",
+        "label": "手指整理头发",
+        "start": 0.5,
+        "end": 6.2,
+        "start_range": [
+          0.4,
+          0.6
+        ],
+        "end_range": [
+          6.1,
+          6.3
+        ],
+        "detail": "女子抬起双手至头部两侧，十指张开插入前额及头顶的发丝中，向后及向两侧拨动以整理发型；期间她微微低头注视前方，随后右手离开画面，左手继续停留在头顶区域按压头发。",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "双手开始抬离桌面进入画面"
+          },
+          {
+            "time": 1.8,
+            "observation": "双手手指完全没入头顶发丝中进行拨弄"
+          },
+          {
+            "time": 4.5,
+            "observation": "左手持续在头顶左侧按压/整理头发"
+          },
+          {
+            "time": 6.2,
+            "observation": "右手已移出画面，仅左手留在头上"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "双手接触头发",
+            "time": 1.0,
+            "time_range": [
+              0.8,
+              1.2
+            ]
+          },
+          {
+            "name": "右手撤离",
+            "time": 6.2,
+            "time_range": [
+              6.1,
+              6.3
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "手指",
+          "头发"
+        ],
+        "movement_roles": [
+          "整理",
+          "拨弄",
+          "按压"
+        ],
+        "subphases": [
+          {
+            "label": "双手拨弄整理",
+            "start": 0.5,
+            "end": 4.0,
+            "detail": "双手从下方抬起，手指插入刘海和头顶发根处，向后方和两侧滑动以理顺头发。",
+            "evidence": [
+              {
+                "time": 1.5,
+                "observation": "双手在额头上方快速移动"
+              },
+              {
+                "time": 3.0,
+                "observation": "手指深入发丝间调整位置"
+              }
+            ]
+          },
+          {
+            "label": "单手按压固定",
+            "start": 4.0,
+            "end": 6.2,
+            "detail": "右手逐渐退出操作，左手继续在头顶偏左的位置轻轻按压和微调发丝走向。",
+            "evidence": [
+              {
+                "time": 5.0,
+                "observation": "仅左手在头顶活动，视线向下看"
+              }
+            ]
+          }
+        ],
+        "brief": "女子用双手手指拨弄并整理额头和头顶的头发。"
+      },
+      {
+        "id": "AC-S01-02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "EX-S01-02",
+        "kind": "motion",
+        "label": "梳子梳理头顶",
+        "start": 6.3,
+        "end": 11.97,
+        "start_range": [
+          6.2,
+          6.4
+        ],
+        "end_range": [
+          11.9,
+          12.0
+        ],
+        "detail": "女子右手持一把黑色宽齿梳靠近头顶正中发缝处，将梳齿贴住头皮向后缓慢拉动梳理；与此同时，她的左手手指始终按压在梳子前方的头发上以固定分区，目光透过镜片紧盯梳子与头皮的接触点。",
+        "evidence": [
+          {
+            "time": 6.3,
+            "observation": "黑色梳子首次出现在画面右侧手中"
+          },
+          {
+            "time": 7.5,
+            "observation": "梳齿清晰可见地卡在头顶发缝处"
+          },
+          {
+            "time": 9.0,
+            "observation": "左手食指和中指紧紧压住梳子上方的头发"
+          },
+          {
+            "time": 11.5,
+            "observation": "梳子在头顶小幅度前后移动进行精细梳理"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "梳子接触头皮",
+            "time": 7.0,
+            "time_range": [
+              6.8,
+              7.2
+            ]
+          },
+          {
+            "name": "左手配合按压",
+            "time": 8.0,
+            "time_range": [
+              7.5,
+              8.5
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "左手",
+          "梳子",
+          "头发",
+          "眼睛"
+        ],
+        "movement_roles": [
+          "握持",
+          "梳理",
+          "按压固定",
+          "注视"
+        ],
+        "subphases": [
+          {
+            "label": "引入工具定位",
+            "start": 6.3,
+            "end": 7.2,
+            "detail": "右手拿着黑色梳子从画面外移入，准确对准头顶正中央的发际线/分界线位置。",
+            "evidence": [
+              {
+                "time": 6.5,
+                "observation": "梳子悬停在头顶上方准备落下"
+              },
+              {
+                "time": 7.0,
+                "observation": "梳齿尖端触碰到头皮"
+              }
+            ]
+          },
+          {
+            "label": "持续梳理与固定",
+            "start": 7.2,
+            "end": 11.97,
+            "detail": "右手控制梳子贴着发根向后（或微幅前后）刮梳，左手多根手指死死按住梳子前方的头发防止其散开，头部保持低垂姿势以便观察。",
+            "evidence": [
+              {
+                "time": 8.5,
+                "observation": "梳子在发缝处有明显的位移轨迹"
+              },
+              {
+                "time": 10.5,
+                "observation": "左手手指用力下压，与右手的梳子形成夹击之势"
+              },
+              {
+                "time": 11.9,
+                "observation": "动作仍在进行中直至片段结束"
+              }
+            ]
+          }
+        ],
+        "brief": "女子右手拿黑色梳子梳理头顶发缝，左手同时按压固定周围头发。"
+      }
+    ],
+    "uncertainties": [
+      "由于是自拍视角，左右手可能与实际解剖学左右相反，此处统一按画面视觉方位描述（即画面左侧的手称为左手）。",
+      "结尾处动作未完全结束即被截断。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.4,
+        "end": 5.36,
+        "start_range": [
+          0.2,
+          0.6
+        ],
+        "end_range": [
+          5.16,
+          5.56
+        ],
+        "speaker_id": "V01",
+        "description": "女声耳语，语气犹豫且带有担忧感。",
+        "evidence": [
+          {
+            "time": 0.4,
+            "observation": "开始听到清晰的耳语音节 'I'm literally gonna regret this...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "I'm literally gonna regret this so much because it's like right in my part but"
+      },
+      {
+        "id": "N001",
+        "kind": "friction",
+        "layer": "background",
+        "start": 5.72,
+        "end": 8.92,
+        "start_range": [
+          5.52,
+          5.92
+        ],
+        "end_range": [
+          8.72,
+          9.12
+        ],
+        "speaker_id": null,
+        "description": "持续的轻微刮擦和梳理声，类似梳子划过头发或塑料摩擦的声音。",
+        "evidence": [
+          {
+            "time": 6.5,
+            "observation": "在说话停顿期间可清楚听到连续的沙沙刮擦声"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 6.28,
+        "end": 8.64,
+        "start_range": [
+          6.08,
+          6.48
+        ],
+        "end_range": [
+          8.44,
+          8.84
+        ],
+        "speaker_id": "V01",
+        "description": "女声耳语，音量极低，气息声明显。",
+        "evidence": [
+          {
+            "time": 6.5,
+            "observation": "在背景刮擦声中听到微弱的耳语 'I need to see if I can get it off my head'"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": "I need to see if I can get it off my head."
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 10.84,
+        "end": 12.0,
+        "start_range": [
+          10.64,
+          11.04
+        ],
+        "end_range": [
+          11.8,
+          12.2
+        ],
+        "speaker_id": "V01",
+        "description": "女声耳语，句子未说完即被截断。",
+        "evidence": [
+          {
+            "time": 11.0,
+            "observation": "再次出现清晰的耳语音节 'This is the only comb I...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "This is the only comb I"
+      }
+    ],
+    "uncertainties": [
+      "U002 的耳语与 N001 的摩擦声重叠，导致部分音节辨识度降低。"
+    ]
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "AC-S01-01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.5,
+          5.36
+        ],
+        "overlap_s": 4.86
+      },
+      {
+        "action_id": "AC-S01-01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.72,
+          6.2
+        ],
+        "overlap_s": 0.48
+      },
+      {
+        "action_id": "AC-S01-01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "AC-S01-01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "AC-S01-02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "AC-S01-02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.3,
+          8.92
+        ],
+        "overlap_s": 2.62
+      },
+      {
+        "action_id": "AC-S01-02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.3,
+          8.64
+        ],
+        "overlap_s": 2.34
+      },
+      {
+        "action_id": "AC-S01-02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.84,
+          11.97
+        ],
+        "overlap_s": 1.13
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "AC-S01-01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.5,
+          5.36
+        ],
+        "overlap_s": 4.86
+      },
+      {
+        "action_id": "AC-S01-02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.3,
+          8.64
+        ],
+        "overlap_s": 2.34
+      },
+      {
+        "action_id": "AC-S01-02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.84,
+          11.97
+        ],
+        "overlap_s": 1.13
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "AC-S01-01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.72,
+          6.2
+        ],
+        "overlap_s": 0.48
+      },
+      {
+        "action_id": "AC-S01-02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.3,
+          8.92
+        ],
+        "overlap_s": 2.62
+      }
+    ]
+  },
+  "warnings": [
+    "由于是自拍视角，左右手可能与实际解剖学左右相反，此处统一按画面视觉方位描述（即画面左侧的手称为左手）。",
+    "结尾处动作未完全结束即被截断。",
+    "Invalid end uncertainty bracket: U003"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "flagged_events": [
+    "A0009"
+  ],
+  "unlocalized_transcript_candidates": [],
+  "uncertain_visible_intervals": [
+    {
+      "scope": "shot00000",
+      "source_start": 0,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 2.16,
+        "end": 2.78,
+        "reason": "Candidate 'standing' for unknown actor is not clearly visible; background figures are indistinct."
+      }
+    },
+    {
+      "scope": "shot00001",
+      "source_start": 1.38,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 0.78,
+        "end": 5.46,
+        "reason": "Background person is too distant for reliable identification or action tracking."
+      }
+    },
+    {
+      "scope": "shot00001",
+      "source_start": 1.38,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 3.94,
+        "end": 5.62,
+        "reason": "Man begins another arm-swing/squat motion but does not complete a full jump within the clip; it may be part of a second attempt or demonstration rather than a finished bout."
+      }
+    }
+  ]
+}

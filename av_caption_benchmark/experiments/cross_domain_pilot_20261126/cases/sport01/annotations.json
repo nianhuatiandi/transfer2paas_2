@@ -1,0 +1,1125 @@
+{
+  "source": {
+    "id": "sport01",
+    "benchmark": "自有运动",
+    "original_id": "31679122798",
+    "source_url": "用户本地裁片",
+    "archive_member": null,
+    "original_file": "badminton_lift_31679122798_first8s.mp4",
+    "source_media_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "clip_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+    "source_duration": 8.0,
+    "source_window_seconds": [
+      0,
+      8.0
+    ],
+    "card": "05",
+    "domain": "羽毛球",
+    "domain_rule": "",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "与已有 BWF 审阅稿对照，手喂球与回球、发球的角色判断不一致，新输出还漏了步法。羽毛球技术项不宜直接用作判分依据。"
+    ]
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 8.0,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 3.8666666666666667,
+      "first_frame": 0,
+      "end_frame_exclusive": 116
+    },
+    {
+      "id": "S02",
+      "start": 3.8666666666666667,
+      "end": 7.633333333333334,
+      "first_frame": 116,
+      "end_frame_exclusive": 229
+    },
+    {
+      "id": "S03",
+      "start": 7.633333333333334,
+      "end": 8.0,
+      "first_frame": 229,
+      "end_frame_exclusive": 240
+    }
+  ],
+  "timestamped_frames": 84,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2"
+  },
+  "visual": {
+    "clip_id": "sport01",
+    "mode": "VISUAL_GT",
+    "clock": {
+      "fps": 30,
+      "total_frames": 240,
+      "duration_sec": 8.0
+    },
+    "facts": [
+      {
+        "id": "F001",
+        "kind": "action",
+        "level": "L2",
+        "actor": "黑衣学员(S01)",
+        "object": "羽毛球",
+        "parent_ids": [],
+        "claim": "使用正手挑球技术将球击打至对方场地",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.5,
+          1.0
+        ],
+        "visible_spans": [
+          [
+            0.5,
+            1.0
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          0.0,
+          3.867
+        ],
+        "evidence": "源帧15-30，黑衣学员在网前完成一次完整的向上挥拍动作并击中羽毛球。"
+      },
+      {
+        "id": "F002",
+        "kind": "phase",
+        "level": null,
+        "actor": "黑衣学员(S01)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F001"
+        ],
+        "claim": "引拍阶段",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.5,
+          0.7
+        ],
+        "visible_spans": [
+          [
+            0.5,
+            0.7
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          0.0,
+          3.867
+        ],
+        "evidence": "源帧15-21，球拍向后下方移动准备发力。"
+      },
+      {
+        "id": "F003",
+        "kind": "keypoint",
+        "level": null,
+        "actor": "黑衣学员(S01)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F001"
+        ],
+        "claim": "触球瞬间",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": null,
+        "visible_spans": [],
+        "boundary_ranges": null,
+        "context_range": [
+          0.0,
+          3.867
+        ],
+        "time_point": 0.9,
+        "evidence": "源帧27，球拍与羽毛球接触。"
+      },
+      {
+        "id": "F004",
+        "kind": "phase",
+        "level": null,
+        "actor": "黑衣学员(S01)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F001"
+        ],
+        "claim": "随挥阶段",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.9,
+          1.0
+        ],
+        "visible_spans": [
+          [
+            0.9,
+            1.0
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          0.0,
+          3.867
+        ],
+        "evidence": "源帧27-30，击球后手臂继续向前上方伸展。"
+      },
+      {
+        "id": "F005",
+        "kind": "motion",
+        "level": "L3",
+        "actor": "黑衣学员(S01)",
+        "object": "右臂及球拍",
+        "parent_ids": [
+          "F001"
+        ],
+        "claim": "持拍手从身体右后方经身前向左上方快速挥动",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.5,
+          1.0
+        ],
+        "visible_spans": [
+          [
+            0.5,
+            1.0
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          0.0,
+          3.867
+        ],
+        "evidence": "源帧15-30，展示了挑球动作中手臂和球拍的完整运动轨迹。"
+      },
+      {
+        "id": "F006",
+        "kind": "state",
+        "level": null,
+        "actor": "粉衣教练(S01)",
+        "object": "无",
+        "parent_ids": [],
+        "claim": "保持站立姿态观察对面",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.0,
+          3.867
+        ],
+        "visible_spans": [
+          [
+            0.0,
+            3.867
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          0.0,
+          3.867
+        ],
+        "evidence": "源帧0-115，粉衣教练站在球网另一侧，未进行大幅度移动或击球。"
+      },
+      {
+        "id": "F007",
+        "kind": "action",
+        "level": "L2",
+        "actor": "黑衣学员(S02)",
+        "object": "羽毛球",
+        "parent_ids": [],
+        "claim": "使用上手发球技术将球发出",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          5.667,
+          6.067
+        ],
+        "visible_spans": [
+          [
+            5.667,
+            6.067
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          3.867,
+          7.633
+        ],
+        "evidence": "源帧170-182，黑衣学员抛球并完成一次向前的挥拍击球动作。"
+      },
+      {
+        "id": "F008",
+        "kind": "phase",
+        "level": null,
+        "actor": "黑衣学员(S02)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F007"
+        ],
+        "claim": "准备阶段",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          3.867,
+          5.667
+        ],
+        "visible_spans": [
+          [
+            3.867,
+            5.667
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          3.867,
+          7.633
+        ],
+        "evidence": "源帧116-170，学员手持球和拍静止站立，调整站位。"
+      },
+      {
+        "id": "F009",
+        "kind": "phase",
+        "level": null,
+        "actor": "黑衣学员(S02)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F007"
+        ],
+        "claim": "引拍阶段",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          5.667,
+          5.967
+        ],
+        "visible_spans": [
+          [
+            5.667,
+            5.967
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          3.867,
+          7.633
+        ],
+        "evidence": "源帧170-179，球拍向后上方举起蓄力。"
+      },
+      {
+        "id": "F010",
+        "kind": "keypoint",
+        "level": null,
+        "actor": "黑衣学员(S02)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F007"
+        ],
+        "claim": "触球瞬间",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": null,
+        "visible_spans": [],
+        "boundary_ranges": null,
+        "context_range": [
+          3.867,
+          7.633
+        ],
+        "time_point": 6.067,
+        "evidence": "源帧182，球拍击中羽毛球。"
+      },
+      {
+        "id": "F011",
+        "kind": "phase",
+        "level": null,
+        "actor": "黑衣学员(S02)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F007"
+        ],
+        "claim": "随挥阶段",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          6.067,
+          6.267
+        ],
+        "visible_spans": [
+          [
+            6.067,
+            6.267
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          3.867,
+          7.633
+        ],
+        "evidence": "源帧182-188，击球后手臂顺势向下前方摆动。"
+      },
+      {
+        "id": "F012",
+        "kind": "action",
+        "level": "L2",
+        "actor": "白衣陪练(S02)",
+        "object": "羽毛球",
+        "parent_ids": [],
+        "claim": "使用反手挑球技术回击来球",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          6.267,
+          6.667
+        ],
+        "visible_spans": [
+          [
+            6.267,
+            6.667
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          3.867,
+          7.633
+        ],
+        "evidence": "源帧188-200，白衣人员在网前弯腰，用反手握拍方式将来球挑起。"
+      },
+      {
+        "id": "F013",
+        "kind": "phase",
+        "level": null,
+        "actor": "白衣陪练(S02)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F012"
+        ],
+        "claim": "引拍阶段",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          6.267,
+          6.467
+        ],
+        "visible_spans": [
+          [
+            6.267,
+            6.467
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          3.867,
+          7.633
+        ],
+        "evidence": "源帧188-194，球拍置于身前低位准备迎球。"
+      },
+      {
+        "id": "F014",
+        "kind": "keypoint",
+        "level": null,
+        "actor": "白衣陪练(S02)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F012"
+        ],
+        "claim": "触球瞬间",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": null,
+        "visible_spans": [],
+        "boundary_ranges": null,
+        "context_range": [
+          3.867,
+          7.633
+        ],
+        "time_point": 6.567,
+        "evidence": "源帧197，球拍与羽毛球接触。"
+      },
+      {
+        "id": "F015",
+        "kind": "phase",
+        "level": null,
+        "actor": "白衣陪练(S02)",
+        "object": "羽毛球",
+        "parent_ids": [
+          "F012"
+        ],
+        "claim": "随挥阶段",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          6.567,
+          6.667
+        ],
+        "visible_spans": [
+          [
+            6.567,
+            6.667
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          3.867,
+          7.633
+        ],
+        "evidence": "源帧197-200，击球后手腕手指发力将球送出。"
+      },
+      {
+        "id": "F016",
+        "kind": "action",
+        "level": "L2",
+        "actor": "主讲人(S03)",
+        "object": "无",
+        "parent_ids": [],
+        "claim": "做出讲解手势辅助说明",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          7.633,
+          7.967
+        ],
+        "visible_spans": [
+          [
+            7.633,
+            7.967
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": [
+          7.633,
+          8.0
+        ],
+        "evidence": "源帧229-239，主讲人面向镜头说话，左手配合语言内容做出摊开手掌等示意动作。"
+      }
+    ],
+    "relations": [
+      {
+        "id": "R001",
+        "predicate": "contains_phase",
+        "from_id": "F001",
+        "to_id": "F002",
+        "claim": "第一次挑球包含引拍阶段",
+        "evidence": "时间区间[0.5,1.0]包含[0.5,0.7]",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R002",
+        "predicate": "contains_keypoint",
+        "from_id": "F001",
+        "to_id": "F003",
+        "claim": "第一次挑球包含触球关键点",
+        "evidence": "时间点0.9位于区间[0.5,1.0]内",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R003",
+        "predicate": "contains_phase",
+        "from_id": "F001",
+        "to_id": "F004",
+        "claim": "第一次挑球包含随挥阶段",
+        "evidence": "时间区间[0.5,1.0]包含[0.9,1.0]",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R004",
+        "predicate": "contains_motion",
+        "from_id": "F001",
+        "to_id": "F005",
+        "claim": "第一次挑球包含手臂挥动过程",
+        "evidence": "两者时间区间一致且主体相同",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R005",
+        "predicate": "contains_phase",
+        "from_id": "F007",
+        "to_id": "F008",
+        "claim": "第二次发球包含准备阶段",
+        "evidence": "时间区间[5.667,6.067]紧邻前置的准备状态[3.867,5.667]",
+        "certainty": "hedged"
+      },
+      {
+        "id": "R006",
+        "predicate": "contains_phase",
+        "from_id": "F007",
+        "to_id": "F009",
+        "claim": "第二次发球包含引拍阶段",
+        "evidence": "时间区间[5.667,6.067]包含[5.667,5.967]",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R007",
+        "predicate": "contains_keypoint",
+        "from_id": "F007",
+        "to_id": "F010",
+        "claim": "第二次发球包含触球关键点",
+        "evidence": "时间点6.067位于区间边界",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R008",
+        "predicate": "contains_phase",
+        "from_id": "F007",
+        "to_id": "F011",
+        "claim": "第二次发球包含随挥阶段",
+        "evidence": "时间区间[5.667,6.067]延伸至[6.067,6.267]",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R009",
+        "predicate": "contains_phase",
+        "from_id": "F012",
+        "to_id": "F013",
+        "claim": "第三次挑球包含引拍阶段",
+        "evidence": "时间区间[6.267,6.667]包含[6.267,6.467]",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R010",
+        "predicate": "contains_keypoint",
+        "from_id": "F012",
+        "to_id": "F014",
+        "claim": "第三次挑球包含触球关键点",
+        "evidence": "时间点6.567位于区间[6.267,6.667]内",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R011",
+        "predicate": "contains_phase",
+        "from_id": "F012",
+        "to_id": "F015",
+        "claim": "第三次挑球包含随挥阶段",
+        "evidence": "时间区间[6.267,6.667]包含[6.567,6.667]",
+        "certainty": "asserted"
+      }
+    ],
+    "residual": []
+  },
+  "audio": {
+    "clip_id": "sport01",
+    "clock": "global_clip_clock",
+    "coverage": {
+      "start": 0.0,
+      "end": 8.0
+    },
+    "audio_events": [
+      {
+        "id": "E01",
+        "type": "ambience",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "持续的低频风声和环境隆隆声",
+        "instance_range": [
+          0.0,
+          8.0
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 4.0,
+        "confidence": "high"
+      },
+      {
+        "id": "E02",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "往这边跳。",
+        "claim": "男声说“往这边跳”",
+        "instance_range": [
+          1.04,
+          1.6
+        ],
+        "boundary_ranges": {
+          "start": [
+            1.04,
+            1.04
+          ],
+          "end": [
+            1.6,
+            1.6
+          ]
+        },
+        "evidence_time": 1.32,
+        "confidence": "high"
+      },
+      {
+        "id": "E03",
+        "type": "sfx",
+        "layer": "midground",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "一声清脆的击打或拍击声",
+        "instance_range": [
+          3.25,
+          3.75
+        ],
+        "boundary_ranges": {
+          "start": [
+            3.25,
+            3.25
+          ],
+          "end": [
+            3.75,
+            3.75
+          ]
+        },
+        "evidence_time": 3.5,
+        "confidence": "medium"
+      },
+      {
+        "id": "E04",
+        "type": "vocalization",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "嘿！",
+        "claim": "短促有力的呼气发声",
+        "instance_range": [
+          3.96,
+          4.2
+        ],
+        "boundary_ranges": {
+          "start": [
+            3.96,
+            3.96
+          ],
+          "end": [
+            4.2,
+            4.2
+          ]
+        },
+        "evidence_time": 4.08,
+        "confidence": "high"
+      },
+      {
+        "id": "E05",
+        "type": "sfx",
+        "layer": "midground",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "一声清脆的击打或拍击声",
+        "instance_range": [
+          5.15,
+          5.65
+        ],
+        "boundary_ranges": {
+          "start": [
+            5.15,
+            5.15
+          ],
+          "end": [
+            5.65,
+            5.65
+          ]
+        },
+        "evidence_time": 5.4,
+        "confidence": "medium"
+      },
+      {
+        "id": "E06",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "一个。",
+        "claim": "男声说“一个”",
+        "instance_range": [
+          5.36,
+          5.68
+        ],
+        "boundary_ranges": {
+          "start": [
+            5.36,
+            5.36
+          ],
+          "end": [
+            5.68,
+            5.68
+          ]
+        },
+        "evidence_time": 5.52,
+        "confidence": "high"
+      },
+      {
+        "id": "E07",
+        "type": "sfx",
+        "layer": "midground",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "一声清脆的击打或拍击声",
+        "instance_range": [
+          6.95,
+          7.45
+        ],
+        "boundary_ranges": {
+          "start": [
+            6.95,
+            6.95
+          ],
+          "end": [
+            7.45,
+            7.45
+          ]
+        },
+        "evidence_time": 7.2,
+        "confidence": "medium"
+      },
+      {
+        "id": "E08.1",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "两个。",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          7.36,
+          7.92
+        ],
+        "boundary_ranges": {
+          "start": 7.36,
+          "end": 7.92
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "音频在约7.36秒处可以听到清晰的“两个”一词，随后声音停止。",
+        "parent_audio_id": "E08"
+      },
+      {
+        "id": "E08.2",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "好，你——",
+        "claim": "逐句复听定位",
+        "instance_range": null,
+        "boundary_ranges": {
+          "start": null,
+          "end": null
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "该句未出现在音频中。",
+        "parent_audio_id": "E08"
+      }
+    ],
+    "unresolved": [
+      "无法确认三处清脆击打声的具体来源"
+    ]
+  },
+  "original_audio_events": [
+    {
+      "id": "E01",
+      "type": "ambience",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "持续的低频风声和环境隆隆声",
+      "instance_range": [
+        0.0,
+        8.0
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 4.0,
+      "confidence": "high"
+    },
+    {
+      "id": "E02",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "往这边跳。",
+      "claim": "男声说“往这边跳”",
+      "instance_range": [
+        1.04,
+        1.6
+      ],
+      "boundary_ranges": {
+        "start": [
+          1.04,
+          1.04
+        ],
+        "end": [
+          1.6,
+          1.6
+        ]
+      },
+      "evidence_time": 1.32,
+      "confidence": "high"
+    },
+    {
+      "id": "E03",
+      "type": "sfx",
+      "layer": "midground",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "一声清脆的击打或拍击声",
+      "instance_range": [
+        3.25,
+        3.75
+      ],
+      "boundary_ranges": {
+        "start": [
+          3.25,
+          3.25
+        ],
+        "end": [
+          3.75,
+          3.75
+        ]
+      },
+      "evidence_time": 3.5,
+      "confidence": "medium"
+    },
+    {
+      "id": "E04",
+      "type": "vocalization",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "嘿！",
+      "claim": "短促有力的呼气发声",
+      "instance_range": [
+        3.96,
+        4.2
+      ],
+      "boundary_ranges": {
+        "start": [
+          3.96,
+          3.96
+        ],
+        "end": [
+          4.2,
+          4.2
+        ]
+      },
+      "evidence_time": 4.08,
+      "confidence": "high"
+    },
+    {
+      "id": "E05",
+      "type": "sfx",
+      "layer": "midground",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "一声清脆的击打或拍击声",
+      "instance_range": [
+        5.15,
+        5.65
+      ],
+      "boundary_ranges": {
+        "start": [
+          5.15,
+          5.15
+        ],
+        "end": [
+          5.65,
+          5.65
+        ]
+      },
+      "evidence_time": 5.4,
+      "confidence": "medium"
+    },
+    {
+      "id": "E06",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "一个。",
+      "claim": "男声说“一个”",
+      "instance_range": [
+        5.36,
+        5.68
+      ],
+      "boundary_ranges": {
+        "start": [
+          5.36,
+          5.36
+        ],
+        "end": [
+          5.68,
+          5.68
+        ]
+      },
+      "evidence_time": 5.52,
+      "confidence": "high"
+    },
+    {
+      "id": "E07",
+      "type": "sfx",
+      "layer": "midground",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "一声清脆的击打或拍击声",
+      "instance_range": [
+        6.95,
+        7.45
+      ],
+      "boundary_ranges": {
+        "start": [
+          6.95,
+          6.95
+        ],
+        "end": [
+          7.45,
+          7.45
+        ]
+      },
+      "evidence_time": 7.2,
+      "confidence": "medium"
+    },
+    {
+      "id": "E08",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "两个。好，你——",
+      "claim": "男声说“两个。好，你——”，末尾被截断",
+      "instance_range": [
+        7.36,
+        8.0
+      ],
+      "boundary_ranges": {
+        "start": [
+          7.36,
+          7.36
+        ],
+        "end": [
+          8.0,
+          8.0
+        ]
+      },
+      "evidence_time": 7.68,
+      "confidence": "high"
+    }
+  ],
+  "sentence_alignment": {
+    "sentences": [
+      {
+        "id": "E08.1",
+        "transcript": "两个。",
+        "instance_range": [
+          7.36,
+          7.92
+        ],
+        "boundary_ranges": {
+          "start": 7.36,
+          "end": 7.92
+        },
+        "evidence": "音频在约7.36秒处可以听到清晰的“两个”一词，随后声音停止。"
+      },
+      {
+        "id": "E08.2",
+        "transcript": "好，你——",
+        "instance_range": null,
+        "boundary_ranges": {
+          "start": null,
+          "end": null
+        },
+        "evidence": "该句未出现在音频中。"
+      }
+    ]
+  },
+  "temporal_edges": [
+    {
+      "visual_id": "F001",
+      "audio_id": "E01",
+      "audio_layer": "background",
+      "audio_type": "ambience",
+      "intersections": [
+        [
+          0.5,
+          1.0
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F007",
+      "audio_id": "E01",
+      "audio_layer": "background",
+      "audio_type": "ambience",
+      "intersections": [
+        [
+          5.667,
+          6.067
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F007",
+      "audio_id": "E06",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          5.667,
+          5.68
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F012",
+      "audio_id": "E01",
+      "audio_layer": "background",
+      "audio_type": "ambience",
+      "intersections": [
+        [
+          6.267,
+          6.667
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F016",
+      "audio_id": "E01",
+      "audio_layer": "background",
+      "audio_type": "ambience",
+      "intersections": [
+        [
+          7.633,
+          7.967
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F016",
+      "audio_id": "E08.1",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          7.633,
+          7.92
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "E08.2 逐句复听无法定位，保留文本，不参与求交。",
+    "E08.2 缺有效名义区间。",
+    "与已有 BWF 审阅稿对照，手喂球与回球、发球的角色判断不一致，新输出还漏了步法。羽毛球技术项不宜直接用作判分依据。"
+  ]
+}

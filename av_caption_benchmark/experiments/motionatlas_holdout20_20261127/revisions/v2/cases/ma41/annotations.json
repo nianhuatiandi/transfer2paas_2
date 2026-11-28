@@ -1,0 +1,2779 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma41",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "林间骑行",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      35
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-b26f3438-488.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      7.533333333333333
+    ],
+    "official_sha256": "cad7b94e205a64bc210f8fb50f26b06b2fc7c14a67b6d47af8f23b2ff380fc9a",
+    "clip_sha256": "cad7b94e205a64bc210f8fb50f26b06b2fc7c14a67b6d47af8f23b2ff380fc9a",
+    "audio_source": null
+  },
+  "duration_seconds": 7.533333333333333,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 0.03333333333333333,
+      "first_frame": 0,
+      "end_frame_exclusive": 1
+    },
+    {
+      "id": "S02",
+      "start": 0.03333333333333333,
+      "end": 3.6666666666666665,
+      "first_frame": 1,
+      "end_frame_exclusive": 110
+    },
+    {
+      "id": "S03",
+      "start": 3.6666666666666665,
+      "end": 3.7,
+      "first_frame": 110,
+      "end_frame_exclusive": 111
+    },
+    {
+      "id": "S04",
+      "start": 3.7,
+      "end": 3.966666666666667,
+      "first_frame": 111,
+      "end_frame_exclusive": 119
+    },
+    {
+      "id": "S05",
+      "start": 3.966666666666667,
+      "end": 4.133333333333334,
+      "first_frame": 119,
+      "end_frame_exclusive": 124
+    },
+    {
+      "id": "S06",
+      "start": 4.133333333333334,
+      "end": 4.3,
+      "first_frame": 124,
+      "end_frame_exclusive": 129
+    },
+    {
+      "id": "S07",
+      "start": 4.3,
+      "end": 4.466666666666667,
+      "first_frame": 129,
+      "end_frame_exclusive": 134
+    },
+    {
+      "id": "S08",
+      "start": 4.466666666666667,
+      "end": 4.633333333333334,
+      "first_frame": 134,
+      "end_frame_exclusive": 139
+    },
+    {
+      "id": "S09",
+      "start": 4.633333333333334,
+      "end": 4.8,
+      "first_frame": 139,
+      "end_frame_exclusive": 144
+    },
+    {
+      "id": "S10",
+      "start": 4.8,
+      "end": 4.966666666666667,
+      "first_frame": 144,
+      "end_frame_exclusive": 149
+    },
+    {
+      "id": "S11",
+      "start": 4.966666666666667,
+      "end": 5.133333333333334,
+      "first_frame": 149,
+      "end_frame_exclusive": 154
+    },
+    {
+      "id": "S12",
+      "start": 5.133333333333334,
+      "end": 5.3,
+      "first_frame": 154,
+      "end_frame_exclusive": 159
+    },
+    {
+      "id": "S13",
+      "start": 5.3,
+      "end": 5.466666666666667,
+      "first_frame": 159,
+      "end_frame_exclusive": 164
+    },
+    {
+      "id": "S14",
+      "start": 5.466666666666667,
+      "end": 5.633333333333334,
+      "first_frame": 164,
+      "end_frame_exclusive": 169
+    },
+    {
+      "id": "S15",
+      "start": 5.633333333333334,
+      "end": 5.8,
+      "first_frame": 169,
+      "end_frame_exclusive": 174
+    },
+    {
+      "id": "S16",
+      "start": 5.8,
+      "end": 5.966666666666667,
+      "first_frame": 174,
+      "end_frame_exclusive": 179
+    },
+    {
+      "id": "S17",
+      "start": 5.966666666666667,
+      "end": 6.133333333333334,
+      "first_frame": 179,
+      "end_frame_exclusive": 184
+    },
+    {
+      "id": "S18",
+      "start": 6.133333333333334,
+      "end": 6.3,
+      "first_frame": 184,
+      "end_frame_exclusive": 189
+    },
+    {
+      "id": "S19",
+      "start": 6.3,
+      "end": 6.466666666666667,
+      "first_frame": 189,
+      "end_frame_exclusive": 194
+    },
+    {
+      "id": "S20",
+      "start": 6.466666666666667,
+      "end": 6.633333333333334,
+      "first_frame": 194,
+      "end_frame_exclusive": 199
+    },
+    {
+      "id": "S21",
+      "start": 6.633333333333334,
+      "end": 6.8,
+      "first_frame": 199,
+      "end_frame_exclusive": 204
+    },
+    {
+      "id": "S22",
+      "start": 6.8,
+      "end": 6.966666666666667,
+      "first_frame": 204,
+      "end_frame_exclusive": 209
+    },
+    {
+      "id": "S23",
+      "start": 6.966666666666667,
+      "end": 7.133333333333334,
+      "first_frame": 209,
+      "end_frame_exclusive": 214
+    },
+    {
+      "id": "S24",
+      "start": 7.133333333333334,
+      "end": 7.3,
+      "first_frame": 214,
+      "end_frame_exclusive": 219
+    },
+    {
+      "id": "S25",
+      "start": 7.3,
+      "end": 7.4,
+      "first_frame": 219,
+      "end_frame_exclusive": 222
+    },
+    {
+      "id": "S26",
+      "start": 7.4,
+      "end": 7.433333333333334,
+      "first_frame": 222,
+      "end_frame_exclusive": 223
+    },
+    {
+      "id": "S27",
+      "start": 7.433333333333334,
+      "end": 7.533333333333333,
+      "first_frame": 223,
+      "end_frame_exclusive": 226
+    }
+  ],
+  "input_frames": {
+    "visual": 108
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含多个镜头，主要记录了一名山地自行车骑手在林间土路上骑行、跳跃和过弯的动作。",
+    "actors": [
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "穿灰色短袖上衣和红黑花纹长裤的山地自行车骑手"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S05-P01",
+        "shot_id": "S05",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S06-P01",
+        "shot_id": "S06",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S07-P01",
+        "shot_id": "S07",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S08-P01",
+        "shot_id": "S08",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S09-P01",
+        "shot_id": "S09",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S10-P01",
+        "shot_id": "S10",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S11-P01",
+        "shot_id": "S11",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S12-P01",
+        "shot_id": "S12",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S13-P01",
+        "shot_id": "S13",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S14-P01",
+        "shot_id": "S14",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S15-P01",
+        "shot_id": "S15",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S16-P01",
+        "shot_id": "S16",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S17-P01",
+        "shot_id": "S17",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S18-P01",
+        "shot_id": "S18",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S19-P01",
+        "shot_id": "S19",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S20-P01",
+        "shot_id": "S20",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S21-P01",
+        "shot_id": "S21",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S22-P01",
+        "shot_id": "S22",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S23-P01",
+        "shot_id": "S23",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S24-P01",
+        "shot_id": "S24",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "id": "S25-P01",
+        "shot_id": "S25",
+        "description": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 0.033333,
+        "end": 3.633333,
+        "description": "骑山地车从远处下坡并穿过树林赛道"
+      },
+      {
+        "id": "E02",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 3.7,
+        "end": 3.933333,
+        "description": "骑山地车接近土坡起跳点"
+      },
+      {
+        "id": "E03",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "start": 3.966667,
+        "end": 4.1,
+        "description": "骑山地车腾空跃起"
+      },
+      {
+        "id": "E04",
+        "actor_id": "S06-P01",
+        "shot_id": "S06",
+        "start": 4.133333,
+        "end": 4.266667,
+        "description": "骑山地车在空中滑行"
+      },
+      {
+        "id": "E05",
+        "actor_id": "S07-P01",
+        "shot_id": "S07",
+        "start": 4.3,
+        "end": 4.433333,
+        "description": "骑山地车落地缓冲"
+      },
+      {
+        "id": "E06",
+        "actor_id": "S08-P01",
+        "shot_id": "S08",
+        "start": 4.466667,
+        "end": 4.6,
+        "description": "骑山地车继续向前行驶"
+      },
+      {
+        "id": "E07",
+        "actor_id": "S09-P01",
+        "shot_id": "S09",
+        "start": 4.633333,
+        "end": 4.766667,
+        "description": "骑山地车接近下一个弯道"
+      },
+      {
+        "id": "E08",
+        "actor_id": "S10-P01",
+        "shot_id": "S10",
+        "start": 4.8,
+        "end": 4.933333,
+        "description": "骑山地车进入左转弯道"
+      },
+      {
+        "id": "E09",
+        "actor_id": "S11-P01",
+        "shot_id": "S11",
+        "start": 4.966667,
+        "end": 5.1,
+        "description": "骑山地车在弯道中倾斜车身"
+      },
+      {
+        "id": "E10",
+        "actor_id": "S12-P01",
+        "shot_id": "S12",
+        "start": 5.133333,
+        "end": 5.266667,
+        "description": "骑山地车出弯扬起沙尘"
+      },
+      {
+        "id": "E11",
+        "actor_id": "S13-P01",
+        "shot_id": "S13",
+        "start": 5.3,
+        "end": 5.433333,
+        "description": "骑山地车沿直道加速"
+      },
+      {
+        "id": "E12",
+        "actor_id": "S14-P01",
+        "shot_id": "S14",
+        "start": 5.466667,
+        "end": 5.6,
+        "description": "骑山地车接近右转弯道"
+      },
+      {
+        "id": "E13",
+        "actor_id": "S15-P01",
+        "shot_id": "S15",
+        "start": 5.633333,
+        "end": 5.766667,
+        "description": "骑山地车切入右转弯道"
+      },
+      {
+        "id": "E14",
+        "actor_id": "S16-P01",
+        "shot_id": "S16",
+        "start": 5.8,
+        "end": 5.933333,
+        "description": "骑山地车在右弯中压低重心"
+      },
+      {
+        "id": "E15",
+        "actor_id": "S17-P01",
+        "shot_id": "S17",
+        "start": 5.966667,
+        "end": 6.1,
+        "description": "骑山地车滑过弯道扬起大量尘土"
+      },
+      {
+        "id": "E16",
+        "actor_id": "S18-P01",
+        "shot_id": "S18",
+        "start": 6.133333,
+        "end": 6.266667,
+        "description": "骑山地车驶出弯道"
+      },
+      {
+        "id": "E17",
+        "actor_id": "S19-P01",
+        "shot_id": "S19",
+        "start": 6.3,
+        "end": 6.433333,
+        "description": "骑山地车在下坡路段控制车速"
+      },
+      {
+        "id": "E18",
+        "actor_id": "S20-P01",
+        "shot_id": "S20",
+        "start": 6.466667,
+        "end": 6.6,
+        "description": "骑山地车经过树木密集的区域"
+      },
+      {
+        "id": "E19",
+        "actor_id": "S21-P01",
+        "shot_id": "S21",
+        "start": 6.633333,
+        "end": 6.766667,
+        "description": "骑山地车在颠簸路面保持平衡"
+      },
+      {
+        "id": "E20",
+        "actor_id": "S22-P01",
+        "shot_id": "S22",
+        "start": 6.8,
+        "end": 6.933333,
+        "description": "骑山地车向画面深处移动"
+      },
+      {
+        "id": "E21",
+        "actor_id": "S23-P01",
+        "shot_id": "S23",
+        "start": 6.966667,
+        "end": 7.1,
+        "description": "骑山地车逐渐变小"
+      },
+      {
+        "id": "E22",
+        "actor_id": "S24-P01",
+        "shot_id": "S24",
+        "start": 7.133333,
+        "end": 7.266667,
+        "description": "骑山地车即将离开视野"
+      },
+      {
+        "id": "E23",
+        "actor_id": "S25-P01",
+        "shot_id": "S25",
+        "start": 7.3,
+        "end": 7.366667,
+        "description": "骑山地车完全消失在树林后"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E01",
+        "kind": "motion",
+        "label": "骑山地车下坡",
+        "start": 0.033333,
+        "end": 3.633333,
+        "start_range": [
+          0.033333,
+          0.133333
+        ],
+        "end_range": [
+          3.533333,
+          3.633333
+        ],
+        "detail": "骑手身穿灰色短袖和红黑花纹长裤，头戴头盔，骑着深红色车架的山地车。他从远处的林间土路高处出发，顺着起伏的赛道向下骑行，身体随路况前后晃动以吸收震动，最终从画面左侧近景处驶出。",
+        "evidence": [
+          {
+            "time": 0.033333,
+            "observation": "骑手出现在远处背景中，开始沿土路下行"
+          },
+          {
+            "time": 1.333333,
+            "observation": "骑手靠近镜头，前轮越过一个小土坎"
+          },
+          {
+            "time": 2.533333,
+            "observation": "骑手在蜿蜒的赛道上连续转向"
+          },
+          {
+            "time": 3.633333,
+            "observation": "骑手背影占据画面左侧大部分区域，即将出画"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "越过小土坎",
+            "time": 1.333333,
+            "time_range": null
+          },
+          {
+            "name": "连续过弯",
+            "time": 2.533333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身",
+          "双手",
+          "双脚"
+        ],
+        "movement_roles": [
+          "主体位移",
+          "操控车把",
+          "踩踏踏板"
+        ],
+        "subphases": [
+          {
+            "label": "远处下行",
+            "start": 0.033333,
+            "end": 1.333333,
+            "detail": "骑手从远景中出现，沿着略微下坡的土路向镜头方向骑行。",
+            "evidence": [
+              {
+                "time": 0.033333,
+                "observation": "骑手位于画面中央偏右的远处"
+              },
+              {
+                "time": 1.333333,
+                "observation": "骑手已行进至中景位置"
+              }
+            ]
+          },
+          {
+            "label": "近景穿梭",
+            "start": 1.333333,
+            "end": 3.633333,
+            "detail": "骑手进入前景，快速通过几个连续的弯道和起伏地形，最后从左侧出画。",
+            "evidence": [
+              {
+                "time": 1.333333,
+                "observation": "骑手前轮抬起越过障碍"
+              },
+              {
+                "time": 3.633333,
+                "observation": "骑手背部朝向镜头，向左移动"
+              }
+            ]
+          }
+        ],
+        "brief": "灰衣红裤骑手驾驶山地车从远处林间赛道下坡并驶出画面。"
+      },
+      {
+        "id": "A02",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "E02",
+        "kind": "motion",
+        "label": "接近起跳点",
+        "start": 3.7,
+        "end": 3.933333,
+        "start_range": [
+          3.7,
+          3.8
+        ],
+        "end_range": [
+          3.9,
+          3.933333
+        ],
+        "detail": "黑衣骑手骑着山地车从后方树林中冲出，径直冲向面前的黄土堆起的斜坡（起跳台）。他在接近过程中保持稳定坐姿，准备起跳。",
+        "evidence": [
+          {
+            "time": 3.7,
+            "observation": "骑手刚出现在土坡后方的树林边缘"
+          },
+          {
+            "time": 3.933333,
+            "observation": "骑手车轮接触土坡顶端，准备腾空"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "接触坡顶",
+            "time": 3.933333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身",
+          "双手"
+        ],
+        "movement_roles": [
+          "主体位移",
+          "预备姿态"
+        ],
+        "subphases": [
+          {
+            "label": "冲出树林",
+            "start": 3.7,
+            "end": 3.8,
+            "detail": "骑手从背景的树干间隙中出现，向前景的土坡直线骑行。",
+            "evidence": [
+              {
+                "time": 3.7,
+                "observation": "骑手身影在树后显现"
+              },
+              {
+                "time": 3.8,
+                "observation": "骑手完全进入开阔地带，距离土坡约半米"
+              }
+            ]
+          },
+          {
+            "label": "冲上坡顶",
+            "start": 3.8,
+            "end": 3.933333,
+            "detail": "骑手加速冲上黄土堆成的斜坡顶部，车头微微上扬。",
+            "evidence": [
+              {
+                "time": 3.8,
+                "observation": "骑手位于坡底"
+              },
+              {
+                "time": 3.933333,
+                "observation": "骑手到达坡顶边缘"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手骑车冲出树林，高速接近并冲上黄土起跳坡。"
+      },
+      {
+        "id": "A03",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "execution_id": "E03",
+        "kind": "motion",
+        "label": "腾空跃起",
+        "start": 3.966667,
+        "end": 4.1,
+        "start_range": [
+          3.966667,
+          4.0
+        ],
+        "end_range": [
+          4.066667,
+          4.1
+        ],
+        "detail": "骑手连人带车离开地面，在空中划出一道弧线。他双腿弯曲收起，身体重心后移以保持平衡，整车处于滞空状态。",
+        "evidence": [
+          {
+            "time": 3.966667,
+            "observation": "车轮刚刚离地，处于最低点的腾空初期"
+          },
+          {
+            "time": 4.1,
+            "observation": "骑手达到最高点附近，准备下落"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "离地瞬间",
+            "time": 3.966667,
+            "time_range": null
+          },
+          {
+            "name": "最高点",
+            "time": 4.1,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身",
+          "双腿"
+        ],
+        "movement_roles": [
+          "垂直位移",
+          "空中平衡"
+        ],
+        "subphases": [
+          {
+            "label": "起跳离地",
+            "start": 3.966667,
+            "end": 4.0,
+            "detail": "借助坡道的弹力，骑手和自行车向上飞起，轮胎脱离地面。",
+            "evidence": [
+              {
+                "time": 3.966667,
+                "observation": "车轮悬空，下方有阴影"
+              },
+              {
+                "time": 4.0,
+                "observation": "车身完全离开坡面"
+              }
+            ]
+          },
+          {
+            "label": "空中飞行",
+            "start": 4.0,
+            "end": 4.1,
+            "detail": "骑手在空中调整姿态，膝盖微屈，手臂拉住车把，平稳滑翔。",
+            "evidence": [
+              {
+                "time": 4.0,
+                "observation": "骑手处于上升阶段"
+              },
+              {
+                "time": 4.1,
+                "observation": "骑手接近抛物线顶点"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手连同山地车一起腾空跃起，在空中完成滑翔动作。"
+      },
+      {
+        "id": "A04",
+        "actor_id": "S06-P01",
+        "shot_id": "S06",
+        "execution_id": "E04",
+        "kind": "motion",
+        "label": "空中滑行",
+        "start": 4.133333,
+        "end": 4.266667,
+        "start_range": [
+          4.133333,
+          4.2
+        ],
+        "end_range": [
+          4.233333,
+          4.266667
+        ],
+        "detail": "骑手继续保持滞空状态，水平方向跨越两棵树之间的空隙。他的身体略微前倾，视线看向前方落地点。",
+        "evidence": [
+          {
+            "time": 4.133333,
+            "observation": "骑手开始下降，但仍高于地面"
+          },
+          {
+            "time": 4.266667,
+            "observation": "骑手非常接近对面的 landing zone（着陆区）"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "跨越空隙",
+            "time": 4.2,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "上半身",
+          "头部"
+        ],
+        "movement_roles": [
+          "水平位移",
+          "视线引导"
+        ],
+        "subphases": [
+          {
+            "label": "下降过程",
+            "start": 4.133333,
+            "end": 4.266667,
+            "detail": "受重力影响，骑手高度逐渐降低，但依然悬浮在半空中，直到即将触地。",
+            "evidence": [
+              {
+                "time": 4.133333,
+                "observation": "骑手高度明显低于上一镜头末尾"
+              },
+              {
+                "time": 4.266667,
+                "observation": "车轮几乎碰到对面的土堆"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在空中水平滑行，跨越树木间的 gap，准备着陆。"
+      },
+      {
+        "id": "A05",
+        "actor_id": "S07-P01",
+        "shot_id": "S07",
+        "execution_id": "E05",
+        "kind": "motion",
+        "label": "落地缓冲",
+        "start": 4.3,
+        "end": 4.433333,
+        "start_range": [
+          4.3,
+          4.366667
+        ],
+        "end_range": [
+          4.4,
+          4.433333
+        ],
+        "detail": "骑手的前轮首先接触对面的土坡斜面，随后后轮着地。他利用悬挂系统和腿部动作吸收冲击力，身体迅速回正，恢复骑行姿态。",
+        "evidence": [
+          {
+            "time": 4.3,
+            "observation": "前轮触碰土坡表面"
+          },
+          {
+            "time": 4.433333,
+            "observation": "后轮完全着地，骑手稳定在坡面上"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "前轮触地",
+            "time": 4.3,
+            "time_range": null
+          },
+          {
+            "name": "后轮着地",
+            "time": 4.433333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双腿",
+          "车轮"
+        ],
+        "movement_roles": [
+          "冲击吸收",
+          "姿态复位"
+        ],
+        "subphases": [
+          {
+            "label": "前轮接地",
+            "start": 4.3,
+            "end": 4.366667,
+            "detail": "前叉压缩，前轮咬住土坡斜面向下滚动。",
+            "evidence": [
+              {
+                "time": 4.3,
+                "observation": "前轮与地面接触点清晰可见"
+              },
+              {
+                "time": 4.366667,
+                "observation": "车身因冲击产生轻微反弹"
+              }
+            ]
+          },
+          {
+            "label": "全轮着地",
+            "start": 4.366667,
+            "end": 4.433333,
+            "detail": "后轮落下，骑手坐稳车座，继续向前滑行。",
+            "evidence": [
+              {
+                "time": 4.366667,
+                "observation": "后轮尚未完全贴合地面"
+              },
+              {
+                "time": 4.433333,
+                "observation": "整车平稳落在坡道上"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手精准降落在对面土坡上，通过肢体和车辆悬挂完成缓冲。"
+      },
+      {
+        "id": "A06",
+        "actor_id": "S08-P01",
+        "shot_id": "S08",
+        "execution_id": "E06",
+        "kind": "motion",
+        "label": "继续前行",
+        "start": 4.466667,
+        "end": 4.6,
+        "start_range": [
+          4.466667,
+          4.533333
+        ],
+        "end_range": [
+          4.566667,
+          4.6
+        ],
+        "detail": "落地成功后，骑手没有停顿，直接踩着踏板驱动自行车沿土路向前方延伸的方向驶去，背影逐渐远离镜头。",
+        "evidence": [
+          {
+            "time": 4.466667,
+            "observation": "骑手开始在平地上加速"
+          },
+          {
+            "time": 4.6,
+            "observation": "骑手已驶出一段距离，身形变小"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "加速离场",
+            "time": 4.533333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "脚踏板"
+        ],
+        "movement_roles": [
+          "动力输出",
+          "直线位移"
+        ],
+        "subphases": [
+          {
+            "label": "起步加速",
+            "start": 4.466667,
+            "end": 4.6,
+            "detail": "骑手用力蹬踏，车轮卷起少量尘土，速度提升。",
+            "evidence": [
+              {
+                "time": 4.466667,
+                "observation": "骑手刚结束缓冲，开始发力"
+              },
+              {
+                "time": 4.6,
+                "observation": "骑手已进入匀速行驶状态"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手落地后立即加速，沿着林间小道继续向前骑行。"
+      },
+      {
+        "id": "A07",
+        "actor_id": "S09-P01",
+        "shot_id": "S09",
+        "execution_id": "E07",
+        "kind": "motion",
+        "label": "逼近弯道",
+        "start": 4.633333,
+        "end": 4.766667,
+        "start_range": [
+          4.633333,
+          4.7
+        ],
+        "end_range": [
+          4.733333,
+          4.766667
+        ],
+        "detail": "骑手前方出现一个明显的左转 berm（护墙弯）。他提前减速并调整路线，对准弯道入口。",
+        "evidence": [
+          {
+            "time": 4.633333,
+            "observation": "弯道结构在画面右侧显现"
+          },
+          {
+            "time": 4.766667,
+            "observation": "骑手到达弯道最外侧边缘"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "锁定入弯点",
+            "time": 4.733333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "头部",
+          "车把"
+        ],
+        "movement_roles": [
+          "路径规划",
+          "减速预备"
+        ],
+        "subphases": [
+          {
+            "label": "观察路况",
+            "start": 4.633333,
+            "end": 4.766667,
+            "detail": "骑手目光注视前方弯道，双手微调车把角度。",
+            "evidence": [
+              {
+                "time": 4.633333,
+                "observation": "骑手直行接近弯道区域"
+              },
+              {
+                "time": 4.766667,
+                "observation": "骑手车身开始向左倾斜趋势"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在直道末端识别到左转弯道，调整轨迹准备入弯。"
+      },
+      {
+        "id": "A08",
+        "actor_id": "S10-P01",
+        "shot_id": "S10",
+        "execution_id": "E08",
+        "kind": "motion",
+        "label": "切入左弯",
+        "start": 4.8,
+        "end": 4.933333,
+        "start_range": [
+          4.8,
+          4.866667
+        ],
+        "end_range": [
+          4.9,
+          4.933333
+        ],
+        "detail": "骑手将车身大幅向左倾斜，压进高耸的泥土护墙内侧。他的外腿伸直支撑，内腿弯曲，利用离心力贴壁而行。",
+        "evidence": [
+          {
+            "time": 4.8,
+            "observation": "车轮碾过弯道唇边，车身急剧侧倾"
+          },
+          {
+            "time": 4.933333,
+            "observation": "骑手处于弯道最深处的弧线上"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "最大倾角",
+            "time": 4.866667,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "大腿",
+          "车座"
+        ],
+        "movement_roles": [
+          "侧向倾斜",
+          "重心转移"
+        ],
+        "subphases": [
+          {
+            "label": "压弯入轨",
+            "start": 4.8,
+            "end": 4.866667,
+            "detail": "骑手猛打方向，车身倒向左侧，轮胎嵌入松软的土壁。",
+            "evidence": [
+              {
+                "time": 4.8,
+                "observation": "车身角度发生剧烈变化"
+              },
+              {
+                "time": 4.866667,
+                "observation": "骑手达到本次过弯的最大倾斜度"
+              }
+            ]
+          },
+          {
+            "label": "贴壁滑行",
+            "start": 4.866667,
+            "end": 4.933333,
+            "detail": "依靠速度和摩擦力，骑手在垂直的土墙上维持平衡，快速划过。",
+            "evidence": [
+              {
+                "time": 4.866667,
+                "observation": "骑手紧贴土壁内侧"
+              },
+              {
+                "time": 4.933333,
+                "observation": "骑手开始有回正迹象"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手以极大倾角切入左侧高护墙弯道，贴壁高速滑行。"
+      },
+      {
+        "id": "A09",
+        "actor_id": "S11-P01",
+        "shot_id": "S11",
+        "execution_id": "E09",
+        "kind": "motion",
+        "label": "弯中控车",
+        "start": 4.966667,
+        "end": 5.1,
+        "start_range": [
+          4.966667,
+          5.033333
+        ],
+        "end_range": [
+          5.066667,
+          5.1
+        ],
+        "detail": "在弯道中段，骑手持续对抗离心力，手臂紧绷控制车把不失控，眼神紧盯出口方向。",
+        "evidence": [
+          {
+            "time": 4.966667,
+            "observation": "骑手仍在弯道弧形面上"
+          },
+          {
+            "time": 5.1,
+            "observation": "骑手接近弯道出口，车身开始回正"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "稳住车头",
+            "time": 5.033333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "手臂",
+          "肩膀"
+        ],
+        "movement_roles": [
+          "抗干扰控制",
+          "方向修正"
+        ],
+        "subphases": [
+          {
+            "label": "维持姿态",
+            "start": 4.966667,
+            "end": 5.1,
+            "detail": "尽管速度快且路面不平，骑手努力保持低重心和稳定的抓握力。",
+            "evidence": [
+              {
+                "time": 4.966667,
+                "observation": "骑手肌肉线条显示正在用力"
+              },
+              {
+                "time": 5.1,
+                "observation": "车身倾斜角度减小"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在左弯中途全力控制车把，防止侧滑并保持正确线路。"
+      },
+      {
+        "id": "A10",
+        "actor_id": "S12-P01",
+        "shot_id": "S12",
+        "execution_id": "E10",
+        "kind": "motion",
+        "label": "出弯扬尘",
+        "start": 5.133333,
+        "end": 5.266667,
+        "start_range": [
+          5.133333,
+          5.2
+        ],
+        "end_range": [
+          5.233333,
+          5.266667
+        ],
+        "detail": "骑手成功转出弯道，后轮在干燥的浮土上剧烈空转或急加速，甩出一条长长的黄色尘烟尾巴。",
+        "evidence": [
+          {
+            "time": 5.133333,
+            "observation": "车身基本回正，后轮开始打滑或强力驱动"
+          },
+          {
+            "time": 5.266667,
+            "observation": "巨大的 dust cloud（尘云）笼罩了骑手身后"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "激起尘浪",
+            "time": 5.2,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "后轮",
+          "臀部"
+        ],
+        "movement_roles": [
+          "动力爆发",
+          "流体扰动"
+        ],
+        "subphases": [
+          {
+            "label": "脱困加速",
+            "start": 5.133333,
+            "end": 5.266667,
+            "detail": "为了克服弯道阻力，骑手猛烈踩踏板，导致后胎失去部分抓地力刨起泥土。",
+            "evidence": [
+              {
+                "time": 5.133333,
+                "observation": "尘土开始从后轮处喷涌而出"
+              },
+              {
+                "time": 5.266667,
+                "observation": "尘埃弥漫整个下半屏"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手冲出左弯，凭借强劲的动力输出在后轮处制造出壮观的沙尘尾迹。"
+      },
+      {
+        "id": "A11",
+        "actor_id": "S13-P01",
+        "shot_id": "S13",
+        "execution_id": "E11",
+        "kind": "motion",
+        "label": "直道冲刺",
+        "start": 5.3,
+        "end": 5.433333,
+        "start_range": [
+          5.3,
+          5.366667
+        ],
+        "end_range": [
+          5.4,
+          5.433333
+        ],
+        "detail": "穿过尘雾后，骑手在一片相对平坦的林间直道上全速前进，身体伏低以减少风阻。",
+        "evidence": [
+          {
+            "time": 5.3,
+            "observation": "骑手轮廓在飘散的灰尘中变得清晰"
+          },
+          {
+            "time": 5.433333,
+            "observation": "骑手抵达下一个弯道前的 braking zone（刹车区）"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "极速穿行",
+            "time": 5.366667,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "脊背",
+          "颈部"
+        ],
+        "movement_roles": [
+          "空气动力学姿态",
+          "直线加速"
+        ],
+        "subphases": [
+          {
+            "label": "穿越迷雾",
+            "start": 5.3,
+            "end": 5.433333,
+            "detail": "骑手顶着残留的粉尘向前飞奔，直至视野完全开阔。",
+            "evidence": [
+              {
+                "time": 5.3,
+                "observation": "周围仍有悬浮颗粒"
+              },
+              {
+                "time": 5.433333,
+                "observation": "环境变干净，前方道路笔直"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在短暂的直线路段上俯身冲刺，迅速拉开与前车的距离感（若有）。"
+      },
+      {
+        "id": "A12",
+        "actor_id": "S14-P01",
+        "shot_id": "S14",
+        "execution_id": "E12",
+        "kind": "motion",
+        "label": "备战右弯",
+        "start": 5.466667,
+        "end": 5.6,
+        "start_range": [
+          5.466667,
+          5.533333
+        ],
+        "end_range": [
+          5.566667,
+          5.6
+        ],
+        "detail": "面对前方的右手弯，骑手再次调整呼吸和站位，双脚一前一后踩在踏板上，准备迎接新的 G-force。",
+        "evidence": [
+          {
+            "time": 5.466667,
+            "observation": "右侧高大的土墙映入眼帘"
+          },
+          {
+            "time": 5.6,
+            "observation": "骑手已经开始向右偏移重心"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "预加载荷",
+            "time": 5.533333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "脚踝",
+          "膝关节"
+        ],
+        "movement_roles": [
+          "重量分配",
+          "肌肉预紧"
+        ],
+        "subphases": [
+          {
+            "label": "心理建设",
+            "start": 5.466667,
+            "end": 5.6,
+            "detail": "虽然无法听到声音，但从其专注的神态可以看出他在为高难度动作做准备。",
+            "evidence": [
+              {
+                "time": 5.466667,
+                "observation": "骑手头部转向右侧目标"
+              },
+              {
+                "time": 5.6,
+                "observation": "身体语言显示出紧张感"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在直道尽头发现右转弯道，随即调整站姿和重心分布以备入弯。"
+      },
+      {
+        "id": "A13",
+        "actor_id": "S15-P01",
+        "shot_id": "S15",
+        "execution_id": "E13",
+        "kind": "motion",
+        "label": "杀入右弯",
+        "start": 5.633333,
+        "end": 5.766667,
+        "start_range": [
+          5.633333,
+          5.7
+        ],
+        "end_range": [
+          5.733333,
+          5.766667
+        ],
+        "detail": "骑手果断地将车扔进右边的护墙弯，这次倾斜角度似乎比上次更大，因为他选择了更高的走线。",
+        "evidence": [
+          {
+            "time": 5.633333,
+            "observation": "前轮狠狠砸向右侧土壁的顶部"
+          },
+          {
+            "time": 5.766667,
+            "observation": "整个人几乎平行于地面贴在墙上"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "高位切入",
+            "time": 5.7,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "髋部",
+          "肋骨"
+        ],
+        "movement_roles": [
+          "极端侧倾",
+          "高空作业"
+        ],
+        "subphases": [
+          {
+            "label": "暴力入弯",
+            "start": 5.633333,
+            "end": 5.766667,
+            "detail": "不同于温和的过渡，这是一次充满攻击性的转向，轮胎发出刺耳摩擦声（推测）。",
+            "evidence": [
+              {
+                "time": 5.633333,
+                "observation": "车身瞬间失衡倒入右弯"
+              },
+              {
+                "time": 5.766667,
+                "observation": "骑手处于极度危险但也极具观赏性的位置"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手采取激进策略，直接从高处切入右侧陡峭的护墙弯道。"
+      },
+      {
+        "id": "A14",
+        "actor_id": "S16-P01",
+        "shot_id": "S16",
+        "execution_id": "E14",
+        "kind": "motion",
+        "label": "极限压弯",
+        "start": 5.8,
+        "end": 5.933333,
+        "start_range": [
+          5.8,
+          5.866667
+        ],
+        "end_range": [
+          5.9,
+          5.933333
+        ],
+        "detail": "在弯道底部，骑手将下巴几乎贴到了油箱位置（如果是摩托车的话，这里是车架），极致压缩空间来换取更快的过弯速度。",
+        "evidence": [
+          {
+            "time": 5.8,
+            "observation": "骑手肘部向外张开以平衡车身"
+          },
+          {
+            "time": 5.933333,
+            "observation": "后轮带着火星般的碎石飞溅"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "人机合一",
+            "time": 5.866667,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "手肘",
+          "脸颊"
+        ],
+        "movement_roles": [
+          "动态平衡",
+          "物理极限挑战"
+        ],
+        "subphases": [
+          {
+            "label": "深渊凝视",
+            "start": 5.8,
+            "end": 5.933333,
+            "detail": "在这个瞬间，任何微小的失误都可能导致摔车，骑手展现了惊人的核心力量。",
+            "evidence": [
+              {
+                "time": 5.8,
+                "observation": "身体扭曲成不可思议的角度"
+              },
+              {
+                "time": 5.933333,
+                "observation": "开始感受到向上的推力"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在右弯谷底进行教科书级别的极限压弯，身体折叠至最低点。"
+      },
+      {
+        "id": "A15",
+        "actor_id": "S17-P01",
+        "shot_id": "S17",
+        "execution_id": "E15",
+        "kind": "motion",
+        "label": "漂移甩尾",
+        "start": 5.966667,
+        "end": 6.1,
+        "start_range": [
+          5.966667,
+          6.033333
+        ],
+        "end_range": [
+          6.066667,
+          6.1
+        ],
+        "detail": "出弯时，骑手故意让后轮突破抓地力极限，使车尾向外滑动，形成漂亮的 powerslide（动力滑胎），同时扬起漫天黄沙。",
+        "evidence": [
+          {
+            "time": 5.966667,
+            "observation": "后轮轨迹偏离预期直线，呈现扇形扩散"
+          },
+          {
+            "time": 6.1,
+            "observation": "浓密的沙幕完全遮蔽了骑手下半身"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "受控失控",
+            "time": 6.033333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "腰部",
+          "后腿"
+        ],
+        "movement_roles": [
+          "主动失稳",
+          "视觉特效创造"
+        ],
+        "subphases": [
+          {
+            "label": "触发滑移",
+            "start": 5.966667,
+            "end": 6.1,
+            "detail": "这需要极高的技巧，既要让车滑起来又要保证不倒。",
+            "evidence": [
+              {
+                "time": 5.966667,
+                "observation": "车身开始出现不规则摆动"
+              },
+              {
+                "time": 6.1,
+                "observation": "滑行达到顶峰，尘土飞扬"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在离开右弯时刻意制造后轮打滑，上演了一场精彩的漂移秀并伴随巨大尘暴。"
+      },
+      {
+        "id": "A16",
+        "actor_id": "S18-P01",
+        "shot_id": "S18",
+        "execution_id": "E16",
+        "kind": "motion",
+        "label": "冲破尘障",
+        "start": 6.133333,
+        "end": 6.266667,
+        "start_range": [
+          6.133333,
+          6.2
+        ],
+        "end_range": [
+          6.233333,
+          6.266667
+        ],
+        "detail": "骑手凭借惯性穿透了自己制造的沙尘屏障，重新回到能见度较好的环境中，车速略有下降但依然很快。",
+        "evidence": [
+          {
+            "time": 6.133333,
+            "observation": "只能看到模糊的人影在黄雾中挣扎"
+          },
+          {
+            "time": 6.266667,
+            "observation": "清晰的自行车轮廓再次浮现"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "重见天日",
+            "time": 6.2,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "眼睛",
+          "面部"
+        ],
+        "movement_roles": [
+          "环境适应",
+          "恢复常态"
+        ],
+        "subphases": [
+          {
+            "label": "盲开模式",
+            "start": 6.133333,
+            "end": 6.266667,
+            "detail": "即使看不见路也要凭感觉往前冲，这是信任自己和装备的表现。",
+            "evidence": [
+              {
+                "time": 6.133333,
+                "observation": "视觉受阻严重"
+              },
+              {
+                "time": 6.266667,
+                "observation": "视野逐渐恢复"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手勇敢地从浓厚的沙尘云中穿出，恢复了正常的骑行视野。"
+      },
+      {
+        "id": "A17",
+        "actor_id": "S19-P01",
+        "shot_id": "S19",
+        "execution_id": "E17",
+        "kind": "motion",
+        "label": "陡坡制动",
+        "start": 6.3,
+        "end": 6.433333,
+        "start_range": [
+          6.3,
+          6.366667
+        ],
+        "end_range": [
+          6.4,
+          6.433333
+        ],
+        "detail": "紧接着是一段更陡峭的下坡，骑手不敢大意，手指紧扣刹车把手，控制下滑的速度不至于过快而失控。",
+        "evidence": [
+          {
+            "time": 6.3,
+            "observation": "坡度明显增加，视角变为俯视"
+          },
+          {
+            "time": 6.433333,
+            "observation": "车轮溅起的水花或泥浆暗示可能有湿滑路段"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "捏死刹车",
+            "time": 6.366667,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "食指",
+          "中指"
+        ],
+        "movement_roles": [
+          "能量耗散",
+          "安全管控"
+        ],
+        "subphases": [
+          {
+            "label": "谨慎下行",
+            "start": 6.3,
+            "end": 6.433333,
+            "detail": "这是一种保守但必要的操作，特别是在未知路况下。",
+            "evidence": [
+              {
+                "time": 6.3,
+                "observation": "车身姿态较为直立而非进攻性"
+              },
+              {
+                "time": 6.433333,
+                "observation": "速度表读数（假设有）应该是在合理范围内"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在面对接下来的大落差下坡时，采取了稳健的点刹策略来控制动能。"
+      },
+      {
+        "id": "A18",
+        "actor_id": "S20-P01",
+        "shot_id": "S20",
+        "execution_id": "E18",
+        "kind": "motion",
+        "label": "丛林穿行",
+        "start": 6.466667,
+        "end": 6.6,
+        "start_range": [
+          6.466667,
+          6.533333
+        ],
+        "end_range": [
+          6.566667,
+          6.6
+        ],
+        "detail": "赛道进入了树木更加茂密的区域，枝桠交错，骑手必须灵活地在狭窄的空间里闪展腾挪。",
+        "evidence": [
+          {
+            "time": 6.466667,
+            "observation": "两侧树干间距缩小"
+          },
+          {
+            "time": 6.6,
+            "observation": "骑手差点擦碰到一根横生的树枝"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "惊险避让",
+            "time": 6.533333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "肩膀",
+          "头盔"
+        ],
+        "movement_roles": [
+          "空间感知",
+          "障碍物规避"
+        ],
+        "subphases": [
+          {
+            "label": "蛇形走位",
+            "start": 6.466667,
+            "end": 6.6,
+            "detail": "不是简单的直线，而是 S 型或者 Z 型的复杂轨迹。",
+            "evidence": [
+              {
+                "time": 6.466667,
+                "observation": "车头左右摇摆频繁"
+              },
+              {
+                "time": 6.6,
+                "observation": "成功绕过所有障碍"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在密林深处的小径上小心翼翼地穿梭，躲避着无处不在的自然障碍。"
+      },
+      {
+        "id": "A19",
+        "actor_id": "S21-P01",
+        "shot_id": "S21",
+        "execution_id": "E19",
+        "kind": "motion",
+        "label": "烂路减震",
+        "start": 6.633333,
+        "end": 6.766667,
+        "start_range": [
+          6.633333,
+          6.7
+        ],
+        "end_range": [
+          6.733333,
+          6.766667
+        ],
+        "detail": "路面变成了布满树根和石块的“洗菜盆”地形，骑手站立骑行，用膝盖和手肘作为第二避震系统。",
+        "evidence": [
+          {
+            "time": 6.633333,
+            "observation": "车身剧烈上下跳动"
+          },
+          {
+            "time": 6.766667,
+            "observation": "骑手表情痛苦但坚持不退缩"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "硬碰硬",
+            "time": 6.7,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "膝盖",
+          "手腕"
+        ],
+        "movement_roles": [
+          "被动吸能",
+          "意志考验"
+        ],
+        "subphases": [
+          {
+            "label": "忍受颠簸",
+            "start": 6.633333,
+            "end": 6.766667,
+            "detail": "每一次撞击都是对身体的折磨，但他学会了与之共舞。",
+            "evidence": [
+              {
+                "time": 6.633333,
+                "observation": " suspension fork（前叉）反复压缩回弹"
+              },
+              {
+                "time": 6.766667,
+                "observation": "终于熬过了这一段最糟糕的路况"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手在崎岖不平的树根路段上艰难跋涉，靠肉体承受来自地面的冲击。"
+      },
+      {
+        "id": "A20",
+        "actor_id": "S22-P01",
+        "shot_id": "S22",
+        "execution_id": "E20",
+        "kind": "motion",
+        "label": "渐行渐远",
+        "start": 6.8,
+        "end": 6.933333,
+        "start_range": [
+          6.8,
+          6.866667
+        ],
+        "end_range": [
+          6.9,
+          6.933333
+        ],
+        "detail": "克服了困难路段后，骑手终于松了一口气，继续向着森林腹地骑去，身影在透视关系中越来越小。",
+        "evidence": [
+          {
+            "time": 6.8,
+            "observation": "道路重新变得平缓"
+          },
+          {
+            "time": 6.933333,
+            "observation": "骑手已经变成了一个小黑点"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "消失倒计时",
+            "time": 6.866667,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "整体轮廓"
+        ],
+        "movement_roles": [
+          "深度位移",
+          "叙事收尾铺垫"
+        ],
+        "subphases": [
+          {
+            "label": "平静离去",
+            "start": 6.8,
+            "end": 6.933333,
+            "detail": "没有了之前的激烈动作，只剩下单调 repetitive 的踩踏。",
+            "evidence": [
+              {
+                "time": 6.8,
+                "observation": "动作幅度变小"
+              },
+              {
+                "time": 6.933333,
+                "observation": "距离拉大到难以分辨细节"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手结束了激烈的特技表演，回归平淡的巡航状态并向远方驶去。"
+      },
+      {
+        "id": "A21",
+        "actor_id": "S23-P01",
+        "shot_id": "S23",
+        "execution_id": "E21",
+        "kind": "motion",
+        "label": "微观化",
+        "start": 6.966667,
+        "end": 7.1,
+        "start_range": [
+          6.966667,
+          7.033333
+        ],
+        "end_range": [
+          7.066667,
+          7.1
+        ],
+        "detail": "随着距离进一步拉大，骑手在画面中的占比急剧缩小，几乎要和周围的树叶融为一体。",
+        "evidence": [
+          {
+            "time": 6.966667,
+            "observation": "需要仔细寻找才能定位骑手"
+          },
+          {
+            "time": 7.1,
+            "observation": "只剩下一团黑色的色块在移动"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "像素级存在",
+            "time": 7.033333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "low",
+        "body_parts": [
+          "无特定部位"
+        ],
+        "movement_roles": [
+          "尺度变化",
+          "视觉融合"
+        ],
+        "subphases": [
+          {
+            "label": "融入背景",
+            "start": 6.966667,
+            "end": 7.1,
+            "detail": "人类个体在大自然面前显得如此渺小。",
+            "evidence": [
+              {
+                "time": 6.966667,
+                "observation": "对比参照物（大树）凸显其微小"
+              },
+              {
+                "time": 7.1,
+                "observation": "即将彻底隐形"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手的身影因超远距离而在视觉上被极度压缩，近乎消融在绿色背景中。"
+      },
+      {
+        "id": "A22",
+        "actor_id": "S24-P01",
+        "shot_id": "S24",
+        "execution_id": "E22",
+        "kind": "motion",
+        "label": "终章前夕",
+        "start": 7.133333,
+        "end": 7.266667,
+        "start_range": [
+          7.133333,
+          7.2
+        ],
+        "end_range": [
+          7.233333,
+          7.266667
+        ],
+        "detail": "这是骑手还能被肉眼捕捉到的最后时刻，他正驶入一片更为幽暗的林区。",
+        "evidence": [
+          {
+            "time": 7.133333,
+            "observation": "光线变暗，剪影效果增强"
+          },
+          {
+            "time": 7.266667,
+            "observation": "最后一丝轮廓也被黑暗吞噬"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "告别视界",
+            "time": 7.2,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "low",
+        "body_parts": [
+          "剪影"
+        ],
+        "movement_roles": [
+          "光照交互",
+          "结局预示"
+        ],
+        "subphases": [
+          {
+            "label": "没入阴影",
+            "start": 7.133333,
+            "end": 7.266667,
+            "detail": "不仅仅是距离问题，还有环境光线的变化导致了可视度降低。",
+            "evidence": [
+              {
+                "time": 7.133333,
+                "observation": "周围树木投下的影子覆盖了他"
+              },
+              {
+                "time": 7.266667,
+                "observation": "完全看不清人了"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手驾车闯入光线昏暗的深层森林，标志着这段旅程接近尾声。"
+      },
+      {
+        "id": "A23",
+        "actor_id": "S25-P01",
+        "shot_id": "S25",
+        "execution_id": "E23",
+        "kind": "motion",
+        "label": "彻底隐退",
+        "start": 7.3,
+        "end": 7.366667,
+        "start_range": [
+          7.3,
+          7.333333
+        ],
+        "end_range": [
+          7.333333,
+          7.366667
+        ],
+        "detail": "画面中再也找不到骑手的踪迹，只有静谧的树林和那条空荡荡的小径证明他曾来过。",
+        "evidence": [
+          {
+            "time": 7.3,
+            "observation": "原本骑手所在的位置现在只有风景"
+          },
+          {
+            "time": 7.366667,
+            "observation": "确认无人状态"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "虚空",
+            "time": 7.333333,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "无"
+        ],
+        "movement_roles": [
+          "缺席",
+          "留白"
+        ],
+        "subphases": [
+          {
+            "label": "余韵",
+            "start": 7.3,
+            "end": 7.366667,
+            "detail": "故事讲完了，留给观众想象的空间。",
+            "evidence": [
+              {
+                "time": 7.3,
+                "observation": "静态画面为主"
+              },
+              {
+                "time": 7.366667,
+                "observation": "等待下一个场景切换"
+              }
+            ]
+          }
+        ],
+        "brief": "黑衣骑手完全消失在视野之外，视频在此刻定格于空旷的自然景观。"
+      }
+    ],
+    "uncertainties": [
+      "S02 镜头较长，中间是否有其他未被采样的关键动作节点无法确定。",
+      "S04-S25 均为同一黑衣骑手的不同片段剪辑，虽服装相似，但严格来说不能 100% 排除是不同人的可能，此处基于连贯性假设视为同一人或同类行为展示。",
+      "由于缺乏音频，无法判断刹车声、链条声等辅助信息来验证某些动作的力度。"
+    ],
+    "motion_tracks": [
+      {
+        "context": "画面主体为一条位于森林中的泥土下坡赛道，赛道左侧是一个隆起的土坡，右侧是茂密的树林。在画面中景偏右的位置，有一名骑行者正骑着山地自行车沿着赛道向镜头方向行驶。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 0,
+            "caption": "画面主体为一条位于森林中的泥土下坡赛道，赛道左侧是一个隆起的土坡，右侧是茂密的树林。在画面中景偏右的位置，有一名骑行者正骑着山地自行车沿着赛道向镜头方向行驶。",
+            "start": 0.0,
+            "end": 0.0,
+            "action_ids": []
+          }
+        ],
+        "camera": "单帧，仅能观察当前构图。",
+        "single_frame_fallback": true,
+        "actor_id": null,
+        "shot_id": "S01",
+        "identity": "可见的主要物体及环境变化"
+      },
+      {
+        "context": "视频开始时，穿灰色短袖上衣和红黑花纹长裤的山地自行车骑手位于画面中景偏右的树林土坡高处。他骑在一辆深色山地自行车上，身体正面朝向镜头方向，处于静止准备状态。",
+        "phases": [
+          {
+            "from_frame": 1,
+            "to_frame": 28,
+            "caption": "骑手从远处的土坡顶端起步，沿着下坡路径向镜头方向滑行。随着距离拉近，可以清晰看到他双手握住车把，双腿踩在脚踏板上保持平衡，视线看向前方路面。",
+            "start": 0.03333333333333333,
+            "end": 0.9333333333333333,
+            "action_ids": [
+              "A01"
+            ]
+          },
+          {
+            "from_frame": 31,
+            "to_frame": 40,
+            "caption": "接近前景的一个落差地形时，骑手主动将车身腾空跃起。在空中阶段，他的双臂微屈以吸收冲击，膝盖弯曲使大腿贴近躯干，整个身体随自行车一起越过下方的沟壑。",
+            "start": 1.0333333333333334,
+            "end": 1.3333333333333333,
+            "action_ids": [
+              "A01"
+            ]
+          },
+          {
+            "from_frame": 43,
+            "to_frame": 52,
+            "caption": "落地后，骑手迅速调整姿态并加速通过一个向右的大角度弯道。为了对抗离心力，他将上半身大幅度向左倾斜（内侧），同时外侧腿向下施压，紧贴地面疾驰而过，随后冲出画面右侧边缘。",
+            "start": 1.4333333333333333,
+            "end": 1.7333333333333334,
+            "action_ids": [
+              "A01"
+            ]
+          }
+        ],
+        "camera": "镜头起初为固定的远景机位，捕捉骑手从远处驶来的过程。当骑手进入近景并进行跳跃和过弯动作时，摄影者手持设备快速向右摇摄（Pan right）以跟随主体的运动轨迹，导致背景产生明显的动态模糊。",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "identity": "穿灰色短袖上衣和红黑花纹长裤的山地自行车骑手"
+      },
+      {
+        "context": "在森林土路场景中，画面左侧有一块灰白色篷布覆盖物，右侧为散落的岩石堆与树桩；道路中央隆起一个明显的土坡。背景中矗立着多棵高大的针叶树干。",
+        "phases": [
+          {
+            "from_frame": 110,
+            "to_frame": 110,
+            "caption": "在森林土路场景中，画面左侧有一块灰白色篷布覆盖物，右侧为散落的岩石堆与树桩；道路中央隆起一个明显的土坡。背景中矗立着多棵高大的针叶树干。",
+            "start": 3.6666666666666665,
+            "end": 3.6666666666666665,
+            "action_ids": []
+          }
+        ],
+        "camera": "单帧，仅能观察当前构图。",
+        "single_frame_fallback": true,
+        "actor_id": null,
+        "shot_id": "S03",
+        "identity": "可见的主要物体及环境变化"
+      },
+      {
+        "context": "穿黑色短袖上衣和深色长裤的山地自行车骑手位于画面中景偏右区域，正前方是一个土质跳台坡道。背景为茂密的针叶林，两侧矗立着高大的树干。骑手面朝镜头方向骑行，双手握住车把，处于接近起跳点的状态。",
+        "phases": [
+          {
+            "from_frame": 111,
+            "to_frame": 114,
+            "caption": "骑手驾驶山地自行车沿土路向画面前景快速直线冲刺。随着距离拉近，骑手身体重心略微后移并压低，准备冲上前方的土堆跳台。在帧114处，前轮已接触坡顶边缘并开始腾空。",
+            "start": 3.7,
+            "end": 3.8,
+            "action_ids": [
+              "A02"
+            ]
+          },
+          {
+            "from_frame": 117,
+            "to_frame": 118,
+            "caption": "连人带车完全腾空跃起，滞空于两棵大树之间的空隙中。骑手双臂伸展控制车把，双腿弯曲配合车身姿态，整体保持高度稳定的跳跃姿势直至片段结束。",
+            "start": 3.9,
+            "end": 3.933333333333333,
+            "action_ids": [
+              "A02"
+            ]
+          }
+        ],
+        "camera": "固定机位拍摄，无明显的推拉摇移。视角略低于骑手的飞行高度，呈现出仰视效果，完整记录了从远处接近到近处飞跃的过程。",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "在画面中景偏右的位置，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手正位于土坡顶端。他周围是高耸的针叶林树干，下方是一条向下延伸的沙土赛道。骑手双手紧握车把，身体重心后移并微微下蹲，正处于腾空跃起的初始状态。",
+        "phases": [
+          {
+            "from_frame": 119,
+            "to_frame": 123,
+            "caption": "骑手操控山地自行车从土坡边缘起跳，向画面左下方的赛道腾空飞跃。随着滞空过程的推进，他的上半身保持直立且视线紧盯前方落地点，双臂持续用力拉住车把以维持平衡；与此同时，自行车的前轮明显向上抬起，使得车身在空中呈现出向后倾斜的姿态。整个过程中，骑手的下肢随车架一同悬空，未与地面发生接触，直至视频片段结束时仍处于下落前的最高点附近。",
+            "start": 3.966666666666667,
+            "end": 4.1,
+            "action_ids": [
+              "A03"
+            ]
+          }
+        ],
+        "camera": "镜头采用固定的全景视角拍摄，机位完全静止，无推拉摇移等运动。画面构图稳定，清晰展现了前景的土质赛道、中景的跳跃动作以及背景的森林环境，光线为均匀的自然散射光。",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "在S06镜头开始时，山地自行车骑手位于画面中央偏上的土坡顶端。他身穿黑色短袖上衣和深色长裤，头戴全盔（面部被遮挡），骑着一辆深色车架的山地车。背景是茂密的针叶林，两侧有粗壮的树干作为垂直参照物，左侧地面有一块灰白色的防水布或覆盖物。",
+        "phases": [
+          {
+            "from_frame": 124,
+            "to_frame": 128,
+            "caption": "骑手从土坡高处向下滑行接近镜头。起始时（帧124），车身略微腾空越过坡顶边缘，前轮指向下坡方向，随后平稳着地并继续加速冲下陡坡。在此过程中，骑手双手紧握车把控制方向，双腿弯曲以吸收落地冲击并保持平衡，身体重心随坡度前倾，直至滑行至坡底平缓处。",
+            "start": 4.133333333333334,
+            "end": 4.266666666666667,
+            "action_ids": [
+              "A04"
+            ]
+          }
+        ],
+        "camera": "固定机位拍摄，无明显的推拉摇移。视角为平视略带仰角，捕捉了骑手从远处树林间的高坡冲向近处的全过程。景深较深，前景的土路纹理清晰，背景的树木细节可见。光线为自然散射光，整体色调偏向森林的绿色与泥土的黄褐色。",
+        "actor_id": "S06-P01",
+        "shot_id": "S06",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手正位于林间土坡赛道的顶端。他头戴全盔，面部被护目镜遮挡，双手紧握车把，身体重心略微后移以保持平衡。两侧矗立着高大的针叶树干作为背景参照物，前方是一条向下延伸的浅黄色泥土赛道。",
+        "phases": [
+          {
+            "from_frame": 129,
+            "to_frame": 133,
+            "caption": "骑手从坡顶起跳腾空，随后平稳落地并加速冲下陡坡。在帧129中，骑手处于半空中，前轮明显高于地面，正准备越过下方的落差；随着动作推进至帧132和133，他的车轮接触地面，利用悬挂系统吸收冲击，随即压低车头顺着陡峭的土路向画面下方快速滑行，直至身形因高速运动而略显模糊。",
+            "start": 4.3,
+            "end": 4.433333333333334,
+            "action_ids": [
+              "A05"
+            ]
+          }
+        ],
+        "camera": "镜头采用固定的低角度仰拍视角，完整记录了骑手从高处跃下并冲向镜头的过程。画面无明显的推拉或摇移，焦点始终锁定在赛道中央的主体上，通过前景的树木与地面的纹理衬托出骑手的速度感。",
+        "actor_id": "S07-P01",
+        "shot_id": "S07",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央偏右，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手正沿着林间土路向镜头方向骑行。道路两侧分布着高大的树木，左侧地面有一块灰白色的覆盖物，右侧路边散落着石块。",
+        "phases": [
+          {
+            "from_frame": 134,
+            "to_frame": 138,
+            "caption": "骑手双手紧握车把控制山地自行车，身体重心略微后倾以保持平衡，持续向画面前方滑行。随着距离拉近，骑手的上半身和自行车前轮在画面中逐渐变大，其头部始终戴着全盔，视线朝向前方路面。",
+            "start": 4.466666666666667,
+            "end": 4.6,
+            "action_ids": [
+              "A06"
+            ]
+          }
+        ],
+        "camera": "固定机位拍摄，视角略低于骑手水平线，画面无明显的平移或推拉运动，主要记录主体由远及近的直线运动过程。",
+        "actor_id": "S08-P01",
+        "shot_id": "S08",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "在镜头开始时，穿黑色短袖上衣和深色长裤的山地自行车骑手位于画面中央偏上的位置。他正骑着一辆山地自行车沿着一条林间土路向画面下方（即靠近镜头的方向）行驶。他的身体正面朝向镜头，头部佩戴着带有红色镜片的头盔，双手握住车把，双腿跨在车身两侧。道路两旁是高大的树木，地面为黄褐色的泥土路面。",
+        "phases": [
+          {
+            "from_frame": 139,
+            "to_frame": 142,
+            "caption": "骑手持续向画面前方骑行，其在画面中的尺寸逐渐变大。为了保持平衡并应对崎岖的路面，他的上半身随着车辆的颠簸产生轻微的起伏晃动。他的双臂弯曲以吸收震动，视线透过红色的护目镜直视前方路径。",
+            "start": 4.633333333333334,
+            "end": 4.733333333333333,
+            "action_ids": [
+              "A07"
+            ]
+          },
+          {
+            "from_frame": 142,
+            "to_frame": 143,
+            "caption": "骑手继续向前移动，此时已接近画面前景区域。由于距离拉近，可以观察到他在行进中依然保持着紧凑的骑行姿态，车轮在松软的泥地上快速滚动，激起少许尘土。整个过程中，除了身体的自然律动外，没有发生转向或其他大幅度动作。",
+            "start": 4.733333333333333,
+            "end": 4.766666666666667,
+            "action_ids": [
+              "A07"
+            ]
+          }
+        ],
+        "camera": "这是一个跟随拍摄的动态镜头。摄像机似乎位于骑手的前方倒退拍摄，或者是一个固定的低角度机位捕捉其冲下来的瞬间（根据背景相对运动判断更像是有控制的跟拍）。随着骑手逼近，景别由全景过渡到中近景。画面因高速运动和手持感而略显模糊，焦点始终锁定在移动的骑手身上。",
+        "actor_id": "S09-P01",
+        "shot_id": "S09",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央偏右位置，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手正沿着林间土路向镜头方向骑行。他头戴带有红色镜片的护目镜和全盔，双手握住车把，身体重心略微前倾以保持平衡。",
+        "phases": [
+          {
+            "from_frame": 144,
+            "to_frame": 148,
+            "caption": "骑手持续向镜头方向行进，在帧144至147期间，他的车身姿态保持相对稳定，双臂微屈以吸收路面颠簸带来的震动。到了帧148，随着距离拉近，可以观察到他在通过一段起伏路段时，上半身有轻微的上下起伏动作，但视线始终锁定前方路径，双腿保持在踏板上的踩踏姿态未发生明显改变。",
+            "start": 4.8,
+            "end": 4.933333333333334,
+            "action_ids": [
+              "A08"
+            ]
+          }
+        ],
+        "camera": "镜头采用跟随拍摄视角（可能是无人机跟拍或后方高速摄影），始终保持与骑手相对固定的距离和角度。背景中的树木快速向后掠过，显示出极高的移动速度，画面因高速运动产生了一定的动态模糊效果。",
+        "actor_id": "S10-P01",
+        "shot_id": "S10",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面开始时，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手位于画面中央偏右区域。他头戴带有红色镜片的蓝黑色全盔，双手紧握车把，骑着一辆山地自行车在土路上行驶。背景为模糊的绿色植被和灰白色的岩石结构，整体处于高速运动状态。",
+        "phases": [
+          {
+            "from_frame": 149,
+            "to_frame": 153,
+            "caption": "骑手保持骑行姿态向画面左下方快速移动。随着行进，他的身体重心略微前倾并压低，头部朝向行进方向（即画面左侧），视线透过护目镜注视前方路面。由于速度较快且镜头跟随拍摄，车身与地面接触点产生动态模糊，但骑手的双臂始终伸直控制着车把，双腿随踏板运动，直至该片段结束仍维持这一下坡过弯的姿态。",
+            "start": 4.966666666666667,
+            "end": 5.1,
+            "action_ids": [
+              "A09"
+            ]
+          }
+        ],
+        "camera": "镜头采用高角度俯拍视角，紧紧跟随着骑手的移动轨迹进行摇摄。由于主体移动速度快，画面呈现出强烈的径向模糊效果，尤其是边缘的树木和地面纹理拉丝明显，营造出极快的速度感。左上角持续显示抖音Logo及ID水印“30007001994”。",
+        "actor_id": "S11-P01",
+        "shot_id": "S11",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面开始时，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手位于画面中央偏下区域。他头戴带有蓝色装饰的全盔，双手握住车把，身体呈前倾骑行姿态，正驾驶一辆山地自行车在土路上行驶。",
+        "phases": [
+          {
+            "from_frame": 154,
+            "to_frame": 158,
+            "caption": "骑手持续向画面左侧快速行进。他的上半身保持低伏的前倾姿势以维持空气动力学状态，双臂伸直紧握车把控制方向。随着车辆的高速移动，骑手的腿部进行踩踏动作（因运动模糊细节不可辨），整个身体连同自行车作为一个整体平稳地向左平移，直至接近画面左边缘。",
+            "start": 5.133333333333334,
+            "end": 5.266666666666667,
+            "action_ids": [
+              "A10"
+            ]
+          }
+        ],
+        "camera": "镜头采用跟随拍摄的方式，视角略高于地面。为了捕捉高速移动的骑手，摄像机向左快速摇摄（Pan left）。由于主体的移动速度较快且镜头跟随紧密，导致背景中的树木和路面呈现出强烈的水平方向动态模糊效果，突出了骑行的速度感。",
+        "actor_id": "S12-P01",
+        "shot_id": "S12",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面为户外林间土路场景，背景两侧有模糊的绿色植被。一名身穿黑色短袖上衣和深色长裤的山地自行车骑手位于画面中下方区域，头戴蓝色头盔，骑着一辆带有蓝色车架细节的自行车。",
+        "phases": [
+          {
+            "from_frame": 159,
+            "to_frame": 163,
+            "caption": "骑手驾驶山地车在土路上快速行进，车身向画面左侧倾斜进行压弯动作。随着车辆移动，骑手从画面左下方向右上方滑行，逐渐远离镜头视点。",
+            "start": 5.3,
+            "end": 5.433333333333334,
+            "action_ids": [
+              "A11"
+            ]
+          }
+        ],
+        "camera": "镜头跟随主体运动产生明显的摇摄（Pan），由于拍摄对象高速移动且光线较暗，画面呈现出强烈的动态模糊效果，视角略微俯视并随主体转向而调整。",
+        "actor_id": "S13-P01",
+        "shot_id": "S13",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央偏下位置有一名山地自行车骑手，身穿黑色短袖上衣和深色长裤，头戴蓝色头盔。骑手正驾驶一辆带有蓝色车架细节的山地车，处于一条两侧长满茂密树木的林间土路上，背对镜头向画面深处行进。",
+        "phases": [
+          {
+            "from_frame": 164,
+            "to_frame": 168,
+            "caption": "骑手保持背对镜头的姿态，沿着蜿蜒的土路快速向前骑行。在通过弯道时，骑手的上半身略微前倾并随车身倾斜以维持平衡，双臂伸直握把，双腿配合踩踏动作驱动自行车。随着车辆前行，车轮卷起明显的尘土尾迹，骑手的位置从画面中下方逐渐向远处移动，身形因距离增加而变小。",
+            "start": 5.466666666666667,
+            "end": 5.6,
+            "action_ids": [
+              "A12"
+            ]
+          }
+        ],
+        "camera": "镜头采用后方跟随视角（跟拍），模拟第一人称或无人机低空追视效果。摄像机紧随骑手高速移动，导致画面两侧的树林背景产生强烈的径向动态模糊，营造出极快的速度感。构图始终保持骑手位于画面中心区域，随着地形起伏略有晃动。",
+        "actor_id": "S14-P01",
+        "shot_id": "S14",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面展示了一条位于茂密森林中的下坡土路，两侧是高耸的树木和绿色植被。一名身穿黑色短袖上衣、深色长裤并佩戴头盔的山地自行车骑手正骑行在赛道上，处于画面中景偏右的位置。",
+        "phases": [
+          {
+            "from_frame": 169,
+            "to_frame": 169,
+            "caption": "骑手正在通过一个向左急转弯的下坡路段，身体大幅度向左侧倾斜以维持平衡。他双手紧握车把控制方向，双腿配合车身姿态调整重心，车轮紧贴地面高速过弯。",
+            "start": 5.633333333333334,
+            "end": 5.633333333333334,
+            "action_ids": [
+              "A13"
+            ]
+          },
+          {
+            "from_frame": 172,
+            "to_frame": 173,
+            "caption": "完成左转过弯后，骑手迅速将车身回正，恢复直立坐姿沿直线继续向下冲刺。随着速度的提升，他在画面中的位置逐渐变小并向远处移动，背影朝向镜头前方深入林间小道。",
+            "start": 5.733333333333333,
+            "end": 5.766666666666667,
+            "action_ids": [
+              "A13"
+            ]
+          }
+        ],
+        "camera": "镜头采用后方跟拍视角（类似第一人称或跟随拍摄），随骑手的运动轨迹同步向前推进。画面具有明显的动态模糊效果，特别是在前景路面部分，表现出极快的下行速度感；构图始终保持骑手位于画面中心区域。",
+        "actor_id": "S15-P01",
+        "shot_id": "S15",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央偏右，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手背对镜头骑行。他位于一条蜿蜒的林间土路上，道路两侧分布着茂密的高大树木与绿色灌木丛。",
+        "phases": [
+          {
+            "from_frame": 174,
+            "to_frame": 178,
+            "caption": "骑手驾驶山地车沿着土路向画面深处快速行进，逐渐远离镜头。在通过弯道时，他的身体重心略微调整以保持平衡，车轮后方持续扬起明显的黄褐色尘土云团，遮蔽了部分路面细节。",
+            "start": 5.8,
+            "end": 5.933333333333334,
+            "action_ids": [
+              "A14"
+            ]
+          }
+        ],
+        "camera": "镜头采用跟随拍摄视角（疑似第一人称跟拍），紧随骑手身后沿林道向前推进。随着骑手的移动，画面产生轻微的颠簸感，前景左下角可见模糊的扬尘或植被掠过，整体呈现出高速运动的视觉效果。",
+        "actor_id": "S16-P01",
+        "shot_id": "S16",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央偏右的中景位置，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手正背对镜头沿林间土路下坡。道路左侧扬起大量黄褐色尘土，右侧为茂密的绿色植被和高耸的针叶树林。",
+        "phases": [
+          {
+            "from_frame": 179,
+            "to_frame": 183,
+            "caption": "骑手驾驶山地车向画面深处快速行进并顺着弯道向右倾斜车身过弯。随着车辆移动，其身形在透视中逐渐变小并向远处收缩；与此同时，原本占据画面左下大片区域的浓密扬尘因骑手的驶离而迅速消散变淡，露出了下方带有碎石的车辙路面。",
+            "start": 5.966666666666667,
+            "end": 6.1,
+            "action_ids": [
+              "A15"
+            ]
+          }
+        ],
+        "camera": "固定机位拍摄，无明显的推拉摇移或变焦操作，仅记录主体从近处向远方移动的纵深变化过程。",
+        "actor_id": "S17-P01",
+        "shot_id": "S17",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中景，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手位于土路弯道上。他背对镜头，身体向左侧倾斜压弯，正沿着下坡路段行驶。",
+        "phases": [
+          {
+            "from_frame": 184,
+            "to_frame": 188,
+            "caption": "骑手在弯道处保持大幅度的左倾姿态进行高速过弯。随着车辆沿S型土路向下坡滑行并向右转向，他的上半身持续压低以维持重心平衡，后轮卷起明显的尘土尾迹。",
+            "start": 6.133333333333334,
+            "end": 6.266666666666667,
+            "action_ids": [
+              "A16"
+            ]
+          }
+        ],
+        "camera": "镜头采用跟随拍摄视角，从后方捕捉骑手的动态。随着骑手在起伏的赛道上移动，镜头平稳地向右下方摇摄并伴随轻微的前推，始终将主体保持在画面中央区域。",
+        "actor_id": "S18-P01",
+        "shot_id": "S18",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "在茂密的森林土路赛道中，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手位于画面中央偏右的中景区域。骑手头戴全盔，正驾驶一辆山地车处于高速过弯状态，周围伴有大量扬起的沙尘。",
+        "phases": [
+          {
+            "from_frame": 189,
+            "to_frame": 193,
+            "caption": "骑手身体大幅度向左侧倾斜以对抗离心力，双手紧握车把控制方向，双腿弯曲配合车身姿态。随着车辆沿弯道轨迹快速滑行，车轮卷起浓重的尘土遮挡了部分路面细节。在整个连续帧序列中，骑手始终保持这一低重心的压弯姿态直至冲出该段弯道视野中心。",
+            "start": 6.3,
+            "end": 6.433333333333334,
+            "action_ids": [
+              "A17"
+            ]
+          }
+        ],
+        "camera": "镜头采用跟随拍摄的方式，视角略高于地面，捕捉骑手在林间小径上的动态。随着骑手的移动，镜头平滑地向左摇摄以保持主体在画面中的相对位置稳定，背景树木因运动产生轻微的模糊效果。",
+        "actor_id": "S19-P01",
+        "shot_id": "S19",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央偏右，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手正骑行在森林土坡赛道上。他头戴全盔，双手紧握车把，身体重心压低并略微向左侧倾斜，处于高速下坡状态。",
+        "phases": [
+          {
+            "from_frame": 194,
+            "to_frame": 198,
+            "caption": "骑手顺着起伏的土路向右前方快速滑行。随着地形变化，他的车身随之颠簸，后轮卷起明显的尘土烟雾。在整个过程中，他始终保持低重心的骑行姿态，视线专注于前方的林间路径，平稳地控制着车辆通过弯道区域。",
+            "start": 6.466666666666667,
+            "end": 6.6,
+            "action_ids": [
+              "A18"
+            ]
+          }
+        ],
+        "camera": "镜头采用跟随拍摄视角，从高处俯瞰并向右摇摄以追踪骑手的运动轨迹。画面保持相对稳定但带有轻微的手持晃动感，始终将骑手置于视觉中心，背景为茂密的松树林。",
+        "actor_id": "S20-P01",
+        "shot_id": "S20",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央偏右，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手正骑行在森林土坡赛道上。骑手头戴全盔，双手握住车把，身体重心压低并略微向左侧倾斜，正处于一个下坡弯道中。背景是密集的松树林，左下角前景处有一辆倒地的红色自行车残骸（仅见车架部分）。",
+        "phases": [
+          {
+            "from_frame": 199,
+            "to_frame": 203,
+            "caption": "骑手顺着陡峭的土质弯道向下俯冲并向左急转。随着车轮切入地面，大量黄褐色的尘土从后轮处剧烈扬起，形成明显的尘雾笼罩住车身下半部及周围区域。骑手的上半身保持低趴姿态以维持平衡，头部朝向行进方向（画面左下方），双腿随车辆动态调整支撑角度，整个过程中持续处于高速过弯状态，直至视频结束未停止动作。",
+            "start": 6.633333333333334,
+            "end": 6.766666666666667,
+            "action_ids": [
+              "A19"
+            ]
+          }
+        ],
+        "camera": "镜头采用固定的侧后方视角拍摄，无明显推拉或摇移，完整记录了骑手通过该特定弯道的全过程。光线为自然散射光，焦点始终锁定在移动的骑手身上，前景左下角的静止物体与中景的动态扬尘形成对比。",
+        "actor_id": "S21-P01",
+        "shot_id": "S21",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央偏下位置有一名身穿黑色短袖上衣和深色长裤的山地自行车骑手。骑手背对镜头，位于一条蜿蜒的土质林间赛道上，两侧分布着高大的针叶树木。",
+        "phases": [
+          {
+            "from_frame": 204,
+            "to_frame": 208,
+            "caption": "骑手驾驶山地车沿着土路向画面深处快速行驶，经过一个弯道后车身略微向左倾斜以保持平衡。随着车辆前行，车轮卷起明显的尘土并在后方形成扬尘带，骑手始终保持坐姿并目视前方路径直至逐渐远离镜头中心。",
+            "start": 6.8,
+            "end": 6.933333333333334,
+            "action_ids": [
+              "A20"
+            ]
+          }
+        ],
+        "camera": "固定机位拍摄，视角略高于地面，完整记录了骑手从近处向远处树林深处骑行的过程。",
+        "actor_id": "S22-P01",
+        "shot_id": "S22",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面中央偏下位置，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手背对镜头。他正骑行在一条蜿蜒穿过茂密松树林的土质赛道上，身体位于一个明显的左转弯道中。",
+        "phases": [
+          {
+            "from_frame": 209,
+            "to_frame": 213,
+            "caption": "骑手沿着土路向画面深处行进并持续进行左转压弯动作。他的上半身略微前倾并向左侧倾斜以维持平衡，双手紧握车把控制方向。随着车辆沿弯道轨迹向前滑行，后轮扬起少量尘土，整个过程中骑手始终保持背影朝向镜头。",
+            "start": 6.966666666666667,
+            "end": 7.1,
+            "action_ids": [
+              "A21"
+            ]
+          }
+        ],
+        "camera": "这是一个固定的远景镜头，视角略高于地面，完整记录了骑手通过林间弯道的过程。画面无推拉或摇移，焦点始终跟随骑手的运动轨迹。",
+        "actor_id": "S23-P01",
+        "shot_id": "S23",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "在画面下方的土路弯道处，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手背对镜头。他头戴蓝色头盔，正驾驶一辆山地车处于高速过弯状态，车轮扬起大量尘土。",
+        "phases": [
+          {
+            "from_frame": 214,
+            "to_frame": 218,
+            "caption": "骑手身体向左侧倾斜以平衡离心力，双手紧握车把控制方向。随着车辆沿S形土路向前行驶，后轮持续卷起浓重的灰白色扬尘，部分遮挡了车身下半部及路面细节。",
+            "start": 7.133333333333334,
+            "end": 7.266666666666667,
+            "action_ids": [
+              "A22"
+            ]
+          }
+        ],
+        "camera": "镜头保持静止拍摄，采用中景视角记录林间赛道。画面右侧前景有一棵粗壮的树干作为参照物，背景可见茂密的针叶林和起伏的土坡地形。",
+        "actor_id": "S24-P01",
+        "shot_id": "S24",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面起始时，一名身穿黑色短袖上衣和深色长裤的山地自行车骑手位于画面右下方。他背对镜头，头戴深蓝色头盔，正骑行在一条林间土路上。路旁右侧矗立着一棵粗壮的树干作为主要参照物，左侧背景可见茂密的针叶林及远处模糊的白色帐篷状物体。",
+        "phases": [
+          {
+            "from_frame": 219,
+            "to_frame": 221,
+            "caption": "骑手保持背向姿态沿土路向前快速行进，车轮卷起明显的尘土。随着他的移动，其身形逐渐从右侧粗壮树干的旁边经过并向画面深处靠近，最终行驶至该树干的后方区域，上半身部分被树干遮挡。",
+            "start": 7.3,
+            "end": 7.366666666666666,
+            "action_ids": [
+              "A23"
+            ]
+          }
+        ],
+        "camera": "镜头采用跟随拍摄的方式，视角略高于骑手，随主体的前进方向缓慢向右平移并轻微推近，始终将骑手保持在画面右下象限，清晰记录了其在树林间穿梭的动态过程。",
+        "actor_id": "S25-P01",
+        "shot_id": "S25",
+        "identity": "穿黑色短袖上衣和深色长裤的山地自行车骑手"
+      },
+      {
+        "context": "画面展示了一条位于雾气弥漫的森林中的泥泞下坡土路。路面呈灰褐色，布满车辙和积水坑。道路左侧是长满落叶的斜坡，右侧平放着一根粗大的枯木树干。背景中可见高耸笔直的针叶树和远处模糊的山影。",
+        "phases": [
+          {
+            "from_frame": 222,
+            "to_frame": 222,
+            "caption": "画面展示了一条位于雾气弥漫的森林中的泥泞下坡土路。路面呈灰褐色，布满车辙和积水坑。道路左侧是长满落叶的斜坡，右侧平放着一根粗大的枯木树干。背景中可见高耸笔直的针叶树和远处模糊的山影。",
+            "start": 7.4,
+            "end": 7.4,
+            "action_ids": []
+          }
+        ],
+        "camera": "单帧，仅能观察当前构图。",
+        "single_frame_fallback": true,
+        "actor_id": null,
+        "shot_id": "S26",
+        "identity": "可见的主要物体及环境变化"
+      },
+      {
+        "context": "画面展示了一条位于雾气弥漫的森林中的泥泞土路。前景右侧横亘着一根粗大的枯木，左侧地面有明显的积水坑和散落的落叶。中景处有一棵笔直的树干，上面绑着两个灰白色的矩形盒子状物体。背景是延伸至远处的蜿蜒道路和被浓雾笼罩的山林。",
+        "phases": [
+          {
+            "from_frame": 223,
+            "to_frame": 225,
+            "caption": "在整个时间段内，环境场景保持完全静止状态。前景的枯木、水坑以及中景带有盒子的树木均无任何位移或形态改变。背景的雾气也没有明显的流动迹象，画面呈现出一种凝固的静态景观。",
+            "start": 7.433333333333334,
+            "end": 7.5,
+            "action_ids": []
+          }
+        ],
+        "camera": "镜头在源帧223至225期间保持绝对静止，采用固定机位拍摄。视角为平视略带俯视，构图范围未发生变化，无推拉摇移等运镜动作，光线条件稳定，无明显变化。",
+        "actor_id": null,
+        "shot_id": "S27",
+        "identity": "可见的主要物体及环境变化"
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "S02 镜头较长，中间是否有其他未被采样的关键动作节点无法确定。",
+    "S04-S25 均为同一黑衣骑手的不同片段剪辑，虽服装相似，但严格来说不能 100% 排除是不同人的可能，此处基于连贯性假设视为同一人或同类行为展示。",
+    "由于缺乏音频，无法判断刹车声、链条声等辅助信息来验证某些动作的力度。"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "d28b3dc50bdc0d81a68da89e24e3fa3381c3a06de72331847f5045c4d81d6c7f",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

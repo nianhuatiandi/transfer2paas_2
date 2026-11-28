@@ -1,0 +1,31 @@
+Provide a detailed description of the supplied audio, with independently timed audible events. This is the audio stage of a caption pipeline. No images or visual action annotations are supplied. Do not infer a scene, sport, visible action or visible speaker.
+
+Make sure your description covers the following dimensions:
+
+Audio
+- Speech activity: identify when speech is audible and describe its acoustic character when useful. Do not transcribe, translate, summarize or interpret the spoken content. Do not map a voice to a visible person.
+- Non-speech sounds: distinguish transient sounds, sustained sounds, music, ambient/background sounds and non-speech vocalizations. Describe audible properties, not an assumed physical source.
+- Independent segmentation: estimate onsets and offsets from the audio itself. Segment speech by audible pauses or voice changes. Keep a continuous event intact regardless of hypothetical camera cuts or visual actions. Allow overlapping audible events and distinguish foreground sounds from sustained background sound or music.
+- If no speech or no audio is audible, state that explicitly. Do not invent events for silent intervals. Verbatim transcription is handled outside this task.
+
+Rules:
+- Use the supplied clip-global clock. Approximate boundaries are acceptable; do not impose minimum durations or claim unsupported precision. Do not report padded silence outside the supplied source-audio valid span as a sound.
+- Give each event a stable ID: U001, U002, ... for speech and N001, N002, ... for non-speech. Separate repeated audible instances when they are distinguishable.
+- Use acoustic evidence only. No action IDs, sound-to-person assignments, speech references or causal links belong in this stage.
+- Write detailed but relevant English descriptions without Markdown bold formatting. Return the following sections in natural language; no JSON schema is required. This is a candidate for human review.
+
+Output Format:
+
+## Audio Events
+
+<U001 for speech; N001 for non-speech> | <mm:ss.ss> - <mm:ss.ss>
+Category: <speech / non-speech vocalization / transient sound / sustained sound / music / ambient sound>
+Layer: <foreground / background>
+Description: <Audible characteristics without verbatim words, speech meaning or an assumed visual source.>
+Uncertainty: <material uncertainty; "none noted" if applicable>
+
+...
+
+## Unresolved Audio
+
+<Any indistinct event, uncertain interval or missing-audio limitation; otherwise "none noted". State explicitly if no speech is audible.>

@@ -1,0 +1,379 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma19",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "海边双人活动",
+    "sample_ids": [
+      55
+    ],
+    "visible_people_screened": 2,
+    "people_limit": 3,
+    "official_path": "videos/Dream1K-40ab6b58-298.mp4",
+    "local_original": "Dream1K-40ab6b58-298.mp4",
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "source_window_seconds": [
+      0,
+      6.625
+    ],
+    "official_sha256": "49c9849000efafb7c0179c3c7dbaf517aec702acdf3f37791086b402b5ca640c",
+    "clip_sha256": "49c9849000efafb7c0179c3c7dbaf517aec702acdf3f37791086b402b5ca640c",
+    "audio_source": null
+  },
+  "duration_seconds": 6.625,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 1.625,
+      "first_frame": 0,
+      "end_frame_exclusive": 13
+    },
+    {
+      "id": "S02",
+      "start": 1.625,
+      "end": 6.625,
+      "first_frame": 13,
+      "end_frame_exclusive": 53
+    }
+  ],
+  "input_frames": {
+    "visual": 53
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含两个镜头，展示了日落海滩上的两个人物。第一个镜头为远景，两人站立并缓慢移动；第二个镜头为近景特写，聚焦于其中一人及其肩部的鸟类剪影。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "左侧人物，手持拐杖，身穿长外套"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "右侧人物，双手插兜或抱胸"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "近景中的人物背影/侧影，肩部有鸟类剪影"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.625,
+        "description": "拄拐缓慢行走"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.625,
+        "description": "跟随缓慢行走"
+      },
+      {
+        "id": "S02-E03",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 1.625,
+        "end": 6.625,
+        "description": "静立凝视远方"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "拄拐行走",
+        "start": 0.0,
+        "end": 1.625,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          1.5,
+          1.625
+        ],
+        "detail": "起始时人物位于画面左侧偏中位置，身体前倾，右手持一根细长的拐杖支撑在地面上。随后，人物以极慢的速度向画面左前方迈步，双腿交替移动幅度较小，拐杖始终保持在身侧提供支撑。结束时人物已移动到画面更靠左的位置，姿态依然保持前倾拄拐状态。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "人物位于左侧，身体前倾，右手持拐杖触地。"
+          },
+          {
+            "time": 0.875,
+            "observation": "人物向左前方迈出了一步，腿部位置发生变化。"
+          },
+          {
+            "time": 1.625,
+            "observation": "人物继续向左前方缓慢移动，接近画面边缘。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "起步",
+            "time": 0.375,
+            "time_range": [
+              0.25,
+              0.5
+            ]
+          },
+          {
+            "name": "落步",
+            "time": 1.125,
+            "time_range": [
+              1.0,
+              1.25
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "腿",
+          "手臂",
+          "躯干"
+        ],
+        "movement_roles": [
+          "支撑",
+          "位移"
+        ],
+        "subphases": [
+          {
+            "label": "准备迈步",
+            "start": 0.0,
+            "end": 0.375,
+            "detail": "人物调整重心，拐杖稳固支撑。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "静止站立姿态。"
+              },
+              {
+                "time": 0.25,
+                "observation": "轻微的重心转移迹象。"
+              }
+            ]
+          },
+          {
+            "label": "向前迈步",
+            "start": 0.375,
+            "end": 1.625,
+            "detail": "左脚抬起向前迈出，右脚跟进，整体向左前方平移。",
+            "evidence": [
+              {
+                "time": 0.5,
+                "observation": "左腿明显向前伸出。"
+              },
+              {
+                "time": 1.0,
+                "observation": "右腿跟上完成一步。"
+              },
+              {
+                "time": 1.5,
+                "observation": "再次迈出下一步。"
+              }
+            ]
+          }
+        ],
+        "brief": "左侧人物拄着拐杖在沙滩上极其缓慢地向左前方行走。"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "跟随行走",
+        "start": 0.0,
+        "end": 1.625,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          1.5,
+          1.625
+        ],
+        "detail": "起始时人物位于画面中央偏右，面向左侧同伴，双手似乎插在口袋里或抱在胸前。随着左侧人物的移动，该人物也以相同的慢速节奏向左侧迈步跟随，始终保持与同伴的相对距离。结束时人物随同伴一起移动到了画面偏左的位置。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "人物站在中间偏右，面向左侧。"
+          },
+          {
+            "time": 0.875,
+            "observation": "人物开始跟随左侧同伴向左移动。"
+          },
+          {
+            "time": 1.625,
+            "observation": "人物持续向左缓慢行走，未脱离画面。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "同步起步",
+            "time": 0.5,
+            "time_range": [
+              0.375,
+              0.625
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "腿",
+          "躯干"
+        ],
+        "movement_roles": [
+          "位移"
+        ],
+        "subphases": [
+          {
+            "label": "观察等待",
+            "start": 0.0,
+            "end": 0.375,
+            "detail": "人物静止站立，注视前方的同伴。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "双脚并拢站立。"
+              },
+              {
+                "time": 0.25,
+                "observation": "头部微低，看向同伴方向。"
+              }
+            ]
+          },
+          {
+            "label": "跟随移动",
+            "start": 0.375,
+            "end": 1.625,
+            "detail": "配合同伴的节奏，小幅度向左迈步前行。",
+            "evidence": [
+              {
+                "time": 0.625,
+                "observation": "腿部出现交替动作。"
+              },
+              {
+                "time": 1.25,
+                "observation": "身体位置明显左移。"
+              }
+            ]
+          }
+        ],
+        "brief": "右侧人物双手置于身前，以同样的慢速步伐跟随左侧拄拐者向左行走。"
+      },
+      {
+        "id": "S02-A03",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E03",
+        "kind": "held_pose",
+        "label": "静立凝视",
+        "start": 1.625,
+        "end": 6.625,
+        "start_range": [
+          1.625,
+          1.75
+        ],
+        "end_range": [
+          6.5,
+          6.625
+        ],
+        "detail": "镜头切换至近景，人物呈现为黑色的剪影轮廓，占据画面左侧大部分区域。人物背对或侧对镜头，面朝右侧海平面的落日方向。在整个片段中，人物除了头发随风轻微飘动外，身体主体保持完全静止的站立姿态。其左肩处停着一只鸟（形似鹅或鸭）的清晰剪影，鸟喙指向左侧。",
+        "evidence": [
+          {
+            "time": 1.625,
+            "observation": "近景切入，显示人物背部/侧面剪影及肩上鸟类轮廓。"
+          },
+          {
+            "time": 4.0,
+            "observation": "人物保持静止，仅发丝有微小动态。"
+          },
+          {
+            "time": 6.625,
+            "observation": "直至镜头结束，人物姿态无改变。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "鸟类显现",
+            "time": 2.75,
+            "time_range": [
+              2.5,
+              3.0
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "头",
+          "肩",
+          "背"
+        ],
+        "movement_roles": [
+          "静止"
+        ],
+        "subphases": [
+          {
+            "label": "定格剪影",
+            "start": 1.625,
+            "end": 6.625,
+            "detail": "人物作为前景剪影稳定存在，背景为波光粼粼的海面和夕阳。",
+            "evidence": [
+              {
+                "time": 1.625,
+                "observation": "清晰的黑色人形轮廓。"
+              },
+              {
+                "time": 5.0,
+                "observation": "轮廓边缘锐利，无明显肢体动作。"
+              }
+            ]
+          }
+        ],
+        "brief": "近景特写下，一名人物呈剪影状静立于海边，肩上停着一只鸟，共同凝望远方的落日。"
+      }
+    ],
+    "uncertainties": [
+      "由于逆光拍摄，S01中两人的面部表情、衣着颜色及具体细节无法辨认。",
+      "S02中人物是男性还是女性难以确切判断，仅能从发型和体型推测。",
+      "S02中肩上的鸟类种类基于剪影形状推测为雁形目动物，但无法确证。"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "由于逆光拍摄，S01中两人的面部表情、衣着颜色及具体细节无法辨认。",
+    "S02中人物是男性还是女性难以确切判断，仅能从发型和体型推测。",
+    "S02中肩上的鸟类种类基于剪影形状推测为雁形目动物，但无法确证。",
+    "S02-A03　Evidence references an unsupplied frame: 6.625"
+  ]
+}

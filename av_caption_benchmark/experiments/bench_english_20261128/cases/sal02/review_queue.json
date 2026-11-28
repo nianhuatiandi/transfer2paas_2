@@ -1,0 +1,39 @@
+{
+  "flagged_events": [
+    "V0002",
+    "V0003"
+  ],
+  "unlocalized_transcript_candidates": [],
+  "uncertain_visible_intervals": [
+    {
+      "scope": "shot00000",
+      "source_start": 0,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 4.5,
+        "end": 5.033,
+        "reason": "Only the tool’s motion is visible; no human body part appears on screen during this interval."
+      }
+    },
+    {
+      "scope": "shot00005",
+      "source_start": 6.9,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 3.2,
+        "end": 3.8,
+        "reason": "At 3.2s, the disposal unit begins spinning rapidly, creating a vortex that pulls the standing water down the drain. This mechanical action is distinct from the pouring but occurs simultaneously; however, no human actor is visible initiating this specific motion, so it is treated as an environmental change rather than a separate actor event."
+      }
+    },
+    {
+      "scope": "shot00006",
+      "source_start": 9.3,
+      "evidence_stage": "uncertain_joint_local",
+      "local_report": {
+        "start": 0.0,
+        "end": 2.7,
+        "reason": "The exact start and end times of the water being poured into the washing machine drum are uncertain."
+      }
+    }
+  ]
+}

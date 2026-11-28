@@ -1,0 +1,1734 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "golf",
+    "domain": "体育转播 · 高尔夫",
+    "clip_sha256": "5e12ac26db5560792a267446377b8f02b6fb6007d05ecafb06c46cd67f4ee12f",
+    "people_limit": 3,
+    "audio_source": "same original MP4",
+    "filename": "Dkzp_IJaNpo.22.mp4"
+  },
+  "duration_seconds": 19.352666666666664,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 13.179833333333333,
+      "first_frame": 0,
+      "end_frame_exclusive": 395
+    },
+    {
+      "id": "S02",
+      "start": 13.179833333333333,
+      "end": 19.352666666666664,
+      "first_frame": 395,
+      "end_frame_exclusive": 580
+    }
+  ],
+  "input_frames": {
+    "visual": 196,
+    "review": 196
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "画面为高尔夫比赛转播：先跟拍白衣球员走向发球台并完成开球，随后切到追踪小白球飞向果岭的远景。主要动作执行者为白衣球员；前景灰衣男子、举牌员和远处观众群仅作场景说明。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿白色polo衫、灰色长裤、戴白色帽子的男性高尔夫球员，手持一号木杆，是本场开球的主体。"
+      },
+      {
+        "id": "S02-BALL",
+        "shot_id": "S02",
+        "description": "被击出后在空中飞行的高尔夫球，在远景中呈小白点。"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E-S01-P01-walk",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 7.5,
+        "description": "白衣球员从看台前区域沿草地步行至发球台附近，右手持杆，左手一度拿着球。"
+      },
+      {
+        "id": "E-S01-P01-prep",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 7.6,
+        "end": 9.3,
+        "description": "白衣球员到达发球位后放下球并进入准备姿势，双脚分开站立，上身前倾，双手握杆对准球。"
+      },
+      {
+        "id": "E-S01-P01-swing",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 9.4,
+        "end": 11.8,
+        "description": "白衣球员完成一次完整挥杆击球，从引杆到下杆再到收杆，球被击离地面。"
+      },
+      {
+        "id": "E-S01-P01-watch",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 11.9,
+        "end": 13.1,
+        "description": "白衣球员保持收杆后的站姿，抬头朝击球方向注视球的去向。"
+      },
+      {
+        "id": "E-S02-BALL-flight",
+        "actor_id": "S02-BALL",
+        "shot_id": "S02",
+        "start": 13.2,
+        "end": 19.3,
+        "description": "小白球在高空中持续向前下方移动，镜头跟随其轨迹掠过海面、建筑和树线上方。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A-S01-P01-walk",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-walk",
+        "kind": "motion",
+        "label": "走向发球台",
+        "start": 0.0,
+        "end": 7.5,
+        "start_range": [
+          0.0,
+          0.2
+        ],
+        "end_range": [
+          7.3,
+          7.6
+        ],
+        "detail": "白衣球员起初位于看台栏杆前的草地上，身体朝向画面右侧缓慢前行；他右手握着长杆向下垂放，左手在约1.5秒后可见捏着一个小白色球状物。随着镜头平移，他从较近景位置一路走到发球区边缘，步伐连续，没有停顿或转身。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "白衣球员在中景低头行走，背景是密集观众席和白色栏杆。"
+          },
+          {
+            "time": 1.5,
+            "observation": "他左手明显拿着一个小白球，右手仍持杆下垂。"
+          },
+          {
+            "time": 4.5,
+            "observation": "他继续向右前方走动，已接近发球台区域，记分板图形开始出现在画面一侧。"
+          },
+          {
+            "time": 7.3,
+            "observation": "他停在发球位附近，身体转向目标方向，准备进入击球站位。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "左手可见拿球",
+            "time": 1.5,
+            "time_range": [
+              1.4,
+              1.7
+            ]
+          },
+          {
+            "name": "抵达发球位",
+            "time": 7.4,
+            "time_range": [
+              7.3,
+              7.6
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "躯干",
+          "右臂",
+          "左臂"
+        ],
+        "movement_roles": [
+          "位移主体",
+          "持杆",
+          "持球"
+        ],
+        "subphases": [
+          {
+            "label": "起步前行",
+            "start": 0.0,
+            "end": 2.0,
+            "detail": "球员从看台前区域出发，低头缓步向右前方走，右手持杆自然下垂。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "人物位于中景偏左，正在迈步。"
+              },
+              {
+                "time": 2.0,
+                "observation": "他仍在同一行进路线上，身体逐渐更靠近画面中央。"
+              }
+            ]
+          },
+          {
+            "label": "携球走近发球区",
+            "start": 2.0,
+            "end": 7.5,
+            "detail": "他继续保持匀速步行，左手拿着小白球，直到接近发球垫位置才停下。",
+            "evidence": [
+              {
+                "time": 4.5,
+                "observation": "他已进入发球台附近，背景出现赛事标识和树木。"
+              },
+              {
+                "time": 7.3,
+                "observation": "脚步停止，身体转为面向击球方向。"
+              }
+            ]
+          }
+        ],
+        "brief": "白衣球员手持球杆和球，从看台前走到发球台准备开球。"
+      },
+      {
+        "id": "A-S01-P01-gesture-placeball",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-prep",
+        "kind": "gesture",
+        "label": "放置发球",
+        "start": 7.6,
+        "end": 8.2,
+        "start_range": [
+          7.5,
+          7.7
+        ],
+        "end_range": [
+          8.1,
+          8.4
+        ],
+        "detail": "到达发球位后，白衣球员俯身把先前拿在手里的白色小球放到地面发球点上；随后直起上身，双手改去握住杆头附近的球杆，进入击球准备。",
+        "evidence": [
+          {
+            "time": 7.6,
+            "observation": "转场叠化后能看到他在发球台上弯腰处理地面物体。"
+          },
+          {
+            "time": 8.1,
+            "observation": "他已从俯身状态抬起，球留在脚前地面上。"
+          },
+          {
+            "time": 8.4,
+            "observation": "他双手握杆，站在球后方调整站位。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "手触地面放球",
+            "time": 7.9,
+            "time_range": [
+              7.7,
+              8.1
+            ]
+          },
+          {
+            "name": "起身结束放球",
+            "time": 8.2,
+            "time_range": [
+              8.1,
+              8.4
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "上身",
+          "双臂",
+          "手"
+        ],
+        "movement_roles": [
+          "放置对象",
+          "过渡到准备姿势"
+        ],
+        "subphases": [
+          {
+            "label": "俯身放球",
+            "start": 7.6,
+            "end": 8.0,
+            "detail": "球员弯下腰，把手中的小白球放到脚下前方的发球位置。",
+            "evidence": [
+              {
+                "time": 7.6,
+                "observation": "他在发球台上俯身，手部接近地面。"
+              }
+            ]
+          },
+          {
+            "label": "起身握杆",
+            "start": 8.0,
+            "end": 8.2,
+            "detail": "放完球后他抬起上身，两手回到球杆上准备站位。",
+            "evidence": [
+              {
+                "time": 8.1,
+                "observation": "身体已经直立，球留在地面。"
+              }
+            ]
+          }
+        ],
+        "brief": "白衣球员把球放到发球点后起身握杆。"
+      },
+      {
+        "id": "A-S01-P01-held-setup",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-prep",
+        "kind": "held_pose",
+        "label": "瞄准准备",
+        "start": 8.2,
+        "end": 9.3,
+        "start_range": [
+          8.1,
+          8.3
+        ],
+        "end_range": [
+          9.2,
+          9.4
+        ],
+        "detail": "白衣球员在球后方站定，双脚分开与肩同宽，双膝微屈，上身前倾，双手上下握住一号木杆，杆头放在球旁地面上，视线朝目标方向保持稳定。",
+        "evidence": [
+          {
+            "time": 8.4,
+            "observation": "他已摆好标准开球站位，杆头贴近地面的白球。"
+          },
+          {
+            "time": 9.0,
+            "observation": "姿势基本不变，只有细微重心调整，仍未开始大幅挥动。"
+          },
+          {
+            "time": 9.3,
+            "observation": "他维持预备姿态直到下一时刻进入引杆。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "稳定站位形成",
+            "time": 8.4,
+            "time_range": [
+              8.3,
+              8.6
+            ]
+          },
+          {
+            "name": "即将起杆",
+            "time": 9.3,
+            "time_range": [
+              9.2,
+              9.4
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "髋部",
+          "躯干",
+          "双臂",
+          "双手"
+        ],
+        "movement_roles": [
+          "支撑站位",
+          "握杆瞄准"
+        ],
+        "subphases": [
+          {
+            "label": "建立 stance",
+            "start": 8.2,
+            "end": 8.6,
+            "detail": "他把两脚分开站到球两侧，上身前倾并把杆头放到球旁。",
+            "evidence": [
+              {
+                "time": 8.4,
+                "observation": "可见完整开球准备姿势，球在地面，杆头靠球。"
+              }
+            ]
+          },
+          {
+            "label": "微调静止",
+            "start": 8.6,
+            "end": 9.3,
+            "detail": "站位保持不变，仅有轻微头部和重心调整，等待起杆。",
+            "evidence": [
+              {
+                "time": 9.0,
+                "observation": "人物几乎静止，仍面向目标方向。"
+              }
+            ]
+          }
+        ],
+        "brief": "白衣球员在发球台前站稳并对准球做开球准备。"
+      },
+      {
+        "id": "A-S01-P01-drive",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-swing",
+        "kind": "motion",
+        "label": "开球挥杆",
+        "start": 9.4,
+        "end": 11.8,
+        "start_range": [
+          9.3,
+          9.5
+        ],
+        "end_range": [
+          11.7,
+          11.9
+        ],
+        "detail": "白衣球员从准备姿势开始后摆，球杆沿弧线抬到身后高处；接着向前下挥，杆头在约10.3秒处接触地面附近的白球，球随即离开原位飞向前方；之后他顺势转到高位收杆，身体重心移到前腿，球杆绕到肩背侧。",
+        "evidence": [
+          {
+            "time": 9.4,
+            "observation": "他开始向后引杆，手臂和球杆离开原来的低位准备姿态。"
+          },
+          {
+            "time": 10.0,
+            "observation": "球杆已到顶部附近，身体扭转蓄力。"
+          },
+          {
+            "time": 10.3,
+            "observation": "杆头击中球，白球从地面消失并开始飞出。"
+          },
+          {
+            "time": 10.9,
+            "observation": "他处于随挥阶段，上身转向目标方向，球杆高举过肩。"
+          },
+          {
+            "time": 11.8,
+            "observation": "收杆姿势完全展开，目光顺着球的飞行方向看去。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "起杆",
+            "time": 9.4,
+            "time_range": [
+              9.3,
+              9.5
+            ]
+          },
+          {
+            "name": "顶点",
+            "time": 10.0,
+            "time_range": [
+              9.9,
+              10.2
+            ]
+          },
+          {
+            "name": "触球",
+            "time": 10.3,
+            "time_range": [
+              10.2,
+              10.4
+            ]
+          },
+          {
+            "name": "收杆定格",
+            "time": 11.8,
+            "time_range": [
+              11.7,
+              11.9
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双肩",
+          "躯干",
+          "髋部",
+          "双腿",
+          "双臂",
+          "双手",
+          "球杆"
+        ],
+        "movement_roles": [
+          "发力挥动",
+          "击打对象",
+          "随势旋转"
+        ],
+        "subphases": [
+          {
+            "label": "后摆引杆",
+            "start": 9.4,
+            "end": 10.0,
+            "detail": "他从球后站位起手，把一号木沿身体外侧向后上方抬起，肩部和髋部逐步扭转。",
+            "evidence": [
+              {
+                "time": 9.4,
+                "observation": "球杆开始离开地面并向后运动。"
+              },
+              {
+                "time": 10.0,
+                "observation": "球杆升至高点，身体已形成明显扭转。"
+              }
+            ]
+          },
+          {
+            "label": "下杆击球",
+            "start": 10.0,
+            "end": 10.4,
+            "detail": "球杆快速向前下方摆动，杆头在球所在位置完成接触，球被打离地面。",
+            "evidence": [
+              {
+                "time": 10.3,
+                "observation": "可见杆头与白球接触的瞬间，球开始飞出。"
+              }
+            ]
+          },
+          {
+            "label": "随挥收杆",
+            "start": 10.4,
+            "end": 11.8,
+            "detail": "击球后他不立刻停住，而是让球杆继续沿弧线绕过身体，最终停在肩背后方，重心压到前脚。",
+            "evidence": [
+              {
+                "time": 10.9,
+                "observation": "他处于随挥中段，上身已转向目标方向。"
+              },
+              {
+                "time": 11.8,
+                "observation": "收杆完成，姿势稳定并保持注视远方。"
+              }
+            ]
+          }
+        ],
+        "brief": "白衣球员完成一次开球挥杆，将发球台上的球击向远处。"
+      },
+      {
+        "id": "A-S01-P01-hold-followthrough",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-watch",
+        "kind": "held_pose",
+        "label": "收杆注视",
+        "start": 11.9,
+        "end": 13.1,
+        "start_range": [
+          11.8,
+          12.0
+        ],
+        "end_range": [
+          13.0,
+          13.2
+        ],
+        "detail": "击球结束后，白衣球员保持高位收杆姿态不动，球杆横在肩背侧，头部抬起朝球的飞行方向持续观望，直到本镜头末尾仍未放下球杆。",
+        "evidence": [
+          {
+            "time": 12.0,
+            "observation": "他已完成收杆，身体不再回摆。"
+          },
+          {
+            "time": 12.8,
+            "observation": "姿势依旧稳定，视线锁定远方。"
+          },
+          {
+            "time": 13.1,
+            "observation": "临近切镜时仍保持同样的注视姿态。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "稳定收杆",
+            "time": 12.0,
+            "time_range": [
+              11.9,
+              12.1
+            ]
+          },
+          {
+            "name": "镜头切换前仍保持",
+            "time": 13.1,
+            "time_range": [
+              13.0,
+              13.2
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "头部",
+          "颈部",
+          "躯干",
+          "双臂",
+          "双手"
+        ],
+        "movement_roles": [
+          "维持姿态",
+          "观察结果"
+        ],
+        "subphases": [
+          {
+            "label": "定格收杆",
+            "start": 11.9,
+            "end": 13.1,
+            "detail": "他把挥杆后的终末姿势固定下来，不急于还原站姿，只通过抬头和凝视追踪球的去向。",
+            "evidence": [
+              {
+                "time": 12.4,
+                "observation": "全身姿态几乎不变，仅保持平衡和注视。"
+              }
+            ]
+          }
+        ],
+        "brief": "白衣球员在击球后保持收杆姿势，目送球飞向远处。"
+      },
+      {
+        "id": "A-S02-BALL-fly",
+        "actor_id": "S02-BALL",
+        "shot_id": "S02",
+        "execution_id": "E-S02-BALL-flight",
+        "kind": "motion",
+        "label": "空中飞行",
+        "start": 13.2,
+        "end": 19.3,
+        "start_range": [
+          13.2,
+          13.4
+        ],
+        "end_range": [
+          19.2,
+          19.3
+        ],
+        "detail": "切到远景后，小白球以清晰可见的小亮点形式悬在蓝天背景中，整体沿斜向下的抛物线继续前进；它先后越过海面和岸边建筑上空，最后落到绿色坡地一带并从画面中变得难以分辨。",
+        "evidence": [
+          {
+            "time": 13.3,
+            "observation": "小白点在天空中部偏右位置清楚可见。"
+          },
+          {
+            "time": 14.5,
+            "observation": "球点仍在空中，下方开始出现海岸线和建筑群。"
+          },
+          {
+            "time": 16.0,
+            "observation": "球点高度下降，已接近山坡和树林上方的空域。"
+          },
+          {
+            "time": 17.5,
+            "observation": "小白点落在草坡区域附近，轮廓开始不易辨认。"
+          },
+          {
+            "time": 19.0,
+            "observation": "画面主要剩下果岭和人群，球体本身已基本不可见。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "切入追球镜头",
+            "time": 13.2,
+            "time_range": [
+              13.2,
+              13.4
+            ]
+          },
+          {
+            "name": "越过山脊线",
+            "time": 16.0,
+            "time_range": [
+              15.8,
+              16.3
+            ]
+          },
+          {
+            "name": "落点难辨",
+            "time": 17.5,
+            "time_range": [
+              17.2,
+              18.0
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": true,
+          "end": true
+        },
+        "confidence": "medium",
+        "body_parts": [],
+        "movement_roles": [
+          "被击出后的抛射运动"
+        ],
+        "subphases": [
+          {
+            "label": "高空滑行",
+            "start": 13.2,
+            "end": 15.5,
+            "detail": "球作为小白点在天空中持续前移，高度较高，背景主要是蓝色海天交界。",
+            "evidence": [
+              {
+                "time": 13.8,
+                "observation": "小白点位于画面上半部，周围无遮挡。"
+              },
+              {
+                "time": 15.0,
+                "observation": "它仍清晰可见，位置比刚切入时更低一些。"
+              }
+            ]
+          },
+          {
+            "label": "下降接近地形",
+            "start": 15.5,
+            "end": 17.5,
+            "detail": "球的高度继续降低，下方景物变成山坡、树木和远处的果岭人群。",
+            "evidence": [
+              {
+                "time": 16.5,
+                "observation": "小白点已在树线上方的低空区域。"
+              },
+              {
+                "time": 17.3,
+                "observation": "它非常接近草坡表面，尺寸很小。"
+              }
+            ]
+          },
+          {
+            "label": "落地后不可辨",
+            "start": 17.5,
+            "end": 19.3,
+            "detail": "球到达坡地后失去清晰轮廓，后续只能看到果岭和围观人群，无法再稳定追踪球体本身。",
+            "evidence": [
+              {
+                "time": 18.5,
+                "observation": "画面中没有可确认的独立小白点。"
+              },
+              {
+                "time": 19.2,
+                "observation": "仅剩远景草坪和人群，球已不可见。"
+              }
+            ]
+          }
+        ],
+        "brief": "被击出的高尔夫球在远景中划过天空并降落到果岭方向的坡地上。"
+      }
+    ],
+    "uncertainties": [
+      "S01 前半段有前景灰衣男子短暂遮挡，白衣球员早期手中是否始终拿着球在不同帧间不完全一致，但约1.5秒后可见其左手持有小白球。",
+      "S02 中球体极小且受压缩影响，精确落地瞬间无法可靠判定，只能看出它在后半段降至坡地附近并最终不可辨识。"
+    ],
+    "motion_tracks": [
+      {
+        "context": "画面开始时，该球员位于果岭区域的中景处，身穿白色短袖Polo衫、灰色长裤并戴着白色帽子。他起初处于弯腰姿态，右手握着一支一号木杆，随后直起身子。他的身后是密集的观众席和带有赛事标志的白色挡板，画面右侧前景有一名穿紫色上衣的人员部分遮挡了视线。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 129,
+            "caption": "该球员从弯腰状态完全直立，右手持一号木杆自然下垂于身体一侧。他以平稳的步伐向画面左侧行走，目光平视前方，头部随步伐轻微起伏。随着镜头向左平移跟拍，他从果岭区域穿过人群前方的通道走向发球台方向。",
+            "start": 0.0,
+            "end": 4.3043,
+            "action_ids": [
+              "A-S01-P01-walk"
+            ]
+          },
+          {
+            "from_frame": 141,
+            "to_frame": 231,
+            "caption": "该球员继续向画面左侧行进，此时屏幕右下方浮现出包含其姓名和成绩的记分牌图形。他走到开阔的发球区后放慢脚步并最终停下，身体转向背对镜头的方向准备击球。在此期间，他调整了站姿并将双手移至球杆上。",
+            "start": 4.7047,
+            "end": 7.7077,
+            "action_ids": [
+              "A-S01-P01-walk",
+              "A-S01-P01-gesture-placeball"
+            ]
+          },
+          {
+            "from_frame": 243,
+            "to_frame": 282,
+            "caption": "该球员在发球位双脚分开站立，上身前倾俯向地面的小白球，双手紧握一号木杆柄端进行瞄准。他保持这一预备姿势数秒，期间仅做细微的重心调整和挥杆前的试摆动作，视线始终锁定在球面上。",
+            "start": 8.1081,
+            "end": 9.4094,
+            "action_ids": [
+              "A-S01-P01-gesture-placeball",
+              "A-S01-P01-held-setup",
+              "A-S01-P01-drive"
+            ]
+          },
+          {
+            "from_frame": 294,
+            "to_frame": 357,
+            "caption": "该球员启动完整的一号木开球挥杆动作，手臂带动球杆向后上方大幅度引杆至顶点，随即迅速向下发力击打地面附近的白球。击球瞬间，他的躯干猛烈旋转，双腿蹬地支撑，球杆顺势向前上方延伸完成收杆。最终他单脚着地维持平衡，抬头目送飞出的球体轨迹。",
+            "start": 9.8098,
+            "end": 11.9119,
+            "action_ids": [
+              "A-S01-P01-drive",
+              "A-S01-P01-hold-followthrough"
+            ]
+          },
+          {
+            "from_frame": 369,
+            "to_frame": 394,
+            "caption": "完成开球后，该球员放下高举的球杆恢复常规站立姿态，并在原地短暂停留观察落点。随后他转身面向镜头方向走回，弯腰伸手去拾取留在草地上的球座配件。",
+            "start": 12.3123,
+            "end": 13.146466666666667,
+            "action_ids": [
+              "A-S01-P01-hold-followthrough"
+            ]
+          }
+        ],
+        "camera": "摄像机最初采用中近景跟随拍摄，平滑地向左摇摄以追踪球员的步行过程；当球员到达发球位时，镜头切换为远景固定机位，将广阔的海面背景、远处的山峦以及球员完整的挥杆动作纳入画框内，直至视频结束未再发生明显的变焦或位移。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "穿白色polo衫、灰色长裤、戴白色帽子的男性高尔夫球员，手持一号木杆，是本场开球的主体。"
+      },
+      {
+        "context": "在镜头开始时，高尔夫球呈现为一个极小的白色圆点，位于画面上半部分的灰蓝色天空中。此时画面下方仅隐约可见模糊的地平线和远处的深色轮廓，主体处于高空飞行状态，远离地面参照物。",
+        "phases": [
+          {
+            "from_frame": 395,
+            "to_frame": 413,
+            "caption": "白点在天空中持续向画面右下方移动，轨迹平缓且速度较快。随着镜头向下摇摄追踪，背景中的地平线逐渐清晰，显示出远处深蓝色的海洋和朦胧的陆地轮廓。",
+            "start": 13.179833333333333,
+            "end": 13.780433333333333,
+            "action_ids": [
+              "A-S02-BALL-fly"
+            ]
+          },
+          {
+            "from_frame": 419,
+            "to_frame": 437,
+            "caption": "白点继续向右下坠落，穿过中景区域。此时背景变为带有房屋建筑的海岸山坡，随后前景出现大片绿色的树木枝叶，白点在树梢上方掠过并迅速下降。",
+            "start": 13.980633333333333,
+            "end": 14.581233333333333,
+            "action_ids": [
+              "A-S02-BALL-fly"
+            ]
+          },
+          {
+            "from_frame": 443,
+            "to_frame": 461,
+            "caption": "白点落入画面下方的果岭区域，最终接触草地表面。落地瞬间它并未立即停止，而是作为一个微小的白点在绿色草皮上向前滚动了一小段距离后静止。",
+            "start": 14.781433333333334,
+            "end": 15.382033333333334,
+            "action_ids": [
+              "A-S02-BALL-fly"
+            ]
+          }
+        ],
+        "camera": "镜头起幅于高远的天空，随即进行大幅度的向下摇摄（Tilt Down）以追踪下落的小球。随着视角的下移，画面从单纯的天空过渡到包含海景、建筑、树林的多层次景观，最后落幅于近处的果岭草坪，焦点始终跟随那个微小的白点直至其停稳。",
+        "actor_id": "S02-BALL",
+        "shot_id": "S02",
+        "identity": "被击出后在空中飞行的高尔夫球，在远景中呈小白点。"
+      }
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "N001",
+        "kind": "background",
+        "layer": "background",
+        "start": 0.0,
+        "end": 6.8,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          6.5,
+          7.0
+        ],
+        "speaker_id": null,
+        "description": "持续的观众掌声，音量逐渐减弱。",
+        "evidence": [
+          {
+            "time": 0.2,
+            "observation": "音频开始时即有清晰的拍手声"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.48,
+        "end": 6.56,
+        "start_range": [
+          0.3,
+          0.7
+        ],
+        "end_range": [
+          6.3,
+          6.8
+        ],
+        "speaker_id": "V01",
+        "description": "男声，中低音区，语速平稳，播报语气。",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "开始清晰说出 'Dustin Johnson turns three under par...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "So Dustin Johnson turns three under par. He's twelve under for the tournament and one back of Brian Harmon."
+      },
+      {
+        "id": "N002",
+        "kind": "background",
+        "layer": "background",
+        "start": 0.0,
+        "end": 19.342,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          19.3,
+          19.342
+        ],
+        "speaker_id": null,
+        "description": "持续的户外环境底噪，包含微弱的风声和远处人群的低频嗡嗡声。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "全程可闻的连续低频背景音"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 8.48,
+        "end": 11.76,
+        "start_range": [
+          8.2,
+          8.7
+        ],
+        "end_range": [
+          11.5,
+          12.0
+        ],
+        "speaker_id": "V02",
+        "description": "男声，中音区，解说语气，节奏从容。",
+        "evidence": [
+          {
+            "time": 8.5,
+            "observation": "开始说出 'Fasten your seatbelt...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Fasten your seat belt, Dustin Johnson on the tee."
+      },
+      {
+        "id": "N003",
+        "kind": "transient",
+        "layer": "foreground",
+        "start": 10.08,
+        "end": 10.4,
+        "start_range": [
+          9.9,
+          10.2
+        ],
+        "end_range": [
+          10.3,
+          10.6
+        ],
+        "speaker_id": null,
+        "description": "清脆的高尔夫球杆击球声（金属撞击脆响）。",
+        "evidence": [
+          {
+            "time": 10.1,
+            "observation": "短促尖锐的 percussive impact sound"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 13.04,
+        "end": 16.72,
+        "start_range": [
+          12.8,
+          13.3
+        ],
+        "end_range": [
+          16.5,
+          17.0
+        ],
+        "speaker_id": "V02",
+        "description": "男声继续解说，语调上扬，带有期待感。",
+        "evidence": [
+          {
+            "time": 13.1,
+            "observation": "接续前句，描述球的轨迹 'And this is a low bullet...'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "And this is a low bullet and should really take off when it hits."
+      },
+      {
+        "id": "N004",
+        "kind": "music",
+        "layer": "background",
+        "start": 16.48,
+        "end": 19.342,
+        "start_range": [
+          16.3,
+          16.7
+        ],
+        "end_range": [
+          19.2,
+          19.342
+        ],
+        "speaker_id": null,
+        "description": "低沉的合成器氛围音效/音乐垫乐逐渐进入并持续。",
+        "evidence": [
+          {
+            "time": 16.5,
+            "observation": "在语音结束后，明显的低频电子嗡鸣声升起"
+          }
+        ],
+        "confidence": "medium",
+        "transcript": null
+      },
+      {
+        "id": "U004",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 17.84,
+        "end": 19.342,
+        "start_range": [
+          17.6,
+          18.1
+        ],
+        "end_range": [
+          19.2,
+          19.342
+        ],
+        "speaker_id": "V01",
+        "description": "男声（同 V01），略带惊讶或确认的语气。",
+        "evidence": [
+          {
+            "time": 17.9,
+            "observation": "说出 'It ricocheted forward'"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "It ricocheted forward."
+      }
+    ],
+    "uncertainties": [
+      "N004 被标记为 music，但也可能是强烈的风声或特定的环境音效过渡。"
+    ]
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          6.8
+        ],
+        "overlap_s": 6.8
+      },
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.48,
+          6.56
+        ],
+        "overlap_s": 6.08
+      },
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          7.5
+        ],
+        "overlap_s": 7.5
+      },
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "N004",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-gesture-placeball",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-gesture-placeball",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-gesture-placeball",
+        "audio_id": "N002",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          7.6,
+          8.2
+        ],
+        "overlap_s": 0.6
+      },
+      {
+        "action_id": "A-S01-P01-gesture-placeball",
+        "audio_id": "U002",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-gesture-placeball",
+        "audio_id": "N003",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-gesture-placeball",
+        "audio_id": "U003",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-gesture-placeball",
+        "audio_id": "N004",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-gesture-placeball",
+        "audio_id": "U004",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "N002",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.2,
+          9.3
+        ],
+        "overlap_s": 1.1
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "U002",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.48,
+          9.3
+        ],
+        "overlap_s": 0.82
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "N003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "U003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "N004",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "U004",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          9.4,
+          11.8
+        ],
+        "overlap_s": 2.4
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          9.4,
+          11.76
+        ],
+        "overlap_s": 2.36
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.08,
+          10.4
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "N004",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "N002",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          11.9,
+          13.1
+        ],
+        "overlap_s": 1.2
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "U002",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "N003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "U003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          13.04,
+          13.1
+        ],
+        "overlap_s": 0.06
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "N004",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "U004",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          13.2,
+          19.3
+        ],
+        "overlap_s": 6.1
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          13.2,
+          16.72
+        ],
+        "overlap_s": 3.52
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "N004",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          16.48,
+          19.3
+        ],
+        "overlap_s": 2.82
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          17.84,
+          19.3
+        ],
+        "overlap_s": 1.46
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.48,
+          6.56
+        ],
+        "overlap_s": 6.08
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          9.4,
+          11.76
+        ],
+        "overlap_s": 2.36
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "N003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.08,
+          10.4
+        ],
+        "overlap_s": 0.32
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          13.2,
+          16.72
+        ],
+        "overlap_s": 3.52
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          17.84,
+          19.3
+        ],
+        "overlap_s": 1.46
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          6.8
+        ],
+        "overlap_s": 6.8
+      },
+      {
+        "action_id": "A-S01-P01-walk",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          7.5
+        ],
+        "overlap_s": 7.5
+      },
+      {
+        "action_id": "A-S01-P01-gesture-placeball",
+        "audio_id": "N002",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          7.6,
+          8.2
+        ],
+        "overlap_s": 0.6
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "N002",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.2,
+          9.3
+        ],
+        "overlap_s": 1.1
+      },
+      {
+        "action_id": "A-S01-P01-held-setup",
+        "audio_id": "U002",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.48,
+          9.3
+        ],
+        "overlap_s": 0.82
+      },
+      {
+        "action_id": "A-S01-P01-drive",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          9.4,
+          11.8
+        ],
+        "overlap_s": 2.4
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "N002",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          11.9,
+          13.1
+        ],
+        "overlap_s": 1.2
+      },
+      {
+        "action_id": "A-S01-P01-hold-followthrough",
+        "audio_id": "U003",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          13.04,
+          13.1
+        ],
+        "overlap_s": 0.06
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "N002",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          13.2,
+          19.3
+        ],
+        "overlap_s": 6.1
+      },
+      {
+        "action_id": "A-S02-BALL-fly",
+        "audio_id": "N004",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          16.48,
+          19.3
+        ],
+        "overlap_s": 2.82
+      }
+    ]
+  },
+  "warnings": [
+    "S01 前半段有前景灰衣男子短暂遮挡，白衣球员早期手中是否始终拿着球在不同帧间不完全一致，但约1.5秒后可见其左手持有小白球。",
+    "S02 中球体极小且受压缩影响，精确落地瞬间无法可靠判定，只能看出它在后半段降至坡地附近并最终不可辨识。",
+    "A-S01-P01-hold-followthrough　Invalid end uncertainty bracket: A-S01-P01-hold-followthrough"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "5b3b8ed38106f14801fed5e817847e66cead51d47f3c13966d2913b3f7557f3d",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

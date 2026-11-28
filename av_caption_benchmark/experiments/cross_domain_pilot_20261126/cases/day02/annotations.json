@@ -1,0 +1,622 @@
+{
+  "source": {
+    "id": "day02",
+    "benchmark": "Daily-Omni",
+    "original_id": "00iiNF4tn4o",
+    "source_url": "https://huggingface.co/datasets/liarliar/Daily-Omni/blob/bf5a6ee4c829510b7a14869e3104efeafc330b07/Videos.tar",
+    "archive_member": "Videos/00iiNF4tn4o/00iiNF4tn4o_video.mp4",
+    "original_file": "day_00iiNF4tn4o_video.mp4",
+    "source_media_sha256": "6f597d888a63629e4552613064e0ef646169b2c6fc0d7e19ec86a8d0674a53ca",
+    "clip_sha256": "6f597d888a63629e4552613064e0ef646169b2c6fc0d7e19ec86a8d0674a53ca",
+    "source_duration": 9.563194623933834,
+    "source_window_seconds": [
+      0,
+      9.563194623933834
+    ],
+    "card": "04",
+    "domain": "工作台管件与人物手势",
+    "domain_rule": "",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "请区别低头的起始运动与之后持续注视。整段凝视是否应计 L2，需要统一口径；管件与声音有同期也不能直接推断声源。"
+    ]
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 9.563194623933834,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 9.563194623933834,
+      "first_frame": 0,
+      "end_frame_exclusive": 111
+    }
+  ],
+  "timestamped_frames": 96,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2"
+  },
+  "visual": {
+    "clip_id": "day02",
+    "mode": "VISUAL_GT",
+    "clock": {
+      "origin": 0.0,
+      "unit": "s"
+    },
+    "facts": [
+      {
+        "id": "P1",
+        "kind": "state",
+        "level": null,
+        "actor": "穿橙色长袖的男子",
+        "object": null,
+        "parent_ids": [],
+        "claim": "男子站在画面中央，面向前方。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          0.0,
+          8.3
+        ],
+        "visible_spans": [
+          [
+            0.0,
+            8.3
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": "[0.000-8.357] 男子一直站立在画面中。"
+      },
+      {
+        "id": "A1",
+        "kind": "action",
+        "level": "L2",
+        "actor": "穿橙色长袖的男子",
+        "object": "铜管装置",
+        "parent_ids": [
+          "E1"
+        ],
+        "claim": "男子低头注视面前的铜管装置。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          1.29,
+          4.56
+        ],
+        "visible_spans": [
+          [
+            1.29,
+            4.56
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            1.2,
+            1.29
+          ],
+          "end": [
+            4.56,
+            4.73
+          ]
+        },
+        "context_range": null,
+        "evidence": "[1.292-4.566] 男子的视线向下看着前方的物体。"
+      },
+      {
+        "id": "M1",
+        "kind": "motion",
+        "level": "L3",
+        "actor": "穿橙色长袖的男子",
+        "object": "头部",
+        "parent_ids": [
+          "A1"
+        ],
+        "claim": "男子的头部向下倾斜。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          1.29,
+          4.56
+        ],
+        "visible_spans": [
+          [
+            1.29,
+            4.56
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": "[1.292-4.566] 伴随低头注视的动作，可见头部下倾的运动过程。"
+      },
+      {
+        "id": "K1",
+        "kind": "keypoint",
+        "level": null,
+        "actor": "穿橙色长袖的男子",
+        "object": null,
+        "parent_ids": [
+          "A1"
+        ],
+        "claim": "男子结束低头注视，抬起头看向正前方。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          4.73,
+          4.73
+        ],
+        "visible_spans": [
+          [
+            4.73,
+            4.73
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": "[4.738] 男子抬头恢复平视状态。"
+      },
+      {
+        "id": "A2",
+        "kind": "action",
+        "level": "L2",
+        "actor": "穿橙色长袖的男子",
+        "object": null,
+        "parent_ids": [
+          "E1"
+        ],
+        "claim": "男子抬起右手至下巴处进行触摸。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          6.46,
+          7.06
+        ],
+        "visible_spans": [
+          [
+            6.46,
+            7.06
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            6.37,
+            6.46
+          ],
+          "end": [
+            7.06,
+            7.23
+          ]
+        },
+        "context_range": null,
+        "evidence": "[6.461-7.064] 男子将右手放在下巴上并保持该姿势。"
+      },
+      {
+        "id": "M2",
+        "kind": "motion",
+        "level": "L3",
+        "actor": "穿橙色长袖的男子",
+        "object": "右手",
+        "parent_ids": [
+          "A2"
+        ],
+        "claim": "男子的右手向上移动至下巴位置。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          6.46,
+          6.63
+        ],
+        "visible_spans": [
+          [
+            6.46,
+            6.63
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": "[6.461-6.633] 可见手部向上靠近面部的运动轨迹。"
+      },
+      {
+        "id": "A3",
+        "kind": "action",
+        "level": "L2",
+        "actor": "穿橙色长袖的男子",
+        "object": null,
+        "parent_ids": [
+          "E1"
+        ],
+        "claim": "男子举起左手食指做出指示手势。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          7.23,
+          8.01
+        ],
+        "visible_spans": [
+          [
+            7.23,
+            8.01
+          ]
+        ],
+        "boundary_ranges": {
+          "start": [
+            7.06,
+            7.23
+          ],
+          "end": [
+            8.01,
+            8.09
+          ]
+        },
+        "context_range": null,
+        "evidence": "[7.237-8.012] 男子竖起左手食指并保持在半空中。"
+      },
+      {
+        "id": "M3",
+        "kind": "motion",
+        "level": "L3",
+        "actor": "穿橙色长袖的男子",
+        "object": "左手",
+        "parent_ids": [
+          "A3"
+        ],
+        "claim": "男子的左臂向上抬起。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          7.23,
+          7.49
+        ],
+        "visible_spans": [
+          [
+            7.23,
+            7.49
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": "[7.237-7.495] 手臂从下方抬升至肩高以上的运动过程。"
+      },
+      {
+        "id": "E1",
+        "kind": "episode",
+        "level": "L1",
+        "actor": "穿橙色长袖的男子",
+        "object": null,
+        "parent_ids": [],
+        "claim": "男子在原地完成一系列观察与示意动作。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": [
+          1.29,
+          8.01
+        ],
+        "visible_spans": [
+          [
+            1.29,
+            8.01
+          ]
+        ],
+        "boundary_ranges": {},
+        "context_range": null,
+        "evidence": "包含 A1(低头), A2(摸下巴), A3(举手势) 等连续发生的局部动作。"
+      }
+    ],
+    "relations": [
+      {
+        "id": "R1",
+        "predicate": "precedes",
+        "from_id": "A1",
+        "to_id": "A2",
+        "claim": "男子先低头看装置，之后才抬手摸下巴。",
+        "evidence": "时间区间显示 A1 结束后经过短暂停顿才开始 A2。",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R2",
+        "predicate": "precedes",
+        "from_id": "A2",
+        "to_id": "A3",
+        "claim": "男子放下摸下巴的手后，紧接着举起了食指。",
+        "evidence": "A2 结束时手部离开面部，随即进入 A3 的抬手阶段。",
+        "certainty": "asserted"
+      }
+    ],
+    "residual": []
+  },
+  "audio": {
+    "clip_id": "day02",
+    "clock": "global_clip_clock",
+    "coverage": [
+      0.0,
+      9.563
+    ],
+    "audio_events": [
+      {
+        "id": "E1",
+        "type": "sfx",
+        "layer": "foreground",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "一段尖锐、高亢且持续的蒸汽哨声或汽笛鸣响",
+        "instance_range": [
+          0.0,
+          4.8
+        ],
+        "boundary_ranges": {
+          "start": [
+            0.0,
+            0.2
+          ],
+          "end": [
+            4.6,
+            4.9
+          ]
+        },
+        "evidence_time": 2.0,
+        "confidence": "high"
+      },
+      {
+        "id": "E2.1",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "Pretty cool, huh?",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          5.04,
+          6.08
+        ],
+        "boundary_ranges": {
+          "start": [
+            4.9,
+            5.2
+          ],
+          "end": [
+            5.9,
+            6.3
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "清晰听到男声说出 'Pretty cool, huh?'，位于汽笛声结束后。",
+        "parent_audio_id": "E2"
+      },
+      {
+        "id": "E2.2",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "Now I'm back to doing nothing.",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          6.24,
+          7.52
+        ],
+        "boundary_ranges": {
+          "start": [
+            6.1,
+            6.4
+          ],
+          "end": [
+            7.3,
+            7.7
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "紧接前一句之后，听到 'Now I'm back to doing nothing.'。",
+        "parent_audio_id": "E2"
+      },
+      {
+        "id": "E2.3",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "See you later.",
+        "claim": "逐句复听定位",
+        "instance_range": [
+          7.52,
+          8.08
+        ],
+        "boundary_ranges": {
+          "start": [
+            7.4,
+            7.7
+          ],
+          "end": [
+            7.9,
+            8.3
+          ]
+        },
+        "evidence_time": null,
+        "confidence": null,
+        "evidence": "音频末尾部分，听到告别语 'See you later.'。",
+        "parent_audio_id": "E2"
+      }
+    ],
+    "unresolved": []
+  },
+  "original_audio_events": [
+    {
+      "id": "E1",
+      "type": "sfx",
+      "layer": "foreground",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "一段尖锐、高亢且持续的蒸汽哨声或汽笛鸣响",
+      "instance_range": [
+        0.0,
+        4.8
+      ],
+      "boundary_ranges": {
+        "start": [
+          0.0,
+          0.2
+        ],
+        "end": [
+          4.6,
+          4.9
+        ]
+      },
+      "evidence_time": 2.0,
+      "confidence": "high"
+    },
+    {
+      "id": "E2",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "Pretty cool, huh? Now I'm back to doing nothing. See you later.",
+      "claim": "一名男子以轻松随意的语气说话",
+      "instance_range": [
+        5.76,
+        8.8
+      ],
+      "boundary_ranges": {
+        "start": [
+          5.6,
+          5.9
+        ],
+        "end": [
+          8.6,
+          8.9
+        ]
+      },
+      "evidence_time": 7.0,
+      "confidence": "high"
+    }
+  ],
+  "sentence_alignment": {
+    "sentences": [
+      {
+        "id": "E2.1",
+        "transcript": "Pretty cool, huh?",
+        "instance_range": [
+          5.04,
+          6.08
+        ],
+        "boundary_ranges": {
+          "start": [
+            4.9,
+            5.2
+          ],
+          "end": [
+            5.9,
+            6.3
+          ]
+        },
+        "evidence": "清晰听到男声说出 'Pretty cool, huh?'，位于汽笛声结束后。"
+      },
+      {
+        "id": "E2.2",
+        "transcript": "Now I'm back to doing nothing.",
+        "instance_range": [
+          6.24,
+          7.52
+        ],
+        "boundary_ranges": {
+          "start": [
+            6.1,
+            6.4
+          ],
+          "end": [
+            7.3,
+            7.7
+          ]
+        },
+        "evidence": "紧接前一句之后，听到 'Now I'm back to doing nothing.'。"
+      },
+      {
+        "id": "E2.3",
+        "transcript": "See you later.",
+        "instance_range": [
+          7.52,
+          8.08
+        ],
+        "boundary_ranges": {
+          "start": [
+            7.4,
+            7.7
+          ],
+          "end": [
+            7.9,
+            8.3
+          ]
+        },
+        "evidence": "音频末尾部分，听到告别语 'See you later.'。"
+      }
+    ]
+  },
+  "temporal_edges": [
+    {
+      "visual_id": "A1",
+      "audio_id": "E1",
+      "audio_layer": "foreground",
+      "audio_type": "sfx",
+      "intersections": [
+        [
+          1.29,
+          4.56
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A2",
+      "audio_id": "E2.2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          6.46,
+          7.06
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A3",
+      "audio_id": "E2.2",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          7.23,
+          7.52
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "A3",
+      "audio_id": "E2.3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          7.52,
+          8.01
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "给定边界范围内均重叠",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "请区别低头的起始运动与之后持续注视。整段凝视是否应计 L2，需要统一口径；管件与声音有同期也不能直接推断声源。"
+  ]
+}

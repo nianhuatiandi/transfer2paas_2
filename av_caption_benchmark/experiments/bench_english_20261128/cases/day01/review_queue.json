@@ -1,0 +1,28 @@
+{
+  "flagged_events": [
+    "A0006"
+  ],
+  "unlocalized_transcript_candidates": [],
+  "uncertain_visible_intervals": [
+    {
+      "scope": "shot00000",
+      "source_start": 0,
+      "evidence_stage": "uncertain_muted_local",
+      "local_report": {
+        "start": 0.0,
+        "end": 6.71,
+        "reason": "The person's face is mostly out of frame or in profile, making it impossible to observe mouth movements for visible speech."
+      }
+    },
+    {
+      "scope": "shot00001",
+      "source_start": 5.306,
+      "evidence_stage": "uncertain_muted_local",
+      "local_report": {
+        "start": 0.0,
+        "end": 6.7,
+        "reason": "The person's face is mostly out of frame or in profile, making it impossible to observe mouth movements for visible speech."
+      }
+    }
+  ]
+}

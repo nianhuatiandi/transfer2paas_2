@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "repository_root": "../..",
+  "provider": {
+    "base_url": "https://maas.qianwenaiapi.com/compatible-mode/v1",
+    "model": "qwen3.8-omni-flash",
+    "api_key_env": "QWEN_API_KEY",
+    "max_tokens": 12288,
+    "request_timeout_seconds": 240,
+    "max_request_bytes": 83886080,
+    "extra_body": {"enable_thinking": false}
+  },
+  "media": {
+    "ffmpeg": null,
+    "sampling_fps": 10,
+    "max_frame_width": null,
+    "jpeg_quality": 90,
+    "scene_threshold": 0.12,
+    "max_clip_seconds": 30,
+    "max_base_frames": 400,
+    "review_radius_seconds": 0.4,
+    "max_review_frames": 320
+  },
+  "cases": [
+    {"id": "badminton", "sport": "badminton", "source": "video/av_caption_benchmark__transfer2paas_2__badminton_lift_31679122798_first8s.mp4", "cuts_file": null, "external_speech_file": null},
+    {"id": "standing_jump", "sport": "standing_jump", "source": "video/av_caption_benchmark__transfer2paas_2__standing_long_jump_1039046118_0-7s.mp4", "cuts_file": null, "external_speech_file": null},
+    {"id": "bowling_two_handed", "sport": "bowling", "source": "video/av_caption_benchmark__sports_atomic_av__v08_multisport_min4s__bowling_1080p__video.mp4", "cuts_file": null, "external_speech_file": null},
+    {"id": "bowling_one_handed", "sport": "bowling", "source": "video/av_caption_benchmark__sports_atomic_av__v08_multisport_min4s__bowling_loft_1080p__video.mp4", "cuts_file": null, "external_speech_file": null},
+    {"id": "golf_instruction", "sport": "golf", "source": "video/3分钟教会你如何保持右臂弯曲,让击球更稳更扎实.39360006992_0-10.5s.mp4", "cuts_file": null, "external_speech_file": null}
+  ]
+}

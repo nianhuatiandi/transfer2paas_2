@@ -1,0 +1,3621 @@
+{
+  "schema": "av-events/1.0",
+  "description_language": "en",
+  "source_sha256": "1e8111353e11531714a78a5de937e2916177b6463b5225317e49aa4bef2a873c",
+  "protocol_sha256": "5e036a99df280f6624fa052bb827144d5f8ca2a37333345553d03aae3afa0d1f",
+  "duration_seconds": 60.0,
+  "actors": [
+    {
+      "id": "P1",
+      "appearance": "man with short dark hair, wearing a black t-shirt and pink shorts"
+    },
+    {
+      "id": "P2",
+      "appearance": "man with short dark hair, wearing a white shirt and black vest"
+    }
+  ],
+  "clock": "source seconds, half-open intervals",
+  "relation_semantics": "Evidence of temporal co-occurrence only. Speaker identity and acoustic causation are separate claims.",
+  "reference_status": "model_annotations_with_review_flags",
+  "events": [
+    {
+      "id": "V0001",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 0,
+      "end": 0.3,
+      "sources": [
+        "shot00000/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "split-step",
+      "brief": "The man performs a split-step.",
+      "detail": "He jumps slightly and lands with feet apart in preparation for movement.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "In the foreground, the man in the black t-shirt and grey shorts performs a small jump, landing with his feet apart between 0.0s and 0.3s.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0001",
+      "kind": "sound",
+      "actor": "shoe squeak and ball impact",
+      "start": 0,
+      "end": 7.52,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "footsteps and racket hits",
+      "detail": "Continuous rhythmic shuffling footsteps with sharp squeaks are audible from the beginning of the interval, accompanied by distinct percussive impacts consistent with a racket hitting shuttlecocks at approximately 2.8s, 4.3s, and 6.5s.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "V0002",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 0.2,
+      "end": 0.5,
+      "sources": [
+        "shot00000/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "overarm hand feed",
+      "brief": "The second player feeds the shuttlecock overhand to P1.",
+      "detail": "Standing near the net, he tosses or hits the shuttlecock towards P1's side of the court.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Between 0.2s and 0.5s, the player on the far side of the net raises their arm and releases the shuttlecock towards the foreground player.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0003",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 0.6,
+      "end": 1.0,
+      "sources": [
+        "shot00000/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "backhand net kill",
+      "brief": "The man performs a backhand net kill.",
+      "detail": "He steps forward to the net and executes a quick downward striking motion with his racket held in a backhand grip, hitting the shuttlecock downwards over the net.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "Pictures 5-8 show him stepping towards the net and swinging his racket down from a backhand position to strike the shuttlecock.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0004",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 1.1,
+      "end": 1.4,
+      "sources": [
+        "shot00000/visual/3"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "recover position",
+      "brief": "The man recovers his position after the shot.",
+      "detail": "Following the previous shot, he returns towards the center line of his half-court.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "At 1.1s-1.4s, the player is recovering after hitting the shuttlecock, but they are stepping laterally and slightly forward toward the center of their court, not retreating backwards.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0002",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 1.36,
+      "end": 1.84,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Jump this way.",
+      "transcript_original": "往这边跳。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        1.36,
+        1.84
+      ]
+    },
+    {
+      "id": "V0005",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 1.8,
+      "end": 2.1,
+      "sources": [
+        "shot00000/visual/4"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "split-step",
+      "brief": "The man performs another split-step.",
+      "detail": "As the next shuttlecock approaches, he makes a small hop and lands wide-footed.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Between 1.8s and 2.1s, the foreground player again performs a small hop, landing with feet wide apart as the next shuttlecock approaches.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0006",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 2.1,
+      "end": 2.4,
+      "sources": [
+        "shot00000/visual/5"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "overarm hand feed",
+      "brief": "The second player provides another overhand feed.",
+      "detail": "From across the net, he sends the shuttlecock towards P1 again.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 2.1s to 2.4s, the player on the opposite side of the net once again raises their arm and feeds the shuttlecock by hand towards the foreground player.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0007",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 2.5,
+      "end": 2.9,
+      "sources": [
+        "shot00000/visual/6"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "backhand net kill",
+      "brief": "The man performs another backhand net kill.",
+      "detail": "He again moves quickly to the net and uses a backhand grip to execute a sharp downward stroke, sending the shuttlecock across the net.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "Pictures 18-21 capture his movement to the net and the subsequent downward swing of his racket in a backhand orientation to hit the shuttlecock.",
+      "fact_evidence_clock_origin": 0,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0008",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 3.0,
+      "end": 5.45,
+      "sources": [
+        "shot00000/visual/7",
+        "shot00001/visual/0",
+        "shot00002/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "stepping backward",
+      "brief": "The man steps backward to reposition himself on the court.",
+      "detail": "He takes a step back with his right foot while holding his racket, adjusting his stance after hitting the shuttlecock.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "Picture 1 shows him stepping back; Picture 2 confirms he has moved further away from the net compared to earlier frames.",
+      "fact_evidence_clock_origin": 2.65,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0009",
+      "kind": "motion",
+      "actor": "a man wearing a black t-shirt and grey shorts on one side of the net, and a man wearing a white shirt and black vest on the other side",
+      "start": 3.167,
+      "end": 7.6,
+      "sources": [
+        "shot00001/visual/1",
+        "shot00002/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Uncertain in local audiovisual review",
+        "Truncated by a sampling window"
+      ],
+      "actor_id": "local_V0009",
+      "activity": "Physical activity",
+      "label": "playing badminton",
+      "brief": "Another person plays a badminton rally against the first man.",
+      "detail": "The second player returns shots across the net during the rally.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "A second player is visible across the net returning shuttlecocks during a rally.",
+      "fact_evidence_clock_origin": 2.65,
+      "actor_scope": "event"
+    },
+    {
+      "id": "A0003",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 5.28,
+      "end": 5.6,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Short utterance lacks independent word timing"
+      ],
+      "label": "Speech",
+      "detail": "One,",
+      "transcript_original": "一个，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        5.28,
+        5.6
+      ]
+    },
+    {
+      "id": "A0004",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 6.99,
+      "end": 7.44,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Word times differ from relistening by more than 0.65 s"
+      ],
+      "label": "Speech",
+      "detail": "Two.",
+      "transcript_original": "两个。",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        7.68,
+        8.0
+      ],
+      "word_interval": [
+        6.99,
+        7.44
+      ]
+    },
+    {
+      "id": "V0010",
+      "kind": "gesture",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 8.0,
+      "end": 11.767,
+      "sources": [
+        "shot00003/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Truncated by a sampling window"
+      ],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "explanatory gesture",
+      "brief": "While speaking, the man makes several explanatory gestures with his free hand.",
+      "detail": "His left hand moves up and down and points outward to emphasize his words.",
+      "phases": [
+        {
+          "label": "open-palm gesture",
+          "start": 8.0,
+          "end": 9.6667,
+          "id": "V0010.P01",
+          "fact_evidence": "Between 0.35s and 2.0167s, the man holds his left hand out with an open palm, moving it slightly as he talks.",
+          "review_flags": []
+        },
+        {
+          "label": "chest touch",
+          "start": 9.7667,
+          "end": 10.2667,
+          "id": "V0010.P02",
+          "fact_evidence": "At approximately 2.1167s to 2.6167s, the man brings his left hand up and touches his chest area over the logo on his shirt.",
+          "review_flags": []
+        },
+        {
+          "label": "forward point",
+          "start": 10.3667,
+          "end": 10.7667,
+          "id": "V0010.P03",
+          "fact_evidence": "Around 2.7167s to 3.1167s, the man extends his left arm and points his index finger forward towards the camera/viewer.",
+          "review_flags": []
+        },
+        {
+          "label": "head scratch",
+          "start": 10.8667,
+          "end": 11.4667,
+          "id": "V0010.P04",
+          "fact_evidence": "From roughly 3.2167s to 3.8167s, the man raises his left hand to the side/back of his head in a scratching or adjusting hair motion.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 0.35s to 4.117s, the man's left hand is actively gesturing while he speaks, including open palm movements, touching his chest, pointing forward, and scratching his head.",
+      "fact_evidence_clock_origin": 7.65,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0011",
+      "kind": "visible_speech",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 8.003,
+      "end": 13.67,
+      "sources": [
+        "shot00001/visual/2",
+        "shot00002/visual/2",
+        "shot00003/visual/0",
+        "shot00004/visual/0",
+        "shot00005/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "speaking to camera",
+      "brief": "A man is standing and speaking to the camera while gesturing with his hands and holding a racket.",
+      "detail": "The man faces forward, looking directly at the camera. His mouth moves continuously as he speaks, accompanied by expressive facial movements including smiling and raising his eyebrows. He uses his left hand for various gestures, such as opening it outward, bringing it to his chest, pointing, and touching near his ear, while his right hand holds a badminton racket.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Throughout the specified interval (0.353s to 6.02s), the man faces the camera, his mouth continuously moves indicating speech, and he uses various hand gestures before demonstrating a swing motion with his racket near the end of the clip.",
+      "fact_evidence_clock_origin": 7.65,
+      "actor_scope": "clip",
+      "posture": "standing",
+      "visual_evidence": "Repeated articulatory lip and jaw movements are clearly visible throughout the segment, coordinated with facial expressions and hand gestures.",
+      "posture_evidence": "The man's hips and extended weight-bearing legs are clearly visible as he stands on the court."
+    },
+    {
+      "id": "A0005",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 8.16,
+      "end": 8.4,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Short utterance lacks independent word timing"
+      ],
+      "label": "Speech",
+      "detail": "Okay,",
+      "transcript_original": "好，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        8.16,
+        8.4
+      ]
+    },
+    {
+      "id": "A0006",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 8.4,
+      "end": 9.68,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Do you often encounter this problem?",
+      "transcript_original": "你们是不是经常遇到这个问题？",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        8.4,
+        9.68
+      ]
+    },
+    {
+      "id": "A0007",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 9.76,
+      "end": 10.8,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "When you are playing ball,",
+      "transcript_original": "当你们在打球的时候，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        9.76,
+        10.8
+      ]
+    },
+    {
+      "id": "V0012",
+      "kind": "gesture",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 10.367,
+      "end": 13.607,
+      "sources": [
+        "shot00004/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Truncated by a sampling window"
+      ],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "explanatory gesture",
+      "brief": "The man makes several explanatory gestures with his free hand.",
+      "detail": "His left hand moves up and down and points outward to emphasize his words.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Throughout the video, the man's left hand is actively gesturing, moving up and down and pointing outward.",
+      "fact_evidence_clock_origin": 10.017000000000001,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0008",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 11.04,
+      "end": 12.08,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "you were originally proactive,",
+      "transcript_original": "本来你们是主动的，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        11.04,
+        12.08
+      ]
+    },
+    {
+      "id": "V0013",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 11.967,
+      "end": 13.607,
+      "sources": [
+        "shot00004/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "demonstrating stroke",
+      "brief": "The man demonstrates a badminton stroke.",
+      "detail": "He swings his racket downwards and forwards in a controlled manner while remaining stationary.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 00:02 to 00:04, the man swings his badminton racket downwards and forwards in a controlled motion while standing still.",
+      "fact_evidence_clock_origin": 10.017000000000001,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0009",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 12.32,
+      "end": 14.32,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "the opponent has already had a hard time receiving the smash, drop shot, and slide,",
+      "transcript_original": "劈吊滑板别人已经接得很难受了，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        12.32,
+        14.32
+      ]
+    },
+    {
+      "id": "V0014",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 13.833,
+      "end": 14.433,
+      "sources": [
+        "shot00004/visual/3",
+        "shot00005/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "underarm upward stroke",
+      "brief": "He turns away from the camera and executes an underarm upward stroke on the court.",
+      "detail": "Facing the net, he steps into position and swings his racket upwards to hit the shuttlecock over the net.",
+      "phases": [
+        {
+          "label": "underarm upward stroke",
+          "start": 13.8333,
+          "end": 14.433,
+          "id": "V0014.P01",
+          "fact_evidence": "The man in the black t-shirt and pink shorts performs an underarm swing with his racket.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "In frames 0.45s to 0.88s, the man in pink shorts faces the net and executes an underarm upward stroke with his racket.",
+      "fact_evidence_clock_origin": 13.483,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0015",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 14.433,
+      "end": 15.033,
+      "sources": [
+        "shot00005/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "stroke unspecified",
+      "brief": "The opponent returns the shuttlecock across the net.",
+      "detail": "Positioned on the far side of the court, he moves laterally and strikes the incoming shuttlecock back towards P1's side.",
+      "phases": [
+        {
+          "label": "stroke unspecified",
+          "start": 14.4333,
+          "end": 15.033,
+          "id": "V0015.P01",
+          "fact_evidence": "The person on the right side of the net hits the shuttlecock back over the net.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "In frames 1.05s to 1.25s, the opponent on the far side moves laterally and strikes the incoming shuttlecock back towards P1's side.",
+      "fact_evidence_clock_origin": 13.483,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0010",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 14.49,
+      "end": 16.11,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "because the lobbing action is wrong,",
+      "transcript_original": "由于挑球动作不对，",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        14.72,
+        16.24
+      ],
+      "word_interval": [
+        14.49,
+        16.11
+      ]
+    },
+    {
+      "id": "A0011",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 16.17,
+      "end": 18.0,
+      "sources": [
+        "w00000/audio/0",
+        "w00001/audio/0",
+        "w00002/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "because this method is not very correct.",
+      "transcript_original": "由于这个方法不是很正确。",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        16.32,
+        18.08
+      ],
+      "word_interval": [
+        16.17,
+        18.0
+      ]
+    },
+    {
+      "id": "V0016",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 16.333,
+      "end": 17.233,
+      "sources": [
+        "shot00005/visual/3"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "jumping smash",
+      "brief": "He performs a jumping overhead smash.",
+      "detail": "Running backwards, he leaps high into the air, swings his arm forcefully downwards to strike the shuttlecock, and lands awkwardly.",
+      "phases": [
+        {
+          "label": "running steps",
+          "start": 16.3333,
+          "end": 16.6333,
+          "id": "V0016.P01",
+          "fact_evidence": "The man in the black t-shirt takes running steps backwards towards the rear court.",
+          "review_flags": []
+        },
+        {
+          "label": "jump",
+          "start": 16.6333,
+          "end": 16.9333,
+          "id": "V0016.P02",
+          "fact_evidence": "The man jumps off both feet while preparing to hit the shuttlecock overhead.",
+          "review_flags": []
+        },
+        {
+          "label": "landing",
+          "start": 16.9333,
+          "end": 17.233,
+          "id": "V0016.P03",
+          "fact_evidence": "After hitting the shuttlecock, the man lands on his feet and continues moving forward.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "From frame 2.98s to 3.65s, the man in pink runs backward, leaps high (frame 3.32s), swings forcefully downwards, and lands awkwardly (frame 3.65s).",
+      "fact_evidence_clock_origin": 13.483,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0017",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 17.533,
+      "end": 18.033,
+      "sources": [
+        "shot00005/visual/4"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "lunge",
+      "brief": "The opponent lunges low to defend against the smash.",
+      "detail": "Dropping quickly to his right side near the floor, he extends his arm and racket to intercept the fast-moving shuttlecock.",
+      "phases": [
+        {
+          "label": "lunge",
+          "start": 17.5333,
+          "end": 18.033,
+          "id": "V0017.P01",
+          "fact_evidence": "The person on the right lunges deeply forward and low to retrieve a short shot near the net.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "In frames 4.12s to 4.52s, the opponent drops quickly to his right near the floor and extends his arm/racket to intercept the fast-moving shuttlecock.",
+      "fact_evidence_clock_origin": 13.483,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0012",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 18.42,
+      "end": 18.98,
+      "sources": [
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "When you lift the shuttlecock,",
+      "transcript_original": "你挑球，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        18.42,
+        18.98
+      ]
+    },
+    {
+      "id": "V0018",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 18.733,
+      "end": 19.533,
+      "sources": [
+        "shot00005/visual/5"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "net lift unspecified side",
+      "brief": "He bends down close to the net and lifts the shuttlecock upwards.",
+      "detail": "Moving forward to the service line area, he crouches low and uses an underarm swing to flick the shuttlecock up and forwards.",
+      "phases": [
+        {
+          "label": "net lift unspecified side",
+          "start": 18.7333,
+          "end": 19.533,
+          "id": "V0018.P01",
+          "fact_evidence": "The man bends very low near the front service line and lifts the shuttlecock up over the net.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "In frames 5.35s to 5.98s, the man in pink moves forward to the service line area, crouches very low, and uses an underarm swing to flick the shuttlecock up.",
+      "fact_evidence_clock_origin": 13.483,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0013",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 19.06,
+      "end": 20.18,
+      "sources": [
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "lifting it to mid-court without enough power,",
+      "transcript_original": "挑个半场又借不上力，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        19.06,
+        20.18
+      ]
+    },
+    {
+      "id": "V0019",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 20.033,
+      "end": 20.833,
+      "sources": [
+        "shot00005/visual/6",
+        "shot00006/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "jumping smash",
+      "brief": "The opponent jumps high to execute a powerful downward smash.",
+      "detail": "Leaping well above court level, he swings his racket powerfully downwards to strike the incoming lifted shuttlecock.",
+      "phases": [
+        {
+          "label": "jump",
+          "start": 20.0333,
+          "end": 20.4333,
+          "id": "V0019.P01",
+          "fact_evidence": "The person on the right jumps vertically to intercept the high returning shuttlecock.",
+          "review_flags": []
+        },
+        {
+          "label": "landing",
+          "start": 20.4333,
+          "end": 20.833,
+          "id": "V0019.P02",
+          "fact_evidence": "Following the jump smash, the person comes down and lands firmly on the court surface.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "In frames 6.65s to 7.28s, the opponent leaps well above court level (frame 6.95s) and swings his racket powerfully downwards to strike the lifted shuttlecock.",
+      "fact_evidence_clock_origin": 13.483,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0014",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 20.18,
+      "end": 20.98,
+      "sources": [
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "and then losing your balance,",
+      "transcript_original": "然后你还失去重心，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        20.18,
+        20.98
+      ]
+    },
+    {
+      "id": "A0015",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 21.3,
+      "end": 23.94,
+      "sources": [
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "the opponent can immediately push from defense to mid-court and smash down.",
+      "transcript_original": "别人从被动立马推到半场就可以杀下来。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        21.3,
+        23.94
+      ]
+    },
+    {
+      "id": "V0020",
+      "kind": "visible_speech",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 21.6,
+      "end": 26.06,
+      "sources": [
+        "shot00006/visual/1",
+        "shot00007/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "speaking",
+      "brief": "A man stands facing forward while speaking and gesturing with his hands and racket.",
+      "detail": "The man is positioned centrally in an indoor badminton court. He faces the camera directly, maintaining eye contact as he speaks. His mouth moves continuously throughout the segment, indicating active speech. He uses expressive hand gestures: initially holding a badminton racket horizontally in his right hand (viewer's left), then lowering it to point downward around 2 seconds, and subsequently raising his left hand near his face for emphasis between 3-4 seconds. His facial expressions shift from neutral concentration to slight smiles during key points of explanation.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The man faces the camera and speaks continuously throughout the interval, holding a racket horizontally at 0.35s and raising it vertically around 1.5s.",
+      "fact_evidence_clock_origin": 21.25,
+      "actor_scope": "clip",
+      "posture": "standing",
+      "visual_evidence": "Continuous articulatory movements of the lips and jaw are clearly visible during the medium close-up shots (from 0.8s to 5.2s). His facial expressions change dynamically as he speaks, and his head nods slightly in rhythm with his delivery.",
+      "posture_evidence": "The man's hips and extended legs are visible, showing full-body support on the court surface."
+    },
+    {
+      "id": "V0021",
+      "kind": "gesture",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 21.6,
+      "end": 26.06,
+      "sources": [
+        "shot00006/visual/2",
+        "shot00007/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "hand gesturing",
+      "brief": "The man gestures with his hands.",
+      "detail": "He uses his free left hand to make various explanatory gestures, such as an open palm, while talking.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "At approximately 4.0 seconds, he makes an open-palm gesture with his left hand; no pointing or chopping motions are observed during the specified timeframe.",
+      "fact_evidence_clock_origin": 21.25,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0016",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 23.82,
+      "end": 25.95,
+      "sources": [
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Or when you are attacking more aggressively,",
+      "transcript_original": "或者是你更加的时候你在进攻，",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        24.26,
+        26.18
+      ],
+      "word_interval": [
+        23.82,
+        25.95
+      ]
+    },
+    {
+      "id": "V0022",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 26.24,
+      "end": 26.76,
+      "sources": [
+        "shot00007/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Uncertain in local audiovisual review"
+      ],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "serving",
+      "brief": "Another man serves the shuttlecock.",
+      "detail": "He stands behind the service line and executes an underarm serve, sending the shuttlecock across the net.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The man in the white shirt and black vest is seen standing behind the service line, executing an underarm serve that sends the shuttlecock across the net between 0.35s and 0.87s.",
+      "fact_evidence_clock_origin": 25.889999999999997,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0017",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 26.34,
+      "end": 28.34,
+      "sources": [
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "after your smash, he was off-balance trying to receive a defensive shot;",
+      "transcript_original": "你杀完后他本来是去重心接一个防守球，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        26.34,
+        28.34
+      ]
+    },
+    {
+      "id": "V0023",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 26.92,
+      "end": 28.48,
+      "sources": [
+        "shot00007/visual/3"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "jumping smash",
+      "brief": "The man performs a jumping smash.",
+      "detail": "He moves backward, leaps into the air, and delivers a powerful downward swing with his racket to hit the shuttlecock.",
+      "phases": [
+        {
+          "label": "step back",
+          "start": 26.92,
+          "end": 27.32,
+          "id": "V0023.P01",
+          "fact_evidence": "At 1.03s-1.43s, the player steps backward to prepare for the jump.",
+          "review_flags": []
+        },
+        {
+          "label": "Jump",
+          "start": 27.32,
+          "end": 27.84,
+          "id": "V0023.P02",
+          "fact_evidence": "At 1.43s-1.95s, the player jumps into the air.",
+          "review_flags": []
+        },
+        {
+          "label": "Forehand Smash",
+          "start": 27.84,
+          "end": 28.24,
+          "id": "V0023.P03",
+          "fact_evidence": "At 1.95s-2.35s, the player hits a forehand smash while airborne.",
+          "review_flags": []
+        },
+        {
+          "label": "Landing",
+          "start": 28.24,
+          "end": 28.48,
+          "id": "V0023.P04",
+          "fact_evidence": "At 2.35s-2.59s, the player lands after completing the smash.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 1.03s to 2.59s, the man in the black t-shirt and pink shorts moves backward, leaps into the air, and delivers a powerful downward swing with his racket to hit the shuttlecock.",
+      "fact_evidence_clock_origin": 25.889999999999997,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0024",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 28.48,
+      "end": 29.08,
+      "sources": [
+        "shot00007/visual/4"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Uncertain in local audiovisual review"
+      ],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "defensive block",
+      "brief": "Another man blocks the smash defensively.",
+      "detail": "He adopts a wide stance and holds his racket up to absorb the impact of the fast shuttlecock, deflecting it back over the net.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Between 2.59s and 3.19s, the man in the white shirt and black vest adopts a wide stance and holds his racket up to absorb the impact of the fast shuttlecock, deflecting it back over the net.",
+      "fact_evidence_clock_origin": 25.889999999999997,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0018",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 28.66,
+      "end": 29.22,
+      "sources": [
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "you move forward,",
+      "transcript_original": "你往前去，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        28.66,
+        29.22
+      ]
+    },
+    {
+      "id": "V0025",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 29.08,
+      "end": 30.44,
+      "sources": [
+        "shot00007/visual/5"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "lunging net shot",
+      "brief": "The man lunges forward to play a net shot.",
+      "detail": "He rushes towards the net, dropping low on his leading leg, and gently taps the shuttlecock just over the tape.",
+      "phases": [
+        {
+          "label": "Running steps",
+          "start": 29.08,
+          "end": 29.64,
+          "id": "V0025.P01",
+          "fact_evidence": "At 3.19s-3.75s, the player takes running steps toward the net.",
+          "review_flags": []
+        },
+        {
+          "label": "Lunge",
+          "start": 29.64,
+          "end": 30.24,
+          "id": "V0025.P02",
+          "fact_evidence": "At 3.75s-4.35s, the player lunges forward to reach the shuttlecock.",
+          "review_flags": []
+        },
+        {
+          "label": "Backhand Net Shot",
+          "start": 30.24,
+          "end": 30.44,
+          "id": "V0025.P03",
+          "fact_evidence": "At 4.35s-4.55s, the player plays a backhand net shot.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 3.19s to 4.55s, the man in the black t-shirt and pink shorts rushes towards the net, drops low on his leading leg, and gently taps the shuttlecock just over the tape.",
+      "fact_evidence_clock_origin": 25.889999999999997,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0019",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 29.62,
+      "end": 30.58,
+      "sources": [
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "the shuttle wasn't even that low,",
+      "transcript_original": "本来球也不是很低，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        29.62,
+        30.58
+      ]
+    },
+    {
+      "id": "V0026",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 30.44,
+      "end": 31.8,
+      "sources": [
+        "shot00007/visual/6"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Uncertain in local audiovisual review"
+      ],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "lifting shuttlecock",
+      "brief": "Another man lifts the shuttlecock from the forecourt.",
+      "detail": "He stretches out his arm and uses an upward flicking motion with his wrist to send the shuttlecock deep into the opponent's court.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Between 4.55s and 5.91s, the man in the white shirt and black vest stretches out his arm and uses an upward flicking motion with his wrist to send the shuttlecock deep into the opponent's court.",
+      "fact_evidence_clock_origin": 25.889999999999997,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0020",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 30.58,
+      "end": 32.1,
+      "sources": [
+        "w00001/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "but with incorrect technique, one lift sends it to mid-court.",
+      "transcript_original": "但是动作不对一挑半场球，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        30.58,
+        32.1
+      ]
+    },
+    {
+      "id": "A0021",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 32.04,
+      "end": 34.68,
+      "sources": [
+        "w00001/audio/0",
+        "w00002/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "If your movement is wrong, let alone if others drop the ball.",
+      "transcript_original": "那如果你动作不对，别人吊球的话那就更不用说了。",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        32.06,
+        34.7
+      ],
+      "word_interval": [
+        32.04,
+        34.68
+      ]
+    },
+    {
+      "id": "V0027",
+      "kind": "visible_speech",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 32.4,
+      "end": 33.0,
+      "sources": [
+        "shot00007/visual/7",
+        "shot00008/visual/0",
+        "shot00009/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "speaking to camera",
+      "brief": "A man stands facing forward while speaking and gesturing with his hands.",
+      "detail": "The man faces the camera directly with an upright posture. He speaks continuously throughout the clip, accompanied by natural mouth movements and slight head nods for emphasis. His right hand holds a badminton racket handle near waist level, remaining relatively steady, while his left hand actively gestures in front of his chest—opening palm-upward and moving slightly outward—to illustrate his points.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "In frames 1, 2, and 3 (from ~0.65s to 0.88s), the man's mouth is visibly open and changing shape as he speaks directly to the camera.",
+      "fact_evidence_clock_origin": 32.05,
+      "actor_scope": "clip",
+      "posture": "standing",
+      "visual_evidence": "Clear articulatory lip and jaw movements coordinated with hand gestures while facing the camera.",
+      "posture_evidence": "The man's full body is visible from head to feet. His legs are extended straight down, supporting his weight on the court floor without any seat or horizontal surface beneath him."
+    },
+    {
+      "id": "V0028",
+      "kind": "gesture",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 32.4,
+      "end": 33.0,
+      "sources": [
+        "shot00007/visual/8",
+        "shot00008/visual/1",
+        "shot00009/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "gesturing with hands",
+      "brief": "The man gestures with his free hand.",
+      "detail": "During his speech from 0.8s to 1.4s, he uses his left hand to make explanatory gestures, opening his palm and moving it slightly outward.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "In frames 1, 2, and 3, his left hand moves from an open position near his chest to gesturing outward with fingers spread.",
+      "fact_evidence_clock_origin": 32.05,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0029",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 34.233,
+      "end": 34.733,
+      "sources": [
+        "shot00009/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "overarm hand feed",
+      "brief": "The player feeds the shuttlecock overhand.",
+      "detail": "From across the net, P2 tosses the shuttlecock upward toward P1's court using an overarm motion.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Across the net, the player in a white shirt and black vest raises his arm and releases the shuttlecock from above shoulder height toward the opposite court.",
+      "fact_evidence_clock_origin": 33.882999999999996,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0030",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 34.833,
+      "end": 36.133,
+      "sources": [
+        "shot00009/visual/3"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "lunge",
+      "brief": "The man lunges forward to hit the shuttlecock.",
+      "detail": "P1 steps rapidly forward into a deep lunge position near the net to reach the incoming shuttlecock.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The man in the black t-shirt and pink shorts takes rapid steps forward into a deep lunge position near the net to reach the incoming shuttlecock.",
+      "fact_evidence_clock_origin": 33.882999999999996,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0022",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 34.86,
+      "end": 40.38,
+      "sources": [
+        "w00002/audio/2"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Possible compound utterance"
+      ],
+      "label": "Speech",
+      "detail": "Or when you play doubles or mixed doubles, there's a heavy hitter behind you; if you lift poorly, it ends with a smash down the middle.",
+      "transcript_original": "或者在你打双打或混双啊，后面是一个重炮，你挑球挑的不好一挑完了中杀。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        34.86,
+        40.38
+      ]
+    },
+    {
+      "id": "V0031",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 35.333,
+      "end": 35.733,
+      "sources": [
+        "shot00009/visual/4"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Uncertain in local audiovisual review"
+      ],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "forehand net shot",
+      "brief": "The man hits a forehand net shot.",
+      "detail": "While lunged low at the net, P1 swings the racket horizontally under the tape line to softly return the shuttlecock just over the net.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "While lunged low at the net, P1 swings the racket horizontally under the tape line to softly return the shuttlecock just over the net; however, he uses a forehand grip rather than a backhand one.",
+      "fact_evidence_clock_origin": 33.882999999999996,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0032",
+      "kind": "visible_speech",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 37.337,
+      "end": 41.873,
+      "sources": [
+        "shot00009/visual/5",
+        "shot00010/visual/1",
+        "shot00011/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "speaking to camera",
+      "brief": "A man stands on an indoor badminton court holding a racket while speaking to the camera.",
+      "detail": "The speaker maintains an upright posture facing forward. His mouth moves continuously as he talks, accompanied by expressive hand gestures involving both the racket and his free hand.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The man faces the camera and his mouth moves continuously throughout the specified interval, accompanied by hand gestures.",
+      "fact_evidence_clock_origin": 36.987,
+      "actor_scope": "clip",
+      "posture": "standing",
+      "visual_evidence": "Continuous articulatory movements of the lips and jaw are clearly visible during the medium close-up segment from 00:01 to 00:05, synchronized with his head nods and hand gestures.",
+      "posture_evidence": "The subject's hips and extended legs are visible in the frame, bearing his weight on the court surface without any seat contact."
+    },
+    {
+      "id": "A0023",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 40.3,
+      "end": 47.82,
+      "sources": [
+        "w00002/audio/3"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ],
+      "label": "Speech",
+      "detail": "Okay, but if your technique is correct, no matter how difficult the ball is, once you lift it up high and into position, others won't be able to smash it down; even players with powerful smashes won't be able to smash it down.",
+      "transcript_original": "好，但是如果你动作对的话，再怎么难受的球你一挑起来又高又到位，别人杀不下来；再怎么重炮的球员他都杀不下来的。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        40.3,
+        47.82
+      ]
+    },
+    {
+      "id": "A0024",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 40.58,
+      "end": 44.82,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ],
+      "label": "Speech",
+      "detail": "But if your technique is correct, no matter how difficult the shuttlecock is, once you lift it up, it will be high and in position.",
+      "transcript_original": "但是如果你动作对的话，再怎么难受的球你一挑起来又高又到位。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        40.58,
+        44.82
+      ]
+    },
+    {
+      "id": "V0033",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 42.1,
+      "end": 42.9,
+      "sources": [
+        "shot00010/visual/2",
+        "shot00011/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [
+        "Actor identity unresolved"
+      ],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "lunging and hitting shuttlecock",
+      "brief": "He lunges forward to hit a low shuttlecock near the net.",
+      "detail": "From a ready stance, he steps out into a deep lunge on his right leg and swings his racket upward to strike the incoming shuttlecock just above the floor level before recovering.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "At 0.4s-1.1s, the man in the black vest lunges forward on his right leg and swings his racket upward to hit a low shuttlecock near the net.",
+      "fact_evidence_clock_origin": 41.75,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0034",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 42.9,
+      "end": 43.7,
+      "sources": [
+        "shot00011/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "hitting shuttlecock",
+      "brief": "He hits the returning shuttlecock from across the net.",
+      "detail": "Positioned mid-court, he tracks the descending shuttlecock and executes an underarm stroke that sends it high toward the opponent's side.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "Between 1.2s and 1.9s, the player in pink shorts executes an underarm stroke that sends the shuttlecock high towards the opponent's side.",
+      "fact_evidence_clock_origin": 41.75,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0035",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 44.2,
+      "end": 45.2,
+      "sources": [
+        "shot00011/visual/3"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "jumping and smashing",
+      "brief": "He jumps and performs an overhead smash.",
+      "detail": "After moving backward, he leaps off both feet, arches his torso, and drives his racket arm downward through contact at peak height, landing heavily afterward.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 2.6s to 3.4s, the man in the black vest moves backward, jumps off both feet, arches his torso, and drives his racket arm downward through contact at peak height.",
+      "fact_evidence_clock_origin": 41.75,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0025",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 44.82,
+      "end": 45.62,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Possible overlapping turns from the same voice"
+      ],
+      "label": "Speech",
+      "detail": "Others cannot smash it down,",
+      "transcript_original": "别人杀不下来，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        44.82,
+        45.62
+      ]
+    },
+    {
+      "id": "V0036",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 45.3,
+      "end": 46.3,
+      "sources": [
+        "shot00011/visual/4"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "defending against smash",
+      "brief": "The man in the black t-shirt and pink shorts lunges to return a shot.",
+      "detail": "He moves quickly from his center position towards the right side of the court, extending his racket arm low to hit the shuttlecock.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "Picture 10 shows him beginning the lunge; Picture 11 captures him fully extended hitting the shuttlecock near the net post.",
+      "fact_evidence_clock_origin": 41.75,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0026",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 45.62,
+      "end": 48.1,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Possible overlapping turns from the same voice"
+      ],
+      "label": "Speech",
+      "detail": "no matter how powerful the player's smash is, they still won't be able to hit it down.",
+      "transcript_original": "再怎么重炮的球员他都杀不下来的。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        45.62,
+        48.1
+      ]
+    },
+    {
+      "id": "V0037",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 46.3,
+      "end": 48.0,
+      "sources": [
+        "shot00011/visual/5"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "moving around court",
+      "brief": "The man in the white shirt and black vest repositions himself after playing a shot.",
+      "detail": "After completing an overhead swing, he lands and takes several steps backward and sideways to regain his central court position.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "Pictures 14 and 15 show him landing from a jump and stepping back into the middle of his half of the court.",
+      "fact_evidence_clock_origin": 41.75,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0027",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 48.1,
+      "end": 48.74,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "It's not just like that;",
+      "transcript_original": "不只是这样子，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        48.1,
+        48.74
+      ]
+    },
+    {
+      "id": "V0038",
+      "kind": "visible_speech",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 48.288,
+      "end": 50.492,
+      "sources": [
+        "shot00011/visual/6",
+        "shot00012/visual/1",
+        "shot00013/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "addressing camera",
+      "brief": "A man in a black shirt and pink shorts stands on a badminton court, speaking to the camera while gesturing with his hand.",
+      "detail": "The man faces forward, maintaining eye contact with the camera as he speaks. His mouth moves continuously throughout the clip. He raises his left hand near his face, making small pinching gestures with his fingers to emphasize his points.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The man faces the camera, holds a racket in his right hand, speaks with continuous mouth movements, and uses his left hand for pointing and open-palm gestures throughout the specified timeframe.",
+      "fact_evidence_clock_origin": 47.937999999999995,
+      "actor_scope": "clip",
+      "posture": "standing",
+      "visual_evidence": "Continuous articulatory movements of the lips and jaw are clearly visible, coordinated with expressive facial changes and active hand gestures directed towards the camera.",
+      "posture_evidence": "The man's full body is visible, showing his hips and extended legs bearing weight on the court floor."
+    },
+    {
+      "id": "V0039",
+      "kind": "gesture",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 48.375,
+      "end": 50.458,
+      "sources": [
+        "shot00012/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "explanatory gesture",
+      "brief": "He raises his left hand and points his index finger upwards to emphasize his words.",
+      "detail": "While speaking, he repeatedly lifts his left arm and extends his index finger upward near shoulder height before lowering it again.",
+      "phases": [
+        {
+          "label": "explanatory gesture",
+          "start": 48.375,
+          "end": 48.708,
+          "id": "V0039.P01",
+          "fact_evidence": "In the frames from 0.4s to 0.7s, the man is speaking and holding his right hand up near his face with his index finger extended, making small movements.",
+          "review_flags": []
+        },
+        {
+          "label": "explanatory gesture",
+          "start": 49.167,
+          "end": 49.708,
+          "id": "V0039.P02",
+          "fact_evidence": "In the frames from 1.2s to 1.5s, the man continues to speak and maintains his right hand in a similar position near his head, gesturing with his fingers.",
+          "review_flags": []
+        },
+        {
+          "label": "explanatory gesture",
+          "start": 50.042,
+          "end": 50.458,
+          "id": "V0039.P03",
+          "fact_evidence": "In the frame at 2.3s, the man is smiling and still has his right hand raised, pinching his thumb and forefinger together as if emphasizing a small detail.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "He repeatedly raises his left arm and extends his index finger upward near shoulder height before lowering it again during the specified timeframe.",
+      "fact_evidence_clock_origin": 47.937999999999995,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0028",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 48.74,
+      "end": 49.78,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "if you know how to do a lob,",
+      "transcript_original": "如果你会了挑球，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        48.74,
+        49.78
+      ]
+    },
+    {
+      "id": "A0029",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 49.78,
+      "end": 51.22,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "and you also add some feints,",
+      "transcript_original": "你还会加上一点假动作，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        49.78,
+        51.22
+      ]
+    },
+    {
+      "id": "V0040",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 50.607,
+      "end": 51.327,
+      "sources": [
+        "shot00013/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "deceptive overhead swing",
+      "brief": "The man performs a deceptive overhead stroke.",
+      "detail": "He raises his racket high as if preparing for an overhead smash, then abruptly stops the motion before hitting the shuttlecock.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "Picture 1 (racket raised), Picture 2 (mid-swing preparation), Picture 3 (abrupt stop of swing).",
+      "fact_evidence_clock_origin": 50.257,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0030",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 51.22,
+      "end": 51.86,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "for example this move,",
+      "transcript_original": "比如这个动作，",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        51.22,
+        51.86
+      ]
+    },
+    {
+      "id": "V0041",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 51.327,
+      "end": 52.407,
+      "sources": [
+        "shot00013/visual/2"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "reacting to deception",
+      "brief": "Across the net, the man in the pink shorts reacts late to the deceptive shot and fails to reach it.",
+      "detail": "He initially moves backward anticipating a deep clear, then quickly lunges forward toward the net when he realizes the shuttlecock is dropping short.",
+      "phases": [
+        {
+          "label": "step back",
+          "start": 51.327,
+          "end": 51.7667,
+          "id": "V0041.P01",
+          "fact_evidence": "The man in pink shorts steps backward from his ready position as the opponent prepares to hit.",
+          "review_flags": []
+        },
+        {
+          "label": "Lunge",
+          "start": 51.7667,
+          "end": 52.4067,
+          "id": "V0041.P02",
+          "fact_evidence": "The man in pink shorts lunges forward toward the left side of the court after the opponent's deceptive shot.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 1.07-2.15s, the opponent moves backward initially but then lunges forward as the shuttle lands short near the net.",
+      "fact_evidence_clock_origin": 50.257,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0031",
+      "kind": "sound",
+      "actor": "unidentified source",
+      "start": 51.84,
+      "end": 52.36,
+      "sources": [
+        "w00003/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "sharp thwack of a racket hitting a shuttlecock",
+      "detail": "A sharp, percussive impact sound occurs at the beginning of this interval.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "A0032",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 52.34,
+      "end": 54.9,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "then needless to say, he runs directly in the wrong direction and immediately becomes passive.",
+      "transcript_original": "那就更不用说他直接跑错方向他立马被动。",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        52.34,
+        54.9
+      ]
+    },
+    {
+      "id": "V0042",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 52.967,
+      "end": 53.767,
+      "sources": [
+        "shot00013/visual/3"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "deceptive overhead swing",
+      "brief": "The man executes another deceptive overhead stroke.",
+      "detail": "Similar to the previous action, he initiates a full overhead swing but halts it suddenly without making contact with the shuttlecock.",
+      "phases": [],
+      "fact_verdict": "weaken",
+      "fact_evidence": "Picture 7 (starting upward motion), Picture 8 (high backswing), Picture 9 (full extension stopping mid-air).",
+      "fact_evidence_clock_origin": 50.257,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0043",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 53.767,
+      "end": 54.967,
+      "sources": [
+        "shot00013/visual/4"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "Physical activity",
+      "label": "being caught off guard",
+      "brief": "The man in the pink shorts is again caught out of position by the sudden change in pace and direction.",
+      "detail": "His momentum carries him away from the net before he has to stop and reverse direction awkwardly.",
+      "phases": [
+        {
+          "label": "movement unspecified",
+          "start": 53.767,
+          "end": 54.9667,
+          "id": "V0043.P01",
+          "fact_evidence": "The man in pink shorts is caught off guard by the second deceptive shot and stumbles slightly before recovering.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "During 3.51-4.71s, the opponent is caught moving away from the net and struggles to recover position for the next return.",
+      "fact_evidence_clock_origin": 50.257,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "V0044",
+      "kind": "motion",
+      "actor": "man with short dark hair, wearing a white shirt and black vest",
+      "start": 54.967,
+      "end": 56.487,
+      "sources": [
+        "shot00013/visual/5",
+        "shot00014/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P2",
+      "activity": "Physical activity",
+      "label": "running to retrieve shuttlecock",
+      "brief": "The man in the black vest runs quickly towards the front-left corner of the court to chase down a fast-moving shuttlecock.",
+      "detail": "He sprints diagonally across the blue court surface, extending his body fully during the final lunge attempt.",
+      "phases": [
+        {
+          "label": "Running steps",
+          "start": 54.967,
+          "end": 55.7667,
+          "id": "V0044.P01",
+          "fact_evidence": "The man in the black vest runs quickly across the court towards the front left corner.",
+          "review_flags": []
+        },
+        {
+          "label": "Lunge",
+          "start": 55.7667,
+          "end": 56.4867,
+          "id": "V0044.P02",
+          "fact_evidence": "The man in the black vest executes a full lunge at the end of his run to reach the shuttlecock near the floor.",
+          "review_flags": []
+        }
+      ],
+      "fact_verdict": "supported",
+      "fact_evidence": "From 4.71-6.23s, the man in the black vest sprints diagonally and dives/lunges fully extended towards the front-left corner.",
+      "fact_evidence_clock_origin": 50.257,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0033",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 55.22,
+      "end": 55.54,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Short utterance lacks independent word timing"
+      ],
+      "label": "Speech",
+      "detail": "OK?",
+      "transcript_original": "OK？",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        55.22,
+        55.54
+      ]
+    },
+    {
+      "id": "A0034",
+      "kind": "speech",
+      "actor": "male voice speaking Mandarin",
+      "start": 55.8,
+      "end": 59.91,
+      "sources": [
+        "w00002/audio/3",
+        "w00003/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "Today I'm going to teach you how to correctly perform a lob.",
+      "transcript_original": "今天我就要教你们怎么正确的做一个挑球动作。",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        55.86,
+        59.86
+      ],
+      "word_interval": [
+        55.8,
+        59.91
+      ]
+    },
+    {
+      "id": "V0045",
+      "kind": "visible_speech",
+      "actor": "man with short dark hair, wearing a black t-shirt and pink shorts",
+      "start": 56.572,
+      "end": 59.997,
+      "sources": [
+        "shot00013/visual/6",
+        "shot00014/visual/1"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "speaking to camera",
+      "label": "addressing camera",
+      "brief": "A man stands on a badminton court holding a racket while speaking to the camera.",
+      "detail": "The man faces forward with an upright posture, looking directly at the camera. His mouth moves continuously as he speaks, accompanied by slight head movements and changes in facial expression. He holds a badminton racket in his right hand.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The man stands on the badminton court holding a racket vertically in his right hand, facing forward and speaking to the camera. Around 3.5 seconds, he raises his left hand with fingers spread against his chest.",
+      "fact_evidence_clock_origin": 56.222,
+      "actor_scope": "clip",
+      "posture": "standing",
+      "visual_evidence": "continuous lip movement synchronized with speech, accompanied by expressive facial movements and hand gestures",
+      "posture_evidence": "The man's full body is visible, showing his hips and extended legs supporting his weight on the court floor."
+    }
+  ],
+  "relations": [
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0,
+      "end": 0.3,
+      "robust_interval": [
+        0,
+        0.3
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0002",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.2,
+      "end": 0.5,
+      "robust_interval": [
+        0.2,
+        0.5
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0003",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 0.6,
+      "end": 1.0,
+      "robust_interval": [
+        0.6,
+        1.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 1.1,
+      "end": 1.4,
+      "robust_interval": [
+        1.1,
+        1.4
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0004",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 1.36,
+      "end": 1.4,
+      "robust_interval": [
+        1.36,
+        1.4
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0005",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 1.8,
+      "end": 2.1,
+      "robust_interval": [
+        1.8,
+        2.1
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0005",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 1.8,
+      "end": 1.84,
+      "robust_interval": [
+        1.8,
+        1.84
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0006",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 2.1,
+      "end": 2.4,
+      "robust_interval": [
+        2.1,
+        2.4
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0007",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 2.5,
+      "end": 2.9,
+      "robust_interval": [
+        2.5,
+        2.9
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0008",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 3.0,
+      "end": 5.45,
+      "robust_interval": [
+        3.0,
+        5.45
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0008",
+      "audio_id": "A0003",
+      "type": "temporal_overlap",
+      "start": 5.28,
+      "end": 5.45,
+      "robust_interval": [
+        5.28,
+        5.45
+      ],
+      "review_flags": [
+        "Short utterance lacks independent word timing",
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0009",
+      "audio_id": "A0001",
+      "type": "temporal_overlap",
+      "start": 3.167,
+      "end": 7.52,
+      "robust_interval": [
+        3.167,
+        7.52
+      ],
+      "review_flags": [
+        "Truncated by a sampling window",
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0009",
+      "audio_id": "A0003",
+      "type": "temporal_overlap",
+      "start": 5.28,
+      "end": 5.6,
+      "robust_interval": [
+        5.28,
+        5.6
+      ],
+      "review_flags": [
+        "Short utterance lacks independent word timing",
+        "Truncated by a sampling window",
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0009",
+      "audio_id": "A0004",
+      "type": "temporal_overlap",
+      "start": 6.99,
+      "end": 7.44,
+      "robust_interval": [
+        6.99,
+        7.44
+      ],
+      "review_flags": [
+        "Truncated by a sampling window",
+        "Uncertain in local audiovisual review",
+        "Word times differ from relistening by more than 0.65 s"
+      ]
+    },
+    {
+      "visual_id": "V0010",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 8.16,
+      "end": 8.4,
+      "robust_interval": [
+        8.16,
+        8.4
+      ],
+      "review_flags": [
+        "Short utterance lacks independent word timing",
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0010",
+      "audio_id": "A0006",
+      "type": "temporal_overlap",
+      "start": 8.4,
+      "end": 9.68,
+      "robust_interval": [
+        8.4,
+        9.68
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0010",
+      "audio_id": "A0007",
+      "type": "temporal_overlap",
+      "start": 9.76,
+      "end": 10.8,
+      "robust_interval": [
+        9.76,
+        10.8
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0010",
+      "audio_id": "A0008",
+      "type": "temporal_overlap",
+      "start": 11.04,
+      "end": 11.767,
+      "robust_interval": [
+        11.04,
+        11.767
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0011",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 8.16,
+      "end": 8.4,
+      "robust_interval": [
+        8.16,
+        8.4
+      ],
+      "review_flags": [
+        "Short utterance lacks independent word timing"
+      ]
+    },
+    {
+      "visual_id": "V0011",
+      "audio_id": "A0006",
+      "type": "temporal_overlap",
+      "start": 8.4,
+      "end": 9.68,
+      "robust_interval": [
+        8.4,
+        9.68
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0011",
+      "audio_id": "A0007",
+      "type": "temporal_overlap",
+      "start": 9.76,
+      "end": 10.8,
+      "robust_interval": [
+        9.76,
+        10.8
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0011",
+      "audio_id": "A0008",
+      "type": "temporal_overlap",
+      "start": 11.04,
+      "end": 12.08,
+      "robust_interval": [
+        11.04,
+        12.08
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0011",
+      "audio_id": "A0009",
+      "type": "temporal_overlap",
+      "start": 12.32,
+      "end": 13.67,
+      "robust_interval": [
+        12.32,
+        13.67
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0012",
+      "audio_id": "A0007",
+      "type": "temporal_overlap",
+      "start": 10.367,
+      "end": 10.8,
+      "robust_interval": [
+        10.367,
+        10.8
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0012",
+      "audio_id": "A0008",
+      "type": "temporal_overlap",
+      "start": 11.04,
+      "end": 12.08,
+      "robust_interval": [
+        11.04,
+        12.08
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0012",
+      "audio_id": "A0009",
+      "type": "temporal_overlap",
+      "start": 12.32,
+      "end": 13.607,
+      "robust_interval": [
+        12.32,
+        13.607
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0013",
+      "audio_id": "A0008",
+      "type": "temporal_overlap",
+      "start": 11.967,
+      "end": 12.08,
+      "robust_interval": [
+        11.967,
+        12.08
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0013",
+      "audio_id": "A0009",
+      "type": "temporal_overlap",
+      "start": 12.32,
+      "end": 13.607,
+      "robust_interval": [
+        12.32,
+        13.607
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0014",
+      "audio_id": "A0009",
+      "type": "temporal_overlap",
+      "start": 13.833,
+      "end": 14.32,
+      "robust_interval": [
+        13.833,
+        14.32
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0015",
+      "audio_id": "A0010",
+      "type": "temporal_overlap",
+      "start": 14.49,
+      "end": 15.033,
+      "robust_interval": [
+        14.49,
+        15.033
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0016",
+      "audio_id": "A0011",
+      "type": "temporal_overlap",
+      "start": 16.333,
+      "end": 17.233,
+      "robust_interval": [
+        16.333,
+        17.233
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0017",
+      "audio_id": "A0011",
+      "type": "temporal_overlap",
+      "start": 17.533,
+      "end": 18.0,
+      "robust_interval": [
+        17.533,
+        18.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0018",
+      "audio_id": "A0012",
+      "type": "temporal_overlap",
+      "start": 18.733,
+      "end": 18.98,
+      "robust_interval": [
+        18.733,
+        18.98
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0018",
+      "audio_id": "A0013",
+      "type": "temporal_overlap",
+      "start": 19.06,
+      "end": 19.533,
+      "robust_interval": [
+        19.06,
+        19.533
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0019",
+      "audio_id": "A0013",
+      "type": "temporal_overlap",
+      "start": 20.033,
+      "end": 20.18,
+      "robust_interval": [
+        20.033,
+        20.18
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0019",
+      "audio_id": "A0014",
+      "type": "temporal_overlap",
+      "start": 20.18,
+      "end": 20.833,
+      "robust_interval": [
+        20.18,
+        20.833
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0020",
+      "audio_id": "A0015",
+      "type": "temporal_overlap",
+      "start": 21.6,
+      "end": 23.94,
+      "robust_interval": [
+        21.6,
+        23.94
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0020",
+      "audio_id": "A0016",
+      "type": "temporal_overlap",
+      "start": 23.82,
+      "end": 25.95,
+      "robust_interval": [
+        23.82,
+        25.95
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0021",
+      "audio_id": "A0015",
+      "type": "temporal_overlap",
+      "start": 21.6,
+      "end": 23.94,
+      "robust_interval": [
+        21.6,
+        23.94
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0021",
+      "audio_id": "A0016",
+      "type": "temporal_overlap",
+      "start": 23.82,
+      "end": 25.95,
+      "robust_interval": [
+        23.82,
+        25.95
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0022",
+      "audio_id": "A0017",
+      "type": "temporal_overlap",
+      "start": 26.34,
+      "end": 26.76,
+      "robust_interval": [
+        26.34,
+        26.76
+      ],
+      "review_flags": [
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0023",
+      "audio_id": "A0017",
+      "type": "temporal_overlap",
+      "start": 26.92,
+      "end": 28.34,
+      "robust_interval": [
+        26.92,
+        28.34
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0024",
+      "audio_id": "A0018",
+      "type": "temporal_overlap",
+      "start": 28.66,
+      "end": 29.08,
+      "robust_interval": [
+        28.66,
+        29.08
+      ],
+      "review_flags": [
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0025",
+      "audio_id": "A0018",
+      "type": "temporal_overlap",
+      "start": 29.08,
+      "end": 29.22,
+      "robust_interval": [
+        29.08,
+        29.22
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0025",
+      "audio_id": "A0019",
+      "type": "temporal_overlap",
+      "start": 29.62,
+      "end": 30.44,
+      "robust_interval": [
+        29.62,
+        30.44
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0026",
+      "audio_id": "A0019",
+      "type": "temporal_overlap",
+      "start": 30.44,
+      "end": 30.58,
+      "robust_interval": [
+        30.44,
+        30.58
+      ],
+      "review_flags": [
+        "Uncertain in local audiovisual review",
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0026",
+      "audio_id": "A0020",
+      "type": "temporal_overlap",
+      "start": 30.58,
+      "end": 31.8,
+      "robust_interval": [
+        30.58,
+        31.8
+      ],
+      "review_flags": [
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0027",
+      "audio_id": "A0021",
+      "type": "temporal_overlap",
+      "start": 32.4,
+      "end": 33.0,
+      "robust_interval": [
+        32.4,
+        33.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0028",
+      "audio_id": "A0021",
+      "type": "temporal_overlap",
+      "start": 32.4,
+      "end": 33.0,
+      "robust_interval": [
+        32.4,
+        33.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0029",
+      "audio_id": "A0021",
+      "type": "temporal_overlap",
+      "start": 34.233,
+      "end": 34.68,
+      "robust_interval": [
+        34.233,
+        34.68
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0030",
+      "audio_id": "A0022",
+      "type": "temporal_overlap",
+      "start": 34.86,
+      "end": 36.133,
+      "robust_interval": [
+        34.86,
+        36.133
+      ],
+      "review_flags": [
+        "Possible compound utterance"
+      ]
+    },
+    {
+      "visual_id": "V0031",
+      "audio_id": "A0022",
+      "type": "temporal_overlap",
+      "start": 35.333,
+      "end": 35.733,
+      "robust_interval": [
+        35.333,
+        35.733
+      ],
+      "review_flags": [
+        "Possible compound utterance",
+        "Uncertain in local audiovisual review"
+      ]
+    },
+    {
+      "visual_id": "V0032",
+      "audio_id": "A0022",
+      "type": "temporal_overlap",
+      "start": 37.337,
+      "end": 40.38,
+      "robust_interval": [
+        37.337,
+        40.38
+      ],
+      "review_flags": [
+        "Possible compound utterance"
+      ]
+    },
+    {
+      "visual_id": "V0032",
+      "audio_id": "A0023",
+      "type": "temporal_overlap",
+      "start": 40.3,
+      "end": 41.873,
+      "robust_interval": [
+        40.3,
+        41.873
+      ],
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0032",
+      "audio_id": "A0024",
+      "type": "temporal_overlap",
+      "start": 40.58,
+      "end": 41.873,
+      "robust_interval": [
+        40.58,
+        41.873
+      ],
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0033",
+      "audio_id": "A0023",
+      "type": "temporal_overlap",
+      "start": 42.1,
+      "end": 42.9,
+      "robust_interval": [
+        42.1,
+        42.9
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0033",
+      "audio_id": "A0024",
+      "type": "temporal_overlap",
+      "start": 42.1,
+      "end": 42.9,
+      "robust_interval": [
+        42.1,
+        42.9
+      ],
+      "review_flags": [
+        "Actor identity unresolved",
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0034",
+      "audio_id": "A0023",
+      "type": "temporal_overlap",
+      "start": 42.9,
+      "end": 43.7,
+      "robust_interval": [
+        42.9,
+        43.7
+      ],
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0034",
+      "audio_id": "A0024",
+      "type": "temporal_overlap",
+      "start": 42.9,
+      "end": 43.7,
+      "robust_interval": [
+        42.9,
+        43.7
+      ],
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0035",
+      "audio_id": "A0023",
+      "type": "temporal_overlap",
+      "start": 44.2,
+      "end": 45.2,
+      "robust_interval": [
+        44.2,
+        45.2
+      ],
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0035",
+      "audio_id": "A0024",
+      "type": "temporal_overlap",
+      "start": 44.2,
+      "end": 44.82,
+      "robust_interval": [
+        44.2,
+        44.82
+      ],
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0035",
+      "audio_id": "A0025",
+      "type": "temporal_overlap",
+      "start": 44.82,
+      "end": 45.2,
+      "robust_interval": [
+        44.82,
+        45.2
+      ],
+      "review_flags": [
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0036",
+      "audio_id": "A0023",
+      "type": "temporal_overlap",
+      "start": 45.3,
+      "end": 46.3,
+      "robust_interval": [
+        45.3,
+        46.3
+      ],
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0036",
+      "audio_id": "A0025",
+      "type": "temporal_overlap",
+      "start": 45.3,
+      "end": 45.62,
+      "robust_interval": [
+        45.3,
+        45.62
+      ],
+      "review_flags": [
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0036",
+      "audio_id": "A0026",
+      "type": "temporal_overlap",
+      "start": 45.62,
+      "end": 46.3,
+      "robust_interval": [
+        45.62,
+        46.3
+      ],
+      "review_flags": [
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0037",
+      "audio_id": "A0023",
+      "type": "temporal_overlap",
+      "start": 46.3,
+      "end": 47.82,
+      "robust_interval": [
+        46.3,
+        47.82
+      ],
+      "review_flags": [
+        "Possible compound utterance",
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0037",
+      "audio_id": "A0026",
+      "type": "temporal_overlap",
+      "start": 46.3,
+      "end": 48.0,
+      "robust_interval": [
+        46.3,
+        48.0
+      ],
+      "review_flags": [
+        "Possible overlapping turns from the same voice"
+      ]
+    },
+    {
+      "visual_id": "V0038",
+      "audio_id": "A0027",
+      "type": "temporal_overlap",
+      "start": 48.288,
+      "end": 48.74,
+      "robust_interval": [
+        48.288,
+        48.74
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0038",
+      "audio_id": "A0028",
+      "type": "temporal_overlap",
+      "start": 48.74,
+      "end": 49.78,
+      "robust_interval": [
+        48.74,
+        49.78
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0038",
+      "audio_id": "A0029",
+      "type": "temporal_overlap",
+      "start": 49.78,
+      "end": 50.492,
+      "robust_interval": [
+        49.78,
+        50.492
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0039",
+      "audio_id": "A0027",
+      "type": "temporal_overlap",
+      "start": 48.375,
+      "end": 48.74,
+      "robust_interval": [
+        48.375,
+        48.74
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0039",
+      "audio_id": "A0028",
+      "type": "temporal_overlap",
+      "start": 48.74,
+      "end": 49.78,
+      "robust_interval": [
+        48.74,
+        49.78
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0039",
+      "audio_id": "A0029",
+      "type": "temporal_overlap",
+      "start": 49.78,
+      "end": 50.458,
+      "robust_interval": [
+        49.78,
+        50.458
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0040",
+      "audio_id": "A0029",
+      "type": "temporal_overlap",
+      "start": 50.607,
+      "end": 51.22,
+      "robust_interval": [
+        50.607,
+        51.22
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0040",
+      "audio_id": "A0030",
+      "type": "temporal_overlap",
+      "start": 51.22,
+      "end": 51.327,
+      "robust_interval": [
+        51.22,
+        51.327
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0041",
+      "audio_id": "A0030",
+      "type": "temporal_overlap",
+      "start": 51.327,
+      "end": 51.86,
+      "robust_interval": [
+        51.327,
+        51.86
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0041",
+      "audio_id": "A0031",
+      "type": "temporal_overlap",
+      "start": 51.84,
+      "end": 52.36,
+      "robust_interval": [
+        51.84,
+        52.36
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0041",
+      "audio_id": "A0032",
+      "type": "temporal_overlap",
+      "start": 52.34,
+      "end": 52.407,
+      "robust_interval": [
+        52.34,
+        52.407
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0042",
+      "audio_id": "A0032",
+      "type": "temporal_overlap",
+      "start": 52.967,
+      "end": 53.767,
+      "robust_interval": [
+        52.967,
+        53.767
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0043",
+      "audio_id": "A0032",
+      "type": "temporal_overlap",
+      "start": 53.767,
+      "end": 54.9,
+      "robust_interval": [
+        53.767,
+        54.9
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0044",
+      "audio_id": "A0033",
+      "type": "temporal_overlap",
+      "start": 55.22,
+      "end": 55.54,
+      "robust_interval": [
+        55.22,
+        55.54
+      ],
+      "review_flags": [
+        "Short utterance lacks independent word timing"
+      ]
+    },
+    {
+      "visual_id": "V0044",
+      "audio_id": "A0034",
+      "type": "temporal_overlap",
+      "start": 55.8,
+      "end": 56.487,
+      "robust_interval": [
+        55.8,
+        56.487
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0045",
+      "audio_id": "A0034",
+      "type": "temporal_overlap",
+      "start": 56.572,
+      "end": 59.91,
+      "robust_interval": [
+        56.572,
+        59.91
+      ],
+      "review_flags": []
+    }
+  ],
+  "phase_relations": [
+    {
+      "visual_id": "V0010.P01",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 8.16,
+      "end": 8.4,
+      "robust_interval": [
+        8.16,
+        8.4
+      ],
+      "review_flags": [
+        "Short utterance lacks independent word timing",
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0010.P01",
+      "audio_id": "A0006",
+      "type": "temporal_overlap",
+      "start": 8.4,
+      "end": 9.6667,
+      "robust_interval": [
+        8.4,
+        9.6667
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0010.P02",
+      "audio_id": "A0007",
+      "type": "temporal_overlap",
+      "start": 9.7667,
+      "end": 10.2667,
+      "robust_interval": [
+        9.7667,
+        10.2667
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0010.P03",
+      "audio_id": "A0007",
+      "type": "temporal_overlap",
+      "start": 10.3667,
+      "end": 10.7667,
+      "robust_interval": [
+        10.3667,
+        10.7667
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0010.P04",
+      "audio_id": "A0008",
+      "type": "temporal_overlap",
+      "start": 11.04,
+      "end": 11.4667,
+      "robust_interval": [
+        11.04,
+        11.4667
+      ],
+      "review_flags": [
+        "Truncated by a sampling window"
+      ]
+    },
+    {
+      "visual_id": "V0014.P01",
+      "audio_id": "A0009",
+      "type": "temporal_overlap",
+      "start": 13.8333,
+      "end": 14.32,
+      "robust_interval": [
+        13.8333,
+        14.32
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0015.P01",
+      "audio_id": "A0010",
+      "type": "temporal_overlap",
+      "start": 14.49,
+      "end": 15.033,
+      "robust_interval": [
+        14.49,
+        15.033
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0016.P01",
+      "audio_id": "A0011",
+      "type": "temporal_overlap",
+      "start": 16.3333,
+      "end": 16.6333,
+      "robust_interval": [
+        16.3333,
+        16.6333
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0016.P02",
+      "audio_id": "A0011",
+      "type": "temporal_overlap",
+      "start": 16.6333,
+      "end": 16.9333,
+      "robust_interval": [
+        16.6333,
+        16.9333
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0016.P03",
+      "audio_id": "A0011",
+      "type": "temporal_overlap",
+      "start": 16.9333,
+      "end": 17.233,
+      "robust_interval": [
+        16.9333,
+        17.233
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0017.P01",
+      "audio_id": "A0011",
+      "type": "temporal_overlap",
+      "start": 17.5333,
+      "end": 18.0,
+      "robust_interval": [
+        17.5333,
+        18.0
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0018.P01",
+      "audio_id": "A0012",
+      "type": "temporal_overlap",
+      "start": 18.7333,
+      "end": 18.98,
+      "robust_interval": [
+        18.7333,
+        18.98
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0018.P01",
+      "audio_id": "A0013",
+      "type": "temporal_overlap",
+      "start": 19.06,
+      "end": 19.533,
+      "robust_interval": [
+        19.06,
+        19.533
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0019.P01",
+      "audio_id": "A0013",
+      "type": "temporal_overlap",
+      "start": 20.0333,
+      "end": 20.18,
+      "robust_interval": [
+        20.0333,
+        20.18
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0019.P01",
+      "audio_id": "A0014",
+      "type": "temporal_overlap",
+      "start": 20.18,
+      "end": 20.4333,
+      "robust_interval": [
+        20.18,
+        20.4333
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0019.P02",
+      "audio_id": "A0014",
+      "type": "temporal_overlap",
+      "start": 20.4333,
+      "end": 20.833,
+      "robust_interval": [
+        20.4333,
+        20.833
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0023.P01",
+      "audio_id": "A0017",
+      "type": "temporal_overlap",
+      "start": 26.92,
+      "end": 27.32,
+      "robust_interval": [
+        26.92,
+        27.32
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0023.P02",
+      "audio_id": "A0017",
+      "type": "temporal_overlap",
+      "start": 27.32,
+      "end": 27.84,
+      "robust_interval": [
+        27.32,
+        27.84
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0023.P03",
+      "audio_id": "A0017",
+      "type": "temporal_overlap",
+      "start": 27.84,
+      "end": 28.24,
+      "robust_interval": [
+        27.84,
+        28.24
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0023.P04",
+      "audio_id": "A0017",
+      "type": "temporal_overlap",
+      "start": 28.24,
+      "end": 28.34,
+      "robust_interval": [
+        28.24,
+        28.34
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0025.P01",
+      "audio_id": "A0018",
+      "type": "temporal_overlap",
+      "start": 29.08,
+      "end": 29.22,
+      "robust_interval": [
+        29.08,
+        29.22
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0025.P01",
+      "audio_id": "A0019",
+      "type": "temporal_overlap",
+      "start": 29.62,
+      "end": 29.64,
+      "robust_interval": [
+        29.62,
+        29.64
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0025.P02",
+      "audio_id": "A0019",
+      "type": "temporal_overlap",
+      "start": 29.64,
+      "end": 30.24,
+      "robust_interval": [
+        29.64,
+        30.24
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0025.P03",
+      "audio_id": "A0019",
+      "type": "temporal_overlap",
+      "start": 30.24,
+      "end": 30.44,
+      "robust_interval": [
+        30.24,
+        30.44
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0039.P01",
+      "audio_id": "A0027",
+      "type": "temporal_overlap",
+      "start": 48.375,
+      "end": 48.708,
+      "robust_interval": [
+        48.375,
+        48.708
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0039.P02",
+      "audio_id": "A0028",
+      "type": "temporal_overlap",
+      "start": 49.167,
+      "end": 49.708,
+      "robust_interval": [
+        49.167,
+        49.708
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0039.P03",
+      "audio_id": "A0029",
+      "type": "temporal_overlap",
+      "start": 50.042,
+      "end": 50.458,
+      "robust_interval": [
+        50.042,
+        50.458
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0041.P01",
+      "audio_id": "A0030",
+      "type": "temporal_overlap",
+      "start": 51.327,
+      "end": 51.7667,
+      "robust_interval": [
+        51.327,
+        51.7667
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0041.P02",
+      "audio_id": "A0030",
+      "type": "temporal_overlap",
+      "start": 51.7667,
+      "end": 51.86,
+      "robust_interval": [
+        51.7667,
+        51.86
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0041.P02",
+      "audio_id": "A0031",
+      "type": "temporal_overlap",
+      "start": 51.84,
+      "end": 52.36,
+      "robust_interval": [
+        51.84,
+        52.36
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0041.P02",
+      "audio_id": "A0032",
+      "type": "temporal_overlap",
+      "start": 52.34,
+      "end": 52.4067,
+      "robust_interval": [
+        52.34,
+        52.4067
+      ],
+      "review_flags": [
+        "Overlap shorter than 0.2 s"
+      ]
+    },
+    {
+      "visual_id": "V0043.P01",
+      "audio_id": "A0032",
+      "type": "temporal_overlap",
+      "start": 53.767,
+      "end": 54.9,
+      "robust_interval": [
+        53.767,
+        54.9
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0044.P01",
+      "audio_id": "A0033",
+      "type": "temporal_overlap",
+      "start": 55.22,
+      "end": 55.54,
+      "robust_interval": [
+        55.22,
+        55.54
+      ],
+      "review_flags": [
+        "Short utterance lacks independent word timing"
+      ]
+    },
+    {
+      "visual_id": "V0044.P02",
+      "audio_id": "A0034",
+      "type": "temporal_overlap",
+      "start": 55.8,
+      "end": 56.4867,
+      "robust_interval": [
+        55.8,
+        56.4867
+      ],
+      "review_flags": []
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+[
+  {
+    "id": "sport01",
+    "category": "运动与体能",
+    "title": "羽毛球喂球与上网",
+    "source": {
+      "id": "sport01",
+      "benchmark": "自有运动",
+      "domain": "羽毛球",
+      "original_id": "31679122798",
+      "source_url": "用户本地裁片",
+      "archive_member": null,
+      "source_window_seconds": [
+        0,
+        8.0
+      ],
+      "source_duration": 8.0,
+      "source_media_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+      "clip_sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2",
+      "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+    },
+    "source_start": 0,
+    "duration": 8.0,
+    "sha256": "919c76385921d1c6292a7be4d3a44970a52fa2cda63f2fd05f53870814bb5bd2"
+  },
+  {
+    "id": "sport02",
+    "category": "运动与体能",
+    "title": "立定跳远讲解与示范",
+    "source": {
+      "id": "sport02",
+      "benchmark": "自有运动",
+      "domain": "立定跳远",
+      "original_id": "1039046118",
+      "source_url": "用户本地裁片",
+      "archive_member": null,
+      "source_window_seconds": [
+        0,
+        7.0
+      ],
+      "source_duration": 7.0,
+      "source_media_sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91",
+      "clip_sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91",
+      "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+    },
+    "source_start": 0,
+    "duration": 7.0,
+    "sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91"
+  },
+  {
+    "id": "sal02",
+    "category": "家务与个人照护",
+    "title": "清洁水槽处理器",
+    "source": {
+      "id": "sal02",
+      "benchmark": "video-SALMONN 2",
+      "domain": "厨房水槽清洁",
+      "original_id": "video/88.mp4",
+      "source_url": "https://huggingface.co/datasets/tsinghua-ee/video-SALMONN_2_testset/resolve/bed2d8e6547210d55945b056e9f0f8ab00129392/video/88.mp4",
+      "archive_member": null,
+      "source_window_seconds": [
+        0,
+        12
+      ],
+      "source_duration": 45.2,
+      "source_media_sha256": "300a1e8356b649cca5c3c5c7f5d977b4ce819757339b2ffa284da38451ee3191",
+      "clip_sha256": "35d355fe9454214e34100fc3c52f32a73884ca8e498a149bbf27b9fff0ac05f9",
+      "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+    },
+    "source_start": 0,
+    "duration": 12.0,
+    "sha256": "35d355fe9454214e34100fc3c52f32a73884ca8e498a149bbf27b9fff0ac05f9"
+  },
+  {
+    "id": "ugc02",
+    "category": "家务与个人照护",
+    "title": "头发分缝与梳理",
+    "source": {
+      "id": "ugc02",
+      "benchmark": "UGC-VideoCap",
+      "domain": "头发分缝与梳理",
+      "original_id": "PI-1e1222e2-4be2-4314-a0ba-6c44f3eb22ff",
+      "source_url": "https://drive.google.com/file/d/1HOyeT7-kbbAcyinKJ_IyaejXIBABTgbn/view",
+      "archive_member": null,
+      "source_window_seconds": [
+        0,
+        12
+      ],
+      "source_duration": 53.86666666666667,
+      "source_media_sha256": "632cc29a2ee2c936cbe4f71ec47ea5eb4b241062dfc1f23b171013ebac62e9ce",
+      "clip_sha256": "f23d6c80e07445b0fe87c3ae6a61fcbff682322062ee061bcd502e1c49913975",
+      "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+    },
+    "source_start": 0,
+    "duration": 12.0,
+    "sha256": "f23d6c80e07445b0fe87c3ae6a61fcbff682322062ee061bcd502e1c49913975"
+  },
+  {
+    "id": "timer",
+    "category": "工具、维修与手作",
+    "title": "灌溉定时器拆装",
+    "source": {
+      "id": "timer",
+      "domain": "日常操作 · 灌溉定时器",
+      "clip_sha256": "d1b69bbd7597fbcb92085e0a5f67c35cba26436d7a93a861a4b9543d939b922a",
+      "people_limit": 3,
+      "audio_source": "same original MP4",
+      "filename": "ijF-CYpTrwQ.6.mp4",
+      "media": {
+        "repo": "mhan/shot2story-videos",
+        "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+        "tar_member": "release_134k_videos/ijF-CYpTrwQ.6.mp4",
+        "header_offset": 126769692160,
+        "size": 646520,
+        "eva_revision": "146a0b13c1b8fe93b16fc7b89b949436d1993c76"
+      }
+    },
+    "source_start": 0,
+    "duration": 11.678333,
+    "sha256": "d1b69bbd7597fbcb92085e0a5f67c35cba26436d7a93a861a4b9543d939b922a"
+  },
+  {
+    "id": "apple",
+    "category": "烹饪与饮食制作",
+    "title": "苹果燕麦制作",
+    "source": {
+      "id": "apple",
+      "domain": "烹饪演示 · 糖煮苹果",
+      "clip_sha256": "22988991a4cc3cd3790a8a634b6623dd0c8cd2d5e7a4285feff5ec95e77a9dfe",
+      "people_limit": 3,
+      "audio_source": "same original MP4",
+      "filename": "2VBRpUe8idw.10.mp4",
+      "media": {
+        "repo": "mhan/shot2story-videos",
+        "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+        "tar_member": "release_134k_videos/2VBRpUe8idw.10.mp4",
+        "header_offset": 9617789440,
+        "size": 793276,
+        "eva_revision": "146a0b13c1b8fe93b16fc7b89b949436d1993c76"
+      }
+    },
+    "source_start": 0,
+    "duration": 17.517491,
+    "sha256": "22988991a4cc3cd3790a8a634b6623dd0c8cd2d5e7a4285feff5ec95e77a9dfe"
+  },
+  {
+    "id": "ugc03",
+    "category": "烹饪与饮食制作",
+    "title": "越式三明治制作",
+    "source": {
+      "id": "ugc03",
+      "benchmark": "UGC-VideoCap",
+      "domain": "三明治烹饪演示",
+      "original_id": "PI-421c3724-35b4-45e1-bfa6-418591fb5502",
+      "source_url": "https://drive.google.com/file/d/1h5qdKFxyGu-oDXsDrO6eL6GS7zjAaOO5/view",
+      "archive_member": null,
+      "source_window_seconds": [
+        0,
+        12
+      ],
+      "source_duration": 44.002335669002335,
+      "source_media_sha256": "2d488fb1515ae84dc04bb9892f15e848f4227ca3a8d575410281b390d064d328",
+      "clip_sha256": "3fa839a3f45b335f529c6de0c68a3aa030c104cafdc2256f290aefd9350e2349",
+      "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+    },
+    "source_start": 0,
+    "duration": 12.012012,
+    "sha256": "3fa839a3f45b335f529c6de0c68a3aa030c104cafdc2256f290aefd9350e2349"
+  },
+  {
+    "id": "dia01",
+    "category": "人际互动与情景表演",
+    "title": "双人桌边交接",
+    "source": {
+      "id": "dia01",
+      "benchmark": "DiaDemBench",
+      "domain": "双人桌边对话",
+      "original_id": "847",
+      "source_url": "https://huggingface.co/datasets/DiaDem-Captioner/DiaDemBench/blob/ff6dfcc152ee4cc96e92ec83a0910c187e6ad98b/videos.zip",
+      "archive_member": "videos/847.mp4",
+      "source_window_seconds": [
+        0,
+        7.5
+      ],
+      "source_duration": 7.5,
+      "source_media_sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39",
+      "clip_sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39",
+      "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+    },
+    "source_start": 0,
+    "duration": 7.5,
+    "sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39"
+  },
+  {
+    "id": "sew",
+    "category": "工具、维修与手作",
+    "title": "缝纫机送料与折边",
+    "source": {
+      "repo": "mhan/shot2story-videos",
+      "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+      "member": "release_134k_videos/-bfX4SxO9h0.24.mp4",
+      "offset": 580929024,
+      "bytes": 741494,
+      "source_sha256": "7a914c4ae7fe5f3708c4ccd326888f84808ecc976decabf45a0ff013dbd2f041",
+      "source_dataset": "EVA-data / Shot2Story"
+    },
+    "source_start": 0,
+    "duration": 12.971292,
+    "sha256": "7a914c4ae7fe5f3708c4ccd326888f84808ecc976decabf45a0ff013dbd2f041"
+  },
+  {
+    "id": "greet",
+    "category": "人际互动与情景表演",
+    "title": "两名球员赛后致意",
+    "source": {
+      "repo": "mhan/shot2story-videos",
+      "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+      "member": "release_134k_videos/JSQWkIvK7qs.6.mp4",
+      "offset": 55746326528,
+      "bytes": 634128,
+      "source_sha256": "076e9dee5b19365ce8351c81876e5af42fc96f7ef1cc5e6d1f9ee2048d47711c",
+      "source_dataset": "EVA-data / Shot2Story"
+    },
+    "source_start": 0,
+    "duration": 7.007,
+    "sha256": "ec49d39822c61ce4817d431ff2eb8f85d984564ae836524d6095180d125bce2e"
+  },
+  {
+    "id": "guitar",
+    "category": "音乐演奏与节奏表演",
+    "title": "分屏吉他节奏教学",
+    "source": {
+      "repo": "mhan/shot2story-videos",
+      "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+      "member": "release_134k_videos/gI8lfbTYqwQ.15.mp4",
+      "offset": 119651185664,
+      "bytes": 1755318,
+      "source_sha256": "6e7eb7c776dd4fa90e0edcf1b011fc344b4e9517f7ad860db523aeba7f23c6c8",
+      "source_dataset": "EVA-data / Shot2Story"
+    },
+    "source_start": 0,
+    "duration": 12.012,
+    "sha256": "4ac0e337a3587c29d1073da618ea546ab5eb9e654c11c5bb4d30b2199d56fafa"
+  },
+  {
+    "id": "drums",
+    "category": "音乐演奏与节奏表演",
+    "title": "架子鼓与镲片演示",
+    "source": {
+      "repo": "mhan/shot2story-videos",
+      "revision": "0e214aed3c0bc8ac5e9b8b641b150187030b4916",
+      "member": "release_134k_videos/M1KSdLZYg-c.6.mp4",
+      "offset": 64376304128,
+      "bytes": 758109,
+      "source_sha256": "c573060a95a9b8575ff7e7e5564911a4163d61ea9aec993b8a602e8f2b2f2576",
+      "source_dataset": "EVA-data / Shot2Story"
+    },
+    "source_start": 0,
+    "duration": 9.009,
+    "sha256": "da1a928df1edf9f403917059881a40811e12b718e8256b5b4de1d9f1dc51d19a"
+  }
+]

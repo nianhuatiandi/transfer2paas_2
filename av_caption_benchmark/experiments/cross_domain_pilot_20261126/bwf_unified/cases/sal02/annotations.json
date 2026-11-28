@@ -1,0 +1,543 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "sal02",
+    "benchmark": "video-SALMONN 2",
+    "domain": "厨房水槽清洁",
+    "original_id": "video/88.mp4",
+    "source_url": "https://huggingface.co/datasets/tsinghua-ee/video-SALMONN_2_testset/resolve/bed2d8e6547210d55945b056e9f0f8ab00129392/video/88.mp4",
+    "archive_member": null,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "source_duration": 45.2,
+    "source_media_sha256": "300a1e8356b649cca5c3c5c7f5d977b4ce819757339b2ffa284da38451ee3191",
+    "clip_sha256": "35d355fe9454214e34100fc3c52f32a73884ca8e498a149bbf27b9fff0ac05f9",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 12.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 4.333333333333333,
+      "first_frame": 0,
+      "end_frame_exclusive": 130
+    },
+    {
+      "id": "S02",
+      "start": 4.333333333333333,
+      "end": 6.0,
+      "first_frame": 130,
+      "end_frame_exclusive": 180
+    },
+    {
+      "id": "S03",
+      "start": 6.0,
+      "end": 6.4,
+      "first_frame": 180,
+      "end_frame_exclusive": 192
+    },
+    {
+      "id": "S04",
+      "start": 6.4,
+      "end": 7.033333333333333,
+      "first_frame": 192,
+      "end_frame_exclusive": 211
+    },
+    {
+      "id": "S05",
+      "start": 7.033333333333333,
+      "end": 7.6,
+      "first_frame": 211,
+      "end_frame_exclusive": 228
+    },
+    {
+      "id": "S06",
+      "start": 7.6,
+      "end": 10.0,
+      "first_frame": 228,
+      "end_frame_exclusive": 300
+    },
+    {
+      "id": "S07",
+      "start": 10.0,
+      "end": 12.0,
+      "first_frame": 300,
+      "end_frame_exclusive": 360
+    }
+  ],
+  "input_frames": {
+    "visual": 127,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了清理垃圾处理器（disposal）的过程，包括取下橡胶挡板、使用工具拨动内部部件以及开水冲洗。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "戴蓝色手套的人"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "手持金属钳子的人"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "手持金属钳子的人"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.5,
+        "description": "用手伸入垃圾处理器的开口处，抓住并向上拉出黑色的橡胶挡板。"
+      },
+      {
+        "id": "E02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 4.33,
+        "end": 6.0,
+        "description": "用金属钳子夹住右侧的旋转锤进行拨动。"
+      },
+      {
+        "id": "E03",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 6.0,
+        "end": 6.4,
+        "description": "继续用金属钳子拨动右侧的旋转锤。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E01",
+        "kind": "motion",
+        "label": "取出橡胶挡板",
+        "start": 0.0,
+        "end": 1.5,
+        "start_range": [
+          0.0,
+          0.1
+        ],
+        "end_range": [
+          1.4,
+          1.5
+        ],
+        "detail": "戴着蓝色手套的手从左侧进入画面，手指探入带有“insinkerator”字样的圆形开口内。随后手捏住内部的黑色橡胶状物体，将其整体向上拔出，露出下方生锈的金属研磨腔体。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "戴蓝手套的手指刚接触开口内的黑色橡胶挡板边缘。"
+          },
+          {
+            "time": 1.2,
+            "observation": "手将黑色橡胶挡板向上提拉，挡板的底部开始脱离开口。"
+          },
+          {
+            "time": 1.5,
+            "observation": "挡板被完全移出画面，暴露出下方的三个金属螺栓和脏污的内壁。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手"
+        ],
+        "movement_roles": [
+          "抓取",
+          "上提"
+        ],
+        "subphases": [],
+        "brief": "戴蓝手套的手伸入垃圾处理器开口，抓出黑色橡胶挡板。"
+      },
+      {
+        "id": "A02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E02",
+        "kind": "motion",
+        "label": "用钳子拨动部件",
+        "start": 4.33,
+        "end": 6.0,
+        "start_range": [
+          4.33,
+          4.43
+        ],
+        "end_range": [
+          5.93,
+          6.0
+        ],
+        "detail": "一把金属尖嘴钳从画面右上方伸入处理器的研磨腔内，钳口精准地夹住右侧的一个圆柱形旋转锤。操作者利用钳子的力量反复拨动该部件，使其在轴心周围产生微小的转动位移。",
+        "evidence": [
+          {
+            "time": 4.33,
+            "observation": "金属钳子首次出现在画面中，钳口正靠近右侧的旋转锤。"
+          },
+          {
+            "time": 5.5,
+            "observation": "钳子紧紧夹住旋转锤的边缘，可以看到部件随钳子的动作发生轻微偏转。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手(推测)"
+        ],
+        "movement_roles": [
+          "夹持",
+          "拨动"
+        ],
+        "subphases": [],
+        "brief": "用金属钳子夹住并反复拨动垃圾处理器右侧的旋转锤。"
+      },
+      {
+        "id": "A03",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "E03",
+        "kind": "motion",
+        "label": "持续拨动部件",
+        "start": 6.0,
+        "end": 6.4,
+        "start_range": [
+          6.0,
+          6.1
+        ],
+        "end_range": [
+          6.3,
+          6.4
+        ],
+        "detail": "镜头视角略微拉近或改变，金属钳子依然保持在研磨腔内，钳口死死咬合着右侧的旋转锤。随着画面的推进，钳子保持着施力状态，准备进行下一步的操作。",
+        "evidence": [
+          {
+            "time": 6.0,
+            "observation": "钳子处于夹紧右侧旋转锤的状态。"
+          },
+          {
+            "time": 6.37,
+            "observation": "钳子仍然夹在原位，未见松开。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手(推测)"
+        ],
+        "movement_roles": [
+          "保持夹持"
+        ],
+        "subphases": [],
+        "brief": "金属钳子继续保持夹住右侧旋转锤的姿态。"
+      }
+    ],
+    "uncertainties": [
+      "S04 (6.4s - 7.03s): 水流从上方冲入垃圾处理器内进行初步清洗，但未见操作者出现。",
+      "S05 (7.03s - 7.6s): 水流持续注入垃圾处理器，未见操作者出现。",
+      "S06 (7.6s - 10.0s): 大量水流灌满垃圾处理器进行深度冲洗，未见操作者出现。",
+      "S07 (10.0s - 12.0s): 垃圾处理器启动并在有水状态下高速旋转清洁，未见操作者出现。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.16,
+        "end": 4.32,
+        "start_range": [
+          0.08,
+          0.24
+        ],
+        "end_range": [
+          4.24,
+          4.4
+        ],
+        "speaker_id": "V01",
+        "description": "男声，中低音区，语速适中，语气自然。",
+        "evidence": [
+          {
+            "time": 0.5,
+            "observation": "清晰的男性说话声"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "One of my most asked questions on here is how do I clean my garbage disposal?"
+      },
+      {
+        "id": "N001",
+        "kind": "music",
+        "layer": "background",
+        "start": 0.96,
+        "end": 12.0,
+        "start_range": [
+          0.76,
+          1.16
+        ],
+        "end_range": [
+          11.8,
+          12.0
+        ],
+        "speaker_id": null,
+        "description": "轻快的器乐背景音乐，包含拨弦和打击乐元素。",
+        "evidence": [
+          {
+            "time": 2.0,
+            "observation": "可听到持续的节奏性音乐"
+          },
+          {
+            "time": 8.0,
+            "observation": "音乐持续播放"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 4.48,
+        "end": 5.12,
+        "start_range": [
+          4.4,
+          4.56
+        ],
+        "end_range": [
+          5.04,
+          5.2
+        ],
+        "speaker_id": "V01",
+        "description": "男声，中低音区，语速适中，语气自然。",
+        "evidence": [
+          {
+            "time": 4.7,
+            "observation": "清晰的男性说话声"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Well, let's do it."
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 5.52,
+        "end": 11.84,
+        "start_range": [
+          5.44,
+          5.6
+        ],
+        "end_range": [
+          11.76,
+          11.92
+        ],
+        "speaker_id": "V01",
+        "description": "男声，中低音区，语速适中，语气自然。",
+        "evidence": [
+          {
+            "time": 6.0,
+            "observation": "清晰的男性说话声"
+          },
+          {
+            "time": 10.0,
+            "observation": "清晰的男性说话声"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "This one was a little extra gross, so I'm gonna knock these teeth loose with a flathead and a hammer, run some water, and then run some dish soap through it."
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [
+      {
+        "id": "A02",
+        "reason": "Invalid action/shot interval; raw value preserved"
+      }
+    ],
+    "pairs": [
+      {
+        "action_id": "A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.16,
+          1.5
+        ],
+        "overlap_s": 1.34
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.96,
+          1.5
+        ],
+        "overlap_s": 0.54
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.0,
+          6.4
+        ],
+        "overlap_s": 0.4
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.0,
+          6.4
+        ],
+        "overlap_s": 0.4
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.16,
+          1.5
+        ],
+        "overlap_s": 1.34
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          6.0,
+          6.4
+        ],
+        "overlap_s": 0.4
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.96,
+          1.5
+        ],
+        "overlap_s": 0.54
+      },
+      {
+        "action_id": "A03",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          6.0,
+          6.4
+        ],
+        "overlap_s": 0.4
+      }
+    ]
+  },
+  "warnings": [
+    "S04 (6.4s - 7.03s): 水流从上方冲入垃圾处理器内进行初步清洗，但未见操作者出现。",
+    "S05 (7.03s - 7.6s): 水流持续注入垃圾处理器，未见操作者出现。",
+    "S06 (7.6s - 10.0s): 大量水流灌满垃圾处理器进行深度冲洗，未见操作者出现。",
+    "S07 (10.0s - 12.0s): 垃圾处理器启动并在有水状态下高速旋转清洁，未见操作者出现。",
+    "A02　Invalid interval: A02",
+    {
+      "id": "A02",
+      "reason": "Invalid action/shot interval; raw value preserved"
+    }
+  ]
+}

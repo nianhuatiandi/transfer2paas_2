@@ -1,0 +1,416 @@
+{
+  "source": {
+    "id": "dia04",
+    "benchmark": "DiaDemBench",
+    "original_id": "559",
+    "source_url": "https://huggingface.co/datasets/DiaDem-Captioner/DiaDemBench/blob/ff6dfcc152ee4cc96e92ec83a0910c187e6ad98b/videos.zip",
+    "archive_member": "videos/559.mp4",
+    "original_file": "dia_559.mp4",
+    "source_media_sha256": "bdfe4354deb687665556c766395013f18f9354a62a8ad25294dd1b62026482fe",
+    "clip_sha256": "bdfe4354deb687665556c766395013f18f9354a62a8ad25294dd1b62026482fe",
+    "source_duration": 10.8441875,
+    "source_window_seconds": [
+      0,
+      10.8441875
+    ],
+    "card": "04",
+    "domain": "双人驾车与跨镜台词",
+    "domain_rule": "对话与互动场景：分别追踪每人。对他人或物体的独立可见动作、明确的交流手势可作 L2。持续注视和站坐姿态记状态。仅有嘴动不推断对白内容。切镜后需重新核验人物与对象；跨镜身份不确定记局部 ID。",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "抽查备注": [
+      "从车辆远景切至树林车道的正面视角时同一句台词仍在继续。车上两人可见，但远景中看不清每个人的身体动作。车辆的轨迹不宜直接计作人体 L3。相隔约 0.04 秒的两个自动切镜候选视作一次转场附近的检测响应。"
+    ]
+  },
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "duration_seconds": 10.8501875,
+  "shot_candidates": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 3.884875,
+      "first_frame": 0,
+      "end_frame_exclusive": 93
+    },
+    {
+      "id": "S02",
+      "start": 3.884875,
+      "end": 8.3059375,
+      "first_frame": 93,
+      "end_frame_exclusive": 199
+    },
+    {
+      "id": "S03",
+      "start": 8.3059375,
+      "end": 8.3476875,
+      "first_frame": 199,
+      "end_frame_exclusive": 200
+    },
+    {
+      "id": "S04",
+      "start": 8.3476875,
+      "end": 10.8501875,
+      "first_frame": 200,
+      "end_frame_exclusive": 260
+    }
+  ],
+  "timestamped_frames": 112,
+  "stages": {
+    "visual": "visual_v2",
+    "audio": "audio_v2"
+  },
+  "visual": {
+    "clip_id": "dia04",
+    "mode": "VISUAL_GT",
+    "clock": "source_time",
+    "facts": [
+      {
+        "id": "F1",
+        "kind": "action",
+        "level": "L2",
+        "actor": "红色敞篷车",
+        "object": "碎石路",
+        "parent_ids": [],
+        "claim": "一辆红色敞篷车在石拱桥下的碎石路上行驶。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": "[0.0, 2.8]",
+        "visible_spans": [
+          [
+            0.0,
+            2.8
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": null,
+        "evidence": "视频帧 0-67 (0.0s - 2.8s) 显示车辆在桥上及桥下道路行驶。"
+      },
+      {
+        "id": "F2",
+        "kind": "action",
+        "level": "L2",
+        "actor": "红色敞篷车",
+        "object": "草地",
+        "parent_ids": [],
+        "claim": "红色敞篷车驶离铺装路面，进入长满草的田野中行驶并扬起尘土。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": "[5.3, 8.3]",
+        "visible_spans": [
+          [
+            5.3,
+            8.3
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": null,
+        "evidence": "视频帧 129-199 (5.3s - 8.3s) 显示车辆穿过草地，后方有明显扬尘。"
+      },
+      {
+        "id": "F3",
+        "kind": "state",
+        "level": null,
+        "actor": "驾驶员",
+        "object": "汽车方向盘",
+        "parent_ids": [],
+        "claim": "一名戴帽子的男子坐在驾驶位上操控车辆。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": "[8.8, 10.8]",
+        "visible_spans": [
+          [
+            8.8,
+            10.8
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": null,
+        "evidence": "视频帧 212-259 (8.8s - 10.8s) 透过挡风玻璃可见驾驶员身影。"
+      },
+      {
+        "id": "F4",
+        "kind": "state",
+        "level": null,
+        "actor": "乘客",
+        "object": "副驾驶座",
+        "parent_ids": [],
+        "claim": "一名女子坐在副驾驶位上随车前行。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": "[8.8, 10.8]",
+        "visible_spans": [
+          [
+            8.8,
+            10.8
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": null,
+        "evidence": "视频帧 212-259 (8.8s - 10.8s) 透过挡风玻璃可见乘客身影。"
+      },
+      {
+        "id": "F5",
+        "kind": "action",
+        "level": "L2",
+        "actor": "红色敞篷车",
+        "object": "林间土路",
+        "parent_ids": [],
+        "claim": "红色敞篷车沿着树木环绕的土路向镜头方向行驶。",
+        "polarity": "affirmed",
+        "certainty": "asserted",
+        "instance_range": "[8.3, 10.85]",
+        "visible_spans": [
+          [
+            8.3,
+            10.85
+          ]
+        ],
+        "boundary_ranges": null,
+        "context_range": null,
+        "evidence": "视频帧 199-259 (8.3s - 10.85s) 显示车辆在树林小径上迎面驶来。"
+      }
+    ],
+    "relations": [
+      {
+        "id": "R1",
+        "predicate": "sequence",
+        "from_id": "F1",
+        "to_id": "F2",
+        "claim": "车辆先在石桥附近行驶，随后驶入草地。",
+        "evidence": "基于 F1 和 F2 的时间顺序及场景转换。",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R2",
+        "predicate": "concurrent_with",
+        "from_id": "F3",
+        "to_id": "F5",
+        "claim": "驾驶员操控车辆的动作与车辆在林间行驶的过程同时发生。",
+        "evidence": "时间区间重叠且逻辑相关。",
+        "certainty": "asserted"
+      },
+      {
+        "id": "R3",
+        "predicate": "concurrent_with",
+        "from_id": "F4",
+        "to_id": "F5",
+        "claim": "乘客乘坐车辆的状态与车辆在林间行驶的过程同时发生。",
+        "evidence": "时间区间重叠且逻辑相关。",
+        "certainty": "asserted"
+      }
+    ],
+    "residual": []
+  },
+  "audio": {
+    "clip_id": "dia04",
+    "clock": "global clip clock; audio zero = clip zero",
+    "coverage": {
+      "start_sec": 0.0,
+      "end_sec": 10.85
+    },
+    "audio_events": [
+      {
+        "id": "E1",
+        "type": "music",
+        "layer": "background",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "一段管弦乐配乐持续播放，包含弦乐和打击乐元素",
+        "instance_range": [
+          0.0,
+          10.85
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 2.5,
+        "confidence": "high"
+      },
+      {
+        "id": "E2",
+        "type": "sfx",
+        "layer": "foreground",
+        "speaker_id": null,
+        "transcript": null,
+        "claim": "几声尖锐的金属撞击或武器交锋声",
+        "instance_range": [
+          0.6,
+          3.9
+        ],
+        "boundary_ranges": null,
+        "evidence_time": 1.7,
+        "confidence": "medium",
+        "intermittent_envelope_only": true
+      },
+      {
+        "id": "E3",
+        "type": "speech",
+        "layer": "foreground",
+        "speaker_id": "V01",
+        "transcript": "In the town I tried to use my powers on the soldiers, but it didn't work.",
+        "claim": "女声清晰说出英文句子",
+        "instance_range": [
+          7.04,
+          10.56
+        ],
+        "boundary_ranges": {
+          "start": [
+            7.04,
+            7.04
+          ],
+          "end": [
+            10.56,
+            10.56
+          ]
+        },
+        "evidence_time": 8.5,
+        "confidence": "high"
+      }
+    ],
+    "unresolved": [
+      "金属撞击声的具体来源无法从音频中确认"
+    ]
+  },
+  "original_audio_events": [
+    {
+      "id": "E1",
+      "type": "music",
+      "layer": "background",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "一段管弦乐配乐持续播放，包含弦乐和打击乐元素",
+      "instance_range": [
+        0.0,
+        10.85
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 2.5,
+      "confidence": "high"
+    },
+    {
+      "id": "E2",
+      "type": "sfx",
+      "layer": "foreground",
+      "speaker_id": null,
+      "transcript": null,
+      "claim": "几声尖锐的金属撞击或武器交锋声",
+      "instance_range": [
+        0.6,
+        3.9
+      ],
+      "boundary_ranges": null,
+      "evidence_time": 1.7,
+      "confidence": "medium"
+    },
+    {
+      "id": "E3",
+      "type": "speech",
+      "layer": "foreground",
+      "speaker_id": "V01",
+      "transcript": "In the town I tried to use my powers on the soldiers, but it didn't work.",
+      "claim": "女声清晰说出英文句子",
+      "instance_range": [
+        7.04,
+        10.56
+      ],
+      "boundary_ranges": {
+        "start": [
+          7.04,
+          7.04
+        ],
+        "end": [
+          10.56,
+          10.56
+        ]
+      },
+      "evidence_time": 8.5,
+      "confidence": "high"
+    }
+  ],
+  "sentence_alignment": {},
+  "temporal_edges": [
+    {
+      "visual_id": "F1",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          0.0,
+          2.8
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F2",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          5.3,
+          8.3
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F2",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          7.04,
+          8.3
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F5",
+      "audio_id": "E1",
+      "audio_layer": "background",
+      "audio_type": "music",
+      "intersections": [
+        [
+          8.3,
+          10.85
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    },
+    {
+      "visual_id": "F5",
+      "audio_id": "E3",
+      "audio_layer": "foreground",
+      "audio_type": "speech",
+      "intersections": [
+        [
+          8.3,
+          10.56
+        ]
+      ],
+      "peak_in_visible_span": null,
+      "status": "仅名义区间",
+      "nominal": true,
+      "derived": true
+    }
+  ],
+  "warnings": [
+    "E2 将若干短音合成一段，包络内可能有空隙；保留事件，排除该包络产生的边。",
+    "从车辆远景切至树林车道的正面视角时同一句台词仍在继续。车上两人可见，但远景中看不清每个人的身体动作。车辆的轨迹不宜直接计作人体 L3。相隔约 0.04 秒的两个自动切镜候选视作一次转场附近的检测响应。",
+    "本次未输出 L3 部位运动，需按画面判定是否有漏项。"
+  ]
+}

@@ -1,0 +1,347 @@
+0.00–0.30 s | V0001 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | split-step
+The man performs a split-step. He jumps slightly and lands with feet apart in preparation for movement.
+Included in silver reference
+
+0.00–7.52 s | A0001 · sound · shoe squeak and ball impact | footsteps and racket hits
+Continuous rhythmic shuffling footsteps with sharp squeaks are audible from the beginning of the interval, accompanied by distinct percussive impacts consistent with a racket hitting shuttlecocks at approximately 2.8s, 4.3s, and 6.5s.
+Included in silver reference
+
+0.20–0.50 s | V0002 · motion · man with short dark hair, wearing a white shirt and black vest | overarm hand feed
+The second player feeds the shuttlecock overhand to P1. Standing near the net, he tosses or hits the shuttlecock towards P1's side of the court.
+Included in silver reference
+
+0.60–1.00 s | V0003 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | backhand net kill
+The man performs a backhand net kill. He steps forward to the net and executes a quick downward striking motion with his racket held in a backhand grip, hitting the shuttlecock downwards over the net.
+Included in silver reference
+
+1.10–1.40 s | V0004 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | recover position
+The man recovers his position after the shot. Following the previous shot, he returns towards the center line of his half-court.
+Included in silver reference
+
+1.36–1.84 s | A0002 · speech · male speaker | Speech
+Jump this way.
+Original: 往这边跳。
+Included in silver reference
+
+1.80–2.10 s | V0005 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | split-step
+The man performs another split-step. As the next shuttlecock approaches, he makes a small hop and lands wide-footed.
+Included in silver reference
+
+2.10–2.40 s | V0006 · motion · man with short dark hair, wearing a white shirt and black vest | overarm hand feed
+The second player provides another overhand feed. From across the net, he sends the shuttlecock towards P1 again.
+Included in silver reference
+
+2.50–2.90 s | V0007 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | backhand net kill
+The man performs another backhand net kill. He again moves quickly to the net and uses a backhand grip to execute a sharp downward stroke, sending the shuttlecock across the net.
+Included in silver reference
+
+3.00–5.45 s | V0008 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | stepping backward
+The man steps backward to reposition himself on the court. He takes a step back with his right foot while holding his racket, adjusting his stance after hitting the shuttlecock.
+Included in silver reference
+
+3.17–7.60 s | V0009 · motion · a man wearing a black t-shirt and grey shorts on one side of the net, and a man wearing a white shirt and black vest on the other side | playing badminton
+Another person plays a badminton rally against the first man. The second player returns shots across the net during the rally.
+Review: Uncertain in local audiovisual review, Truncated by a sampling window
+
+5.28–5.60 s | A0003 · speech · male speaker | Speech
+One,
+Original: 一个，
+Review: Short utterance lacks independent word timing
+
+6.99–7.44 s | A0004 · speech · male speaker | Speech
+Two.
+Original: 两个。
+Review: Word times differ from relistening by more than 0.65 s
+
+8.00–11.77 s | V0010 · gesture · man with short dark hair, wearing a black t-shirt and pink shorts | explanatory gesture
+While speaking, the man makes several explanatory gestures with his free hand. His left hand moves up and down and points outward to emphasize his words.
+Review: Truncated by a sampling window
+
+8.00–13.67 s | V0011 · visible_speech · man with short dark hair, wearing a black t-shirt and pink shorts | speaking to camera
+A man is standing and speaking to the camera while gesturing with his hands and holding a racket. The man faces forward, looking directly at the camera. His mouth moves continuously as he speaks, accompanied by expressive facial movements including smiling and raising his eyebrows. He uses his left hand for various gestures, such as opening it outward, bringing it to his chest, pointing, and touching near his ear, while his right hand holds a badminton racket. Posture: standing. Visible evidence: Repeated articulatory lip and jaw movements are clearly visible throughout the segment, coordinated with facial expressions and hand gestures.
+Included in silver reference
+
+8.16–8.40 s | A0005 · speech · male speaker | Speech
+Okay,
+Original: 好，
+Review: Short utterance lacks independent word timing
+
+8.40–9.68 s | A0006 · speech · male speaker | Speech
+Do you often encounter this problem?
+Original: 你们是不是经常遇到这个问题？
+Included in silver reference
+
+9.76–10.80 s | A0007 · speech · male speaker | Speech
+When you are playing ball,
+Original: 当你们在打球的时候，
+Included in silver reference
+
+10.37–13.61 s | V0012 · gesture · man with short dark hair, wearing a black t-shirt and pink shorts | explanatory gesture
+The man makes several explanatory gestures with his free hand. His left hand moves up and down and points outward to emphasize his words.
+Review: Truncated by a sampling window
+
+11.04–12.08 s | A0008 · speech · male speaker | Speech
+you were originally proactive,
+Original: 本来你们是主动的，
+Included in silver reference
+
+11.97–13.61 s | V0013 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | demonstrating stroke
+The man demonstrates a badminton stroke. He swings his racket downwards and forwards in a controlled manner while remaining stationary.
+Included in silver reference
+
+12.32–14.32 s | A0009 · speech · male speaker | Speech
+the opponent has already had a hard time receiving the smash, drop shot, and slide,
+Original: 劈吊滑板别人已经接得很难受了，
+Included in silver reference
+
+13.83–14.43 s | V0014 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | underarm upward stroke
+He turns away from the camera and executes an underarm upward stroke on the court. Facing the net, he steps into position and swings his racket upwards to hit the shuttlecock over the net.
+Included in silver reference
+
+14.43–15.03 s | V0015 · motion · man with short dark hair, wearing a white shirt and black vest | stroke unspecified
+The opponent returns the shuttlecock across the net. Positioned on the far side of the court, he moves laterally and strikes the incoming shuttlecock back towards P1's side.
+Included in silver reference
+
+14.49–16.11 s | A0010 · speech · male speaker | Speech
+because the lobbing action is wrong,
+Original: 由于挑球动作不对，
+Included in silver reference
+
+16.17–18.00 s | A0011 · speech · male speaker | Speech
+because this method is not very correct.
+Original: 由于这个方法不是很正确。
+Included in silver reference
+
+16.33–17.23 s | V0016 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | jumping smash
+He performs a jumping overhead smash. Running backwards, he leaps high into the air, swings his arm forcefully downwards to strike the shuttlecock, and lands awkwardly.
+Included in silver reference
+
+17.53–18.03 s | V0017 · motion · man with short dark hair, wearing a white shirt and black vest | lunge
+The opponent lunges low to defend against the smash. Dropping quickly to his right side near the floor, he extends his arm and racket to intercept the fast-moving shuttlecock.
+Included in silver reference
+
+18.42–18.98 s | A0012 · speech · male speaker | Speech
+When you lift the shuttlecock,
+Original: 你挑球，
+Included in silver reference
+
+18.73–19.53 s | V0018 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | net lift unspecified side
+He bends down close to the net and lifts the shuttlecock upwards. Moving forward to the service line area, he crouches low and uses an underarm swing to flick the shuttlecock up and forwards.
+Included in silver reference
+
+19.06–20.18 s | A0013 · speech · male speaker | Speech
+lifting it to mid-court without enough power,
+Original: 挑个半场又借不上力，
+Included in silver reference
+
+20.03–20.83 s | V0019 · motion · man with short dark hair, wearing a white shirt and black vest | jumping smash
+The opponent jumps high to execute a powerful downward smash. Leaping well above court level, he swings his racket powerfully downwards to strike the incoming lifted shuttlecock.
+Included in silver reference
+
+20.18–20.98 s | A0014 · speech · male speaker | Speech
+and then losing your balance,
+Original: 然后你还失去重心，
+Included in silver reference
+
+21.30–23.94 s | A0015 · speech · male speaker | Speech
+the opponent can immediately push from defense to mid-court and smash down.
+Original: 别人从被动立马推到半场就可以杀下来。
+Included in silver reference
+
+21.60–26.06 s | V0020 · visible_speech · man with short dark hair, wearing a black t-shirt and pink shorts | speaking
+A man stands facing forward while speaking and gesturing with his hands and racket. The man is positioned centrally in an indoor badminton court. He faces the camera directly, maintaining eye contact as he speaks. His mouth moves continuously throughout the segment, indicating active speech. He uses expressive hand gestures: initially holding a badminton racket horizontally in his right hand (viewer's left), then lowering it to point downward around 2 seconds, and subsequently raising his left hand near his face for emphasis between 3-4 seconds. His facial expressions shift from neutral concentration to slight smiles during key points of explanation. Posture: standing. Visible evidence: Continuous articulatory movements of the lips and jaw are clearly visible during the medium close-up shots (from 0.8s to 5.2s). His facial expressions change dynamically as he speaks, and his head nods slightly in rhythm with his delivery.
+Included in silver reference
+
+21.60–26.06 s | V0021 · gesture · man with short dark hair, wearing a black t-shirt and pink shorts | hand gesturing
+The man gestures with his hands. He uses his free left hand to make various explanatory gestures, such as an open palm, while talking.
+Included in silver reference
+
+23.82–25.95 s | A0016 · speech · male speaker | Speech
+Or when you are attacking more aggressively,
+Original: 或者是你更加的时候你在进攻，
+Included in silver reference
+
+26.24–26.76 s | V0022 · motion · man with short dark hair, wearing a white shirt and black vest | serving
+Another man serves the shuttlecock. He stands behind the service line and executes an underarm serve, sending the shuttlecock across the net.
+Review: Uncertain in local audiovisual review
+
+26.34–28.34 s | A0017 · speech · male speaker | Speech
+after your smash, he was off-balance trying to receive a defensive shot;
+Original: 你杀完后他本来是去重心接一个防守球，
+Included in silver reference
+
+26.92–28.48 s | V0023 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | jumping smash
+The man performs a jumping smash. He moves backward, leaps into the air, and delivers a powerful downward swing with his racket to hit the shuttlecock.
+Included in silver reference
+
+28.48–29.08 s | V0024 · motion · man with short dark hair, wearing a white shirt and black vest | defensive block
+Another man blocks the smash defensively. He adopts a wide stance and holds his racket up to absorb the impact of the fast shuttlecock, deflecting it back over the net.
+Review: Uncertain in local audiovisual review
+
+28.66–29.22 s | A0018 · speech · male speaker | Speech
+you move forward,
+Original: 你往前去，
+Included in silver reference
+
+29.08–30.44 s | V0025 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | lunging net shot
+The man lunges forward to play a net shot. He rushes towards the net, dropping low on his leading leg, and gently taps the shuttlecock just over the tape.
+Included in silver reference
+
+29.62–30.58 s | A0019 · speech · male speaker | Speech
+the shuttle wasn't even that low,
+Original: 本来球也不是很低，
+Included in silver reference
+
+30.44–31.80 s | V0026 · motion · man with short dark hair, wearing a white shirt and black vest | lifting shuttlecock
+Another man lifts the shuttlecock from the forecourt. He stretches out his arm and uses an upward flicking motion with his wrist to send the shuttlecock deep into the opponent's court.
+Review: Uncertain in local audiovisual review
+
+30.58–32.10 s | A0020 · speech · male speaker | Speech
+but with incorrect technique, one lift sends it to mid-court.
+Original: 但是动作不对一挑半场球，
+Included in silver reference
+
+32.04–34.68 s | A0021 · speech · male speaker | Speech
+If your movement is wrong, let alone if others drop the ball.
+Original: 那如果你动作不对，别人吊球的话那就更不用说了。
+Included in silver reference
+
+32.40–33.00 s | V0027 · visible_speech · man with short dark hair, wearing a black t-shirt and pink shorts | speaking to camera
+A man stands facing forward while speaking and gesturing with his hands. The man faces the camera directly with an upright posture. He speaks continuously throughout the clip, accompanied by natural mouth movements and slight head nods for emphasis. His right hand holds a badminton racket handle near waist level, remaining relatively steady, while his left hand actively gestures in front of his chest—opening palm-upward and moving slightly outward—to illustrate his points. Posture: standing. Visible evidence: Clear articulatory lip and jaw movements coordinated with hand gestures while facing the camera.
+Included in silver reference
+
+32.40–33.00 s | V0028 · gesture · man with short dark hair, wearing a black t-shirt and pink shorts | gesturing with hands
+The man gestures with his free hand. During his speech from 0.8s to 1.4s, he uses his left hand to make explanatory gestures, opening his palm and moving it slightly outward.
+Included in silver reference
+
+34.23–34.73 s | V0029 · motion · man with short dark hair, wearing a white shirt and black vest | overarm hand feed
+The player feeds the shuttlecock overhand. From across the net, P2 tosses the shuttlecock upward toward P1's court using an overarm motion.
+Included in silver reference
+
+34.83–36.13 s | V0030 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | lunge
+The man lunges forward to hit the shuttlecock. P1 steps rapidly forward into a deep lunge position near the net to reach the incoming shuttlecock.
+Included in silver reference
+
+34.86–40.38 s | A0022 · speech · male speaker | Speech
+Or when you play doubles or mixed doubles, there's a heavy hitter behind you; if you lift poorly, it ends with a smash down the middle.
+Original: 或者在你打双打或混双啊，后面是一个重炮，你挑球挑的不好一挑完了中杀。
+Review: Possible compound utterance
+
+35.33–35.73 s | V0031 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | forehand net shot
+The man hits a forehand net shot. While lunged low at the net, P1 swings the racket horizontally under the tape line to softly return the shuttlecock just over the net.
+Review: Uncertain in local audiovisual review
+
+37.34–41.87 s | V0032 · visible_speech · man with short dark hair, wearing a black t-shirt and pink shorts | speaking to camera
+A man stands on an indoor badminton court holding a racket while speaking to the camera. The speaker maintains an upright posture facing forward. His mouth moves continuously as he talks, accompanied by expressive hand gestures involving both the racket and his free hand. Posture: standing. Visible evidence: Continuous articulatory movements of the lips and jaw are clearly visible during the medium close-up segment from 00:01 to 00:05, synchronized with his head nods and hand gestures.
+Included in silver reference
+
+40.30–47.82 s | A0023 · speech · male voice speaking Mandarin | Speech
+Okay, but if your technique is correct, no matter how difficult the ball is, once you lift it up high and into position, others won't be able to smash it down; even players with powerful smashes won't be able to smash it down.
+Original: 好，但是如果你动作对的话，再怎么难受的球你一挑起来又高又到位，别人杀不下来；再怎么重炮的球员他都杀不下来的。
+Review: Possible compound utterance, Possible overlapping turns from the same voice
+
+40.58–44.82 s | A0024 · speech · male voice speaking Mandarin | Speech
+But if your technique is correct, no matter how difficult the shuttlecock is, once you lift it up, it will be high and in position.
+Original: 但是如果你动作对的话，再怎么难受的球你一挑起来又高又到位。
+Review: Possible compound utterance, Possible overlapping turns from the same voice
+
+42.10–42.90 s | V0033 · motion · man with short dark hair, wearing a white shirt and black vest | lunging and hitting shuttlecock
+He lunges forward to hit a low shuttlecock near the net. From a ready stance, he steps out into a deep lunge on his right leg and swings his racket upward to strike the incoming shuttlecock just above the floor level before recovering.
+Review: Actor identity unresolved
+
+42.90–43.70 s | V0034 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | hitting shuttlecock
+He hits the returning shuttlecock from across the net. Positioned mid-court, he tracks the descending shuttlecock and executes an underarm stroke that sends it high toward the opponent's side.
+Included in silver reference
+
+44.20–45.20 s | V0035 · motion · man with short dark hair, wearing a white shirt and black vest | jumping and smashing
+He jumps and performs an overhead smash. After moving backward, he leaps off both feet, arches his torso, and drives his racket arm downward through contact at peak height, landing heavily afterward.
+Included in silver reference
+
+44.82–45.62 s | A0025 · speech · male voice speaking Mandarin | Speech
+Others cannot smash it down,
+Original: 别人杀不下来，
+Review: Possible overlapping turns from the same voice
+
+45.30–46.30 s | V0036 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | defending against smash
+The man in the black t-shirt and pink shorts lunges to return a shot. He moves quickly from his center position towards the right side of the court, extending his racket arm low to hit the shuttlecock.
+Included in silver reference
+
+45.62–48.10 s | A0026 · speech · male voice speaking Mandarin | Speech
+no matter how powerful the player's smash is, they still won't be able to hit it down.
+Original: 再怎么重炮的球员他都杀不下来的。
+Review: Possible overlapping turns from the same voice
+
+46.30–48.00 s | V0037 · motion · man with short dark hair, wearing a white shirt and black vest | moving around court
+The man in the white shirt and black vest repositions himself after playing a shot. After completing an overhead swing, he lands and takes several steps backward and sideways to regain his central court position.
+Included in silver reference
+
+48.10–48.74 s | A0027 · speech · male voice speaking Mandarin | Speech
+It's not just like that;
+Original: 不只是这样子，
+Included in silver reference
+
+48.29–50.49 s | V0038 · visible_speech · man with short dark hair, wearing a black t-shirt and pink shorts | addressing camera
+A man in a black shirt and pink shorts stands on a badminton court, speaking to the camera while gesturing with his hand. The man faces forward, maintaining eye contact with the camera as he speaks. His mouth moves continuously throughout the clip. He raises his left hand near his face, making small pinching gestures with his fingers to emphasize his points. Posture: standing. Visible evidence: Continuous articulatory movements of the lips and jaw are clearly visible, coordinated with expressive facial changes and active hand gestures directed towards the camera.
+Included in silver reference
+
+48.38–50.46 s | V0039 · gesture · man with short dark hair, wearing a black t-shirt and pink shorts | explanatory gesture
+He raises his left hand and points his index finger upwards to emphasize his words. While speaking, he repeatedly lifts his left arm and extends his index finger upward near shoulder height before lowering it again.
+Included in silver reference
+
+48.74–49.78 s | A0028 · speech · male voice speaking Mandarin | Speech
+if you know how to do a lob,
+Original: 如果你会了挑球，
+Included in silver reference
+
+49.78–51.22 s | A0029 · speech · male voice speaking Mandarin | Speech
+and you also add some feints,
+Original: 你还会加上一点假动作，
+Included in silver reference
+
+50.61–51.33 s | V0040 · motion · man with short dark hair, wearing a white shirt and black vest | deceptive overhead swing
+The man performs a deceptive overhead stroke. He raises his racket high as if preparing for an overhead smash, then abruptly stops the motion before hitting the shuttlecock.
+Included in silver reference
+
+51.22–51.86 s | A0030 · speech · male voice speaking Mandarin | Speech
+for example this move,
+Original: 比如这个动作，
+Included in silver reference
+
+51.33–52.41 s | V0041 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | reacting to deception
+Across the net, the man in the pink shorts reacts late to the deceptive shot and fails to reach it. He initially moves backward anticipating a deep clear, then quickly lunges forward toward the net when he realizes the shuttlecock is dropping short.
+Included in silver reference
+
+51.84–52.36 s | A0031 · sound · unidentified source | sharp thwack of a racket hitting a shuttlecock
+A sharp, percussive impact sound occurs at the beginning of this interval.
+Included in silver reference
+
+52.34–54.90 s | A0032 · speech · male voice speaking Mandarin | Speech
+then needless to say, he runs directly in the wrong direction and immediately becomes passive.
+Original: 那就更不用说他直接跑错方向他立马被动。
+Included in silver reference
+
+52.97–53.77 s | V0042 · motion · man with short dark hair, wearing a white shirt and black vest | deceptive overhead swing
+The man executes another deceptive overhead stroke. Similar to the previous action, he initiates a full overhead swing but halts it suddenly without making contact with the shuttlecock.
+Included in silver reference
+
+53.77–54.97 s | V0043 · motion · man with short dark hair, wearing a black t-shirt and pink shorts | being caught off guard
+The man in the pink shorts is again caught out of position by the sudden change in pace and direction. His momentum carries him away from the net before he has to stop and reverse direction awkwardly.
+Included in silver reference
+
+54.97–56.49 s | V0044 · motion · man with short dark hair, wearing a white shirt and black vest | running to retrieve shuttlecock
+The man in the black vest runs quickly towards the front-left corner of the court to chase down a fast-moving shuttlecock. He sprints diagonally across the blue court surface, extending his body fully during the final lunge attempt.
+Included in silver reference
+
+55.22–55.54 s | A0033 · speech · male voice speaking Mandarin | Speech
+OK?
+Original: OK？
+Review: Short utterance lacks independent word timing
+
+55.80–59.91 s | A0034 · speech · male voice speaking Mandarin | Speech
+Today I'm going to teach you how to correctly perform a lob.
+Original: 今天我就要教你们怎么正确的做一个挑球动作。
+Included in silver reference
+
+56.57–60.00 s | V0045 · visible_speech · man with short dark hair, wearing a black t-shirt and pink shorts | addressing camera
+A man stands on a badminton court holding a racket while speaking to the camera. The man faces forward with an upright posture, looking directly at the camera. His mouth moves continuously as he speaks, accompanied by slight head movements and changes in facial expression. He holds a badminton racket in his right hand. Posture: standing. Visible evidence: continuous lip movement synchronized with speech, accompanied by expressive facial movements and hand gestures
+Included in silver reference

@@ -1,0 +1,1080 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "sport02",
+    "benchmark": "自有运动",
+    "domain": "立定跳远",
+    "original_id": "1039046118",
+    "source_url": "用户本地裁片",
+    "archive_member": null,
+    "source_window_seconds": [
+      0,
+      7.0
+    ],
+    "source_duration": 7.0,
+    "source_media_sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91",
+    "clip_sha256": "251c9caddac82352b3e661670b9170900e20e54d69ca3a11a7df697f3d84ca91",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。",
+    "sport": "standing_jump"
+  },
+  "duration_seconds": 7.0,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 2.08,
+      "first_frame": 0,
+      "end_frame_exclusive": 52
+    },
+    {
+      "id": "S02",
+      "start": 2.08,
+      "end": 7.0,
+      "first_frame": 52,
+      "end_frame_exclusive": 175
+    }
+  ],
+  "input_frames": {
+    "visual": 72,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含立定跳远完整动作演示及讲解片段，属于运动范畴。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿蓝色无袖上衣、戴黑色头带的男子"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "穿蓝色无袖上衣、黑色长裤和白色运动鞋的男子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "EX-S02-JUMP",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 2.08,
+        "end": 5.48,
+        "description": "一次完整的立定跳远动作，包括起势、下蹲蓄力、蹬伸起跳、腾空及落地缓冲。"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A-S01-GESTURE",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": null,
+        "kind": "gesture",
+        "label": "explanatory_gesture",
+        "start": 0.0,
+        "end": 2.04,
+        "start_range": [
+          0.0,
+          2.04
+        ],
+        "end_range": [
+          0.0,
+          2.04
+        ],
+        "detail": "男子面向镜头站立说话，期间双手在胸前做出小幅度的解释性手势。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "男子面向镜头站立，嘴部开合正在说话。"
+          },
+          {
+            "time": 2.0,
+            "observation": "男子双手抬起至胸前，手指微曲做手势。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "上肢",
+          "手部"
+        ],
+        "movement_roles": [
+          "交流辅助"
+        ],
+        "subphases": [],
+        "brief": "男子面向镜头进行口头讲解并伴随手势。"
+      },
+      {
+        "id": "A-S02-HOLD",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-JUMP",
+        "kind": "held_pose",
+        "label": "held_pose",
+        "start": 2.08,
+        "end": 2.6,
+        "start_range": [
+          2.08,
+          2.6
+        ],
+        "end_range": [
+          2.08,
+          2.6
+        ],
+        "detail": "男子侧身站立于红色塑胶跑道上，双臂向上高举过头顶并保持静止姿态。",
+        "evidence": [
+          {
+            "time": 2.08,
+            "observation": "男子站在跑道线上，双臂垂直上举。"
+          },
+          {
+            "time": 2.6,
+            "observation": "男子继续保持双臂上举的静止姿态。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "上肢"
+        ],
+        "movement_roles": [
+          "准备姿势"
+        ],
+        "subphases": [],
+        "brief": "男子保持双臂上举的预备站姿。"
+      },
+      {
+        "id": "A-S02-COUNT",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-JUMP",
+        "kind": "motion",
+        "label": "countermovement",
+        "start": 2.6,
+        "end": 3.88,
+        "start_range": [
+          2.6,
+          3.88
+        ],
+        "end_range": [
+          2.6,
+          3.88
+        ],
+        "detail": "男子屈膝下蹲降低重心，同时双臂从头顶向后下方摆动至臀部后方，身体前倾完成蓄力。",
+        "evidence": [
+          {
+            "time": 2.68,
+            "observation": "男子开始屈膝，手臂向下移动。"
+          },
+          {
+            "time": 3.48,
+            "observation": "男子处于深蹲状态，双臂摆至身后最高点。"
+          },
+          {
+            "time": 3.88,
+            "observation": "男子保持极深的蹲姿，上身大幅前倾，双臂位于身后。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "最低点",
+            "time": 3.88,
+            "time_range": [
+              3.8,
+              3.92
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "下肢",
+          "上肢",
+          "躯干"
+        ],
+        "movement_roles": [
+          "蓄力",
+          "预摆"
+        ],
+        "subphases": [
+          {
+            "label": "屈膝降重心",
+            "start": 2.6,
+            "end": 3.88,
+            "detail": "双腿弯曲，髋关节折叠，身体下沉。",
+            "evidence": [
+              {
+                "time": 3.0,
+                "observation": "膝盖明显弯曲，身体高度下降。"
+              }
+            ]
+          },
+          {
+            "label": "向后摆臂",
+            "start": 2.6,
+            "end": 3.88,
+            "detail": "双臂随之下沉并向后上方扬起。",
+            "evidence": [
+              {
+                "time": 3.4,
+                "observation": "手臂越过腰部向后方伸展。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子屈膝下蹲并将双臂向后摆动以蓄力。"
+      },
+      {
+        "id": "A-S02-PUSH",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-JUMP",
+        "kind": "motion",
+        "label": "push_off",
+        "start": 3.88,
+        "end": 4.4,
+        "start_range": [
+          3.88,
+          4.4
+        ],
+        "end_range": [
+          3.88,
+          4.4
+        ],
+        "detail": "男子迅速蹬地伸展腿部，同时将双臂用力向前上方挥动带动身体跃起，双脚随后离开地面。",
+        "evidence": [
+          {
+            "time": 4.0,
+            "observation": "男子开始向上发力，手臂快速前移。"
+          },
+          {
+            "time": 4.28,
+            "observation": "身体完全舒展，即将离地。"
+          },
+          {
+            "time": 4.4,
+            "observation": "双脚已脱离地面，进入腾空状态。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "离地瞬间",
+            "time": 4.4,
+            "time_range": [
+              4.36,
+              4.44
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "下肢",
+          "上肢"
+        ],
+        "movement_roles": [
+          "起跳动力",
+          "升空"
+        ],
+        "subphases": [
+          {
+            "label": "蹬伸",
+            "start": 3.88,
+            "end": 4.4,
+            "detail": "膝关节和踝关节快速伸直产生推力。",
+            "evidence": [
+              {
+                "time": 4.2,
+                "observation": "腿部肌肉紧绷并伸直。"
+              }
+            ]
+          },
+          {
+            "label": "前摆臂",
+            "start": 3.88,
+            "end": 4.4,
+            "detail": "双臂由后方向前上方剧烈摆动。",
+            "evidence": [
+              {
+                "time": 4.08,
+                "observation": "手臂轨迹模糊，显示高速向前运动。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子蹬地展体并配合向前摆臂完成起跳。"
+      },
+      {
+        "id": "A-S02-FLIGHT",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-JUMP",
+        "kind": "motion",
+        "label": "flight",
+        "start": 4.4,
+        "end": 5.08,
+        "start_range": [
+          4.4,
+          5.08
+        ],
+        "end_range": [
+          4.4,
+          5.08
+        ],
+        "detail": "男子在空中呈弓步姿态飞行，双臂前伸，双腿前后分开，随后收拢双腿准备落地。",
+        "evidence": [
+          {
+            "time": 4.6,
+            "observation": "男子悬空，左腿在前右腿在后，呈大步幅姿态。"
+          },
+          {
+            "time": 4.88,
+            "observation": "空中姿态维持，身体略微下落。"
+          },
+          {
+            "time": 5.08,
+            "observation": "接近地面，双腿开始靠拢。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "最高点",
+            "time": 4.6,
+            "time_range": [
+              4.56,
+              4.64
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "滞空",
+          "位移"
+        ],
+        "subphases": [
+          {
+            "label": "腾空滑行",
+            "start": 4.4,
+            "end": 4.88,
+            "detail": "身体依靠惯性向前飞行，四肢展开以保持平衡。",
+            "evidence": [
+              {
+                "time": 4.76,
+                "observation": "双脚均未触地，身体处于抛物线顶端附近。"
+              }
+            ]
+          },
+          {
+            "label": "收腿准备",
+            "start": 4.88,
+            "end": 5.08,
+            "detail": "后腿向前收缩，准备双脚着地。",
+            "evidence": [
+              {
+                "time": 5.0,
+                "observation": "双腿间距缩小，脚掌朝向地面。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子在空中保持弓步姿态滑行并收腿准备落地。"
+      },
+      {
+        "id": "A-S02-LAND",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-JUMP",
+        "kind": "motion",
+        "label": "landing",
+        "start": 5.08,
+        "end": 5.48,
+        "start_range": [
+          5.08,
+          5.48
+        ],
+        "end_range": [
+          5.08,
+          5.48
+        ],
+        "detail": "男子双脚接触地面，随即通过深度屈膝和下蹲来吸收冲击力，最终停在低重心的蹲姿。",
+        "evidence": [
+          {
+            "time": 5.16,
+            "observation": "鞋底刚刚接触红色跑道表面。"
+          },
+          {
+            "time": 5.36,
+            "observation": "身体因缓冲继续下沉，膝盖大幅弯曲。"
+          },
+          {
+            "time": 5.48,
+            "observation": "男子处于极深的蹲姿，几乎贴近小腿。"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "首次触地",
+            "time": 5.16,
+            "time_range": [
+              5.12,
+              5.2
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "下肢",
+          "足部"
+        ],
+        "movement_roles": [
+          "制动",
+          "缓冲"
+        ],
+        "subphases": [
+          {
+            "label": "触地",
+            "start": 5.08,
+            "end": 5.2,
+            "detail": "双脚平稳落在跑道上。",
+            "evidence": [
+              {
+                "time": 5.16,
+                "observation": "可见脚底与地面的接触阴影变化。"
+              }
+            ]
+          },
+          {
+            "label": "屈膝缓冲",
+            "start": 5.2,
+            "end": 5.48,
+            "detail": "利用腿部弯曲化解向下的冲量。",
+            "evidence": [
+              {
+                "time": 5.4,
+                "observation": "髋部和膝部角度急剧减小。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子双脚落地并通过深蹲缓冲冲击。"
+      },
+      {
+        "id": "A-S02-REC",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "EX-S02-JUMP",
+        "kind": "motion",
+        "label": "recovery",
+        "start": 5.48,
+        "end": 6.96,
+        "start_range": [
+          5.48,
+          6.96
+        ],
+        "end_range": [
+          5.48,
+          6.96
+        ],
+        "detail": "男子从深蹲姿态缓慢起身，调整呼吸和站姿，最后恢复直立状态。",
+        "evidence": [
+          {
+            "time": 5.68,
+            "observation": "男子仍保持深蹲，但不再下沉。"
+          },
+          {
+            "time": 6.28,
+            "observation": "身体逐渐升高，膝盖慢慢伸直。"
+          },
+          {
+            "time": 6.96,
+            "observation": "男子基本恢复到自然站立姿态。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "下肢",
+          "躯干"
+        ],
+        "movement_roles": [
+          "复位",
+          "稳定"
+        ],
+        "subphases": [
+          {
+            "label": "起身",
+            "start": 5.48,
+            "end": 6.96,
+            "detail": "股四头肌发力使身体重新站直。",
+            "evidence": [
+              {
+                "time": 6.56,
+                "observation": "躯干明显抬高，脱离底部位置。"
+              }
+            ]
+          }
+        ],
+        "brief": "男子从落地后的深蹲姿态缓缓站起恢复原位。"
+      }
+    ],
+    "uncertainties": [
+      "S01中男子的具体讲话内容无法仅凭视觉确认，只能观察到其口型变化和手势。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.08,
+        "end": 5.36,
+        "start_range": [
+          0.08,
+          0.16
+        ],
+        "end_range": [
+          5.28,
+          5.44
+        ],
+        "speaker_id": null,
+        "description": "男声，语速较快，语气带有引导性。",
+        "evidence": [
+          {
+            "time": 0.08,
+            "observation": "语音开始"
+          },
+          {
+            "time": 5.36,
+            "observation": "语音结束"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "如何在一分钟之内就立竿见影、如同作弊一般提升立定跳远的成绩呢？"
+      },
+      {
+        "id": "N001",
+        "kind": "music",
+        "layer": "background",
+        "start": 0.08,
+        "end": 7.0,
+        "start_range": [
+          0.0,
+          0.16
+        ],
+        "end_range": [
+          6.96,
+          7.0
+        ],
+        "speaker_id": null,
+        "description": "轻快的电子背景音乐，节奏感强。",
+        "evidence": [
+          {
+            "time": 0.08,
+            "observation": "音乐进入"
+          },
+          {
+            "time": 7.0,
+            "observation": "音乐持续至片段结束"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 5.44,
+        "end": 7.0,
+        "start_range": [
+          5.36,
+          5.52
+        ],
+        "end_range": [
+          6.96,
+          7.0
+        ],
+        "speaker_id": null,
+        "description": "男声，语速较快，语气肯定。",
+        "evidence": [
+          {
+            "time": 5.44,
+            "observation": "语音开始"
+          },
+          {
+            "time": 7.0,
+            "observation": "语音结束"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "今天给大家介绍三个方法。"
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "A-S01-GESTURE",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.08,
+          2.04
+        ],
+        "overlap_s": 1.96
+      },
+      {
+        "action_id": "A-S01-GESTURE",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.08,
+          2.04
+        ],
+        "overlap_s": 1.96
+      },
+      {
+        "action_id": "A-S01-GESTURE",
+        "audio_id": "U002",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-HOLD",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.08,
+          2.6
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "A-S02-HOLD",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          2.08,
+          2.6
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "A-S02-HOLD",
+        "audio_id": "U002",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-COUNT",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.6,
+          3.88
+        ],
+        "overlap_s": 1.28
+      },
+      {
+        "action_id": "A-S02-COUNT",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          2.6,
+          3.88
+        ],
+        "overlap_s": 1.28
+      },
+      {
+        "action_id": "A-S02-COUNT",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-PUSH",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.88,
+          4.4
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "A-S02-PUSH",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.88,
+          4.4
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "A-S02-PUSH",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-FLIGHT",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.4,
+          5.08
+        ],
+        "overlap_s": 0.68
+      },
+      {
+        "action_id": "A-S02-FLIGHT",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          4.4,
+          5.08
+        ],
+        "overlap_s": 0.68
+      },
+      {
+        "action_id": "A-S02-FLIGHT",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-LAND",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.08,
+          5.36
+        ],
+        "overlap_s": 0.28
+      },
+      {
+        "action_id": "A-S02-LAND",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.08,
+          5.48
+        ],
+        "overlap_s": 0.4
+      },
+      {
+        "action_id": "A-S02-LAND",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.44,
+          5.48
+        ],
+        "overlap_s": 0.04
+      },
+      {
+        "action_id": "A-S02-REC",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "A-S02-REC",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.48,
+          6.96
+        ],
+        "overlap_s": 1.48
+      },
+      {
+        "action_id": "A-S02-REC",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.48,
+          6.96
+        ],
+        "overlap_s": 1.48
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "A-S02-COUNT",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.6,
+          3.88
+        ],
+        "overlap_s": 1.28
+      },
+      {
+        "action_id": "A-S02-PUSH",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.88,
+          4.4
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "A-S02-FLIGHT",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.4,
+          5.08
+        ],
+        "overlap_s": 0.68
+      },
+      {
+        "action_id": "A-S02-LAND",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.08,
+          5.36
+        ],
+        "overlap_s": 0.28
+      },
+      {
+        "action_id": "A-S02-LAND",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.44,
+          5.48
+        ],
+        "overlap_s": 0.04
+      },
+      {
+        "action_id": "A-S02-REC",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          5.48,
+          6.96
+        ],
+        "overlap_s": 1.48
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "A-S01-GESTURE",
+        "audio_id": "U001",
+        "action_kind": "gesture",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.08,
+          2.04
+        ],
+        "overlap_s": 1.96
+      },
+      {
+        "action_id": "A-S01-GESTURE",
+        "audio_id": "N001",
+        "action_kind": "gesture",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.08,
+          2.04
+        ],
+        "overlap_s": 1.96
+      },
+      {
+        "action_id": "A-S02-HOLD",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          2.08,
+          2.6
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "A-S02-HOLD",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          2.08,
+          2.6
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "A-S02-COUNT",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          2.6,
+          3.88
+        ],
+        "overlap_s": 1.28
+      },
+      {
+        "action_id": "A-S02-PUSH",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.88,
+          4.4
+        ],
+        "overlap_s": 0.52
+      },
+      {
+        "action_id": "A-S02-FLIGHT",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          4.4,
+          5.08
+        ],
+        "overlap_s": 0.68
+      },
+      {
+        "action_id": "A-S02-LAND",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.08,
+          5.48
+        ],
+        "overlap_s": 0.4
+      },
+      {
+        "action_id": "A-S02-REC",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          5.48,
+          6.96
+        ],
+        "overlap_s": 1.48
+      }
+    ]
+  },
+  "warnings": [
+    "S01中男子的具体讲话内容无法仅凭视觉确认，只能观察到其口型变化和手势。"
+  ]
+}

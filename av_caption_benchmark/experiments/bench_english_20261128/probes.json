@@ -1,0 +1,67 @@
+{
+  "definition": "Interior source-clock probes, selected by inspecting frames before running the English pipeline. Positive means a visible person articulates, negative means no visible speaking cue at that instant. These are developer spot checks, not independently annotated gold intervals.",
+  "development": {
+    "badminton": {
+      "yes": [
+        9.8,
+        23.4,
+        32.6,
+        39.4,
+        49.25,
+        58.5
+      ],
+      "no": [
+        16.95,
+        27.9,
+        35,
+        44.6,
+        53.4
+      ]
+    },
+    "sew": {
+      "yes": [],
+      "no": [
+        1.4,
+        9.1
+      ]
+    }
+  },
+  "transfer": {
+    "sport02": {
+      "yes": [
+        1
+      ],
+      "no": [
+        3.9
+      ]
+    },
+    "apple": {
+      "yes": [
+        11.3
+      ],
+      "no": [
+        2.5,
+        7
+      ]
+    },
+    "drums": {
+      "yes": [
+        1
+      ],
+      "no": [
+        3.9,
+        5.4
+      ]
+    },
+    "sal02": {
+      "yes": [],
+      "no": [
+        1.4,
+        8.5
+      ]
+    }
+  },
+  "exploratory": [
+    "dia01"
+  ]
+}

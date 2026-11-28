@@ -1,0 +1,195 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>动作与声音对应的多选题型及分域拆句方案</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#182e38;background:#f4f5f1;font:17px/1.75 'Times New Roman',SimSun,serif}main{max-width:1160px;margin:auto;background:white;padding:46px clamp(20px,5vw,70px) 75px}h1,h2,h3,strong,b{color:#143a49}h1{font-size:34px;line-height:1.35;margin:0 0 10px}h2{font-size:23px;border-top:2px solid #44817e;padding-top:19px;margin-top:32px}p{margin:10px 0}nav{display:flex;gap:8px 18px;flex-wrap:wrap;padding:12px 0;border-block:1px solid #c5d5d6;margin:24px 0;font-size:15px}a{color:#065771;text-underline-offset:3px}.sources{font-size:.86em}.scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;line-height:1.6;font-size:15px;margin:.8em 0}th,td{border:1px solid #ccdadb;text-align:left;vertical-align:top;padding:9px}th{color:#193d4a;background:#e9f2ee}li{margin:.5em 0}article{padding:12px 18px;background:#f2f6f3;border-left:3px solid #78a49d;margin:11px 0;font-size:15px}.bundle article>a{font-weight:700}article p{margin:5px 0}code{overflow-wrap:anywhere}@media(max-width:680px){main{padding:24px 16px}h1{font-size:28px}td,th{padding:5px}table{font-size:14px}}@media print{nav{display:none}main{padding:0}h2{break-after:avoid}tr,article{break-inside:avoid}}</style></head><body><main><h1>怎样用选择题检验 caption 是否保留了动作与声音的对应</h1>
+<p>面向 1–2 位主要人物的真实音视频 · 题型研究、领域选择与可复制的提示词 · 2026 年 11 月 26 日</p>
+<p><strong>我的判断：可以把多选设为主要答题形式。论文贡献应落到可检验的能力：只读原生 caption，能否找回某段声音覆盖的那几次动作，并排除同一人、同一地点真正做过、但发生在别的时刻的动作？</strong> 同一批素材再反向问“这个动作与哪些声音重叠”，并追问其起止跨过了哪些动作边界。模型即使写对所有动作名、声音名，也可能在这些题上错。这个差异是否能稳定反映人工判断，仍需实验证明。</p>
+<p>如果先试一个组合，我会选<strong>厨房 + 装配</strong>，先做“听到这段声音时，哪些动作出现过交集”及其反向题。厨房能复用有独立声音标注的材料，装配容易找到动作名相同、对象和执行次序不同的干扰项。第二批加家务、实物讲解，保留现有运动案例作校准。<span class="sources"><a href="https://epic-kitchens.github.io/epic-sounds/">EPIC-SOUNDS</a> · <a href="https://arxiv.org/abs/2502.04144">HD-EPIC</a> · <a href="https://assembly-101.github.io/">Assembly101</a></span></p>
+<nav><a href="#s1">哪些题型已经有人做过</a> <a href="#s2">建议采用的题型与一个可复算的例子</a> <a href="#s3">哪些领域的数据值得先收</a> <a href="#s4">把“动作最小单位”和“语句最小单位”分开</a> <a href="#s5">怎样证明多选给出了额外信息</a></nav><h2 id="s1">1　哪些题型已经有人做过</h2>
+<p>以下工作承接<a href="../cross_domain_av_caption_20261126/%E8%B7%A8%E9%A2%86%E5%9F%9F%E7%BB%86%E7%B2%92%E5%BA%A6%E9%9F%B3%E8%A7%86%E9%A2%91Caption%E8%AF%84%E6%B5%8B%E8%B0%83%E7%A0%94.html">上一轮 65 篇范围综述</a>，本轮详查与题型最相关的方法、数据卡、模板和实际答案键。“给模型看视频做 QA”与“给读者一份 caption 做 QA”的结论分别解释。</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>工作与读者输入</th>
+<th>已覆盖的题型和方法</th>
+<th>对本项目的含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CapQuiz · 候选 caption</td>
+<td>10 类分描述与推断；后者含关系、因果、意图/情绪、主题/象征、时空指代。标注规范要求每个正式题恰有一个可客观支持的正确选项。<span class="sources"><a href="https://aclanthology.org/2026.acl-long.777.pdf">CapQuiz 论文与标注附录</a></span></td>
+<td>“理解性选择题评 caption”已成立。我们的理解可以要求组合人物与实例约束；不必猜语音所指或人物动机。</td>
+</tr>
+<tr>
+<td>OmniVDCBench · 候选视听 caption</td>
+<td>公开卡使用 caption 作为证据，含独立、关联、细节等问题；允许多个答案和证据不足时弃答。下面按发布的答案键做了实数核查。<span class="sources"><a href="https://huggingface.co/datasets/AnonymousVDC/omniVDCBench">OmniVDCBench 数据卡</a></span></td>
+<td>直接的近邻。不能把“只读文字 + 视听 + 多选”作为首次；可以与其文本证据协议直接比较。</td>
+</tr>
+<tr>
+<td>MuseBench · 视听艺术素材</td>
+<td>艺术意图和表达理解已用单选及 4–8 个选项的多选，结合集合 F1、完全匹配评估。<span class="sources"><a href="https://arxiv.org/html/2606.30026v1">MuseBench §3</a></span></td>
+<td>多选天然能记漏选，已有明确先例。它的正确集合是合理的艺术分析维度；本项目的集合可由时间证据独立复算。</td>
+</tr>
+<tr>
+<td>NExT-QA、STAR、AGQA · 视频</td>
+<td>NExT-QA 有描述、因果及时间问题；STAR 有交互、序列、预测与可行性，按情境图生成；AGQA 通过组合场景图关系求解复杂时空查询。<span class="sources"><a href="https://openaccess.thecvf.com/content/CVPR2021/html/Xiao_NExT-QA_Next_Phase_of_Question-Answering_to_Explaining_Temporal_Actions_CVPR_2021_paper.html">NExT-QA</a> · <a href="https://arxiv.org/abs/2405.09711">STAR</a> · <a href="https://cs.stanford.edu/people/ranjaykrishna/agqa/">AGQA</a></span></td>
+<td>“有推理”“由图生成题”都已有先例。用是否必须分辨重复实例或组合两个约束来定义难度。</td>
+</tr>
+<tr>
+<td>MUSIC-AVQA、FAVE · 音视频</td>
+<td>MUSIC-AVQA 模板含计数、位置、比较、存在、时序；FAVE 已考同窗视听关联、事件相对次序和指定片段描述。<span class="sources"><a href="https://openaccess.thecvf.com/content/CVPR2022/supplemental/Li_Learning_To_Answer_CVPR_2022_supplemental.pdf">MUSIC-AVQA 官方题型模板</a> · <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Lu_FAVE_A_Structured_Benchmark_for_Fine-Grained_Audio-Visual_Temporal_Evaluation_in_CVPR_2026_paper.pdf">FAVE</a></span></td>
+<td>“两件事是否同时”有直接对照。自然可听的背景声也可以与无关动作相交，本项目不要求识别声源。</td>
+</tr>
+<tr>
+<td>TCA-Bench、AVSCapBench、AVTime · 生成的视听描述</td>
+<td>已分别有声源配对和先后/同时三元组、协同事件语义召回、时刻与联合事件的双向匹配。<span class="sources"><a href="https://arxiv.org/html/2607.01667v1">TCA-Bench §4</a> · <a href="https://arxiv.org/html/2607.12820v1">AVSCapBench</a> · <a href="https://arxiv.org/html/2610.26046v1">AVTime</a></span></td>
+<td>双向和对齐也有先例。实验要查<strong>同一事件清单内具体实例的错配</strong>，尤其是同镜错位及跨镜延续。</td>
+</tr>
+<tr>
+<td>AVTrace、TraceAV-Bench · 音视频</td>
+<td>前者含时间定位、同步、顺序诊断；后者有长视频的跨模态多步证据链与时序拼接干扰。<span class="sources"><a href="https://arxiv.org/abs/2609.19991">AVTrace</a> · <a href="https://heinz217.github.io/TraceAV-Bench-Page/">TraceAV-Bench</a></span></td>
+<td>跨镜、多跳、错位干扰均不足以单独作为贡献。需要发现在自由生成文字中丢失了哪一条可核验关系。</td>
+</tr>
+<tr>
+<td>HanDyVQA、VidSitu · 视频</td>
+<td>前者给手—物交互的视觉细节出题；后者为可见事件组织谓词、参与角色、跨事件指代与关系。<span class="sources"><a href="https://arxiv.org/abs/2512.00885">HanDyVQA</a> · <a href="https://vidsitu.org/">VidSitu</a></span></td>
+<td>工具/手部领域有成熟表示，说明“甲将哪件工具递给谁”的节点可独立检查。</td>
+</tr>
+<tr>
+<td>TUNA、Davidsonian Scene Graph、声明分解研究</td>
+<td>TUNA 分析动态视频 caption；DSG 组织原子问题及其依赖；文本声明研究讨论怎样避免拆句丢失上下文或产生多余断言。后两者的原任务分别为图像生成和文本验证。<span class="sources"><a href="https://aclanthology.org/2025.acl-long.91/">TUNA</a> · <a href="https://google.github.io/dsg/">Davidsonian Scene Graph</a> · <a href="https://aclanthology.org/2025.acl-long.254/">Optimizing Decomposition for Optimal Claim Verification</a></span></td>
+<td>可迁移“一命题、一证据、显式依赖”；文本语句的个数不能直接当作动作数量。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>核查多选的实际使用。</strong> 固定 OmniVDCBench 发布版本 <code>990a6647</code>，读取其三份 JSON。保留全部 4,794 个不同题 ID，验证标准答案中的字母均为该题真实选项，逐题数正确选项数。中文通用 2,343 题均为一个正确项；英文通用 1,207 题中有 3 题为两个正确项；中文非遗 1,244 题均为一个正确项。合计 <strong>3 / 4,794（约 0.063%）</strong>。这三题的标签分别为两道独立事件题、一道细节描述题，答案键依次为 AB、AB、AC。这里统计的是标准答案的基数；某个单选项的文字本身可以列出多个事件，这个数字不能用来推算时序推理题总量。<span class="sources"><a href="https://huggingface.co/datasets/AnonymousVDC/omniVDCBench/tree/990a664749b4e37243630c5ed6b536ba337f1829">固定版本题库文件</a></span></p>
+<h2 id="s2">2　建议采用的题型与一个可复算的例子</h2>
+<p>把“理解性”写成操作定义：回答必须找到具体的声音和动作实例，并判断时间约束。把“动作、人物、声音全部写过”作为弱基线。以下题干中的声音只用于标识时段；题目不要求理解一句话是否在解说相应动作。</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>题型</th>
+<th>示例题干</th>
+<th>答案怎样确定、哪里容易错</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>事实识别（对照）</td>
+<td>这段画面里，甲旋拧过哪些螺钉？</td>
+<td>在审核窗口内列出对象。知道主体与物体就可能答对，用于区别“事件完全漏写”和“事件写了但配错”。</td>
+</tr>
+<tr>
+<td>声音 → 动作集合（主测）</td>
+<td>第一声蜂鸣可听见期间，哪些动作与它有过时间交集？</td>
+<td>返回所有与该声段交叠的候选 L2 实例。选项包括真实出现的别次旋拧或另一人的动作。漏掉第二个真项可直接观察。</td>
+</tr>
+<tr>
+<td>动作 → 声音集合（主测）</td>
+<td>甲旋拧下方螺钉期间，能听到哪些声段？</td>
+<td>同一动作可能同时遇到旁白及蜂鸣。相邻但没重叠的第二声蜂鸣是负项。正反题共享 GT；按母片汇总，避免把同一条边记作两份独立证据。</td>
+</tr>
+<tr>
+<td>边界理解（诊断）</td>
+<td>第一声蜂鸣<strong>结束前一刻</strong>，下列哪些动作已开始且仍在持续？</td>
+<td>检查声段终点两侧及动作边界，区别“稍早发生过交集”与“结束时仍在做”。题面使用可辨结束点。边界轻微移动就翻转答案时弃题。</td>
+</tr>
+<tr>
+<td>比较两次实例（理解）</td>
+<td>对比两声蜂鸣，哪些动作只与第二声有交集？</td>
+<td>求两个动作集合的差集。题干先指定两个可辨声段，再区分同一人的第几次动作；仅凭动作清单无法回答。也可问哪些声段跨过两项指定动作。</td>
+</tr>
+<tr>
+<td>跨镜连续性（理解）</td>
+<td>同一段未中断的提问横跨一次切镜；换镜前后，分别与哪些可见动作重叠？</td>
+<td>独立核验同一声段穿过切点，并定位两侧动作。把“在两个镜头中都有人说话”与“同一句持续过切点”作为不同命题。只给题干必要的锚点；如考声音是否持续，则改问“哪些声段确实穿过切点”，题面不得先告知连续。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>示意，使用构造的装配时间线。</strong> 以下秒数以同一窗口起点为零。甲旋拧上方螺钉第一次 A1 为 0.6–1.8；旋拧下方 A2 为 2.3–4.0；乙递垫圈 A3 为 2.6–3.3；乙收工具 A4 为 4.7–5.4；甲再旋拧上方 A5 为 5.3–6.4。第一声蜂鸣 U1 为 2.0–3.0；第二声 U2 为 5.0–6.0；连续讲解 U3 为 1.5–5.6。若窗口内有多个同类主体，题面使用穿着、位置或声段顺序等对读者可见的指称，隐藏这些内部 ID。</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>对同一批事实提问</th>
+<th>唯一答案与依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一声蜂鸣时发生过哪些动作？</td>
+<td>A2、A3。分别与 U1 重叠 0.7、0.4 秒。A1 和 A5 虽然也叫旋拧，都没有与 U1 相交。</td>
+</tr>
+<tr>
+<td>旋拧下方螺钉期间能听到什么？</td>
+<td>U1、U3。与 A2 的交集分别为 0.7、1.7 秒。</td>
+</tr>
+<tr>
+<td>哪些动作与第二声蜂鸣相交而与第一声不相交？</td>
+<td>A4、A5。答出人物但写不出是哪次旋拧，仍会混淆 A1 和 A5。</td>
+</tr>
+<tr>
+<td>第二声蜂鸣出现过的动作中，哪些在该声结束前一刻仍持续？</td>
+<td>A5。A4 也曾与 U2 重叠，但在 5.4 秒结束，早于蜂鸣终点 6.0 秒。可用这两问专测边界理解。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>一个能直接检验增量的对照。</strong> 保留上表所有动作、声音和起点，只把 A4 的终点从 5.4 改为 6.2 秒。与每段声音“是否有过交集”的全部答案都保持相同；“第二声结束前一刻，哪些动作仍在持续”的正确集合却由 {A5} 变为 {A4, A5}。这对构造样本区分了两个能力：写出事件间有联系，以及写出联系持续到了哪一步。正式实验中还要找到自然发生的同类片段。</p>
+<p><strong>现有跳远素材可以检验较粗的跨镜题。</strong> 本地 Qwen 候选把第一句提问标为 0.08–5.36 秒，切点约 2.08 秒。候选支持它先覆盖镜头一的讲解手势，随后覆盖镜头二的动作，包括向前摆臂和起跳；后面缓慢起身发生在 5.56 秒之后，可作干扰。若给四个 L2 选项“讲解手势、向前摆臂、蹬伸起跳、落地后缓慢起身”，名义解为前三项。考核跨镜延续时还应放入有两句相邻发言的对照片，避免猜“有旁白就全选”。原输出里第二句和落地缓冲只有约 0.04 秒的名义交集，存在边界不确定性，暂不出题。以上属于管道候选，未作正式人工 GT。<a href="../../../sports_annotation/runs/standing_jump_caption_20261125_v01/standing_jump/caption.txt">跳远候选原文</a></p>
+<h2 id="s3">3　哪些领域的数据值得先收</h2>
+<p><strong>纳入条件。</strong> 整片以 1–2 名可辨主要人物为中心，能看到至少一次可定位的执行，原音轨可辨。主关系题窗口需有可能混淆的候选，例如同人重复动作、两人并行、短声落在动作中部或语句穿过切镜。另留自然抽到的简单窗和无同期目标的对照窗，分别报告通过率。影片主题只是检索标签，实物讲解可能在教程、访谈、测评等多类中出现。</p>
+<div class="scroll"><table>
+<thead>
+<tr>
+<th>首批领域</th>
+<th>数据从哪里来</th>
+<th>怎样挑有区分力的素材</th>
+<th>拆句的停止规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>烹饪与饮品</td>
+<td>EPIC-KITCHENS 对应 EPIC-SOUNDS、HD-EPIC 可作校准；再找保留原声的实拍烹饪教程。<span class="sources"><a href="https://epic-kitchens.github.io/epic-sounds/">EPIC-SOUNDS</a> · <a href="https://arxiv.org/abs/2502.04144">HD-EPIC</a></span></td>
+<td>同一器皿上多种操作、一句旁白跨操作、提示音与手部动作部分相交。取有独立时段的短音，另留仅背景音乐的简单片。</td>
+<td>同一碗的连续搅拌为一段；提起食材、放入锅分别成句。油起泡为结果；若动作/施事被遮挡就保留未知。</td>
+</tr>
+<tr>
+<td>装配与修理</td>
+<td>Assembly101、IKEA ASM 借动作与手物类别卡；有原声的家装、维修或手工教学另取素材。每条核音轨，不能从视觉动作库推定它有自然声。<span class="sources"><a href="https://assembly-101.github.io/">Assembly101</a> · <a href="https://openaccess.thecvf.com/content/WACV2021/html/Ben-Shabat_The_IKEA_ASM_Dataset_Understanding_People_Assembling_Furniture_Through_Actions_WACV_2021_paper.html">IKEA ASM</a></span></td>
+<td>同人换螺钉，或一人旋拧、另一人递零件；工具声可以提前、滞后或持续过下一动作。</td>
+<td>同一紧固件连续旋拧为一段；换目标另开。扶住是状态，转动不能自动写成“已固定成功”。</td>
+</tr>
+<tr>
+<td>家务与整理</td>
+<td>Charades 提供日常动作及时间标签；可从 Ego4D 的有声家居记录、带原声的清洁/收纳视频补充。<span class="sources"><a href="https://arxiv.org/abs/1604.01753">Charades</a> · <a href="https://ego4d-data.org/docs/">Ego4D</a></span></td>
+<td>同名动作换表面、另一人或画外声介入，保留无关声音。删掉仅有长音乐且全部选项全对的主测试题。</td>
+<td>连续擦一张桌子为一段；从桌面换到椅背另开。同一块桌面的来回属于周期。</td>
+</tr>
+<tr>
+<td>实物讲解与双人演示</td>
+<td>选择镜头能见手和样品的教学、访谈演示、产品测评；GRW 提供可见讲话手势的时间定位参照。<span class="sources"><a href="https://www.robots.ox.ac.uk/~vgg/research/grw/">GRW</a></span></td>
+<td>讲解者和执行者可不同；有指向、翻转、交接，且语音的起止和手部活动不总重合。纯对镜念稿留作空动作对照。</td>
+<td>翻转、指示、递出、接取分别成句；持续举着为状态。说“请按按钮”只产生语音内容，不能新增视觉按键动作。</td>
+</tr>
+<tr>
+<td>运动教学（校准）</td>
+<td>已有羽毛球、立定跳远原片；专业术语及三层结构沿用仓库规范。</td>
+<td>平行步法和挥拍、重复击球、跨镜讲解，可同四个新域比较。比赛全景多人混杂的素材暂缓。</td>
+<td>技术动作按实例；步法可与击球重叠。引拍、触球、随挥依附挑球，准备姿态单列。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>素材够不够也能先估计。</strong> 对上轮固定的 OmniCapBench 786 条公开元数据取影片级 <code>1 ≤ num_main_characters ≤ 2</code>，共 344 条。按原始二级标签逐条计数：Cooking &amp; Recipe 21、Home Cooking &amp; Recipe 6；DIY &amp; Crafts 6、Home Improvement 5、Vehicle Maintenance 3；Cleaning &amp; Organization 3；Talk Show &amp; Interview 2、Gadget Review 2、Online Course &amp; Lecture 1。它们是筛片入口，不等于通过音质、动作可见性或交集审核的最终数量。首批烹饪易起步；家务与实物讲解需要额外来源。音乐演奏可作后续压力测试，要先解决持续音、配乐和手部遮挡。<span class="sources"><a href="https://huggingface.co/datasets/OmniCapBench/OmniCapBench/blob/bd6448a01238f125eaf128b8ae35c20cc3b37374/eval.jsonl">OmniCapBench 固定版本元数据</a> · <a href="https://openaccess.thecvf.com/content/CVPR2022/supplemental/Li_Learning_To_Answer_CVPR_2022_supplemental.pdf">MUSIC-AVQA 官方题型模板</a></span></p>
+<h2 id="s4">4　把“动作最小单位”和“语句最小单位”分开</h2>
+<p>计数单位是 L2 的功能动作。语言单位是一条可以独立求证的命题，一次 L2 可以对应动作命题、若干部位细节、属性和同期关系。例句“蜂鸣时甲旋拧下方螺钉，乙同时递来垫圈”至少包含两个动作命题和一个声音命题；再按“同时”的确切作用范围写关系。若 A 和 B 都在一段长语音中发生，并不能推出 A 与 B 彼此重叠。将修饰范围、否定或未知删掉，拆出的句子会改变原意。<span class="sources"><a href="https://vidsitu.org/">VidSitu</a> · <a href="https://google.github.io/dsg/">Davidsonian Scene Graph</a> · <a href="https://aclanthology.org/2025.acl-long.254/">Optimizing Decomposition for Optimal Claim Verification</a></span></p>
+<p><strong>标 GT：</strong> 用相应领域提示词的 VISUAL_GT 模式看无声画面；音频另用听标提示词。两路均保留证据、不确定区间和截断，经复核再求时间交集。对半开区间 [s,e)，端点相接不计交集。遮挡用已核验可见片段的并集；对不确定边界算交集下界和上界，若可能改变题目正误，复核或弃题。瞬时敲击可单独问“声音出现时哪些动作已在进行”。</p>
+<p><strong>拆待测 caption：</strong> 先照模型原生 prompt 生成原文，解析器只接收这段原文，用相应领域提示词的 CAPTION_TEXT 模式。文本只说“他先后旋拧两次”时，可保留次数和次序；不能补出哪枚螺钉或何时蜂鸣。以 <a href="../../../standing_long_jump_captions/avowed.txt">AVOWED 的跳远输出</a> 为例，文字写了 forward roll，就必须保留“做了向前翻滚”这条模型断言；也应提取它确实写出的“切镜后讲解以画外音继续”。分别核对两条，才能区分动作识别错和跨镜语音交代对。正式评测保留“直接读原 caption”一路，与“读拆句结果”对照；解析器新加边或漏边单独归因。</p>
+<p><strong>五份分域 prompt 都能单独复制调用。</strong> 每份包含输入模式、领域类别卡、一次带关系的逐句拆解、一个易误标反例，以及统一的 JSON 字段。人物、动作、对象及语音均来自当次输入，示范词表不规定预期事件顺序。下方为同一规范的应用片段。</p>
+<div class="bundle"><article><a href="prompts/01_%E7%83%B9%E9%A5%AA%E4%B8%8E%E9%A5%AE%E5%93%81.txt">01 · 烹饪与饮品</a><p>示意输入：厨师翻裹食材，然后把它从碗里提起。解说声一直延续到食材被放进锅里。</p><p>拆句：① 厨师在碗中翻裹该食材。② 厨师从碗里提起该食材。③ 该食材被放进锅内（就这一子句，执行人不明确时保留未知）。④ 有连续解说声。⑤ 解说持续到入锅动作发生时。①→②为明示先后。不要由“延续到”推出与每个早前动作逐一同期，也不由“入锅”补出油炸声。</p><p>反例：左手一直端着碗，右手搅了几圈。可写一条持碗状态、一条连续搅拌；圈数未给精确值。</p></article><article><a href="prompts/02_%E8%A3%85%E9%85%8D%E4%B8%8E%E4%BF%AE%E7%90%86.txt">02 · 装配与修理</a><p>示意输入：甲先旋拧上方螺钉，随后旋拧下方螺钉。甲在下方这次旋拧期间，乙递过垫圈。这次旋拧期间也传来一阵电机声。</p><p>拆句：① 甲旋拧上方螺钉。② 甲旋拧下方螺钉。③ 乙递出垫圈。④ 能听到电机声。⑤ ①先于②。⑥ ③与②重叠。⑦ ④与②重叠。即便后一段共用语法背景，也须另查③和④是否有直接或必然的重叠证据；不要仅凭两者都与②相交而推出相交。</p><p>反例：乙一直扶板，而甲转了几下螺丝刀。乙的稳定支撑单列状态；未见或未写清落点不能补“下方螺钉”。</p></article><article><a href="prompts/03_%E5%AE%B6%E5%8A%A1%E4%B8%8E%E6%95%B4%E7%90%86.txt">03 · 家务与整理</a><p>示意输入：广播从她擦桌面一直响到她擦椅背。随后把布放下。</p><p>拆句：① 她擦桌面。② 她擦椅背。③ 她放下布。④ 有广播声。⑤ 广播与①重叠。⑥ 广播与②重叠。⑦ ③在擦拭后。没有写明广播何时停止，把它与③的关系保留未知。</p><p>反例：她在同一块桌面来回擦。保留一次连续擦拭；不从每次换向推算有几次“擦桌”。</p></article><article><a href="prompts/04_%E5%AE%9E%E7%89%A9%E8%AE%B2%E8%A7%A3%E4%B8%8E%E5%8F%8C%E4%BA%BA%E6%BC%94%E7%A4%BA.txt">04 · 实物讲解与双人演示</a><p>示意输入：乙正在解释。与此同时，甲把样品翻过来，又指向背面的开关。</p><p>拆句：① 有乙的讲解声（文字明示身份；纯音频阶段只编号声音）。② 甲翻转样品。③ 甲指向样品背面的开关。④ ②先于③。⑤ 讲解与②重叠。⑥ 讲解与③重叠（“与此同时”确实统领这两个动作时）。未说乙在画面内，也没有甲按下开关的事实。</p><p>反例：句子只有“他说要按按钮”。此为一条语音内容；“有人按下按钮”没有视觉或文本执行证据。</p></article><article><a href="prompts/05_%E8%BF%90%E5%8A%A8%E6%95%99%E5%AD%A6%E6%A0%A1%E5%87%86.txt">05 · 运动教学校准</a><p>示意输入：教练数数时，队员弓步上网并挥拍挑球，随后回到准备姿态。</p><p>拆句：① 队员弓步上网。② 队员挥拍挑球。③ 有教练的数数声。④ 该段数数与①重叠。⑤ 该段数数与②重叠。⑥ 后来队员处于准备姿态。原文没有给每个数字的边界，不能说某个特定数字对上了两项动作。“并”若只是连词也不单独证明①与②精确同步；“回到”不足以命名具体回位步法。</p><p>反例：写着“膝盖微屈地站着”时，保留姿态；只有可见的屈曲过程才适合生成 L3。</p></article></div><p>公共环节　<a href="prompts/06_%E4%BB%85%E9%9F%B3%E9%A2%91%E5%90%AC%E6%A0%87.txt">06 · 仅音频听标</a>　<a href="prompts/07_%E5%B0%86%E5%B7%B2%E6%A0%B8%E9%AA%8C%E4%BA%8B%E5%AE%9E%E5%86%99%E6%88%90%E9%A2%98%E9%9D%A2.txt">07 · 将已核验事实写成题面</a>　<a href="prompts/08_%E5%8F%AA%E8%AF%BBcaption%E4%BD%9C%E7%AD%94.txt">08 · 只读caption作答</a></p><p>用法：标真值时选一份分域文件，指定 VISUAL_GT 并传入带时钟的无声画面，另将音轨交给 06。复核后按时间关系生成逐项真值，07 仅负责写题。拆已有描述时选择分域文件的 CAPTION_TEXT，只给原文；08 的主评输入始终是原始 caption 与公开题面。所有分域文件是研究试标提示词，可独立调用；若接到已有管道，需将其 JSON 字段显式映射到原调用方 schema。</p>
+<h2 id="s5">5　怎样证明多选给出了额外信息</h2>
+<ol>
+<li><strong>同一个证据窗造配对题。</strong> 固定动作、声音和候选池，一种形式问“这项动作是否与声音重叠”（每一项各问一次），另一种一次选全；再增设只找一个正确实例的普通单选。公平报告同一批逐项判断和集合恢复，控制候选暴露、问题数量、文本长度、选项顺序，记录调用/词数预算。普通单选不能把多个真实答案当错项，可把目标限定到某个人或某个对象。能将独立判断组合成集合，如果与直接多选表现等同，增益应归于实例级 GT 和干扰项设计。</li>
+<li><strong>同一份 caption 做最小错配。</strong> 保留实体、动作、声音及先后，只把“第一声覆盖第二次旋拧”换成“第一声覆盖第一次旋拧”。加入正确同义改写、单纯删关系、把甲换成乙、同镜内小幅错移等对照。按待测模型实际输出再作一次独立盲测。比较现有协同事件召回、时序指标和集合评分对这类错配的敏感度，对齐人工成对偏好。跨模型相关性的估计需有足够模型；小样本先报按母视频 bootstrap 的配对差值和区间。<span class="sources"><a href="https://arxiv.org/html/2607.12820v1">AVSCapBench</a> · <a href="https://arxiv.org/html/2607.01667v1">TCA-Bench §4</a> · <a href="https://aclanthology.org/2026.acl-long.777.pdf">CapQuiz 论文与标注附录</a></span></li>
+<li><strong>防猜和防泄漏。</strong> 出题端看到已核验的双轨 GT，作答端只看到待测 caption 与题面。保留题面/选项、转写、仅视觉文字、仅听觉文字、原始音视频人工上限等条件。全部主测选项尽量来自本片真实发生过的实例。把人名和动作清单保留、仅删除关系，再检验准确率是否下降。按真项个数分层，位置均衡，洗牌复测；当空集存在时给明确的作答规范。独立阅片员需为每一真假项给出证据。长片局部题只对审核窗口作负判。<span class="sources"><a href="https://arxiv.org/abs/2611.11062">选项捷径对照研究（预印本）</a> · <a href="https://cs.stanford.edu/people/ranjaykrishna/agqa/">AGQA</a></span></li>
+<li><strong>评分拆开看。</strong> 逐项让盲评读者给“文字支持／文字矛盾／信息不足”并引用原文。主报集合完全匹配、正项 micro-P/R/F1 及各域 macro 值；另报遗漏真项、支持了错误实例、弃答率、边界题成绩。若真集合为空，只有所有项均被证实不成立才作可证空集；全未知单列为证据不足，不能因预测也为空而给完全匹配。正反同源题按母片聚类。为测多选是否更能区分能力，用同一批自然 caption、同一批人工偏好比较三种题制的排序、配对判断和置信区间，不能以“多选均分更低”作结论。<span class="sources"><a href="https://arxiv.org/html/2606.30026v1">MuseBench §3</a> · <a href="https://huggingface.co/datasets/AnonymousVDC/omniVDCBench">OmniVDCBench 数据卡</a></span></li>
+<li><strong>先试标再扩大。</strong> 沿用四个非运动域各 6 条母片、短中长各 2 条的试标设计。记录每小时产生多少有唯一集合的有效题、盲审一致率、换域后的实例边界误差、题面基线得分及解析器带来的新错误。领域间保留相同题型锚点，避免“多选组正好多是长片”混淆结果。此处提供的提示词和题型尚未在四域调用模型或做人工一致性测量。</li>
+</ol>
+</main></body></html>

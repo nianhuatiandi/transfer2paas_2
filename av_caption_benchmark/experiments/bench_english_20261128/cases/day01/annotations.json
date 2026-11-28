@@ -1,0 +1,207 @@
+{
+  "schema": "av-events/1.0",
+  "description_language": "en",
+  "source_sha256": "1436b1822b7104c361bfff78ad3283d46b6c6d8843ecc62325f4e114c92e1a78",
+  "protocol_sha256": "7de78090c0114c940148971425129631b13f8c23336792b2f7d15235a8ba0678",
+  "duration_seconds": 12.012,
+  "actors": [
+    {
+      "id": "P1",
+      "appearance": "person wearing a dark short-sleeved shirt and a watch on their left wrist, holding a smartphone"
+    }
+  ],
+  "clock": "source seconds, half-open intervals",
+  "relation_semantics": "Evidence of temporal co-occurrence only. Speaker identity and acoustic causation are separate claims.",
+  "reference_status": "model_annotations_with_review_flags",
+  "events": [
+    {
+      "id": "A0001",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 0.0,
+      "end": 0.8,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "a couple of doors fitted.",
+      "transcript_original": "couple of doors fitted.",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        0.0,
+        0.8
+      ]
+    },
+    {
+      "id": "A0002",
+      "kind": "ambience",
+      "actor": "background noise",
+      "start": 0,
+      "end": 12.0,
+      "sources": [
+        "w00000/audio/1"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "background hiss",
+      "detail": "A continuous low-level background hiss is present throughout the segment, underlying the speech.",
+      "layer": "background",
+      "source_attribution": "unassigned"
+    },
+    {
+      "id": "A0003",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 1.28,
+      "end": 3.04,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "So once that hinge wears,",
+      "transcript_original": "So once that hinge wears,",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        1.28,
+        3.04
+      ]
+    },
+    {
+      "id": "A0004",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 3.36,
+      "end": 6.24,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "could be the kids leaning on the door or just general wear and tear,",
+      "transcript_original": "could be the kids leaning on the door or just general wear and tear,",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        3.36,
+        6.24
+      ]
+    },
+    {
+      "id": "V0001",
+      "kind": "gesture",
+      "actor": "person wearing a dark short-sleeved shirt and a watch on their left wrist, holding a smartphone",
+      "start": 3.723,
+      "end": 10.306,
+      "sources": [
+        "shot00000/visual/0",
+        "shot00001/visual/0"
+      ],
+      "modality": "visual",
+      "review_flags": [],
+      "actor_id": "P1",
+      "activity": "On-camera communication",
+      "label": "gesturing",
+      "brief": "A person gestures towards the cabinet.",
+      "detail": "The person raises their right hand and moves it horizontally along the top edge of the light wood-grain kitchen cabinets, then lowers it back down to hold a smartphone with both hands.",
+      "phases": [],
+      "fact_verdict": "supported",
+      "fact_evidence": "The person's right hand is raised and moves horizontally along the top edge of the cabinet from 0.35s to 4.8s, then lowers back down to hold the smartphone with both hands by 6.933s.",
+      "fact_evidence_clock_origin": 3.3729999999999998,
+      "actor_scope": "clip"
+    },
+    {
+      "id": "A0005",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 6.63,
+      "end": 11.34,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [],
+      "label": "Speech",
+      "detail": "the door starts dropping as you open it and then it will catch the other doors and cause damage.",
+      "transcript_original": "the door starts dropping as you open it and then it will catch the other doors and cause damage.",
+      "layer": "foreground",
+      "timing_method": "qwen_and_asr",
+      "qwen_interval": [
+        6.72,
+        11.36
+      ],
+      "word_interval": [
+        6.63,
+        11.34
+      ]
+    },
+    {
+      "id": "A0006",
+      "kind": "speech",
+      "actor": "male speaker",
+      "start": 11.68,
+      "end": 12.0,
+      "sources": [
+        "w00000/audio/0"
+      ],
+      "modality": "audio",
+      "review_flags": [
+        "Short utterance lacks independent word timing"
+      ],
+      "label": "Speech",
+      "detail": "So...",
+      "transcript_original": "So...",
+      "layer": "foreground",
+      "timing_method": "qwen_audio_relisten",
+      "qwen_interval": [
+        11.68,
+        12.0
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0002",
+      "type": "temporal_overlap",
+      "start": 3.723,
+      "end": 10.306,
+      "robust_interval": [
+        3.723,
+        10.306
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0004",
+      "type": "temporal_overlap",
+      "start": 3.723,
+      "end": 6.24,
+      "robust_interval": [
+        3.723,
+        6.24
+      ],
+      "review_flags": []
+    },
+    {
+      "visual_id": "V0001",
+      "audio_id": "A0005",
+      "type": "temporal_overlap",
+      "start": 6.63,
+      "end": 10.306,
+      "robust_interval": [
+        6.63,
+        10.306
+      ],
+      "review_flags": []
+    }
+  ],
+  "phase_relations": []
+}

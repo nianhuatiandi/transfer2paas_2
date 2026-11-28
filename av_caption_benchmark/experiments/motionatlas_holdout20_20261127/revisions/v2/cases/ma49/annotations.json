@@ -1,0 +1,1757 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma49",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "双人舞动",
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      103
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/DREAM1k-de3a3da8-401.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      15.181848515181848
+    ],
+    "official_sha256": "c5e58a67a705080a55e1ed8888ede8eb125fe71c92eb4149285ac39b7aa7045f",
+    "clip_sha256": "c5e58a67a705080a55e1ed8888ede8eb125fe71c92eb4149285ac39b7aa7045f",
+    "audio_source": null
+  },
+  "duration_seconds": 15.18184851518185,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 5.572238905572239,
+      "first_frame": 0,
+      "end_frame_exclusive": 167
+    },
+    {
+      "id": "S02",
+      "start": 5.572238905572239,
+      "end": 13.04637971304638,
+      "first_frame": 167,
+      "end_frame_exclusive": 391
+    },
+    {
+      "id": "S03",
+      "start": 13.04637971304638,
+      "end": 13.380046713380047,
+      "first_frame": 391,
+      "end_frame_exclusive": 401
+    },
+    {
+      "id": "S04",
+      "start": 13.380046713380047,
+      "end": 13.713713713713714,
+      "first_frame": 401,
+      "end_frame_exclusive": 411
+    },
+    {
+      "id": "S05",
+      "start": 13.713713713713714,
+      "end": 14.381047714381047,
+      "first_frame": 411,
+      "end_frame_exclusive": 431
+    },
+    {
+      "id": "S06",
+      "start": 14.381047714381047,
+      "end": 15.115115115115115,
+      "first_frame": 431,
+      "end_frame_exclusive": 453
+    },
+    {
+      "id": "S07",
+      "start": 15.115115115115115,
+      "end": 15.18184851518185,
+      "first_frame": 453,
+      "end_frame_exclusive": 455
+    }
+  ],
+  "input_frames": {
+    "visual": 159
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了一男一女在灰色卷帘门前跳舞，包含单人站立、双人互动及手部接触等动作。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "id": "S02-P02",
+        "shot_id": "S02",
+        "description": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "id": "S03-P02",
+        "shot_id": "S03",
+        "description": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "id": "S04-P02",
+        "shot_id": "S04",
+        "description": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "id": "S05-P01",
+        "shot_id": "S05",
+        "description": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "id": "S05-P02",
+        "shot_id": "S05",
+        "description": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "id": "S06-P01",
+        "shot_id": "S06",
+        "description": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "id": "S06-P02",
+        "shot_id": "S06",
+        "description": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "id": "S07-P01",
+        "shot_id": "S07",
+        "description": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "id": "S07-P02",
+        "shot_id": "S07",
+        "description": "穿灰色吊带和黑色短裙的女子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "E-S01-P01-A1",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 3.0,
+        "description": "男子双手交叉放在身前站立"
+      },
+      {
+        "id": "E-S01-P01-A2",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 3.0,
+        "end": 5.5,
+        "description": "男子放下手臂并开始移动脚步"
+      },
+      {
+        "id": "E-S01-P02-A1",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 3.5,
+        "end": 5.5,
+        "description": "女子从男子身后走出并摆出姿势"
+      },
+      {
+        "id": "E-S02-P01-A1",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 5.5,
+        "end": 8.0,
+        "description": "男子与女子面对面进行舞蹈动作"
+      },
+      {
+        "id": "E-S02-P02-A1",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "start": 5.5,
+        "end": 8.0,
+        "description": "女子与男子面对面进行舞蹈动作"
+      },
+      {
+        "id": "E-S02-P01-A2",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 8.0,
+        "end": 11.0,
+        "description": "男子转身背对镜头继续跳舞"
+      },
+      {
+        "id": "E-S02-P02-A2",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "start": 8.0,
+        "end": 11.0,
+        "description": "女子转身背对镜头继续跳舞"
+      },
+      {
+        "id": "E-S02-P01-A3",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 11.0,
+        "end": 13.0,
+        "description": "男子转回身面向女子并伸出手"
+      },
+      {
+        "id": "E-S02-P02-A3",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "start": 11.0,
+        "end": 13.0,
+        "description": "女子转回身面向男子并伸手回应"
+      },
+      {
+        "id": "E-S03-P01-A1",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 13.0,
+        "end": 13.3,
+        "description": "男子与女子击掌"
+      },
+      {
+        "id": "E-S03-P02-A1",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "start": 13.0,
+        "end": 13.3,
+        "description": "女子与男子击掌"
+      },
+      {
+        "id": "E-S04-P01-A1",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 13.3,
+        "end": 13.7,
+        "description": "男子收回手并做手势"
+      },
+      {
+        "id": "E-S04-P02-A1",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "start": 13.3,
+        "end": 13.7,
+        "description": "女子收回手并做手势"
+      },
+      {
+        "id": "E-S05-P01-A1",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "start": 13.7,
+        "end": 14.3,
+        "description": "男子再次与女子击掌"
+      },
+      {
+        "id": "E-S05-P02-A1",
+        "actor_id": "S05-P02",
+        "shot_id": "S05",
+        "start": 13.7,
+        "end": 14.3,
+        "description": "女子再次与男子击掌"
+      },
+      {
+        "id": "E-S06-P01-A1",
+        "actor_id": "S06-P01",
+        "shot_id": "S06",
+        "start": 14.3,
+        "end": 15.1,
+        "description": "男子面向镜头做最后的舞蹈动作"
+      },
+      {
+        "id": "E-S06-P02-A1",
+        "actor_id": "S06-P02",
+        "shot_id": "S06",
+        "start": 14.3,
+        "end": 15.1,
+        "description": "女子面向镜头做最后的舞蹈动作"
+      },
+      {
+        "id": "E-S07-P01-A1",
+        "actor_id": "S07-P01",
+        "shot_id": "S07",
+        "start": 15.1,
+        "end": 15.1,
+        "description": "男子保持站立姿势"
+      },
+      {
+        "id": "E-S07-P02-A1",
+        "actor_id": "S07-P02",
+        "shot_id": "S07",
+        "start": 15.1,
+        "end": 15.1,
+        "description": "女子保持站立姿势"
+      }
+    ],
+    "actions": [
+      {
+        "id": "A-S01-P01-1",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-A1",
+        "kind": "held_pose",
+        "label": "双手交叉站立",
+        "start": 0.0,
+        "end": 3.0,
+        "start_range": [
+          0.0,
+          3.0
+        ],
+        "end_range": [
+          0.0,
+          3.0
+        ],
+        "detail": "起始时男子站在画面中央，双手在小腹前交叉握住。在整个时间段内，他保持这个姿势，只有头部有轻微的转动，身体没有明显的位移。结束时仍保持双手交叉的姿态。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "男子双手交叉放在身前站立"
+          },
+          {
+            "time": 1.5,
+            "observation": "男子继续保持双手交叉的姿势"
+          },
+          {
+            "time": 3.0,
+            "observation": "男子开始放下手臂"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "躯干"
+        ],
+        "movement_roles": [
+          "支撑主体姿态"
+        ],
+        "subphases": [],
+        "brief": "男子双手交叉放在身前静止站立"
+      },
+      {
+        "id": "A-S01-P01-2",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P01-A2",
+        "kind": "motion",
+        "label": "放下手臂并移动脚步",
+        "start": 3.0,
+        "end": 5.5,
+        "start_range": [
+          3.0,
+          5.5
+        ],
+        "end_range": [
+          3.0,
+          5.5
+        ],
+        "detail": "男子将原本交叉的双臂放下，随后双腿分开并向两侧迈出步伐，身体重心随之移动，准备进入下一个舞蹈动作。",
+        "evidence": [
+          {
+            "time": 3.0,
+            "observation": "男子放下交叉的手臂"
+          },
+          {
+            "time": 4.0,
+            "observation": "男子双腿分开并向两侧迈步"
+          },
+          {
+            "time": 5.5,
+            "observation": "男子完成脚步移动，准备转身"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双腿"
+        ],
+        "movement_roles": [
+          "改变身体姿态",
+          "空间位移"
+        ],
+        "subphases": [],
+        "brief": "男子放下手臂并迈开双腿调整站姿"
+      },
+      {
+        "id": "A-S01-P02-1",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "E-S01-P02-A1",
+        "kind": "motion",
+        "label": "从身后走出并摆姿势",
+        "start": 3.5,
+        "end": 5.5,
+        "start_range": [
+          3.5,
+          5.5
+        ],
+        "end_range": [
+          3.5,
+          5.5
+        ],
+        "detail": "女子从男子的右后方走出到画面右侧，双腿微屈，双手自然下垂或微微抬起，摆出一个准备跳舞的姿势。",
+        "evidence": [
+          {
+            "time": 3.5,
+            "observation": "女子从男子身后露出部分身体"
+          },
+          {
+            "time": 4.5,
+            "observation": "女子完全走到画面右侧"
+          },
+          {
+            "time": 5.5,
+            "observation": "女子摆好姿势等待下一步动作"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "空间位移",
+          "建立新姿态"
+        ],
+        "subphases": [],
+        "brief": "女子从男子身后走出并在旁边摆好舞蹈姿势"
+      },
+      {
+        "id": "A-S02-P01-1",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E-S02-P01-A1",
+        "kind": "motion",
+        "label": "面对面跳舞",
+        "start": 5.5,
+        "end": 8.0,
+        "start_range": [
+          5.5,
+          8.0
+        ],
+        "end_range": [
+          5.5,
+          8.0
+        ],
+        "detail": "男子转向右侧面对女子，双手握拳在胸前交替上下摆动，双腿配合节奏小幅度跳跃和移动。",
+        "evidence": [
+          {
+            "time": 5.5,
+            "observation": "男子转身面向女子"
+          },
+          {
+            "time": 6.5,
+            "observation": "男子双手握拳在胸前摆动"
+          },
+          {
+            "time": 8.0,
+            "observation": "男子停止当前动作准备转身"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双腿",
+          "躯干"
+        ],
+        "movement_roles": [
+          "舞蹈律动",
+          "空间微调"
+        ],
+        "subphases": [],
+        "brief": "男子面向女子做握拳摆臂的舞蹈动作"
+      },
+      {
+        "id": "A-S02-P02-1",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "execution_id": "E-S02-P02-A1",
+        "kind": "motion",
+        "label": "面对面跳舞",
+        "start": 5.5,
+        "end": 8.0,
+        "start_range": [
+          5.5,
+          8.0
+        ],
+        "end_range": [
+          5.5,
+          8.0
+        ],
+        "detail": "女子转向左侧面对男子，双手同样在胸前做类似拳击或摇摆的动作，身体随节奏扭动，双腿交替踏步。",
+        "evidence": [
+          {
+            "time": 5.5,
+            "observation": "女子转身面向男子"
+          },
+          {
+            "time": 6.5,
+            "observation": "女子双手在胸前舞动，身体扭动"
+          },
+          {
+            "time": 8.0,
+            "observation": "女子停止当前动作准备转身"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双腿",
+          "躯干"
+        ],
+        "movement_roles": [
+          "舞蹈律动",
+          "空间微调"
+        ],
+        "subphases": [],
+        "brief": "女子面向男子做同步的舞蹈动作"
+      },
+      {
+        "id": "A-S02-P01-2",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E-S02-P01-A2",
+        "kind": "motion",
+        "label": "转身背对镜头跳舞",
+        "start": 8.0,
+        "end": 11.0,
+        "start_range": [
+          8.0,
+          11.0
+        ],
+        "end_range": [
+          8.0,
+          11.0
+        ],
+        "detail": "男子向左转身背对镜头，双手向两侧伸展并上下挥动，臀部和小腿随着节奏左右摆动。",
+        "evidence": [
+          {
+            "time": 8.0,
+            "observation": "男子开始转身背对镜头"
+          },
+          {
+            "time": 9.5,
+            "observation": "男子背对镜头挥舞手臂并扭动身体"
+          },
+          {
+            "time": 11.0,
+            "observation": "男子结束背对镜头的动作"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "臀部",
+          "小腿"
+        ],
+        "movement_roles": [
+          "方向转换",
+          "舞蹈律动"
+        ],
+        "subphases": [],
+        "brief": "男子转身背对镜头挥臂扭胯跳舞"
+      },
+      {
+        "id": "A-S02-P02-2",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "execution_id": "E-S02-P02-A2",
+        "kind": "motion",
+        "label": "转身背对镜头跳舞",
+        "start": 8.0,
+        "end": 11.0,
+        "start_range": [
+          8.0,
+          11.0
+        ],
+        "end_range": [
+          8.0,
+          11.0
+        ],
+        "detail": "女子向右转身背对镜头，双手叉腰或自然下垂，臀部大幅度左右摇摆，长发随之甩动。",
+        "evidence": [
+          {
+            "time": 8.0,
+            "observation": "女子开始转身背对镜头"
+          },
+          {
+            "time": 9.5,
+            "observation": "女子背对镜头用力扭动臀部"
+          },
+          {
+            "time": 11.0,
+            "observation": "女子结束背对镜头的动作"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "臀部",
+          "头发",
+          "躯干"
+        ],
+        "movement_roles": [
+          "方向转换",
+          "舞蹈律动"
+        ],
+        "subphases": [],
+        "brief": "女子转身背对镜头大力扭臀跳舞"
+      },
+      {
+        "id": "A-S02-P01-3",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "E-S02-P01-A3",
+        "kind": "motion",
+        "label": "转回身并伸手",
+        "start": 11.0,
+        "end": 13.0,
+        "start_range": [
+          11.0,
+          13.0
+        ],
+        "end_range": [
+          11.0,
+          13.0
+        ],
+        "detail": "男子重新转回身面向女子，右手向前伸出，手掌张开，做出邀请或互动的姿态。",
+        "evidence": [
+          {
+            "time": 11.0,
+            "observation": "男子转回身面向女子"
+          },
+          {
+            "time": 12.0,
+            "observation": "男子右手向前伸出"
+          },
+          {
+            "time": 13.0,
+            "observation": "男子保持伸手姿势等待击掌"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "右手"
+        ],
+        "movement_roles": [
+          "方向转换",
+          "发起互动"
+        ],
+        "subphases": [],
+        "brief": "男子转回身向女子伸出右手"
+      },
+      {
+        "id": "A-S02-P02-3",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "execution_id": "E-S02-P02-A3",
+        "kind": "motion",
+        "label": "转回身并伸手回应",
+        "start": 11.0,
+        "end": 13.0,
+        "start_range": [
+          11.0,
+          13.0
+        ],
+        "end_range": [
+          11.0,
+          13.0
+        ],
+        "detail": "女子也转回身面向男子，左手向前伸出，迎向男子的手，准备进行肢体接触。",
+        "evidence": [
+          {
+            "time": 11.0,
+            "observation": "女子转回身面向男子"
+          },
+          {
+            "time": 12.0,
+            "observation": "女子左手向前伸出"
+          },
+          {
+            "time": 13.0,
+            "observation": "女子保持伸手姿势即将触碰到男子的手"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "左手"
+        ],
+        "movement_roles": [
+          "方向转换",
+          "响应互动"
+        ],
+        "subphases": [],
+        "brief": "女子转回身向男子伸出左手回应"
+      },
+      {
+        "id": "A-S03-P01-1",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "E-S03-P01-A1",
+        "kind": "gesture",
+        "label": "与女子击掌",
+        "start": 13.0,
+        "end": 13.3,
+        "start_range": [
+          13.0,
+          13.3
+        ],
+        "end_range": [
+          13.0,
+          13.3
+        ],
+        "detail": "男子的右手掌与女子的左手掌在空中相遇并拍合，完成一次击掌动作。",
+        "evidence": [
+          {
+            "time": 13.0,
+            "observation": "两人的手靠近"
+          },
+          {
+            "time": 13.1,
+            "observation": "手掌接触瞬间"
+          },
+          {
+            "time": 13.3,
+            "observation": "手部分离"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "击掌接触",
+            "time": 13.1,
+            "time_range": [
+              13.0,
+              13.2
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "人际互动"
+        ],
+        "subphases": [],
+        "brief": "男子用右手与女子击掌"
+      },
+      {
+        "id": "A-S03-P02-1",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "execution_id": "E-S03-P02-A1",
+        "kind": "gesture",
+        "label": "与男子击掌",
+        "start": 13.0,
+        "end": 13.3,
+        "start_range": [
+          13.0,
+          13.3
+        ],
+        "end_range": [
+          13.0,
+          13.3
+        ],
+        "detail": "女子的左手掌与男子的右手掌在空中相遇并拍合，配合男子的动作完成击掌。",
+        "evidence": [
+          {
+            "time": 13.0,
+            "observation": "两人的手靠近"
+          },
+          {
+            "time": 13.1,
+            "observation": "手掌接触瞬间"
+          },
+          {
+            "time": 13.3,
+            "observation": "手部分离"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "击掌接触",
+            "time": 13.1,
+            "time_range": [
+              13.0,
+              13.2
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手"
+        ],
+        "movement_roles": [
+          "人际互动"
+        ],
+        "subphases": [],
+        "brief": "女子用左手与男子击掌"
+      },
+      {
+        "id": "A-S04-P01-1",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "E-S04-P01-A1",
+        "kind": "gesture",
+        "label": "收手并做手势",
+        "start": 13.3,
+        "end": 13.7,
+        "start_range": [
+          13.3,
+          13.7
+        ],
+        "end_range": [
+          13.3,
+          13.7
+        ],
+        "detail": "男子击掌后收回右手，随即双手在胸前快速做出类似搓手或特定舞蹈手势的动作。",
+        "evidence": [
+          {
+            "time": 13.3,
+            "observation": "男子收回右手"
+          },
+          {
+            "time": 13.5,
+            "observation": "男子双手在胸前活动"
+          },
+          {
+            "time": 13.7,
+            "observation": "男子手势动作暂告一段落"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "舞蹈过渡动作"
+        ],
+        "subphases": [],
+        "brief": "男子收回手并在胸前做快速手势"
+      },
+      {
+        "id": "A-S04-P02-1",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "execution_id": "E-S04-P02-A1",
+        "kind": "gesture",
+        "label": "收手并做手势",
+        "start": 13.3,
+        "end": 13.7,
+        "start_range": [
+          13.3,
+          13.7
+        ],
+        "end_range": [
+          13.3,
+          13.7
+        ],
+        "detail": "女子击掌后收回左手，双手也在胸前做出相应的舞蹈手势，与男子的动作形成呼应。",
+        "evidence": [
+          {
+            "time": 13.3,
+            "observation": "女子收回左手"
+          },
+          {
+            "time": 13.5,
+            "observation": "女子双手在胸前活动"
+          },
+          {
+            "time": 13.7,
+            "observation": "女子手势动作暂告一段落"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "舞蹈过渡动作"
+        ],
+        "subphases": [],
+        "brief": "女子收回手并在胸前做相应手势"
+      },
+      {
+        "id": "A-S05-P01-1",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "execution_id": "E-S05-P01-A1",
+        "kind": "gesture",
+        "label": "再次与女子击掌",
+        "start": 13.7,
+        "end": 14.3,
+        "start_range": [
+          13.7,
+          14.3
+        ],
+        "end_range": [
+          13.7,
+          14.3
+        ],
+        "detail": "男子再次伸出右手，与女子伸出的左手进行第二次击掌，动作连贯流畅。",
+        "evidence": [
+          {
+            "time": 13.7,
+            "observation": "男子再次伸手"
+          },
+          {
+            "time": 14.0,
+            "observation": "两人手掌再次接触"
+          },
+          {
+            "time": 14.3,
+            "observation": "击掌结束，手部分离"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "二次击掌接触",
+            "time": 14.0,
+            "time_range": [
+              13.9,
+              14.1
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手"
+        ],
+        "movement_roles": [
+          "人际互动"
+        ],
+        "subphases": [],
+        "brief": "男子再次与女子完成击掌动作"
+      },
+      {
+        "id": "A-S05-P02-1",
+        "actor_id": "S05-P02",
+        "shot_id": "S05",
+        "execution_id": "E-S05-P02-A1",
+        "kind": "gesture",
+        "label": "再次与男子击掌",
+        "start": 13.7,
+        "end": 14.3,
+        "start_range": [
+          13.7,
+          14.3
+        ],
+        "end_range": [
+          13.7,
+          14.3
+        ],
+        "detail": "女子配合男子的节奏，再次伸出左手与其击掌，脸上带着笑容。",
+        "evidence": [
+          {
+            "time": 13.7,
+            "observation": "女子再次伸手"
+          },
+          {
+            "time": 14.0,
+            "observation": "两人手掌再次接触"
+          },
+          {
+            "time": 14.3,
+            "observation": "击掌结束，手部分离"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "二次击掌接触",
+            "time": 14.0,
+            "time_range": [
+              13.9,
+              14.1
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手"
+        ],
+        "movement_roles": [
+          "人际互动"
+        ],
+        "subphases": [],
+        "brief": "女子配合男子完成第二次击掌"
+      },
+      {
+        "id": "A-S06-P01-1",
+        "actor_id": "S06-P01",
+        "shot_id": "S06",
+        "execution_id": "E-S06-P01-A1",
+        "kind": "motion",
+        "label": "面向镜头收尾舞蹈",
+        "start": 14.3,
+        "end": 15.1,
+        "start_range": [
+          14.3,
+          15.1
+        ],
+        "end_range": [
+          14.3,
+          15.1
+        ],
+        "detail": "男子转回正面朝向镜头，双手自然下垂或轻微摆动，双脚原地踏步，作为舞蹈的结尾部分。",
+        "evidence": [
+          {
+            "time": 14.3,
+            "observation": "男子转向正面"
+          },
+          {
+            "time": 14.7,
+            "observation": "男子原地踏步调整呼吸"
+          },
+          {
+            "time": 15.1,
+            "observation": "男子动作趋于平缓"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "舞蹈收尾",
+          "方向转换"
+        ],
+        "subphases": [],
+        "brief": "男子转向正面做简单的踏步收尾动作"
+      },
+      {
+        "id": "A-S06-P02-1",
+        "actor_id": "S06-P02",
+        "shot_id": "S06",
+        "execution_id": "E-S06-P02-A1",
+        "kind": "motion",
+        "label": "面向镜头收尾舞蹈",
+        "start": 14.3,
+        "end": 15.1,
+        "start_range": [
+          14.3,
+          15.1
+        ],
+        "end_range": [
+          14.3,
+          15.1
+        ],
+        "detail": "女子同样转回正面，双手叉腰或放在大腿侧，身体微微晃动，展现自信的姿态直到视频结束。",
+        "evidence": [
+          {
+            "time": 14.3,
+            "observation": "女子转向正面"
+          },
+          {
+            "time": 14.7,
+            "observation": "女子双手叉腰微笑"
+          },
+          {
+            "time": 15.1,
+            "observation": "女子保持定格姿势"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "舞蹈收尾",
+          "方向转换"
+        ],
+        "subphases": [],
+        "brief": "女子转向正面叉腰微笑完成舞蹈"
+      },
+      {
+        "id": "A-S07-P01-1",
+        "actor_id": "S07-P01",
+        "shot_id": "S07",
+        "execution_id": "E-S07-P01-A1",
+        "kind": "held_pose",
+        "label": "保持站立",
+        "start": 15.1,
+        "end": 15.1,
+        "start_range": [
+          15.1,
+          15.1
+        ],
+        "end_range": [
+          15.1,
+          15.1
+        ],
+        "detail": "男子在最后一帧保持直立站姿，无明显动作变化。",
+        "evidence": [
+          {
+            "time": 15.1,
+            "observation": "男子静止站立"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "终止状态"
+        ],
+        "subphases": [],
+        "brief": "男子在最后时刻保持静止站立"
+      },
+      {
+        "id": "A-S07-P02-1",
+        "actor_id": "S07-P02",
+        "shot_id": "S07",
+        "execution_id": "E-S07-P02-A1",
+        "kind": "held_pose",
+        "label": "保持站立",
+        "start": 15.1,
+        "end": 15.1,
+        "start_range": [
+          15.1,
+          15.1
+        ],
+        "end_range": [
+          15.1,
+          15.1
+        ],
+        "detail": "女子在最后一帧保持双手叉腰的站姿，面带微笑注视前方。",
+        "evidence": [
+          {
+            "time": 15.1,
+            "observation": "女子叉腰微笑站立"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "终止状态"
+        ],
+        "subphases": [],
+        "brief": "女子在最后时刻保持叉腰微笑站立"
+      }
+    ],
+    "uncertainties": [
+      "S04中男女双方具体的“搓手”或“手势”细节因帧率较低难以精确界定具体指法"
+    ],
+    "motion_tracks": [
+      {
+        "context": "画面中央前景站立着一名穿黑色外套和灰色连帽衫的男子，他内搭白色T恤，下身穿深灰色长裤和黑底白边运动鞋。男子起初面朝镜头方向，双手在身前交叠握住，双腿分开站立；在他身后紧贴着站着一名女子，女子的面部被男子的头部遮挡，仅露出穿着灰色长筒袜的双腿和部分手臂。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 87,
+            "caption": "男子保持正面朝向镜头的静止姿态，视线平视前方，表情平静且嘴部闭合。他的双手持续在腹部前方交叉握拢，手肘微屈，下半身双脚位置未发生改变，身后的女子也保持原地不动的贴合状态。",
+            "start": 0.0,
+            "end": 2.9029029029029028,
+            "action_ids": [
+              "A-S01-P01-1"
+            ]
+          },
+          {
+            "from_frame": 93,
+            "to_frame": 102,
+            "caption": "男子突然松开双手并将双臂垂放至身体两侧，随后向自己的右侧（画面左侧）转身约九十度，变为侧脸朝向画面左方。转身的同时，他将双腿大幅度跨开呈弓步姿态，重心明显下沉，原本隐藏在背后的女子随之显露出来，站在他的右后方。",
+            "start": 3.103103103103103,
+            "end": 3.4034034034034035,
+            "action_ids": [
+              "A-S01-P01-2"
+            ]
+          },
+          {
+            "from_frame": 108,
+            "to_frame": 166,
+            "caption": "男子维持面向画面左侧的姿态，与右侧的女子面对面站立并开始进行舞蹈动作。他的上半身随节奏前后晃动，双臂弯曲并在胸前小幅度摆动，双腿膝盖交替弯曲以配合律动；对面的女子同样做出相应的肢体回应，两人在画面中形成左右对称的互动站位直至片段结束。",
+            "start": 3.6036036036036037,
+            "end": 5.538872205538873,
+            "action_ids": [
+              "A-S01-P01-2"
+            ]
+          }
+        ],
+        "camera": "固定机位全景拍摄，无推拉摇移等运镜变化。背景为灰色的横条纹金属卷帘门，光线均匀，人物始终处于画面中心区域，构图稳定。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "context": "视频开始时，穿灰色吊带和黑色短裙的女子站在画面中央偏后位置，完全被前方站立的男子遮挡，仅露出穿着深灰色过膝长袜的双腿和白色运动鞋。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 87,
+            "caption": "女子在后方保持静止站立姿态，双腿微张以支撑身体重心，上半身及面部持续被前方的男子遮挡不可见。",
+            "start": 0.0,
+            "end": 2.9029029029029028,
+            "action_ids": []
+          },
+          {
+            "from_frame": 93,
+            "to_frame": 102,
+            "caption": "随着前方男子的移动，女子的下半身躯干逐渐显露，可见其身穿带有白色蕾丝边的黑色百褶短裙。她调整了腿部站位，双脚略微分开并伴随轻微的重心晃动，准备进行动作。",
+            "start": 3.103103103103103,
+            "end": 3.4034034034034035,
+            "action_ids": []
+          },
+          {
+            "from_frame": 108,
+            "to_frame": 120,
+            "caption": "女子完全进入视野，位于画面右侧。她上身穿着印有图案的灰色吊带背心，留着深色长发。她跟随节奏开始舞动，双手自然下垂并在腰侧摆动，双腿配合步伐小幅度交替跳跃，身体朝向正前方。",
+            "start": 3.6036036036036037,
+            "end": 4.004004004004004,
+            "action_ids": [
+              "A-S01-P02-1"
+            ]
+          },
+          {
+            "from_frame": 126,
+            "to_frame": 141,
+            "caption": "女子向左侧转身面向男子，右臂向前上方抬起伸出，手掌张开仿佛在推拒或示意，左臂弯曲置于身后腰部。她的双腿呈前后弓步姿态，重心下沉，与左侧的男子形成面对面的互动构图。",
+            "start": 4.2042042042042045,
+            "end": 4.704704704704705,
+            "action_ids": [
+              "A-S01-P02-1"
+            ]
+          },
+          {
+            "from_frame": 147,
+            "to_frame": 166,
+            "caption": "女子收回伸出的右手，将双臂屈起收拢至胸前，双手握拳靠近肩膀位置。她保持着面向左侧男子的姿势，双腿膝盖微曲并随节奏上下弹动，呈现出一种防御或撒娇般的舞蹈定格状态。",
+            "start": 4.904904904904905,
+            "end": 5.538872205538873,
+            "action_ids": [
+              "A-S01-P02-1"
+            ]
+          }
+        ],
+        "camera": "镜头全程保持固定的中景平视视角，无推拉摇移，完整记录了人物从被遮挡到显现并进行双人互动的全过程。",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "identity": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "context": "该男子位于画面左侧，身穿黑色外套内搭灰色连帽衫，下着深色长裤与黑白帆布鞋。起始时他侧身面向右侧的女子，两人处于空旷的卷帘门前区域。",
+        "phases": [
+          {
+            "from_frame": 167,
+            "to_frame": 203,
+            "caption": "男子双腿交替进行快速的踏步动作，膝盖高抬，双臂随节奏在胸前摆动。随后他停止原地踏步，向画面右侧横向移动，身体逐渐靠近女子并绕至其身后位置。",
+            "start": 5.572238905572239,
+            "end": 6.77344010677344,
+            "action_ids": [
+              "A-S02-P01-1"
+            ]
+          },
+          {
+            "from_frame": 212,
+            "to_frame": 248,
+            "caption": "男子站在女子右后方，双腿分开站立，双手自然下垂或微曲于体侧，目光注视前方。接着他跟随女子的转身动作，自己也向右旋转，最终背对镜头，面朝背景墙面。",
+            "start": 7.07374040707374,
+            "end": 8.274941608274942,
+            "action_ids": [
+              "A-S02-P01-1",
+              "A-S02-P01-2"
+            ]
+          },
+          {
+            "from_frame": 254,
+            "to_frame": 299,
+            "caption": "保持背对镜头的姿态，男子双膝微屈，臀部随着节奏左右扭动，手臂在身侧小幅度摆动。此阶段他的双脚位置基本固定，主要依靠腰部和下肢关节进行律动。",
+            "start": 8.475141808475142,
+            "end": 9.976643309976643,
+            "action_ids": [
+              "A-S02-P01-2"
+            ]
+          },
+          {
+            "from_frame": 305,
+            "to_frame": 341,
+            "caption": "男子向左转体回到侧面姿态，重新面向右侧的女子。此时舞蹈动作暂停，他恢复直立站姿，双手垂于大腿外侧，静止注视着对面的女子。",
+            "start": 10.176843510176843,
+            "end": 11.378044711378045,
+            "action_ids": [
+              "A-S02-P01-2",
+              "A-S02-P01-3"
+            ]
+          },
+          {
+            "from_frame": 347,
+            "to_frame": 390,
+            "caption": "面对女子的互动邀请，男子伸出右手向前探出。当两人的手掌在空中接触后，他配合对方的力度轻轻晃动连接的手臂，脸上露出笑容，完成了这一交互动作。",
+            "start": 11.578244911578246,
+            "end": 13.013013013013014,
+            "action_ids": [
+              "A-S02-P01-3"
+            ]
+          }
+        ],
+        "camera": "全程为固定的中远景平视镜头，无推拉摇移，完整记录了双人从共舞到互动的全过程。",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "identity": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "context": "视频开始时，该女子位于画面右侧中景区域，身穿灰色吊带背心、黑色百褶短裙和灰色过膝袜。她面朝左侧的男子站立，两人之间保持着约一臂的距离，背景是一扇巨大的银灰色金属卷帘门。",
+        "phases": [
+          {
+            "from_frame": 167,
+            "to_frame": 203,
+            "caption": "女子与男子面对面进行同步舞蹈动作。她的双手起初放在大腿两侧或裙摆边缘，随后随着节奏小幅度摆动，双腿交替微屈并伴随轻微的跳跃感，视线始终注视着对面的男子。",
+            "start": 5.572238905572239,
+            "end": 6.77344010677344,
+            "action_ids": [
+              "A-S02-P02-1"
+            ]
+          },
+          {
+            "from_frame": 212,
+            "to_frame": 239,
+            "caption": "女子的站位发生变化，移动至画面前景偏左位置，而男子退至其右后方。此时她正面朝向镜头方向跳舞，双腿大幅度分开呈宽距深蹲姿态，双手在身体前方快速挥舞，表情投入且嘴部张开似在跟唱。",
+            "start": 7.07374040707374,
+            "end": 7.974641307974641,
+            "action_ids": [
+              "A-S02-P02-1"
+            ]
+          },
+          {
+            "from_frame": 248,
+            "to_frame": 290,
+            "caption": "女子转身背对镜头，面向后方的金属墙壁继续舞动。她的长发随动作甩动，臀部左右摇摆带动裙摆晃动，双臂向两侧伸展并在腰间附近活动，双脚保持较宽的站立间距以支撑身体的扭动。",
+            "start": 8.274941608274942,
+            "end": 9.676343009676343,
+            "action_ids": [
+              "A-S02-P02-2"
+            ]
+          },
+          {
+            "from_frame": 299,
+            "to_frame": 362,
+            "caption": "激烈的舞蹈结束，女子转回身侧面朝向左侧的男子。她停止了大幅度的肢体动作，改为自然的站姿，偶尔调整脚步位置，面带笑容地与男子进行眼神交流，呈现出一种轻松互动的状态。",
+            "start": 9.976643309976643,
+            "end": 12.078745412078746,
+            "action_ids": [
+              "A-S02-P02-2",
+              "A-S02-P02-3"
+            ]
+          },
+          {
+            "from_frame": 371,
+            "to_frame": 390,
+            "caption": "女子主动伸出右手（主体自身坐标），越过两人之间的空隙去触碰男子的左手。两人的手掌在空中接触并进行类似击掌或握手的小幅度互动，女子脸上洋溢着开心的笑容，身体微微前倾靠近对方。",
+            "start": 12.379045712379046,
+            "end": 13.013013013013014,
+            "action_ids": [
+              "A-S02-P02-3"
+            ]
+          }
+        ],
+        "camera": "全程采用固定的全景平视机位拍摄，无明显的推拉摇移或变焦操作。画面构图稳定，完整记录了双人从面对面的舞蹈到前后排布的变化，再到最后的牵手互动全过程。光线均匀柔和，色彩还原自然。",
+        "actor_id": "S02-P02",
+        "shot_id": "S02",
+        "identity": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "context": "穿黑色外套和灰色连帽衫的男子位于画面左侧，身体呈右侧面朝向右方的女子。他站在灰色的卷帘门前，双腿分开站立，穿着深色长裤和黑白相间的运动鞋。",
+        "phases": [
+          {
+            "from_frame": 391,
+            "to_frame": 394,
+            "caption": "男子的双手从身前向两侧张开并微微抬起，随后迅速收回至胸前握拳，完成了一个类似蓄力的动作。他的头部保持面向右侧女子的姿态，下半身双脚始终固定在原地未移动。",
+            "start": 13.04637971304638,
+            "end": 13.14647981314648,
+            "action_ids": [
+              "A-S03-P01-1"
+            ]
+          },
+          {
+            "from_frame": 397,
+            "to_frame": 400,
+            "caption": "男子将双拳向前推出，手臂伸直指向对面的女子，随后又快速收回至胸前位置。整个过程中，他的躯干保持稳定直立，视线一直跟随着前方的互动对象。",
+            "start": 13.24657991324658,
+            "end": 13.34668001334668,
+            "action_ids": [
+              "A-S03-P01-1"
+            ]
+          }
+        ],
+        "camera": "镜头保持静止的中景拍摄，完整记录了两人互动的上半身及部分腿部动作，背景为固定的灰色卷帘门墙面。",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "identity": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "context": "该女子位于画面右侧，身体呈左侧面朝向左方的男子。她留着黑色长发，身穿灰色吊带背心、带有白色蕾丝边的黑色百褶短裙、深灰色过膝长袜和白色运动鞋。背景是一扇巨大的浅灰色横纹卷帘门，地面为平整的水泥地。",
+        "phases": [
+          {
+            "from_frame": 391,
+            "to_frame": 394,
+            "caption": "女子的双手从身前较高位置迅速向下挥动至腰腹部高度，手臂在运动中产生模糊拖影；她的双腿保持站立姿态未移动，面部带着笑容注视着对面的男子。",
+            "start": 13.04637971304638,
+            "end": 13.14647981314648,
+            "action_ids": [
+              "A-S03-P02-1"
+            ]
+          },
+          {
+            "from_frame": 397,
+            "to_frame": 400,
+            "caption": "女子的双臂再次抬起并在胸前区域进行快速的上下交替摆动，手部动作幅度较大且伴有明显的运动模糊；她的躯干保持稳定直立，视线始终锁定在左侧的男子身上。",
+            "start": 13.24657991324658,
+            "end": 13.34668001334668,
+            "action_ids": [
+              "A-S03-P02-1"
+            ]
+          }
+        ],
+        "camera": "固定机位拍摄，中景全景别，无镜头推拉或平移，画面稳定清晰。",
+        "actor_id": "S03-P02",
+        "shot_id": "S03",
+        "identity": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "context": "该男子位于画面左侧，站在灰色卷帘门前。他身穿黑色外套搭配灰色连帽衫、深灰色长裤和黑白帆布鞋，身体呈右侧面朝向右方的女子站立。",
+        "phases": [
+          {
+            "from_frame": 401,
+            "to_frame": 410,
+            "caption": "男子的双臂在胸前持续进行上下交替挥动的舞蹈动作，双手保持半握拳状态；他的双腿始终分开站立作为稳定的支撑点，躯干随手臂节奏轻微晃动，头部和视线一直保持侧向右方注视着对面的女子。",
+            "start": 13.380046713380047,
+            "end": 13.680347013680347,
+            "action_ids": [
+              "A-S04-P01-1"
+            ]
+          }
+        ],
+        "camera": "镜头为固定的全景机位，平视拍摄，完整记录了两人从头到脚的全身动作与空间关系，无明显的推拉摇移或视角变化。",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "identity": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "context": "该女子位于画面右侧，面朝左侧与一名男子相对站立。她留着黑色长卷发，身穿灰色紧身吊带上衣和带有白色蕾丝边的黑色百褶短裙，腿部穿着深灰色过膝袜搭配白色运动鞋。",
+        "phases": [
+          {
+            "from_frame": 401,
+            "to_frame": 407,
+            "caption": "女子双腿分开微屈以保持重心稳定，双手握拳置于胸前至肩部高度，正快速且连续地上下挥动双臂进行舞蹈律动。她的头部随着手臂的节奏轻微晃动，面带笑容注视着对面的男子。",
+            "start": 13.380046713380047,
+            "end": 13.580246913580247,
+            "action_ids": [
+              "A-S04-P02-1"
+            ]
+          },
+          {
+            "from_frame": 407,
+            "to_frame": 410,
+            "caption": "女子的动作发生转换，她将原本在胸前挥舞的双臂向上抬起，右手举至额头附近似在做敬礼或遮阳状，左手随之弯曲靠近面部区域。此时她的身体姿态略微调整，但双脚依然保持在原地支撑。",
+            "start": 13.580246913580247,
+            "end": 13.680347013680347,
+            "action_ids": [
+              "A-S04-P02-1"
+            ]
+          }
+        ],
+        "camera": "镜头全程保持静止的中远景平视拍摄，完整框取了两人互动的全身范围及背景的金属卷帘门，无推拉摇移等运镜变化。",
+        "actor_id": "S04-P02",
+        "shot_id": "S04",
+        "identity": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "context": "该男子位于画面左侧，身穿黑色外套内搭灰色连帽衫，下着深色长裤与黑白帆布鞋。他侧身面向右侧的女子站立，两人之间保持一定距离，背景为灰色的卷帘门墙面。",
+        "phases": [
+          {
+            "from_frame": 411,
+            "to_frame": 417,
+            "caption": "男子双手抬起至胸前高度，掌心朝向对方，随后向前伸出双臂，与女子伸出的手在空中交汇并击掌。",
+            "start": 13.713713713713714,
+            "end": 13.913913913913914,
+            "action_ids": [
+              "A-S05-P01-1"
+            ]
+          },
+          {
+            "from_frame": 420,
+            "to_frame": 426,
+            "caption": "完成击掌后，男子收回双臂并向身体两侧放下，随即转身背对女子，将面部转向镜头方向。",
+            "start": 14.014014014014014,
+            "end": 14.214214214214214,
+            "action_ids": [
+              "A-S05-P01-1"
+            ]
+          },
+          {
+            "from_frame": 429,
+            "to_frame": 430,
+            "caption": "男子完全转为正面朝向镜头的姿态，双腿分开微曲，重心下沉，呈现出准备舞蹈或定格的动作状态。",
+            "start": 14.314314314314315,
+            "end": 14.347681014347682,
+            "action_ids": []
+          }
+        ],
+        "camera": "固定机位拍摄，全程无推拉摇移，完整记录了双人从侧面互动到单人转身的过程。",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "identity": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "context": "在S05镜头开始时，穿灰色吊带和黑色短裙的女子位于画面右侧中景处。她侧身面向左侧的男子站立，背景是一扇灰色的卷帘门。",
+        "phases": [
+          {
+            "from_frame": 411,
+            "to_frame": 417,
+            "caption": "女子双手举至胸前准备与男子击掌，随后向前伸出双臂完成击掌动作。",
+            "start": 13.713713713713714,
+            "end": 13.913913913913914,
+            "action_ids": [
+              "A-S05-P02-1"
+            ]
+          },
+          {
+            "from_frame": 420,
+            "to_frame": 426,
+            "caption": "击掌后，女子收回双手并放下，身体微微转向正前方，面带微笑看着男子。",
+            "start": 14.014014014014014,
+            "end": 14.214214214214214,
+            "action_ids": [
+              "A-S05-P02-1"
+            ]
+          },
+          {
+            "from_frame": 429,
+            "to_frame": 430,
+            "caption": "女子完全转向正面，双手自然垂放于身体两侧或轻触裙摆，双腿微屈呈放松站姿。",
+            "start": 14.314314314314315,
+            "end": 14.347681014347682,
+            "action_ids": []
+          }
+        ],
+        "camera": "这是一个固定的全景镜头，视角平视，完整记录了两人互动的全过程及周围环境。",
+        "actor_id": "S05-P02",
+        "shot_id": "S05",
+        "identity": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "context": "男子位于画面左侧，身穿黑色外套内搭灰色连帽衫、深色长裤和黑白运动鞋。他站在带有横向纹理的浅灰色卷帘门前，身体正面朝向镜头，右侧站着一名穿短裙的女子。",
+        "phases": [
+          {
+            "from_frame": 431,
+            "to_frame": 437,
+            "caption": "男子的双手自然下垂于大腿两侧，双脚分开站立在地面上。他的头部微微偏向自己的右侧（即画面左侧），视线看向斜下方，整个上半身和下半身均保持静止状态。",
+            "start": 14.381047714381047,
+            "end": 14.581247914581247,
+            "action_ids": [
+              "A-S06-P01-1"
+            ]
+          },
+          {
+            "from_frame": 440,
+            "to_frame": 452,
+            "caption": "男子将头转正，视线平视前方镜头方向。从第446帧开始，他将右腿抬起并向前迈出一步，随后左脚跟上交叉在右脚后方，完成了一个简单的踏步换位动作，之后双腿再次恢复平稳站立姿态。",
+            "start": 14.681348014681348,
+            "end": 15.081748415081748,
+            "action_ids": [
+              "A-S06-P01-1"
+            ]
+          }
+        ],
+        "camera": "固定机位全景拍摄，无推拉摇移，背景为平整的工业风墙面，光线均匀明亮。",
+        "actor_id": "S06-P01",
+        "shot_id": "S06",
+        "identity": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "context": "在灰色卷帘门背景前的画面右侧，站着一名长发女子。她身穿印有图案的灰色吊带背心、带白色蕾丝边的黑色百褶短裙，腿上穿着深灰色过膝长袜搭配白色运动鞋。起始时她正面朝向镜头，双手叉腰置于髋部两侧，双腿微分站立，面带微笑且嘴巴张开似在跟唱或说话。",
+        "phases": [
+          {
+            "from_frame": 431,
+            "to_frame": 452,
+            "caption": "在整个片段中，该女子的上半身姿态保持高度稳定：双臂持续弯曲，双手始终稳固地叉在腰间，手指扣住裙摆上方的胯骨位置；躯干正对前方，面部表情生动，嘴部随节奏开合。主要的动态集中在下肢与重心调节上：从431帧开始，她的双腿交替进行轻微的弹跳动作，膝盖随之屈伸，带动身体上下起伏。随着时间推移至440-452帧，这种律动变得更加连贯，表现为双脚离地的轻快跳跃配合左右重心的细微切换，但始终保持面向镜头的正向站位，未发生位移或转身。",
+            "start": 14.381047714381047,
+            "end": 15.081748415081748,
+            "action_ids": [
+              "A-S06-P02-1"
+            ]
+          }
+        ],
+        "camera": "固定机位拍摄的中全景镜头，无推拉摇移。画面构图稳定，将两名舞者完整纳入取景框内，背景的横向条纹卷帘门提供了静止的空间参照系。",
+        "actor_id": "S06-P02",
+        "shot_id": "S06",
+        "identity": "穿灰色吊带和黑色短裙的女子"
+      },
+      {
+        "context": "该男子位于画面左侧，身穿黑色外套内搭灰色连帽衫、深色长裤和黑白运动鞋。他站在带有横向纹理的浅灰色卷帘门前，身体正面朝向镜头，与右侧的女子并排站立，两人之间保持一定距离。",
+        "phases": [
+          {
+            "from_frame": 453,
+            "to_frame": 454,
+            "caption": "男子在画面左侧保持静止站姿，双手自然下垂于大腿两侧，并未随右侧女子的舞动而移动。他的面部表情平静，视线持续直视前方镜头，双腿分开站立以维持重心稳定，整体姿态未发生位移或肢体摆动。",
+            "start": 15.115115115115115,
+            "end": 15.148481815148482,
+            "action_ids": []
+          }
+        ],
+        "camera": "镜头全程保持固定机位拍摄，无推拉摇移等运动，景别为包含两名主体的全身中远景，构图稳定，光线均匀。",
+        "actor_id": "S07-P01",
+        "shot_id": "S07",
+        "identity": "穿黑色外套和灰色连帽衫的男子"
+      },
+      {
+        "context": "该女子位于画面右侧中景区域，站在一名身穿黑色外套的男子身旁。她留着深色长卷发，上身穿着一件带有图案的灰色吊带背心，下身穿着边缘有白色蕾丝装饰的黑色百褶短裙，小腿处套着深灰色的堆堆袜，脚穿白色运动鞋。她的身体正面朝向镜头，双手置于腰胯部两侧，处于静止站立状态。",
+        "phases": [
+          {
+            "from_frame": 453,
+            "to_frame": 454,
+            "caption": "在整个时间段内，该女子保持完全静止的姿态。她的双脚分开站立在地面上，重心均匀分布；双臂自然下垂并在腰部两侧弯曲，双手手指轻触或靠近裙摆上方的腰间位置。头部保持正直，面部朝向前方，长发披散在肩头，没有任何明显的肢体位移、表情变化或视线转移。",
+            "start": 15.115115115115115,
+            "end": 15.148481815148482,
+            "action_ids": []
+          }
+        ],
+        "camera": "镜头为固定的全景机位，垂直拍摄，无推拉摇移等运动。画面构图稳定，背景是一扇巨大的银灰色卷帘门，光线均匀柔和，无明显阴影变化。",
+        "actor_id": "S07-P02",
+        "shot_id": "S07",
+        "identity": "穿灰色吊带和黑色短裙的女子"
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "S04中男女双方具体的“搓手”或“手势”细节因帧率较低难以精确界定具体指法",
+    "A-S02-P01-1　Invalid interval: A-S02-P01-1",
+    "A-S02-P02-1　Invalid interval: A-S02-P02-1",
+    "A-S03-P01-1　Invalid interval: A-S03-P01-1",
+    "A-S03-P02-1　Invalid interval: A-S03-P02-1",
+    "A-S04-P01-1　Invalid interval: A-S04-P01-1",
+    "A-S04-P02-1　Invalid interval: A-S04-P02-1",
+    "A-S05-P01-1　Invalid interval: A-S05-P01-1",
+    "A-S05-P02-1　Invalid interval: A-S05-P02-1",
+    "A-S06-P01-1　Invalid interval: A-S06-P01-1",
+    "A-S06-P02-1　Invalid interval: A-S06-P02-1",
+    "A-S07-P01-1　Invalid interval: A-S07-P01-1",
+    "A-S07-P02-1　Invalid interval: A-S07-P02-1"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "16541f4fe9e80f3638d7b23edba71c8d845d32b6bd52697adab85d03275dba9c",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

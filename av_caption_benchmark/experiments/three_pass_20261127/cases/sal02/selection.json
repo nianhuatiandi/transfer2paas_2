@@ -1,0 +1,24 @@
+{
+  "id": "sal02",
+  "category": "家务与个人照护",
+  "title": "清洁水槽处理器",
+  "source": {
+    "id": "sal02",
+    "benchmark": "video-SALMONN 2",
+    "domain": "厨房水槽清洁",
+    "original_id": "video/88.mp4",
+    "source_url": "https://huggingface.co/datasets/tsinghua-ee/video-SALMONN_2_testset/resolve/bed2d8e6547210d55945b056e9f0f8ab00129392/video/88.mp4",
+    "archive_member": null,
+    "source_window_seconds": [
+      0,
+      12
+    ],
+    "source_duration": 45.2,
+    "source_media_sha256": "300a1e8356b649cca5c3c5c7f5d977b4ce819757339b2ffa284da38451ee3191",
+    "clip_sha256": "35d355fe9454214e34100fc3c52f32a73884ca8e498a149bbf27b9fff0ac05f9",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "source_start": 0,
+  "duration": 12.0,
+  "sha256": "35d355fe9454214e34100fc3c52f32a73884ca8e498a149bbf27b9fff0ac05f9"
+}

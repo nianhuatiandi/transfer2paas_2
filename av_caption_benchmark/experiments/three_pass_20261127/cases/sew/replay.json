@@ -1,0 +1,36 @@
+{
+  "claims": [
+    {
+      "id": "1",
+      "claim": "开头手在缝纫机压脚处引导蓝布。"
+    },
+    {
+      "id": "2",
+      "claim": "标题卡之后双手捏住布边并折叠它。"
+    },
+    {
+      "id": "3",
+      "claim": "折边时手拿出金属别针并穿过布料固定。"
+    }
+  ],
+  "checks": [
+    {
+      "id": "1",
+      "verdict": "supported",
+      "evidence": "Video 0.0-3.5s shows hands guiding blue fabric under the sewing machine presser foot.",
+      "time_s": 0.0
+    },
+    {
+      "id": "2",
+      "verdict": "supported",
+      "evidence": "After the title card (4.0-7.5s), Video 8.0-12.5s shows both hands pinching and folding the edge of the blue fabric.",
+      "time_s": 8.0
+    },
+    {
+      "id": "3",
+      "verdict": "contradicted",
+      "evidence": "During the folding action in Video 8.0-12.5s, no metal pins are visible being taken out or inserted into the fabric; only hand movements for folding are shown.",
+      "time_s": 9.0
+    }
+  ]
+}

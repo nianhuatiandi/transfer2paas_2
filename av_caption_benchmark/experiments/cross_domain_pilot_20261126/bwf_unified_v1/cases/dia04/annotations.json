@@ -1,0 +1,354 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "dia04",
+    "benchmark": "DiaDemBench",
+    "domain": "双人驾车与跨镜台词",
+    "original_id": "559",
+    "source_url": "https://huggingface.co/datasets/DiaDem-Captioner/DiaDemBench/blob/ff6dfcc152ee4cc96e92ec83a0910c187e6ad98b/videos.zip",
+    "archive_member": "videos/559.mp4",
+    "source_window_seconds": [
+      0,
+      10.8441875
+    ],
+    "source_duration": 10.8441875,
+    "source_media_sha256": "bdfe4354deb687665556c766395013f18f9354a62a8ad25294dd1b62026482fe",
+    "clip_sha256": "bdfe4354deb687665556c766395013f18f9354a62a8ad25294dd1b62026482fe",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "duration_seconds": 10.8501875,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 3.884875,
+      "first_frame": 0,
+      "end_frame_exclusive": 93
+    },
+    {
+      "id": "S02",
+      "start": 3.884875,
+      "end": 8.3059375,
+      "first_frame": 93,
+      "end_frame_exclusive": 199
+    },
+    {
+      "id": "S03",
+      "start": 8.3059375,
+      "end": 8.3476875,
+      "first_frame": 199,
+      "end_frame_exclusive": 200
+    },
+    {
+      "id": "S04",
+      "start": 8.3476875,
+      "end": 10.8501875,
+      "first_frame": 200,
+      "end_frame_exclusive": 260
+    }
+  ],
+  "input_frames": {
+    "visual": 112,
+    "review": 145
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含四个镜头，主要展示一辆红色老爷车在乡间行驶的过程。由于前两个镜头车辆距离较远且存在遮挡，无法清晰辨认车内乘员的具体动作，仅在最后一个镜头中能够确认驾驶员和乘客的存在及基本姿态。",
+    "actors": [
+      {
+        "id": "Driver",
+        "shot_id": "S04",
+        "description": "坐在红色敞篷车左侧的男性，戴着帽子，双手握着方向盘驾驶车辆。"
+      },
+      {
+        "id": "Passenger",
+        "shot_id": "S04",
+        "description": "坐在红色敞篷车右侧的女性，头发盘起，身体随车辆行驶轻微晃动。"
+      }
+    ],
+    "executions": [],
+    "actions": [
+      {
+        "id": "A1",
+        "actor_id": "Driver",
+        "shot_id": "S04",
+        "execution_id": null,
+        "kind": "motion",
+        "label": "驾驶汽车",
+        "start": 8.35,
+        "end": 10.81,
+        "start_range": [
+          8.35,
+          8.64
+        ],
+        "end_range": [
+          10.77,
+          10.81
+        ],
+        "detail": "驾驶员坐在红色敞篷车的左侧座位上，双手握住前方的方向盘。随着车辆在土路上向前行驶，他的手臂保持弯曲姿势控制方向，头部朝向前方道路，身体随车辆的颠簸产生轻微的上下起伏。",
+        "evidence": [
+          {
+            "time": 8.35,
+            "observation": "透过树枝缝隙隐约可见车内左侧有人影。"
+          },
+          {
+            "time": 9.27,
+            "observation": "车辆驶出树林阴影，清晰看到驾驶员双手握在方向盘上。"
+          },
+          {
+            "time": 10.81,
+            "observation": "车辆持续向镜头方向行驶，驾驶员保持驾驶姿态直至镜头结束。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "手",
+          "手臂",
+          "头",
+          "躯干"
+        ],
+        "movement_roles": [
+          "操控",
+          "乘坐"
+        ],
+        "subphases": [],
+        "brief": "驾驶员坐在红色敞篷车左侧，双手握持方向盘沿土路向前行驶。"
+      },
+      {
+        "id": "A2",
+        "actor_id": "Passenger",
+        "shot_id": "S04",
+        "execution_id": null,
+        "kind": "held_pose",
+        "label": "乘车",
+        "start": 8.35,
+        "end": 10.81,
+        "start_range": [
+          8.35,
+          8.64
+        ],
+        "end_range": [
+          10.77,
+          10.81
+        ],
+        "detail": "乘客坐在红色敞篷车的右侧座位上，面向前方。她的上半身保持相对静止的坐姿，没有明显的手部操作动作，仅随着车辆在崎岖路面上的行驶而发生被动的轻微摇晃。",
+        "evidence": [
+          {
+            "time": 9.27,
+            "observation": "车辆驶出树林，清晰看到右侧座位上的女性乘客端坐。"
+          },
+          {
+            "time": 10.14,
+            "observation": "乘客保持坐姿，视线似乎看向前方或侧方风景。"
+          },
+          {
+            "time": 10.81,
+            "observation": "直到镜头结束，乘客一直保持乘坐状态。"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "头"
+        ],
+        "movement_roles": [
+          "乘坐"
+        ],
+        "subphases": [],
+        "brief": "乘客坐在红色敞篷车右侧座位上，随车前行并保持端坐姿态。"
+      }
+    ],
+    "uncertainties": [
+      "S01和S02镜头中车辆距离过远且有树木遮挡，无法分辨车内是否有人以及具体的驾驶动作细节。",
+      "S03镜头极短（约0.04秒），仅为模糊的树冠画面，未捕捉到有效的人物或动作信息。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "N001",
+        "kind": "music",
+        "layer": "background",
+        "start": 0.0,
+        "end": 10.85,
+        "start_range": [
+          0.0,
+          0.2
+        ],
+        "end_range": [
+          10.6,
+          10.85
+        ],
+        "speaker_id": null,
+        "description": "持续的管弦乐配乐，带有戏剧性和紧张感",
+        "evidence": [
+          {
+            "time": 3.0,
+            "observation": "可听到明显的弦乐和打击乐元素"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 7.4,
+        "end": 10.8,
+        "start_range": [
+          7.2,
+          7.6
+        ],
+        "end_range": [
+          10.6,
+          11.0
+        ],
+        "speaker_id": "V01",
+        "description": "女声以中等语速说话，语气略带沮丧或解释性",
+        "evidence": [
+          {
+            "time": 7.4,
+            "observation": "语音开始于'in the town'"
+          },
+          {
+            "time": 9.5,
+            "observation": "短语'soldiers but it didn't work'清晰可辨"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "In the town I tried to use my powers on the soldiers, but it didn't work."
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "A1",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.35,
+          10.81
+        ],
+        "overlap_s": 2.46
+      },
+      {
+        "action_id": "A1",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.35,
+          10.8
+        ],
+        "overlap_s": 2.45
+      },
+      {
+        "action_id": "A2",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.35,
+          10.81
+        ],
+        "overlap_s": 2.46
+      },
+      {
+        "action_id": "A2",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.35,
+          10.8
+        ],
+        "overlap_s": 2.45
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "A1",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.35,
+          10.8
+        ],
+        "overlap_s": 2.45
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "A1",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.35,
+          10.81
+        ],
+        "overlap_s": 2.46
+      },
+      {
+        "action_id": "A2",
+        "audio_id": "N001",
+        "action_kind": "held_pose",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          8.35,
+          10.81
+        ],
+        "overlap_s": 2.46
+      },
+      {
+        "action_id": "A2",
+        "audio_id": "U001",
+        "action_kind": "held_pose",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.35,
+          10.8
+        ],
+        "overlap_s": 2.45
+      }
+    ]
+  },
+  "warnings": [
+    "S01和S02镜头中车辆距离过远且有树木遮挡，无法分辨车内是否有人以及具体的驾驶动作细节。",
+    "S03镜头极短（约0.04秒），仅为模糊的树冠画面，未捕捉到有效的人物或动作信息。",
+    "U001: Invalid end uncertainty bracket: U001",
+    "Invalid end uncertainty bracket: U001"
+  ]
+}

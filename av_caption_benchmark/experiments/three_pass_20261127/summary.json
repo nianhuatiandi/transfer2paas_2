@@ -1,0 +1,102 @@
+{
+  "cases": 12,
+  "domains": 6,
+  "independent_outputs": 72,
+  "votes": {
+    "visual": {
+      "1": 44,
+      "2": 16,
+      "3": 17
+    },
+    "audio": {
+      "1": 38,
+      "2": 21,
+      "3": 11
+    }
+  },
+  "positive_probes": 20,
+  "negative_probes": 4,
+  "scores": {
+    "round1": {
+      "positive_supported": 17,
+      "negative_asserted": 0
+    },
+    "round2": {
+      "positive_supported": 18,
+      "negative_asserted": 0
+    },
+    "round3": {
+      "positive_supported": 17,
+      "negative_asserted": 0
+    },
+    "both_first_two": {
+      "positive_supported": 17,
+      "negative_asserted": 0
+    },
+    "majority": {
+      "positive_supported": 17,
+      "negative_asserted": 0
+    }
+  },
+  "stable_edges": 39,
+  "stable_edges_under_point2": 2,
+  "normalized_event_bounds": 7,
+  "word_checks": [
+    {
+      "case": "timer",
+      "visual": "双手拔下黑色适配器",
+      "visual_range": [
+        2.5,
+        3.96
+      ],
+      "phrase": "unplug … power",
+      "word_range": [
+        3.06,
+        4.14
+      ],
+      "overlap": 0.9
+    },
+    {
+      "case": "timer",
+      "visual": "双手拔下黑色适配器",
+      "visual_range": [
+        2.5,
+        3.96
+      ],
+      "phrase": "label … tape",
+      "word_range": [
+        4.44,
+        6.96
+      ],
+      "overlap": 0
+    },
+    {
+      "case": "apple",
+      "visual": "指向罐子标签",
+      "visual_range": [
+        13.850000000000001,
+        15.25
+      ],
+      "phrase": "individual … here",
+      "word_range": [
+        11.04,
+        12.45
+      ],
+      "overlap": 0
+    },
+    {
+      "case": "apple",
+      "visual": "指向罐子标签",
+      "visual_range": [
+        13.850000000000001,
+        15.25
+      ],
+      "phrase": "whole … weeks",
+      "word_range": [
+        13.71,
+        17.43
+      ],
+      "overlap": 1.4
+    }
+  ]
+}

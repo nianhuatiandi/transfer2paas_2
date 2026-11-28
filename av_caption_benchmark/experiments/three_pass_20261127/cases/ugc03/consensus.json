@@ -1,0 +1,669 @@
+{
+  "groups": {
+    "visual": [
+      {
+        "members": [
+          "1.0",
+          "2.0",
+          "3.0"
+        ],
+        "votes": 3,
+        "start": 0.0,
+        "end": 1.5,
+        "representative": "1.0",
+        "example": {
+          "actor": "画面中的人物（仅可见双手和前臂）",
+          "activity": "切割肉类",
+          "kind": "motion",
+          "label": "切肉",
+          "brief": "人物使用菜刀将案板上的熟肉切成小块。",
+          "detail": "右手握持带花纹的菜刀柄，刀刃向下反复切入深色的块状食物中；左手手指按压在食物上方以固定其位置。",
+          "start": 0.0,
+          "end": 1.5,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V1"
+      },
+      {
+        "members": [
+          "1.1",
+          "2.1",
+          "3.1"
+        ],
+        "votes": 3,
+        "start": 2.0,
+        "end": 3.0,
+        "representative": "2.1",
+        "example": {
+          "actor": "画面外的人（仅可见双手及小臂）",
+          "activity": "涂抹酱料",
+          "kind": "motion",
+          "label": "在面包上涂橙色酱汁",
+          "brief": "这个人用金属勺把浓稠的橙褐色酱汁均匀地铺在一片烤过的切片面包表面。",
+          "detail": "勺子先舀起一团黏稠的橙色酱汁落在面包中央，随后通过左右来回刮抹的动作将其推开覆盖整个截面，酱汁边缘随勺背滑动而延展。",
+          "start": 2.0,
+          "end": 3.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.25,
+        "id": "V2"
+      },
+      {
+        "members": [
+          "1.2",
+          "2.2",
+          "3.2"
+        ],
+        "votes": 3,
+        "start": 3.0,
+        "end": 4.0,
+        "representative": "2.2",
+        "example": {
+          "actor": "画面外的人（仅可见双手）",
+          "activity": "放置食材",
+          "kind": "motion",
+          "label": "把切好的肉放到面包上",
+          "brief": "这个人用手抓起刚切开的肉片叠放在涂好酱汁的面包底上。",
+          "detail": "手指捏住多片深棕色亮泽的肉块从画面上方移入，平稳地压在橙色酱面上，松手后肉层覆盖了大部分面包表面。",
+          "start": 3.0,
+          "end": 4.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 2.5,
+        "id": "V3"
+      },
+      {
+        "members": [
+          "3.3"
+        ],
+        "votes": 1,
+        "start": 4.0,
+        "end": 5.0,
+        "representative": "3.3",
+        "example": {
+          "actor": "厨师",
+          "activity": "添加配菜",
+          "kind": "motion",
+          "label": "铺放蔬菜丝",
+          "brief": "厨师用筷子夹起黄瓜和洋葱混合的腌菜放在肉上。",
+          "detail": "木筷从透明盒中取出浅绿白色条状物堆叠于中心位置。",
+          "start": 4.0,
+          "end": 5.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V4"
+      },
+      {
+        "members": [
+          "2.3"
+        ],
+        "votes": 1,
+        "start": 4.0,
+        "end": 6.5,
+        "representative": "2.3",
+        "example": {
+          "actor": "画面外的人（仅可见双手）",
+          "activity": "添加配菜与调味",
+          "kind": "motion",
+          "label": "加黄瓜丝、淋汁撒香草",
+          "brief": "这个人在肉堆上方依次加入绿色蔬菜配料，挤上更多橙色酱汁并撒上碎叶点缀。",
+          "detail": "先是倾倒或夹取浅绿半透明的细条状瓜类落入中心形成一小丘；接着红色尖嘴瓶倾斜挤出线状的橙酱横跨其上；最后指尖抖动使细小绿叶颗粒散落覆盖顶部。",
+          "start": 4.0,
+          "end": 6.5,
+          "phases": [
+            {
+              "label": "放瓜丝",
+              "start": 4.0,
+              "end": 5.0
+            },
+            {
+              "label": "挤酱",
+              "start": 5.0,
+              "end": 5.8
+            },
+            {
+              "label": "撒香草",
+              "start": 5.8,
+              "end": 6.5
+            }
+          ]
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V5"
+      },
+      {
+        "members": [
+          "3.4"
+        ],
+        "votes": 1,
+        "start": 5.0,
+        "end": 6.0,
+        "representative": "3.4",
+        "example": {
+          "actor": "厨师",
+          "activity": "淋洒调味汁",
+          "kind": "motion",
+          "label": "挤压瓶子加酱",
+          "brief": "厨师手持红盖瓶往顶部挤出一条条橙红色浓稠液体。",
+          "detail": "手腕施压控制流量呈Z字形轨迹浇淋整个夹层区域。",
+          "start": 5.0,
+          "end": 6.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V6"
+      },
+      {
+        "members": [
+          "3.5"
+        ],
+        "votes": 1,
+        "start": 6.0,
+        "end": 7.0,
+        "representative": "3.5",
+        "example": {
+          "actor": "厨师",
+          "activity": "撒香草碎",
+          "kind": "motion",
+          "label": "手指弹落绿色颗粒",
+          "brief": "厨师指尖捏住少量新鲜绿叶植物轻轻抖动使其散落在最上方。",
+          "detail": "拇指食指摩擦释放细小草本碎片增加色彩层次。",
+          "start": 6.0,
+          "end": 7.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V7"
+      },
+      {
+        "members": [
+          "1.3",
+          "2.4",
+          "3.6"
+        ],
+        "votes": 3,
+        "start": 6.75,
+        "end": 7.5,
+        "representative": "1.3",
+        "example": {
+          "actor": "画面中的人物（仅可见双手和前臂）",
+          "activity": "合上面包",
+          "kind": "motion",
+          "label": "盖面包",
+          "brief": "人物将另一片面包盖在准备好的馅料上完成三明治组合。",
+          "detail": "双手捏住带有面粉痕迹的长方形硬欧包的两侧边缘，将其平移并垂直落下，完全罩住下方的肉和蔬菜层。",
+          "start": 6.75,
+          "end": 7.5,
+          "phases": []
+        },
+        "start_spread": 0.5,
+        "end_spread": 0.5,
+        "id": "V8"
+      },
+      {
+        "members": [
+          "1.4",
+          "2.5",
+          "3.7"
+        ],
+        "votes": 3,
+        "start": 8.0,
+        "end": 9.0,
+        "representative": "2.5",
+        "example": {
+          "actor": "画面外的人（仅可见双手）",
+          "activity": "切割成品",
+          "kind": "motion",
+          "label": "斜向切开三明治",
+          "brief": "这个人用餐刀从中部切入将整个长条形三明治分为两截。",
+          "detail": "一手按住上层防滑动，另一手持锯齿餐刀自右向左下方推进穿过所有层次直至触底分离，断面随即显露出丰富的内馅分布。",
+          "start": 8.0,
+          "end": 9.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.25,
+        "id": "V9"
+      },
+      {
+        "members": [
+          "1.5",
+          "2.6"
+        ],
+        "votes": 2,
+        "start": 9.0,
+        "end": 9.875,
+        "representative": "1.5",
+        "example": {
+          "actor": "画面中的人物（仅可见双手和前臂）",
+          "activity": "展示截面",
+          "kind": "gesture",
+          "label": "托举展示",
+          "brief": "人物双手捧着半个三明治向镜头展示内部层次结构。",
+          "detail": "左右手分别握住被切开的两半三明治的外侧，将其举起至胸前高度，切口正对摄像机方向，清晰暴露出面包、厚实的肉排以及夹杂其中的青瓜丝与橙黄色酱汁。",
+          "start": 9.0,
+          "end": 9.75,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.25,
+        "id": "V10"
+      },
+      {
+        "members": [
+          "3.8"
+        ],
+        "votes": 1,
+        "start": 10.0,
+        "end": 11.0,
+        "representative": "3.8",
+        "example": {
+          "actor": "厨师",
+          "activity": "开启容器",
+          "kind": "motion",
+          "label": "旋拧玻璃罐盖",
+          "brief": "厨师抓住标有品牌字样的圆形瓶盖逆时针旋转解除密封锁紧机构露出乳白膏体内容物。",
+          "detail": "指腹贴附螺纹接口处施加扭矩克服真空吸附阻力完成一次性解锁动作随即进入下一阶段准备工具介入环节。",
+          "start": 10.0,
+          "end": 11.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V11"
+      },
+      {
+        "members": [
+          "1.6"
+        ],
+        "votes": 1,
+        "start": 10.0,
+        "end": 11.75,
+        "representative": "1.6",
+        "example": {
+          "actor": "画面中的人物（仅可见双手和前臂）",
+          "activity": "开启罐装食品",
+          "kind": "motion",
+          "label": "开盖挖取",
+          "brief": "人物拧开玻璃蛋黄酱罐子的盖子并用勺子取出内容物。",
+          "detail": "双手协同操作：左手稳固地抓住贴有标签的玻璃圆柱形瓶身，右手五指扣住黑色塑料螺旋盖逆时针旋转取下；随即换右手单手持银色不锈钢餐勺伸入敞口瓶内，向上挑起一大团乳白色的膏状物质。",
+          "start": 10.0,
+          "end": 11.75,
+          "phases": [
+            {
+              "label": "拧盖",
+              "start": 10.25,
+              "end": 10.75
+            },
+            {
+              "label": "舀酱",
+              "start": 11.0,
+              "end": 11.75
+            }
+          ]
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V12"
+      },
+      {
+        "members": [
+          "2.7"
+        ],
+        "votes": 1,
+        "start": 10.5,
+        "end": 11.0,
+        "representative": "2.7",
+        "example": {
+          "actor": "穿黑衣戴手表者（左前臂有大面积纹身）",
+          "activity": "开启容器",
+          "kind": "motion",
+          "label": "拧开蛋黄酱罐盖",
+          "brief": "此人握住标有 Chosen Foods 字样的玻璃广口瓶旋转黑色塑料旋盖使之脱离螺纹。",
+          "detail": "左手扶稳瓶身防止移位，右手五指环绕帽沿逆时针发力转动直到听见松动迹象并将盖子完全取下置于旁边台面。",
+          "start": 10.5,
+          "end": 11.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V13"
+      },
+      {
+        "members": [
+          "2.8"
+        ],
+        "votes": 1,
+        "start": 11.0,
+        "end": 12.0,
+        "representative": "2.8",
+        "example": {
+          "actor": "穿黑衣戴手表者（左前臂有大面积纹身）",
+          "activity": "舀取膏体",
+          "kind": "motion",
+          "label": "用匙挖取白色乳化物",
+          "brief": "此人伸进敞口的瓶子深处铲出一大团顺滑洁白的类似美乃滋质地的物质提出液面。",
+          "detail": "不锈钢汤匙探入瓶颈以下空间贴壁兜转一圈收集足量凝固态油脂混合物，提起过程中因粘性产生拉丝效果且保持形态不散落滴答作响。",
+          "start": 11.0,
+          "end": 12.0,
+          "phases": []
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "V14"
+      }
+    ],
+    "audio": [
+      {
+        "members": [
+          "2.0"
+        ],
+        "votes": 1,
+        "start": 0.08,
+        "end": 8.72,
+        "representative": "2.0",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "男子热情地介绍柠檬大蒜鸡",
+          "text": "Lemon garlic chicken is so good, you're gonna love this one. And coming in at only 660 calories and 33 grams of protein, I could eat this one every day.",
+          "start": 0.08,
+          "end": 8.72
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A1"
+      },
+      {
+        "members": [
+          "1.0",
+          "3.0"
+        ],
+        "votes": 2,
+        "start": 0.12,
+        "end": 3.3600000000000003,
+        "representative": "1.0",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "Lemon garlic chicken is so good, you're gonna love this one.",
+          "start": 0.16,
+          "end": 3.52,
+          "label": "Lemon garlic chicken is so good, you're gonna love this one."
+        },
+        "start_spread": 0.08,
+        "end_spread": 0.31999999999999984,
+        "id": "A2"
+      },
+      {
+        "members": [
+          "1.1",
+          "3.1"
+        ],
+        "votes": 2,
+        "start": 3.5999999999999996,
+        "end": 9.079999999999998,
+        "representative": "1.1",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "And coming in at only 660 calories and 33 grams of protein, I could eat this one every day.",
+          "start": 3.76,
+          "end": 9.04,
+          "label": "And coming in at only 660 calories and 33 grams of protein, I could eat this one every day."
+        },
+        "start_spread": 0.31999999999999984,
+        "end_spread": 0.08000000000000007,
+        "id": "A3"
+      },
+      {
+        "members": [
+          "3.2"
+        ],
+        "votes": 1,
+        "start": 5.76,
+        "end": 10.24,
+        "representative": "3.2",
+        "example": {
+          "actor": "未知",
+          "kind": "sound",
+          "layer": "background",
+          "text": "塑料袋揉搓和沙沙声",
+          "start": 5.76,
+          "end": 10.24,
+          "label": "塑料袋揉搓和沙沙声"
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A4"
+      },
+      {
+        "members": [
+          "2.1"
+        ],
+        "votes": 1,
+        "start": 9.04,
+        "end": 12.0,
+        "representative": "2.1",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "label": "男子宣布体重更新",
+          "text": "Weight update: I finally broke through that 210 wall, man.",
+          "start": 9.04,
+          "end": 12.0
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A5"
+      },
+      {
+        "members": [
+          "1.2",
+          "3.3"
+        ],
+        "votes": 2,
+        "start": 9.28,
+        "end": 11.76,
+        "representative": "1.2",
+        "example": {
+          "actor": "男声",
+          "kind": "speech",
+          "layer": "foreground",
+          "text": "Weight update: I finally broke through that 210 wall.",
+          "start": 9.28,
+          "end": 11.76,
+          "label": "Weight update: I finally broke through that 210 wall."
+        },
+        "start_spread": 0.0,
+        "end_spread": 0.0,
+        "id": "A6"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "visual": "V1",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        0.12,
+        1.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V2",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        2.0,
+        3.0
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V3",
+      "audio": "A2",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        3.0,
+        3.3600000000000003
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V3",
+      "audio": "A3",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        3.5999999999999996,
+        4.0
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V8",
+      "audio": "A3",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        6.75,
+        7.5
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V9",
+      "audio": "A3",
+      "common_rounds": [
+        "1",
+        "3"
+      ],
+      "overlap_rounds": [
+        "1",
+        "3"
+      ],
+      "median_intersection": [
+        8.0,
+        9.0
+      ],
+      "keep": true,
+      "layer_votes": [
+        "foreground",
+        "foreground"
+      ],
+      "short": false
+    },
+    {
+      "visual": "V10",
+      "audio": "A3",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        9.0,
+        9.079999999999998
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": true
+    },
+    {
+      "visual": "V10",
+      "audio": "A6",
+      "common_rounds": [
+        "1"
+      ],
+      "overlap_rounds": [
+        "1"
+      ],
+      "median_intersection": [
+        9.28,
+        9.875
+      ],
+      "keep": false,
+      "layer_votes": [
+        "foreground"
+      ],
+      "short": false
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma31",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "室内气球互动",
+    "sample_ids": [
+      30
+    ],
+    "visible_people_screened": 3,
+    "people_limit": 3,
+    "official_path": "videos/Dream1K-09939121-813.mp4",
+    "local_original": "Dream1K-09939121-813.mp4",
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "source_window_seconds": [
+      0,
+      6.006
+    ],
+    "official_sha256": "8cf5765d046fbd59b6c33d2adb13d90a176a7d81d300aae9c387a4f5bf0d34c6",
+    "clip_sha256": "8cf5765d046fbd59b6c33d2adb13d90a176a7d81d300aae9c387a4f5bf0d34c6",
+    "audio_source": null
+  },
+  "duration_seconds": 6.006,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 6.006,
+      "first_frame": 0,
+      "end_frame_exclusive": 144
+    }
+  ],
+  "input_frames": {
+    "visual": 61
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "单镜头生活场景：一对男女进行性别揭晓仪式，男子持黑气球并用剪刀刺破，黄色纸屑飞出后落地；左侧边缘人物仅有局部入画且无可辨动作，未纳入标注。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "金发女性，穿粉白格子连衣裙，挽着男性右臂站立于其左侧"
+      },
+      {
+        "id": "S01-P02",
+        "shot_id": "S01",
+        "description": "棕发胡须男性，穿蓝白条纹衬衫和卡其裤，左手持黑色气球、右手持剪刀"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 5.964,
+        "description": "男性全程保持左手握持黑色气球底部、右手持剪刀靠近气球的姿态，并在约2.4秒处完成刺破动作"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 5.964,
+        "description": "女性全程挽住男性右臂，身体微倾向他，视线始终跟随气球及后续纸屑"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "held_pose",
+        "label": "持气球与剪刀待命",
+        "start": 0.0,
+        "end": 2.419,
+        "start_range": [
+          0.0,
+          0.083
+        ],
+        "end_range": [
+          2.294,
+          2.419
+        ],
+        "detail": "男性左手握住黑色气球下端打结处使其稳定悬于身前偏左位置，右手将剪刀尖端抵近气球表面但未接触；两人并肩站立面向前方略低头看气球，背景有彩色装饰画和粉蓝色小气球。该姿态持续至即将刺破前一刻。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "男性双手分别持气球与剪刀，气球完整未破，女性挽臂微笑注视"
+          },
+          {
+            "time": 1.502,
+            "observation": "剪刀仍贴近气球但未刺入，气球形态不变"
+          },
+          {
+            "time": 2.294,
+            "observation": "最后一帧静止状态，剪刀尖已对准气球最薄处"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手",
+          "躯干"
+        ],
+        "movement_roles": [
+          "持物",
+          "定位"
+        ],
+        "subphases": [],
+        "brief": "男性左手稳持黑气球、右手举剪刀贴附其上，保持预备姿势直至刺破前"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "刺破气球释放纸屑",
+        "start": 2.419,
+        "end": 2.794,
+        "start_range": [
+          2.419,
+          2.503
+        ],
+        "end_range": [
+          2.711,
+          2.794
+        ],
+        "detail": "男性右手所持剪刀迅速向前下方施力刺入黑色气球顶部，气球瞬间爆裂消失，大量亮黄色圆形纸屑从中喷涌而出并向四周飞散；女性同步睁大眼睛张口惊呼，身体轻微后仰但仍挽着男伴手臂。整个过程发生在不到半秒内，随后纸屑开始下落。",
+        "evidence": [
+          {
+            "time": 2.419,
+            "observation": "第一帧出现黄色纸屑爆发式扩散，原气球轮廓完全不可见"
+          },
+          {
+            "time": 2.586,
+            "observation": "纸屑仍在空中高速飘动，覆盖两人胸前区域"
+          },
+          {
+            "time": 2.794,
+            "observation": "多数纸屑已越过面部高度，进入下降阶段"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "气球破裂点",
+            "time": 2.419,
+            "time_range": [
+              2.419,
+              2.503
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手",
+          "剪刀"
+        ],
+        "movement_roles": [
+          "工具操作",
+          "触发事件"
+        ],
+        "subphases": [
+          {
+            "label": "剪刀刺入",
+            "start": 2.419,
+            "end": 2.419,
+            "detail": "剪刀刃口穿透橡胶膜形成初始裂口",
+            "evidence": [
+              {
+                "time": 2.419,
+                "observation": "纸屑首次显现即代表破裂已完成"
+              }
+            ]
+          },
+          {
+            "label": "内容物喷射",
+            "start": 2.419,
+            "end": 2.794,
+            "detail": "压缩气体推动黄色纸屑呈放射状冲出并充满前景空间",
+            "evidence": [
+              {
+                "time": 2.503,
+                "observation": "纸屑密度最高，遮挡部分人脸"
+              },
+              {
+                "time": 2.711,
+                "observation": "边缘纸屑开始减速转向垂直下落"
+              }
+            ]
+          }
+        ],
+        "brief": "男性用剪刀刺破手中黑气球，导致内部黄色纸屑猛烈喷出弥漫全场"
+      },
+      {
+        "id": "S01-A03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "gesture",
+        "label": "惊喜反应与凝视追踪",
+        "start": 0.0,
+        "end": 5.964,
+        "start_range": [
+          0.0,
+          0.083
+        ],
+        "end_range": [
+          5.881,
+          5.964
+        ],
+        "detail": "女性自始至终挽住男性右臂，初期面带笑容注视气球；当气球被刺破时她猛然张嘴发出无声惊叹（因无音频佐证），双眼圆睁追随飞舞的纸屑轨迹；随着纸屑逐渐沉降，她的目光也随之向下移动，最终定格在地面堆积的金黄碎片上，期间头部略有转动但脚步未离原位。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "嘴角上扬，眼神聚焦于气球中心"
+          },
+          {
+            "time": 2.419,
+            "observation": "嘴巴大张成O型，眉毛抬高显示震惊"
+          },
+          {
+            "time": 3.504,
+            "observation": "视线随飘落纸屑下行至腰部以下"
+          },
+          {
+            "time": 5.964,
+            "observation": "低头看向脚边地毯上的密集纸屑堆"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "情绪转折点",
+            "time": 2.419,
+            "time_range": [
+              2.419,
+              2.503
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "面部",
+          "颈部",
+          "手臂"
+        ],
+        "movement_roles": [
+          "情感表达",
+          "视觉引导"
+        ],
+        "subphases": [
+          {
+            "label": "anticipatory smile",
+            "start": 0.0,
+            "end": 2.419,
+            "detail": "轻松愉悦地等待结果揭晓",
+            "evidence": [
+              {
+                "time": 1.001,
+                "observation": "脸颊肌肉放松，眼角含笑"
+              }
+            ]
+          },
+          {
+            "label": "shock response",
+            "start": 2.419,
+            "end": 3.003,
+            "detail": "突发刺激引发的本能生理反应",
+            "evidence": [
+              {
+                "time": 2.586,
+                "observation": "瞳孔放大反射强光，呼吸暂停迹象明显"
+              }
+            ]
+          },
+          {
+            "label": "downward gaze tracking",
+            "start": 3.003,
+            "end": 5.964,
+            "detail": "主动调整视角以观察残余现象",
+            "evidence": [
+              {
+                "time": 4.505,
+                "observation": "下巴内收幅度增大以便看清更低位置"
+              }
+            ]
+          }
+        ],
+        "brief": "女性通过面部表情变化和眼球运动展现从期待到惊愕再到专注观察的心理历程"
+      },
+      {
+        "id": "S01-A04",
+        "actor_id": "S01-P02",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "held_pose",
+        "label": "维持平衡与收尾姿态",
+        "start": 2.794,
+        "end": 5.964,
+        "start_range": [
+          2.794,
+          2.92
+        ],
+        "end_range": [
+          5.881,
+          5.964
+        ],
+        "detail": "气球破裂后男性并未立即放下剪刀或改变站姿，而是继续以相同角度托举空荡的手掌模拟原有重量感，同时微微侧头配合女性视线方向观察地面情况；直到镜头结束仍未做出任何清理或转移物品的动作，整体呈现一种仪式完成后的静默延续状态。",
+        "evidence": [
+          {
+            "time": 2.92,
+            "observation": "右手依旧高举剪刀指向斜上方，虽无目标物支撑"
+          },
+          {
+            "time": 4.004,
+            "observation": "肩膀松弛度增加表明紧张解除但结构未变"
+          },
+          {
+            "time": 5.964,
+            "observation": "双脚间距恒定证明重心分布一致"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "medium",
+        "body_parts": [
+          "右手",
+          "肩部",
+          "腿部"
+        ],
+        "movement_roles": [
+          "稳定性控制",
+          "情境适配"
+        ],
+        "subphases": [],
+        "brief": "男性在气球爆炸后保持原体位不动，仅微调头部朝向共同关注落地区域"
+      }
+    ],
+    "uncertainties": [
+      "无法确认剪刺痛触的具体力学参数（如压力值、速度矢量）",
+      "不能断定纸屑材质是否含荧光成分或其他特殊属性",
+      "缺乏听觉信息验证是否存在伴随声响影响行为节奏"
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "无法确认剪刺痛触的具体力学参数（如压力值、速度矢量）",
+    "不能断定纸屑材质是否含荧光成分或其他特殊属性",
+    "缺乏听觉信息验证是否存在伴随声响影响行为节奏",
+    "S01-A02　Invalid interval: None"
+  ]
+}

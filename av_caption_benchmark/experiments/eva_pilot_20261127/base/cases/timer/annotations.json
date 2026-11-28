@@ -1,0 +1,1728 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "human_verified": false,
+  "protocol": "bwf-unified-1",
+  "source": {
+    "id": "timer",
+    "domain": "日常操作 · 灌溉定时器",
+    "clip_sha256": "d1b69bbd7597fbcb92085e0a5f67c35cba26436d7a93a861a4b9543d939b922a",
+    "people_limit": 3,
+    "audio_source": "same original MP4",
+    "filename": "ijF-CYpTrwQ.6.mp4"
+  },
+  "duration_seconds": 11.678333333333335,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 2.4190833333333335,
+      "first_frame": 0,
+      "end_frame_exclusive": 58
+    },
+    {
+      "id": "S02",
+      "start": 2.4190833333333335,
+      "end": 4.087416666666667,
+      "first_frame": 58,
+      "end_frame_exclusive": 98
+    },
+    {
+      "id": "S03",
+      "start": 4.087416666666667,
+      "end": 9.5095,
+      "first_frame": 98,
+      "end_frame_exclusive": 228
+    },
+    {
+      "id": "S04",
+      "start": 9.5095,
+      "end": 11.177833333333334,
+      "first_frame": 228,
+      "end_frame_exclusive": 268
+    },
+    {
+      "id": "S05",
+      "start": 11.177833333333334,
+      "end": 11.678333333333335,
+      "first_frame": 268,
+      "end_frame_exclusive": 280
+    }
+  ],
+  "input_frames": {
+    "visual": 122,
+    "review": 160
+  },
+  "visual_origin": "stages/review",
+  "audio_origin": "stages/audio_transcript",
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频展示了一名操作者在墙上安装/设置灌溉控制器及相关接线、固定和合盖的动作。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "仅可见右手及部分前臂的操作者"
+      },
+      {
+        "id": "S02-P01",
+        "shot_id": "S02",
+        "description": "双手及前臂可见的操作者"
+      },
+      {
+        "id": "S03-P01",
+        "shot_id": "S03",
+        "description": "双手可见的操作者"
+      },
+      {
+        "id": "S04-P01",
+        "shot_id": "S04",
+        "description": "双手可见的操作者"
+      },
+      {
+        "id": "S05-P01",
+        "shot_id": "S05",
+        "description": "双手及头部后侧局部可见的操作者"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 0.0,
+        "end": 1.29,
+        "description": "右手食指按压左侧上下箭头按钮区域，屏幕时间从7:15变为7:00"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 1.29,
+        "end": 2.38,
+        "description": "右手食指移至右侧上下箭头按钮区域并继续按压，屏幕天数由7变为8"
+      },
+      {
+        "id": "S02-E01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 2.42,
+        "end": 3.34,
+        "description": "双手将黑色电源适配器推入墙面插座"
+      },
+      {
+        "id": "S02-E02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "start": 3.34,
+        "end": 3.92,
+        "description": "双手握住已插入的适配器向外拔出，使其脱离插座"
+      },
+      {
+        "id": "S03-E01",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 4.09,
+        "end": 7.17,
+        "description": "双手捏住带手写标记的米色胶带标签，沿线缆向下剥离"
+      },
+      {
+        "id": "S03-E02",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "start": 7.17,
+        "end": 9.47,
+        "description": "双手把多根彩色细导线分开整理，露出线头"
+      },
+      {
+        "id": "S04-E01",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "start": 9.51,
+        "end": 11.14,
+        "description": "左手扶住螺丝刀杆部，右手转动透明手柄拧紧端子排上的螺丝"
+      },
+      {
+        "id": "S05-E01",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "start": 11.18,
+        "end": 11.64,
+        "description": "双手托住黄色控制器外壳边缘，将其向底座扣合并压平"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "按下调时间按钮",
+        "start": 0.0,
+        "end": 1.29,
+        "start_range": [
+          0.0,
+          0.08
+        ],
+        "end_range": [
+          1.21,
+          1.29
+        ],
+        "detail": "画面开始时，右手食指已贴在控制器左列上方箭头键上；随后手指持续在该按键区域反复下压，液晶显示先见“7:15”，之后变为“7:00”。到本段末尾，食指离开左列按键并向右移动，准备去按另一组按钮。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "右手食指放在左侧向上箭头键上，屏幕显示约7:15"
+          },
+          {
+            "time": 0.58,
+            "observation": "食指仍在左列按键处，屏幕已变为7:00"
+          },
+          {
+            "time": 1.21,
+            "observation": "食指开始从左列移开，朝右侧按钮区滑动"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "屏幕时间改变",
+            "time": 0.58,
+            "time_range": [
+              0.5,
+              0.71
+            ]
+          },
+          {
+            "name": "手指离开左列",
+            "time": 1.29,
+            "time_range": [
+              1.21,
+              1.29
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手食指"
+        ],
+        "movement_roles": [
+          "按压",
+          "横向移位"
+        ],
+        "subphases": [
+          {
+            "label": "按住并按压左列箭头键",
+            "start": 0.0,
+            "end": 1.21,
+            "detail": "食指停留在左列上下箭头附近，连续做短促按压动作，期间屏幕数值发生变化。",
+            "evidence": [
+              {
+                "time": 0.0,
+                "observation": "食指贴住左列上方箭头键"
+              },
+              {
+                "time": 0.5,
+                "observation": "手指仍压在左列按键上"
+              },
+              {
+                "time": 0.71,
+                "observation": "屏幕稳定显示7:00，手指仍未完全离开"
+              }
+            ]
+          },
+          {
+            "label": "向右换键",
+            "start": 1.21,
+            "end": 1.29,
+            "detail": "食指抬起后横移到右侧按钮区，完成目标切换。",
+            "evidence": [
+              {
+                "time": 1.21,
+                "observation": "手指离开左列并开始右移"
+              },
+              {
+                "time": 1.29,
+                "observation": "指尖接近右侧向上箭头键"
+              }
+            ]
+          }
+        ],
+        "brief": "右手食指在控制器左列箭头键上连续按压，把时间调到7:00。"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "按下调天数按钮",
+        "start": 1.29,
+        "end": 2.38,
+        "start_range": [
+          1.29,
+          1.42
+        ],
+        "end_range": [
+          2.29,
+          2.38
+        ],
+        "detail": "食指移到右侧一列上下箭头键后继续点按，屏幕右侧数字先为7，后面变成8。镜头切走前，手指仍停在右列按键附近，没有看到完整收手过程。",
+        "evidence": [
+          {
+            "time": 1.42,
+            "observation": "食指落在右侧向上箭头键上"
+          },
+          {
+            "time": 2.0,
+            "observation": "屏幕右侧数字变为8，手指仍在右列按键区"
+          },
+          {
+            "time": 2.38,
+            "observation": "临近切镜时手指尚未明显撤离"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "切换到右列按键",
+            "time": 1.29,
+            "time_range": [
+              1.29,
+              1.42
+            ]
+          },
+          {
+            "name": "天数增加",
+            "time": 2.0,
+            "time_range": [
+              1.92,
+              2.09
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "右手食指"
+        ],
+        "movement_roles": [
+          "按压"
+        ],
+        "subphases": [
+          {
+            "label": "按压右列箭头键",
+            "start": 1.29,
+            "end": 2.38,
+            "detail": "食指在右侧上下箭头键上做连续短按，屏幕对应数值随之更新。",
+            "evidence": [
+              {
+                "time": 1.42,
+                "observation": "指尖接触右列上方箭头键"
+              },
+              {
+                "time": 1.79,
+                "observation": "手指保持在同一按键区继续按压"
+              },
+              {
+                "time": 2.09,
+                "observation": "屏幕显示8，手指仍在按键旁"
+              }
+            ]
+          }
+        ],
+        "brief": "右手食指改按控制器右列箭头键，使天数从7增加到8。"
+      },
+      {
+        "id": "S02-A01",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E01",
+        "kind": "motion",
+        "label": "插上电源适配器",
+        "start": 2.42,
+        "end": 3.34,
+        "start_range": [
+          2.42,
+          2.5
+        ],
+        "end_range": [
+          3.21,
+          3.34
+        ],
+        "detail": "两只手共同握持一个黑色长方体适配器，对准墙盒下方插座的孔位向前推送；随着两手同步用力，适配器逐渐没入插座，最后基本贴合面板。",
+        "evidence": [
+          {
+            "time": 2.42,
+            "observation": "双手握着适配器靠近墙面插座"
+          },
+          {
+            "time": 3.0,
+            "observation": "适配器大部分已进入插座，只剩外侧部分外露"
+          },
+          {
+            "time": 3.34,
+            "observation": "适配器几乎完全插入，手部仍扶在其外缘"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "对准插座",
+            "time": 2.42,
+            "time_range": [
+              2.42,
+              2.5
+            ]
+          },
+          {
+            "name": "插入到位",
+            "time": 3.34,
+            "time_range": [
+              3.21,
+              3.34
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "前臂"
+        ],
+        "movement_roles": [
+          "握持",
+          "前推"
+        ],
+        "subphases": [
+          {
+            "label": "握持并对准插口",
+            "start": 2.42,
+            "end": 2.71,
+            "detail": "两手夹住适配器两侧，把它抬到插座前方并对齐孔位。",
+            "evidence": [
+              {
+                "time": 2.42,
+                "observation": "适配器悬在插座前，双手正在定位"
+              },
+              {
+                "time": 2.71,
+                "observation": "插头端已贴近插座开口"
+              }
+            ]
+          },
+          {
+            "label": "推进插座",
+            "start": 2.71,
+            "end": 3.34,
+            "detail": "双手持续向前施力，适配器逐步深入，直到与面板接近齐平。",
+            "evidence": [
+              {
+                "time": 3.0,
+                "observation": "适配器主体已大半进入插座"
+              },
+              {
+                "time": 3.34,
+                "observation": "适配器基本插到底，手还扶着它"
+              }
+            ]
+          }
+        ],
+        "brief": "双手把黑色电源适配器推入墙面插座。"
+      },
+      {
+        "id": "S02-A02",
+        "actor_id": "S02-P01",
+        "shot_id": "S02",
+        "execution_id": "S02-E02",
+        "kind": "motion",
+        "label": "拔下电源适配器",
+        "start": 3.34,
+        "end": 3.92,
+        "start_range": [
+          3.34,
+          3.42
+        ],
+        "end_range": [
+          3.84,
+          3.92
+        ],
+        "detail": "接着上一动作，双手重新抓住适配器外缘向后拉；适配器的金属插脚先从插座中退出，整个机身被抽离墙面，最后移出画面左下区域，只留下空插座。",
+        "evidence": [
+          {
+            "time": 3.42,
+            "observation": "双手仍握住适配器，开始向外撤"
+          },
+          {
+            "time": 3.71,
+            "observation": "适配器已经离开插座一段距离"
+          },
+          {
+            "time": 3.92,
+            "observation": "适配器几乎完全出画，墙面插座空置"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "开始回拔",
+            "time": 3.34,
+            "time_range": [
+              3.34,
+              3.42
+            ]
+          },
+          {
+            "name": "完全脱离插座",
+            "time": 3.92,
+            "time_range": [
+              3.84,
+              3.92
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手",
+          "前臂"
+        ],
+        "movement_roles": [
+          "握持",
+          "后拉"
+        ],
+        "subphases": [
+          {
+            "label": "抓稳适配器",
+            "start": 3.34,
+            "end": 3.5,
+            "detail": "两手从扶握转为更明确地夹住适配器边缘，准备反向用力。",
+            "evidence": [
+              {
+                "time": 3.42,
+                "observation": "手指扣住适配器外缘"
+              }
+            ]
+          },
+          {
+            "label": "向外抽出",
+            "start": 3.5,
+            "end": 3.92,
+            "detail": "适配器整体后退，插脚脱出插座，随后连同人手一起移出画面。",
+            "evidence": [
+              {
+                "time": 3.63,
+                "observation": "适配器明显离开墙面"
+              },
+              {
+                "time": 3.84,
+                "observation": "只剩少量机身还在画面内"
+              },
+              {
+                "time": 3.92,
+                "observation": "插座恢复为空置状态"
+              }
+            ]
+          }
+        ],
+        "brief": "双手把刚插入的黑色适配器从墙面插座中拔出。"
+      },
+      {
+        "id": "S03-A01",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "S03-E01",
+        "kind": "motion",
+        "label": "撕下胶带标签",
+        "start": 4.09,
+        "end": 7.17,
+        "start_range": [
+          4.09,
+          4.17
+        ],
+        "end_range": [
+          7.09,
+          7.17
+        ],
+        "detail": "两只手的拇指和食指捏住一小块米色胶带标签的两端，标签上有手写数字痕迹；随后两手朝相反方向缓慢拉开，胶带从一束线缆表面一点点揭起，越往后卷曲越明显，最终形成半脱落状态。",
+        "evidence": [
+          {
+            "time": 4.09,
+            "observation": "双手捏住带手写标记的小块胶带，贴在黑色线缆束上"
+          },
+          {
+            "time": 5.51,
+            "observation": "胶带已被掀起一部分，仍连着线缆"
+          },
+          {
+            "time": 7.09,
+            "observation": "胶带大幅翘起，接近整条剥落"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "捏住标签两端",
+            "time": 4.09,
+            "time_range": [
+              4.09,
+              4.17
+            ]
+          },
+          {
+            "name": "胶带明显翘起",
+            "time": 7.09,
+            "time_range": [
+              7.0,
+              7.17
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手拇指",
+          "双手食指"
+        ],
+        "movement_roles": [
+          "捏持",
+          "反向拉扯",
+          "剥离"
+        ],
+        "subphases": [
+          {
+            "label": "夹住胶带边缘",
+            "start": 4.09,
+            "end": 4.5,
+            "detail": "左右手分别用拇指和食指固定胶带两侧，建立稳定的受力点。",
+            "evidence": [
+              {
+                "time": 4.09,
+                "observation": "双手指尖都压在胶带边缘"
+              },
+              {
+                "time": 4.5,
+                "observation": "胶带仍平整贴在线缆上，但已被夹紧"
+              }
+            ]
+          },
+          {
+            "label": "慢慢揭开胶带",
+            "start": 4.5,
+            "end": 7.17,
+            "detail": "两手持续向相反方向轻拉，胶带自一端起翘，再沿长度方向逐步脱离线缆表面。",
+            "evidence": [
+              {
+                "time": 5.0,
+                "observation": "胶带中部开始拱起"
+              },
+              {
+                "time": 6.0,
+                "observation": "更多胶面离开线缆，露出下面线材"
+              },
+              {
+                "time": 7.0,
+                "observation": "胶带几乎整片翻起，只剩连接处未完全分离"
+              }
+            ]
+          }
+        ],
+        "brief": "双手把写有标记的米色胶带从线缆上慢慢撕下来。"
+      },
+      {
+        "id": "S03-A02",
+        "actor_id": "S03-P01",
+        "shot_id": "S03",
+        "execution_id": "S03-E02",
+        "kind": "motion",
+        "label": "分理彩色导线",
+        "start": 7.17,
+        "end": 9.47,
+        "start_range": [
+          7.17,
+          7.29
+        ],
+        "end_range": [
+          9.38,
+          9.47
+        ],
+        "detail": "胶带掀开后，双手转到线缆末端，把原本聚在一起的几根红、绿、蓝等颜色的细导线逐根拨开；手指在线束间穿插、捻动和下拉，使各线彼此分离，末端裸出的小线头越来越清楚。",
+        "evidence": [
+          {
+            "time": 7.29,
+            "observation": "胶带已翻开，双手开始碰触线束末端的多根彩线"
+          },
+          {
+            "time": 8.0,
+            "observation": "数根不同颜色导线已被分开成扇形"
+          },
+          {
+            "time": 9.38,
+            "observation": "多根细线彼此独立垂下，线头清晰可见"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "开始拨线",
+            "time": 7.17,
+            "time_range": [
+              7.17,
+              7.29
+            ]
+          },
+          {
+            "name": "线束散开",
+            "time": 9.38,
+            "time_range": [
+              9.3,
+              9.47
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手手指"
+        ],
+        "movement_roles": [
+          "拨开",
+          "捻动",
+          "分散整理"
+        ],
+        "subphases": [
+          {
+            "label": "触碰并挑出线芯",
+            "start": 7.17,
+            "end": 8.0,
+            "detail": "手指探入线束外层，先把最外侧的一两根彩线单独拎出来。",
+            "evidence": [
+              {
+                "time": 7.29,
+                "observation": "一只手捏住其中一根细线往外带"
+              },
+              {
+                "time": 8.0,
+                "observation": "已有两三根彩线明显分离"
+              }
+            ]
+          },
+          {
+            "label": "逐根展开剩余导线",
+            "start": 8.0,
+            "end": 9.47,
+            "detail": "两手交替把其余彩线一根根拨离主线束，使它们呈放射状下垂。",
+            "evidence": [
+              {
+                "time": 8.6,
+                "observation": "更多颜色不同的细线被分开"
+              },
+              {
+                "time": 9.3,
+                "observation": "线束已基本拆成一排独立导线"
+              },
+              {
+                "time": 9.47,
+                "observation": "每根线的末端都可分辨"
+              }
+            ]
+          }
+        ],
+        "brief": "双手把缠在一起的红、绿、蓝等多根细导线逐一分开整理。"
+      },
+      {
+        "id": "S04-A01",
+        "actor_id": "S04-P01",
+        "shot_id": "S04",
+        "execution_id": "S04-E01",
+        "kind": "motion",
+        "label": "拧紧紧固螺丝",
+        "start": 9.51,
+        "end": 11.14,
+        "start_range": [
+          9.51,
+          9.59
+        ],
+        "end_range": [
+          11.09,
+          11.14
+        ],
+        "detail": "左手扶住螺丝刀的深色杆部和前端，把刀头抵在控制器底部端子排的螺丝上；右手握住透明手柄做旋转动作，手腕来回带动手柄转动，螺丝随旋紧而嵌入端子位置。切镜前螺丝刀仍顶在端子上。",
+        "evidence": [
+          {
+            "time": 9.51,
+            "observation": "螺丝刀已伸到端子排处，左手扶杆，右手握手柄"
+          },
+          {
+            "time": 10.01,
+            "observation": "右手手柄处于转动姿态，左手保持稳定支撑"
+          },
+          {
+            "time": 11.09,
+            "observation": "螺丝刀仍压在端子上，动作尚未结束"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "刀头抵住螺丝",
+            "time": 9.51,
+            "time_range": [
+              9.51,
+              9.59
+            ]
+          },
+          {
+            "name": "持续旋转手柄",
+            "time": 10.01,
+            "time_range": [
+              9.93,
+              10.09
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "左手",
+          "右手",
+          "手腕"
+        ],
+        "movement_roles": [
+          "扶持定位",
+          "旋转工具",
+          "紧固"
+        ],
+        "subphases": [
+          {
+            "label": "定位螺丝刀",
+            "start": 9.51,
+            "end": 9.8,
+            "detail": "左手把螺丝刀送到端子排螺丝上方并对正槽口，右手接住手柄准备发力。",
+            "evidence": [
+              {
+                "time": 9.51,
+                "observation": "刀头已接触端子螺丝"
+              },
+              {
+                "time": 9.8,
+                "observation": "双手姿势稳定，像是在确认咬合"
+              }
+            ]
+          },
+          {
+            "label": "旋转拧紧",
+            "start": 9.8,
+            "end": 11.14,
+            "detail": "右手以腕部为主转动手柄，左手始终扶住杆身防止滑脱，螺丝被逐步压紧。",
+            "evidence": [
+              {
+                "time": 10.09,
+                "observation": "手柄明显处于旋转过程中"
+              },
+              {
+                "time": 10.51,
+                "observation": "左手仍固定在杆部，右手继续拧动"
+              },
+              {
+                "time": 11.01,
+                "observation": "动作保持连贯，未见松手"
+              }
+            ]
+          }
+        ],
+        "brief": "操作者用螺丝刀拧紧控制器端子排上的螺丝。"
+      },
+      {
+        "id": "S05-A01",
+        "actor_id": "S05-P01",
+        "shot_id": "S05",
+        "execution_id": "S05-E01",
+        "kind": "motion",
+        "label": "合上控制器外壳",
+        "start": 11.18,
+        "end": 11.64,
+        "start_range": [
+          11.18,
+          11.26
+        ],
+        "end_range": [
+          11.59,
+          11.64
+        ],
+        "detail": "双手分别托住黄色控制器外壳的左右边，把它从前方罩到已装好的底座上；随着两手向内、向后压，壳体边缘逐渐贴齐底座，底部蓝色端子排被遮住一部分，最后外壳基本就位但仍能看到双手扶着边框。",
+        "evidence": [
+          {
+            "time": 11.18,
+            "observation": "双手拿着黄色外壳对准底座，壳下还能看见端子排"
+          },
+          {
+            "time": 11.47,
+            "observation": "外壳已覆盖大部分正面，边缘接近贴合"
+          },
+          {
+            "time": 11.64,
+            "observation": "外壳基本装上，双手仍扶在两侧"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "外壳对位",
+            "time": 11.18,
+            "time_range": [
+              11.18,
+              11.26
+            ]
+          },
+          {
+            "name": "压合到位",
+            "time": 11.64,
+            "time_range": [
+              11.59,
+              11.64
+            ]
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双手"
+        ],
+        "movement_roles": [
+          "托举",
+          "对位",
+          "压合"
+        ],
+        "subphases": [
+          {
+            "label": "举起并对准底座",
+            "start": 11.18,
+            "end": 11.39,
+            "detail": "双手把外壳抬到控制器前面，让四边与底座轮廓对齐。",
+            "evidence": [
+              {
+                "time": 11.18,
+                "observation": "外壳悬在底座前方，尚未完全落下"
+              },
+              {
+                "time": 11.39,
+                "observation": "外壳边缘已与底座大致平行"
+              }
+            ]
+          },
+          {
+            "label": "压下并贴合",
+            "start": 11.39,
+            "end": 11.64,
+            "detail": "两手同时向内收拢并下压，外壳逐步扣满底座，露出的端子区域减少。",
+            "evidence": [
+              {
+                "time": 11.47,
+                "observation": "外壳覆盖面增大，底部端子被遮挡更多"
+              },
+              {
+                "time": 11.64,
+                "observation": "外壳已基本闭合，手仍维持扶压姿势"
+              }
+            ]
+          }
+        ],
+        "brief": "双手把黄色控制器外壳扣回底座并压实。"
+      }
+    ],
+    "uncertainties": [
+      "S01中两次按键的具体次数无法精确计数，只能确认是连续多次短按。",
+      "S03里胶带上的手写字符不完全清晰，仅能看出有数字样标记。",
+      "S04中是在拧紧还是松开单颗螺丝无法从无声帧完全确定，但可见的是持续的旋转紧固类动作。"
+    ]
+  },
+  "audio": {
+    "schema_version": "1.0",
+    "events": [
+      {
+        "id": "U001",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 0.0,
+        "end": 2.16,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          2.16,
+          2.16
+        ],
+        "speaker_id": null,
+        "description": "男声，中音区，语调平稳清晰， instructional tone。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "语音开始"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Use these later when you program the new timer."
+      },
+      {
+        "id": "N001",
+        "kind": "music",
+        "layer": "background",
+        "start": 0.0,
+        "end": 11.648,
+        "start_range": [
+          0.0,
+          0.0
+        ],
+        "end_range": [
+          11.648,
+          11.648
+        ],
+        "speaker_id": null,
+        "description": "轻快的器乐背景音乐，包含拨弦和打击乐元素，持续播放于整个片段。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "音乐从片段起始处开始"
+          },
+          {
+            "time": 11.648,
+            "observation": "音乐在片段结束前停止"
+          }
+        ],
+        "confidence": "high",
+        "transcript": null
+      },
+      {
+        "id": "U002",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 3.04,
+        "end": 7.52,
+        "start_range": [
+          3.04,
+          3.04
+        ],
+        "end_range": [
+          7.52,
+          7.52
+        ],
+        "speaker_id": null,
+        "description": "同一男声继续讲解，语速稳定。",
+        "evidence": [
+          {
+            "time": 3.04,
+            "observation": "短暂停顿后语音恢复"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Next, unplug the power and label each sprinkler wire with a small piece of tape."
+      },
+      {
+        "id": "U003",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 8.08,
+        "end": 9.28,
+        "start_range": [
+          8.08,
+          8.08
+        ],
+        "end_range": [
+          9.28,
+          9.28
+        ],
+        "speaker_id": null,
+        "description": "同一男声发出指令。",
+        "evidence": [
+          {
+            "time": 8.08,
+            "observation": "短语开头"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Then disconnect the wires."
+      },
+      {
+        "id": "U004",
+        "kind": "speech",
+        "layer": "foreground",
+        "start": 10.0,
+        "end": 11.648,
+        "start_range": [
+          10.0,
+          10.0
+        ],
+        "end_range": [
+          11.648,
+          11.648
+        ],
+        "speaker_id": null,
+        "description": "同一男声说话，句子在片段结束时被截断。",
+        "evidence": [
+          {
+            "time": 10.0,
+            "observation": "最后一个短语开始"
+          },
+          {
+            "time": 11.648,
+            "observation": "音频突然切断"
+          }
+        ],
+        "confidence": "high",
+        "transcript": "Remove the mounting screws and take the old"
+      }
+    ],
+    "uncertainties": []
+  },
+  "relations": {
+    "definition": "Nominal half-open interval intersections only; not verified alignment, semantic reference or causation.",
+    "boundary_uncertainty_used": false,
+    "skipped_invalid_events": [],
+    "pairs": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          1.29
+        ],
+        "overlap_s": 1.29
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          1.29
+        ],
+        "overlap_s": 1.29
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          1.29,
+          2.16
+        ],
+        "overlap_s": 0.87
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          1.29,
+          2.38
+        ],
+        "overlap_s": 1.09
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          2.42,
+          3.34
+        ],
+        "overlap_s": 0.92
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.04,
+          3.34
+        ],
+        "overlap_s": 0.3
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.34,
+          3.92
+        ],
+        "overlap_s": 0.58
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.34,
+          3.92
+        ],
+        "overlap_s": 0.58
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          4.09,
+          7.17
+        ],
+        "overlap_s": 3.08
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.09,
+          7.17
+        ],
+        "overlap_s": 3.08
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S03-A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S03-A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          7.17,
+          9.47
+        ],
+        "overlap_s": 2.3
+      },
+      {
+        "action_id": "S03-A02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.17,
+          7.52
+        ],
+        "overlap_s": 0.35
+      },
+      {
+        "action_id": "S03-A02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.08,
+          9.28
+        ],
+        "overlap_s": 1.2
+      },
+      {
+        "action_id": "S03-A02",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          9.51,
+          11.14
+        ],
+        "overlap_s": 1.63
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.0,
+          11.14
+        ],
+        "overlap_s": 1.14
+      },
+      {
+        "action_id": "S05-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S05-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          11.18,
+          11.64
+        ],
+        "overlap_s": 0.46
+      },
+      {
+        "action_id": "S05-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S05-A01",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": false,
+        "intersection": null,
+        "overlap_s": 0.0
+      },
+      {
+        "action_id": "S05-A01",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          11.18,
+          11.64
+        ],
+        "overlap_s": 0.46
+      }
+    ],
+    "primary_edges": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          1.29
+        ],
+        "overlap_s": 1.29
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "U001",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          1.29,
+          2.16
+        ],
+        "overlap_s": 0.87
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.04,
+          3.34
+        ],
+        "overlap_s": 0.3
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          3.34,
+          3.92
+        ],
+        "overlap_s": 0.58
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          4.09,
+          7.17
+        ],
+        "overlap_s": 3.08
+      },
+      {
+        "action_id": "S03-A02",
+        "audio_id": "U002",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          7.17,
+          7.52
+        ],
+        "overlap_s": 0.35
+      },
+      {
+        "action_id": "S03-A02",
+        "audio_id": "U003",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          8.08,
+          9.28
+        ],
+        "overlap_s": 1.2
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          10.0,
+          11.14
+        ],
+        "overlap_s": 1.14
+      },
+      {
+        "action_id": "S05-A01",
+        "audio_id": "U004",
+        "action_kind": "motion",
+        "audio_layer": "foreground",
+        "nominal_overlap": true,
+        "intersection": [
+          11.18,
+          11.64
+        ],
+        "overlap_s": 0.46
+      }
+    ],
+    "context_edges": [
+      {
+        "action_id": "S01-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          0.0,
+          1.29
+        ],
+        "overlap_s": 1.29
+      },
+      {
+        "action_id": "S01-A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          1.29,
+          2.38
+        ],
+        "overlap_s": 1.09
+      },
+      {
+        "action_id": "S02-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          2.42,
+          3.34
+        ],
+        "overlap_s": 0.92
+      },
+      {
+        "action_id": "S02-A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          3.34,
+          3.92
+        ],
+        "overlap_s": 0.58
+      },
+      {
+        "action_id": "S03-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          4.09,
+          7.17
+        ],
+        "overlap_s": 3.08
+      },
+      {
+        "action_id": "S03-A02",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          7.17,
+          9.47
+        ],
+        "overlap_s": 2.3
+      },
+      {
+        "action_id": "S04-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          9.51,
+          11.14
+        ],
+        "overlap_s": 1.63
+      },
+      {
+        "action_id": "S05-A01",
+        "audio_id": "N001",
+        "action_kind": "motion",
+        "audio_layer": "background",
+        "nominal_overlap": true,
+        "intersection": [
+          11.18,
+          11.64
+        ],
+        "overlap_s": 0.46
+      }
+    ]
+  },
+  "warnings": [
+    "S01中两次按键的具体次数无法精确计数，只能确认是连续多次短按。",
+    "S03里胶带上的手写字符不完全清晰，仅能看出有数字样标记。",
+    "S04中是在拧紧还是松开单颗螺丝无法从无声帧完全确定，但可见的是持续的旋转紧固类动作。"
+  ]
+}

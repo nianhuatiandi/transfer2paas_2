@@ -1,0 +1,442 @@
+[
+  {
+    "id": "ma01",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "足球场控球",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      13
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchQA-1745c3e8-6375a415-44cc-486f-9fe3-17e36e75c4bc_0_3.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      3.0
+    ],
+    "official_sha256": "2739a35f361c7683bca6f07f4527233a992eb5437578b859b214dc2de7014576",
+    "clip_sha256": "2739a35f361c7683bca6f07f4527233a992eb5437578b859b214dc2de7014576",
+    "audio_source": null
+  },
+  {
+    "id": "ma20",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "林中人物",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      2
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-022d34c7-358.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      5.375
+    ],
+    "official_sha256": "3f94999a8838ad9b1a2df8a12ee1847746ddd82fb2c293b0e24dcf20fd61447f",
+    "clip_sha256": "3f94999a8838ad9b1a2df8a12ee1847746ddd82fb2c293b0e24dcf20fd61447f",
+    "audio_source": null
+  },
+  {
+    "id": "ma07",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "动画角色在室内互动",
+    "main_subject_count": 3,
+    "subject_kind": "动画角色",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      62
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-9d51a198-198.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      5.375
+    ],
+    "official_sha256": "6047a4dd36be867e76d4f482efbc243806854f6373fb841a5698aa3668a507d1",
+    "clip_sha256": "6047a4dd36be867e76d4f482efbc243806854f6373fb841a5698aa3668a507d1",
+    "audio_source": null
+  },
+  {
+    "id": "ma22",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "墓园行走",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      38
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-ddaefbc3-287.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      4.875
+    ],
+    "official_sha256": "76ecf416d0ce331c8936f3cb18f2c8c10111144b043ebebd4c4d04a21cae1817",
+    "clip_sha256": "76ecf416d0ce331c8936f3cb18f2c8c10111144b043ebebd4c4d04a21cae1817",
+    "audio_source": null
+  },
+  {
+    "id": "ma04",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "动画角色与门",
+    "main_subject_count": 2,
+    "subject_kind": "动画角色",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      43
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-d5ee6f11-188.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      4.625
+    ],
+    "official_sha256": "7fe3aa97c65dcde449ec4c627c93461ae8f729c548cd33fea0f64cdf00237009",
+    "clip_sha256": "7fe3aa97c65dcde449ec4c627c93461ae8f729c548cd33fea0f64cdf00237009",
+    "audio_source": null
+  },
+  {
+    "id": "ma03",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "床边与灯",
+    "main_subject_count": 1,
+    "subject_kind": "动画角色",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      61
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-8b26473f-101.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      3.125
+    ],
+    "official_sha256": "861ed3fc6afbb478467c68167fb2e2f10a4193d2c12116289e172ae7551a7e52",
+    "clip_sha256": "861ed3fc6afbb478467c68167fb2e2f10a4193d2c12116289e172ae7551a7e52",
+    "audio_source": null
+  },
+  {
+    "id": "ma16",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "室内双人互动",
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      14
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-e6432b52-316.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      5.0
+    ],
+    "official_sha256": "757761ce2597d7be5c733db808cbb7f425ef962463e889d8309825aae7045bf4",
+    "clip_sha256": "757761ce2597d7be5c733db808cbb7f425ef962463e889d8309825aae7045bf4",
+    "audio_source": null
+  },
+  {
+    "id": "ma33",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "户外人物与动物",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      15
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-f71ea943-547.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      6.1
+    ],
+    "official_sha256": "e0d9c37f7ea38190d451bf77c4ae46593dac8d658e3af0b9afe720fc1fcd22b4",
+    "clip_sha256": "e0d9c37f7ea38190d451bf77c4ae46593dac8d658e3af0b9afe720fc1fcd22b4",
+    "audio_source": null
+  },
+  {
+    "id": "ma23",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "两位动画人物交谈",
+    "main_subject_count": 2,
+    "subject_kind": "动画角色",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      33
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-d9a12270-75.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      8.25
+    ],
+    "official_sha256": "aa515d426d8094b319de446d66f4e0f2cc62b394aac73a125513b452b1f256ed",
+    "clip_sha256": "aa515d426d8094b319de446d66f4e0f2cc62b394aac73a125513b452b1f256ed",
+    "audio_source": null
+  },
+  {
+    "id": "ma28",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "户外人物与印刷品",
+    "main_subject_count": 3,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      70
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-0b06c029-997.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      6.006
+    ],
+    "official_sha256": "90377c325b7fe4ea433380cfeeebc48881a3fd9f3e0fea67b87236713662a5d7",
+    "clip_sha256": "90377c325b7fe4ea433380cfeeebc48881a3fd9f3e0fea67b87236713662a5d7",
+    "audio_source": null
+  },
+  {
+    "id": "ma19",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "海边双人活动",
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      55
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-40ab6b58-298.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      6.625
+    ],
+    "official_sha256": "49c9849000efafb7c0179c3c7dbaf517aec702acdf3f37791086b402b5ca640c",
+    "clip_sha256": "49c9849000efafb7c0179c3c7dbaf517aec702acdf3f37791086b402b5ca640c",
+    "audio_source": null
+  },
+  {
+    "id": "ma54",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "雪地滑行",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      18
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-0b5d7b4c-520.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      7.3
+    ],
+    "official_sha256": "26f0cce1e8d4259a7a9126e116dde5b13035234043d72e05866df8aa854c2896",
+    "clip_sha256": "26f0cce1e8d4259a7a9126e116dde5b13035234043d72e05866df8aa854c2896",
+    "audio_source": null
+  },
+  {
+    "id": "ma34",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "三人围坐游戏",
+    "main_subject_count": 3,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      31
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-52a35415-722.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      7.666666666666667
+    ],
+    "official_sha256": "2c7ad47413e492e33f5e3e37ea021e018fcf726382072594ad26463cf81be06e",
+    "clip_sha256": "2c7ad47413e492e33f5e3e37ea021e018fcf726382072594ad26463cf81be06e",
+    "audio_source": null
+  },
+  {
+    "id": "ma41",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "林间骑行",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      35
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-b26f3438-488.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      7.533333333333333
+    ],
+    "official_sha256": "cad7b94e205a64bc210f8fb50f26b06b2fc7c14a67b6d47af8f23b2ff380fc9a",
+    "clip_sha256": "cad7b94e205a64bc210f8fb50f26b06b2fc7c14a67b6d47af8f23b2ff380fc9a",
+    "audio_source": null
+  },
+  {
+    "id": "ma08",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "桌前操作",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      79
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchQA-64b9ff1e-09d7277c-bddc-4e85-afbb-a29ce49e5d55_0_13.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      13.0
+    ],
+    "official_sha256": "93a64060a6324a89eb7758a710f69f7734e8294c5855a26695d6d1f7a60a7692",
+    "clip_sha256": "93a64060a6324a89eb7758a710f69f7734e8294c5855a26695d6d1f7a60a7692",
+    "audio_source": null
+  },
+  {
+    "id": "ma42",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "室内就座",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      64
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchCaption-b85a6864-627dEJPgOItoXZaQ.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      23.4
+    ],
+    "official_sha256": "2bef8e30c30374908be931857f5d8399e856b391759f41856a639cab65fa71f4",
+    "clip_sha256": "2bef8e30c30374908be931857f5d8399e856b391759f41856a639cab65fa71f4",
+    "audio_source": null
+  },
+  {
+    "id": "ma49",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "双人舞动",
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      103
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/DREAM1k-de3a3da8-401.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      15.181848515181848
+    ],
+    "official_sha256": "c5e58a67a705080a55e1ed8888ede8eb125fe71c92eb4149285ac39b7aa7045f",
+    "clip_sha256": "c5e58a67a705080a55e1ed8888ede8eb125fe71c92eb4149285ac39b7aa7045f",
+    "audio_source": null
+  },
+  {
+    "id": "ma50",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "桌上彩色物件",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      67
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-c5839074-689.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      14.68
+    ],
+    "official_sha256": "966ec1ee2f9db593092d4da916fbc2a67b9ed7dd5927332bb8a79c24cbe9b854",
+    "clip_sha256": "966ec1ee2f9db593092d4da916fbc2a67b9ed7dd5927332bb8a79c24cbe9b854",
+    "audio_source": null
+  },
+  {
+    "id": "ma53",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "户外表演",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      27
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/Dream1K-5b4c3ba4-449.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      15.083333333333334
+    ],
+    "official_sha256": "8065fb0b537d8d74baa20f818223c19c1ca1effb5618b09229323677d17d0ca2",
+    "clip_sha256": "8065fb0b537d8d74baa20f818223c19c1ca1effb5618b09229323677d17d0ca2",
+    "audio_source": null
+  },
+  {
+    "id": "ma43",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "片场人物与道具",
+    "main_subject_count": 2,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      73
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchCaption-562e121c-KdF28g9V0BKalHda.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      13.747066666666667
+    ],
+    "official_sha256": "4c80337011ad7caf5d81a05b06f02af7353ecb0bfc3212c19ea3dc76666fa55e",
+    "clip_sha256": "4c80337011ad7caf5d81a05b06f02af7353ecb0bfc3212c19ea3dc76666fa55e",
+    "audio_source": null
+  }
+]

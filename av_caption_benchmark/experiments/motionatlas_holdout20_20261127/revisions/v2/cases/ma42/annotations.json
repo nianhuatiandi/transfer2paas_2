@@ -1,0 +1,542 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "protocol": "bwf-unified-1",
+  "human_verified": false,
+  "source": {
+    "id": "ma42",
+    "benchmark": "MotionAtlas-Bench",
+    "domain": "室内就座",
+    "main_subject_count": 1,
+    "subject_kind": "真人",
+    "selection_note": "按主要参与者筛选，路人、观众及背景角色不计。",
+    "sample_ids": [
+      64
+    ],
+    "people_limit": 3,
+    "revision": "9059dbaf0f1683019916bad2c9f42c375d2706ea",
+    "official_path": "videos/MotionBenchCaption-b85a6864-627dEJPgOItoXZaQ.mp4",
+    "local_original": "clip.mp4",
+    "source_window_seconds": [
+      0,
+      23.4
+    ],
+    "official_sha256": "2bef8e30c30374908be931857f5d8399e856b391759f41856a639cab65fa71f4",
+    "clip_sha256": "2bef8e30c30374908be931857f5d8399e856b391759f41856a639cab65fa71f4",
+    "audio_source": null
+  },
+  "duration_seconds": 23.4,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "end": 23.4,
+      "first_frame": 0,
+      "end_frame_exclusive": 585
+    }
+  ],
+  "input_frames": {
+    "visual": 235
+  },
+  "visual_origin": "stages/visual",
+  "audio_origin": null,
+  "visual": {
+    "schema_version": "bwf-unified-1",
+    "in_scope": true,
+    "scope_note": "视频包含一个连续镜头，记录一名穿白衬衫和卡其色长裤的女子在房间内站立、走动并坐在藤椅上整理衣领的过程。",
+    "actors": [
+      {
+        "id": "S01-P01",
+        "shot_id": "S01",
+        "description": "身穿白色长袖衬衫、卡其色宽松长裤和黑色皮鞋的女子"
+      }
+    ],
+    "executions": [
+      {
+        "id": "S01-E01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 2.8,
+        "end": 5.6,
+        "description": "从房间中央走向右侧的藤椅"
+      },
+      {
+        "id": "S01-E02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 5.6,
+        "end": 7.4,
+        "description": "抬腿坐上藤椅并调整坐姿"
+      },
+      {
+        "id": "S01-E03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "start": 9.8,
+        "end": 23.36,
+        "description": "双手抬起整理衬衫领口"
+      }
+    ],
+    "actions": [
+      {
+        "id": "S01-A01",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E01",
+        "kind": "motion",
+        "label": "走向椅子",
+        "start": 2.8,
+        "end": 5.6,
+        "start_range": [
+          2.8,
+          3.0
+        ],
+        "end_range": [
+          5.4,
+          5.6
+        ],
+        "detail": "女子起初双腿并拢站在房间中央，随后迈出右腿向画面右侧移动，接着左腿跟上，步伐平稳地走到藤椅前方停下。",
+        "evidence": [
+          {
+            "time": 2.8,
+            "observation": "右腿开始向前迈出，身体重心转移"
+          },
+          {
+            "time": 4.0,
+            "observation": "左腿跟进，继续向右行走"
+          },
+          {
+            "time": 5.6,
+            "observation": "到达藤椅正前方，准备坐下"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "起步",
+            "time": 2.8,
+            "time_range": null
+          },
+          {
+            "name": "落座前停顿",
+            "time": 5.6,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿"
+        ],
+        "movement_roles": [
+          "位移"
+        ],
+        "subphases": [
+          {
+            "label": "迈步前行",
+            "start": 2.8,
+            "end": 5.6,
+            "detail": "交替迈开双腿，向画面右侧的藤椅靠近。",
+            "evidence": [
+              {
+                "time": 3.2,
+                "observation": "右脚落地，左脚抬起"
+              },
+              {
+                "time": 4.8,
+                "observation": "左脚落地，右脚抬起"
+              }
+            ]
+          }
+        ],
+        "brief": "女子从房间中央走向右侧的藤椅"
+      },
+      {
+        "id": "S01-A02",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E02",
+        "kind": "motion",
+        "label": "坐下",
+        "start": 5.6,
+        "end": 7.4,
+        "start_range": [
+          5.6,
+          5.8
+        ],
+        "end_range": [
+          7.2,
+          7.4
+        ],
+        "detail": "女子背对藤椅，先抬起右腿向后上方弯曲，将臀部落在藤椅坐垫上，随后收回左腿，双脚踩在地面上，身体完全坐稳。",
+        "evidence": [
+          {
+            "time": 5.8,
+            "observation": "右腿向后抬起，膝盖弯曲"
+          },
+          {
+            "time": 6.4,
+            "observation": "臀部接触藤椅坐垫，身体下沉"
+          },
+          {
+            "time": 7.4,
+            "observation": "左腿放下，双脚着地，坐姿稳定"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抬腿",
+            "time": 5.8,
+            "time_range": null
+          },
+          {
+            "name": "落座",
+            "time": 6.4,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双腿",
+          "臀部"
+        ],
+        "movement_roles": [
+          "姿态转换"
+        ],
+        "subphases": [
+          {
+            "label": "抬腿入座",
+            "start": 5.6,
+            "end": 6.4,
+            "detail": "右腿向后抬起寻找座位，身体重心下移。",
+            "evidence": [
+              {
+                "time": 6.0,
+                "observation": "右脚跟抬起，脚尖点地，身体开始下沉"
+              }
+            ]
+          },
+          {
+            "label": "调整坐姿",
+            "start": 6.4,
+            "end": 7.4,
+            "detail": "左腿收回，双脚平放在地板上，上半身靠向椅背。",
+            "evidence": [
+              {
+                "time": 7.0,
+                "observation": "左腿完全放下，身体坐直"
+              }
+            ]
+          }
+        ],
+        "brief": "女子转身并抬腿坐上藤椅"
+      },
+      {
+        "id": "S01-A03",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": "S01-E03",
+        "kind": "motion",
+        "label": "整理衣领",
+        "start": 9.8,
+        "end": 23.36,
+        "start_range": [
+          9.8,
+          10.0
+        ],
+        "end_range": [
+          23.2,
+          23.36
+        ],
+        "detail": "女子坐在椅子上，双手从大腿处抬起至胸前颈部位置，手指捏住白色衬衫的两侧领口进行翻折和调整，动作持续且幅度较小。",
+        "evidence": [
+          {
+            "time": 10.0,
+            "observation": "双手离开大腿，向上抬起"
+          },
+          {
+            "time": 11.2,
+            "observation": "双手接触到衬衫领口边缘"
+          },
+          {
+            "time": 15.0,
+            "observation": "手指在领口处进行细微的拉扯和翻折"
+          },
+          {
+            "time": 20.0,
+            "observation": "双手保持在领口附近调整"
+          },
+          {
+            "time": 23.36,
+            "observation": "双手仍在领口处，动作未完全结束"
+          }
+        ],
+        "key_moments": [
+          {
+            "name": "抬手触领",
+            "time": 11.2,
+            "time_range": null
+          }
+        ],
+        "boundary_clipped": {
+          "start": false,
+          "end": true
+        },
+        "confidence": "high",
+        "body_parts": [
+          "双臂",
+          "双手",
+          "衣领"
+        ],
+        "movement_roles": [
+          "操作衣物"
+        ],
+        "subphases": [
+          {
+            "label": "抬手定位",
+            "start": 9.8,
+            "end": 11.2,
+            "detail": "双手从腿部移至颈部两侧，找到衬衫领口的位置。",
+            "evidence": [
+              {
+                "time": 10.4,
+                "observation": "双手悬停在胸前，准备触碰衣领"
+              }
+            ]
+          },
+          {
+            "label": "翻折调整",
+            "start": 11.2,
+            "end": 23.36,
+            "detail": "手指捏住领子边缘，反复进行轻微的拉扯、对齐和翻折动作。",
+            "evidence": [
+              {
+                "time": 14.0,
+                "observation": "右手拉动左侧领口"
+              },
+              {
+                "time": 18.0,
+                "observation": "左手调整右侧领口"
+              },
+              {
+                "time": 22.0,
+                "observation": "双手同时在领口下方整理"
+              }
+            ]
+          }
+        ],
+        "brief": "女子坐在椅子上用双手整理衬衫领口"
+      },
+      {
+        "id": "S01-A04",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": null,
+        "kind": "held_pose",
+        "label": "静立等待",
+        "start": 0.0,
+        "end": 2.8,
+        "start_range": [
+          0.0,
+          0.2
+        ],
+        "end_range": [
+          2.6,
+          2.8
+        ],
+        "detail": "视频开始时，女子笔直站在房间中央，双臂自然下垂于身体两侧，面向镜子方向保持静止状态。",
+        "evidence": [
+          {
+            "time": 0.0,
+            "observation": "女子站立不动，双手垂在身侧"
+          },
+          {
+            "time": 2.0,
+            "observation": "依然保持站立姿势，无肢体移动"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": true,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "全身"
+        ],
+        "movement_roles": [
+          "基准姿态"
+        ],
+        "subphases": [],
+        "brief": "女子在房间中央静止站立"
+      },
+      {
+        "id": "S01-A05",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "execution_id": null,
+        "kind": "held_pose",
+        "label": "闭目端坐",
+        "start": 7.4,
+        "end": 9.8,
+        "start_range": [
+          7.4,
+          7.6
+        ],
+        "end_range": [
+          9.6,
+          9.8
+        ],
+        "detail": "女子坐在藤椅上，双手交叠或放置在大腿上，头部微微低垂，双眼闭合，保持安静的休息姿态直到开始抬手整理衣服。",
+        "evidence": [
+          {
+            "time": 7.4,
+            "observation": "刚坐下，双手放在腿上，眼睛闭上"
+          },
+          {
+            "time": 9.0,
+            "observation": "维持坐姿，无明显动作"
+          }
+        ],
+        "key_moments": [],
+        "boundary_clipped": {
+          "start": false,
+          "end": false
+        },
+        "confidence": "high",
+        "body_parts": [
+          "躯干",
+          "头部"
+        ],
+        "movement_roles": [
+          "基准姿态"
+        ],
+        "subphases": [],
+        "brief": "女子坐在藤椅上闭眼休息"
+      }
+    ],
+    "uncertainties": [
+      "视频结尾时女子仍在整理衣领，动作是否最终完成无法确认。"
+    ],
+    "motion_tracks": [
+      {
+        "context": "在昏暗的室内环境中，画面右侧放置着一把带有棕色靠垫和白色毯子的休闲椅，左侧有一面落地镜反射出房间的另一侧。该女子起初站在画面中央偏右的位置，身体正面朝向镜头，穿着白色长袖衬衫、卡其色宽松长裤和黑色皮鞋。",
+        "phases": [
+          {
+            "from_frame": 0,
+            "to_frame": 75,
+            "caption": "女子静止站立在画面中央偏右的位置，双手自然下垂于身体两侧，目光平视前方，身体姿态保持不变。",
+            "start": 0.0,
+            "end": 3.0,
+            "action_ids": [
+              "S01-A01",
+              "S01-A04"
+            ]
+          },
+          {
+            "from_frame": 95,
+            "to_frame": 132,
+            "caption": "女子开始向画面右侧移动，迈步走向那把休闲椅，她的左腿先迈出，随后右腿跟上，身体重心随之转移。",
+            "start": 3.8,
+            "end": 5.28,
+            "action_ids": [
+              "S01-A01"
+            ]
+          },
+          {
+            "from_frame": 150,
+            "to_frame": 187,
+            "caption": "女子到达椅子旁并坐下，她弯曲膝盖将双腿抬起放在椅子上，调整坐姿使其更加舒适，背部靠在椅背上。",
+            "start": 6.0,
+            "end": 7.48,
+            "action_ids": [
+              "S01-A02",
+              "S01-A05"
+            ]
+          },
+          {
+            "from_frame": 207,
+            "to_frame": 265,
+            "caption": "女子坐在椅子上，双腿交叉叠放，右手轻轻搭在左腿上，左手则放在身侧，头部微微倾斜，表情平静。",
+            "start": 8.28,
+            "end": 10.6,
+            "action_ids": [
+              "S01-A03",
+              "S01-A05"
+            ]
+          },
+          {
+            "from_frame": 282,
+            "to_frame": 340,
+            "caption": "女子抬起双手至胸前，手指轻触衣领处，似乎在整理衣物或进行某种细微的动作，眼神专注地看着自己的手部动作。",
+            "start": 11.28,
+            "end": 13.6,
+            "action_ids": [
+              "S01-A03"
+            ]
+          },
+          {
+            "from_frame": 357,
+            "to_frame": 415,
+            "caption": "女子继续用手调整衣领，动作缓慢而细致，期间头部轻微转动，但整体保持坐姿不变。",
+            "start": 14.28,
+            "end": 16.6,
+            "action_ids": [
+              "S01-A03"
+            ]
+          },
+          {
+            "from_frame": 435,
+            "to_frame": 490,
+            "caption": "女子的双手从衣领处移开，重新放回腿上，身体稍微向后仰，显得更加放松，眼睛半闭，似乎陷入沉思。",
+            "start": 17.4,
+            "end": 19.6,
+            "action_ids": [
+              "S01-A03"
+            ]
+          },
+          {
+            "from_frame": 510,
+            "to_frame": 565,
+            "caption": "女子再次抬起右手触碰颈部，左手依然放在腿上，这个动作持续了几秒钟后停止，她恢复了之前的坐姿。",
+            "start": 20.4,
+            "end": 22.6,
+            "action_ids": [
+              "S01-A03"
+            ]
+          },
+          {
+            "from_frame": 584,
+            "to_frame": 584,
+            "caption": "女子最终放下所有的手部动作，完全放松地坐在椅子上，双腿交叉，头微微低垂，呈现出一种静谧的状态。",
+            "start": 23.36,
+            "end": 23.36,
+            "action_ids": [
+              "S01-A03"
+            ]
+          }
+        ],
+        "camera": "整个过程中，镜头保持固定不动，没有明显的平移、俯仰或推拉变化，始终以中景视角捕捉女子的全身及其周围的环境细节。光线柔和且均匀，突出了人物的轮廓和服装质感。",
+        "actor_id": "S01-P01",
+        "shot_id": "S01",
+        "identity": "身穿白色长袖衬衫、卡其色宽松长裤和黑色皮鞋的女子"
+      }
+    ]
+  },
+  "audio": null,
+  "relations": null,
+  "warnings": [
+    "视频结尾时女子仍在整理衣领，动作是否最终完成无法确认。"
+  ],
+  "visual_refinement": {
+    "template_sha256": "c869cb89d3179c8ba6532921dbdf786c70dfb8a9c1dcd77324eeee2ce0abb55b",
+    "base_annotation_sha256": "f534687c8a12fa0f6eaada51110442ad5d6f55bd9b0a4529e0347538b37e47a7",
+    "model": "qwen3.8-omni-flash",
+    "max_frames_per_shot": 32
+  }
+}

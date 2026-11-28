@@ -1,0 +1,24 @@
+{
+  "id": "dia01",
+  "category": "人际互动与情景表演",
+  "title": "双人桌边交接",
+  "source": {
+    "id": "dia01",
+    "benchmark": "DiaDemBench",
+    "domain": "双人桌边对话",
+    "original_id": "847",
+    "source_url": "https://huggingface.co/datasets/DiaDem-Captioner/DiaDemBench/blob/ff6dfcc152ee4cc96e92ec83a0910c187e6ad98b/videos.zip",
+    "archive_member": "videos/847.mp4",
+    "source_window_seconds": [
+      0,
+      7.5
+    ],
+    "source_duration": 7.5,
+    "source_media_sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39",
+    "clip_sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39",
+    "selection": "人工目的抽样，按领域及可见执行者选窗；时钟以片段开头为零。"
+  },
+  "source_start": 0,
+  "duration": 7.5,
+  "sha256": "a61646db277bb4a6ed9ec5b220791ea1f0dd6176917fb8213ae71b6778fbcc39"
+}
